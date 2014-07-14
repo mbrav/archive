@@ -1,5 +1,5 @@
 /*
- Thermo Star v1.0
+ Thermo Star v1.1 "Beyond Perfection"
   
  Created 25 June 2014
  by Michael Braverman
@@ -41,14 +41,13 @@ float temperatureMax[24]; // One for floats
 String temperatureMaxString[24]; // And one for strings
 float temperatureMin[24];
 String temperatureMinString[24];
-byte index;
 
 // Variables that allow the program to run without delays
 unsigned long previosMillis; // For screen and sensor refreshing
 unsigned long previosTimeMillis; // For counting one hour
-long oneHour = 3600000;
+const long oneHour = 3600000;
 boolean refresh = true;
-int RefreshInterval = 15000;
+const int RefreshInterval = 15000;
 
 void setup() {
   dht.begin(); 
@@ -141,7 +140,7 @@ void mainScreen(){
   // The graph lines and text
   TFTscreen.setTextSize(1);
   TFTscreen.stroke(255, 255, 255);
-  TFTscreen.text("Thermo Star v1.0", 5, 5);
+  TFTscreen.text("Thermo Star v1.1", 5, 5);
   TFTscreen.text("12h", 32, 92);
   TFTscreen.text("24h", 63, 92);
   TFTscreen.line(5, 101, 85, 101);
@@ -152,24 +151,24 @@ void mainScreen(){
   // Numbers and names in the graph
   TFTscreen.stroke(0, 0, 255);
   TFTscreen.text("Max", 5, 105);
-  index = maxTemp(11); // Find the hottest record in the past 12 hours (-1)
-  temperatureMaxString[index].toCharArray(temperaturePrintout, 5);
+  // Find the hottest record in the past 12 hours (-1)
+  temperatureMaxString[maxTemp(11)].toCharArray(temperaturePrintout, 5);
   TFTscreen.text(temperaturePrintout, 29, 105);
-  index = maxTemp(23); // Find the hottest record in the past 24 hours (-1)
-  temperatureMaxString[index].toCharArray(temperaturePrintout, 5);
+  // Find the hottest record in the past 24 hours (-1)
+  temperatureMaxString[maxTemp(23)].toCharArray(temperaturePrintout, 5);
   TFTscreen.text(temperaturePrintout, 60, 105);
   TFTscreen.stroke(255, 150, 0);
   TFTscreen.text("Min", 5, 117);
-  index = minTemp(11); // Find the coldest record in the past 12 hours (-1)
-  temperatureMinString[index].toCharArray(temperaturePrintout, 5);
+  // Find the coldest record in the past 12 hours (-1)
+  temperatureMinString[minTemp(11)].toCharArray(temperaturePrintout, 5);
   TFTscreen.text(temperaturePrintout, 29, 117);
-  index = minTemp(23); // Find the coldest record in the past 24 hours (-1)
-  temperatureMinString[index].toCharArray(temperaturePrintout, 5);
+  // Find the coldest record in the past 24 hours (-1)
+  temperatureMinString[minTemp(23)].toCharArray(temperaturePrintout, 5);
   TFTscreen.text(temperaturePrintout, 60, 117);
-  }
+}
 
 // Find the hottest record from the array
-float maxTemp(byte pastHours){
+byte maxTemp(byte pastHours){
   float Max = temperatureValue;
   byte maxIndex;
   for(int i = 1; i <= pastHours; i++){
@@ -182,7 +181,7 @@ float maxTemp(byte pastHours){
 }
 
 // Find the coldest record from the array
-float minTemp(byte pastHours){
+byte minTemp(byte pastHours){
   float Min = temperatureValue;
   byte minIndex;
   for(int i = 1; i <= pastHours; i++){
