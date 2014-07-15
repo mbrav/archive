@@ -11,7 +11,7 @@ The circut for the setup can be found in the the ["Schematics"](https://github.c
 
 <h2> Change Log </h2>
 
-<b>PlantStar v1.2 "Counting Stars"</b>
+<b>ThermoStar v1.2 "Counting Stars"</b>
 - Rearranged the screen by moving the least important stuff to the
 bottom. ↕️
 - Changed the GUI a bit by placing two rectangles over the edges of the
@@ -21,10 +21,10 @@ the program has been running. 🏇
 - The 24 hour records don’t display unless 12 hours have passed since
 they will be the same anyway. 📊
 
-<b>PlantStar v1.1 "Beyond Perfection"</b>
+<b>ThermoStar v1.1 "Beyond Perfection"</b>
 - Some functions now return bytes instead of floats, this freed 222 bytes of program memory and 7 bytes of RAM plus slightly increased the performance. 💎
 
-<b>PlantStar v1.0 "First Commitment"</b>
+<b>ThermoStar v1.0 "First Commitment"</b>
 - Displays the current air temperature and moisture. ⛅️☔️❄️
 - Keeps track of the coldest and hottest temperature readings during
 the past 12 and 24 hours. 🕛🕝🕢🕥
