@@ -1,6 +1,9 @@
 /*
- ThermoStar v1.2 "Counting Stars"
+ ThermoStar v1.3 "Second Breath"
   
+ This program uses and external DHT sensor library by Adafruit
+ https://github.com/adafruit/DHT-sensor-library
+
  Created 25 June 2014
  by Michael Braverman
 */
@@ -28,6 +31,13 @@
 TFT TFTscreen = TFT(cs, dc, rst);
 DHT dht(DHTPIN, DHTTYPE);
 
+//================ EXPERIMENTAL FEATURES ================
+// Turn them off by setting them to "false" instead of "true"
+
+boolean GRAPH = true;
+
+//=======================================================
+
 // Variables necessary for outputing strings
 String temperatureString; 
 char temperaturePrintout[5];
@@ -48,6 +58,7 @@ unsigned long previosTimeMillis; // For counting one hour
 const long oneHour = 3600000;
 int hourCount;
 boolean refresh = true;
+boolean screenToggle;
 const int refreshInterval = 15000; 
 
 void setup() {
@@ -75,7 +86,14 @@ void loop() {
   // Update the screen and sensor readings only when requested
   if (refresh){
     sensorUpdate();
-    mainScreen();
+    if (screenToggle){
+      if (GRAPH){
+        graphScreen();
+      }
+    } else {
+      mainScreen();
+    }
+    screenToggle = !screenToggle;
   }
   
   refresh = false; // Set to false until triggered again
@@ -123,7 +141,14 @@ void mainScreen(){
   temperatureString.toCharArray(temperaturePrintout, 5);
   humidityString.toCharArray(humidityPrintout, 3);
   
+  // Screen Outlines
   TFTscreen.background(0, 0, 0);
+  TFTscreen.fill(0, 0, 0);
+  TFTscreen.stroke(100, 100, 100);
+  TFTscreen.rect(0, 106, 160, 22); // Bottom rectangle (more dark)
+  TFTscreen.stroke(255, 255, 255);
+  TFTscreen.rect(0, 0, 160, 107);  // Top rectangle (more light)
+  
   TFTscreen.setTextSize(2);
   TFTscreen.stroke(0, 233, 242);
   TFTscreen.text("Temperature:", 10, 5);
@@ -141,12 +166,8 @@ void mainScreen(){
   
   // The graph lines and text
   TFTscreen.setTextSize(1);
-  TFTscreen.stroke(100, 100, 100);
-  TFTscreen.rect(0, 106, 160, 22); // Bottom rectangle (more dark)
   TFTscreen.stroke(255, 255, 255);
-  TFTscreen.rect(0, 0, 160, 107);  // Top rectangle (more light)
-  TFTscreen.stroke(255, 255, 255);
-  TFTscreen.text("ThermoStar v1.2", 2, 119);
+  TFTscreen.text("ThermoStar v1.3", 2, 119);
   TFTscreen.text("12h", 32, 67);
   TFTscreen.text("24h", 63, 67);
   TFTscreen.line(5, 76, 85, 76);
@@ -189,6 +210,70 @@ void mainScreen(){
     temperatureMinString[minTemp(23)].toCharArray(temperaturePrintout, 5);
     TFTscreen.text(temperaturePrintout, 60, 92);
   }
+}
+
+void graphScreen(){
+  TFTscreen.background(0, 0, 0);
+  TFTscreen.setTextSize(1);
+  
+  // Hour Marks
+  TFTscreen.stroke(255, 255, 255);
+  TFTscreen.text("Hour", 5, 107);
+  TFTscreen.text("0", 34, 107);
+  TFTscreen.text("2", 44, 107);
+  TFTscreen.text("4", 54, 107);
+  TFTscreen.text("6", 64, 107);
+  TFTscreen.text("8", 74, 107);
+  TFTscreen.text("10", 82, 107);
+  TFTscreen.text("15", 107, 107);
+  TFTscreen.text("20", 132, 107);
+  TFTscreen.text("24", 148, 107);
+  
+  TFTscreen.stroke(0, 0, 255);
+  if (hourCount < 23){
+    temperatureMaxString[maxTemp(hourCount)].toCharArray(temperaturePrintout, 5);
+    TFTscreen.text(temperaturePrintout, 5, 5);
+    temperatureMinString[minTemp(hourCount)].toCharArray(temperaturePrintout, 5);
+    TFTscreen.stroke(255, 150, 0);
+    TFTscreen.text(temperaturePrintout, 5, 98);
+  } else {
+    temperatureMaxString[maxTemp(23)].toCharArray(temperaturePrintout, 5);
+    TFTscreen.text(temperaturePrintout, 5, 5);
+    temperatureMinString[minTemp(23)].toCharArray(temperaturePrintout, 5);
+    TFTscreen.stroke(255, 150, 0);
+    TFTscreen.text(temperaturePrintout, 5, 98);
+  }
+  TFTscreen.stroke(255, 255, 255);
+  TFTscreen.rect(30, 5, 130, 100);
+  float recordGap = temperatureMax[maxTemp(23)] - temperatureMin[minTemp(23)];
+  
+  // Set the measuremnt value between two plotted lines based on the recordGap
+  float oneMeasure;
+  if (recordGap > 0.1 && recordGap < 1.0){
+    oneMeasure = 0.1;
+  } else if (recordGap >= 1.0 && recordGap <= 10){
+    oneMeasure = 0.5;
+  } else if (recordGap > 10){
+    oneMeasure = 2.0;
+  } 
+  
+  // The most confusing way in the world of plotting lines but it works!
+  int lineDistance;
+  for (int i = 0; i <= (recordGap / oneMeasure); i++){
+    lineDistance = 5 + ((100 / (recordGap / oneMeasure)) * i);
+    TFTscreen.line(30, lineDistance, 160, lineDistance);
+  } 
+  
+  TFTscreen.fill(255, 255, 255);
+  float maxCap;
+  float minCap;
+  for (int i = 0; i <= 23; i++){
+    maxCap = temperatureMax[maxTemp(23)] - temperatureMax[i];
+    maxCap = map(maxCap, 0, recordGap, 0, 98);
+    TFTscreen.fill(0, 0, 255);
+    TFTscreen.stroke(0, 0, 255);
+    TFTscreen.rect(35 + (i * 5), 6 + maxCap, 4, 98 - maxCap);
+  } 
 }
 
 // Find the hottest record in the array
