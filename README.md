@@ -10,6 +10,9 @@ The circut for the setup can be found in the the ["Schematics"](https://github.c
 - A DHT sensor connected to the A1(15) pin on the Arduino Uno
 
 <h2> Change Log </h2>
+<b>ThermoStar v1.3 "Second Breath"</b>
+- Added a graph as an "EXPERIMENTAL FEATURE" which turns on every other
+screenUpdate. Is currently very, very buggy. 🐞🐜🐝
 
 <b>ThermoStar v1.2 "Counting Stars"</b>
 - Rearranged the screen by moving the least important stuff to the
