@@ -1,7 +1,7 @@
 <h1>ThermoStar ☀️⛅️☔️⭐️</h1>
 
 <h2>Setup </h2> 
-Plant Star is oriented towards creating a simple setup that can get anyone to start monitoring their climate requiring not much knowledge in electronics. The sketch **DOES USE** an external [Adafruit DHT library](https://github.com/adafruit/DHT-sensor-library) that is necessary to install in the Arduino IDE.
+Thermo Star is oriented towards creating a simple setup that can get anyone to start monitoring their climate requiring not much knowledge in electronics. The sketch **DOES USE** an external [Adafruit DHT library](https://github.com/adafruit/DHT-sensor-library) that is necessary to install in the Arduino IDE.
 
 The circut for the setup can be found in the the ["Schematics"](https://github.com/miXania/ThermoStar/tree/master/Schematics) folder. Depending on what kind of TFT screen you have these [instructions (Arduino)](http://arduino.cc/en/Tutorial/TFTDisplayText) or these [instructions (AdaFruit)](https://learn.adafruit.com/1-8-tft-display?view=all) might be helpful.
 
