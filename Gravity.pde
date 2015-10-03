@@ -26,15 +26,15 @@ void draw() {
   if (mousePressed) {
     stroke(255);
     line(lastMousePositionX, lastMousePositionY, mouseX, mouseY);
-    image(img2, mouseX - imageSize, mouseY - imageSize, imageSize*2, imageSize*2);
+    image(img2, mouseX - imageSize/2, mouseY - imageSize/2, imageSize, imageSize);
     resurrect = true;
   } else {
     if (resurrect) {
       gravity = 0.7;
       x = lastMousePositionX;
       y = lastMousePositionY;
-      xspeed = map(mouseX - lastMousePositionY, -200, 200, 8, -8);
-      speed = map(mouseY - lastMousePositionY, -200, 200, 10, -10);
+      xspeed = map(mouseX - lastMousePositionY, -200, 200, 15, -15);
+      speed = map(mouseY - lastMousePositionY, -200, 200, 15, -15);
       resurrect = false;
     }
     lastMousePositionX = mouseX;
@@ -49,17 +49,16 @@ void draw() {
   //   xspeed = xspeed * -0.9;
   // }
 
-  if (y > height - imageSize) {
+  if (y > height - imageSize || y < 0) {
     speed = speed * -0.8;
 
     // if the horizontal speed becomes small then also
     // force gravity and horizontal speeds to decrease as well
     if (abs(speed) < 0.3) {
-      xspeed = xspeed * 0.5;
+      xspeed = xspeed * 0.9;
       speed = speed * 0.6;
       gravity = gravity * 0.2;
-      print("MEOW!! ");
-      println(count);
+
       if (xspeed < abs(0.02)) {
         xspeed = 0;
       }
