@@ -1,18 +1,19 @@
 PImage img2;
 
-float x[] = new float[100];
-float y[] = new float[100];
-float speed[] = new float[100];
-float xspeed[] = new float[100];
-float gravity[] = new float[100];
-float imageSize[] = new float[100];
+int objects = 100;
+float x[] = new float[objects];
+float y[] = new float[objects];
+float speed[] = new float[objects];
+float xspeed[] = new float[objects];
+float gravity[] = new float[objects];
+float imageSize[] = new float[objects];
 
 // variables necessary for reseting the ball
 boolean resurrect;
 float lastMousePositionX;
 float lastMousePositionY;
 
-int balls = 1;
+int balls;
 
 void setup() {
   size(700, 525);
@@ -28,7 +29,7 @@ void draw() {
   speed[balls] = random(0.4, 1.9);
   xspeed[balls] = random(2.0, 8.0);
   gravity[balls] = random(0.7);
-  imageSize[balls] = random(20.0, 40.0);
+  imageSize[balls] = random(15.0, 55.0);
 
   for (int i = 0; i < balls; i++) {
 
