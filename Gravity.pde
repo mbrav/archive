@@ -1,6 +1,6 @@
 PImage img2;
 
-int objects = 100;
+int objects = 50;
 float x[] = new float[objects];
 float y[] = new float[objects];
 float speed[] = new float[objects];
@@ -18,27 +18,33 @@ int balls;
 void setup() {
   size(700, 525);
   img2 = loadImage("earth.png");
+  x[balls] = random(2.0, 10);
+  y[balls] = random(2.0,10.0);
+  speed[balls] = random(0.4, 1.9);
+  xspeed[balls] = random(2.0, 8.0);
+  gravity[balls] = random(0.7);
+  imageSize[balls] = random(15.0, 55.0);
 }
 
 void draw() {
   // draw the background
   background(0);
 
-  x[balls] = random(10);
-  y[balls] = random(2.0,10.0);
-  speed[balls] = random(0.4, 1.9);
-  xspeed[balls] = random(2.0, 8.0);
-  gravity[balls] = random(0.7);
-  imageSize[balls] = random(15.0, 55.0);
+  x[balls+1] = random(10);
+  y[balls+1] = random(2.0,10.0);
+  speed[balls+1] = random(0.4, 1.9);
+  xspeed[balls+1] = random(2.0, 8.0);
+  gravity[balls+1] = random(0.7);
+  imageSize[balls+1] = random(15.0, 55.0);
 
   for (int i = 0; i < balls; i++) {
 
-    if (x[i] > width - imageSize[i] || x[i] < 0) {
+    if (x[i] >= width - imageSize[i] || x[i] <= 0) {
       xspeed[i] = xspeed[i] * -0.9;
     }
 
-    if (y[i] > height - imageSize[i] || y[i] < 0) {
-      speed[i] = speed[i] * -0.8;
+    if (y[i] >= height - imageSize[i] || y[i] <= 0) {
+      speed[i] = speed[i] * -0.9;
 
       // if the horizontal speed becomes small then also
       // force gravity and horizontal speeds to decrease as well
@@ -78,5 +84,9 @@ void draw() {
     }
     lastMousePositionX = mouseX;
     lastMousePositionY = mouseY;
+  }
+
+  if (balls >= objects - 1) {
+    balls = 0;
   }
 }
