@@ -1,11 +1,11 @@
 PImage img2;
 
-float x[];
-float y[];
-float speed[];
-float xspeed[];
-float gravity[];
-float imageSize[];
+float x[] = new float[100];
+float y[] = new float[100];
+float speed[] = new float[100];
+float xspeed[] = new float[100];
+float gravity[] = new float[100];
+float imageSize[] = new float[100];
 
 // variables necessary for reseting the ball
 boolean resurrect;
@@ -23,13 +23,14 @@ void draw() {
   // draw the background
   background(0);
 
+  x[balls] = random(10);
+  y[balls] = random(2.0,10.0);
+  speed[balls] = random(0.4, 1.9);
+  xspeed[balls] = random(2.0, 8.0);
+  gravity[balls] = random(0.7);
+  imageSize[balls] = random(20.0, 40.0);
+
   for (int i = 0; i < balls; i++) {
-    x[i] = random(10);
-    y[i] = random(2.0,10.0);
-    speed[i] = random(0.4, 1.9);
-    xspeed[i] = random(2.0, 8.0);
-    gravity[i] = random(0.7);
-    imageSize[i] = random(20.0, 40.0);
 
     if (x[i] > width - imageSize[i] || x[i] < 0) {
       xspeed[i] = xspeed[i] * -0.9;
