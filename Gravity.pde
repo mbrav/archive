@@ -28,7 +28,7 @@ void draw() {
     y[i] = random(2.0,10.0);
     speed[i] = random(0.4, 1.9);
     xspeed[i] = random(2.0, 8.0);
-    gravity[i] = 0.7;
+    gravity[i] = random(0.7);
     imageSize[i] = random(20.0, 40.0);
 
     if (x[i] > width - imageSize[i] || x[i] < 0) {
@@ -49,7 +49,6 @@ void draw() {
           xspeed[i] = 0;
         }
       }
-
       y[i] = height - imageSize[i];
     }
 
