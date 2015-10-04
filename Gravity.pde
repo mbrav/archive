@@ -49,7 +49,7 @@ void draw() {
       // if the horizontal speed becomes small then also
       // force gravity and horizontal speeds to decrease as well
       if (abs(speed[i]) < 0.3) {
-        xspeed[i] = xspeed[i] * 0.9;
+        // xspeed[i] = xspeed[i] * 0.9;
         speed[i] = speed[i] * 0.6;
         gravity[i] = gravity[i] * 0.2;
 
