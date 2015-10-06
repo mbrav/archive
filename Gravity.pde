@@ -71,9 +71,6 @@ void draw() {
     stroke(255);
     line(lastMousePositionX, lastMousePositionY, mouseX, mouseY);
     image(img2, mouseX - imageSize[balls]/2, mouseY - imageSize[balls]/2, imageSize[balls], imageSize[balls]);
-    powerBarX(mouseX, mouseY + 30, map(mouseX - lastMousePositionX, 0, 200, 0, 100));
-    powerBarY(mouseX + 30, mouseY, map(mouseX - lastMousePositionX, 0, 200, 0, 100));
-
     resurrect = true;
   } else {
     if (resurrect) {
@@ -92,14 +89,4 @@ void draw() {
   if (balls >= objects - 1) {
     balls = 0;
   }
-}
-
-void powerBarX(int x, int y, float percent) {
-  noFill();
-  rect(x, y, percent, 10);
-}
-
-void powerBarY(int x, int y, float percent) {
-  noFill();
-  rect(x, y, 10, percent);
 }
