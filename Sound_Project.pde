@@ -19,6 +19,7 @@ float smooth_factor=0.25;
 float sum1;
 
 boolean peak;
+float peakValue;
 
 int num = 500;
 float range = 6;
@@ -53,8 +54,9 @@ public void draw() {
     float rms1_scaled = sum1 * (height/2) * scale;
     float add = map(rms1_scaled, 80, 200, 0, 10);
 
-    if (rms1_scaled > 180) {
-    peak = !peak;
+    if (rms1_scaled > peakValue) {
+      peak = !peak;
+      peakValue = rms1_scaled;
     }
 
     noStroke();
@@ -75,6 +77,19 @@ public void draw() {
     for(int i = 1; i < num; i++) {
       ax[i-1] = ax[i];
       ay[i-1] = ay[i];
+    }
+
+    for (int i = 0; i < 20; i++) {
+
+      fill(0);
+      if (rms1_scaled < i * 20) {
+        rect(10 + i * 10, 10, 5, 5);
+      }
+
+      fill(245,208,22);
+      if (rms1_scaled > i * 20) {
+        rect(10 + i * 10, 10, 5, 5);
+      }
     }
 
     // Put a new value at the end of the array
