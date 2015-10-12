@@ -6,14 +6,8 @@ import processing.sound.*;
 
 // Declare the processing sound variables
 SoundFile sample;
-SoundFile lead;
-SoundFile drums;
-SoundFile brake;
 
 Amplitude rms1;
-Amplitude rms2;
-Amplitude rms3;
-Amplitude rms4;
 
 // Declare a scaling factor
 float scale=5;
@@ -23,59 +17,65 @@ float smooth_factor=0.25;
 
 // Used for smoothing
 float sum1;
-float sum2;
-float sum3;
-float sum4;
+
+int num = 500;
+float range = 6;
+
+float[] ax = new float[num];
+float[] ay = new float[num];
 
 public void setup() {
     size(640,360);
 
+    for(int i = 0; i < num; i++) {
+      ax[i] = width/2;
+      ay[i] = height/2;
+    }
+
     sample = new SoundFile(this, "sample.mp3");
     sample.loop();
-
-    lead = new SoundFile(this, "lead.mp3");
-    lead.loop();
-
-    drums = new SoundFile(this, "drums.mp3");
-    drums.loop();
-
-    brake = new SoundFile(this, "brake.mp3");
-    brake.loop();
 
     // Create and patch the rms tracker
     rms1 = new Amplitude(this);
     rms1.input(sample);
 
-    rms2 = new Amplitude(this);
-    rms2.input(lead);
-
-    rms3 = new Amplitude(this);
-    rms3.input(drums);
-
-    rms4 = new Amplitude(this);
-    rms4.input(brake);
 }
 
 public void draw() {
     // Set background color, noStroke and fill color
-    background(125,255,125);
+    background(78,132,222);
     noStroke();
     fill(255,0,150);
 
     // smooth the rms data by smoothing factor
     sum1 += (rms1.analyze() - sum1) * smooth_factor;
-    sum2 += (rms2.analyze() - sum2) * smooth_factor;
-    sum3 += (rms3.analyze() - sum3) * smooth_factor;
-    sum4 += (rms4.analyze() - sum4) * smooth_factor;
 
     // rms.analyze() return a value between 0 and 1. It's
     // scaled to height/2 and then multiplied by a scale factor
     float rms1_scaled = sum1 * (height/2) * scale;
-    float rms2_scaled = sum2 * (height/2) * scale;
-    float rms3_scaled = sum3 * (height/2) * scale;
-    float rms4_scaled = sum4 * (height/2) * scale;
+    float add = map(rms1_scaled, 80, 200, 0, 10);
 
-    // We draw an ellispe coupled to the audio analysis
     ellipse(width/2, height/2, rms1_scaled, rms1_scaled);
     println(rms1_scaled);
+
+    // Shift all elements 1 place to the left
+    for(int i = 1; i < num; i++) {
+      ax[i-1] = ax[i];
+      ay[i-1] = ay[i];
+    }
+
+    // Put a new value at the end of the array
+    ax[num-1] += random(-range - add, range + add);
+    ay[num-1] += random(-range - add, range + add);
+
+    // Constrain all points to the screen
+    ax[num-1] = constrain(ax[num-1], 0, width);
+    ay[num-1] = constrain(ay[num-1], 0, height);
+
+    // Draw a line connecting the points
+    for(int i=1; i<num; i++) {
+      float val = float(i)/num * 204.0 + 51;
+      stroke(val);
+      line(ax[i-1], ay[i-1], ax[i], ay[i]);
+    }
 }
