@@ -77,5 +77,8 @@ public void draw() {
 
     // We draw an ellispe coupled to the audio analysis
     ellipse(width/2, height/2, rms1_scaled, rms1_scaled);
+    ellipse(100, 100, rms2_scaled, rms2_scaled);
+    ellipse(200, 200, rms3_scaled, rms3_scaled);
+    ellipse(300, 300, rms4_scaled, rms4_scaled);
     println(rms1_scaled);
 }
