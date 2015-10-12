@@ -18,6 +18,8 @@ float smooth_factor=0.25;
 // Used for smoothing
 float sum1;
 
+boolean peak;
+
 int num = 500;
 float range = 6;
 
@@ -42,10 +44,6 @@ public void setup() {
 }
 
 public void draw() {
-    // Set background color, noStroke and fill color
-    background(78,132,222);
-    noStroke();
-    fill(255,0,150);
 
     // smooth the rms data by smoothing factor
     sum1 += (rms1.analyze() - sum1) * smooth_factor;
@@ -55,7 +53,22 @@ public void draw() {
     float rms1_scaled = sum1 * (height/2) * scale;
     float add = map(rms1_scaled, 80, 200, 0, 10);
 
-    ellipse(width/2, height/2, rms1_scaled, rms1_scaled);
+    if (rms1_scaled > 180) {
+    peak = !peak;
+    }
+
+    noStroke();
+
+    if (peak) {
+      background(22,198,245);
+      fill(245,208,22);
+      ellipse(width/2, height/2, rms1_scaled, rms1_scaled);
+    } else {
+      background(78,132,222);
+      fill(245,208,22);
+      rect(width/2 - rms1_scaled, height/2 - rms1_scaled, width/2 - rms1_scaled, height/2 - rms1_scaled);
+    }
+
     println(rms1_scaled);
 
     // Shift all elements 1 place to the left
