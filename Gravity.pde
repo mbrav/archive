@@ -17,6 +17,7 @@ int balls;
 
 void setup() {
   size(700, 525);
+  pixelDensity(2);
   img2 = loadImage("earth.png");
   x[balls] = random(2.0, 10);
   y[balls] = random(2.0,10.0);
@@ -39,11 +40,11 @@ void draw() {
 
   for (int i = 0; i < balls; i++) {
 
-    if (x[i] >= width - imageSize[i] || x[i] <= 0) {
+    if (x[i] >= width - imageSize[i] || x[i] - imageSize[i]/2 <= 0) {
       xspeed[i] = xspeed[i] * -0.9;
     }
 
-    if (y[i] >= height - imageSize[i] || y[i] <= 0) {
+    if (y[i] >= height - imageSize[i] || y[i] - imageSize[i]/2  <= 0) {
       speed[i] = speed[i] * -0.9;
 
       // if the horizontal speed becomes small then also
