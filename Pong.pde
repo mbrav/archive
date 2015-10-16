@@ -14,10 +14,14 @@ void setup() {
 
 void draw() {
   background(0);
+
+  //draw the paddle with the position of the mpouse being the middle
   rect(mouseX-paddleSize/2, height-10, paddleSize, 10);
 
   ellipse(ballX, ballY, ballSize, ballSize);
 
+  //if the ball is aproaching the paddle, decrease it's increments
+  //solves #2
   if (ballY + speedY > height - ballSize/2) {
     ballY += 1;
   } else {
@@ -26,6 +30,7 @@ void draw() {
 
   ballX += speedX;
 
+  //bounce hte ball if it hits the sides
   if (ballX > width - ballSize/2 || ballX - ballSize/2 < 0) {
     speedX = -speedX;
   }
@@ -34,8 +39,9 @@ void draw() {
     speedY = -speedY;
   }
 
-  // check if the mouse is under the paddle
+  //check if the mouse is under the paddle
   if (ballX > mouseX - paddleSize/2 && ballX < mouseX + paddleSize/2) {
+    // count a paddle hit
     if (ballY > height - ballSize/2 - 10) {
       println("Lets Bounce!");
       speedY = -speedY;
