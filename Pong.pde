@@ -7,6 +7,9 @@ float speedY = 5.0;
 int ballSize = 20;
 int paddleSize = 100;
 
+int hits;
+int misses;
+
 void setup() {
   size(600, 480);
   background(100);
@@ -19,9 +22,14 @@ void draw() {
   // draw the rectangles
   for (int i = 0; i < 10; i++) {
     for (int j = 0; j < 4; j++) {
-      rect(i * 60, 30 * j, 60, 30);
+      rect(i * 60, 30 * j + 30, 60, 30);
     }
   }
+
+  //draw the menu
+  textSize(24);
+  text("SCORE", 20, 24);
+  text(hits - misses, 105, 24);
 
   //draw the paddle with the position of the mpouse being the middle
   rect(mouseX - paddleSize/2, height - 10, paddleSize, 10);
@@ -52,10 +60,12 @@ void draw() {
     // count a paddle hit
     if (ballY > height - ballSize/2 - 10) {
       println("Lets Bounce!");
+      hits++;
       speedY = -speedY;
     }
   } else if (ballY > height - ballSize/2) {
     println("missed");
+    misses++;
     speedY = -speedY;
   }
 }
