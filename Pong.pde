@@ -14,9 +14,17 @@ void setup() {
 
 void draw() {
   background(0);
+  fill(255);
+
+  // draw the rectangles
+  for (int i = 0; i < 10; i++) {
+    for (int j = 0; j < 4; j++) {
+      rect(i * 60, 30 * j, 60, 30);
+    }
+  }
 
   //draw the paddle with the position of the mpouse being the middle
-  rect(mouseX-paddleSize/2, height-10, paddleSize, 10);
+  rect(mouseX - paddleSize/2, height - 10, paddleSize, 10);
 
   ellipse(ballX, ballY, ballSize, ballSize);
 
@@ -30,7 +38,7 @@ void draw() {
 
   ballX += speedX;
 
-  //bounce hte ball if it hits the sides
+  //bounce the ball if it hits the sides
   if (ballX > width - ballSize/2 || ballX - ballSize/2 < 0) {
     speedX = -speedX;
   }
