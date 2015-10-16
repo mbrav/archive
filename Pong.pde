@@ -18,8 +18,13 @@ void draw() {
 
   ellipse(ballX, ballY, ballSize, ballSize);
 
+  if (ballY + speedY > height - ballSize/2) {
+    ballY += 1;
+  } else {
+    ballY += speedY;
+  }
+
   ballX += speedX;
-  ballY += speedY;
 
   if (ballX > width - ballSize/2 || ballX - ballSize/2 < 0) {
     speedX = -speedX;
