@@ -10,7 +10,7 @@ int paddleSize = 100;
 int[][] hitMemory = new int[10][4];
 
 int hits;
-int misses;
+int life = 3;
 
 void setup() {
   size(600, 480);
@@ -44,6 +44,7 @@ void draw() {
 
         // if collision was detected, won't draw the rectangle
         if (colision == true) {
+          hits++;
           hitMemory[i][j] = 0;
           //check if the horizontal side is hit
           if (ballX < i * 60 - ballSize/2 || ballX > (i + 1) * 60 + ballSize/2) {
@@ -93,11 +94,17 @@ void draw() {
     }
   }
 
+  //draw the life bar
+  for (int i = 0; i < life; i++) {
+    fill(255, 0, 0);
+    ellipse(500 + (i * 30), 15, 20, 20);
+  }
+
   //draw the menu and score
   fill(255);
   textSize(24);
   text("SCORE", 20, 24);
-  text(hits - misses, 105, 24);
+  text(hits, 105, 24);
 
   //draw the paddle with the position of the mpouse being the middle
   rect(mouseX - paddleSize/2, height - 10, paddleSize, 10);
@@ -129,12 +136,11 @@ void draw() {
     // count a paddle hit
     if (ballY > height - ballSize/2 - 10) {
       println("Lets Bounce!");
-      hits++;
       speedY = -speedY;
     }
   } else if (ballY > height - ballSize/2) {
     println("missed");
-    misses++;
+    life--;
     speedY = -speedY;
   }
 }
