@@ -7,13 +7,20 @@ float speedY = 5.0;
 int ballSize = 20;
 int paddleSize = 100;
 
-boolean[][] hitMemory = new boolean[10][4];
+int[][] hitMemory = new int[10][4];
 
 int hits;
 int misses;
 
 void setup() {
   size(600, 480);
+
+  for (int i = 0; i < 10; i++) {
+    for (int j = 0; j < 4; j++) {
+      int someColor = int(random(1, 6));
+      hitMemory[i][j] = someColor;
+    }
+  }
 }
 
 void draw() {
@@ -27,7 +34,7 @@ void draw() {
   for (int i = 0; i < 10; i++) {
     for (int j = 0; j < 4; j++) {
       //check if the rectangle wasn't hit before
-      if (hitMemory[i][j] == false) {
+      if (hitMemory[i][j] != 0) {
         //check for x axis collision
         if (ballX > i * 60 - ballSize/2 && ballX < (i + 1) * 60 - ballSize/2 && ballY > j * 30 + 30 - ballSize/2 && ballY < j * 30 + 60 + ballSize/2) {
           colision = true;
@@ -35,9 +42,9 @@ void draw() {
           colision = false;
         }
 
-        // if collision was detected
+        // if collision was detected, won't draw the rectangle
         if (colision == true) {
-          hitMemory[i][j] = true;
+          hitMemory[i][j] = 0;
           //check if the horizontal side is hit
           if (ballX < i * 60 - ballSize/2 || ballX > (i + 1) * 60 + ballSize/2) {
             horizontalSideHit = true;
@@ -58,8 +65,26 @@ void draw() {
           colision = false;
 
         } else {
-          //draw the rectangle normaly
-          stroke(0);
+
+          //color it
+          if (hitMemory[i][j]== 1) {
+            fill(227, 62, 62); //some red
+          } else if (hitMemory[i][j] == 2) {
+            fill(66, 74, 216); //some blue
+          } else if (hitMemory[i][j] == 3) {
+            fill(66, 187, 216); //some torquise
+          } else if (hitMemory[i][j] == 4) {
+            fill(193, 216, 66); //some green
+          } else if (hitMemory[i][j] == 5) {
+            fill(234, 215, 66); //some yellow
+          } else if (hitMemory[i][j] == 6) {
+            fill(93, 191, 250); //some sky blue
+          } else {
+            //some God color
+          }
+
+          //draw the rectangle
+          stroke(255);
           strokeWeight(2);
           rect(i * 60, 30 * j + 30, 60, 30);
           noStroke();
