@@ -7,6 +7,8 @@ float speedY = 5.0;
 int ballSize = 20;
 int paddleSize = 100;
 
+boolean[][] hitMemory = new boolean[10][4];
+
 int hits;
 int misses;
 
@@ -26,35 +28,38 @@ void draw() {
   //draw the rectangles
   for (int i = 0; i < 10; i++) {
     for (int j = 0; j < 4; j++) {
-      //check for x axis collision
-      if (ballX > i * 60 - ballSize/2 && ballX < (i + 1) * 60 - ballSize/2 && ballY > j * 30 + 30 - ballSize/2 && ballY < j * 30 + 60 - ballSize/2) {
-        colision = true;
-      } else {
-        colision = false;
-      }
-
-      if (colision == true) {
-        //check if the horizontal side is hit
-        if (ballX < i * 60 - ballSize/2 || ballX > (i + 1) * 60 + ballSize/2) {
-          horizontalSideHit = true;
-          println("horizontal");
-        } else if (ballY < j * 30 + 30 - ballSize/2 || ballY > j * 30 + 60 + ballSize/2) {
-          horizontalSideHit = false;
-          println("not horizontal");
+      if (hitMemory[i][j] == false) {
+        //check for x axis collision
+        if (ballX > i * 60 - ballSize/2 && ballX < (i + 1) * 60 - ballSize/2 && ballY > j * 30 + 30 - ballSize/2 && ballY < j * 30 + 60 - ballSize/2) {
+          colision = true;
         } else {
-          println("error");
+          colision = false;
         }
 
-        if (horizontalSideHit == true) {
-          speedX = -speedX;
+        if (colision == true) {
+          hitMemory[i][j] = true;
+          //check if the horizontal side is hit
+          if (ballX < i * 60 - ballSize/2 || ballX > (i + 1) * 60 + ballSize/2) {
+            horizontalSideHit = true;
+            println("horizontal");
+          } else if (ballY < j * 30 + 30 - ballSize/2 || ballY > j * 30 + 60 + ballSize/2) {
+            horizontalSideHit = false;
+            println("not horizontal");
+          } else {
+            println("error");
+          }
+
+          if (horizontalSideHit == true) {
+            speedX = -speedX;
+          } else {
+            speedY = -speedY;
+          }
+
+          colision = false;
+
         } else {
-          speedY = -speedY;
+          rect(i * 60, 30 * j + 30, 60, 30);
         }
-
-        colision = false;
-
-      } else {
-        rect(i * 60, 30 * j + 30, 60, 30);
       }
     }
   }
