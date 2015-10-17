@@ -29,7 +29,7 @@ void draw() {
       //check if the rectangle wasn't hit before
       if (hitMemory[i][j] == false) {
         //check for x axis collision
-        if (ballX > i * 60 - ballSize/2 && ballX < (i + 1) * 60 - ballSize/2 && ballY > j * 30 + 30 - ballSize/2 && ballY < j * 30 + 60 - ballSize/2) {
+        if (ballX > i * 60 - ballSize/2 && ballX < (i + 1) * 60 - ballSize/2 && ballY > j * 30 + 30 - ballSize/2 && ballY < j * 30 + 60 + ballSize/2) {
           colision = true;
         } else {
           colision = false;
@@ -60,7 +60,7 @@ void draw() {
         } else {
           //draw the rectangle normaly
           stroke(0);
-          strokeWeight(3);
+          strokeWeight(2);
           rect(i * 60, 30 * j + 30, 60, 30);
           noStroke();
         }
