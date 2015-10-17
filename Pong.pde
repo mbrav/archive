@@ -14,20 +14,19 @@ int misses;
 
 void setup() {
   size(600, 480);
-  background(100);
 }
 
 void draw() {
-  background(0);
+  background(70, 102, 255);
   fill(255);
 
   boolean colision = false;
   boolean horizontalSideHit = false;
-  boolean verticalSideHit = false;
 
   //draw the rectangles
   for (int i = 0; i < 10; i++) {
     for (int j = 0; j < 4; j++) {
+      //check if the rectangle wasn't hit before
       if (hitMemory[i][j] == false) {
         //check for x axis collision
         if (ballX > i * 60 - ballSize/2 && ballX < (i + 1) * 60 - ballSize/2 && ballY > j * 30 + 30 - ballSize/2 && ballY < j * 30 + 60 - ballSize/2) {
@@ -36,6 +35,7 @@ void draw() {
           colision = false;
         }
 
+        // if collision was detected
         if (colision == true) {
           hitMemory[i][j] = true;
           //check if the horizontal side is hit
@@ -58,7 +58,11 @@ void draw() {
           colision = false;
 
         } else {
+          //draw the rectangle normaly
+          stroke(0);
+          strokeWeight(3);
           rect(i * 60, 30 * j + 30, 60, 30);
+          noStroke();
         }
       }
     }
