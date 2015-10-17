@@ -14,7 +14,7 @@ int misses;
 
 void setup() {
   size(600, 480);
-
+  pixelDensity(2); // Uncomment if using a non-retina screen
   for (int i = 0; i < 10; i++) {
     for (int j = 0; j < 4; j++) {
       int someColor = int(random(1, 6));
@@ -93,7 +93,8 @@ void draw() {
     }
   }
 
-  //draw the menu
+  //draw the menu and score
+  fill(255);
   textSize(24);
   text("SCORE", 20, 24);
   text(hits - misses, 105, 24);
