@@ -2,7 +2,7 @@ float ballX = 100;
 float ballY = 300;
 
 float speedX = 5.0;
-float speedY = 5.0;
+float speedY = 6.0;
 
 int ballSize = 20;
 int paddleSize = 100;
@@ -10,6 +10,7 @@ int paddleSize = 100;
 int[][] hitMemory = new int[10][4];
 
 int hits;
+boolean gameover;
 int life = 3;
 
 void setup() {
@@ -29,12 +30,14 @@ void draw() {
 
   boolean colision = false;
   boolean horizontalSideHit = false;
+  boolean verticalSideHit = false;
 
   //draw the rectangles
   for (int i = 0; i < 10; i++) {
     for (int j = 0; j < 4; j++) {
       //check if the rectangle wasn't hit before
       if (hitMemory[i][j] != 0) {
+
         //check for x axis collision
         if (ballX > i * 60 - ballSize/2 && ballX < (i + 1) * 60 - ballSize/2 && ballY > j * 30 + 30 - ballSize/2 && ballY < j * 30 + 60 + ballSize/2) {
           colision = true;
@@ -42,25 +45,33 @@ void draw() {
           colision = false;
         }
 
-        // if collision was detected, won't draw the rectangle
+        // if collision was detected, don't draw the rectangle
         if (colision == true) {
           hits++;
+
+          //set the rectangle to 0
           hitMemory[i][j] = 0;
+
           //check if the horizontal side is hit
-          if (ballX < i * 60 - ballSize/2 || ballX > (i + 1) * 60 + ballSize/2) {
+          if (ballX < i * 60 || ballX > (i + 1) * 60) {
             horizontalSideHit = true;
-            println("horizontal");
-          } else if (ballY < j * 30 + 30 - ballSize/2 || ballY > j * 30 + 60 + ballSize/2) {
-            horizontalSideHit = false;
-            println("not horizontal");
-          } else {
-            println("error");
+            println("Horizontal");
+          }
+
+          //check if the vertical side is hit
+          if (ballY < j * 30 + 30 || ballY > j * 30 + 60) {
+            verticalSideHit = true;
+            println("Vertical");
           }
 
           if (horizontalSideHit == true) {
             speedX = -speedX;
-          } else {
+            horizontalSideHit = false;
+          }
+
+          if (verticalSideHit == true) {
             speedY = -speedY;
+            verticalSideHit = false;
           }
 
           colision = false;
@@ -94,9 +105,19 @@ void draw() {
     }
   }
 
+  //gameover screen
+  if (life == 0) {
+    gameover = true;
+    speedX = 0;
+    speedY = 0;
+    textSize(60);
+    text("GAME OVER", 120, 400);
+    mousePressed();
+  }
+
   //draw the life bar
+  fill(255, 0, 0);
   for (int i = 0; i < life; i++) {
-    fill(255, 0, 0);
     ellipse(500 + (i * 30), 15, 20, 20);
   }
 
@@ -113,7 +134,7 @@ void draw() {
 
   //if the ball is aproaching the paddle, decrease it's increments
   //solves #2
-  if (ballY + speedY > height - ballSize/2) {
+  if (ballY + speedY > height - ballSize/2 && life !=0) {
     ballY += 1;
   } else {
     ballY += speedY;
@@ -142,5 +163,17 @@ void draw() {
     println("missed");
     life--;
     speedY = -speedY;
+  }
+}
+
+void mouseClicked() {
+  if (gameover == true) {
+    gameover = false;
+    life = 3;
+    hits = 0;
+    ballX = 100;
+    ballY = 300;
+    speedX = 5.0;
+    speedY = 6.0;
   }
 }
