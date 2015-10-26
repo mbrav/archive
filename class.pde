@@ -16,11 +16,11 @@ class Ball {
   }
 
   void update() {
-    if (x[i] >= width - imageSize || x - imageSize/2 <= 0) {
+    if (x >= width - imageSize || x - imageSize/2 <= 0) {
       xspeed = xspeed * -0.9;
     }
 
-    if (y[i] >= height - imageSize || y - imageSize/2  <= 0) {
+    if (y >= height - imageSize || y - imageSize/2  <= 0) {
       speed = speed * -0.9;
 
       // if the horizontal speed becomes small then also
@@ -46,15 +46,15 @@ class Ball {
     if (mousePressed) {
       stroke(255);
       line(lastMousePositionX, lastMousePositionY, mouseX, mouseY);
-      image(img2, mouseX - imageSize[balls]/2, mouseY - imageSize[balls]/2, imageSize[balls], imageSize[balls]);
+      image(img2, mouseX - imageSize/2, mouseY - imageSize/2, imageSize, imageSize);
       resurrect = true;
     } else {
       if (resurrect) {
-        gravity[balls] = 0.7;
-        x[balls] = lastMousePositionX;
-        y[balls] = lastMousePositionY;
-        xspeed[balls] = map(mouseX - lastMousePositionY, -200, 200, 15, -15);
-        speed[balls] = map(mouseY - lastMousePositionY, -200, 200, 15, -15);
+        gravity = 0.7;
+        x = lastMousePositionX;
+        y = lastMousePositionY;
+        xspeed = map(mouseX - lastMousePositionY, -200, 200, 15, -15);
+        speed = map(mouseY - lastMousePositionY, -200, 200, 15, -15);
         resurrect = false;
         balls ++;
       }
@@ -65,4 +65,5 @@ class Ball {
     if (balls >= objects - 1) {
       balls = 0;
     }
+  }
 }
