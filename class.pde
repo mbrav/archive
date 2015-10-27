@@ -1,4 +1,5 @@
 class Ball {
+  PImage img2;
   float x;
   float y;
   float speed;
@@ -13,6 +14,7 @@ class Ball {
     xspeed = random(2.0, 8.0);
     gravity = random(0.7);
     imageSize = random(15.0, 55.0);
+    img2 = loadImage("earth.png");
   }
 
   void update() {
@@ -56,14 +58,9 @@ class Ball {
         xspeed = map(mouseX - lastMousePositionY, -200, 200, 15, -15);
         speed = map(mouseY - lastMousePositionY, -200, 200, 15, -15);
         resurrect = false;
-        balls ++;
       }
       lastMousePositionX = mouseX;
       lastMousePositionY = mouseY;
-    }
-
-    if (balls >= objects - 1) {
-      balls = 0;
     }
   }
 }
