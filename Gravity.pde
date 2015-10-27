@@ -1,14 +1,14 @@
-// variables necessary for reseting the ball
-boolean resurrect;
-float lastMousePositionX;
-float lastMousePositionY;
-
 Ball planet;
+Ball[] planets = new Ball[10];
 
 void setup() {
   size(700, 525);
   pixelDensity(2);
   planet = new Ball();
+
+  for (int i = 0; i < planets.length; i++) {
+    planets[i] = new Ball();
+  }
 }
 
 void draw() {
@@ -16,4 +16,7 @@ void draw() {
   background(0);
   planet.update();
 
+  for (int i = 0; i < planets.length; i++) {
+    planets[i].update();
+  }
 }

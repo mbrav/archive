@@ -1,11 +1,17 @@
 class Ball {
-  PImage img2;
+
+  boolean resurrect;
   float x;
   float y;
   float speed;
   float xspeed;
   float gravity;
   float imageSize;
+  PImage img2;
+
+  // variables necessary for reseting the ball
+  float lastMousePositionX;
+  float lastMousePositionY;
 
   Ball() {
     x = random(10);
