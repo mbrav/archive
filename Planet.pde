@@ -50,11 +50,13 @@ class Planet {
   }
 
   void Earth() {
+    friction = .01;
     mass = 6.0;
     id = 1;
   }
 
   void Moon() {
+    friction = .03;
     mass = 2.5;
     id = 2;
   }
