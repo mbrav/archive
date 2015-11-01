@@ -15,8 +15,7 @@ void draw() {
   for (int i = 0; i < swarm.length; i++) {
     swarm[i].CollisionCheck();
     swarm[i].Update();
-   swarm[i].Dampen();
+    swarm[i].Dampen();
     swarm[i].Animate();
   }
 }
-
