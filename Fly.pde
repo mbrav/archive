@@ -15,7 +15,7 @@ class Fly {
     earth = loadImage("earth.png");
     moon = loadImage("moon.png");
 
-    mass = 1.0;
+    mass = random(0.8, 1.5);
     id = 0;
 
     pos = new PVector(random(width), random(height));
@@ -56,7 +56,7 @@ class Fly {
     fill(0);
 
     if (id == 0) {
-      ellipse(pos.x, pos.y, flySize, flySize);
+      ellipse(pos.x, pos.y, flySize/(mass*mass), flySize/(mass*mass));
     } else if (id == 1) {
       image(earth, pos.x, pos.y);
     } else if (id == 2) {
