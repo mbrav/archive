@@ -7,6 +7,7 @@ class Fly {
   float flySize;
   float mass;
   int id;
+  int colorValue;
   boolean blasted = false;
 
   float threshold = .01;
@@ -16,6 +17,7 @@ class Fly {
     moon = loadImage("moon.png");
 
     mass = random(0.8, 1.5);
+    colorValue = int(random(150, 230));
     id = 0;
 
     pos = new PVector(random(width), random(height));
@@ -53,7 +55,7 @@ class Fly {
   }
 
   void Animate() {
-    fill(0);
+    fill(colorValue);
 
     if (id == 0) {
       ellipse(pos.x, pos.y, flySize/(mass*mass), flySize/(mass*mass));
