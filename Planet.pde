@@ -4,11 +4,10 @@ class Planet {
   PVector pos;
   PVector vel;
   float friction, bounceFactor;
-  float flySize;
+
   float mass;
   int id;
   int colorValue;
-  boolean blasted = false;
 
   float threshold = .01;
 
@@ -24,8 +23,6 @@ class Planet {
     vel = new PVector(0, 0);
     friction = .05;
     bounceFactor = 2;
-
-    flySize = 2;
   }
 
   void Update() {
@@ -57,7 +54,7 @@ class Planet {
     fill(colorValue);
 
     if (id == 0) {
-      ellipse(pos.x, pos.y, flySize/(mass*mass), flySize/(mass*mass));
+      //mystery planet
     } else if (id == 1) {
       image(earth, pos.x, pos.y);
     } else if (id == 2) {
@@ -66,41 +63,8 @@ class Planet {
   }
 
   void CollisionCheck() {
-    if (pos.y <= flySize/2) {
-      pos.y = 1 + (flySize/2);
-      vel.y *= bounceFactor;
-    } else if (pos.y >= height - flySize/2) {
-      pos.y = height - flySize/2 - 1;
-      vel.y *=  bounceFactor;
-    }
-
-    //Collision with walls
-    if (pos.x <= flySize/2) {
-      pos.x = 1 + (flySize/2);
-      vel.x *= bounceFactor;
-    } else if (pos.x >= width - flySize/2) {
-      pos.x = width - flySize/2 - 1;
-      vel.x *=  bounceFactor;
-    }
   }
 
   void Dampen(){
-    if (abs(vel.x) > 0) {
-      if (vel.x > 0) {
-        vel.x -= friction;
-      }
-      else {
-        vel.x+=friction;
-      }
-    }
-
-    if (abs(vel.y) > 0) {
-      if (vel.y > 0) {
-        vel.y -= friction;
-      }
-      else {
-        vel.y+=friction;
-      }
-    }
   }
 }
