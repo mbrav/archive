@@ -25,8 +25,13 @@ void draw() {
     objects[i].Dampen();
     objects[i].Animate();
   }
+  
   earth.Update();
   moon.Update();
+
+  earth.OtherBody(moon.pos.x, moon.pos.y, moon.mass);
+  moon.OtherBody(earth.pos.x, earth.pos.y, earth.mass);
+
   earth.Animate();
   moon.Animate();
 }
