@@ -1,24 +1,19 @@
-class Fly {
-  PImage earth, moon;
-
+class Bodies {
   PVector pos;
   PVector vel;
   float friction, bounceFactor;
   float flySize;
   float mass;
-  int id;
+
   int colorValue;
   boolean blasted = false;
 
   float threshold = .01;
 
-  Fly() {
-    earth = loadImage("earth.png");
-    moon = loadImage("moon.png");
+  Bodies() {
 
     mass = random(0.8, 1.5);
     colorValue = int(random(150, 230));
-    id = 0;
 
     pos = new PVector(random(width), random(height));
     vel = new PVector(0, 0);
@@ -40,30 +35,12 @@ class Fly {
       d = map(d, 0, width, 10, 0);
       d = d/mass;
       vel = new PVector(dir.x * d, dir.y * d);
-
     }
-  }
-
-  void Earth() {
-    mass = 6.0;
-    id = 1;
-  }
-
-  void Moon() {
-    mass = 2.5;
-    id = 2;
   }
 
   void Animate() {
     fill(colorValue);
-
-    if (id == 0) {
-      ellipse(pos.x, pos.y, flySize/(mass*mass), flySize/(mass*mass));
-    } else if (id == 1) {
-      image(earth, pos.x, pos.y);
-    } else if (id == 2) {
-      image(moon, pos.x, pos.y);
-    }
+    ellipse(pos.x, pos.y, flySize/(mass*mass), flySize/(mass*mass));
   }
 
   void CollisionCheck() {
@@ -93,7 +70,7 @@ class Fly {
       else {
         vel.x+=friction;
       }
-  }
+    }
 
     if (abs(vel.y) > 0) {
       if (vel.y > 0) {

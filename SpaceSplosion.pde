@@ -1,16 +1,19 @@
-Fly[] objects;
+Bodies[] objects;
+Planet earth, moon;
 
 void setup() {
   size(800, 800);
   noStroke();
-  objects = new Fly[2000];
+  objects = new Bodies[2000];
+  earth = new Planet();
+  moon = new Planet();
 
   for (int i = 0; i < objects.length; i++) {
-    objects[i] = new Fly();
+    objects[i] = new Bodies();
   }
 
-  objects[333].Earth();
-  objects[111].Moon();
+  earth.Earth();
+  moon.Moon();
 }
 
 
@@ -21,5 +24,7 @@ void draw() {
     objects[i].Update();
     objects[i].Dampen();
     objects[i].Animate();
+    earth.Animate();
+    moon.Animate();
   }
 }
