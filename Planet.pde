@@ -70,4 +70,24 @@ class Planet {
       image(moon, pos.x, pos.y);
     }
   }
+
+  void Dampen(){
+    if (abs(vel.x) > 0) {
+      if (vel.x > 0) {
+        vel.x -= friction;
+      }
+      else {
+        vel.x+=friction;
+      }
+    }
+
+    if (abs(vel.y) > 0) {
+      if (vel.y > 0) {
+        vel.y -= friction;
+      }
+      else {
+        vel.y+=friction;
+      }
+    }
+  }
 }

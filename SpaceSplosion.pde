@@ -25,7 +25,7 @@ void draw() {
     objects[i].Dampen();
     objects[i].Animate();
   }
-  
+
   earth.Update();
   moon.Update();
 
@@ -34,4 +34,7 @@ void draw() {
 
   earth.Animate();
   moon.Animate();
+
+  earth.Dampen();
+  moon.Dampen();
 }
