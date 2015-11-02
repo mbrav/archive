@@ -35,6 +35,7 @@ AudioSample snare;
 Bodies[] objects;
 
 float soundLevel;
+float recordLevel = 0;
 
 void setup()
 {
@@ -91,7 +92,10 @@ void draw()
   }
 
   soundLevel = snare.mix.get(20);
-  println(soundLevel);
+  if (soundLevel > recordLevel) {
+    recordLevel = soundLevel;
+    println(soundLevel);
+  }
 }
 
 void keyPressed()
