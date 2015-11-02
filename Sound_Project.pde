@@ -32,11 +32,13 @@ import ddf.minim.*;
 Minim minim;
 AudioSample kick;
 AudioSample snare;
+Bodies[] objects;
 
 void setup()
 {
-  size(512, 200, P3D);
+  size(1000, 700, P3D);
   minim = new Minim(this);
+  objects = new Bodies[2000];
 
   // load BD.wav from the data folder
   kick = minim.loadSample( "jingle.mp3", // filename
@@ -59,12 +61,23 @@ void setup()
   // load SD.wav from the data folder
   snare = minim.loadSample("jingle.mp3", 512);
   if ( snare == null ) println("Didn't get snare!");
+
+  for (int i = 0; i < objects.length; i++) {
+    objects[i] = new Bodies();
+  }
 }
 
 void draw()
 {
   background(0);
   stroke(255);
+
+  for (int i = 0; i < objects.length; i++) {
+    objects[i].CollisionCheck();
+    objects[i].Update();
+    objects[i].Dampen();
+    objects[i].Animate();
+  }
 
   // use the mix buffer to draw the waveforms.
   for (int i = 0; i < kick.bufferSize() - 1; i++)

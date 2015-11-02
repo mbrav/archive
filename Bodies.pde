@@ -46,19 +46,19 @@ class Bodies {
   void CollisionCheck() {
     if (pos.y <= flySize/2) {
       pos.y = 1 + (flySize/2);
-      vel.y *= bounceFactor;
+      vel.y = -vel.y;
     } else if (pos.y >= height - flySize/2) {
       pos.y = height - flySize/2 - 1;
-      vel.y *=  bounceFactor;
+      vel.y = -vel.y;
     }
 
     //Collision with walls
     if (pos.x <= flySize/2) {
       pos.x = 1 + (flySize/2);
-      vel.x *= bounceFactor;
+      vel.x = -vel.x;
     } else if (pos.x >= width - flySize/2) {
       pos.x = width - flySize/2 - 1;
-      vel.x *=  bounceFactor;
+      vel.x = -vel.x;
     }
   }
 
