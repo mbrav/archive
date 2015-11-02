@@ -31,10 +31,12 @@ import ddf.minim.*;
 
 Minim minim;
 AudioSample snare;
+
 Bodies[] objects;
 
 float soundLevel;
 float recordLevel = 0;
+boolean visualEvent;
 
 float x, y;
 
@@ -61,7 +63,11 @@ void draw()
 
   for (int i = 0; i < objects.length; i++) {
     objects[i].CollisionCheck();
-    objects[i].Update();
+    if (visualEvent) {
+      objects[i].UpdateWithValue(x, y);
+    } else {
+      objects[i].Update();
+    }
     objects[i].Dampen();
     objects[i].Animate();
   }
@@ -72,9 +78,12 @@ void draw()
     println(soundLevel);
   }
 
-  if (recordLevel > 0.11) {
+  if (soundLevel > 0.11) {
     x = random(0, width);
     y = random(0, height);
+    visualEvent = true;
+  } else {
+    visualEvent = false;
   }
 }
 

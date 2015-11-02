@@ -38,6 +38,19 @@ class Bodies {
     }
   }
 
+  void UpdateWithValue(float _x, float _y) {
+    pos.x += vel.x;
+    pos.y += vel.y;
+
+    PVector dir = new PVector(_x  - pos.x, _y - pos.y);
+    dir.normalize();
+    float d = dist(_x , _y, pos.x, pos.y);
+    d = map(d, 0, width, 10, 0);
+    d = d/mass;
+    vel = new PVector(dir.x * d, dir.y * d);
+
+  }
+
   void Animate() {
     fill(colorValue);
     ellipse(pos.x, pos.y, flySize/(mass*mass), flySize/(mass*mass));
