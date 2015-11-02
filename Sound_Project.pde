@@ -28,6 +28,7 @@
   */
 
 import ddf.minim.*;
+import ddf.minim.ugens.*;
 
 Minim minim;
 AudioSample sample;
@@ -43,7 +44,7 @@ boolean[] kikRow = new boolean[16];
 
 ArrayList<Rect> buttons = new ArrayList<Rect>();
 
-int bpm = 120;
+int bpm = 85;
 
 int beat; // which beat we're on
 
@@ -60,6 +61,7 @@ void setup()
 {
   minim = new Minim(this);
   out = minim.getLineOut();
+  pixelDensity(2);
 
   size(1000, 700, P3D);
   minim = new Minim(this);
@@ -137,9 +139,35 @@ void draw()
   } else {
     visualEvent = false;
   }
+
+  for(int i = 0; i < buttons.size(); ++i)
+  {
+    buttons.get(i).draw();
+  }
+
+  stroke(128);
+  if ( beat % 4 == 0 )
+  {
+    fill(200, 0, 0);
+  }
+  else
+  {
+    fill(0, 200, 0);
+  }
+
+  // beat marker
+  rect(10+beat*24, 35, 14, 9);
 }
 
 void keyPressed()
 {
   if ( key == 's' ) sample.trigger();
+}
+
+void mousePressed()
+{
+  for(int i = 0; i < buttons.size(); ++i)
+  {
+    buttons.get(i).mousePressed();
+  }
 }
