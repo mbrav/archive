@@ -37,6 +37,8 @@ Bodies[] objects;
 float soundLevel;
 float recordLevel = 0;
 
+float x, y;
+
 void setup()
 {
   size(1000, 700, P3D);
@@ -68,6 +70,7 @@ void setup()
   for (int i = 0; i < objects.length; i++) {
     objects[i] = new Bodies();
   }
+
 }
 
 void draw()
@@ -95,6 +98,11 @@ void draw()
   if (soundLevel > recordLevel) {
     recordLevel = soundLevel;
     println(soundLevel);
+  }
+
+  if (recordLevel > 0.11) {
+    x = random(0, width);
+    y = random(0, height);
   }
 }
 
