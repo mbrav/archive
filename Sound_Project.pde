@@ -37,6 +37,7 @@ Bodies[] objects;
 float soundLevel;
 float recordLevel = 0;
 boolean visualEvent;
+boolean toggle;
 
 float x, y;
 
@@ -47,13 +48,12 @@ void setup()
   objects = new Bodies[2000];
 
   // load SD.wav from the data folder
-  snare = minim.loadSample("jingle.mp3", 512);
+  snare = minim.loadSample("sample.mp3", 512);
   if ( snare == null ) println("Didn't get snare!");
 
   for (int i = 0; i < objects.length; i++) {
     objects[i] = new Bodies();
   }
-
 }
 
 void draw()
@@ -64,8 +64,18 @@ void draw()
   for (int i = 0; i < objects.length; i++) {
     objects[i].CollisionCheck();
     if (visualEvent) {
+      if (toggle) {
+        objects[i].reverseGravity(true);
+      } else {
+        objects[i].reverseGravity(false);
+      }
       objects[i].UpdateWithValue(x, y);
     } else {
+      if (toggle) {
+        objects[i].reverseGravity(true);
+      } else {
+        objects[i].reverseGravity(false);
+      }
       objects[i].Update();
     }
     objects[i].Dampen();
@@ -78,10 +88,11 @@ void draw()
     println(soundLevel);
   }
 
-  if (soundLevel > 0.11) {
+  if (soundLevel > 0.15) {
     x = random(0, width);
     y = random(0, height);
     visualEvent = true;
+    toggle = !toggle;
   } else {
     visualEvent = false;
   }

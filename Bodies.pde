@@ -9,6 +9,7 @@ class Bodies {
   boolean blasted = false;
 
   float threshold = .01;
+  boolean reverse = false;
 
   Bodies() {
 
@@ -29,25 +30,47 @@ class Bodies {
     pos.y += vel.y;
 
     if (mousePressed) {
-      PVector dir = new PVector(mouseX - pos.x, mouseY - pos.y);
-      dir.normalize();
-      float d = dist(mouseX, mouseY, pos.x, pos.y);
-      d = map(d, 0, width, 10, 0);
-      d = d/mass;
-      vel = new PVector(dir.x * d, dir.y * d);
+      if (reverse) {
+        PVector dir = new PVector(mouseX - pos.x , mouseY - pos.y);
+        dir.normalize();
+        float d = dist(mouseX, mouseY, pos.x, pos.y);
+        d = map(d, 0, width, 10, 0);
+        d = d/mass;
+        vel = new PVector(dir.x * d, dir.y * d);
+      } else {
+        PVector dir = new PVector(mouseX - pos.x, mouseY - pos.y);
+        dir.normalize();
+        float d = dist(mouseX, mouseY, pos.x, pos.y);
+        d = map(d, 0, width, 10, 0);
+        d = d/mass;
+        vel = new PVector(dir.x * d, dir.y * d);
+      }
     }
+  }
+
+  void reverseGravity(boolean g) {
+    reverse = g;
   }
 
   void UpdateWithValue(float _x, float _y) {
     pos.x += vel.x;
     pos.y += vel.y;
 
-    PVector dir = new PVector(_x  - pos.x, _y - pos.y);
-    dir.normalize();
-    float d = dist(_x , _y, pos.x, pos.y);
-    d = map(d, 0, width, 10, 0);
-    d = d/mass;
-    vel = new PVector(dir.x * d, dir.y * d);
+    if (reverse) {
+      PVector dir = new PVector(_x  + pos.x, _y + pos.y);
+      dir.normalize();
+      float d = dist(_x , _y, pos.x, pos.y);
+      d = map(d, 0, width, 10, 0);
+      d = d/mass;
+      vel = new PVector(dir.x * d, dir.y * d);
+    } else {
+      PVector dir = new PVector(_x  - pos.x, _y - pos.y);
+      dir.normalize();
+      float d = dist(_x , _y, pos.x, pos.y);
+      d = map(d, 0, width, 10, 0);
+      d = d/mass;
+      vel = new PVector(dir.x * d, dir.y * d);
+    }
 
   }
 
