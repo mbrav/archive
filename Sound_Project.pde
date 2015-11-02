@@ -55,6 +55,8 @@ float recordLevel = 0;
 boolean visualEvent;
 boolean toggle;
 
+boolean showMachine = false;
+
 float x, y;
 
 void setup()
@@ -140,23 +142,30 @@ void draw()
     visualEvent = false;
   }
 
-  for(int i = 0; i < buttons.size(); ++i)
-  {
-    buttons.get(i).draw();
-  }
+  if (showMachine) {
+    for(int i = 0; i < buttons.size(); ++i)
+    {
+      buttons.get(i).draw();
+    }
 
-  stroke(128);
-  if ( beat % 4 == 0 )
-  {
-    fill(200, 0, 0);
-  }
-  else
-  {
-    fill(0, 200, 0);
-  }
+    stroke(128);
+    if ( beat % 4 == 0 )
+    {
+      fill(200, 0, 0);
+    }
+    else
+    {
+      fill(0, 200, 0);
+    }
 
-  // beat marker
-  rect(10+beat*24, 35, 14, 9);
+    // beat marker
+    rect(10+beat*24, 35, 14, 9);
+    fill(200);
+    rect(10, 10, 20, 20);
+  } else {
+    fill(255,0,0);
+    rect(10, 10, 20, 20);
+  }
 }
 
 void keyPressed()
@@ -166,8 +175,17 @@ void keyPressed()
 
 void mousePressed()
 {
-  for(int i = 0; i < buttons.size(); ++i)
-  {
-    buttons.get(i).mousePressed();
+  if (showMachine) {
+    for(int i = 0; i < buttons.size(); ++i)
+    {
+      buttons.get(i).mousePressed();
+    }
+    if(mouseX < 30 && mouseX > 10 && mouseY < 30 && mouseY > 10) {
+      showMachine = false;
+    }
+  } else {
+    if(mouseX < 30 && mouseX > 10 && mouseY < 30 && mouseY > 10) {
+      showMachine = true;
+    }
   }
 }
