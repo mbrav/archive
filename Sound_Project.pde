@@ -34,6 +34,8 @@ AudioSample kick;
 AudioSample snare;
 Bodies[] objects;
 
+float soundLevel;
+
 void setup()
 {
   size(1000, 700, P3D);
@@ -87,6 +89,9 @@ void draw()
     line(x1, 50 - kick.mix.get(i)*50, x2, 50 - kick.mix.get(i+1)*50);
     line(x1, 150 - snare.mix.get(i)*50, x2, 150 - snare.mix.get(i+1)*50);
   }
+
+  soundLevel = snare.mix.get(20);
+  println(soundLevel);
 }
 
 void keyPressed()
