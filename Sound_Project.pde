@@ -49,7 +49,7 @@ void setup()
 
   // load SD.wav from the data folder
   snare = minim.loadSample("sample.mp3", 512);
-  
+
   if ( snare == null ) println("Didn't get snare!");
 
   for (int i = 0; i < objects.length; i++) {
@@ -61,6 +61,7 @@ void draw()
 {
   background(0);
   stroke(255);
+  noStroke();
 
   for (int i = 0; i < objects.length; i++) {
     objects[i].CollisionCheck();

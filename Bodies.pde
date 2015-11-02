@@ -76,7 +76,7 @@ class Bodies {
 
   void Animate() {
     fill(colorValue);
-    ellipse(pos.x, pos.y, flySize/(mass*mass), flySize/(mass*mass));
+    ellipse(pos.x, pos.y, flySize*(mass*mass), flySize*(mass*mass));
   }
 
   void CollisionCheck() {
