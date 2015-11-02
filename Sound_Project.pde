@@ -30,7 +30,22 @@
 import ddf.minim.*;
 
 Minim minim;
-AudioSample snare;
+AudioSample sample;
+AudioOutput out;
+
+Sampler     kick;
+Sampler     snare;
+Sampler     hat;
+
+boolean[] hatRow = new boolean[16];
+boolean[] snrRow = new boolean[16];
+boolean[] kikRow = new boolean[16];
+
+ArrayList<Rect> buttons = new ArrayList<Rect>();
+
+int bpm = 120;
+
+int beat; // which beat we're on
 
 Bodies[] objects;
 
@@ -43,14 +58,38 @@ float x, y;
 
 void setup()
 {
+  minim = new Minim(this);
+  out = minim.getLineOut();
+
   size(1000, 700, P3D);
   minim = new Minim(this);
   objects = new Bodies[2000];
 
-  // load SD.wav from the data folder
-  snare = minim.loadSample("sample.mp3", 512);
+  kick  = new Sampler( "BD.wav", 4, minim );
+  snare = new Sampler( "SD.wav", 4, minim );
+  hat   = new Sampler( "CHH.wav", 4, minim );
 
-  if ( snare == null ) println("Didn't get snare!");
+  // patch samplers to the output
+  kick.patch( out );
+  snare.patch( out );
+  hat.patch( out );
+
+  for (int i = 0; i < 16; i++)
+  {
+    buttons.add( new Rect(10+i*24, 50, hatRow, i ) );
+    buttons.add( new Rect(10+i*24, 100, snrRow, i ) );
+    buttons.add( new Rect(10+i*24, 150, kikRow, i ) );
+  }
+
+  beat = 0;
+
+  // start the sequencer
+  out.setTempo( bpm );
+  out.playNote( 0, 0.25f, new Tick() );
+
+  sample = minim.loadSample("sample.mp3", 512);
+
+  if ( sample == null ) println("Didn't get snare!");
 
   for (int i = 0; i < objects.length; i++) {
     objects[i] = new Bodies();
@@ -84,7 +123,7 @@ void draw()
     objects[i].Animate();
   }
 
-  soundLevel = snare.mix.get(20);
+  soundLevel = sample.mix.get(20);
   if (soundLevel > recordLevel) {
     recordLevel = soundLevel;
     println(soundLevel);
@@ -102,5 +141,5 @@ void draw()
 
 void keyPressed()
 {
-  if ( key == 's' ) snare.trigger();
+  if ( key == 's' ) sample.trigger();
 }
