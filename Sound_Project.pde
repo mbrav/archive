@@ -54,7 +54,7 @@ float recordLevel;
 boolean visualEvent;
 boolean toggle;
 
-boolean showMachine = true;
+boolean showMachine = false;
 
 float x, y;
 
@@ -144,14 +144,22 @@ void draw()
   if (showMachine) {
     // beat marker
     fill(200);
+    //close square
     rect(10, height - 115, 25, 25);
+    //body
     rect(0, height - 90, 400, 90);
-    fill(0, 255, 0);
+    stroke(200);
+    //beat counter
     rect(10+beat*24, height - 10, 15, 10);
+    //clear button
+    noStroke();
+    rect(40, height - 108, 18, 18);
+    //close cross
     stroke(255, 0, 0);
     strokeWeight(3);
     line(14, height - 94, 30, height - 110);
     line(14, height - 110, 30, height - 94);
+
     noStroke();
 
     for(int i = 0; i < buttons.size(); ++i)
@@ -193,6 +201,13 @@ void mousePressed()
     }
     if(mouseX < 35 && mouseX > 10 && mouseY < (height - 90) && mouseY > (height - 115)) {
       showMachine = false;
+    }
+    if(mouseX < 60 && mouseX > 40 && mouseY < (height - 90) && mouseY > (height - 110)) {
+      for (int i = 0; i < hatRow.length; i++) {
+        hatRow[i] = false;
+        snrRow[i] = false;
+        kikRow[i] = false;    
+      }
     }
   } else {
     if(mouseX < 35 && mouseX > 10 && mouseY < (height - 10) && mouseY > (height - 35)) {
