@@ -45,17 +45,16 @@ boolean[] kikRow = new boolean[16];
 ArrayList<Rect> buttons = new ArrayList<Rect>();
 
 int bpm = 85;
-
 int beat; // which beat we're on
 
 Bodies[] objects;
 
 float soundLevel;
-float recordLevel = 0;
+float recordLevel;
 boolean visualEvent;
 boolean toggle;
 
-boolean showMachine = false;
+boolean showMachine = true;
 
 float x, y;
 
@@ -63,7 +62,7 @@ void setup()
 {
   minim = new Minim(this);
   out = minim.getLineOut();
-  pixelDensity(2);
+  pixelDensity(1);
 
   size(1000, 700, P3D);
   minim = new Minim(this);
@@ -80,9 +79,9 @@ void setup()
 
   for (int i = 0; i < 16; i++)
   {
-    buttons.add( new Rect(10+i*24, 50, hatRow, i ) );
-    buttons.add( new Rect(10+i*24, 100, snrRow, i ) );
-    buttons.add( new Rect(10+i*24, 150, kikRow, i ) );
+    buttons.add( new Rect(10+i*24, height - 80, hatRow, i ) );
+    buttons.add( new Rect(10+i*24, height - 55, snrRow, i ) );
+    buttons.add( new Rect(10+i*24, height - 30, kikRow, i ) );
   }
 
   beat = 0;
@@ -143,6 +142,18 @@ void draw()
   }
 
   if (showMachine) {
+    // beat marker
+    fill(200);
+    rect(10, height - 115, 25, 25);
+    rect(0, height - 90, 400, 90);
+    fill(0, 255, 0);
+    rect(10+beat*24, height - 10, 15, 10);
+    stroke(255, 0, 0);
+    strokeWeight(3);
+    line(14, height - 94, 30, height - 110);
+    line(14, height - 110, 30, height - 94);
+    noStroke();
+
     for(int i = 0; i < buttons.size(); ++i)
     {
       buttons.get(i).draw();
@@ -158,13 +169,13 @@ void draw()
       fill(0, 200, 0);
     }
 
-    // beat marker
-    rect(10+beat*24, 35, 14, 9);
-    fill(200);
-    rect(10, 10, 20, 20);
   } else {
     fill(255,0,0);
-    rect(10, 10, 20, 20);
+    rect(10, height - 35, 25, 25);
+    stroke(200);
+    strokeWeight(3);
+    rect(15, height - 30, 15, 15);
+    noStroke();
   }
 }
 
@@ -180,11 +191,11 @@ void mousePressed()
     {
       buttons.get(i).mousePressed();
     }
-    if(mouseX < 30 && mouseX > 10 && mouseY < 30 && mouseY > 10) {
+    if(mouseX < 35 && mouseX > 10 && mouseY < (height - 90) && mouseY > (height - 115)) {
       showMachine = false;
     }
   } else {
-    if(mouseX < 30 && mouseX > 10 && mouseY < 30 && mouseY > 10) {
+    if(mouseX < 35 && mouseX > 10 && mouseY < (height - 10) && mouseY > (height - 35)) {
       showMachine = true;
     }
   }

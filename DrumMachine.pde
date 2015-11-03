@@ -29,8 +29,8 @@ class Rect
   {
     x = _x;
     y = _y;
-    w = 14;
-    h = 30;
+    w = 15;
+    h = 15;
     steps = _steps;
     stepId = _id;
   }
