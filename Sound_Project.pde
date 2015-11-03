@@ -150,9 +150,11 @@ void draw()
     rect(0, height - 90, 400, 90);
     stroke(200);
     //beat counter
-    rect(10+beat*24, height - 10, 15, 10);
+    fill(0, 255, 0);
+    rect(10+beat*24, height - 12, 15, 10);
     //clear button
     noStroke();
+    fill(255, 0, 0);
     rect(40, height - 108, 18, 18);
     //close cross
     stroke(255, 0, 0);
@@ -206,7 +208,7 @@ void mousePressed()
       for (int i = 0; i < hatRow.length; i++) {
         hatRow[i] = false;
         snrRow[i] = false;
-        kikRow[i] = false;    
+        kikRow[i] = false;
       }
     }
   } else {
