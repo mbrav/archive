@@ -11,6 +11,7 @@ class Boid {
 
   int id; // id's for diffirent types of flocks
   float health = 100;
+  float confidence = 1;
 
   Boid(float x, float y, int _id) {
     id = _id;
@@ -113,7 +114,11 @@ class Boid {
       endShape();
       popMatrix();
     } else if (id == 1) {
-      fill(200, 0, 0, 100);
+      if (confidence  > 1) {
+        fill(255, 0, 0, 200);
+      } else {
+        fill(200, 0, 0, 50);
+      }
       ellipse(location.x, location.y, 10, 10);
     }
   }
@@ -137,6 +142,26 @@ class Boid {
     // For every boid in the system, check if it's too close
     for (Boid other : boids) {
       float d = PVector.dist(location, other.location);
+
+      // for gangsters, a farther distance is checked
+      if (id == 1 && (d > 0) && (d < desiredseparation * 3)) {
+        if (other.id == 0) {
+          // consider the attackable target
+          attackableCount++;
+        } else if (other.id == 1) {
+          // see if any homies are nearby
+          gangMembersCount++;
+        }
+      }
+
+      confidence = gangMembersCount;
+
+      if (confidence > 1) {
+        stroke(255, 0, 0, 80);
+        line(location.x, location.y, other.location.x, other.location.y);
+        stroke(255);
+      }
+
       // If the distance is greater than 0 and less than an arbitrary amount (0 when you are yourself)
       if ((d > 0) && (d < desiredseparation)) {
         // Calculate vector pointing away from neighbor
@@ -144,20 +169,13 @@ class Boid {
         diff.normalize();
         diff.div(d);        // Weight by distance
         steer.add(diff);
-        count++;            // Keep track of how many
 
         // if the boid is a gangster
-        if (id == 1) {
-          if (other.id == 0) {
-            // consider the attackable target
-            attackableCount++;
-          } else if (other.id == 1) {
-            // see if any homies are nearby
-            gangMembersCount++;
-          }
-        }
+        count++;            // Keep track of how many
       }
     }
+
+    println(confidence);
 
     // Average -- divide by how many
     if (count > 0) {
