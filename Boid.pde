@@ -37,6 +37,11 @@ class Boid {
       r = 4.0;
       maxspeed = 3;
       maxforce = 0.10;
+    } else if (id == 2) {
+      // dead Boid
+      r = 1.0;
+      maxspeed = 1;
+      maxforce = 0;
     }
   }
 
@@ -114,12 +119,20 @@ class Boid {
       endShape();
       popMatrix();
     } else if (id == 1) {
-      if (confidence  > 1) {
+      // render the gangster confident red
+      if (confidence > 1) {
         fill(255, 0, 0, 200);
       } else {
         fill(200, 0, 0, 50);
       }
       ellipse(location.x, location.y, 10, 10);
+    } else if (id == 2) {
+      // color dead boids black
+      fill(0, 200);
+      stroke(50);
+      ellipse(location.x, location.y, 5, 5);
+      fill(200, 100);
+      stroke(255);
     }
   }
 
@@ -167,9 +180,11 @@ class Boid {
         stroke(255, 255, 0, 60);
 
         // Make sure they Holla when they at da same block
-        if (abs(location.x - other.location.x) < hollaDistance * confidence &&
-        abs(location.y - other.location.y) < hollaDistance * confidence) {
-          line(location.x, location.y, other.location.x, other.location.y);
+        if (other.id == 1) {
+          if (abs(location.x - other.location.x) < hollaDistance * confidence &&
+          abs(location.y - other.location.y) < hollaDistance * confidence) {
+            line(location.x, location.y, other.location.x, other.location.y);
+          }
         }
         stroke(255);
       }
@@ -187,7 +202,17 @@ class Boid {
       }
     }
 
-    println(confidence);
+    // formula for figuring out when to kill someone
+    if (attackableCount > confidence) {
+      int ran = (int(random(20)));
+      // kill it
+      id = 2;
+
+      // or it has a 5% chance to become part of the gang
+      if (ran == 5) {
+        id = 1;
+      }
+    }
 
     // Average -- divide by how many
     if (count > 0) {
