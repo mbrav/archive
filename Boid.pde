@@ -9,7 +9,10 @@ class Boid {
   float maxforce;    // Maximum steering force
   float maxspeed;    // Maximum speed
 
-  Boid(float x, float y) {
+  int id; // id's for diffirent types of flocks
+
+  Boid(float x, float y, int _id) {
+    id = _id;
     acceleration = new PVector(0, 0);
 
     // This is a new PVector method not yet implemented in JS
@@ -20,9 +23,17 @@ class Boid {
     velocity = new PVector(cos(angle), sin(angle));
 
     location = new PVector(x, y);
-    r = 2.0;
-    maxspeed = 2;
-    maxforce = 0.03;
+
+    // define the various id's in the sketch
+    if (id == 0) {
+      r = 2.0;
+      maxspeed = 2;
+      maxforce = 0.03;
+    } else if (id == 1) {
+      r = 3.0;
+      maxspeed = 1;
+      maxforce = 0.3;
+    }
   }
 
   void run(ArrayList<Boid> boids) {
@@ -86,17 +97,22 @@ class Boid {
     float theta = velocity.heading2D() + radians(90);
     // heading2D() above is now heading() but leaving old syntax until Processing.js catches up
 
-    fill(200, 100);
-    stroke(255);
-    pushMatrix();
-    translate(location.x, location.y);
-    rotate(theta);
-    beginShape(TRIANGLES);
-    vertex(0, -r*2);
-    vertex(-r, r*2);
-    vertex(r, r*2);
-    endShape();
-    popMatrix();
+    if (id == 0) {
+      fill(200, 100);
+      stroke(255);
+      pushMatrix();
+      translate(location.x, location.y);
+      rotate(theta);
+      beginShape(TRIANGLES);
+      vertex(0, -r*2);
+      vertex(-r, r*2);
+      vertex(r, r*2);
+      endShape();
+      popMatrix();
+    } else if (id == 1) {
+      fill(200, 0, 0, 100);
+      ellipse(location.x, location.y, 10, 10);
+    }
   }
 
   // Wraparound
