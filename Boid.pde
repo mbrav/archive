@@ -10,6 +10,7 @@ class Boid {
   float maxspeed;    // Maximum speed
 
   int id; // id's for diffirent types of flocks
+  float health = 100;
 
   Boid(float x, float y, int _id) {
     id = _id;
@@ -24,15 +25,17 @@ class Boid {
 
     location = new PVector(x, y);
 
-    // define the various id's in the sketch
+    // define the various Boid id's in the sketch
     if (id == 0) {
+      // normal Boid
       r = 2.0;
       maxspeed = 2;
       maxforce = 0.03;
     } else if (id == 1) {
-      r = 3.0;
-      maxspeed = 1;
-      maxforce = 0.3;
+      // gangster Boid
+      r = 4.0;
+      maxspeed = 3;
+      maxforce = 0.10;
     }
   }
 
@@ -129,6 +132,8 @@ class Boid {
     float desiredseparation = 25.0f;
     PVector steer = new PVector(0, 0, 0);
     int count = 0;
+    int attackableCount = 0;
+    int gangMembersCount = 0;
     // For every boid in the system, check if it's too close
     for (Boid other : boids) {
       float d = PVector.dist(location, other.location);
@@ -140,8 +145,20 @@ class Boid {
         diff.div(d);        // Weight by distance
         steer.add(diff);
         count++;            // Keep track of how many
+
+        // if the boid is a gangster
+        if (id == 1) {
+          if (other.id == 0) {
+            // consider the attackable target
+            attackableCount++;
+          } else if (other.id == 1) {
+            // see if any homies are nearby
+            gangMembersCount++;
+          }
+        }
       }
     }
+
     // Average -- divide by how many
     if (count > 0) {
       steer.div((float)count);
