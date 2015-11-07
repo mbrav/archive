@@ -139,26 +139,38 @@ class Boid {
     int count = 0;
     int attackableCount = 0;
     int gangMembersCount = 0;
+    int hollaDistance = 50;
     // For every boid in the system, check if it's too close
     for (Boid other : boids) {
       float d = PVector.dist(location, other.location);
 
       // for gangsters, a farther distance is checked
       if (id == 1 && (d > 0) && (d < desiredseparation * 3)) {
-        if (other.id == 0) {
-          // consider the attackable target
-          attackableCount++;
-        } else if (other.id == 1) {
+        if (other.id == 1) {
           // see if any homies are nearby
           gangMembersCount++;
         }
       }
 
+      // for normal boids, set how likely its going to get jumped
+      if (id == 0 && (d > 0) && (d < desiredseparation * 3)) {
+        if (other.id == 1) {
+          // see if any homies are nearby
+          attackableCount++;
+        }
+      }
+
       confidence = gangMembersCount;
 
-      if (confidence > 1) {
-        stroke(255, 0, 0, 80);
-        line(location.x, location.y, other.location.x, other.location.y);
+      // "Holla at them homies"
+      if (confidence > 2) {
+        stroke(255, 255, 0, 60);
+
+        // Make sure they Holla when they at da same block
+        if (abs(location.x - other.location.x) < hollaDistance * confidence &&
+        abs(location.y - other.location.y) < hollaDistance * confidence) {
+          line(location.x, location.y, other.location.x, other.location.y);
+        }
         stroke(255);
       }
 
