@@ -8,7 +8,10 @@ class Boid {
   float r;
   float maxforce;    // Maximum steering force
   float maxspeed;    // Maximum speed
-
+  
+  // ID 0 = Normal Boid
+  // ID 1 = Gangser Boid
+  // ID 2 = Dead Boid
   int id; // id's for diffirent types of flocks
   float health = 100;
   float confidence = 1;
