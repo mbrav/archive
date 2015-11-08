@@ -8,7 +8,6 @@ class Boid {
   float r;
   float maxforce;    // Maximum steering force
   float maxspeed;    // Maximum speed
-  
   // ID 0 = Normal Boid
   // ID 1 = Gangser Boid
   // ID 2 = Dead Boid
@@ -161,7 +160,7 @@ class Boid {
       float d = PVector.dist(location, other.location);
 
       // for gangsters, a farther distance is checked
-      if (id == 1 && (d > 0) && (d < desiredseparation * 3)) {
+      if (id == 1 && (d > 0) && (d < desiredseparation * 2)) {
         if (other.id == 1) {
           // see if any homies are nearby
           gangMembersCount++;
