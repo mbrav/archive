@@ -26,6 +26,14 @@ class Cloud {
   }
 
   void display() {
+
+    if (pos.x > width) {
+      vel.x = -vel.x;
+    } else
+    if (pos.x < 0) {
+      vel.x = -vel.x;
+    }
+
     pos.x += vel.x;
     pos.y += vel.y;
 
