@@ -9,7 +9,7 @@ Cloud cloud2;
 
 void setup() {
   minim = new Minim(this);
-  player = minim.loadFile("soundtrack.wav", 2048);
+  player = minim.loadFile("soundtrack.mp3", 2048);
   player.play();
 
   size(640, 480);
