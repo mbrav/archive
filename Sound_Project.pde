@@ -32,6 +32,8 @@ import ddf.minim.ugens.*;
 
 Minim minim;
 AudioSample sample;
+AudioSample lead;
+AudioSample bridge;
 AudioOutput out;
 
 Sampler     kick;
@@ -54,7 +56,7 @@ float recordLevel;
 boolean visualEvent;
 boolean toggle;
 
-boolean showMachine = false;
+boolean showMachine = true;
 
 float x, y;
 
@@ -91,8 +93,12 @@ void setup()
   out.playNote( 0, 0.25f, new Tick() );
 
   sample = minim.loadSample("sample.mp3", 512);
+  lead = minim.loadSample("lead.mp3", 512);
+  bridge = minim.loadSample("bridge.mp3", 512);
 
-  if ( sample == null ) println("Didn't get snare!");
+  if ( sample == null ) println("Didn't get sample!");
+  if ( lead == null ) println("Didn't get lead!");
+  if ( bridge == null ) println("Didn't get bridge!");
 
   for (int i = 0; i < objects.length; i++) {
     objects[i] = new Bodies();
@@ -102,8 +108,12 @@ void setup()
 void draw()
 {
   background(0);
-  stroke(255);
   noStroke();
+  fill(255);
+  text("Press 'S', and 'D' to toggle samples", 10, 20);
+  text("Press the red squares to use the drum machine", 10, 40);
+  text("Use your mouse to interact with particels", 10, 60);
+
 
   for (int i = 0; i < objects.length; i++) {
     objects[i].CollisionCheck();
@@ -191,7 +201,10 @@ void draw()
 
 void keyPressed()
 {
+  if ( key == 'a' ) lead.trigger();
   if ( key == 's' ) sample.trigger();
+  if ( key == 'd' ) bridge.trigger();
+  if ( key == 'c' ) showMachine = !showMachine;
 }
 
 void mousePressed()
