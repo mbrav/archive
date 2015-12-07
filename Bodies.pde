@@ -8,7 +8,7 @@ class Bodies {
   int colorValue;
   boolean blasted = false;
 
-  float threshold = .01;
+  // float threshold = .01;
 
   Bodies() {
 

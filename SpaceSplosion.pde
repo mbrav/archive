@@ -16,7 +16,6 @@ void setup() {
   moon.Moon();
 }
 
-
 void draw() {
   background(0);
   for (int i = 0; i < objects.length; i++) {
