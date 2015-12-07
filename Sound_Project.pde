@@ -56,7 +56,7 @@ float recordLevel;
 boolean visualEvent;
 boolean toggle;
 
-boolean showMachine = true;
+boolean showMachine = false;
 
 float x, y;
 
@@ -170,7 +170,7 @@ void draw()
     stroke(255, 0, 0);
     strokeWeight(3);
     line(14, height - 94, 30, height - 110);
-    line(14, height - 110, 30, height - 94);
+    line(14, height - 110, 30, height - 94); 
 
     noStroke();
 
@@ -221,7 +221,7 @@ void mousePressed()
       for (int i = 0; i < hatRow.length; i++) {
         hatRow[i] = false;
         snrRow[i] = false;
-        kikRow[i] = false;
+        kikRow[i] = false;    
       }
     }
   } else {
