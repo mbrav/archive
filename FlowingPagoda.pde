@@ -7,6 +7,11 @@ PImage bg, bg1, bg2, bg3, bg4, bg5, pagoda;
 Cloud cloud1;
 Cloud cloud2;
 
+int spring = 1;
+int summer = 2;
+int fall = 3;
+int winter= 4;
+
 Particle sakuraLeaf;
 
 void setup() {
@@ -26,7 +31,7 @@ void setup() {
 
   cloud1 = new Cloud(600, 120, -0.2, 1.7);
   cloud2 = new Cloud(0, 200, 0.35, 1.0);
-  sakuraLeaf = new Particle(100, 1);
+  sakuraLeaf = new Particle(400, spring, 0.5);
 }
 
 void draw() {

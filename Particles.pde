@@ -1,6 +1,7 @@
 class Particle {
   float initxPos;
-  float xpos, ypos, yspeed, xspeed;
+  float xpos, ypos, yspeed;
+  float size;
 
   float rot, rotationRate;
 
@@ -8,25 +9,29 @@ class Particle {
 
   int id = 0;
 
-  Particle (float x, int _id) {
+  Particle (float x, int _id, float _size) {
     initxPos = x;
     xpos = x;
-    ypos = - 20;
     id = _id;
-    rot = 0;
+    ypos = - 20;
+    size = _size;
 
     if (id == 1) {
       // sakura
-      rotationRate = 0.005;
-      yspeed = 0.5;
+      rotationRate = random (0.01, 0.003) * size;
+      yspeed = 0.4 * size;
       img1 = loadImage("sakura1.png");
       img2 = loadImage("sakura2.png");
+    }
+
+    if (size != 1.0) {
+      img1.resize(int(img1.width * size), 0);
+      img2.resize(int(img2.width * size), 0);
     }
   }
 
   void display () {
     ypos = ypos + yspeed;
-    xpos = xpos + xspeed;
 
 
     if (ypos > height) {
@@ -34,15 +39,13 @@ class Particle {
       ypos = -20;
     }
     if (ypos < height-20) {
-      if (rot > PI/4 || rot < 0) {
+      if (rot > PI/2 || rot < 0) {
         rotationRate = -rotationRate;
       }
       rot += rotationRate;
     }
 
-    pushMatrix();
     rotate(rot);
     image(img1, xpos, ypos);
-    popMatrix();
   }
 }
