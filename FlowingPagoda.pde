@@ -26,7 +26,7 @@ void setup() {
 
   cloud1 = new Cloud(600, 120, -0.2, 1.7);
   cloud2 = new Cloud(0, 200, 0.35, 1.0);
-  sakuraLeaf = new Particle(100, 0, 1);
+  sakuraLeaf = new Particle(100, 1);
 }
 
 void draw() {

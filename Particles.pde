@@ -1,5 +1,5 @@
 class Particle {
-  float initxPos, inityPos;
+  float initxPos;
   float xpos, ypos, yspeed, xspeed;
 
   float rot, rotationRate;
@@ -8,11 +8,10 @@ class Particle {
 
   int id = 0;
 
-  Particle (float x, float y, int _id) {
+  Particle (float x, int _id) {
     initxPos = x;
-    inityPos = y;
     xpos = x;
-    ypos = y;
+    ypos = - 20;
     id = _id;
     rot = 0;
 
@@ -31,8 +30,8 @@ class Particle {
 
 
     if (ypos > height) {
-      initxPos = 0;
-      inityPos = 0;
+      // above the screen
+      ypos = -20;
     }
     if (ypos < height-20) {
       if (rot > PI/4 || rot < 0) {
@@ -42,7 +41,6 @@ class Particle {
     }
 
     pushMatrix();
-    translate(xpos, ypos);
     rotate(rot);
     image(img1, xpos, ypos);
     popMatrix();
