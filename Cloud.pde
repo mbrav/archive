@@ -4,9 +4,7 @@ class Cloud {
   PVector vel;
   float size;
 
-  PImage cloud1;
-  PImage cloud2;
-  PImage cloud3;
+  PImage cloud1, cloud2, cloud3;
 
   Cloud(float _x, float _y, float _speed, float _size) {
 

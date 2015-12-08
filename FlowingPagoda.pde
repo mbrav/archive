@@ -7,6 +7,8 @@ PImage bg, bg1, bg2, bg3, bg4, bg5, pagoda;
 Cloud cloud1;
 Cloud cloud2;
 
+Particle sakuraLeaf;
+
 void setup() {
   minim = new Minim(this);
   player = minim.loadFile("soundtrack.mp3", 2048);
@@ -24,6 +26,7 @@ void setup() {
 
   cloud1 = new Cloud(600, 120, -0.2, 1.7);
   cloud2 = new Cloud(0, 200, 0.35, 1.0);
+  sakuraLeaf = new Particle(100, 0, 1);
 }
 
 void draw() {
@@ -39,6 +42,7 @@ void draw() {
   image(bg4, 0, 0);
   image(bg5, 0, 0);
   image(pagoda, 240, 0);
+  sakuraLeaf.display();
 
 }
 
