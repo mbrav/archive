@@ -7,13 +7,15 @@ class Particle {
 
   PImage img1, img2;
 
-  int id = 0;
+  int id;
+  int imageId;
 
-  Particle (float x, int _id, float _size) {
-    initxPos = x;
-    xpos = x;
+  Particle (int _id, float _size) {
+    xpos = random(0, width);
+    ypos = random(0, height);
+    imageId = int(random(1,3));
+    initxPos = xpos;
     id = _id;
-    ypos = - 20;
     size = _size;
 
     if (id == 1) {
@@ -52,7 +54,12 @@ class Particle {
     pushMatrix();
     translate(xpos, ypos);
     rotate(rot);
-    image(img1, 0, 0);
+    if (imageId == 1) {
+      image(img1, 0, 0);
+    } else
+    if (imageId == 2) {
+      image(img2, 0, 0);
+    }
     popMatrix();
 
   }

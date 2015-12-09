@@ -33,7 +33,7 @@ void setup() {
   cloud2 = new Cloud(0, 200, 0.35, 1.0);
 
   for (int i = 0; i < particels.length; i++) {
-    particels[i] = new Particle(random(0, width), 1, random(0.3, 0.6));
+    particels[i] = new Particle(1, random(0.3, 0.6));
   }
 
 }
