@@ -12,6 +12,8 @@ int summer = 2;
 int fall = 3;
 int winter= 4;
 
+Particle[] particels = new Particle[50];
+
 Particle sakuraLeaf;
 
 void setup() {
@@ -31,6 +33,11 @@ void setup() {
 
   cloud1 = new Cloud(600, 120, -0.2, 1.7);
   cloud2 = new Cloud(0, 200, 0.35, 1.0);
+
+  for (int i = 0; i < particels.length; i++) {
+    particels[i] = new Particle(random(0, width), 1, random(1, 0.25));
+  }
+
   sakuraLeaf = new Particle(400, spring, 0.5);
 }
 
@@ -47,6 +54,12 @@ void draw() {
   image(bg4, 0, 0);
   image(bg5, 0, 0);
   image(pagoda, 240, 0);
+
+  // for (int i = 0; i < particels.length; i++) {
+  //   particels[i].display();
+  // }
+
+  sakuraLeaf.update();
   sakuraLeaf.display();
 
 }

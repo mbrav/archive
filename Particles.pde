@@ -30,7 +30,7 @@ class Particle {
     }
   }
 
-  void display () {
+  void update() {
     ypos = ypos + yspeed;
 
 
@@ -44,8 +44,15 @@ class Particle {
       }
       rot += rotationRate;
     }
+  }
 
+  void display () {
+
+    pushMatrix();
+    translate(xpos, ypos);
     rotate(rot);
-    image(img1, xpos, ypos);
+    image(img1, 0, 0);
+    popMatrix();
+
   }
 }
