@@ -18,8 +18,9 @@ class Particle {
 
     if (id == 1) {
       // sakura
-      rotationRate = random (0.01, 0.003) * size;
-      yspeed = 0.4 * size;
+      rotationRate = random (0.01, 0.005) * (1/size);
+      rot = random(0, PI/4);
+      yspeed = random(0.4, 0.2) * size;
       img1 = loadImage("sakura1.png");
       img2 = loadImage("sakura2.png");
     }
@@ -39,7 +40,7 @@ class Particle {
       ypos = -20;
     }
     if (ypos < height-20) {
-      if (rot > PI/2 || rot < 0) {
+      if (rot > PI/4 || rot < 0) {
         rotationRate = -rotationRate;
       }
       rot += rotationRate;
