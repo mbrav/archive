@@ -12,12 +12,16 @@ int summer = 2;
 int fall = 3;
 int winter= 4;
 
+int seasonCount;
+boolean nextSeason;
+int seasonDuration = 3000; // milliseconds
+
 Particle[] particels = new Particle[100];
 
 void setup() {
   minim = new Minim(this);
   player = minim.loadFile("soundtrack.mp3", 2048);
-  // player.play();
+  player.play();
 
   size(640, 480);
   pixelDensity(1);
@@ -40,7 +44,7 @@ void setup() {
 
 void draw() {
   background(bg);
-  // frameRate(60);
+  frameRate(60);
   stroke(255);
 
   image(bg1, 0, 0);
@@ -52,11 +56,20 @@ void draw() {
   image(bg5, 0, 0);
   image(pagoda, 240, 0);
 
+  if (millis() > seasonCount * seasonDuration) {
+    seasonCount++;
+    nextSeason = true;
+  }
+
   for (int i = 0; i < particels.length; i++) {
+    if (nextSeason) {
+      particels[i].changeIdTo = (seasonCount % 3);
+    }
     particels[i].update();
     particels[i].display();
   }
-
+  nextSeason = false;
+  println(seasonCount % 2);
 }
 
 void stop() {
