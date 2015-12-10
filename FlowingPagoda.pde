@@ -3,13 +3,14 @@ import ddf.minim.*;
 AudioPlayer player;
 Minim minim;//audio context
 
-PImage bg, bg1, bg2, bg3, bg4, bg5, pagoda;
+PImage bg, bg1, bg2, bg3, bg4, bg5, pagoda, pagodaBot, pagodaTop;
 Cloud cloud1;
 Cloud cloud2;
 
 int seasonCount;
 boolean nextSeason;
-int seasonDuration = 3000; // in milliseconds
+int seasonDuration = 10000; // in milliseconds
+int year;
 
 Particle[] particels = new Particle[100];
 
@@ -27,6 +28,8 @@ void setup() {
   bg4 = loadImage("bg4.png");
   bg5 = loadImage("bg5.png");
   pagoda = loadImage("pagoda.png");
+  pagodaBot = loadImage("pagodaBottom.png");
+  pagodaTop = loadImage("pagodaTop.png");
 
   cloud1 = new Cloud(600, 120, -0.2, 1.7);
   cloud2 = new Cloud(0, 200, 0.35, 1.0);
@@ -49,7 +52,18 @@ void draw() {
   cloud2.display();
   image(bg4, 0, 0);
   image(bg5, 0, 0);
-  image(pagoda, 240, 0);
+
+  year = seasonCount/2;
+
+  for (int i = constrain(year, 1, 5); i > 0; i--) {
+    image(pagodaBot, 240, 349 - (constrain(i - 1, 1, 5) * 49));
+  }
+
+  if (year > 1) {
+    image(pagodaTop, 240, 349 - (constrain(year, 1, 5) * 49));
+  }
+
+  // image(pagoda, 240, 0);
 
   if (millis() > seasonCount * seasonDuration) {
     seasonCount++;
@@ -64,7 +78,7 @@ void draw() {
     particels[i].display();
   }
   nextSeason = false;
-  println(seasonCount % 2);
+  println(year);
 }
 
 void stop() {
