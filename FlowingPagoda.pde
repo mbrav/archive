@@ -7,14 +7,9 @@ PImage bg, bg1, bg2, bg3, bg4, bg5, pagoda;
 Cloud cloud1;
 Cloud cloud2;
 
-int spring = 1;
-int summer = 2;
-int fall = 3;
-int winter= 4;
-
 int seasonCount;
 boolean nextSeason;
-int seasonDuration = 3000; // milliseconds
+int seasonDuration = 3000; // in milliseconds
 
 Particle[] particels = new Particle[100];
 
@@ -63,7 +58,7 @@ void draw() {
 
   for (int i = 0; i < particels.length; i++) {
     if (nextSeason) {
-      particels[i].changeIdTo = (seasonCount % 3);
+      particels[i].changeIdTo = (seasonCount % 2) + 1;
     }
     particels[i].update();
     particels[i].display();
