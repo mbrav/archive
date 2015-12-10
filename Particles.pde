@@ -47,8 +47,12 @@ class Particle {
     }
 
     if (size != 1.0) {
-      img1.resize(int(img1.width * size), 0);
-      img2.resize(int(img2.width * size), 0);
+      if (imageId == 1) {
+        img1.resize(int(img1.width * size), 0);
+      } else
+      if (imageId == 2) {
+        img2.resize(int(img2.width * size), 0);
+      }
     }
   }
 
