@@ -53,6 +53,14 @@ void draw() {
   image(bg4, 0, 0);
   image(bg5, 0, 0);
 
+  if (seasonCount % 4 == 3) {
+    pagodaBot = loadImage("pagodaBottomSnow.png");
+    pagodaTop = loadImage("pagodaTopSnow.png");
+  } else {
+    pagodaBot = loadImage("pagodaBottom.png");
+    pagodaTop = loadImage("pagodaTop.png");
+  }
+
   year = seasonCount/2;
 
   for (int i = constrain(year, 1, 5); i > 0; i--) {
