@@ -25,6 +25,13 @@ class Particle {
       yspeed = random(0.4, 0.2) * size;
       img1 = loadImage("sakura1.png");
       img2 = loadImage("sakura2.png");
+    } else if (id == 2) {
+      // leafs
+      rotationRate = random (0.01, 0.005) * (1/size);
+      rot = random(0, PI/4);
+      yspeed = random(0.4, 0.2) * size;
+      img1 = loadImage("leaf1.png");
+      img2 = loadImage("leaf2.png");
     }
 
     if (size != 1.0) {
