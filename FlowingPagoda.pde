@@ -81,6 +81,7 @@ void draw() {
   for (int i = 0; i < particels.length; i++) {
     if (nextSeason) {
       particels[i].changeIdTo = (seasonCount % 2) + 1;
+      particels[i].seasonChange = true;
     }
     particels[i].update();
     particels[i].display();

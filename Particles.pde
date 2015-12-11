@@ -10,6 +10,8 @@ class Particle {
   int seasonId;
   int imageId;
   int changeIdTo;
+  boolean seasonChange;
+  boolean particleReset;
 
   Particle (int _id, float _size) {
     xpos = random(0, width);
@@ -44,6 +46,7 @@ class Particle {
     if (ypos > height) {
       // above the screen
       ypos = -20;
+      particleReset = true;
     }
     if (ypos < height-20) {
       if (rot > PI/4 || rot < 0) {
@@ -54,14 +57,22 @@ class Particle {
   }
 
   void display () {
-    if (changeIdTo == 1) {
-      setSpring();
-      resizeImage();
-      changeIdTo = 0;
-    } else if (changeIdTo == 2) {
-      setSummer();
-      resizeImage();
-      changeIdTo = 0;
+    if (changeIdTo == 1 && seasonChange == true) {
+      if (particleReset) {
+        setSpring();
+        resizeImage();
+        changeIdTo = 0;
+        seasonChange = false;
+        particleReset = false;
+      }
+    } else if (changeIdTo == 2 && seasonChange == true) {
+      if (particleReset) {
+        setSummer();
+        resizeImage();
+        changeIdTo = 0;
+        seasonChange = false;
+        particleReset = false;
+      }
     }
 
     pushMatrix();
@@ -105,6 +116,6 @@ class Particle {
       if (imageId == 2) {
         img2.resize(int(img2.width * size), 0);
       }
-    } 
+    }
   }
 }
