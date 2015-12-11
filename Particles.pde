@@ -23,11 +23,13 @@ class Particle {
     changeIdTo = 0;
 
     if (seasonId == 1) {
+      // sakura leafs
       rotationRate = random (0.01, 0.005) * (1/size);
       rot = random(0, PI/4);
       yspeed = random(0.4, 0.2) * size;
       setSpring();
     } else if (seasonId == 2) {
+      // summer sakura leafs
       rotationRate = random (0.01, 0.005) * (1/size);
       rot = random(0, PI/4);
       yspeed = random(0.4, 0.2) * size;
@@ -35,20 +37,23 @@ class Particle {
     }
 
     if (size != 1.0) {
+      // risize image if it is not set to default
       resizeImage();
     }
   }
 
   void update() {
+    // update the position
     ypos = ypos + yspeed;
 
 
     if (ypos > height) {
-      // above the screen
+      // set it above the screen
       ypos = -20;
       particleReset = true;
     }
     if (ypos < height-20) {
+      // rotate the particle 45 degrees back and forth
       if (rot > PI/4 || rot < 0) {
         rotationRate = -rotationRate;
       }
