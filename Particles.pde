@@ -22,17 +22,11 @@ class Particle {
     size = _size;
     changeIdTo = 0;
 
-    if (seasonId == 1) {
+    if (_id == 1) {
       // sakura leafs
-      rotationRate = random (0.01, 0.005) * (1/size);
-      rot = random(0, PI/4);
-      yspeed = random(0.4, 0.2) * size;
       setSpring();
-    } else if (seasonId == 2) {
+    } else if (_id == 2) {
       // summer sakura leafs
-      rotationRate = random (0.01, 0.005) * (1/size);
-      rot = random(0, PI/4);
-      yspeed = random(0.4, 0.2) * size;
       setSummer();
     }
 
@@ -94,6 +88,9 @@ class Particle {
   }
 
   void setSpring() {
+    rotationRate = random (0.01, 0.004) * (1/size);
+    rot = random(0, PI/4);
+    yspeed = random(0.4, 0.1) * size;
     // load image acording to the particles seasonId
     if (imageId == 1) {
       img1 = loadImage("sakura1.png");
@@ -104,6 +101,9 @@ class Particle {
   }
 
   void setSummer() {
+    rotationRate = random (00.01, 0.004) * (1/size);
+    rot = random(0, PI/4);
+    yspeed = random(0.5, 0.3) * size;
     // load image acording to the particles seasonId
     if (imageId == 1) {
       img1 = loadImage("leaf1.png");

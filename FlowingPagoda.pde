@@ -101,7 +101,6 @@ void draw() {
   }
 
   nextSeason = false;
-  println(year);
 }
 
 void stop() {
