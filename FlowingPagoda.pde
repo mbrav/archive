@@ -14,7 +14,7 @@ Cloud cloud2;
 
 int seasonCount;
 boolean nextSeason;
-int seasonDuration = 15000; // in milliseconds
+int seasonDuration = 10000; // in milliseconds
 int year;
 
 Particle[] particels = new Particle[120];
@@ -23,7 +23,7 @@ Plant[] mamboos = new Plant[50];
 void setup() {
   minim = new Minim(this);
   player = minim.loadFile("soundtrack.mp3", 2048);
-  player.play();
+  // player.play();
 
   size(640, 480);
   pixelDensity(1);
@@ -64,7 +64,6 @@ void draw() {
 
   // load the images only when there is a season change
   if (nextSeason == true) {
-    println("sdfsadfas");
     if (seasonCount % 4 == 0) {
       // spring
       bg1 = loadImage("bg1Spring.png");
@@ -74,7 +73,6 @@ void draw() {
       bg5 = loadImage("bg5Spring.png");
     } else
     if (seasonCount % 4 == 1) {
-      println("sdfsadfas");
       // summer
       bg1 = loadImage("bg1.png");
       bg2 = loadImage("bg2.png");
@@ -88,7 +86,7 @@ void draw() {
       bg2 = loadImage("bg2Autumn.png");
       bg3 = loadImage("bg3Autumn.png");
       bg4 = loadImage("bg4Autumn.png");
-      bg5 = loadImage("bg5Autumn.png");
+      bg5 = loadImage("bg5Spring.png");
     } else
     if (seasonCount % 4 == 3) {
       // winter
@@ -125,7 +123,7 @@ void draw() {
     pagodaTop = loadImage("pagodaTop.png");
   }
 
-  year = seasonCount/2;
+  year = seasonCount/4;
 
   for (int i = constrain(year, 1, 5); i > 0; i--) {
     // draw a pagoda with a maximum height of 5
@@ -150,6 +148,7 @@ void draw() {
   }
 
   nextSeason = false;
+  println(seasonCount);
 
 }
 
