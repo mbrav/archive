@@ -17,13 +17,13 @@ boolean nextSeason;
 int seasonDuration = 30000; // in milliseconds
 int year;
 
-Particle[] particels = new Particle[100];
+Particle[] particels = new Particle[150];
 Plant[] mamboos = new Plant[50];
 
 void setup() {
   minim = new Minim(this);
   player = minim.loadFile("soundtrack.mp3", 2048);
-  player.play();
+  // player.play();
 
   size(640, 480);
   pixelDensity(1);
@@ -47,7 +47,7 @@ void setup() {
 
   // set all plants as mamboos
   for (int i = 0; i < mamboos.length; i++) {
-    mamboos[i] = new Plant(1, int(random(0, width)), int(random(300, 420)), 1.0, int(random(10000, 20000)));
+    mamboos[i] = new Plant(1, int(random(0, width)), int(random(300, 420)), 0.75, int(random(10000, 20000)));
   }
 }
 
@@ -104,7 +104,7 @@ void draw() {
     // check if it is time for a season change
     if (nextSeason) {
       //update the to next season
-      particels[i].changeIdTo = (seasonCount % 2) + 1;
+      particels[i].changeIdTo = (seasonCount % 4) + 1;
       particels[i].seasonChange = true;
     }
     particels[i].update();
