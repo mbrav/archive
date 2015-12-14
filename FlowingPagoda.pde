@@ -46,11 +46,8 @@ void setup() {
   }
 
   // set all plants as mamboos
-  for (int i = 0; i < mamboos.length/2; i++) {
-    // left of the Pagoda
-    mamboos[i] = new Plant(1, int(random(0, 240)), int(random(300, 420)), 1.0, int(random(10000, 20000)));
-    // right of the Pagoda
-    mamboos[i +  mamboos.length/2] = new Plant(1, int(random(640-240, width)), int(random(300, 420)), 1.0, int(random(10000, 20000)));
+  for (int i = 0; i < mamboos.length; i++) {
+    mamboos[i] = new Plant(1, int(random(0, width)), int(random(300, 420)), 1.0, int(random(10000, 20000)));
   }
 }
 
@@ -66,6 +63,12 @@ void draw() {
   cloud2.display();
   image(bg4, 0, 0);
   image(bg5, 0, 0);
+
+
+  for (int i = 0; i < mamboos.length; i++) {
+    mamboos[i].update();
+    mamboos[i].display();
+  }
 
   // draw the pagoda diffirently based on season
   if (seasonCount % 4 == 3) {
@@ -110,10 +113,6 @@ void draw() {
 
   nextSeason = false;
 
-  for (int i = 0; i < mamboos.length; i++) {
-    mamboos[i].update();
-    mamboos[i].display();
-  }
 }
 
 void stop() {
