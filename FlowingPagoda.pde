@@ -14,25 +14,25 @@ Cloud cloud2;
 
 int seasonCount;
 boolean nextSeason;
-int seasonDuration = 30000; // in milliseconds
+int seasonDuration = 15000; // in milliseconds
 int year;
 
-Particle[] particels = new Particle[150];
+Particle[] particels = new Particle[120];
 Plant[] mamboos = new Plant[50];
 
 void setup() {
   minim = new Minim(this);
   player = minim.loadFile("soundtrack.mp3", 2048);
-  // player.play();
+  player.play();
 
   size(640, 480);
   pixelDensity(1);
   bg = loadImage("bg.png");
-  bg1 = loadImage("bg1.png");
-  bg2 = loadImage("bg2.png");
-  bg3 = loadImage("bg3.png");
-  bg4 = loadImage("bg4.png");
-  bg5 = loadImage("bg5.png");
+  bg1 = loadImage("bg1Spring.png");
+  bg2 = loadImage("bg2Spring.png");
+  bg3 = loadImage("bg3Spring.png");
+  bg4 = loadImage("bg4Spring.png");
+  bg5 = loadImage("bg5Spring.png");
 
   pagodaBot = loadImage("pagodaBottom.png");
   pagodaTop = loadImage("pagodaTop.png");
@@ -55,6 +55,50 @@ void draw() {
   background(bg);
   frameRate(60);
   stroke(255);
+
+  // check if it is time for a season change
+  if (millis() > seasonCount * seasonDuration) {
+    seasonCount++;
+    nextSeason = true;
+  }
+
+  // load the images only when there is a season change
+  if (nextSeason == true) {
+    println("sdfsadfas");
+    if (seasonCount % 4 == 0) {
+      // spring
+      bg1 = loadImage("bg1Spring.png");
+      bg2 = loadImage("bg2Spring.png");
+      bg3 = loadImage("bg3Spring.png");
+      bg4 = loadImage("bg4Spring.png");
+      bg5 = loadImage("bg5Spring.png");
+    } else
+    if (seasonCount % 4 == 1) {
+      println("sdfsadfas");
+      // summer
+      bg1 = loadImage("bg1.png");
+      bg2 = loadImage("bg2.png");
+      bg3 = loadImage("bg3.png");
+      bg4 = loadImage("bg4.png");
+      bg5 = loadImage("bg5.png");
+    } else
+    if (seasonCount % 4 == 2) {
+      // fall
+      bg1 = loadImage("bg1Autumn.png");
+      bg2 = loadImage("bg2Autumn.png");
+      bg3 = loadImage("bg3Autumn.png");
+      bg4 = loadImage("bg4Autumn.png");
+      bg5 = loadImage("bg5Autumn.png");
+    } else
+    if (seasonCount % 4 == 3) {
+      // winter
+      bg1 = loadImage("bg1Winter.png");
+      bg2 = loadImage("bg2Winter.png");
+      bg3 = loadImage("bg3Winter.png");
+      bg4 = loadImage("bg4Winter.png");
+      bg5 = loadImage("bg5Winter.png");
+    }
+  }
 
   image(bg1, 0, 0);
   cloud1.display();
@@ -91,12 +135,6 @@ void draw() {
   if (year > 1) {
     // draw a roof on top of the pagoda with a maximum height of 5
     image(pagodaTop, 240, 349 - (constrain(year, 1, 5) * 49));
-  }
-
-  // check if it is time for a season change
-  if (millis() > seasonCount * seasonDuration) {
-    seasonCount++;
-    nextSeason = true;
   }
 
   // irriterate through all of the particels

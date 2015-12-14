@@ -60,9 +60,28 @@ class Particle {
         seasonChange = false;
         particleReset = false;
       }
-    } else if (changeIdTo == 2 && seasonChange == true) {
+    } else
+    if (changeIdTo == 2 && seasonChange == true) {
       if (particleReset) {
         setSummer();
+        resizeImage();
+        changeIdTo = 0;
+        seasonChange = false;
+        particleReset = false;
+      }
+    } else
+    if (changeIdTo == 3 && seasonChange == true) {
+      if (particleReset) {
+        setWinter();
+        resizeImage();
+        changeIdTo = 0;
+        seasonChange = false;
+        particleReset = false;
+      }
+    } else
+    if (changeIdTo == 4 && seasonChange == true) {
+      if (particleReset) {
+        setWinter();
         resizeImage();
         changeIdTo = 0;
         seasonChange = false;
@@ -86,7 +105,7 @@ class Particle {
   void setSpring() {
     rotationRate = random (0.01, 0.004) * (1/size);
     rot = random(0, PI/4);
-    yspeed = random(0.4, 0.1) * size;
+    yspeed = random(0.5, 0.9) * size;
     size = random(0.3, 0.6);
     // load image acording to the particles seasonId
     if (imageId == 1) {
@@ -100,7 +119,7 @@ class Particle {
   void setSummer() {
     rotationRate = random (00.01, 0.004) * (1/size);
     rot = random(0, PI/4);
-    yspeed = random(0.5, 0.3) * size;
+    yspeed = random(0.8, 1.1) * size;
     size = random(0.4, 0.8);
     // load image acording to the particles seasonId
     if (imageId == 1) {
@@ -108,6 +127,20 @@ class Particle {
     } else
     if (imageId == 2) {
       img2 = loadImage("leaf2.png");
+    }
+  }
+
+  void setWinter() {
+    rotationRate = random (00.01, 0.004) * (1/size);
+    rot = random(0, PI/4);
+    yspeed = random(1.2, 1.9) * size;
+    size = random(0.4, 0.8);
+    // load image acording to the particles seasonId
+    if (imageId == 1) {
+      img1 = loadImage("snowflake1.png");
+    } else
+    if (imageId == 2) {
+      img2 = loadImage("snowflake2.png");
     }
   }
 
