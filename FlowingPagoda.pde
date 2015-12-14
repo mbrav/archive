@@ -14,7 +14,7 @@ Cloud cloud2;
 
 int seasonCount;
 boolean nextSeason;
-int seasonDuration = 10000; // in milliseconds
+int seasonDuration = 20000; // in milliseconds
 int year;
 
 Particle[] particels = new Particle[120];
@@ -23,7 +23,7 @@ Plant[] mamboos = new Plant[50];
 void setup() {
   minim = new Minim(this);
   player = minim.loadFile("soundtrack.mp3", 2048);
-  // player.play();
+  player.play();
 
   size(640, 480);
   pixelDensity(1);
@@ -148,8 +148,6 @@ void draw() {
   }
 
   nextSeason = false;
-  println(seasonCount);
-
 }
 
 void stop() {

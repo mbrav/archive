@@ -106,7 +106,6 @@ class Plant {
     if (stage == 10) {
       stage = 0;
     }
-    println(stage);
   }
 
   void resizeImage() {
