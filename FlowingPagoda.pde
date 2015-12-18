@@ -9,12 +9,15 @@ Minim minim;//audio context
 
 // load all the assets
 PImage bg, bg1, bg2, bg3, bg4, bg5, pagoda, pagodaBot, pagodaTop;
+
+// variables that wil lhold images during transitions
+PImage bgT, bg1T, bg2T, bg3T, bg4T, bg5T;
 Cloud cloud1;
 Cloud cloud2;
 
 int seasonCount;
 boolean nextSeason;
-int seasonDuration = 30000; // in milliseconds
+int seasonDuration = 10000; // in milliseconds
 int year;
 
 Particle[] particels = new Particle[120];
@@ -71,6 +74,13 @@ void draw() {
       bg3 = loadImage("bg3Spring.png");
       bg4 = loadImage("bg4Spring.png");
       bg5 = loadImage("bg5Spring.png");
+
+      // load transition images from the previous season
+      bg1T = loadImage("bg1Winter.png");
+      bg2T = loadImage("bg2Winter.png");
+      bg3T = loadImage("bg3Winter.png");
+      bg4T = loadImage("bg4Winter.png");
+      bg5T = loadImage("bg5Winter.png");
     } else
     if (seasonCount % 4 == 1) {
       // summer
@@ -79,6 +89,13 @@ void draw() {
       bg3 = loadImage("bg3.png");
       bg4 = loadImage("bg4.png");
       bg5 = loadImage("bg5.png");
+
+      // load transition images from the previous season
+      bg1T = loadImage("bg1Spring.png");
+      bg2T = loadImage("bg2Spring.png");
+      bg3T = loadImage("bg3Spring.png");
+      bg4T = loadImage("bg4Spring.png");
+      bg5T = loadImage("bg5Spring.png");
     } else
     if (seasonCount % 4 == 2) {
       // fall
@@ -87,6 +104,13 @@ void draw() {
       bg3 = loadImage("bg3Autumn.png");
       bg4 = loadImage("bg4Autumn.png");
       bg5 = loadImage("bg5Spring.png");
+
+      // load transition images from the previous season
+      bg1T = loadImage("bg1.png");
+      bg2T = loadImage("bg2.png");
+      bg3T = loadImage("bg3.png");
+      bg4T = loadImage("bg4.png");
+      bg5T = loadImage("bg5.png");
     } else
     if (seasonCount % 4 == 3) {
       // winter
@@ -95,16 +119,42 @@ void draw() {
       bg3 = loadImage("bg3Winter.png");
       bg4 = loadImage("bg4Winter.png");
       bg5 = loadImage("bg5Winter.png");
+
+      // load transition images from the previous season
+      bg1T = loadImage("bg1Autumn.png");
+      bg2T = loadImage("bg2Autumn.png");
+      bg3T = loadImage("bg3Autumn.png");
+      bg4T = loadImage("bg4Autumn.png");
+      bg5T = loadImage("bg5Spring.png");
     }
   }
 
+  // allow a full season transition to happen under 1/3 of the seasonDuration (1 month)
+  int opacity = int(map(millis() - (seasonCount-1) * seasonDuration, 0, seasonDuration/3, 0, 255));
+  println(opacity);
+
   image(bg1, 0, 0);
+  tint(255, 255 - opacity);
+  image(bg1T, 0, 0);
+  tint(255, 255);
   cloud1.display();
   image(bg2, 0, 0);
+  tint(255, 255 - opacity);
+  image(bg2T, 0, 0);
+  tint(255, 255);
   image(bg3, 0, 0);
+  tint(255, 255 - opacity);
+  image(bg3T, 0, 0);
   cloud2.display();
+  tint(255, 255);
   image(bg4, 0, 0);
+  tint(255, 255 - opacity);
+  image(bg4T, 0, 0);
+  tint(255, 255);
   image(bg5, 0, 0);
+  tint(255, 255 - opacity);
+  image(bg5T, 0, 0);
+  tint(255, 255);
 
 
   for (int i = 0; i < mamboos.length; i++) {
