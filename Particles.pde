@@ -72,7 +72,7 @@ class Particle {
     } else
     if (changeIdTo == 3 && seasonChange == true) {
       if (particleReset) {
-        setWinter();
+        setAutumn();
         resizeImage();
         changeIdTo = 0;
         seasonChange = false;
@@ -127,6 +127,20 @@ class Particle {
     } else
     if (imageId == 2) {
       img2 = loadImage("leaf2.png");
+    }
+  }
+
+  void setAutumn() {
+    rotationRate = random (00.01, 0.004) * (1/size);
+    rot = random(0, PI/4);
+    yspeed = random(0.8, 1.1) * size;
+    size = random(0.4, 0.8);
+    // load image acording to the particles seasonId
+    if (imageId == 1) {
+      img1 = loadImage("leaf1Autumn.png");
+    } else
+    if (imageId == 2) {
+      img2 = loadImage("leaf2Autumn.png");
     }
   }
 
