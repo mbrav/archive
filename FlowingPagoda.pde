@@ -150,6 +150,7 @@ void draw() {
   image(bg3, 0, 0);
   tint(255, 255 - opacity);
   image(bg3T, 0, 0);
+  tint(255, 255);
   cloud2.display();
   tint(255, 255);
   image(bg4, 0, 0);
@@ -178,7 +179,7 @@ void draw() {
       // set snowey roofs as objects to transition from autumn
       pagodaBotT = loadImage("pagodaBottomSnow.png");
       pagodaTopT = loadImage("pagodaTopSnow.png");
-    } else if (seasonCount % 4 == 2) {
+    } else {
       // set normal roofs as objects to transition from winter
       pagodaBotT = loadImage("pagodaBottom.png");
       pagodaTopT = loadImage("pagodaTop.png");
@@ -202,18 +203,18 @@ void draw() {
 
   for (int i = constrain(year+1, 1, 5); i > 0; i--) {
     // draw a pagoda with a maximum height of 5
+    image(pagodaBot, 240, 349 - (constrain(i, 1, 4) * 49));
     tint(255, 255 - opacity);
-    image(pagodaBot, 240, 349 - (constrain(i, 1, 4) * 49));
+    image(pagodaBotT, 240, 349 - (constrain(i, 1, 4) * 49));
     tint(255, 255);
-    image(pagodaBot, 240, 349 - (constrain(i, 1, 4) * 49));
   }
 
   if (year > 0) {
     // draw a roof on top of the pagoda with a maximum height of 5
+    image(pagodaTop, 240, 349 - (constrain(year+1, 1, 5) * 49) + pagodaAnimation);
     tint(255, 255 - opacity);
     image(pagodaTopT, 240, 349 - (constrain(year+1, 1, 5) * 49) + pagodaAnimation);
     tint(255, 255);
-    image(pagodaTop, 240, 349 - (constrain(year+1, 1, 5) * 49) + pagodaAnimation);
   }
 
   // irriterate through all of the particels
