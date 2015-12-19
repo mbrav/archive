@@ -18,7 +18,7 @@ Cloud cloud2;
 
 int seasonCount;
 boolean nextSeason;
-int seasonDuration = 30000; // in milliseconds
+int seasonDuration = 3000; // in milliseconds
 int year;
 
 Particle[] particels = new Particle[120];
@@ -136,10 +136,8 @@ void draw() {
 
   // allow a full season transition to happen under 1/3 of the seasonDuration (1 month)
   int opacity = int(map(millis() - (seasonCount-1) * seasonDuration, 0, seasonDuration/3, 0, 255));
+  opacity = constrain(opacity, 0, 255);
 
-  if (nextSeason){
-    println(seasonCount);
-  }
   image(bg1, 0, 0);
   tint(255, 255 - opacity);
   image(bg1T, 0, 0);
@@ -191,21 +189,31 @@ void draw() {
   }
 
   year = seasonCount/4;
+    // An animation variable for the pagoda based on the opacity variable
+  int pagodaAnimation = constrain(opacity, 0, 49);
+  pagodaAnimation = int(map(pagodaAnimation, 0, 49, 49, 0));
 
-  for (int i = constrain(year, 1, 5); i > 0; i--) {
+  // do the pagoda animation once a year, not every season
+  if (seasonCount % 4 != 0) {
+    // don't animate
+    pagodaAnimation = 0;
+  }
+  println(year);
+
+  for (int i = constrain(year+1, 1, 5); i > 0; i--) {
     // draw a pagoda with a maximum height of 5
     tint(255, 255 - opacity);
-    image(pagodaBot, 240, 349 - (constrain(i - 1, 1, 4) * 49));
+    image(pagodaBot, 240, 349 - (constrain(i, 1, 4) * 49));
     tint(255, 255);
-    image(pagodaBot, 240, 349 - (constrain(i - 1, 1, 4) * 49));
+    image(pagodaBot, 240, 349 - (constrain(i, 1, 4) * 49));
   }
 
-  if (year > 1) {
+  if (year > 0) {
     // draw a roof on top of the pagoda with a maximum height of 5
     tint(255, 255 - opacity);
-    image(pagodaTopT, 240, 349 - (constrain(year, 1, 5) * 49));
+    image(pagodaTopT, 240, 349 - (constrain(year+1, 1, 5) * 49) + pagodaAnimation);
     tint(255, 255);
-    image(pagodaTop, 240, 349 - (constrain(year, 1, 5) * 49));
+    image(pagodaTop, 240, 349 - (constrain(year+1, 1, 5) * 49) + pagodaAnimation);
   }
 
   // irriterate through all of the particels
