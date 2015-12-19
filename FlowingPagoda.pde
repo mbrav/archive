@@ -8,10 +8,11 @@ AudioPlayer player;
 Minim minim;//audio context
 
 // load all the assets
-PImage bg, bg1, bg2, bg3, bg4, bg5, pagoda, pagodaBot, pagodaTop;
+PImage bg, bg1, bg2, bg3, bg4, bg5, pagodaBot, pagodaTop;
 
 // variables that wil lhold images during transitions
-PImage bgT, bg1T, bg2T, bg3T, bg4T, bg5T;
+PImage bgT, bg1T, bg2T, bg3T, bg4T, bg5T, pagodaBotT, pagodaTopT;
+
 Cloud cloud1;
 Cloud cloud2;
 
@@ -30,13 +31,17 @@ void setup() {
 
   size(640, 480);
   pixelDensity(1);
+
   bg = loadImage("bg.png");
+
+  //start with spring
   bg1 = loadImage("bg1Spring.png");
   bg2 = loadImage("bg2Spring.png");
   bg3 = loadImage("bg3Spring.png");
   bg4 = loadImage("bg4Spring.png");
   bg5 = loadImage("bg5Spring.png");
 
+  // load pagoda parts
   pagodaBot = loadImage("pagodaBottom.png");
   pagodaTop = loadImage("pagodaTop.png");
 
@@ -156,7 +161,7 @@ void draw() {
   image(bg5T, 0, 0);
   tint(255, 255);
 
-
+  // display the bamboos
   for (int i = 0; i < mamboos.length; i++) {
     mamboos[i].update();
     mamboos[i].display();
@@ -168,6 +173,16 @@ void draw() {
     pagodaBot = loadImage("pagodaBottomSnow.png");
     pagodaTop = loadImage("pagodaTopSnow.png");
   } else {
+    //check if it is spring
+    if (seasonCount % 4 == 0) {
+      // set snowey roofs as objects to transition from autumn
+      pagodaBotT = loadImage("pagodaBottomSnow.png");
+      pagodaTopT = loadImage("pagodaTopSnow.png");
+    } else if (seasonCount % 4 == 2) {
+      // set normal roofs as objects to transition from winter
+      pagodaBotT = loadImage("pagodaBottom.png");
+      pagodaTopT = loadImage("pagodaTop.png");
+    }
     // normal pagoda
     pagodaBot = loadImage("pagodaBottom.png");
     pagodaTop = loadImage("pagodaTop.png");
@@ -177,11 +192,17 @@ void draw() {
 
   for (int i = constrain(year, 1, 5); i > 0; i--) {
     // draw a pagoda with a maximum height of 5
+    tint(255, 255 - opacity);
+    image(pagodaBot, 240, 349 - (constrain(i - 1, 1, 4) * 49));
+    tint(255, 255);
     image(pagodaBot, 240, 349 - (constrain(i - 1, 1, 4) * 49));
   }
 
   if (year > 1) {
     // draw a roof on top of the pagoda with a maximum height of 5
+    tint(255, 255 - opacity);
+    image(pagodaTopT, 240, 349 - (constrain(year, 1, 5) * 49));
+    tint(255, 255);
     image(pagodaTop, 240, 349 - (constrain(year, 1, 5) * 49));
   }
 
@@ -189,10 +210,12 @@ void draw() {
   for (int i = 0; i < particels.length; i++) {
     // check if it is time for a season change
     if (nextSeason) {
-      //update the to next season
+      //update to the next season
       particels[i].changeIdTo = (seasonCount % 4) + 1;
       particels[i].seasonChange = true;
     }
+
+    // update and diaplay particles
     particels[i].update();
     particels[i].display();
   }
