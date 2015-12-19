@@ -40,7 +40,9 @@ class Particle {
     if (ypos > height) {
       // set it above the screen
       ypos = -20;
-      particleReset = true;
+      if (seasonChange) {
+        particleReset = true;
+      }
     }
     if (ypos < height-20) {
       // rotate the particle 45 degrees back and forth

@@ -136,8 +136,10 @@ void draw() {
 
   // allow a full season transition to happen under 1/3 of the seasonDuration (1 month)
   int opacity = int(map(millis() - (seasonCount-1) * seasonDuration, 0, seasonDuration/3, 0, 255));
-  println(opacity);
 
+  if (nextSeason){
+    println(seasonCount);
+  }
   image(bg1, 0, 0);
   tint(255, 255 - opacity);
   image(bg1T, 0, 0);
