@@ -18,7 +18,7 @@ Cloud cloud2;
 
 int seasonCount;
 boolean nextSeason;
-int seasonDuration = 10000; // in milliseconds
+int seasonDuration = 30000; // in milliseconds
 int year;
 
 Particle[] particels = new Particle[120];
