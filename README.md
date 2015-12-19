@@ -1,12 +1,13 @@
 # FlowingPagoda
 *A Pagoda that never stops flowing...*
 
-This project was made for one of my classes. It constist of a Pagoda that grows as the seasosn pass. 
+This project was made for one of my classes. It consists of a Pagoda that grows as the season pass.
 
 ### Running It
-1. [Download](https://processing.org/download/) Processing 
-2. Install The Minim Library 
-3. Run the sketch
+1. [Download](https://processing.org/download/) Processing
+2. Install The Minim Library
+3. [Download](https://github.com/mixania/FlowingPagoda/archive/master.zip) The Project
+4. Run the sketch
 
 ### Philosophic Meaning
 
@@ -15,17 +16,17 @@ According to this doctrine, the world and everything that constitutes it relies 
 As the Pagoda flows through the seasons, it is aware that a day will come when it will no longer stand. Its existence will someday become annihilated, but only for a finite time. After its fall, its rebirth process will follow soon after…
 
 ### Functions
-* There are 4 changing seasons 
-* There are 4 diffirent particles that constanly fall
+* There are 4 changing seasons
+* There are 4 different particles that constantly fall
 * Bamboos that have different stages of growth
 * Floating Clouds
 * The Pagoda grows every year
 
-### Planned Aditions 
+### Planned Additions
 * Create a process of decay of the Pagoda
 * Create a Chinese dragon that comes every Chinese New Year
 * Add wind
-* Add rain 
+* Add rain
 
 ### Stages
 ![Spring](http://i.imgur.com/K7SJn0Y.png)
