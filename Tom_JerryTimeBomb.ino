@@ -5,7 +5,9 @@ int count;
 int timeDelay;
 
 int sensorValue = 0;        // value read from the pot
-int outputValue = 0;        // value output to the PWM (analog out)
+int output = 0;        // value output to the PWM (analog out)
+
+
 
 void setup() {                
   pinMode(led, OUTPUT);
@@ -33,7 +35,7 @@ void loop() {
   }
 
   sensorValue = analogRead(pot);
-  outputValue = map(sensorValue, 0, 1023, 5, 200);
+  output = map(sensorValue, 0, 1023, 5, 200);
   
   for (int i = 17; i < 24; i++) { 
     digitalWrite(i, HIGH);   // turn the LED on (HIGH is the voltage level)
