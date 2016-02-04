@@ -110,9 +110,9 @@ void draw()
   background(0);
   noStroke();
   fill(255);
-  text("Press 'S', and 'D' to toggle samples", 10, 20);
-  text("Press the red squares to use the drum machine", 10, 40);
-  text("Use your mouse to interact with particels", 10, 60);
+  text("1. Press 'S', 'A' and 'D' to toggle samples.", 10, 20);
+  text("2. Press the red squares to use the drum machine.", 10, 40);
+  text("3. Use your mouse to interact with particels.", 10, 60);
 
 
   for (int i = 0; i < objects.length; i++) {
@@ -170,7 +170,7 @@ void draw()
     stroke(255, 0, 0);
     strokeWeight(3);
     line(14, height - 94, 30, height - 110);
-    line(14, height - 110, 30, height - 94); 
+    line(14, height - 110, 30, height - 94);
 
     noStroke();
 
@@ -221,7 +221,7 @@ void mousePressed()
       for (int i = 0; i < hatRow.length; i++) {
         hatRow[i] = false;
         snrRow[i] = false;
-        kikRow[i] = false;    
+        kikRow[i] = false;
       }
     }
   } else {
