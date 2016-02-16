@@ -2,7 +2,7 @@
 // Created Feb 16, 2016
 // by Michael Braverman
 
-int pot = 14;
+byte pot = 14;
 int count;
 int timeDelay;
 
@@ -10,14 +10,20 @@ int sensorValue = 0;        // value read from the pot
 int output = 0;        // value output to the PWM (analog out)
 
 // DISPLAY PINS
-int aPin = 13;
-int bPin = 12;
-int cPin = 11;
-int dPin = 10;
-int ePin = 9;
-int fPin = 8;
-int gPin = 7;
+byte aPin = 13;
+byte bPin = 12;
+byte cPin = 11;
+byte dPin = 10;
+byte ePin = 9;
+byte fPin = 8;
+byte gPin = 7;
 
+// SEGMENT CONTROL PINS
+byte seg1 = 6;
+byte seg2 = 5;
+byte seg3 = 3;
+
+boolean state;
 void setup() {
   pinMode(pot, INPUT);
 
@@ -28,6 +34,10 @@ void setup() {
   pinMode(ePin, OUTPUT);
   pinMode(fPin, OUTPUT);
   pinMode(gPin, OUTPUT);
+
+  pinMode(seg1, OUTPUT);
+  pinMode(seg2, OUTPUT);
+  pinMode(seg3, OUTPUT);
 
   Serial.begin(115200);
   while (!Serial) {
@@ -40,7 +50,7 @@ void setup() {
 // the loop routine runs over and over again forever:
 void loop() {
   while (Serial.available() > 0) {
-    int inByte = Serial.parseInt();
+    byte inByte = Serial.parseInt();
     inByte  = constrain(inByte, 0, 255);
     timeDelay = inByte;
   }
@@ -48,17 +58,33 @@ void loop() {
   sensorValue = analogRead(pot);
   output = map(sensorValue, 0, 1023, 5, 200);
 
-  for (int i = 7; i <= 13; i++) {
-    displayDigit(99);
-    displayDigit(i-7);
+  for (byte i = 7; i <= 13; i++) {
+    displayDigit(99, seg3);
+    displayDigit(i-7, seg3);
     delay(timeDelay);
-    displayDigit(99);
+    displayDigit(99, seg3);
   }
 
   Serial.println(timeDelay);
 }
 
-byte displayDigit(byte digit) {
+byte displayDigit(byte digit, byte segment) {
+
+    // clear segments and digits
+    digitalWrite(aPin, LOW);
+    digitalWrite(bPin, LOW);
+    digitalWrite(cPin, LOW);
+    digitalWrite(dPin, LOW);
+    digitalWrite(ePin, LOW);
+    digitalWrite(fPin, LOW);
+    digitalWrite(gPin, LOW);
+    digitalWrite(seg1, HIGH);
+    digitalWrite(seg2, HIGH);
+    digitalWrite(seg3, HIGH);
+
+    // set the current digit
+    digitalWrite(segment, LOW);
+
   switch (digit) {
     case 0:
       digitalWrite(aPin, HIGH);
