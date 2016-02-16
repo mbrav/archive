@@ -9,18 +9,31 @@ int timeDelay;
 int sensorValue = 0;        // value read from the pot
 int output = 0;        // value output to the PWM (analog out)
 
-void setup() {                
+// DISPLAY PINS
+int aPin = 13;
+int bPin = 12;
+int cPin = 11;
+int dPin = 10;
+int ePin = 9;
+int fPin = 8;
+int gPin = 7;
+
+void setup() {
   pinMode(pot, INPUT);
-  
-  for (int i = 6; i <= 13; i++) {
-    pinMode(i, OUTPUT);
-  }
-  
+
+  pinMode(aPin, OUTPUT);
+  pinMode(bPin, OUTPUT);
+  pinMode(cPin, OUTPUT);
+  pinMode(dPin, OUTPUT);
+  pinMode(ePin, OUTPUT);
+  pinMode(fPin, OUTPUT);
+  pinMode(gPin, OUTPUT);
+
   Serial.begin(115200);
-   while (!Serial) {
+  while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB
   }
- 
+
   Serial.println("Please Enter a delay value");
 }
 
@@ -34,12 +47,96 @@ void loop() {
 
   sensorValue = analogRead(pot);
   output = map(sensorValue, 0, 1023, 5, 200);
-  
-  for (int i = 7; i <= 13; i++) { 
-    digitalWrite(i, HIGH);   // turn the LED on (HIGH is the voltage level)
-    delay(timeDelay);               // wait for a second
-    digitalWrite(i, LOW);    // turn the LED off by making the voltage LOW
+
+  for (int i = 7; i <= 13; i++) {
+    displayDigit(99);
+    displayDigit(i-7);
+    delay(timeDelay);
+    displayDigit(99);
   }
 
   Serial.println(timeDelay);
+}
+
+byte displayDigit(byte digit) {
+  switch (digit) {
+    case 0:
+      digitalWrite(aPin, HIGH);
+      digitalWrite(bPin, HIGH);
+      digitalWrite(cPin, HIGH);
+      digitalWrite(dPin, HIGH);
+      digitalWrite(ePin, HIGH);
+      digitalWrite(fPin, HIGH);
+      break;
+    case 1:
+      digitalWrite(bPin, HIGH);
+      digitalWrite(cPin, HIGH);
+      break;
+    case 2:
+      digitalWrite(aPin, HIGH);
+      digitalWrite(bPin, HIGH);
+      digitalWrite(dPin, HIGH);
+      digitalWrite(ePin, HIGH);
+      digitalWrite(fPin, HIGH);
+      break;
+    case 3:
+      digitalWrite(aPin, HIGH);
+      digitalWrite(bPin, HIGH);
+      digitalWrite(cPin, HIGH);
+      digitalWrite(dPin, HIGH);
+      digitalWrite(fPin, HIGH);
+      break;
+    case 4:
+      digitalWrite(bPin, HIGH);
+      digitalWrite(cPin, HIGH);
+      digitalWrite(gPin, HIGH);
+      digitalWrite(fPin, HIGH);
+      break;
+    case 5:
+      digitalWrite(aPin, HIGH);
+      digitalWrite(fPin, HIGH);
+      digitalWrite(gPin, HIGH);
+      digitalWrite(cPin, HIGH);
+      digitalWrite(dPin, HIGH);
+      break;
+    case 6:
+      digitalWrite(aPin, HIGH);
+      digitalWrite(fPin, HIGH);
+      digitalWrite(cPin, HIGH);
+      digitalWrite(dPin, HIGH);
+      digitalWrite(ePin, HIGH);
+      digitalWrite(gPin, HIGH);
+      break;
+    case 7:
+      digitalWrite(aPin, HIGH);
+      digitalWrite(bPin, HIGH);
+      digitalWrite(cPin, HIGH);
+      break;
+    case 8:
+      digitalWrite(aPin, HIGH);
+      digitalWrite(bPin, HIGH);
+      digitalWrite(cPin, HIGH);
+      digitalWrite(dPin, HIGH);
+      digitalWrite(ePin, HIGH);
+      digitalWrite(fPin, HIGH);
+      digitalWrite(gPin, HIGH);
+      break;
+    case 9:
+      digitalWrite(aPin, HIGH);
+      digitalWrite(bPin, HIGH);
+      digitalWrite(cPin, HIGH);
+      digitalWrite(dPin, HIGH);
+      digitalWrite(fPin, HIGH);
+      digitalWrite(gPin, HIGH);
+      break;
+    default:
+      digitalWrite(aPin, LOW);
+      digitalWrite(bPin, LOW);
+      digitalWrite(cPin, LOW);
+      digitalWrite(dPin, LOW);
+      digitalWrite(ePin, LOW);
+      digitalWrite(fPin, LOW);
+      digitalWrite(gPin, LOW);
+      break;
+  }
 }
