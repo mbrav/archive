@@ -23,7 +23,7 @@ const byte seg3 = 3;
 const byte segments[] = {seg1, seg2, seg3};
 byte currentSeg;
 
-int refreshInterval = 2; // in ms
+int refreshInterval = 1; // in ms
 unsigned long previosMillis;
 boolean refresh;
 
@@ -76,7 +76,7 @@ void loop() {
   // sensorValue = analogRead(pot);
   // output = map(sensorValue, 0, 1023, 5, 200);
 
-  Serial.println(refreshInterval);
+  fps(5);
 }
 
 byte displayDigit(byte digit, byte segment) {
@@ -175,5 +175,23 @@ byte displayDigit(byte digit, byte segment) {
       digitalWrite(fPin, LOW);
       digitalWrite(gPin, LOW);
       break;
+  }
+}
+
+static inline void fps(const int seconds){
+  // Create static variables so that the code and variables can
+  // all be declared inside a function
+  static unsigned long lastMillis;
+  static unsigned long frameCount;
+  static unsigned int framesPerSecond;
+
+  // It is best if we declare millis() only once
+  unsigned long now = millis();
+  frameCount ++;
+  if (now - lastMillis > seconds * 1000) {
+    framesPerSecond = frameCount / seconds;
+    Serial.println(framesPerSecond);
+    frameCount = 0;
+    lastMillis = now;
   }
 }
