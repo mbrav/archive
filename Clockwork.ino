@@ -2,26 +2,30 @@
 // Created Feb 16, 2016
 // by Michael Braverman
 
-byte pot = 14;
-int count;
-int timeDelay;
+const byte pot = 14;
 
 int sensorValue = 0;        // value read from the pot
 int output = 0;        // value output to the PWM (analog out)
 
 // DISPLAY PINS
-byte aPin = 13;
-byte bPin = 12;
-byte cPin = 11;
-byte dPin = 10;
-byte ePin = 9;
-byte fPin = 8;
-byte gPin = 7;
+const byte aPin = 13;
+const byte bPin = 12;
+const byte cPin = 11;
+const byte dPin = 10;
+const byte ePin = 9;
+const byte fPin = 8;
+const byte gPin = 7;
 
 // SEGMENT CONTROL PINS
-byte seg1 = 6;
-byte seg2 = 5;
-byte seg3 = 3;
+const byte seg1 = 6;
+const byte seg2 = 5;
+const byte seg3 = 3;
+const byte segments[] = {seg1, seg2, seg3};
+byte currentSeg;
+
+int refreshInterval = 2; // in ms
+unsigned long previosMillis;
+boolean refresh;
 
 boolean state;
 void setup() {
@@ -52,20 +56,27 @@ void loop() {
   while (Serial.available() > 0) {
     byte inByte = Serial.parseInt();
     inByte  = constrain(inByte, 0, 255);
-    timeDelay = inByte;
+    refreshInterval = inByte;
   }
 
-  sensorValue = analogRead(pot);
-  output = map(sensorValue, 0, 1023, 5, 200);
-
-  for (byte i = 7; i <= 13; i++) {
-    displayDigit(99, seg3);
-    displayDigit(i-7, seg3);
-    delay(timeDelay);
-    displayDigit(99, seg3);
+  if ((millis() - previosMillis) > refreshInterval){
+    previosMillis = millis();
+    refresh = true;
   }
 
-  Serial.println(timeDelay);
+  if (refresh) {
+      displayDigit(2, segments[currentSeg]);
+      currentSeg++;
+      if (currentSeg > 3) {
+          currentSeg = 0;
+      }
+      refresh = false;
+  }
+
+  // sensorValue = analogRead(pot);
+  // output = map(sensorValue, 0, 1023, 5, 200);
+
+  Serial.println(refreshInterval);
 }
 
 byte displayDigit(byte digit, byte segment) {
