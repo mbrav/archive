@@ -75,6 +75,15 @@ void loop() {
       displayNumParse[i] = displayNum-(10*y) ;
       displayNum = y;
     }
+
+    // hack that allows to display number that are shorter than three digits
+    // if (displayNum < 10) {
+    //   // this makes displayDigit() to turn off the digit completley
+    //   displayDigit(0, seg1);
+    //   displayDigit(0, seg2);
+    // } else if (displayNum < 100) {
+    //   displayDigit(0, seg2);
+    // }
   }
 
   displayNum = 259;
@@ -89,9 +98,21 @@ void loop() {
     if (currentSeg == 0) {
       displayDigit(displayNumParse[0], seg1);
     } else if (currentSeg == 1) {
-      displayDigit(displayNumParse[1], seg2);
+      // hack that allows to display number that are shorter than two digits
+      if (displayNum < 10) {
+        // this makes displayDigit() to turn off the digit completley
+        displayDigit(10, seg2);
+      } else {
+        displayDigit(displayNumParse[1], seg2);
+      }
     } else if (currentSeg == 2) {
-      displayDigit(displayNumParse[2], seg3);
+      // hack that allows to display numbers that are shorter than three digits
+      if (displayNum < 100) {
+        // this makes displayDigit() to turn off the digit completley
+        displayDigit(10, seg3);
+      } else {
+        displayDigit(displayNumParse[2], seg3);
+      }
     }
 
     currentSeg++;
@@ -139,7 +160,7 @@ void displayDigit(byte digit, byte segment) {
       digitalWrite(cPin, HIGH);
       digitalWrite(dPin, HIGH);
       digitalWrite(ePin, HIGH);
-      digitalWrite(fPin, HIGH);
+      digitalWrite(gPin, HIGH);
       break;
     case 1:
       digitalWrite(bPin, HIGH);
