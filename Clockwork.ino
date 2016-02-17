@@ -28,7 +28,6 @@ byte displayNumParse[3];
 
 int refreshInterval = 1; // in ms
 unsigned long previosMillis;
-boolean refresh;
 boolean refreshNum = true;
 
 void setup() {
@@ -65,31 +64,6 @@ void loop() {
   // refresh timmer
   if ((millis() - previosMillis) > refreshInterval) {
     previosMillis = millis();
-    refresh = true;
-  }
-
-  if (refreshNum) {
-    // number parser for displaying single digits
-    for (int i = 0; i < sizeof(displayNumParse); i++) {
-      int y = displayNum/10 ;
-      displayNumParse[i] = displayNum-(10*y) ;
-      displayNum = y;
-    }
-
-    // hack that allows to display number that are shorter than three digits
-    // if (displayNum < 10) {
-    //   // this makes displayDigit() to turn off the digit completley
-    //   displayDigit(0, seg1);
-    //   displayDigit(0, seg2);
-    // } else if (displayNum < 100) {
-    //   displayDigit(0, seg2);
-    // }
-  }
-
-  displayNum = 259;
-
-  // refresh trigger
-  if (refresh) {
 
     if (displayNum > 999) {
       displayNum = 999;
@@ -120,11 +94,19 @@ void loop() {
     if (currentSeg > 2) {
       currentSeg = 0;
     }
-
-    refresh = false;
   }
 
-  // Serial.print(displayNumParse[2]);
+  displayNum = 309;
+
+  int displayNum2 = displayNum;
+  // number parser for displaying single digits
+  for (int i = 0; i < sizeof(displayNumParse); i++) {
+    int y = displayNum2/10;
+    displayNumParse[i] = displayNum2-(10*y);
+    displayNum2 = y;
+  }
+
+  Serial.println(displayNum);
   // Serial.print(displayNumParse[1]);
   // Serial.println(displayNumParse[0]);
 
@@ -135,6 +117,7 @@ void loop() {
   // print the performance every 5 seconds
   fps(5);
 }
+
 
 void displayDigit(byte digit, byte segment) {
 
