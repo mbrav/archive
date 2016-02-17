@@ -1,4 +1,4 @@
-// The Endevour's Guide for the 21st Century
+// The Endeavour's Guide for the 21st Century
 // Created Feb 16, 2016
 // by Michael Braverman
 
