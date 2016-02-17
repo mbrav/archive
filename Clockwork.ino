@@ -23,11 +23,14 @@ const byte seg3 = 3;
 const byte segments[] = {seg1, seg2, seg3};
 byte currentSeg;
 
+int displayNum;
+byte displayNumParse[3];
+
 int refreshInterval = 1; // in ms
 unsigned long previosMillis;
 boolean refresh;
+boolean refreshNum = true;
 
-boolean state;
 void setup() {
   pinMode(pot, INPUT);
 
@@ -59,42 +62,75 @@ void loop() {
     refreshInterval = inByte;
   }
 
-  if ((millis() - previosMillis) > refreshInterval){
+  // refresh timmer
+  if ((millis() - previosMillis) > refreshInterval) {
     previosMillis = millis();
     refresh = true;
   }
 
-  if (refresh) {
-      displayDigit(2, segments[currentSeg]);
-      currentSeg++;
-      if (currentSeg > 3) {
-          currentSeg = 0;
-      }
-      refresh = false;
+  if (refreshNum) {
+    // number parser for displaying single digits
+    for (int i = 0; i < sizeof(displayNumParse); i++) {
+      int y = displayNum/10 ;
+      displayNumParse[i] = displayNum-(10*y) ;
+      displayNum = y;
+    }
   }
+
+  displayNum = 259;
+
+  // refresh trigger
+  if (refresh) {
+
+    if (displayNum > 999) {
+      displayNum = 999;
+    }
+
+    if (currentSeg == 0) {
+      displayDigit(displayNumParse[0], seg1);
+    } else if (currentSeg == 1) {
+      displayDigit(displayNumParse[1], seg2);
+    } else if (currentSeg == 2) {
+      displayDigit(displayNumParse[2], seg3);
+    }
+
+    currentSeg++;
+
+    if (currentSeg > 2) {
+      currentSeg = 0;
+    }
+
+    refresh = false;
+  }
+
+  // Serial.print(displayNumParse[2]);
+  // Serial.print(displayNumParse[1]);
+  // Serial.println(displayNumParse[0]);
 
   // sensorValue = analogRead(pot);
   // output = map(sensorValue, 0, 1023, 5, 200);
 
+
+  // print the performance every 5 seconds
   fps(5);
 }
 
-byte displayDigit(byte digit, byte segment) {
+void displayDigit(byte digit, byte segment) {
 
-    // clear segments and digits
-    digitalWrite(aPin, LOW);
-    digitalWrite(bPin, LOW);
-    digitalWrite(cPin, LOW);
-    digitalWrite(dPin, LOW);
-    digitalWrite(ePin, LOW);
-    digitalWrite(fPin, LOW);
-    digitalWrite(gPin, LOW);
-    digitalWrite(seg1, HIGH);
-    digitalWrite(seg2, HIGH);
-    digitalWrite(seg3, HIGH);
+  // clear segments and digits
+  digitalWrite(aPin, LOW);
+  digitalWrite(bPin, LOW);
+  digitalWrite(cPin, LOW);
+  digitalWrite(dPin, LOW);
+  digitalWrite(ePin, LOW);
+  digitalWrite(fPin, LOW);
+  digitalWrite(gPin, LOW);
+  digitalWrite(seg1, HIGH);
+  digitalWrite(seg2, HIGH);
+  digitalWrite(seg3, HIGH);
 
-    // set the current digit
-    digitalWrite(segment, LOW);
+  // set the current digit
+  digitalWrite(segment, LOW);
 
   switch (digit) {
     case 0:
@@ -178,7 +214,7 @@ byte displayDigit(byte digit, byte segment) {
   }
 }
 
-static inline void fps(const int seconds){
+static inline void fps(const int seconds) {
   // Create static variables so that the code and variables can
   // all be declared inside a function
   static unsigned long lastMillis;
