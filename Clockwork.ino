@@ -2,10 +2,20 @@
 // Created Feb 16, 2016
 // by Michael Braverman
 
-const byte pot = 14;
+#include <Wire.h>
+#include <Adafruit_Sensor.h>
+#include <Adafruit_HMC5883_U.h>
 
-int sensorValue = 0;        // value read from the pot
-int output = 0;        // value output to the PWM (analog out)
+Adafruit_HMC5883_Unified mag = Adafruit_HMC5883_Unified(12345);
+// PROGRAM MODES
+// 1 - heading mode
+// 2 - compass mode
+// 3 - direct mode
+// 4 - save mode
+
+// POTENTIOMETER PIN
+const byte pot = 14;
+int sensorValue = 0;    // value read from the pot
 
 // DISPLAY PINS
 const byte aPin = 13;
@@ -23,11 +33,14 @@ const byte seg3 = 3;
 const byte segments[] = {seg1, seg2, seg3};
 byte currentSeg;
 
+// number to be displayed on screen
 int displayNum;
-byte displayNumParse[3];
+byte displayNumParse[3]; // array version
 
 int refreshInterval = 1; // in ms
+int refreshInterval2 = 25; // in ms
 unsigned long previosMillis;
+unsigned long previosMillis2;
 boolean refreshNum = true;
 
 void setup() {
@@ -55,19 +68,16 @@ void setup() {
 
 // the loop routine runs over and over again forever:
 void loop() {
+
   while (Serial.available() > 0) {
     byte inByte = Serial.parseInt();
     inByte  = constrain(inByte, 0, 255);
     refreshInterval = inByte;
   }
 
-  // refresh timmer
+  // display refresh timmer
   if ((millis() - previosMillis) > refreshInterval) {
     previosMillis = millis();
-
-    if (displayNum > 999) {
-      displayNum = 999;
-    }
 
     if (currentSeg == 0) {
       displayDigit(displayNumParse[0], seg1);
@@ -96,7 +106,42 @@ void loop() {
     }
   }
 
-  displayNum = 309;
+  // sensor refresh timmer
+  if ((millis() - previosMillis2) > refreshInterval2) {
+    previosMillis2 = millis();
+    /* Get a new sensor event */
+    sensors_event_t event;
+    mag.getEvent(&event);
+
+    // Hold the module so that Z is pointing 'up' and you can measure the heading with x&y
+    // Calculate heading when the magnetometer is level, then correct for signs of axis.
+    float heading = atan2(event.magnetic.y, event.magnetic.x);
+
+    // Once you have your heading, you must then add your 'Declination Angle', which is the 'Error' of the magnetic field in your location.
+    // Find yours here: http://www.magnetic-declination.com/
+    // Mine is: -13* 2' W, which is ~13 Degrees, or (which we need) 0.22 radians
+    // If you cannot find your Declination, comment out these two lines, your compass will be slightly off.
+    float declinationAngle = 0.22;
+    heading += declinationAngle;
+
+    // Correct for when signs are reversed.
+    if(heading < 0)
+    heading += 2*PI;
+
+    // Check for wrap due to addition of declination.
+    if(heading > 2*PI)
+    heading -= 2*PI;
+
+    // Convert radians to degrees for readability.
+    int headingDegrees = heading * 180/M_PI;
+    displayNum = headingDegrees;
+  }
+
+
+  // The display does not display numbers bigger than 999
+  if (displayNum > 999) {
+    displayNum = 999;
+  }
 
   int displayNum2 = displayNum;
   // number parser for displaying single digits
@@ -106,10 +151,6 @@ void loop() {
     displayNum2 = y;
   }
 
-  Serial.println(displayNum);
-  // Serial.print(displayNumParse[1]);
-  // Serial.println(displayNumParse[0]);
-
   // sensorValue = analogRead(pot);
   // output = map(sensorValue, 0, 1023, 5, 200);
 
@@ -117,7 +158,6 @@ void loop() {
   // print the performance every 5 seconds
   fps(5);
 }
-
 
 void displayDigit(byte digit, byte segment) {
 
@@ -218,6 +258,7 @@ void displayDigit(byte digit, byte segment) {
   }
 }
 
+// program performance monitoring function
 static inline void fps(const int seconds) {
   // Create static variables so that the code and variables can
   // all be declared inside a function
