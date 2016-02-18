@@ -83,6 +83,7 @@ void setup() {
 // the loop routine runs over and over again forever:
 void loop() {
 
+  // a function that allows to send command throught the Serial monitor
   while (Serial.available() > 0) {
     byte inByte = Serial.parseInt();
     inByte  = constrain(inByte, 0, 255);
@@ -102,67 +103,18 @@ void loop() {
   // display refresh timmer
   if ((millis() - previosMillis) > refreshInterval) {
     previosMillis = millis();
-
-    if (currentSeg == 0) {
-      displayDigit(displayNumParse[0], seg1);
-    } else if (currentSeg == 1) {
-      // hack that allows to display number that are shorter than two digits
-      if (displayNum < 10) {
-        // this makes displayDigit() to turn off the digit completley
-        displayDigit(10, seg2);
-      } else {
-        displayDigit(displayNumParse[1], seg2);
-      }
-    } else if (currentSeg == 2) {
-      // hack that allows to display numbers that are shorter than three digits
-      if (displayNum < 100) {
-        // this makes displayDigit() to turn off the digit completley
-        displayDigit(10, seg3);
-      } else {
-        displayDigit(displayNumParse[2], seg3);
-      }
-    }
-
-    currentSeg++;
-
-    if (currentSeg > 2) {
-      currentSeg = 0;
-    }
+    refreshDisplay();
   }
 
   // sensor refresh timmer
   if ((millis() - previosMillis2) > refreshInterval2) {
     previosMillis2 = millis();
-    /* Get a new sensor event */
-    sensors_event_t event;
-    mag.getEvent(&event);
-
-    // Hold the module so that Z is pointing 'up' and you can measure the heading with x&y
-    // Calculate heading when the magnetometer is level, then correct for signs of axis.
-    float heading = atan2(event.magnetic.y, event.magnetic.x);
-
-    // Once you have your heading, you must then add your 'Declination Angle', which is the 'Error' of the magnetic field in your location.
-    // Find yours here: http://www.magnetic-declination.com/
-    // Mine is: -13* 2' W, which is ~13 Degrees, or (which we need) 0.22 radians
-    // If you cannot find your Declination, comment out these two lines, your compass will be slightly off.
-    float declinationAngle = 0.22;
-    heading += declinationAngle;
-
-    // Correct for when signs are reversed.
-    if(heading < 0)
-    heading += 2*PI;
-
-    // Check for wrap due to addition of declination.
-    if(heading > 2*PI)
-    heading -= 2*PI;
-
-    // Convert radians to degrees for readability.
-    headingDegrees = heading * 180/M_PI;
+    refreshSensorReading();
   }
 
   // read the pot
   potValue = analogRead(potPin);
-  // calculate the current mode based on reading 
+  // calculate the current mode based on reading
   currentMode = potValue / (1024/modesCount) + 1;
 
   // check if the mode changed since the last registered mode
@@ -196,6 +148,62 @@ void loop() {
 
   // print the performance every 5 seconds
   fps(5);
+}
+
+void refreshDisplay() {
+  if (currentSeg == 0) {
+    displayDigit(displayNumParse[0], seg1);
+  } else if (currentSeg == 1) {
+    // hack that allows to display number that are shorter than two digits
+    if (displayNum < 10) {
+      // this makes displayDigit() to turn off the digit completley
+      displayDigit(10, seg2);
+    } else {
+      displayDigit(displayNumParse[1], seg2);
+    }
+  } else if (currentSeg == 2) {
+    // hack that allows to display numbers that are shorter than three digits
+    if (displayNum < 100) {
+      // this makes displayDigit() to turn off the digit completley
+      displayDigit(10, seg3);
+    } else {
+      displayDigit(displayNumParse[2], seg3);
+    }
+  }
+
+  currentSeg++;
+
+  if (currentSeg > 2) {
+    currentSeg = 0;
+  }
+}
+
+void refreshSensorReading() {
+  /* Get a new sensor event */
+  sensors_event_t event;
+  mag.getEvent(&event);
+
+  // Hold the module so that Z is pointing 'up' and you can measure the heading with x&y
+  // Calculate heading when the magnetometer is level, then correct for signs of axis.
+  float heading = atan2(event.magnetic.y, event.magnetic.x);
+
+  // Once you have your heading, you must then add your 'Declination Angle', which is the 'Error' of the magnetic field in your location.
+  // Find yours here: http://www.magnetic-declination.com/
+  // Mine is: -13* 2' W, which is ~13 Degrees, or (which we need) 0.22 radians
+  // If you cannot find your Declination, comment out these two lines, your compass will be slightly off.
+  float declinationAngle = 0.22;
+  heading += declinationAngle;
+
+  // Correct for when signs are reversed.
+  if(heading < 0)
+  heading += 2*PI;
+
+  // Check for wrap due to addition of declination.
+  if(heading > 2*PI)
+  heading -= 2*PI;
+
+  // Convert radians to degrees for readability.
+  headingDegrees = heading * 180/M_PI;
 }
 
 void displayDigit(byte digit, byte segment) {
