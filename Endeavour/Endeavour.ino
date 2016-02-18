@@ -63,7 +63,13 @@ void setup() {
     ; // wait for serial port to connect. Needed for native USB
   }
 
-  Serial.println("Please Enter a delay value");
+  /* Initialise the sensor */
+ if(!mag.begin())
+ {
+   /* There was a problem detecting the HMC5883 ... check your connections */
+   Serial.println("Ooops, no HMC5883 detected ... Check your wiring!");
+   while(1);
+ }
 }
 
 // the loop routine runs over and over again forever:
@@ -133,7 +139,7 @@ void loop() {
     heading -= 2*PI;
 
     // Convert radians to degrees for readability.
-    int headingDegrees = heading * 180/M_PI;
+    float headingDegrees = heading * 180/M_PI;
     displayNum = headingDegrees;
   }
 
