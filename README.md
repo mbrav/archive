@@ -9,6 +9,10 @@ A project based on on reviving James Cook's geographic discoveries that where ma
 ### Functions
 - [x] have an effective segment display driver
 - [x] shows the heading direction of the magnetometer
-- [ ] have different operating modes that will allow the user to have more flexibility over its operation
+- [ ] have four functional modes
+  1. [x] heading mode
+  - [ ] compass mode
+  - [ ] direct mode  
+  - [ ] save mode  
 - [ ] make it low powered to allow the use with batteries.
 - [ ] designed case
