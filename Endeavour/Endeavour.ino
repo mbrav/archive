@@ -12,10 +12,11 @@ Adafruit_HMC5883_Unified mag = Adafruit_HMC5883_Unified(12345);
 // 2 - compass mode
 // 3 - direct mode
 // 4 - save mode
+const byte modesCount = 4;
 
 // POTENTIOMETER PIN
-const byte pot = 14;
-int sensorValue = 0;    // value read from the pot
+const byte potPin = 14;
+int potValue = 0;    // value read from the pot
 
 // DISPLAY PINS
 const byte aPin = 13;
@@ -44,7 +45,7 @@ unsigned long previosMillis2;
 boolean refreshNum = true;
 
 void setup() {
-  pinMode(pot, INPUT);
+  pinMode(potPin, INPUT);
 
   pinMode(aPin, OUTPUT);
   pinMode(bPin, OUTPUT);
@@ -74,6 +75,18 @@ void setup() {
 
 // the loop routine runs over and over again forever:
 void loop() {
+
+  potValue = analogRead(potPin);
+  int mode = potValue / (1024/modesCount);
+  if (mode == 0) {
+    Serial.println("1");
+  } else if (mode == 1) {
+    Serial.println("2");
+  } else if (mode == 2) {
+    Serial.println("3");
+  } else if (mode == 3) {
+    Serial.println("4");
+  }
 
   while (Serial.available() > 0) {
     byte inByte = Serial.parseInt();
