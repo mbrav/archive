@@ -9,13 +9,13 @@
 Adafruit_HMC5883_Unified mag = Adafruit_HMC5883_Unified(12345);
 
 // PROGRAM MODES
-// 1 - heading mode
-// 2 - compass mode
-// 3 - direct mode
-// 4 - save mode
 const byte modesCount = 4;
 byte currentMode ;
 byte lastMode;
+const byte headingMode = 1;
+const byte compassMode = 2;
+const byte directMode = 3;
+const byte saveMode = 4;
 
 // POTENTIOMETER PIN
 const byte potPin = 14;
@@ -38,18 +38,22 @@ const byte segments[] = {seg1, seg2, seg3};
 byte currentSeg;
 
 // number to be displayed on screen
-int displayNum;
+unsigned int displayNum;
 byte displayNumParse[3]; // array version
 
 int refreshInterval = 1; // in ms
 int refreshInterval2 = 25; // in ms
 int modeViewDuration = 1000; // in ms
+int directionSetDuration = 5000; // in ms
 unsigned long previosMillis;
 unsigned long previosMillis2;
 unsigned long modeMillis3;
+unsigned long directionSetMillis4;
 boolean refreshNum = true;
 
 float headingDegrees = 0.0; // direction of the sensor
+int savedDirection = 134;
+boolean setting = false;
 
 void setup() {
   pinMode(potPin, INPUT);
@@ -90,25 +94,29 @@ void loop() {
     refreshInterval = inByte;
   }
 
-  if (currentMode == 0) {
-    Serial.println("1");
-  } else if (currentMode == 1) {
-    Serial.println("2");
-  } else if (currentMode == 2) {
-    Serial.println("3");
-  } else if (currentMode == 3) {
-    Serial.println("4");
-  }
+  // if (currentMode == headingMode) {
+  //   Serial.println("1");
+  // } else if (currentMode == compassMode) {
+  //   Serial.println("2");
+  // } else if (currentMode == directMode) {
+  //   Serial.println("3");
+  // } else if (currentMode == saveMode) {
+  //   Serial.println("4");
+  // }
 
   // display refresh timmer
   if ((millis() - previosMillis) > refreshInterval) {
+    // record the time of when this action occured
     previosMillis = millis();
+    // refresh display
     refreshDisplay();
   }
 
   // sensor refresh timmer
   if ((millis() - previosMillis2) > refreshInterval2) {
+    // record the time of when this action occured
     previosMillis2 = millis();
+    //read sensor
     refreshSensorReading();
   }
 
@@ -119,18 +127,40 @@ void loop() {
 
   // check if the mode changed since the last registered mode
   if (currentMode != lastMode) {
-    // set the current mode
+    // set the last registered mode to current mode
     lastMode = currentMode;
-    // keep the time of when this occured
+    // record the time of when this action occured
     modeMillis3 = millis();
   }
 
+  if (millis() > directionSetMillis4 + directionSetDuration) {
+    if (currentMode == saveMode) {
+      // set the direction
+      savedDirection = headingDegrees;
+      Serial.println("SET!!");
+      Serial.print(savedDirection);
+      setting == true;
+    } else {
+      setting == false;
+    }
+  }
+
   if (millis() < modeMillis3 + modeViewDuration) {
-    displayNum = currentMode;
+    displayNum = currentMode * 111;
     // display the current mode less than modeViewTimer ms have passed
   } else {
     // otherwise do normal stuff
-    displayNum = headingDegrees; // display heading
+    if (currentMode == headingMode) {
+      // display heading
+      displayNum = headingDegrees;
+    } else if (currentMode == compassMode) {
+      // display a compass on a 7 segment display
+    } else if (currentMode == directMode) {
+      displayNum = abs(headingDegrees - savedDirection);
+    } else if (currentMode == saveMode && setting) {
+        directionSetMillis4 = millis();
+        setting == false;
+    }
   }
 
   // The display does not display numbers bigger than 999
@@ -138,8 +168,8 @@ void loop() {
     displayNum = 999;
   }
 
-  int displayNum2 = displayNum;
   // number parser for displaying single digits
+  int displayNum2 = displayNum;
   for (int i = 0; i < sizeof(displayNumParse); i++) {
     int y = displayNum2/10;
     displayNumParse[i] = displayNum2-(10*y);
