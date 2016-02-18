@@ -7,12 +7,15 @@
 #include <Adafruit_HMC5883_U.h>
 
 Adafruit_HMC5883_Unified mag = Adafruit_HMC5883_Unified(12345);
+
 // PROGRAM MODES
 // 1 - heading mode
 // 2 - compass mode
 // 3 - direct mode
 // 4 - save mode
 const byte modesCount = 4;
+byte currentMode ;
+byte lastMode;
 
 // POTENTIOMETER PIN
 const byte potPin = 14;
@@ -40,9 +43,13 @@ byte displayNumParse[3]; // array version
 
 int refreshInterval = 1; // in ms
 int refreshInterval2 = 25; // in ms
+int modeViewDuration = 1000; // in ms
 unsigned long previosMillis;
 unsigned long previosMillis2;
+unsigned long modeMillis3;
 boolean refreshNum = true;
+
+float headingDegrees = 0.0; // direction of the sensor
 
 void setup() {
   pinMode(potPin, INPUT);
@@ -76,22 +83,20 @@ void setup() {
 // the loop routine runs over and over again forever:
 void loop() {
 
-  potValue = analogRead(potPin);
-  int mode = potValue / (1024/modesCount);
-  if (mode == 0) {
-    Serial.println("1");
-  } else if (mode == 1) {
-    Serial.println("2");
-  } else if (mode == 2) {
-    Serial.println("3");
-  } else if (mode == 3) {
-    Serial.println("4");
-  }
-
   while (Serial.available() > 0) {
     byte inByte = Serial.parseInt();
     inByte  = constrain(inByte, 0, 255);
     refreshInterval = inByte;
+  }
+
+  if (currentMode == 0) {
+    Serial.println("1");
+  } else if (currentMode == 1) {
+    Serial.println("2");
+  } else if (currentMode == 2) {
+    Serial.println("3");
+  } else if (currentMode == 3) {
+    Serial.println("4");
   }
 
   // display refresh timmer
@@ -152,10 +157,29 @@ void loop() {
     heading -= 2*PI;
 
     // Convert radians to degrees for readability.
-    float headingDegrees = heading * 180/M_PI;
-    displayNum = headingDegrees;
+    headingDegrees = heading * 180/M_PI;
   }
 
+  // read the pot
+  potValue = analogRead(potPin);
+  // calculate the current mode based on reading 
+  currentMode = potValue / (1024/modesCount) + 1;
+
+  // check if the mode changed since the last registered mode
+  if (currentMode != lastMode) {
+    // set the current mode
+    lastMode = currentMode;
+    // keep the time of when this occured
+    modeMillis3 = millis();
+  }
+
+  if (millis() < modeMillis3 + modeViewDuration) {
+    displayNum = currentMode;
+    // display the current mode less than modeViewTimer ms have passed
+  } else {
+    // otherwise do normal stuff
+    displayNum = headingDegrees; // display heading
+  }
 
   // The display does not display numbers bigger than 999
   if (displayNum > 999) {
@@ -169,10 +193,6 @@ void loop() {
     displayNumParse[i] = displayNum2-(10*y);
     displayNum2 = y;
   }
-
-  // sensorValue = analogRead(pot);
-  // output = map(sensorValue, 0, 1023, 5, 200);
-
 
   // print the performance every 5 seconds
   fps(5);
