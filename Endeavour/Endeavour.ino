@@ -44,7 +44,6 @@ byte displayNumParse[3]; // array version
 int refreshInterval = 1; // in ms
 int refreshInterval2 = 25; // in ms
 int modeViewDuration = 1000; // in ms
-int directionSetDuration = 5000; // in ms
 unsigned long previosMillis;
 unsigned long previosMillis2;
 unsigned long modeMillis3;
@@ -53,7 +52,6 @@ boolean refreshNum = true;
 
 float headingDegrees = 0.0; // direction of the sensor
 int savedDirection = 134;
-boolean setting = false;
 
 void setup() {
   pinMode(potPin, INPUT);
@@ -133,33 +131,34 @@ void loop() {
     modeMillis3 = millis();
   }
 
-  if (millis() > directionSetMillis4 + directionSetDuration) {
-    if (currentMode == saveMode) {
-      // set the direction
-      savedDirection = headingDegrees;
-      Serial.println("SET!!");
-      Serial.print(savedDirection);
-      setting == true;
-    } else {
-      setting == false;
-    }
-  }
-
   if (millis() < modeMillis3 + modeViewDuration) {
     displayNum = currentMode * 111;
     // display the current mode less than modeViewTimer ms have passed
   } else {
-    // otherwise do normal stuff
+    // otherwise display based on current modes:
     if (currentMode == headingMode) {
       // display heading
       displayNum = headingDegrees;
     } else if (currentMode == compassMode) {
       // display a compass on a 7 segment display
+      // ToDo
     } else if (currentMode == directMode) {
+      // display the relative direction
       displayNum = abs(headingDegrees - savedDirection);
-    } else if (currentMode == saveMode && setting) {
-        directionSetMillis4 = millis();
-        setting == false;
+    } else if (currentMode == saveMode) {
+      // save a new direction after 5 seconds
+        if (millis() > directionSetMillis4 + 5000) {
+          directionSetMillis4 = millis();
+          // set the direction
+          savedDirection = headingDegrees;
+          Serial.print("SET TO:");
+          Serial.println(savedDirection);
+        }
+    }
+
+    if (currentMode != saveMode) {
+      // keep the timer necessary for the saveMode fresh
+      directionSetMillis4 = millis();
     }
   }
 
