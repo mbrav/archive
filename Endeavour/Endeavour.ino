@@ -39,16 +39,19 @@ byte currentSeg;
 
 // number to be displayed on screen
 unsigned int displayNum;
-byte displayNumParse[3]; // array version
+// array version of the number
+byte displayNumParse[3];
 
 int refreshInterval = 1; // in ms
 int refreshInterval2 = 25; // in ms
 int modeViewDuration = 1000; // in ms
-unsigned long previosMillis;
-unsigned long previosMillis2;
-unsigned long modeMillis3;
+
+// TIMERS
+// nameOfTheTimerMillisX where "X" is its number
+unsigned long timerMillis1;
+unsigned long sensorRefreshMillis2;
+unsigned long modeViewMillis3;
 unsigned long directionSetMillis4;
-boolean refreshNum = true;
 
 float headingDegrees = 0.0; // direction of the sensor
 int savedDirection = 134;
@@ -103,17 +106,17 @@ void loop() {
   // }
 
   // display refresh timmer
-  if ((millis() - previosMillis) > refreshInterval) {
+  if ((millis() - timerMillis1) > refreshInterval) {
     // record the time of when this action occured
-    previosMillis = millis();
+    timerMillis1 = millis();
     // refresh display
     refreshDisplay();
   }
 
   // sensor refresh timmer
-  if ((millis() - previosMillis2) > refreshInterval2) {
+  if ((millis() - sensorRefreshMillis2) > refreshInterval2) {
     // record the time of when this action occured
-    previosMillis2 = millis();
+    sensorRefreshMillis2 = millis();
     //read sensor
     refreshSensorReading();
   }
@@ -128,10 +131,11 @@ void loop() {
     // set the last registered mode to current mode
     lastMode = currentMode;
     // record the time of when this action occured
-    modeMillis3 = millis();
+    modeViewMillis3 = millis();
   }
 
-  if (millis() < modeMillis3 + modeViewDuration) {
+  // timer for viewing what mode it is currently
+  if (millis() < modeViewMillis3 + modeViewDuration) {
     displayNum = currentMode * 111;
     // display the current mode less than modeViewTimer ms have passed
   } else {
