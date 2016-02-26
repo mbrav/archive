@@ -12,7 +12,7 @@ A project based on on reviving James Cook's geographic discoveries that where ma
 - [ ] have four functional modes
   1. [x] heading mode
   - [ ] compass mode
-  - [ ] direct mode  
-  - [ ] save mode  
+  - [x] direct mode  
+  - [x] save mode  
 - [ ] make it low powered to allow the use with batteries.
 - [ ] designed case
