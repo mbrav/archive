@@ -17,13 +17,13 @@ def main():
 def on():
 	state = True
 	GPIO.output(4, state)
-	return render_template('greet.html', state=state, stateMessage="ON")
+	return render_template('greet.html', state=state)
 
 @app.route("/off")
 def off():
 	state = False
 	GPIO.output(4, state)
-	return render_template('greet.html', state=state, stateMessage="OFF")
+	# return render_template('greet.html', state=state)
 
 
 if __name__ == "__main__":
