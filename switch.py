@@ -1,4 +1,4 @@
-from flask import Flask, render_template 
+from flask import Flask, render_template
 import time
 import RPi.GPIO as GPIO
 
@@ -9,22 +9,21 @@ app = Flask(__name__)
 
 state = False
 
-
 @app.route("/")
 def main():
-	return render_template('greet.html', state=state) 
+	return render_template('greet.html', state=state)
 
 @app.route("/on")
 def on():
-	GPIO.output(4, True)
-	return render_template('greet.html', state=state) 
+	state = True
+	return render_template('greet.html', state=state)
 
 @app.route("/off")
 def off():
-	GPIO.output(4, False)
-	return render_template('greet.html', state=state) 
-	
+	state = False
+	return render_template('greet.html', state=state)
+
+GPIO.output(4, state)
 
 if __name__ == "__main__":
 	app.run(host='127.0.0.1', port=80, debug=True)
-
