@@ -30,13 +30,14 @@
 </head>
 <body>
   <h1>Wlecome to the LED switcher<h1>
-  <h3>Right now the led is <b> {{stateMessage}} </b></h3>
+  <h3>Right now the led is <b> {% if state%} ON {% else %} OFF {% endif %}</b></h3>
 
   <div class="button">
-    <a href="/on"><h2>ON</h2></a>
-  </div>
-  <div class="button">
-    <a href="/off"><h2>OFF</h3></a>
+    {% if state%}
+      <a href="/off"><h2>ON</h2></a>
+    {% else %}
+      <a href="/on"><h2>OFF</h2></a>
+    {% endif %}
   </div>
 </body>
 </html>
