@@ -16,14 +16,15 @@ def main():
 @app.route("/on")
 def on():
 	state = True
-	return render_template('greet.html', state=state)
+	GPIO.output(4, state)
+	return render_template('greet.html', state=state, stateMessage="ON")
 
 @app.route("/off")
 def off():
 	state = False
-	return render_template('greet.html', state=state)
+	GPIO.output(4, state)
+	return render_template('greet.html', state=state, stateMessage="OFF")
 
-GPIO.output(4, state)
 
 if __name__ == "__main__":
 	app.run(host='127.0.0.1', port=80, debug=True)
