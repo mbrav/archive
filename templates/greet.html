@@ -1,8 +1,42 @@
 <!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>LED Switcher</title>
+  <style media="screen">
+    body {
+      background-color: #5B5E69;
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+      font-family: Arial;
+      color: #F3E736;
+    }
+
+    h3 {
+      color: white;
+    }
+
+    .button {
+      border-width: thick;
+      border-color: white;
+      font-size: 50px;
+    }
+
+    a {
+        color: #6CEC72;
+    }
+  </style>
+</head>
 <body>
-<h1>Wlecome to the LED switcher<h1>
-<h3>Right now the led is <b> {{stateMessage}} </b></h3>
-<a href="/on"><h3>ON</h3 </a>
-<a href="/off"><h3>OFF</h3 </a>
+  <h1>Wlecome to the LED switcher<h1>
+  <h3>Right now the led is <b> {{stateMessage}} </b></h3>
+
+  <div class="button">
+    <a href="/on"><h2>ON</h2></a>
+  </div>
+  <div class="button">
+    <a href="/off"><h2>OFF</h3></a>
+  </div>
 </body>
 </html>
