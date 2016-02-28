@@ -23,7 +23,7 @@ def on():
 def off():
 	state = False
 	GPIO.output(4, state)
-	# return render_template('greet.html', state=state)
+	return render_template('greet.html', state=state)
 
 
 if __name__ == "__main__":
