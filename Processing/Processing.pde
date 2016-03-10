@@ -67,19 +67,13 @@ void draw() {
   noStroke();
 
   if (mousePressed){
+    // if pressed functionality
   }
-
-  if (mouseX < 250){
-    posY -= 0.02;
-  } else if (mouseX > width - 250){
-    posY += 0.02;
-  }
-
-  if (mouseY < 250){
-    posX += 0.02;
-  } else if (mouseY > width - 250){
-    posX -= 0.02;
-  }
+  
+  posX = map(readings[0], -15000, 15000, -1.0,1.0);
+  posY = map(readings[1], -15000, 15000, -1.0,1.0);
+  posZ = map(readings[2], -15000, 15000, -1.0,1.0);
+  
 
   setCubeColor(r, g, b);
 
