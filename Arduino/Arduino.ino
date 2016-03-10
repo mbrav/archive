@@ -101,18 +101,29 @@ void refreshDisplay() {
   int AcBarX = map(AcX, -15000, 15000, 0, barWidth);
   int AcBarY = map(AcY, -15000, 15000, 0, barWidth);
   int AcBarZ = map(AcZ, -15000, 15000, 0, barWidth);
-  int AcGyX = map(GyX, -15000, 15000, 0, barWidth);
-  int AcGyY = map(GyY, -15000, 15000, 0, barWidth);
-  int AcGyZ = map(GyZ, -15000, 15000, 0, barWidth);
+  int GyBarX = map(GyX, -15000, 15000, 0, barWidth);
+  int GyBarY = map(GyY, -15000, 15000, 0, barWidth);
+  int GyBarZ = map(GyZ, -15000, 15000, 0, barWidth);
+
+  // for some reason the number is negative and multiplied by 100
+  // convert temp to a good value
+  float temp = -Tmp;
+  temp = temp /100;
   
   // text 
   tft.fillScreen(ST7735_BLACK);
   tft.setTextSize(1);
   tft.setTextColor(ST7735_WHITE);
   tft.setCursor(10, 5);
-  tft.print("Acceleration");
+  tft.print("Acceleration:");
   tft.setCursor(10, 80);
-  tft.print("Gyro");
+  tft.print("Gyro""); 
+  tft.setCursor(50, 150);
+  tft.print("Temp:");
+  tft.setTextColor(ST7735_GREEN);
+  tft.print(temp);
+  tft.setTextColor(ST7735_WHITE);
+  tft.print("C");
   
   // acceleration
   tft.fillRoundRect(10, 20, barWidth, 10, 3, ST7735_WHITE);
@@ -124,10 +135,10 @@ void refreshDisplay() {
 
   // gyro
   tft.fillRoundRect(10, 95, barWidth, 10, 3, ST7735_WHITE);
-  tft.fillRoundRect(10, 95, AcGyX, 10, 3, ST7735_RED);
+  tft.fillRoundRect(10, 95, GyBarX, 10, 3, ST7735_RED);
   tft.fillRoundRect(10, 115, barWidth, 10, 3, ST7735_WHITE);
-  tft.fillRoundRect(10, 115, AcGyY, 10, 3, ST7735_GREEN);
+  tft.fillRoundRect(10, 115, GyBarY, 10, 3, ST7735_GREEN);
   tft.fillRoundRect(10, 135, barWidth, 10, 3, ST7735_WHITE);
-  tft.fillRoundRect(10, 135, AcGyZ, 10, 3, ST7735_BLUE); 
+  tft.fillRoundRect(10, 135, GyBarZ, 10, 3, ST7735_BLUE);
 }
 
