@@ -1,6 +1,9 @@
 // Created by Michael Braverman
 // 9 March 2016
 
+// Usese PaulStoffregen's optimized Adafruit_ST7735 library
+// https://github.com/PaulStoffregen/Adafruit_ST7735
+
 // MPU-6050 sensor setup
 #include<Wire.h>
 const int MPU_addr=0x68;  // I2C address of the MPU-6050
@@ -33,6 +36,11 @@ int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ;
 // to use the microSD card (see the image drawing example)
 Adafruit_ST7735 tft = Adafruit_ST7735(cs, dc, rst);
 float p = 3.1415926;
+
+// TIMERS
+// nameOfTheTimerMillisX where "X" is its number
+unsigned long timerMillis1;
+int refreshInterval1 = 1000; // in ms
 
 void setup() { 
   pinMode(sdcs, INPUT_PULLUP);  // keep SD CS high when not using SD card
@@ -75,6 +83,16 @@ void loop() {
   Serial.print(',');              
 
   // DRAW SCREEN
+  // display refresh timmer
+  if ((millis() - timerMillis1) > refreshInterval1) {
+    // record the time of when this action occured
+    timerMillis1 = millis();
+    // refresh display
+    refreshDisplay();
+  }                   
+}
+
+void refreshDisplay() {
   tft.fillScreen(ST7735_BLACK);
   unsigned int color = ST7735_YELLOW;
   for (int16_t x=0; x < tft.width(); x+=6) {
@@ -106,6 +124,6 @@ void loop() {
   }
   for (int16_t y=0; y < tft.height(); y+=6) {
     tft.drawLine(tft.width()-1, tft.height()-1, 0, y, color);
-  }                          
+  }        
 }
 
