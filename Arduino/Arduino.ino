@@ -40,7 +40,7 @@ float p = 3.1415926;
 // TIMERS
 // nameOfTheTimerMillisX where "X" is its number
 unsigned long timerMillis1;
-int refreshInterval1 = 1000; // in ms
+int refreshInterval1 = 200; // in ms
 
 void setup() { 
   pinMode(sdcs, INPUT_PULLUP);  // keep SD CS high when not using SD card
@@ -93,37 +93,29 @@ void loop() {
 }
 
 void refreshDisplay() {
-  tft.fillScreen(ST7735_BLACK);
-  unsigned int color = ST7735_YELLOW;
-  for (int16_t x=0; x < tft.width(); x+=6) {
-    tft.drawLine(0, 0, x, tft.height()-1, color);
-  }
-  for (int16_t y=0; y < tft.height(); y+=6) {
-    tft.drawLine(0, 0, tft.width()-1, y, color);
-  }
+  int barWidth = 113;
+  int AcBarX = map(AcX, -15000, 15000, 0, barWidth);
+  int AcBarY = map(AcY, -15000, 15000, 0, barWidth);
+  int AcBarZ = map(AcZ, -15000, 15000, 0, barWidth);
+  int AcGyX = map(GyX, -15000, 15000, 0, barWidth);
+  int AcGyY = map(GyY, -15000, 15000, 0, barWidth);
+  int AcGyZ = map(GyZ, -15000, 15000, 0, barWidth);
 
+  // acceleration
   tft.fillScreen(ST7735_BLACK);
-  for (int16_t x=0; x < tft.width(); x+=6) {
-    tft.drawLine(tft.width()-1, 0, x, tft.height()-1, color);
-  }
-  for (int16_t y=0; y < tft.height(); y+=6) {
-    tft.drawLine(tft.width()-1, 0, 0, y, color);
-  }
+  tft.fillRoundRect(10, 5, barWidth, 10, 3, ST7735_WHITE);
+  tft.fillRoundRect(10, 5, AcBarX, 10, 3, ST7735_CYAN);
+  tft.fillRoundRect(10, 25, barWidth, 10, 3, ST7735_WHITE);
+  tft.fillRoundRect(10, 25, AcBarY, 10, 3, ST7735_YELLOW);
+  tft.fillRoundRect(10, 45, barWidth, 10, 3, ST7735_WHITE);
+  tft.fillRoundRect(10, 45, AcBarZ, 10, 3, ST7735_MAGENTA);
 
-  tft.fillScreen(ST7735_BLACK);
-  for (int16_t x=0; x < tft.width(); x+=6) {
-    tft.drawLine(0, tft.height()-1, x, 0, color);
-  }
-  for (int16_t y=0; y < tft.height(); y+=6) {
-    tft.drawLine(0, tft.height()-1, tft.width()-1, y, color);
-  }
-
-  tft.fillScreen(ST7735_BLACK);
-  for (int16_t x=0; x < tft.width(); x+=6) {
-    tft.drawLine(tft.width()-1, tft.height()-1, x, 0, color);
-  }
-  for (int16_t y=0; y < tft.height(); y+=6) {
-    tft.drawLine(tft.width()-1, tft.height()-1, 0, y, color);
-  }        
+  // gyro
+  tft.fillRoundRect(10, 75, barWidth, 10, 3, ST7735_WHITE);
+  tft.fillRoundRect(10, 75, AcGyX, 10, 3, ST7735_RED);
+  tft.fillRoundRect(10, 95, barWidth, 10, 3, ST7735_WHITE);
+  tft.fillRoundRect(10, 95, AcGyY, 10, 3, ST7735_GREEN);
+  tft.fillRoundRect(10, 115, barWidth, 10, 3, ST7735_WHITE);
+  tft.fillRoundRect(10, 115, AcGyZ, 10, 3, ST7735_BLUE); 
 }
 
