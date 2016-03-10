@@ -1,14 +1,10 @@
 // Created by Michael Braverman
 // 9 March 2016
 
+// MPU-6050 sensor setup
 #include<Wire.h>
 const int MPU_addr=0x68;  // I2C address of the MPU-6050
-int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ;
-
-int switchPin = 4;
-byte x = 111;
-byte y = 121;  
-byte z = 222;                        
+int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ;                     
 
 void setup() { 
   Wire.begin();
