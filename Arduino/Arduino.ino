@@ -2,20 +2,22 @@
 // 9 March 2016
 
 int switchPin = 4;
-int x = 111;
-int y = 222;  
-int z = 333;                        
+byte x = 111;
+byte y = 121;  
+byte z = 222;                        
 
 void setup() {            
   Serial.begin(115200);                    
 }
 
 void loop() {
-                              
-  Serial.print(x);  
+  Serial.print(x);
+  Serial.print(',');                
   Serial.print(y); 
-  Serial.print(z);              
+  Serial.print(','); 
+  Serial.print(z); 
+  Serial.print(',');              
 
-  delay(100);                            
+  delay(25);                            
 }
 
