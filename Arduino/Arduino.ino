@@ -93,29 +93,41 @@ void loop() {
 }
 
 void refreshDisplay() {
+
+  // draw settings 
   int barWidth = 113;
+
+  // read values 
   int AcBarX = map(AcX, -15000, 15000, 0, barWidth);
   int AcBarY = map(AcY, -15000, 15000, 0, barWidth);
   int AcBarZ = map(AcZ, -15000, 15000, 0, barWidth);
   int AcGyX = map(GyX, -15000, 15000, 0, barWidth);
   int AcGyY = map(GyY, -15000, 15000, 0, barWidth);
   int AcGyZ = map(GyZ, -15000, 15000, 0, barWidth);
-
-  // acceleration
+  
+  // text 
   tft.fillScreen(ST7735_BLACK);
-  tft.fillRoundRect(10, 5, barWidth, 10, 3, ST7735_WHITE);
-  tft.fillRoundRect(10, 5, AcBarX, 10, 3, ST7735_CYAN);
-  tft.fillRoundRect(10, 25, barWidth, 10, 3, ST7735_WHITE);
-  tft.fillRoundRect(10, 25, AcBarY, 10, 3, ST7735_YELLOW);
-  tft.fillRoundRect(10, 45, barWidth, 10, 3, ST7735_WHITE);
-  tft.fillRoundRect(10, 45, AcBarZ, 10, 3, ST7735_MAGENTA);
+  tft.setTextSize(1);
+  tft.setTextColor(ST7735_WHITE);
+  tft.setCursor(10, 5);
+  tft.print("Acceleration");
+  tft.setCursor(10, 80);
+  tft.print("Gyro");
+  
+  // acceleration
+  tft.fillRoundRect(10, 20, barWidth, 10, 3, ST7735_WHITE);
+  tft.fillRoundRect(10, 20, AcBarX, 10, 3, ST7735_CYAN);
+  tft.fillRoundRect(10, 40, barWidth, 10, 3, ST7735_WHITE);
+  tft.fillRoundRect(10, 40, AcBarY, 10, 3, ST7735_YELLOW);
+  tft.fillRoundRect(10, 60, barWidth, 10, 3, ST7735_WHITE);
+  tft.fillRoundRect(10, 60, AcBarZ, 10, 3, ST7735_MAGENTA);
 
   // gyro
-  tft.fillRoundRect(10, 75, barWidth, 10, 3, ST7735_WHITE);
-  tft.fillRoundRect(10, 75, AcGyX, 10, 3, ST7735_RED);
   tft.fillRoundRect(10, 95, barWidth, 10, 3, ST7735_WHITE);
-  tft.fillRoundRect(10, 95, AcGyY, 10, 3, ST7735_GREEN);
+  tft.fillRoundRect(10, 95, AcGyX, 10, 3, ST7735_RED);
   tft.fillRoundRect(10, 115, barWidth, 10, 3, ST7735_WHITE);
-  tft.fillRoundRect(10, 115, AcGyZ, 10, 3, ST7735_BLUE); 
+  tft.fillRoundRect(10, 115, AcGyY, 10, 3, ST7735_GREEN);
+  tft.fillRoundRect(10, 135, barWidth, 10, 3, ST7735_WHITE);
+  tft.fillRoundRect(10, 135, AcGyZ, 10, 3, ST7735_BLUE); 
 }
 
