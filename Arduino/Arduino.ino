@@ -4,18 +4,56 @@
 // MPU-6050 sensor setup
 #include<Wire.h>
 const int MPU_addr=0x68;  // I2C address of the MPU-6050
-int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ;                     
+int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ;  
+
+// ST7735 lcd setup
+#include <Adafruit_GFX.h>    // Core graphics library
+#include <Adafruit_ST7735.h> // Hardware-specific library
+#include <SPI.h>
+
+// This Teensy3 native optimized version requires specific pins
+#define sclk 13  // SCLK can also use pin 14
+#define mosi 11  // MOSI can also use pin 7
+#define cs   10  // CS & DC can use pins 2, 6, 9, 10, 15, 20, 21, 22, 23
+#define dc   9   //  but certain pairs must NOT be used: 2+10, 6+9, 20+23, 21+22
+#define rst  8   // RST can use any pin
+#define sdcs 4   // CS for SD card, can use any pin
+
+#if defined(__SAM3X8E__)
+    #undef __FlashStringHelper::F(string_literal)
+    #define F(string_literal) string_literal
+#endif
+
+// Option 1: use any pins but a little slower
+//Adafruit_ST7735 tft = Adafruit_ST7735(cs, dc, mosi, sclk, rst);
+
+// Option 2: must use the hardware SPI pins
+// (for UNO thats sclk = 13 and sid = 11) and pin 10 must be
+// an output. This is much faster - also required if you want
+// to use the microSD card (see the image drawing example)
+Adafruit_ST7735 tft = Adafruit_ST7735(cs, dc, rst);
+float p = 3.1415926;
 
 void setup() { 
+  pinMode(sdcs, INPUT_PULLUP);  // keep SD CS high when not using SD card
   Wire.begin();
   Wire.beginTransmission(MPU_addr);
   Wire.write(0x6B);  // PWR_MGMT_1 register
   Wire.write(0);     // set to zero (wakes up the MPU-6050)
   Wire.endTransmission(true);           
-  Serial.begin(115200);                    
+  Serial.begin(115200);
+  
+  // If your TFT's plastic wrap has a Black Tab, use the following:
+  tft.initR(INITR_BLACKTAB);   // initialize a ST7735S chip, black tab
+  // If your TFT's plastic wrap has a Red Tab, use the following:
+  //tft.initR(INITR_REDTAB);   // initialize a ST7735R chip, red tab
+  // If your TFT's plastic wrap has a Green Tab, use the following:
+  //tft.initR(INITR_GREENTAB); // initialize a ST7735R chip, green tab                    
 }
 
 void loop() {
+
+  // READ SENSOR 
   Wire.beginTransmission(MPU_addr);
   Wire.write(0x3B);  // starting with register 0x3B (ACCEL_XOUT_H)
   Wire.endTransmission(false);
@@ -36,6 +74,38 @@ void loop() {
   Serial.print(AcZ); 
   Serial.print(',');              
 
-  delay(25);                            
+  // DRAW SCREEN
+  tft.fillScreen(ST7735_BLACK);
+  unsigned int color = ST7735_YELLOW;
+  for (int16_t x=0; x < tft.width(); x+=6) {
+    tft.drawLine(0, 0, x, tft.height()-1, color);
+  }
+  for (int16_t y=0; y < tft.height(); y+=6) {
+    tft.drawLine(0, 0, tft.width()-1, y, color);
+  }
+
+  tft.fillScreen(ST7735_BLACK);
+  for (int16_t x=0; x < tft.width(); x+=6) {
+    tft.drawLine(tft.width()-1, 0, x, tft.height()-1, color);
+  }
+  for (int16_t y=0; y < tft.height(); y+=6) {
+    tft.drawLine(tft.width()-1, 0, 0, y, color);
+  }
+
+  tft.fillScreen(ST7735_BLACK);
+  for (int16_t x=0; x < tft.width(); x+=6) {
+    tft.drawLine(0, tft.height()-1, x, 0, color);
+  }
+  for (int16_t y=0; y < tft.height(); y+=6) {
+    tft.drawLine(0, tft.height()-1, tft.width()-1, y, color);
+  }
+
+  tft.fillScreen(ST7735_BLACK);
+  for (int16_t x=0; x < tft.width(); x+=6) {
+    tft.drawLine(tft.width()-1, tft.height()-1, x, 0, color);
+  }
+  for (int16_t y=0; y < tft.height(); y+=6) {
+    tft.drawLine(tft.width()-1, tft.height()-1, 0, y, color);
+  }                          
 }
 
