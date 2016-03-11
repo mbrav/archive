@@ -117,7 +117,7 @@ void refreshDisplay() {
   tft.setCursor(10, 5);
   tft.print("Acceleration:");
   tft.setCursor(10, 80);
-  tft.print("Gyro""); 
+  tft.print("Gyro"); 
   tft.setCursor(50, 150);
   tft.print("Temp:");
   tft.setTextColor(ST7735_GREEN);
