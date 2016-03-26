@@ -6,6 +6,10 @@
 const int address=0x68;  // I2C address of the MPU-6050
 int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ;
 
+int arrayLength = 100;
+int AcXHistory[100];
+int AcYHistory[100];
+int AcZHistory[100];
 
 void setup() {
   Wire.begin();
@@ -30,11 +34,17 @@ void loop() {
   GyY=Wire.read()<<8|Wire.read();  // 0x45 (GYRO_YOUT_H) & 0x46 (GYRO_YOUT_L)
   GyZ=Wire.read()<<8|Wire.read();  // 0x47 (GYRO_ZOUT_H) & 0x48 (GYRO_ZOUT_L)
 
-  // SEND TO SERIAL
+  //SEND TO SERIAL
   Serial.print(',');
   Serial.print(AcX);
   Serial.print(',');
   Serial.print(AcY);
   Serial.print(',');
   Serial.println(AcZ);
+
+void shiftArray(int array[]){
+  // Shift all the records further by one index
+  for(int i = sizeof(array)-1; i >= 0; i--){
+    array[i+1] = array[i];
+  }
 }
