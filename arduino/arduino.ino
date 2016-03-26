@@ -21,6 +21,33 @@ void setup() {
 }
 
 void loop() {
+  updateSensorValues();
+
+  //SEND TO SERIAL
+  // Serial.print(',');
+  // Serial.print(AcX);
+  // Serial.print(',');
+  // Serial.print(AcY);
+  // Serial.print(',');
+  // Serial.println(AcZ);
+
+
+  shiftArray(AcXHistory);
+  shiftArray(AcYHistory);
+  shiftArray(AcZHistory);
+  AcXHistory[0] = AcX;
+  AcYHistory[0] = AcY;
+  AcZHistory[0] = AcZ;
+}
+
+void shiftArray(int array[]){
+  // Shift all the records further by one index
+  for(int i = arrayLength-1; i > 0; i--){
+    array[i] = array[i-1];
+  }
+}
+
+void updateSensorValues() {
   // READ SENSOR
   Wire.beginTransmission(address);
   Wire.write(0x3B);  // starting with register 0x3B (ACCEL_XOUT_H)
@@ -33,18 +60,4 @@ void loop() {
   GyX=Wire.read()<<8|Wire.read();  // 0x43 (GYRO_XOUT_H) & 0x44 (GYRO_XOUT_L)
   GyY=Wire.read()<<8|Wire.read();  // 0x45 (GYRO_YOUT_H) & 0x46 (GYRO_YOUT_L)
   GyZ=Wire.read()<<8|Wire.read();  // 0x47 (GYRO_ZOUT_H) & 0x48 (GYRO_ZOUT_L)
-
-  //SEND TO SERIAL
-  Serial.print(',');
-  Serial.print(AcX);
-  Serial.print(',');
-  Serial.print(AcY);
-  Serial.print(',');
-  Serial.println(AcZ);
-
-void shiftArray(int array[]){
-  // Shift all the records further by one index
-  for(int i = sizeof(array)-1; i >= 0; i--){
-    array[i+1] = array[i];
-  }
 }
