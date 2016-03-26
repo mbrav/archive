@@ -18,9 +18,11 @@ const unsigned int arrayLength = 200;
 // 06 =  1st Half Min
 // 07 =  2nd Half Max
 // 08 =  2nd Half Min
-int AcXHistory[208+1];
-int AcYHistory[208+1];
-int AcZHistory[208+1];
+// 09 =  1st Half Abruptness
+// 10 =  2nd Half Abruptness
+int AcXHistory[210+1];
+int AcYHistory[210+1];
+int AcZHistory[210+1];
 
 unsigned int loopCount;
 
@@ -71,6 +73,11 @@ void loop() {
   Serial.print(AcXHistory[207]);
   Serial.print('\t');
   Serial.print(AcXHistory[208]);
+  Serial.print('\t');
+  Serial.print(AcXHistory[209]);
+  Serial.print('\t');
+  Serial.print(AcXHistory[210]);
+  Serial.print('\t');
   Serial.println('\t');
 
   loopCount++;
@@ -126,32 +133,59 @@ void findPeak(int array[]) {
   int maxHalf2 = -32768;
   int minHalf2 = 32767;
 
-  // calculate peaks inn the first half
+  // Find Peak Abruptness
+  // Takes the found maxs and mins and calculates the distance
+  // between the time they occured
+  int abruptnessHalf1;
+  int abruptnessHalf2;
+  int indexMax;
+  int indexMin;
+
+  // calculate peaks in the first half
   for (int i = 0; i < arrayLength/2; i ++) {
-    // register max
+    // register max of the first half
     if (maxHalf1 < array[i]) {
       array[arrayLength + 5] = array[i];
       maxHalf1 = array[i];
+      // register index
+      indexMax = i;
     }
 
-    // register min
+    // register min of the first half
     else if (minHalf1 > array[i]) {
       array[arrayLength + 6] = array[i];
       minHalf1 = array[i];
+      // register index
+      indexMin = i;
     }
   }
-  // calculate peaks inn the second half
+
+  // find the abruptness of the first half
+  // the less it is, the more abrupt
+  abruptnessHalf1 = abs(indexMax-indexMin);
+  array[arrayLength + 9] = abruptnessHalf1;
+
+  // calculate peaks in the second half
   for (int i = arrayLength/2; i < arrayLength; i ++) {
-    // register max
+    // register max of the second half
     if (maxHalf2 < array[i]) {
       array[arrayLength + 7] = array[i];
       maxHalf2 = array[i];
+      // register index
+      indexMax = i;
     }
 
-    // register min
+    // register min of the second half
     else if (minHalf2 > array[i]) {
       array[arrayLength + 8] = array[i];
       minHalf2 = array[i];
+      // register index
+      indexMin = i;
     }
   }
+
+  // find the abruptness of the second half
+  // the less it is, the more abrupt
+  abruptnessHalf2 = abs(indexMax-indexMin);
+  array[arrayLength + 10] = abruptnessHalf2;
 }
