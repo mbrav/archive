@@ -85,8 +85,13 @@ void loop() {
     // eventSignificance trigger
     if (eventSignificance > 5.0) {
       // Memory pool for JSON object tree.
-      StaticJsonBuffer<1000> jsonBuffer;
+      StaticJsonBuffer<2000> jsonBuffer;
       JsonObject& root = jsonBuffer.createObject();
+
+      // Event Significance
+      root["eventSignificance"] = eventSignificance;
+
+      // Accelerometer X reading statistics
       JsonArray& AcXstats = root.createNestedArray("AcXstats");
       AcXstats.add(AcXHistory[arrayLength + 1]);
       AcXstats.add(AcXHistory[arrayLength + 2]);
@@ -101,6 +106,7 @@ void loop() {
       AcXstats.add(AcXHistory[arrayLength + 11]);
       AcXstats.add(AcXHistory[arrayLength + 12]);
 
+      // Accelerometer Y reading statistics
       JsonArray& AcYstats = root.createNestedArray("AcYstats");
       AcYstats.add(AcYHistory[arrayLength + 1]);
       AcYstats.add(AcYHistory[arrayLength + 2]);
@@ -115,6 +121,7 @@ void loop() {
       AcYstats.add(AcYHistory[arrayLength + 11]);
       AcYstats.add(AcYHistory[arrayLength + 12]);
 
+      // Accelerometer Z reading statistics
       JsonArray& AcZstats = root.createNestedArray("AcZstats");
       AcZstats.add(AcZHistory[arrayLength + 1]);
       AcZstats.add(AcZHistory[arrayLength + 2]);
@@ -128,6 +135,25 @@ void loop() {
       AcZstats.add(AcZHistory[arrayLength + 10]);
       AcZstats.add(AcZHistory[arrayLength + 11]);
       AcZstats.add(AcZHistory[arrayLength + 12]);
+
+      // Accelerometer X readings
+      JsonArray& AcX = root.createNestedArray("AcX");
+      for (int i = 10; i < 30; i ++) {
+        AcX.add(AcXHistory[i]);
+      }
+
+      // Accelerometer Y readings
+      JsonArray& AcY = root.createNestedArray("AcY");
+      for (int i = 10; i < 30; i ++) {
+        AcY.add(AcYHistory[i]);
+      }
+
+      // Accelerometer Z readings
+      JsonArray& AcZ = root.createNestedArray("AcZ");
+      for (int i = 10; i < 30; i ++) {
+        AcZ.add(AcZHistory[i]);
+      }
+
       root.prettyPrintTo(Serial);
       // send JSON
     }
