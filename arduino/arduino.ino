@@ -1,3 +1,4 @@
+// in.fORM alpha
 // Created by Michael Braverman
 // 9 March 2016
 
@@ -6,7 +7,6 @@
 const int address=0x68;  // I2C address of the MPU-6050
 int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ;
 
-
 // DATA STORAGE
 const unsigned int arrayLength = 200;
 // Spaces after arrayLength store calculations
@@ -14,12 +14,15 @@ const unsigned int arrayLength = 200;
 // 02 =  2nd Quarter Median
 // 03 =  3rd Quarter Median
 // 04 =  4th Quarter Median
-int AcXHistory[204];
-int AcYHistory[204];
-int AcZHistory[204];
+// 05 =  1st Half Max
+// 06 =  1st Half Min
+// 07 =  2nd Half Max
+// 08 =  2nd Half Min
+int AcXHistory[208+1];
+int AcYHistory[208+1];
+int AcZHistory[208+1];
 
 unsigned int loopCount;
-
 
 void setup() {
   Wire.begin();
@@ -33,17 +36,24 @@ void setup() {
 void loop() {
   updateSensorValues();
 
-  shiftArray(AcXHistory);
-  shiftArray(AcYHistory);
-  shiftArray(AcZHistory);
-  AcXHistory[0] = AcX;
-  AcYHistory[0] = AcY;
-  AcZHistory[0] = AcZ;
+  // do every 5 loops
+  if (loopCount % 5 == 0) {
+    AcXHistory[0] = AcX;
+    AcYHistory[0] = AcY;
+    AcZHistory[0] = AcZ;
+    shiftArray(AcXHistory);
+    shiftArray(AcYHistory);
+    shiftArray(AcZHistory);
+  }
 
+  // do every 25 loops
   if (loopCount % 25 == 0) {
     calculateMedian(AcXHistory);
     calculateMedian(AcYHistory);
     calculateMedian(AcZHistory);
+    findPeak(AcXHistory);
+    findPeak(AcYHistory);
+    findPeak(AcZHistory);
   }
 
   Serial.print(AcXHistory[201]);
@@ -53,7 +63,17 @@ void loop() {
   Serial.print(AcXHistory[203]);
   Serial.print('\t');
   Serial.print(AcXHistory[204]);
+  Serial.print('\t');
+  Serial.print(AcXHistory[205]);
+  Serial.print('\t');
+  Serial.print(AcXHistory[206]);
+  Serial.print('\t');
+  Serial.print(AcXHistory[207]);
+  Serial.print('\t');
+  Serial.print(AcXHistory[208]);
   Serial.println('\t');
+
+  loopCount++;
 }
 
 // Update sensor readings
@@ -94,4 +114,44 @@ void calculateMedian(int array[]) {
   array[arrayLength + 2] = array[arrayLength + 2]/50;
   array[arrayLength + 3] = array[arrayLength + 3]/50;
   array[arrayLength + 4] = array[arrayLength + 4]/50;
+}
+
+// Find Peak
+// Takes two parts of the array and calculates
+// the minimum and maxims peaks in each one of them
+void findPeak(int array[]) {
+  // set min and max values to peaks
+  int maxHalf1 = -32768;
+  int minHalf1 = 32767;
+  int maxHalf2 = -32768;
+  int minHalf2 = 32767;
+
+  // calculate peaks inn the first half
+  for (int i = 0; i < arrayLength/2; i ++) {
+    // register max
+    if (maxHalf1 < array[i]) {
+      array[arrayLength + 5] = array[i];
+      maxHalf1 = array[i];
+    }
+
+    // register min
+    else if (minHalf1 > array[i]) {
+      array[arrayLength + 6] = array[i];
+      minHalf1 = array[i];
+    }
+  }
+  // calculate peaks inn the second half
+  for (int i = arrayLength/2; i < arrayLength; i ++) {
+    // register max
+    if (maxHalf2 < array[i]) {
+      array[arrayLength + 7] = array[i];
+      maxHalf2 = array[i];
+    }
+
+    // register min
+    else if (minHalf2 > array[i]) {
+      array[arrayLength + 8] = array[i];
+      minHalf2 = array[i];
+    }
+  }
 }
