@@ -6,10 +6,18 @@
 const int address=0x68;  // I2C address of the MPU-6050
 int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ;
 
-int arrayLength = 100;
-int AcXHistory[100];
-int AcYHistory[100];
-int AcZHistory[100];
+const unsigned int arrayLength = 200;
+int AcXHistory[200];
+int AcYHistory[200];
+int AcZHistory[200];
+
+unsigned int loopCount;
+
+int qarterMedian1;
+int qarterMedian2;
+int qarterMedian3;
+int qarterMedian4;
+
 
 void setup() {
   Wire.begin();
@@ -23,21 +31,16 @@ void setup() {
 void loop() {
   updateSensorValues();
 
-  //SEND TO SERIAL
-  // Serial.print(',');
-  // Serial.print(AcX);
-  // Serial.print(',');
-  // Serial.print(AcY);
-  // Serial.print(',');
-  // Serial.println(AcZ);
-
-
   shiftArray(AcXHistory);
   shiftArray(AcYHistory);
   shiftArray(AcZHistory);
   AcXHistory[0] = AcX;
   AcYHistory[0] = AcY;
   AcZHistory[0] = AcZ;
+
+  if (loopCount % 25 == 0) {
+    lookForChange(AcXHistory);
+  }
 }
 
 void shiftArray(int array[]){
@@ -45,6 +48,30 @@ void shiftArray(int array[]){
   for(int i = arrayLength-1; i > 0; i--){
     array[i] = array[i-1];
   }
+}
+
+void lookForChange(int array[]) {
+
+  for (int i = 0; i < 50; i ++) {
+    qarterMedian1 += array[i];
+    qarterMedian2 += array[i + 50];
+    qarterMedian3 += array[i + 100];
+    qarterMedian4 += array[i + 150];
+  }
+
+  qarterMedian1 = qarterMedian1/50;
+  qarterMedian2 = qarterMedian2/50;
+  qarterMedian3 = qarterMedian3/50;
+  qarterMedian4 = qarterMedian4/50;
+
+  Serial.print(qarterMedian1);
+  Serial.print('\t');
+  Serial.print(qarterMedian2);
+  Serial.print('\t');
+  Serial.print(qarterMedian3);
+  Serial.print('\t');
+  Serial.print(qarterMedian4);
+  Serial.println('\t');
 }
 
 void updateSensorValues() {
