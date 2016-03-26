@@ -26,6 +26,9 @@ int AcXHistory[212+1];
 int AcYHistory[212+1];
 int AcZHistory[212+1];
 
+// value that stores the "significance" of the event
+float eventSignificance;
+
 unsigned int loopCount;
 
 void setup() {
@@ -50,14 +53,32 @@ void loop() {
     shiftArray(AcZHistory);
   }
 
-  // do every 25 loops
+  // do every 20 loops
   if (loopCount % 25 == 0) {
+
     calculateMedian(AcXHistory);
     calculateMedian(AcYHistory);
     calculateMedian(AcZHistory);
     findPeak(AcXHistory);
     findPeak(AcYHistory);
     findPeak(AcZHistory);
+
+    // reset event significance
+    eventSignificance = 1.0;
+
+    // add up event significance
+
+    if (eventThreshold(AcXHistory)) {
+      eventSignificance *= 2.2;
+    }
+
+    if (eventThreshold(AcYHistory)) {
+      eventSignificance *= 2.1;
+    }
+
+    if (eventThreshold(AcZHistory)) {
+      eventSignificance *= 2.0;
+    }
   }
 
   Serial.print(AcXHistory[201]);
@@ -84,6 +105,7 @@ void loop() {
   Serial.print('\t');
   Serial.print(AcXHistory[212]);
   Serial.print('\t');
+  Serial.print(eventSignificance);
   Serial.println('\t');
 
   loopCount++;
@@ -190,7 +212,6 @@ void findPeak(int array[]) {
     }
   }
 
-
   // find the abruptness of the second half
   // the less it is, the more abrupt
   abruptnessHalf2 = abs(indexMax-indexMin);
@@ -200,4 +221,13 @@ void findPeak(int array[]) {
   array[arrayLength + 11] = maxHalf1 - minHalf1;
   // set 2nd Half Difference between Max and Min
   array[arrayLength + 12] = maxHalf2 - minHalf2;
+}
+
+// A True value is returned if an event occured
+boolean eventThreshold(int array[]) {
+  if (array[209] < 15 && array[211] > 20000) {
+    return true;
+  } else {
+    return false;
+  }
 }
