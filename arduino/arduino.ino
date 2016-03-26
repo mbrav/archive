@@ -20,9 +20,11 @@ const unsigned int arrayLength = 200;
 // 08 =  2nd Half Min
 // 09 =  1st Half Abruptness
 // 10 =  2nd Half Abruptness
-int AcXHistory[210+1];
-int AcYHistory[210+1];
-int AcZHistory[210+1];
+// 11 =  1st Half Difference between Max and Min
+// 12 =  2nd Half Difference between Max and Min
+int AcXHistory[212+1];
+int AcYHistory[212+1];
+int AcZHistory[212+1];
 
 unsigned int loopCount;
 
@@ -77,6 +79,10 @@ void loop() {
   Serial.print(AcXHistory[209]);
   Serial.print('\t');
   Serial.print(AcXHistory[210]);
+  Serial.print('\t');
+  Serial.print(AcXHistory[211]);
+  Serial.print('\t');
+  Serial.print(AcXHistory[212]);
   Serial.print('\t');
   Serial.println('\t');
 
@@ -184,8 +190,14 @@ void findPeak(int array[]) {
     }
   }
 
+
   // find the abruptness of the second half
   // the less it is, the more abrupt
   abruptnessHalf2 = abs(indexMax-indexMin);
   array[arrayLength + 10] = abruptnessHalf2;
+
+  // set 1st Half Difference between Max and Min
+  array[arrayLength + 11] = maxHalf1 - minHalf1;
+  // set 2nd Half Difference between Max and Min
+  array[arrayLength + 12] = maxHalf2 - minHalf2;
 }
