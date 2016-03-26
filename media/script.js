@@ -6,10 +6,37 @@ var submitBody, mapBody, title, aboutText, textField, submitButton, backButton;
 
 // App elements
 var rawInputText;
+var serial;
 
-var generated = false;
 
 function setup() {
+  // Instantiate our SerialPort object
+ serial = new p5.SerialPort();
+
+ // Let's list the ports available
+ var portlist = serial.list();
+
+ // Assuming our Arduino is connected, let's open the connection to it
+ // Change this to the name of your arduino's serial port
+ serial.open("/dev/cu.usbmodem819431");
+
+ // Register some callbacks
+
+ // When we connect to the underlying server
+ serial.on('connected', serverConnected);
+
+ // When we get a list of serial ports that are available
+ serial.on('list', gotList);
+
+ // When we some data from the serial port
+ serial.on('data', gotData);
+
+ // When or if we get an error
+ serial.on('error', gotError);
+
+ // When our serial port is opened and ready for read/write
+ serial.on('open', gotOpen);
+
   noCanvas();
 
   submitBody = select('#submit-page');
@@ -17,7 +44,6 @@ function setup() {
 
   title = select('#title');
   aboutText = select('#about-text');
-  textField = select('#text-field');
   submitButton = select('#submit-button');
   backButton = select('#back-button');
   aboutText.hide();
@@ -35,23 +61,6 @@ function setup() {
 }
 
 function draw() {
-
-  // atempt to toggle generated elements
-  if (generated) {
-    var resultDivs = selectAll('.data-set');
-    // textTitles = selectAll('.data-set-context');
-    // generated = false;
-
-    for (var i = 0; i < resultDivs.length; i++){
-      resultDivs[i].mouseOver(function(){
-        resultDivs[i].show();
-        console.log(resultDivs);
-      });
-      resultDivs[i].mouseOut(function(){
-        resultDivs[i].hide();
-      });
-    }
-  }
 }
 
 function submit() {
@@ -60,9 +69,6 @@ function submit() {
   mapBody.show();
 
   // App function
-  rawInputText = textField.value();
-  analyseHistoricDates(rawInputText);
-  generated = true;
 }
 
 function back() {
@@ -70,52 +76,32 @@ function back() {
   mapBody.hide();
 }
 
-// TEXT ANALYSIS FUNCTIONS
+// We are connected and ready to go
+function serverConnected() {
+    println("We are connected!");
+}
 
-// AnalyseHistoricDates
-// takes numbers and looks at wether they have words like "in", "of"
-// plots the numbers as html elements, x being the year axis
-function analyseHistoricDates(data) {
-  // takes texts
-
-  // var oldRegexFormula = /(in|of|late|early|mid)\s\d{1,4}/gi;
-  var regexFormula = /(?!(in|on|of|late|early|the|from|by|as|january|february|march|april|may|june|july|august|september|october|november|december)\s)\d{4}/gi;
-  // gets all the text until end of sentence after previous formula
-  var contextTextRegex = /(?!(in|on|of|late|early|the|from|by|as|january|february|march|april|may|june|july|august|september|october|november|december)\s)\d{4}(.*?)([.,?])/gi;
-  var regexOutput = data.match(regexFormula);
-  var contextTextRegexOutput = data.match(contextTextRegex);
-
-  var max = 0;
-  var min = 9999; // should be good until year 9999
-
-  // calculate the minumum and maximum values
-  for(var i = 0; i < regexOutput.length; i++) {
-    if (regexOutput[i] > max) {
-      max = regexOutput[i];
-    }
-
-    if (regexOutput[i] < min) {
-      min = regexOutput[i];
-    }
+// Got the list of ports
+function gotList(thelist) {
+  // theList is an array of their names
+  for (var i = 0; i < thelist.length; i++) {
+    // Display in the console
+    println(i + " " + thelist[i]);
   }
+}
 
-  for(var i = 0; i < regexOutput.length; i++) {
-    // render results
-    var resultDiv = createDiv('');
-    var textTitle = createElement('h2', regexOutput[i]);
-    var textContext = createElement('p', contextTextRegexOutput[i]);
-    mapBody.child(resultDiv);
-    resultDiv.child(textTitle);
-    resultDiv.child(textContext);
-    resultDiv.attribute('id', i);
-    resultDiv.attribute('class', 'data-set');
-    textTitle.attribute('class', 'data-set-title blue');
-    textContext.attribute('class', 'black bg-white data-set-context');
+// Connected to our serial device
+function gotOpen() {
+  println("Serial Port is open!");
+}
 
-    // positon resulDiv'saccording to the window dimensions
-    var x = map(regexOutput[i], min, max, 10, windowWidth - 100);
-    resultDiv.position(x + 50, random(windowHeight-50));
-  }
-  console.log("max = " + max);
-  console.log("min = " + min);
+// Ut oh, here is an error, let's log it
+function gotError(theerror) {
+  println(theerror);
+}
+
+// There is data available to work with from the serial port
+function gotData() {
+  var currentString = serial.readStringUntil("\r\n");
+  console.log(currentString);
 }

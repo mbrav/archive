@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>in.fORM</title>
-    <script src="media/p5.min.js"></script>
+    <script src="media/p5.min.js" type="text/javascript"></script>
     <script src="media/p5.dom.js" type="text/javascript"></script>
-    <script src="media/script.js"></script>
+    <script src="media/p5.serialport.js" type="text/javascript"></script>
+    <script src="media/script.js" type="text/javascript"></script>
     <link rel="stylesheet" href="media/colors.css">
     <link rel="stylesheet" href="media/btns.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -97,7 +98,7 @@
     <!-- SUBMIT FORM BODY -->
     <div id="submit-page">
       <header>
-        <h1 id="title" class="blue"> in.fORM <span class="gray">regex-alpha</span></h1>
+        <h1 id="title" class="blue"> in.fORM <span class="gray">alpha</span></h1>
         <div id="about-text" class="bg-navy aqua">
           <ol>
             <li><b class="olive">in. form.</b> - getting information in, getting a formulated structure out</li>
@@ -106,19 +107,12 @@
             <li><b class="olive">ORM</b> - Object Relational Mapping</li>
           </ol>
         </div>
-        <h2 id="subtitle" class="navy"> An Object-Relational Mapping tool </h2>
+        <h2 id="subtitle" class="navy"> A Physical Computing Object-Relational Mapping tool </h2>
       </header>
       <main>
-        <textarea id="text-field" placeholder="Enter your text here..." rows="15"></textarea><br>
-        <a id="submit-button" class="btn btn--s btn--blue">Submit</a>
+        <a id="submit-button" class="btn btn--s btn--blue">Connect</a>
         <a id="submit-button" class="btn btn--s" href="index.html">Reset</a>
       </main>
-      <footer class="bg-gray  ">
-        <h3 class="olive">What text works so far:</h3>
-        <ul>
-          <li>text with a bunch of historic dates, like <a href="https://en.wikipedia.org/wiki/Mahatma_Gandhi">Mahatma Gandhi</a></li>
-        </ul>
-      </footer>
     </div>
 
     <!-- Object Relational Map BODY -->

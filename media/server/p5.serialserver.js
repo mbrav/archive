@@ -2,7 +2,7 @@
 	p5.serialserver.js
 */
 
-var LOGGING = false;
+var LOGGING = true;
 
 var wss = null;
 var serialPort = null;
@@ -15,7 +15,7 @@ var logit = function(mess) {
 	}
 };
 
-var start = function () { 
+var start = function () {
 	logit("start()");
 
 	var SERVER_PORT = 8081;
@@ -34,7 +34,7 @@ var start = function () {
 
 			serialPortName = serialport;
 
-			serialPort = new SerialPort.SerialPort(serialport, serialoptions, false, 
+			serialPort = new SerialPort.SerialPort(serialport, serialoptions, false,
 				function(err) {
 					if (err) {
 						console.log(err);
@@ -46,7 +46,7 @@ var start = function () {
 			serialPort.on('data', function(incoming) {
 				//{"type":"Buffer","data":[10]}
 				for (var i = 0; i < incoming.length; i++) {
-					sendit({method:'data',data:incoming[i]});	
+					sendit({method:'data',data:incoming[i]});
 				}
 			});
 
@@ -58,7 +58,7 @@ var start = function () {
 			serialPort.on('error', function(data) {
 				logit("serialPort.on error " + data, true);
 				sendit({method: 'error', data:data});
-			});				
+			});
 
 			serialPort.open(function (err) {
 				logit("serialPort.open");
@@ -169,10 +169,10 @@ var start = function () {
 
 							sendit({method:'list', data:portNames});
 						});
-					} else if (message.method === "openserial") {	
+					} else if (message.method === "openserial") {
 
 						logit("message.method === openserial");
-							
+
 						// Open up
 						if (typeof message.data.serialport === 'string') {
 							logit("new SerialPort.SerialPort");
@@ -185,7 +185,7 @@ var start = function () {
 						}
 
 					} else if (message.method === "write") {
-						
+
 						serialPort.write(message.data);
 
 					} else if (message.method === "close") {
@@ -243,7 +243,7 @@ var stop = function() {
 				}
 			}
 		);
-	}		
+	}
 
 	try {
 		for (var c = 0; c < clients.length; c++) {
@@ -262,7 +262,7 @@ var stop = function() {
 
 		wss.close();
 	}
-	
+
 	// Let's try to close a different way
 	if (serialPort != null && serialPort.isOpen()) {
 		logit("serialPort != null && serialPort.isOpen() is true so serialPort = null");
