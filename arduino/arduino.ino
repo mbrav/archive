@@ -6,17 +6,19 @@
 const int address=0x68;  // I2C address of the MPU-6050
 int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ;
 
+
+// DATA STORAGE
 const unsigned int arrayLength = 200;
-int AcXHistory[200];
-int AcYHistory[200];
-int AcZHistory[200];
+// Spaces after arrayLength store calculations
+// 01 =  1st Quarter Median
+// 02 =  2nd Quarter Median
+// 03 =  3rd Quarter Median
+// 04 =  4th Quarter Median
+int AcXHistory[204];
+int AcYHistory[204];
+int AcZHistory[204];
 
 unsigned int loopCount;
-
-int qarterMedian1;
-int qarterMedian2;
-int qarterMedian3;
-int qarterMedian4;
 
 
 void setup() {
@@ -39,43 +41,24 @@ void loop() {
   AcZHistory[0] = AcZ;
 
   if (loopCount % 25 == 0) {
-    lookForChange(AcXHistory);
-  }
-}
-
-void shiftArray(int array[]){
-  // Shift all the records further by one index
-  for(int i = arrayLength-1; i > 0; i--){
-    array[i] = array[i-1];
-  }
-}
-
-void lookForChange(int array[]) {
-
-  for (int i = 0; i < 50; i ++) {
-    qarterMedian1 += array[i];
-    qarterMedian2 += array[i + 50];
-    qarterMedian3 += array[i + 100];
-    qarterMedian4 += array[i + 150];
+    calculateMedian(AcXHistory);
+    calculateMedian(AcYHistory);
+    calculateMedian(AcZHistory);
   }
 
-  qarterMedian1 = qarterMedian1/50;
-  qarterMedian2 = qarterMedian2/50;
-  qarterMedian3 = qarterMedian3/50;
-  qarterMedian4 = qarterMedian4/50;
-
-  Serial.print(qarterMedian1);
+  Serial.print(AcXHistory[201]);
   Serial.print('\t');
-  Serial.print(qarterMedian2);
+  Serial.print(AcXHistory[202]);
   Serial.print('\t');
-  Serial.print(qarterMedian3);
+  Serial.print(AcXHistory[203]);
   Serial.print('\t');
-  Serial.print(qarterMedian4);
+  Serial.print(AcXHistory[204]);
   Serial.println('\t');
 }
 
+// Update sensor readings
 void updateSensorValues() {
-  // READ SENSOR
+  // read accelerometer
   Wire.beginTransmission(address);
   Wire.write(0x3B);  // starting with register 0x3B (ACCEL_XOUT_H)
   Wire.endTransmission(false);
@@ -87,4 +70,28 @@ void updateSensorValues() {
   GyX=Wire.read()<<8|Wire.read();  // 0x43 (GYRO_XOUT_H) & 0x44 (GYRO_XOUT_L)
   GyY=Wire.read()<<8|Wire.read();  // 0x45 (GYRO_YOUT_H) & 0x46 (GYRO_YOUT_L)
   GyZ=Wire.read()<<8|Wire.read();  // 0x47 (GYRO_ZOUT_H) & 0x48 (GYRO_ZOUT_L)
+}
+
+// Shift all the records further by one index
+void shiftArray(int array[]){
+  for(int i = arrayLength-1; i > 0; i--){
+    array[i] = array[i-1];
+  }
+}
+
+// Takes four parts of the array and calculates
+// the median of each on of them
+// Values are stored in the four parts after the arrayLenght
+void calculateMedian(int array[]) {
+  for (int i = 0; i < 50; i ++) {
+    array[arrayLength + 1] += array[i];
+    array[arrayLength + 2]+= array[i + 50];
+    array[arrayLength + 3] += array[i + 100];
+    array[arrayLength + 4] += array[i + 150];
+  }
+
+  array[arrayLength + 1] = array[arrayLength + 1]/50;
+  array[arrayLength + 2] = array[arrayLength + 2]/50;
+  array[arrayLength + 3] = array[arrayLength + 3]/50;
+  array[arrayLength + 4] = array[arrayLength + 4]/50;
 }
