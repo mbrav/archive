@@ -4,6 +4,7 @@
 
 // MPU-6050 sensor setup
 #include<Wire.h>
+#include <ArduinoJson.h>
 const int address=0x68;  // I2C address of the MPU-6050
 int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ;
 
@@ -79,34 +80,86 @@ void loop() {
     if (eventThreshold(AcZHistory)) {
       eventSignificance *= 2.0;
     }
+
+
+    // eventSignificance trigger
+    if (eventSignificance > 5.0) {
+      // Memory pool for JSON object tree.
+      StaticJsonBuffer<1000> jsonBuffer;
+      JsonObject& root = jsonBuffer.createObject();
+      JsonArray& AcXstats = root.createNestedArray("AcXstats");
+      AcXstats.add(AcXHistory[arrayLength + 1]);
+      AcXstats.add(AcXHistory[arrayLength + 2]);
+      AcXstats.add(AcXHistory[arrayLength + 3]);
+      AcXstats.add(AcXHistory[arrayLength + 4]);
+      AcXstats.add(AcXHistory[arrayLength + 5]);
+      AcXstats.add(AcXHistory[arrayLength + 6]);
+      AcXstats.add(AcXHistory[arrayLength + 7]);
+      AcXstats.add(AcXHistory[arrayLength + 8]);
+      AcXstats.add(AcXHistory[arrayLength + 9]);
+      AcXstats.add(AcXHistory[arrayLength + 10]);
+      AcXstats.add(AcXHistory[arrayLength + 11]);
+      AcXstats.add(AcXHistory[arrayLength + 12]);
+
+      JsonArray& AcYstats = root.createNestedArray("AcYstats");
+      AcYstats.add(AcYHistory[arrayLength + 1]);
+      AcYstats.add(AcYHistory[arrayLength + 2]);
+      AcYstats.add(AcYHistory[arrayLength + 3]);
+      AcYstats.add(AcYHistory[arrayLength + 4]);
+      AcYstats.add(AcYHistory[arrayLength + 5]);
+      AcYstats.add(AcYHistory[arrayLength + 6]);
+      AcYstats.add(AcYHistory[arrayLength + 7]);
+      AcYstats.add(AcYHistory[arrayLength + 8]);
+      AcYstats.add(AcYHistory[arrayLength + 9]);
+      AcYstats.add(AcYHistory[arrayLength + 10]);
+      AcYstats.add(AcYHistory[arrayLength + 11]);
+      AcYstats.add(AcYHistory[arrayLength + 12]);
+
+      JsonArray& AcZstats = root.createNestedArray("AcZstats");
+      AcZstats.add(AcZHistory[arrayLength + 1]);
+      AcZstats.add(AcZHistory[arrayLength + 2]);
+      AcZstats.add(AcZHistory[arrayLength + 3]);
+      AcZstats.add(AcZHistory[arrayLength + 4]);
+      AcZstats.add(AcZHistory[arrayLength + 5]);
+      AcZstats.add(AcZHistory[arrayLength + 6]);
+      AcZstats.add(AcZHistory[arrayLength + 7]);
+      AcZstats.add(AcZHistory[arrayLength + 8]);
+      AcZstats.add(AcZHistory[arrayLength + 9]);
+      AcZstats.add(AcZHistory[arrayLength + 10]);
+      AcZstats.add(AcZHistory[arrayLength + 11]);
+      AcZstats.add(AcZHistory[arrayLength + 12]);
+      root.prettyPrintTo(Serial);
+      // send JSON
+    }
   }
 
-  Serial.print(AcXHistory[201]);
-  Serial.print('\t');
-  Serial.print(AcXHistory[202]);
-  Serial.print('\t');
-  Serial.print(AcXHistory[203]);
-  Serial.print('\t');
-  Serial.print(AcXHistory[204]);
-  Serial.print('\t');
-  Serial.print(AcXHistory[205]);
-  Serial.print('\t');
-  Serial.print(AcXHistory[206]);
-  Serial.print('\t');
-  Serial.print(AcXHistory[207]);
-  Serial.print('\t');
-  Serial.print(AcXHistory[208]);
-  Serial.print('\t');
-  Serial.print(AcXHistory[209]);
-  Serial.print('\t');
-  Serial.print(AcXHistory[210]);
-  Serial.print('\t');
-  Serial.print(AcXHistory[211]);
-  Serial.print('\t');
-  Serial.print(AcXHistory[212]);
-  Serial.print('\t');
-  Serial.print(eventSignificance);
-  Serial.println('\t');
+
+  // Serial.print(AcXHistory[201]);
+  // Serial.print('\t');
+  // Serial.print(AcXHistory[202]);
+  // Serial.print('\t');
+  // Serial.print(AcXHistory[203]);
+  // Serial.print('\t');
+  // Serial.print(AcXHistory[204]);
+  // Serial.print('\t');
+  // Serial.print(AcXHistory[205]);
+  // Serial.print('\t');
+  // Serial.print(AcXHistory[206]);
+  // Serial.print('\t');
+  // Serial.print(AcXHistory[207]);
+  // Serial.print('\t');
+  // Serial.print(AcXHistory[208]);
+  // Serial.print('\t');
+  // Serial.print(AcXHistory[209]);
+  // Serial.print('\t');
+  // Serial.print(AcXHistory[210]);
+  // Serial.print('\t');
+  // Serial.print(AcXHistory[211]);
+  // Serial.print('\t');
+  // Serial.print(AcXHistory[212]);
+  // Serial.print('\t');
+  // Serial.print(eventSignificance);
+  // Serial.println('\t');
 
   loopCount++;
 }
