@@ -9,6 +9,7 @@ var rawInputText;
 var serial;
 
 var serialJSON;
+var received = false;
 
 function setup() {
   // Instantiate our SerialPort object
@@ -16,27 +17,6 @@ function setup() {
 
  // Let's list the ports available
  var portlist = serial.list();
-
- // Assuming our Arduino is connected, let's open the connection to it
- // Change this to the name of your arduino's serial port
- serial.open("/dev/cu.usbmodem819431");
-
- // Register some callbacks
-
- // When we connect to the underlying server
- serial.on('connected', serverConnected);
-
- // When we get a list of serial ports that are available
- serial.on('list', gotList);
-
- // When we some data from the serial port
- serial.on('data', gotData);
-
- // When or if we get an error
- serial.on('error', gotError);
-
- // When our serial port is opened and ready for read/write
- serial.on('open', gotOpen);
 
   noCanvas();
 
@@ -62,8 +42,9 @@ function setup() {
 }
 
 function draw() {
-  if(serialJSON != null) {
+  if(received) {
     console.log("hello");
+    received = false;
   }
 }
 
@@ -72,12 +53,20 @@ function submit() {
   submitBody.hide();
   mapBody.show();
 
-  // App function
+  // connect to Serial
+  serial.open("/dev/cu.usbmodem819431");
+
+  serial.on('connected', serverConnected);
+  serial.on('list', gotList);
+  serial.on('data', gotData);
+  serial.on('error', gotError);
+  serial.on('open', gotOpen);
 }
 
 function back() {
   submitBody.show();
   mapBody.hide();
+  serial.close();
 }
 
 // We are connected and ready to go
@@ -112,5 +101,6 @@ function gotData() {
   if (serialString.length > 0) {
     var serialJSON = JSON.parse(serialString);
     console.log(serialJSON);
+    received = true;
   }
 }
