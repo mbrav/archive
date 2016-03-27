@@ -29,8 +29,28 @@ function setup() {
   backButton = select('#back-button');
   aboutText.hide();
 
-  submitButton.mousePressed(submit);
-  backButton.mousePressed(back);
+  submitButton.mousePressed(function() {
+    // Go into the list mode
+    submitBody.hide();
+    mapBody.show();
+
+    // connect to Serial
+    serial.open("/dev/cu.usbmodem819431");
+
+    serial.on('connected', serverConnected);
+    serial.on('list', gotList);
+    serial.on('data', gotData);
+    serial.on('error', gotError);
+    serial.on('open', gotOpen);
+  });
+
+  backButton.mousePressed(function() {
+
+    // go back to homescreen
+    submitBody.show();
+    mapBody.hide();
+    serial.close();
+  });
 
   title.mouseOver(function(){
     aboutText.show();
@@ -43,30 +63,8 @@ function setup() {
 
 function draw() {
   if(received) {
-    console.log("hello");
     received = false;
   }
-}
-
-function submit() {
-  // DOM rendering
-  submitBody.hide();
-  mapBody.show();
-
-  // connect to Serial
-  serial.open("/dev/cu.usbmodem819431");
-
-  serial.on('connected', serverConnected);
-  serial.on('list', gotList);
-  serial.on('data', gotData);
-  serial.on('error', gotError);
-  serial.on('open', gotOpen);
-}
-
-function back() {
-  submitBody.show();
-  mapBody.hide();
-  serial.close();
 }
 
 // We are connected and ready to go
