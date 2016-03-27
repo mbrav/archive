@@ -154,8 +154,9 @@ void loop() {
         AcZ.add(AcZHistory[i]);
       }
 
-      root.prettyPrintTo(Serial);
       // send JSON
+      root.printTo(Serial);
+      Serial.print("\r\n");
     }
   }
 

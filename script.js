@@ -8,6 +8,7 @@ var submitBody, mapBody, title, aboutText, textField, submitButton, backButton;
 var rawInputText;
 var serial;
 
+var serialJSON;
 
 function setup() {
   // Instantiate our SerialPort object
@@ -61,6 +62,9 @@ function setup() {
 }
 
 function draw() {
+  if(serialJSON != null) {
+    console.log("hello");
+  }
 }
 
 function submit() {
@@ -102,6 +106,11 @@ function gotError(theerror) {
 
 // There is data available to work with from the serial port
 function gotData() {
-  var currentString = serial.readStringUntil("\r\n");
-  console.log(currentString);
+  var serialString = serial.readLine();
+
+  // fixes "Uncaught SyntaxError: Unexpected end of input" error
+  if (serialString.length > 0) {
+    var serialJSON = JSON.parse(serialString);
+    console.log(serialJSON);
+  }
 }
