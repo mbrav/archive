@@ -13,10 +13,10 @@ var received = false;
 
 function setup() {
   // Instantiate our SerialPort object
- serial = new p5.SerialPort();
+  serial = new p5.SerialPort();
 
- // Let's list the ports available
- var portlist = serial.list();
+  // Let's list the ports available
+  var portlist = serial.list();
 
   noCanvas();
 
@@ -30,13 +30,12 @@ function setup() {
   aboutText.hide();
 
   submitButton.mousePressed(function() {
-    // Go into the list mode
+    // Go into plot mode
     submitBody.hide();
     mapBody.show();
 
     // connect to Serial
     serial.open("/dev/cu.usbmodem819431");
-
     serial.on('connected', serverConnected);
     serial.on('list', gotList);
     serial.on('data', gotData);
@@ -44,13 +43,12 @@ function setup() {
     serial.on('open', gotOpen);
   });
 
-  backButton.mousePressed(function() {
-
-    // go back to homescreen
-    submitBody.show();
-    mapBody.hide();
-    serial.close();
-  });
+ backButton.mousePressed(function() {
+   // go back to homescreen
+   submitBody.show();
+   mapBody.hide();
+   serial.close();
+ });
 
   title.mouseOver(function(){
     aboutText.show();
@@ -69,7 +67,7 @@ function draw() {
 
 // We are connected and ready to go
 function serverConnected() {
-    println("We are connected!");
+  println("We are connected!");
 }
 
 // Got the list of ports
