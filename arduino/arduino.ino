@@ -27,10 +27,24 @@ int AcXHistory[212+1];
 int AcYHistory[212+1];
 int AcZHistory[212+1];
 
+// EVENTS
+// eventThreshold() values
+// also used in other parts in the code
+int minimumAbruptness = 15;
+int minimumDiff = 20000;
+
 // value that stores the "significance" of the event
 float eventSignificance;
+float eventSignificanceThreshold = 2.0;
 
-unsigned int loopCount;
+// TIMERS
+// read values 40 times per second
+unsigned long timerMillis1;
+int refreshInterval1 = 25; // in ms
+
+// do statistics 10 times per second
+unsigned long timerMillis2;
+int refreshInterval2 = 100; // in ms
 
 void setup() {
   Wire.begin();
@@ -42,21 +56,31 @@ void setup() {
 }
 
 void loop() {
-  updateSensorValues();
 
-  // do every 5 loops
-  if (loopCount % 5 == 0) {
-    AcXHistory[0] = AcX;
-    AcYHistory[0] = AcY;
-    AcZHistory[0] = AcZ;
+  // sensor refresh timmer
+  if ((millis() - timerMillis1) > refreshInterval1) {
+    // record the time of when this action occured
+    timerMillis1 = millis();
+    // update sensors
+    updateSensorValues();
+
+    // readings have to get old eventually...
     shiftArray(AcXHistory);
     shiftArray(AcYHistory);
     shiftArray(AcZHistory);
+
+    // register newborn readings
+    AcXHistory[0] = AcX;
+    AcYHistory[0] = AcY;
+    AcZHistory[0] = AcZ;
   }
 
-  // do every 20 loops
-  if (loopCount % 25 == 0) {
+  // statisitics calculation timer
+  if ((millis() - timerMillis2) > refreshInterval2) {
+    // record the time of when this action occured
+    timerMillis2 = millis();
 
+    // calculate statistics
     calculateMedian(AcXHistory);
     calculateMedian(AcYHistory);
     calculateMedian(AcZHistory);
@@ -68,127 +92,28 @@ void loop() {
     eventSignificance = 1.0;
 
     // add up event significance
-
     if (eventThreshold(AcXHistory)) {
-      eventSignificance *= 2.2;
+      eventSignificance *= 2.0;
+      map(constrain(AcXHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 2.8, 1.4);
     }
 
     if (eventThreshold(AcYHistory)) {
-      eventSignificance *= 2.1;
+      eventSignificance *= 1.9;
+      map(constrain(AcYHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 2.6, 1.3);
     }
 
     if (eventThreshold(AcZHistory)) {
-      eventSignificance *= 2.0;
+      eventSignificance *= 1.8;
+      map(constrain(AcZHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 2.4, 1.2);
     }
 
+    // check if the event is significant enought
+    if (eventSignificance > eventSignificanceThreshold) {
 
-    // eventSignificance trigger
-    if (eventSignificance > 5.0) {
-      // Memory pool for JSON object tree.
-      StaticJsonBuffer<2000> jsonBuffer;
-      JsonObject& root = jsonBuffer.createObject();
-
-      // Event Significance
-      root["eventSignificance"] = eventSignificance;
-
-      // Accelerometer X reading statistics
-      JsonArray& AcXstats = root.createNestedArray("AcXstats");
-      AcXstats.add(AcXHistory[arrayLength + 1]);
-      AcXstats.add(AcXHistory[arrayLength + 2]);
-      AcXstats.add(AcXHistory[arrayLength + 3]);
-      AcXstats.add(AcXHistory[arrayLength + 4]);
-      AcXstats.add(AcXHistory[arrayLength + 5]);
-      AcXstats.add(AcXHistory[arrayLength + 6]);
-      AcXstats.add(AcXHistory[arrayLength + 7]);
-      AcXstats.add(AcXHistory[arrayLength + 8]);
-      AcXstats.add(AcXHistory[arrayLength + 9]);
-      AcXstats.add(AcXHistory[arrayLength + 10]);
-      AcXstats.add(AcXHistory[arrayLength + 11]);
-      AcXstats.add(AcXHistory[arrayLength + 12]);
-
-      // Accelerometer Y reading statistics
-      JsonArray& AcYstats = root.createNestedArray("AcYstats");
-      AcYstats.add(AcYHistory[arrayLength + 1]);
-      AcYstats.add(AcYHistory[arrayLength + 2]);
-      AcYstats.add(AcYHistory[arrayLength + 3]);
-      AcYstats.add(AcYHistory[arrayLength + 4]);
-      AcYstats.add(AcYHistory[arrayLength + 5]);
-      AcYstats.add(AcYHistory[arrayLength + 6]);
-      AcYstats.add(AcYHistory[arrayLength + 7]);
-      AcYstats.add(AcYHistory[arrayLength + 8]);
-      AcYstats.add(AcYHistory[arrayLength + 9]);
-      AcYstats.add(AcYHistory[arrayLength + 10]);
-      AcYstats.add(AcYHistory[arrayLength + 11]);
-      AcYstats.add(AcYHistory[arrayLength + 12]);
-
-      // Accelerometer Z reading statistics
-      JsonArray& AcZstats = root.createNestedArray("AcZstats");
-      AcZstats.add(AcZHistory[arrayLength + 1]);
-      AcZstats.add(AcZHistory[arrayLength + 2]);
-      AcZstats.add(AcZHistory[arrayLength + 3]);
-      AcZstats.add(AcZHistory[arrayLength + 4]);
-      AcZstats.add(AcZHistory[arrayLength + 5]);
-      AcZstats.add(AcZHistory[arrayLength + 6]);
-      AcZstats.add(AcZHistory[arrayLength + 7]);
-      AcZstats.add(AcZHistory[arrayLength + 8]);
-      AcZstats.add(AcZHistory[arrayLength + 9]);
-      AcZstats.add(AcZHistory[arrayLength + 10]);
-      AcZstats.add(AcZHistory[arrayLength + 11]);
-      AcZstats.add(AcZHistory[arrayLength + 12]);
-
-      // Accelerometer X readings
-      JsonArray& AcX = root.createNestedArray("AcX");
-      for (int i = 10; i < 30; i ++) {
-        AcX.add(AcXHistory[i]);
-      }
-
-      // Accelerometer Y readings
-      JsonArray& AcY = root.createNestedArray("AcY");
-      for (int i = 10; i < 30; i ++) {
-        AcY.add(AcYHistory[i]);
-      }
-
-      // Accelerometer Z readings
-      JsonArray& AcZ = root.createNestedArray("AcZ");
-      for (int i = 10; i < 30; i ++) {
-        AcZ.add(AcZHistory[i]);
-      }
-
-      // send JSON
-      root.printTo(Serial);
-      Serial.print("\r\n");
+      // send the JSON of the event vis Serial
+      sendJSON();
     }
   }
-
-
-  // Serial.print(AcXHistory[201]);
-  // Serial.print('\t');
-  // Serial.print(AcXHistory[202]);
-  // Serial.print('\t');
-  // Serial.print(AcXHistory[203]);
-  // Serial.print('\t');
-  // Serial.print(AcXHistory[204]);
-  // Serial.print('\t');
-  // Serial.print(AcXHistory[205]);
-  // Serial.print('\t');
-  // Serial.print(AcXHistory[206]);
-  // Serial.print('\t');
-  // Serial.print(AcXHistory[207]);
-  // Serial.print('\t');
-  // Serial.print(AcXHistory[208]);
-  // Serial.print('\t');
-  // Serial.print(AcXHistory[209]);
-  // Serial.print('\t');
-  // Serial.print(AcXHistory[210]);
-  // Serial.print('\t');
-  // Serial.print(AcXHistory[211]);
-  // Serial.print('\t');
-  // Serial.print(AcXHistory[212]);
-  // Serial.print('\t');
-  // Serial.print(eventSignificance);
-  // Serial.println('\t');
-
-  loopCount++;
 }
 
 // Update sensor readings
@@ -305,9 +230,89 @@ void findPeak(int array[]) {
 
 // A True value is returned if an event occured
 boolean eventThreshold(int array[]) {
-  if (array[209] < 15 && array[211] > 20000) {
+
+  // abruptness < 15 & Diff between max an min > 20000
+  if (array[209] < minimumAbruptness && array[211] > minimumDiff) {
     return true;
   } else {
     return false;
   }
+}
+
+void sendJSON() {
+  // Memory pool for JSON object tree.
+  StaticJsonBuffer<2000> jsonBuffer;
+  JsonObject& root = jsonBuffer.createObject();
+
+  // Event Significance
+  root["eventSignificance"] = eventSignificance;
+
+  // Accelerometer X reading statistics
+  JsonArray& AcXstats = root.createNestedArray("AcXstats");
+  AcXstats.add(AcXHistory[arrayLength + 1]);
+  AcXstats.add(AcXHistory[arrayLength + 2]);
+  AcXstats.add(AcXHistory[arrayLength + 3]);
+  AcXstats.add(AcXHistory[arrayLength + 4]);
+  AcXstats.add(AcXHistory[arrayLength + 5]);
+  AcXstats.add(AcXHistory[arrayLength + 6]);
+  AcXstats.add(AcXHistory[arrayLength + 7]);
+  AcXstats.add(AcXHistory[arrayLength + 8]);
+  AcXstats.add(AcXHistory[arrayLength + 9]);
+  AcXstats.add(AcXHistory[arrayLength + 10]);
+  AcXstats.add(AcXHistory[arrayLength + 11]);
+  AcXstats.add(AcXHistory[arrayLength + 12]);
+
+  // Accelerometer Y reading statistics
+  JsonArray& AcYstats = root.createNestedArray("AcYstats");
+  AcYstats.add(AcYHistory[arrayLength + 1]);
+  AcYstats.add(AcYHistory[arrayLength + 2]);
+  AcYstats.add(AcYHistory[arrayLength + 3]);
+  AcYstats.add(AcYHistory[arrayLength + 4]);
+  AcYstats.add(AcYHistory[arrayLength + 5]);
+  AcYstats.add(AcYHistory[arrayLength + 6]);
+  AcYstats.add(AcYHistory[arrayLength + 7]);
+  AcYstats.add(AcYHistory[arrayLength + 8]);
+  AcYstats.add(AcYHistory[arrayLength + 9]);
+  AcYstats.add(AcYHistory[arrayLength + 10]);
+  AcYstats.add(AcYHistory[arrayLength + 11]);
+  AcYstats.add(AcYHistory[arrayLength + 12]);
+
+  // Accelerometer Z reading statistics
+  JsonArray& AcZstats = root.createNestedArray("AcZstats");
+  AcZstats.add(AcZHistory[arrayLength + 1]);
+  AcZstats.add(AcZHistory[arrayLength + 2]);
+  AcZstats.add(AcZHistory[arrayLength + 3]);
+  AcZstats.add(AcZHistory[arrayLength + 4]);
+  AcZstats.add(AcZHistory[arrayLength + 5]);
+  AcZstats.add(AcZHistory[arrayLength + 6]);
+  AcZstats.add(AcZHistory[arrayLength + 7]);
+  AcZstats.add(AcZHistory[arrayLength + 8]);
+  AcZstats.add(AcZHistory[arrayLength + 9]);
+  AcZstats.add(AcZHistory[arrayLength + 10]);
+  AcZstats.add(AcZHistory[arrayLength + 11]);
+  AcZstats.add(AcZHistory[arrayLength + 12]);
+
+  // SEND RAW READING (unecessary while commented out)
+
+  // // Accelerometer X readings
+  // JsonArray& AcX = root.createNestedArray("AcX");
+  // for (int i = 10; i < 30; i ++) {
+  //   AcX.add(AcXHistory[i]);
+  // }
+  //
+  // // Accelerometer Y readings
+  // JsonArray& AcY = root.createNestedArray("AcY");
+  // for (int i = 10; i < 30; i ++) {
+  //   AcY.add(AcYHistory[i]);
+  // }
+  //
+  // // Accelerometer Z readings
+  // JsonArray& AcZ = root.createNestedArray("AcZ");
+  // for (int i = 10; i < 30; i ++) {
+  //   AcZ.add(AcZHistory[i]);
+  // }
+
+  // send JSON
+  root.printTo(Serial);
+  Serial.print("\r\n");
 }

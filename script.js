@@ -9,6 +9,7 @@ var rawInputText;
 var serial;
 
 var serialJSON;
+var object 
 var received = false;
 
 function setup() {
@@ -39,7 +40,7 @@ function setup() {
     mapBody.show();
 
     // connect to Serial
-    serial.open("/dev/cu.usbmodem819431"); // serial port 
+    serial.open("/dev/cu.usbmodem819431"); // serial port
     serial.on('connected', serverConnected);
     serial.on('list', gotList);
     serial.on('data', gotData);
@@ -71,8 +72,11 @@ function draw() {
     svg.append("circle")
       .attr("cx", Math.random() * window.innerWidth)
       .attr("cy", Math.random() * window.innerHeight)
-      .attr("r", 0).transition()
-      .attr("r", Math.random() * 100);
+      .attr("r", 0)
+      .style("fill","white")
+      .transition()
+      .attr("r", Math.random() * 100)
+      .style("fill", function(d) {return d3.rgb(120,140,200)});
   }
 }
 
