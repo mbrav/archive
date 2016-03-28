@@ -75,7 +75,7 @@ function draw() {
     var mapPage = d3.select("#map-page");
     var x = Math.random() * window.innerWidth;
     var y = Math.random() * window.innerHeight;
-    svg.append("circle").attr("id", n)
+    svg.append("circle").attr("id", "#eventCircle" + n)
       .attr("cx", x)
       .attr("cy", y)
       .attr("r", 0)
@@ -86,12 +86,24 @@ function draw() {
 
     var eventInfo = mapPage.append("div")
       .attr("class", "event-info")
+      .attr("id", "#eventInfo" + n)
       .style({"left": int(x) + "px", "top": int(y) + "px"});
     var eventTime = eventInfo.append("p").text(serialJSON[n].eventSignificance);
 
     // increase count of eventsprocessed & received
     n ++;
   }
+
+  var circle = d3.selectAll("circle");
+  var eventInfo = d3.selectAll(".event-info");
+  circle.on("mouseover", function(){
+    console.log("hello");
+    eventInfo.style("display", "block");
+  });
+  circle.on("mouseout", function(){
+    console.log("bye");
+    eventInfo.style("display", "none");
+  });
 }
 
 // We are connected and ready to go

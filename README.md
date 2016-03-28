@@ -24,7 +24,7 @@ node node/startserver.js
 
 ### Hardware
 * MPU-6050 Accelerometer
-* Teensy 3.1 (an Arduino Uno might not have enough space)
+* Teensy 3.1 (an Arduino Uno might be too slow)
 
 ### Arduino Libraries
 * [ArduinoJson](https://github.com/bblanchon/ArduinoJson) - An elegant and efficient JSON library for embedded systems.
