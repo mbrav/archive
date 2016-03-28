@@ -8,9 +8,12 @@ var submitBody, mapBody, title, aboutText, textField, submitButton, backButton;
 var rawInputText;
 var serial;
 
-var serialJSON;
+var serialJSON = [];
 var object
 var received = false;
+
+// number of events recieved
+var n = 0;
 
 function setup() {
   // Instantiate our SerialPort object
@@ -69,14 +72,25 @@ function draw() {
     received = false;
 
     var svg = d3.select("svg");
-    svg.append("circle")
-      .attr("cx", Math.random() * window.innerWidth)
-      .attr("cy", Math.random() * window.innerHeight)
+    var mapPage = d3.select("#map-page");
+    var x = Math.random() * window.innerWidth;
+    var y = Math.random() * window.innerHeight;
+    svg.append("circle").attr("id", n)
+      .attr("cx", x)
+      .attr("cy", y)
       .attr("r", 0)
       .style("fill","white")
       .transition()
-      .attr("r", serialJSON.eventSignificance)
+      .attr("r", serialJSON[n].eventSignificance)
       .style("fill", function(d) {return d3.rgb(120,140,200)});
+
+    var eventInfo = mapPage.append("div")
+      .attr("class", "event-info")
+      .style({"left": int(x) + "px", "top": int(y) + "px"});
+    var eventTime = eventInfo.append("p").text(serialJSON[n].eventSignificance);
+
+    // increase count of eventsprocessed & received
+    n ++;
   }
 }
 
@@ -110,8 +124,9 @@ function gotData() {
 
   // fixes "Uncaught SyntaxError: Unexpected end of input" error
   if (serialString.length > 0) {
-    serialJSON = JSON.parse(serialString);
-    console.log(serialJSON);
+    serialJSON[n] = JSON.parse(serialString);
+    console.log(serialJSON[n]);
+
     received = true;
   }
 }

@@ -34,15 +34,6 @@
       padding: 15px;
     }
 
-    footer {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      padding: 15px;
-      height: 100px;
-    }
-
     h1 {
       font-weight: 700;
       margin-bottom: 0px;
@@ -55,18 +46,6 @@
     h2 {
       font-weight: 400;
       margin-top: 0px;
-    }
-
-    textarea {
-      resize: none;
-      width:100%;
-      height: 100%;
-      outline: none;
-      resize:vertical;
-      color: #444;
-      border-radius: 10px;
-      font-size: 15px;
-      padding: 15px;
     }
 
     #about-text {
@@ -91,6 +70,11 @@
       bottom:0;
       left:0;
       right:0
+    }
+
+    .event-info {
+      display: block;
+      position: absolute;
     }
 
     </style>
@@ -121,8 +105,10 @@
     <div id="map-page">
       <a id="back-button" class="btn btn--s btn--blue">back</a>
 
+      <!-- svg canvas  -->
       <svg> </svg>
 
     </div>
+
   </body>
 </html>
