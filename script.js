@@ -9,7 +9,7 @@ var rawInputText;
 var serial;
 
 var serialJSON;
-var object 
+var object
 var received = false;
 
 function setup() {
@@ -75,7 +75,7 @@ function draw() {
       .attr("r", 0)
       .style("fill","white")
       .transition()
-      .attr("r", Math.random() * 100)
+      .attr("r", serialJSON.eventSignificance)
       .style("fill", function(d) {return d3.rgb(120,140,200)});
   }
 }
@@ -110,7 +110,7 @@ function gotData() {
 
   // fixes "Uncaught SyntaxError: Unexpected end of input" error
   if (serialString.length > 0) {
-    var serialJSON = JSON.parse(serialString);
+    serialJSON = JSON.parse(serialString);
     console.log(serialJSON);
     received = true;
   }

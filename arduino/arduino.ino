@@ -40,18 +40,20 @@ float eventSignificanceThreshold = 4.5;
 // TIMERS
 // read values 40 times per second
 unsigned long timerMillis1;
-int refreshInterval1 = 25; // in ms
+int refreshInterval1 = 10; // in ms
 
-// do statistics 10 times per second
+// do statistics 1000/x times per second
 unsigned long timerMillis2;
-int refreshInterval2 = 100; // in ms
+int refreshInterval2 = 60; // in ms
 
 // counts the number of readings the program made
 unsigned long readingCount;
 // keeps track of when the last triggered readings/event was made
 unsigned long lastTriggeredEvent;
 // number of indexes they must be appart
-int minimumEventProximity = 20;
+int minimumEventProximity = 30;
+
+unsigned int FPS;
 
 void setup() {
   Wire.begin();
@@ -138,6 +140,9 @@ void loop() {
       }
     }
   }
+
+  // monitopr program performace every 2 seconds
+  fps(2);
 }
 
 // Update sensor readings
@@ -270,6 +275,8 @@ void sendJSON() {
 
   // Event Significance
   root["eventSignificance"] = eventSignificance;
+  root["fps"] = FPS;
+  root["millis"] = millis();
 
   // Accelerometer X reading statistics
   JsonArray& AcXstats = root.createNestedArray("AcXstats");
@@ -339,4 +346,22 @@ void sendJSON() {
   // send JSON
   root.printTo(Serial);
   Serial.print("\r\n");
+}
+
+static inline void fps(const int seconds){
+  // Create static variables so that the code and variables can
+  // all be declared inside a function
+  static unsigned long lastMillis;
+  static unsigned long frameCount;
+  static unsigned int framesPerSecond;
+
+  // It is best if we declare millis() only once
+  unsigned long now = millis();
+  frameCount ++;
+  if (now - lastMillis >= seconds * 1000) {
+    framesPerSecond = frameCount / seconds;
+    frameCount = 0;
+    lastMillis = now;
+    FPS = framesPerSecond;
+  }
 }
