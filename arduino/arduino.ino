@@ -29,13 +29,13 @@ int AcZHistory[212+1];
 
 // EVENTS
 // eventThreshold() values
-// also used in other parts in the code
+// also used in other parts of the code
 int minimumAbruptness = 15;
 int minimumDiff = 20000;
 
 // value that stores the "significance" of the event
 float eventSignificance;
-float eventSignificanceThreshold = 2.0;
+float eventSignificanceThreshold = 4.5;
 
 // TIMERS
 // read values 40 times per second
@@ -90,22 +90,32 @@ void loop() {
 
     // reset event significance
     eventSignificance = 1.0;
+    // counts the number of readings that passed eventThreshold()
+    int readingstriggered = 0;
 
     // add up event significance
     if (eventThreshold(AcXHistory)) {
       eventSignificance *= 2.0;
-      map(constrain(AcXHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 2.8, 1.4);
+      eventSignificance *= map(constrain(AcXHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 1.8, 1.2);
+      eventSignificance *= map(constrain(AcXHistory[211], minimumDiff, minimumDiff*2), 0, minimumDiff, 1.5, 1.2);
+      readingstriggered ++;
     }
 
     if (eventThreshold(AcYHistory)) {
-      eventSignificance *= 1.9;
-      map(constrain(AcYHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 2.6, 1.3);
+      eventSignificance *= 1.8;
+      eventSignificance *= map(constrain(AcYHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 1.8, 1.2);
+      eventSignificance *= map(constrain(AcYHistory[211], minimumDiff, minimumDiff*2), 0, minimumDiff, 1.5, 1.2);
+      readingstriggered ++;
     }
 
     if (eventThreshold(AcZHistory)) {
-      eventSignificance *= 1.8;
-      map(constrain(AcZHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 2.4, 1.2);
+      eventSignificance *= 1.7;
+      eventSignificance *= map(constrain(AcZHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 1.8, 1.2);
+      eventSignificance *= map(constrain(AcZHistory[211], minimumDiff, minimumDiff*2), 0, minimumDiff, 1.5, 1.2);
+      readingstriggered ++;
     }
+
+    eventSignificance *= map(readingstriggered, 0, 4, 0, 8);
 
     // check if the event is significant enought
     if (eventSignificance > eventSignificanceThreshold) {
@@ -198,7 +208,7 @@ void findPeak(int array[]) {
   abruptnessHalf1 = abs(indexMax-indexMin);
   array[arrayLength + 9] = abruptnessHalf1;
 
-  // calculate peaks in the second half
+  // calculate peaks in the second** half
   for (int i = arrayLength/2; i < arrayLength; i ++) {
     // register max of the second half
     if (maxHalf2 < array[i]) {
