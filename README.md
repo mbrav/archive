@@ -5,6 +5,7 @@ A Physical Computing and Object Relational Mapping tool
 * [node.js](https://nodejs.org/en/)
 * Arduino
 * p5.js
+* d3.js
 * JSON
 
 #### Hardware

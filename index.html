@@ -6,6 +6,7 @@
     <title>in.fORM alpha</title>
     <script src="media/p5.min.js" type="text/javascript"></script>
     <script src="media/p5.dom.js" type="text/javascript"></script>
+    <script src="media/d3.js" type="text/javascript"></script>
     <script src="media/p5.serialport.js" type="text/javascript"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="media/colors.css">
@@ -84,6 +85,14 @@
       margin: 15px;
     }
 
+    svg {
+      position:fixed;
+      top:0;
+      bottom:0;
+      left:0;
+      right:0
+    }
+
     </style>
   </head>
   <body class="bg-silver">
@@ -111,6 +120,9 @@
     <!-- Object Relational Map BODY -->
     <div id="map-page">
       <a id="back-button" class="btn btn--s btn--blue">back</a>
+
+      <svg> </svg>
+
     </div>
   </body>
 </html>

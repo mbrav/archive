@@ -29,6 +29,10 @@ function setup() {
   backButton = select('#back-button');
   aboutText.hide();
 
+  d3.select("svg")
+    .attr("width",window.innerWidth)
+    .attr("height",window.innerHeight);
+
   submitButton.mousePressed(function() {
     // Go into plot mode
     submitBody.hide();
@@ -62,6 +66,13 @@ function setup() {
 function draw() {
   if(received) {
     received = false;
+
+    var svg = d3.select("svg");
+    svg.append("circle")
+      .attr("cx", Math.random() * window.innerWidth)
+      .attr("cy", Math.random() * window.innerHeight)
+      .attr("r", 0).transition()
+      .attr("r", Math.random() * 100);
   }
 }
 
