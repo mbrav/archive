@@ -46,6 +46,13 @@ int refreshInterval1 = 25; // in ms
 unsigned long timerMillis2;
 int refreshInterval2 = 100; // in ms
 
+// counts the number of readings the program made
+unsigned long readingCount;
+// keeps track of when the last triggered readings/event was made
+unsigned long lastTriggeredEvent;
+// number of indexes they must be appart
+int minimumEventProximity = 20;
+
 void setup() {
   Wire.begin();
   Wire.beginTransmission(address);
@@ -73,6 +80,9 @@ void loop() {
     AcXHistory[0] = AcX;
     AcYHistory[0] = AcY;
     AcZHistory[0] = AcZ;
+
+    // keep track of the number of readings
+    readingCount ++;
   }
 
   // statisitics calculation timer
@@ -120,8 +130,12 @@ void loop() {
     // check if the event is significant enought
     if (eventSignificance > eventSignificanceThreshold) {
 
-      // send the JSON of the event vis Serial
-      sendJSON();
+      // don't overwhelm the serial port with to much JSON events
+      if (readingCount - lastTriggeredEvent > minimumEventProximity) {
+        lastTriggeredEvent= readingCount;
+        // send the JSON of the event vis Serial
+        sendJSON();
+      }
     }
   }
 }
