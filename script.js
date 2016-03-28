@@ -39,7 +39,7 @@ function setup() {
     mapBody.show();
 
     // connect to Serial
-    serial.open("/dev/cu.usbmodem819431");
+    serial.open("/dev/cu.usbmodem819431"); // serial port 
     serial.on('connected', serverConnected);
     serial.on('list', gotList);
     serial.on('data', gotData);
