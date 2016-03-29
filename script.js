@@ -87,7 +87,7 @@ function draw() {
     var eventInfo = mapPage.append("div")
       .attr("class", "event-info")
       .attr("id", "#eventInfo" + n)
-      .style({"left": int(x) + "px", "top": int(y) + "px"});
+      .style({"left": int(x - 15) + "px", "top": int(y - 20) + "px"});
     var eventTime = eventInfo.append("p").text(serialJSON[n].eventSignificance);
 
     // increase count of eventsprocessed & received
