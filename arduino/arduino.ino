@@ -2,14 +2,14 @@
 // Created by Michael Braverman
 // 9 March 2016
 
-// JSON parding library
+// JSON parsing library
 #include <ArduinoJson.h>
 
 // MPU-6050 and HMC5883 sensor setup
 #include<Wire.h>
 const int address=0x68;  // I2C address of the MPU-6050
 
-// necessary forthe HMC5883 sesor
+// necessary forthe HMC5883 sensor
 #include <Adafruit_Sensor.h>
 #include <Adafruit_HMC5883_U.h>
 
@@ -51,15 +51,16 @@ int MgZHistory[212+1];
 // EVENTS
 // eventThreshold() values
 // also used in other parts of the code
-// values for Acceleromter
+
+// event trigger alues for Acceleromter readings
 int minimumAbruptnessAc = 15;
 float minimumDiffAc = 20000;
 
-// values for Magnetomer
+// event trigger alues for Magnetomer readings
 int minimumAbruptnessMg = 15;
 float minimumDiffMg = 5.0;
 
-// values for Magnetomer
+// event trigger values for Temperature readings
 int minimumAbruptnessTmp = 15;
 float minimumDiffTmp = 1.0;
 
@@ -68,7 +69,7 @@ float eventSignificance;
 float eventSignificanceThreshold = 4.5;
 
 // TIMERS
-// read values 40 times per second
+// read values 1000/x times per second
 unsigned long timerMillis1;
 int refreshInterval1 = 10; // in ms
 
@@ -80,17 +81,19 @@ int refreshInterval2 = 60; // in ms
 unsigned long readingCount;
 // keeps track of when the last triggered readings/event was made
 unsigned long lastTriggeredEvent;
-// number of indexes they must be appart
+// number of indexes events must be appart
 int minimumEventProximity = 30;
 
 // keeps track of program's loop performace
 unsigned int FPS;
 
 void setup() {
+
+  // setup for MPU-6050 sensor
   Wire.begin();
   Wire.beginTransmission(address);
-  Wire.write(0x6B);  // PWR_MGMT_1 register
-  Wire.write(0);     // set to zero (wakes up the MPU-6050)
+  Wire.write(0x6B);
+  Wire.write(0);
   Wire.endTransmission(true);
   Serial.begin(115200);
 
@@ -102,6 +105,7 @@ void setup() {
 }
 
 void loop() {
+  // Serial.println(Tmp);
   // sensor refresh timmer
   if ((millis() - timerMillis1) > refreshInterval1) {
     // record the time of when this action occured
@@ -151,6 +155,10 @@ void loop() {
     findPeak(MgXHistory);
     findPeak(MgYHistory);
     findPeak(MgZHistory);
+
+    // calculate Temperature readings statistics
+    calculateMedian(TmpHistory);
+    findPeak(TmpHistory);
 
     // reset event significance
     eventSignificance = 1.0;
