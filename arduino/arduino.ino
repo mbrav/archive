@@ -43,20 +43,25 @@ const unsigned int arrayLength = 200;
 int AcXHistory[212+1];
 int AcYHistory[212+1];
 int AcZHistory[212+1];
+int TmpHistory[212+1];
 int MgXHistory[212+1];
 int MgYHistory[212+1];
 int MgZHistory[212+1];
+
 // EVENTS
 // eventThreshold() values
 // also used in other parts of the code
-
 // values for Acceleromter
 int minimumAbruptnessAc = 15;
-int minimumDiffAc = 20000;
+float minimumDiffAc = 20000;
 
 // values for Magnetomer
 int minimumAbruptnessMg = 15;
 float minimumDiffMg = 5.0;
+
+// values for Magnetomer
+int minimumAbruptnessTmp = 15;
+float minimumDiffTmp = 1.0;
 
 // value that stores the "significance" of the event
 float eventSignificance;
@@ -97,7 +102,6 @@ void setup() {
 }
 
 void loop() {
-
   // sensor refresh timmer
   if ((millis() - timerMillis1) > refreshInterval1) {
     // record the time of when this action occured
@@ -112,6 +116,7 @@ void loop() {
     shiftArray(MgXHistory);
     shiftArray(MgYHistory);
     shiftArray(MgZHistory);
+    shiftArray(TmpHistory);
 
     // register newborn readings
     AcXHistory[0] = AcX;
@@ -120,6 +125,7 @@ void loop() {
     MgXHistory[0] = MgX;
     MgYHistory[0] = MgY;
     MgZHistory[0] = MgZ;
+    TmpHistory[0] = Tmp;
 
     // keep track of the number of readings
     readingCount ++;
@@ -195,8 +201,16 @@ void loop() {
       readingstriggered ++;
     }
 
+    // add up event significance based on Temperature readings
+    if (eventThresholdTmp(TmpHistory)) {
+      eventSignificance *= 1.5;
+      eventSignificance *= map(constrain(TmpHistory[209], 0, minimumAbruptnessTmp), 0, minimumAbruptnessTmp, 1.6, 1.1);
+      eventSignificance *= map(constrain(TmpHistory[211], minimumDiffTmp, minimumDiffTmp*2), 0, minimumDiffTmp, 1.3, 1.1);
+      readingstriggered ++;
+    }
+
     // increase as more readings are triggered
-    eventSignificance *= map(readingstriggered, 0, 6, 0, 12);
+    eventSignificance *= readingstriggered;
 
     // check if the event is significant enought
     if (eventSignificance > eventSignificanceThreshold) {
@@ -211,7 +225,7 @@ void loop() {
     }
   }
 
-  // monitopr program performace every 2 seconds
+  // monitor program performace every 2 seconds
   fps(2);
 }
 
@@ -334,9 +348,9 @@ void findPeak(int array[]) {
   array[arrayLength + 12] = maxHalf2 - minHalf2;
 }
 
-// A True value is returned if an event occured
+// Event Threshold for acceleromter statistics
+// A true value is returned if an event occured
 boolean eventThresholdAc(int array[]) {
-
   // abruptness < 15 & Diff between max an min > 20000
   if (array[209] < minimumAbruptnessAc && array[211] > minimumDiffAc) {
     return true;
@@ -345,9 +359,9 @@ boolean eventThresholdAc(int array[]) {
   }
 }
 
+// Event Threshold for magnetometer statistics
+// A true value is returned if an event occured
 boolean eventThresholdMg(int array[]) {
-
-  // abruptness < 15 & Diff between max an min > 20000
   if (array[209] < minimumAbruptnessMg && array[211] > minimumDiffMg) {
     return true;
   } else {
@@ -355,6 +369,17 @@ boolean eventThresholdMg(int array[]) {
   }
 }
 
+// Event Threshold for temperature statistics
+// A true value is returned if an event occured
+boolean eventThresholdTmp(int array[]) {
+  if (array[209] < minimumAbruptnessTmp && array[211] > minimumDiffTmp) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// Parse and send JSON via Serial
 void sendJSON() {
   // Memory pool for JSON object tree.
   StaticJsonBuffer<2000> jsonBuffer;
@@ -457,6 +482,21 @@ void sendJSON() {
   MgZstats.add(MgZHistory[arrayLength + 11]);
   MgZstats.add(MgZHistory[arrayLength + 12]);
 
+  // Temperature reading statistics
+  JsonArray& Tmpstats = root.createNestedArray("Tmpstats");
+  Tmpstats.add(TmpHistory[arrayLength + 1]);
+  Tmpstats.add(TmpHistory[arrayLength + 2]);
+  Tmpstats.add(TmpHistory[arrayLength + 3]);
+  Tmpstats.add(TmpHistory[arrayLength + 4]);
+  Tmpstats.add(TmpHistory[arrayLength + 5]);
+  Tmpstats.add(TmpHistory[arrayLength + 6]);
+  Tmpstats.add(TmpHistory[arrayLength + 7]);
+  Tmpstats.add(TmpHistory[arrayLength + 8]);
+  Tmpstats.add(TmpHistory[arrayLength + 9]);
+  Tmpstats.add(TmpHistory[arrayLength + 10]);
+  Tmpstats.add(TmpHistory[arrayLength + 11]);
+  Tmpstats.add(TmpHistory[arrayLength + 12]);
+
   // SEND RAW READING (unecessary while commented out)
 
   // // Magnetometer X RAW readings
@@ -482,6 +522,7 @@ void sendJSON() {
   Serial.print("\r\n");
 }
 
+// Simple Arduino loop FPS counter
 static inline void fps(const int seconds){
   // Create static variables so that the code and variables can
   // all be declared inside a function
