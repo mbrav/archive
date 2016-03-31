@@ -1,4 +1,4 @@
-# in.fORM alpha
+# infORM alpha
 A Physical Computing and Object Relational Mapping tool
 
 ## Instructions

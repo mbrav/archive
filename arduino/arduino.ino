@@ -1,12 +1,29 @@
-// in.fORM alpha
+// infORM alpha
 // Created by Michael Braverman
 // 9 March 2016
 
-// MPU-6050 sensor setup
-#include<Wire.h>
+// JSON parding library
 #include <ArduinoJson.h>
+
+// MPU-6050 and HMC5883 sensor setup
+#include<Wire.h>
 const int address=0x68;  // I2C address of the MPU-6050
-int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ;
+
+// necessary forthe HMC5883 sesor
+#include <Adafruit_Sensor.h>
+#include <Adafruit_HMC5883_U.h>
+
+// Assign a unique ID to this sensor at the same time
+Adafruit_HMC5883_Unified mag = Adafruit_HMC5883_Unified(12345);
+
+// From the MPU-6050:
+// Ac - accelerometer readings
+// Gy - gyroscope readings
+// Tmp - temperature readings
+
+// From the HMC5883:
+// Mg - magnetometer readings
+int16_t AcX,AcY,AcZ,GyX,GyY,GyZ,MgX,MgY,MgZ,Tmp;
 
 // DATA STORAGE
 const unsigned int arrayLength = 200;
@@ -26,7 +43,9 @@ const unsigned int arrayLength = 200;
 int AcXHistory[212+1];
 int AcYHistory[212+1];
 int AcZHistory[212+1];
-
+int MgXHistory[212+1];
+int MgYHistory[212+1];
+int MgZHistory[212+1];
 // EVENTS
 // eventThreshold() values
 // also used in other parts of the code
@@ -53,6 +72,7 @@ unsigned long lastTriggeredEvent;
 // number of indexes they must be appart
 int minimumEventProximity = 30;
 
+// keeps track of program's loop performace
 unsigned int FPS;
 
 void setup() {
@@ -62,6 +82,12 @@ void setup() {
   Wire.write(0);     // set to zero (wakes up the MPU-6050)
   Wire.endTransmission(true);
   Serial.begin(115200);
+
+  if(!mag.begin()) {
+    // if here was a problem detecting the HMC5883 ... check your connections
+    Serial.println("Ooops, no HMC5883 detected ... Check your wiring!");
+    while(1);
+  }
 }
 
 void loop() {
@@ -77,11 +103,17 @@ void loop() {
     shiftArray(AcXHistory);
     shiftArray(AcYHistory);
     shiftArray(AcZHistory);
+    shiftArray(MgXHistory);
+    shiftArray(MgYHistory);
+    shiftArray(MgZHistory);
 
     // register newborn readings
     AcXHistory[0] = AcX;
     AcYHistory[0] = AcY;
     AcZHistory[0] = AcZ;
+    MgXHistory[0] = MgX;
+    MgYHistory[0] = MgY;
+    MgZHistory[0] = MgZ;
 
     // keep track of the number of readings
     readingCount ++;
@@ -92,7 +124,7 @@ void loop() {
     // record the time of when this action occured
     timerMillis2 = millis();
 
-    // calculate statistics
+    // calculate Accelerometer readings statistics
     calculateMedian(AcXHistory);
     calculateMedian(AcYHistory);
     calculateMedian(AcZHistory);
@@ -100,12 +132,20 @@ void loop() {
     findPeak(AcYHistory);
     findPeak(AcZHistory);
 
+    // calculate Magnetometer readings statistics
+    calculateMedian(MgXHistory);
+    calculateMedian(MgYHistory);
+    calculateMedian(MgZHistory);
+    findPeak(MgXHistory);
+    findPeak(MgYHistory);
+    findPeak(MgZHistory);
+
     // reset event significance
     eventSignificance = 1.0;
     // counts the number of readings that passed eventThreshold()
     int readingstriggered = 0;
 
-    // add up event significance
+    // add up event significance based on Accelerometer readings
     if (eventThreshold(AcXHistory)) {
       eventSignificance *= 2.0;
       eventSignificance *= map(constrain(AcXHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 1.8, 1.2);
@@ -127,12 +167,36 @@ void loop() {
       readingstriggered ++;
     }
 
-    eventSignificance *= map(readingstriggered, 0, 4, 0, 8);
+    // add up event significance based on Magnetomete readings
+    if (eventThreshold(MgXHistory)) {
+      eventSignificance *= 1.8;
+      eventSignificance *= map(constrain(MgXHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 1.6, 1.1);
+      eventSignificance *= map(constrain(MgXHistory[211], minimumDiff, minimumDiff*2), 0, minimumDiff, 1.3, 1.1);
+      readingstriggered ++;
+    }
+
+    if (eventThreshold(MgYHistory)) {
+      eventSignificance *= 1.7;
+      eventSignificance *= map(constrain(MgYHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 1.6, 1.1);
+      eventSignificance *= map(constrain(MgYHistory[211], minimumDiff, minimumDiff*2), 0, minimumDiff, 1.3, 1.1);
+      readingstriggered ++;
+    }
+
+    if (eventThreshold(MgZHistory)) {
+      eventSignificance *= 1.5;
+      eventSignificance *= map(constrain(MgZHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 1.6, 1.1);
+      eventSignificance *= map(constrain(MgZHistory[211], minimumDiff, minimumDiff*2), 0, minimumDiff, 1.3, 1.1);
+      readingstriggered ++;
+    }
+
+    // increase as more readings are triggered
+    eventSignificance *= map(readingstriggered, 0, 6, 0, 12);
 
     // check if the event is significant enought
     if (eventSignificance > eventSignificanceThreshold) {
 
       // don't overwhelm the serial port with to much JSON events
+      // minimumEventProximity is a basic limitation technique
       if (readingCount - lastTriggeredEvent > minimumEventProximity) {
         lastTriggeredEvent= readingCount;
         // send the JSON of the event vis Serial
@@ -147,7 +211,7 @@ void loop() {
 
 // Update sensor readings
 void updateSensorValues() {
-  // read accelerometer
+  // read MPU-6050
   Wire.beginTransmission(address);
   Wire.write(0x3B);  // starting with register 0x3B (ACCEL_XOUT_H)
   Wire.endTransmission(false);
@@ -159,6 +223,13 @@ void updateSensorValues() {
   GyX=Wire.read()<<8|Wire.read();  // 0x43 (GYRO_XOUT_H) & 0x44 (GYRO_XOUT_L)
   GyY=Wire.read()<<8|Wire.read();  // 0x45 (GYRO_YOUT_H) & 0x46 (GYRO_YOUT_L)
   GyZ=Wire.read()<<8|Wire.read();  // 0x47 (GYRO_ZOUT_H) & 0x48 (GYRO_ZOUT_L)
+
+  // read HMC5883
+  sensors_event_t event;
+  mag.getEvent(&event);
+  MgX = event.magnetic.x;
+  MgY = event.magnetic.y;
+  MgZ = event.magnetic.z;
 }
 
 // Shift all the records further by one index
@@ -275,7 +346,9 @@ void sendJSON() {
 
   // Event Significance
   root["eventSignificance"] = eventSignificance;
+  // program performace
   root["fps"] = FPS;
+  // time since the sketch started running
   root["millis"] = millis();
 
   // Accelerometer X reading statistics
@@ -323,23 +396,68 @@ void sendJSON() {
   AcZstats.add(AcZHistory[arrayLength + 11]);
   AcZstats.add(AcZHistory[arrayLength + 12]);
 
+  // Magnetometer X reading statistics
+  JsonArray& MgXstats = root.createNestedArray("MgXstats");
+  MgXstats.add(MgXHistory[arrayLength + 1]);
+  MgXstats.add(MgXHistory[arrayLength + 2]);
+  MgXstats.add(MgXHistory[arrayLength + 3]);
+  MgXstats.add(MgXHistory[arrayLength + 4]);
+  MgXstats.add(MgXHistory[arrayLength + 5]);
+  MgXstats.add(MgXHistory[arrayLength + 6]);
+  MgXstats.add(MgXHistory[arrayLength + 7]);
+  MgXstats.add(MgXHistory[arrayLength + 8]);
+  MgXstats.add(MgXHistory[arrayLength + 9]);
+  MgXstats.add(MgXHistory[arrayLength + 10]);
+  MgXstats.add(MgXHistory[arrayLength + 11]);
+  MgXstats.add(MgXHistory[arrayLength + 12]);
+
+  // Magnetometer Y reading statistics
+  JsonArray& MgYstats = root.createNestedArray("MgYstats");
+  MgYstats.add(MgYHistory[arrayLength + 1]);
+  MgYstats.add(MgYHistory[arrayLength + 2]);
+  MgYstats.add(MgYHistory[arrayLength + 3]);
+  MgYstats.add(MgYHistory[arrayLength + 4]);
+  MgYstats.add(MgYHistory[arrayLength + 5]);
+  MgYstats.add(MgYHistory[arrayLength + 6]);
+  MgYstats.add(MgYHistory[arrayLength + 7]);
+  MgYstats.add(MgYHistory[arrayLength + 8]);
+  MgYstats.add(MgYHistory[arrayLength + 9]);
+  MgYstats.add(MgYHistory[arrayLength + 10]);
+  MgYstats.add(MgYHistory[arrayLength + 11]);
+  MgYstats.add(MgYHistory[arrayLength + 12]);
+
+  // Magnetometer Z reading statistics
+  JsonArray& MgZstats = root.createNestedArray("MgZstats");
+  MgZstats.add(MgZHistory[arrayLength + 1]);
+  MgZstats.add(MgZHistory[arrayLength + 2]);
+  MgZstats.add(MgZHistory[arrayLength + 3]);
+  MgZstats.add(MgZHistory[arrayLength + 4]);
+  MgZstats.add(MgZHistory[arrayLength + 5]);
+  MgZstats.add(MgZHistory[arrayLength + 6]);
+  MgZstats.add(MgZHistory[arrayLength + 7]);
+  MgZstats.add(MgZHistory[arrayLength + 8]);
+  MgZstats.add(MgZHistory[arrayLength + 9]);
+  MgZstats.add(MgZHistory[arrayLength + 10]);
+  MgZstats.add(MgZHistory[arrayLength + 11]);
+  MgZstats.add(MgZHistory[arrayLength + 12]);
+
   // SEND RAW READING (unecessary while commented out)
 
-  // // Accelerometer X readings
+  // // Magnetometer X RAW readings
   // JsonArray& AcX = root.createNestedArray("AcX");
-  // for (int i = 10; i < 30; i ++) {
+  // for (int i = 0; i < arrayLenght; i ++) {
   //   AcX.add(AcXHistory[i]);
   // }
   //
-  // // Accelerometer Y readings
+  // // Magnetometer Y RAW readings
   // JsonArray& AcY = root.createNestedArray("AcY");
-  // for (int i = 10; i < 30; i ++) {
+  // for (int i = 0; i < arrayLenght; i ++) {
   //   AcY.add(AcYHistory[i]);
   // }
   //
-  // // Accelerometer Z readings
+  // // Magnetometer Z RAW readings
   // JsonArray& AcZ = root.createNestedArray("AcZ");
-  // for (int i = 10; i < 30; i ++) {
+  // for (int i = 0; i < arrayLenght; i ++) {
   //   AcZ.add(AcZHistory[i]);
   // }
 
