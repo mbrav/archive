@@ -1,4 +1,4 @@
-// infORM alpha
+// infORM alpha2
 // Created by Michael Braverman
 // 9 March 2016
 

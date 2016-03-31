@@ -1,4 +1,4 @@
-//infORM alpha
+//infORM alpha2
 //created by Michael Braverman on March 12, 2016
 
 // DOM elements
