@@ -540,8 +540,10 @@ void sendJSON() {
   // }
 
   // send JSON
-  root.printTo(Serial);
-  Serial.print("\r\n");
+  // root.printTo(Serial);
+  // Serial.print("\r\n");
+
+  root.prettyPrintTo(Serial);
 }
 
 // Simple Arduino loop FPS counter

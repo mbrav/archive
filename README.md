@@ -1,6 +1,8 @@
 # infORM alpha2
 A Physical Computing and Object Relational Mapping tool
 
+[Video](https://vimeo.com/161095259) of the project
+
 ## Instructions
 
 add your serial port in *script.js* on the following line:
