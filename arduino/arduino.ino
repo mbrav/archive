@@ -49,8 +49,14 @@ int MgZHistory[212+1];
 // EVENTS
 // eventThreshold() values
 // also used in other parts of the code
-int minimumAbruptness = 15;
-int minimumDiff = 20000;
+
+// values for Acceleromter
+int minimumAbruptnessAc = 15;
+int minimumDiffAc = 20000;
+
+// values for Magnetomer
+int minimumAbruptnessMg = 15;
+float minimumDiffMg = 5.0;
 
 // value that stores the "significance" of the event
 float eventSignificance;
@@ -146,46 +152,46 @@ void loop() {
     int readingstriggered = 0;
 
     // add up event significance based on Accelerometer readings
-    if (eventThreshold(AcXHistory)) {
+    if (eventThresholdAc(AcXHistory)) {
       eventSignificance *= 2.0;
-      eventSignificance *= map(constrain(AcXHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 1.8, 1.2);
-      eventSignificance *= map(constrain(AcXHistory[211], minimumDiff, minimumDiff*2), 0, minimumDiff, 1.5, 1.2);
+      eventSignificance *= map(constrain(AcXHistory[209], 0, minimumAbruptnessAc), 0, minimumAbruptnessAc, 1.8, 1.2);
+      eventSignificance *= map(constrain(AcXHistory[211], minimumDiffAc, minimumDiffAc*2), 0, minimumDiffAc, 1.5, 1.2);
       readingstriggered ++;
     }
 
-    if (eventThreshold(AcYHistory)) {
+    if (eventThresholdAc(AcYHistory)) {
       eventSignificance *= 1.8;
-      eventSignificance *= map(constrain(AcYHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 1.8, 1.2);
-      eventSignificance *= map(constrain(AcYHistory[211], minimumDiff, minimumDiff*2), 0, minimumDiff, 1.5, 1.2);
+      eventSignificance *= map(constrain(AcYHistory[209], 0, minimumAbruptnessAc), 0, minimumAbruptnessAc, 1.8, 1.2);
+      eventSignificance *= map(constrain(AcYHistory[211], minimumDiffAc, minimumDiffAc*2), 0, minimumDiffAc, 1.5, 1.2);
       readingstriggered ++;
     }
 
-    if (eventThreshold(AcZHistory)) {
+    if (eventThresholdAc(AcZHistory)) {
       eventSignificance *= 1.7;
-      eventSignificance *= map(constrain(AcZHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 1.8, 1.2);
-      eventSignificance *= map(constrain(AcZHistory[211], minimumDiff, minimumDiff*2), 0, minimumDiff, 1.5, 1.2);
+      eventSignificance *= map(constrain(AcZHistory[209], 0, minimumAbruptnessAc), 0, minimumAbruptnessAc, 1.8, 1.2);
+      eventSignificance *= map(constrain(AcZHistory[211], minimumDiffAc, minimumDiffAc*2), 0, minimumDiffAc, 1.5, 1.2);
       readingstriggered ++;
     }
 
-    // add up event significance based on Magnetomete readings
-    if (eventThreshold(MgXHistory)) {
+    // add up event significance based on Magnetometer readings
+    if (eventThresholdMg(MgXHistory)) {
       eventSignificance *= 1.8;
-      eventSignificance *= map(constrain(MgXHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 1.6, 1.1);
-      eventSignificance *= map(constrain(MgXHistory[211], minimumDiff, minimumDiff*2), 0, minimumDiff, 1.3, 1.1);
+      eventSignificance *= map(constrain(MgXHistory[209], 0, minimumAbruptnessMg), 0, minimumAbruptnessMg, 1.6, 1.1);
+      eventSignificance *= map(constrain(MgXHistory[211], minimumDiffMg, minimumDiffMg*2), 0, minimumDiffMg, 1.3, 1.1);
       readingstriggered ++;
     }
 
-    if (eventThreshold(MgYHistory)) {
+    if (eventThresholdMg(MgYHistory)) {
       eventSignificance *= 1.7;
-      eventSignificance *= map(constrain(MgYHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 1.6, 1.1);
-      eventSignificance *= map(constrain(MgYHistory[211], minimumDiff, minimumDiff*2), 0, minimumDiff, 1.3, 1.1);
+      eventSignificance *= map(constrain(MgYHistory[209], 0, minimumAbruptnessMg), 0, minimumAbruptnessMg, 1.6, 1.1);
+      eventSignificance *= map(constrain(MgYHistory[211], minimumDiffMg, minimumDiffMg*2), 0, minimumDiffMg, 1.3, 1.1);
       readingstriggered ++;
     }
 
-    if (eventThreshold(MgZHistory)) {
+    if (eventThresholdMg(MgZHistory)) {
       eventSignificance *= 1.5;
-      eventSignificance *= map(constrain(MgZHistory[209], 0, minimumAbruptness), 0, minimumAbruptness, 1.6, 1.1);
-      eventSignificance *= map(constrain(MgZHistory[211], minimumDiff, minimumDiff*2), 0, minimumDiff, 1.3, 1.1);
+      eventSignificance *= map(constrain(MgZHistory[209], 0, minimumAbruptnessMg), 0, minimumAbruptnessMg, 1.6, 1.1);
+      eventSignificance *= map(constrain(MgZHistory[211], minimumDiffMg, minimumDiffMg*2), 0, minimumDiffMg, 1.3, 1.1);
       readingstriggered ++;
     }
 
@@ -198,7 +204,7 @@ void loop() {
       // don't overwhelm the serial port with to much JSON events
       // minimumEventProximity is a basic limitation technique
       if (readingCount - lastTriggeredEvent > minimumEventProximity) {
-        lastTriggeredEvent= readingCount;
+        lastTriggeredEvent = readingCount;
         // send the JSON of the event vis Serial
         sendJSON();
       }
@@ -329,10 +335,20 @@ void findPeak(int array[]) {
 }
 
 // A True value is returned if an event occured
-boolean eventThreshold(int array[]) {
+boolean eventThresholdAc(int array[]) {
 
   // abruptness < 15 & Diff between max an min > 20000
-  if (array[209] < minimumAbruptness && array[211] > minimumDiff) {
+  if (array[209] < minimumAbruptnessAc && array[211] > minimumDiffAc) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+boolean eventThresholdMg(int array[]) {
+
+  // abruptness < 15 & Diff between max an min > 20000
+  if (array[209] < minimumAbruptnessMg && array[211] > minimumDiffMg) {
     return true;
   } else {
     return false;
