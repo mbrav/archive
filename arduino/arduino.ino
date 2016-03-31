@@ -52,11 +52,11 @@ int MgZHistory[212+1];
 // eventThreshold() values
 // also used in other parts of the code
 
-// event trigger alues for Acceleromter readings
+// event trigger values for Acceleromter readings
 int minimumAbruptnessAc = 15;
-float minimumDiffAc = 20000;
+float minimumDiffAc = 15000;
 
-// event trigger alues for Magnetomer readings
+// event trigger values for Magnetomer readings
 int minimumAbruptnessMg = 15;
 float minimumDiffMg = 5.0;
 
@@ -66,7 +66,7 @@ float minimumDiffTmp = 1.0;
 
 // value that stores the "significance" of the event
 float eventSignificance;
-float eventSignificanceThreshold = 4.5;
+float eventSignificanceThreshold = 3.5;
 
 // TIMERS
 // read values 1000/x times per second
@@ -75,20 +75,24 @@ int refreshInterval1 = 10; // in ms
 
 // do statistics 1000/x times per second
 unsigned long timerMillis2;
-int refreshInterval2 = 60; // in ms
+int refreshInterval2 = 50; // in ms
+
+// timer for onboards LED and for how long it stays on
+unsigned long timerMillis3;
+int ledOnTime = 200; // in ms
 
 // counts the number of readings the program made
 unsigned long readingCount;
 // keeps track of when the last triggered readings/event was made
 unsigned long lastTriggeredEvent;
-// number of indexes events must be appart
+// number of indexes that events must be appart
 int minimumEventProximity = 30;
 
 // keeps track of program's loop performace
 unsigned int FPS;
 
 void setup() {
-
+  pinMode(13, OUTPUT);
   // setup for MPU-6050 sensor
   Wire.begin();
   Wire.beginTransmission(address);
@@ -223,6 +227,9 @@ void loop() {
     // check if the event is significant enought
     if (eventSignificance > eventSignificanceThreshold) {
 
+      // set timer for the onboard LED
+      timerMillis3 = millis();
+
       // don't overwhelm the serial port with to much JSON events
       // minimumEventProximity is a basic limitation technique
       if (readingCount - lastTriggeredEvent > minimumEventProximity) {
@@ -231,6 +238,13 @@ void loop() {
         sendJSON();
       }
     }
+  }
+
+  // flash LED when something was sent
+  if (timerMillis3 + ledOnTime > millis()) {
+    digitalWrite(13, HIGH);
+  } else {
+    digitalWrite(13, LOW);
   }
 
   // monitor program performace every 2 seconds

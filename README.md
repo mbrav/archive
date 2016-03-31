@@ -30,7 +30,7 @@ if the server does not start, npm dependencies must be install first
 * Arduino Libraries
   * I2C Library
   * [ArduinoJson](https://github.com/bblanchon/ArduinoJson) - An elegant and efficient JSON library for embedded systems.
-  * Adafruit's [Sensor Library](https://github.com/adafruit/Adafruit_Sensor)
+   * Adafruit's [Sensor Library](https://github.com/adafruit/Adafruit_Sensor)
   * Adafruit's [HMC5883L Library](https://github.com/adafruit/Adafruit_HMC5883_Unified)
 
 ## Changes
