@@ -2,6 +2,7 @@
 A Physical Computing and Object Relational Mapping tool
 
 [Video](https://vimeo.com/161095259) of the project
+
 Project's intent [PDF](https://github.com/mixania/infORM/blob/master/ProjectIntent.pdf)
 
 ## Instructions
