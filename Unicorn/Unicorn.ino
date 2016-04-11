@@ -14,6 +14,7 @@ CRGB leds[NUM_LEDS];
 
 unsigned long bounces;
 unsigned int timeDelay = 30;
+uint8_t hue = 0;
 
 void setup() {
 	Serial.begin(57600);
@@ -21,11 +22,10 @@ void setup() {
 
 	// Change depending on the LED strip model
 	LEDS.addLeds<DOTSTAR, DATA_PIN, CLOCK_PIN, RGB>(leds, NUM_LEDS);
-	LEDS.setBrightness(84);
+	LEDS.setBrightness(255);
 }
 
 void loop() {
-	static uint8_t hue = 0;
 	Serial.print("x");
 
 	// every 4 bounces or 2 loops
@@ -34,6 +34,94 @@ void loop() {
 		hue = hue + 60;
 	}
 
+	unicornPurpleRain();
+	// fadeUp();
+	// fadeDown();
+
+	// count as a bounce
+	bounces ++;
+}
+
+void unicornPurpleRain(){
+	// unicorn rainDrop falls dim
+	for(int i = 0; i < NUM_LEDS; i++) {
+		leds[i] = CHSV(220, 255, 50);
+
+		if (i == NUM_LEDS-1) {
+			leds[i] = CHSV(220, 255, 255);
+		}
+		// show led
+		FastLED.show();
+		// go Back to Black
+		leds[i] = CRGB::Black;
+
+		// gravity effect
+		delay(80 - constrain(i * 7, 7, 70));
+	}
+
+	// bounce/splash drop back for 3 leds
+	int dropBounces = 0;
+	uint8_t brigthtness = 255;
+	while(brigthtness > 20) {
+
+		// bouncing routine
+		while(dropBounces < 3) {
+		// bounce down
+			for(int i = (NUM_LEDS)-1; i >= (NUM_LEDS)-3+dropBounces; i--) {
+				leds[i] = CHSV(220, 255, brigthtness);
+				FastLED.show();
+				leds[i] = CRGB::Black;
+				delay(80 - (NUM_LEDS - i) * 20);
+				brigthtness -= 10;
+			}
+
+			// bounce up
+			for(int i =(NUM_LEDS)-3+dropBounces; i < NUM_LEDS; i++) {
+				leds[i] = CHSV(220, 255, brigthtness);
+				FastLED.show();
+				leds[i] = CRGB::Black;
+				delay(80 + (dropBounces * 50));
+				brigthtness -= 10;
+			}
+			dropBounces ++;
+		}
+
+
+		// flow and glow then fade out
+		// like water on a cold fullmoon night...
+
+		// glow UP
+		for (int i = 0; i < 40; i ++) {
+			leds[NUM_LEDS-1] = CHSV(220, 255, brigthtness + i);
+			FastLED.show();
+			delay(7);
+
+			// for every 4 loops
+			if (i % 4 == 0 ) {
+				// decrease brightness 
+				brigthtness--;
+			}
+		}
+
+		// glow down
+		for (int i = 40; i > 0; i --) {
+			leds[NUM_LEDS-1] = CHSV(220, 255, brigthtness + i);
+			FastLED.show();
+			delay(7);
+
+			// for every 4 loops
+			if (i % 4 == 0 ) {
+				// decrease brightness
+				brigthtness--;
+			}
+		}
+
+		leds[NUM_LEDS-1] = CRGB::Black;
+		delay(20);
+	}
+}
+
+void fadeUp() {
 	// First slide the led in one direction
 	for(int i = 0; i < NUM_LEDS; i++) {
 		// // if it passes half way
@@ -56,7 +144,9 @@ void loop() {
 
 		delay(timeDelay);
 	}
+}
 
+void fadeDown() {
 	// then slide the LED into the other direction
 	for(int i = (NUM_LEDS)-1; i >= 0; i--) {
 		// // if it passes half way
@@ -79,7 +169,4 @@ void loop() {
 
 		delay(timeDelay);
 	}
-
-	// count as a bounce
-	bounces ++;
 }
