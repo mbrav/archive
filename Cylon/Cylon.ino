@@ -26,7 +26,13 @@ void loop() {
 	Serial.print("x");
 	// First slide the led in one direction
 	for(int i = 0; i < NUM_LEDS; i++) {
-		leds[i] = CHSV(hue++, 255, (255/5)*1);
+		// if it passes half way
+		if (i+4 == NUM_LEDS/2) {
+			// now supports 4.25 colors!
+			hue = hue + 60;
+		}
+
+		leds[i] = CHSV(hue, 255, (255/5)*1);
 		leds[i+1] = CHSV(hue, 255, (255/5)*2);
 		leds[i+2] = CHSV(hue, 255, (255/5)*3);
 		leds[i+3] = CHSV(hue, 255, (255/5)*4);
@@ -40,7 +46,13 @@ void loop() {
 	}
 
 	for(int i = (NUM_LEDS)-1; i >= 0; i--) {
-		leds[i] = CHSV(hue++, 255, 255);
+		// if it passes half way
+		if (i == NUM_LEDS/2) {
+			// now supports 4.25 colors!
+			hue = hue + 60;
+		}
+
+		leds[i] = CHSV(hue, 255, 255);
 		leds[i+1] = CHSV(hue, 255, (255/5)*4);
 		leds[i+2] = CHSV(hue, 255, (255/5)*3);
 		leds[i+3] = CHSV(hue, 255, (255/5)*2);
