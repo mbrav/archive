@@ -26,7 +26,10 @@ void loop() {
 	Serial.print("x");
 	// First slide the led in one direction
 	for(int i = 0; i < NUM_LEDS; i++) {
-		leds[i] = CHSV(hue++, 255, 255);
+		leds[i] = CHSV(hue++, 255, (255/4)*1);
+		leds[i+1] = CHSV(hue, 255, (255/4)*2);
+		leds[i+2] = CHSV(hue, 255, (255/4)*3);
+		leds[i+3] = CHSV(hue, 255, 255);
 		// Show the leds
 		FastLED.show();
 		// go Back to Black
