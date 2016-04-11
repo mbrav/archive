@@ -12,6 +12,9 @@
 // Define the array of leds
 CRGB leds[NUM_LEDS];
 
+unsigned long bounces;
+unsigned int timeDelay = 30;
+
 void setup() {
 	Serial.begin(57600);
 	Serial.println("resetting");
@@ -24,44 +27,59 @@ void setup() {
 void loop() {
 	static uint8_t hue = 0;
 	Serial.print("x");
+
+	// every 4 bounces or 2 loops
+	if (bounces%2 == 0) {
+		// now supports 4.25 colors!
+		hue = hue + 60;
+	}
+
 	// First slide the led in one direction
 	for(int i = 0; i < NUM_LEDS; i++) {
-		// if it passes half way
-		if (i+4 == NUM_LEDS/2) {
-			// now supports 4.25 colors!
-			hue = hue + 60;
-		}
+		// // if it passes half way
+		// if (i+4 == NUM_LEDS/2) {
+		// 	// now supports 4.25 colors!
+		// 	hue = hue + 60;
+		// }
 
 		leds[i] = CHSV(hue, 255, (255/5)*1);
 		leds[i+1] = CHSV(hue, 255, (255/5)*2);
 		leds[i+2] = CHSV(hue, 255, (255/5)*3);
 		leds[i+3] = CHSV(hue, 255, (255/5)*4);
 		leds[i+4] = CHSV(hue, 255, 255);
+
+		hue++;
 		// Show the leds
 		FastLED.show();
 		// go Back to Black
 		leds[i] = CRGB::Black;
 
-		delay(50);
+		delay(timeDelay);
 	}
 
+	// then slide the LED into the other direction
 	for(int i = (NUM_LEDS)-1; i >= 0; i--) {
-		// if it passes half way
-		if (i == NUM_LEDS/2) {
-			// now supports 4.25 colors!
-			hue = hue + 60;
-		}
+		// // if it passes half way
+		// if (i == NUM_LEDS/2) {
+		// 	// now supports 4.25 colors!
+		// 	hue = hue + 60;
+		// }
 
 		leds[i] = CHSV(hue, 255, 255);
 		leds[i+1] = CHSV(hue, 255, (255/5)*4);
 		leds[i+2] = CHSV(hue, 255, (255/5)*3);
 		leds[i+3] = CHSV(hue, 255, (255/5)*2);
 		leds[i+4] = CHSV(hue, 255, (255/5)*1);
+
+		hue++;
 		// Show the leds
 		FastLED.show();
 		// go Back to Black
 		leds[i+4] = CRGB::Black;
 
-		delay(50);
+		delay(timeDelay);
 	}
+
+	// count as a bounce
+	bounces ++;
 }
