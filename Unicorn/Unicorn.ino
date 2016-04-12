@@ -34,12 +34,31 @@ void loop() {
 		hue = hue + 60;
 	}
 
-	unicornPurpleRain();
+
 	// fadeUp();
 	// fadeDown();
+	// unicornPurpleRain();
+	unicornThunder();
 
 	// count as a bounce
 	bounces ++;
+}
+
+void unicornThunder() {
+	int startSpark = random(0, (NUM_LEDS)-1);
+	boolean upOrDown = random(0,1);
+
+	leds[startSpark] = CHSV(30, 255, 255);
+	FastLED.show();
+	delay(20);
+	leds[startSpark] = CHSV(30, 255, 10);
+	FastLED.show();
+	delay(20);
+	leds[startSpark] = CHSV(30, 255, 255);
+	FastLED.show();
+	delay(10);
+	leds[startSpark] = CRGB::Black;
+	
 }
 
 void unicornPurpleRain(){
@@ -98,7 +117,7 @@ void unicornPurpleRain(){
 
 			// for every 4 loops
 			if (i % 4 == 0 ) {
-				// decrease brightness 
+				// decrease brightness
 				brigthtness--;
 			}
 		}
