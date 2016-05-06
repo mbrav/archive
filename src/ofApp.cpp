@@ -88,13 +88,15 @@ void ofApp::update()
         // ofx::IO::ByteBuffer textBuffer(text);
 
         // device.writeBytes(textBuffer);
-        device.writeByte('1');
         // device.writeByte('\n');
     }
     catch (const std::exception& exc)
     {
         ofLogError("ofApp::update") << exc.what();
     }
+
+    uint8_t byte = 2;
+    device.writeByte(byte);
 }
 
 

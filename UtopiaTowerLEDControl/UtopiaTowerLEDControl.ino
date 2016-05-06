@@ -30,11 +30,11 @@ void loop() {
    patternId = receivedBytes[0];
 
   switch(patternId) {
-    case 49:
+    case 1:
       // unicornThunder();
       setAllCHSV(100, 255, 255);
       break;
-    case 50:
+    case 2:
       // unicornPurpleRain();
       setAllCHSV(240, 255, 255);
       break;
