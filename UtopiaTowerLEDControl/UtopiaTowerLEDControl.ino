@@ -1,4 +1,4 @@
-
+// Utopia Tower
 #include "FastLED.h"
 
 // How many leds in your strip?
@@ -8,11 +8,12 @@
 
 CRGB leds[NUM_LEDS];
 
-int patternId = 2;
+byte patternId;
+byte receivedBytes[1];
 
 void setup() {
-  Serial.begin(57600);
-  Serial.println("resetting");
+  Serial.begin(115200);
+  Serial.println("sdfasd");
 
   // Change depending on the LED strip model
   FastLED.addLeds<APA102, DATA_PIN, CLOCK_PIN, RGB>(leds, NUM_LEDS);
@@ -20,12 +21,22 @@ void setup() {
 }
 
 void loop() {
+  // Read Serial Port
+  while (Serial.available() > 0)
+  {
+      receivedBytes[0] = Serial.read();
+      Serial.println(receivedBytes[0]);
+  }
+   patternId = receivedBytes[0];
+
   switch(patternId) {
-    case 1:
-      unicornThunder();
+    case 49:
+      // unicornThunder();
+      setAllCHSV(100, 255, 255);
       break;
-    case 2:
-      unicornPurpleRain();
+    case 50:
+      // unicornPurpleRain();
+      setAllCHSV(240, 255, 255);
       break;
     default:
       break;
@@ -222,4 +233,11 @@ void unicornPurpleRain(){
 		leds[NUM_LEDS-1] = CRGB::Black;
 		delay(20);
 	}
+}
+
+void setAllCHSV(byte h, byte s, byte v) {
+  for(int i = 0; i < NUM_LEDS; i++) {
+		leds[i] = CHSV(h, s, v);
+  }
+  FastLED.show();
 }

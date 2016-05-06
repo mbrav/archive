@@ -83,12 +83,13 @@ void ofApp::update()
         }
 
         // Send some new bytes to the device to have them echo'd back.
-        std::string text = "Frame Number: " + ofToString(ofGetFrameNum());
+        // std::string text = "Frame Number: " + ofToString(ofGetFrameNum());
+        //
+        // ofx::IO::ByteBuffer textBuffer(text);
 
-        ofx::IO::ByteBuffer textBuffer(text);
-
-        device.writeBytes(textBuffer);
-        device.writeByte('\n');
+        // device.writeBytes(textBuffer);
+        device.writeByte('1');
+        // device.writeByte('\n');
     }
     catch (const std::exception& exc)
     {
