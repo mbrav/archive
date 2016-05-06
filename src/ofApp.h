@@ -39,4 +39,8 @@ public:
 
     ofx::IO::SerialDevice device;
 
+    int loops;
+    uint8_t byte;
+    int toggle;
+
 };

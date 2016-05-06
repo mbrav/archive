@@ -30,13 +30,18 @@ void loop() {
    patternId = receivedBytes[0];
 
   switch(patternId) {
+    case 0:
+      setAllCHSV(0,0,0);
+      break;
     case 1:
-      // unicornThunder();
-      setAllCHSV(100, 255, 255);
+      unicornThunder();
       break;
     case 2:
-      // unicornPurpleRain();
-      setAllCHSV(240, 255, 255);
+      unicornPurpleRain();
+      break;
+    case 3:
+      unicornPaparazzi();
+      // setAllCHSV(240, 255, 255);
       break;
     default:
       break;
@@ -233,6 +238,22 @@ void unicornPurpleRain(){
 		leds[NUM_LEDS-1] = CRGB::Black;
 		delay(20);
 	}
+}
+
+void unicornPaparazzi() {
+  int startSpark = random(0, (NUM_LEDS)-1);
+  boolean upOrDown = random(0,1);
+
+  leds[startSpark] = CHSV(30, 255, 255);
+  FastLED.show();
+  delay(20);
+  leds[startSpark] = CHSV(30, 255, 10);
+  FastLED.show();
+  delay(20);
+  leds[startSpark] = CHSV(30, 255, 255);
+  FastLED.show();
+  delay(10);
+  leds[startSpark] = CRGB::Black;
 }
 
 void setAllCHSV(byte h, byte s, byte v) {

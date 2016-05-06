@@ -66,6 +66,7 @@ void ofApp::setup()
 
 void ofApp::update()
 {
+  loops ++;
     // The serial device can throw exeptions.
     try
     {
@@ -95,7 +96,10 @@ void ofApp::update()
         ofLogError("ofApp::update") << exc.what();
     }
 
-    uint8_t byte = 2;
+    if (loops % 200) toggle++;
+
+    byte = (toggle % 3) + 1;
+
     device.writeByte(byte);
 }
 
