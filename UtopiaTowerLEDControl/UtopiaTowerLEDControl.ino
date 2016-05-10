@@ -31,8 +31,8 @@ void loop() {
     Serial.println(receivedBytes[0]);
   }
 
-  patternId = 1;
-  // patternId = receivedBytes[0];
+  // patternId = 1;
+  patternId = receivedBytes[0];
 
   switch(patternId) {
     case 0:
@@ -51,9 +51,6 @@ void loop() {
       FastLED.show();
       break;
     case 5:
-      if (vGlobal > 255) {
-
-      }
       break;
     default:
       break;
