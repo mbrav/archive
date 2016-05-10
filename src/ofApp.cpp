@@ -96,9 +96,9 @@ void ofApp::update()
         ofLogError("ofApp::update") << exc.what();
     }
 
-    if (loops % 200) toggle++;
+    if (loops % 200 == 0) toggle++;
 
-    byte = (toggle % 3) + 1;
+    byte = (toggle % 4) + 1;
 
     device.writeByte(byte);
 }
