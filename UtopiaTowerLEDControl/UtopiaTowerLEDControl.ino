@@ -2,14 +2,18 @@
 #include "FastLED.h"
 
 // How many leds in your strip?
-#define NUM_LEDS 60
-#define DATA_PIN 12
-#define CLOCK_PIN 11
+#define NUM_LEDS 180
+#define DATA_PIN 15
+#define CLOCK_PIN 14
 
 CRGB leds[NUM_LEDS];
 
 byte patternId;
 byte receivedBytes[1];
+
+int segmentLenghts[] = {10, 14, 16, 20};
+
+byte hGlobal, sGlobal, vGlobal;
 
 void setup() {
   Serial.begin(115200);
@@ -22,16 +26,16 @@ void setup() {
 
 void loop() {
   // Read Serial Port
-  while (Serial.available() > 0)
-  {
-      receivedBytes[0] = Serial.read();
-      Serial.println(receivedBytes[0]);
+  while (Serial.available() > 0) {
+    receivedBytes[0] = Serial.read();
+    Serial.println(receivedBytes[0]);
   }
-   patternId = receivedBytes[0];
+
+  patternId = 1;
+  // patternId = receivedBytes[0];
 
   switch(patternId) {
     case 0:
-      setAllCHSV(0,0,0);
       break;
     case 1:
       unicornThunder();
@@ -40,139 +44,146 @@ void loop() {
       unicornPurpleRain();
       break;
     case 3:
-      unicornPaparazzi();
-      // setAllCHSV(240, 255, 255);
+      unicornPaparazzi(5, 10, random(0, 255), 100, 255);
+      break;
+    case 4:
+      randomSegementLightUp(random(0,255),random(0,255),255);
+      FastLED.show();
+      break;
+    case 5:
+      if (vGlobal > 255) {
+
+      }
       break;
     default:
       break;
   }
+
 }
+
+// CONTROL LED FUNCTIONS
+
+void setAllCHSV(byte h, byte s, byte v) {
+  for(int i = 0; i < NUM_LEDS; i++) {
+		leds[i] = CHSV(h, s, v);
+  }
+}
+
+// Control the same pixel on each of the three sides of the tower
+// num 0 - 59
+void mirrorPixel(int pixel, byte h, byte s, byte v) {
+  leds[pixel] = CHSV(h, s, v);
+  leds[pixel+60] = CHSV(h, s, v);
+  leds[pixel+120] = CHSV(h, s, v);
+}
+
+// Control one of the four of the segments that every side has
+// Side 0,1,2
+// segmentLenghts[0-3], from top to bottom
+void controlSegment(byte side, byte segment, byte h, byte s, byte v) {
+  byte startPixel = 60 * side;
+  byte endPixel;
+
+  if (segment > 0)  {
+    startPixel += segmentLenghts[0];
+  }
+
+  if (segment > 1)  {
+    startPixel += segmentLenghts[1];
+  }
+
+  if (segment > 2)  {
+    startPixel += segmentLenghts[2];
+  }
+
+  endPixel = startPixel + segmentLenghts[segment];
+
+  for(int i = startPixel; i < endPixel; i++) {
+    leds[i] = CHSV(h, s, v);
+  }
+}
+
+
+// ANIMATIONS
 
 void unicornThunder() {
 	// pick a random location where the thunder starts
-	unsigned int startSpark = random(0, (NUM_LEDS)-1);
+	unsigned int startSpark = 60;
 	// which direction way does the thunder move?
-	byte upOrDown = random(0,2);
+	// byte upOrDown = random(0,2);
 	// pick a color between deepBlue and blue-green
-	byte thunderColor = random(20,50);
+	byte thunderColor = random(20,250);
 	// define thunder frequency
 	// time to wait until the next one in milleseconds
-	unsigned int thunderDelay= random(500, 3000);
+  int waitTime = random(500,3000);
 
 	// fist spark
-	leds[startSpark] = CHSV(thunderColor, 255, 255);
+  mirrorPixel(startSpark,thunderColor, 255, 255);
 	FastLED.show();
 	delay(20);
-	leds[startSpark] = CHSV(thunderColor, 255, 10);
+  mirrorPixel(startSpark,thunderColor, 255, 10);
 	FastLED.show();
 	delay(20);
-	leds[startSpark] = CHSV(thunderColor, 255, 255);
+	mirrorPixel(startSpark,thunderColor, 255, 255);
 	FastLED.show();
 	delay(10);
-	leds[startSpark] = CRGB::Black;
-
-	Serial.println(upOrDown);
+	mirrorPixel(startSpark,0, 0, 0);
 
 	// thunder strike up the led
-	if (upOrDown == 0) {
-		byte brigthtnessDecay = 0;
-		for (int i = startSpark; i < (NUM_LEDS)-1; i++ ) {
-			// fade Down
-			for (int j = 255; j > 150; j--) {
-				leds[i] = CHSV(thunderColor, 255, j - brigthtnessDecay );
-
-				// only show every 20 loops for faster timing
-				// light speed doesn't like big delays
-				if (j % 20 == 0) {
-					FastLED.show();
-					brigthtnessDecay++;
-				}
-			}
-			// fade Up next one
-			for (int j = 0; j < 255; j++) {
-				leds[i+1] = CHSV(thunderColor, 255, j - brigthtnessDecay);
-
-				// only show every 20 loops for faster timing
-				// light speed doesn't like big delays
-				if (j % 20 == 0) {
-					FastLED.show();
-					brigthtnessDecay++;
-				}
-			}
-
-			// set to black
-			leds[i] = CRGB::Black;
-			leds[i+1] = CRGB::Black;
-		}
+	byte brigthtnessDecay = 0;
+	for (int i = startSpark; i >= 0; i--) {
+      mirrorPixel(i,thunderColor, 255 - brigthtnessDecay, 255 - brigthtnessDecay);
+      brigthtnessDecay +=5;
+      // set to black
+      FastLED.show();
+      mirrorPixel(i,0, 0, 0);
+    	delay(20);
 	}
 
-	// hunder strike down the led
-	else {
-		for (int i = startSpark; i >= 0; i-- ) {
-			// fade Down
-			for (int j = 255; j > 150; j--) {
-				leds[i] = CHSV(thunderColor, 255, j);
-
-				// only show every 20 loops for faster timing
-				// light speed doesn't like big delays
-				if (j % 20 == 0) {
-					FastLED.show();
-				}
-			}
-			// fade Up next one
-			for (int j = 0; j < 255; j++) {
-				leds[i-1] = CHSV(thunderColor, 255, j);
-
-				// only show every 20 loops for faster timing
-				// light speed doesn't like big delays
-				if (j % 20 == 0) {
-					FastLED.show();
-				}
-			}
-
-			// set to black
-			leds[i] = CRGB::Black;
-			leds[i-1] = CRGB::Black;
-		}
-	}
-
-	delay(50);
+	delay(10);
 	// The Sky After Glow, less dim
 
 	// if the thunder headed down
 	// draw the brigtheest LED at bottom
 	// dim the LED's as you go up
-	if (upOrDown == 0) {
-		// repeat flash 5 times
-		for (int i = 0; i < 5; i++) {
-			// glow flash on
-			for(int i = 0; i < NUM_LEDS-1; i++) {
-				leds[i] = CHSV(thunderColor, 255, 100 - (100/NUM_LEDS)*i);
-			}
-			FastLED.show();
-			delay(20);
-			// glow flash off
-			for(int i = 0; i < NUM_LEDS-1; i++) {
-				leds[i] = CHSV(thunderColor, 255, 0);
-			}
-			FastLED.show();
-			delay(20);
+
+	// repeat flash 5 times
+	for (int i = 0; i < 5; i++) {
+		// glow flash on
+		for(int i = 0; i <= NUM_LEDS/3; i++) {
+      mirrorPixel(i,thunderColor, 100, 255 - 4*i);
 		}
+		FastLED.show();
+		delay(20);
+		// glow flash off
+		for(int i = 0; i <= NUM_LEDS/3; i++) {
+      mirrorPixel(i,thunderColor, 100, 0);
+		}
+		FastLED.show();
+		delay(20);
 	}
+
+  delay(waitTime);
 }
 
 void unicornPurpleRain(){
 	// unicorn rainDrop falls dim
 	for(int i = 0; i < NUM_LEDS; i++) {
 		leds[i] = CHSV(220, 255, 50);
+		leds[i + 60] = CHSV(220, 255, 50);
+		leds[i + 120] = CHSV(220, 255, 50);
 
 		if (i == NUM_LEDS-1) {
 			leds[i] = CHSV(220, 255, 255);
+			leds[i + 60] = CHSV(220, 255, 255);
+			leds[i + 120] = CHSV(220, 255, 255);
 		}
 		// show led
 		FastLED.show();
 		// go Back to Black
 		leds[i] = CRGB::Black;
+		leds[i + 60] = CRGB::Black;
+		leds[i + 120] = CRGB::Black;
 
 		// gravity effect
 		delay(80 - constrain(i * 7, 7, 70));
@@ -180,7 +191,7 @@ void unicornPurpleRain(){
 
 	// bounce/splash drop back for 3 leds
 	int dropBounces = 0;
-	uint8_t brigthtness = 255;
+	byte brigthtness = 255;
 	while(brigthtness > 20) {
 
 		// bouncing routine
@@ -188,8 +199,12 @@ void unicornPurpleRain(){
 		// bounce down
 			for(int i = (NUM_LEDS)-1; i >= (NUM_LEDS)-3+dropBounces; i--) {
 				leds[i] = CHSV(220, 255, brigthtness);
+				leds[i + 60] = CHSV(220, 255, brigthtness);
+				leds[i + 120] = CHSV(220, 255, brigthtness);
 				FastLED.show();
 				leds[i] = CRGB::Black;
+				leds[i + 60] = CRGB::Black;
+				leds[i + 120] = CRGB::Black;
 				delay(80 - (NUM_LEDS - i) * 20);
 				brigthtness -= 10;
 			}
@@ -197,8 +212,12 @@ void unicornPurpleRain(){
 			// bounce up
 			for(int i =(NUM_LEDS)-3+dropBounces; i < NUM_LEDS; i++) {
 				leds[i] = CHSV(220, 255, brigthtness);
+        leds[i + 60] = CHSV(220, 255, brigthtness);
+				leds[i + 120] = CHSV(220, 255, brigthtness);
 				FastLED.show();
 				leds[i] = CRGB::Black;
+				leds[i + 60] = CRGB::Black;
+				leds[i + 120] = CRGB::Black;
 				delay(80 + (dropBounces * 50));
 				brigthtness -= 10;
 			}
@@ -212,6 +231,8 @@ void unicornPurpleRain(){
 		// glow UP
 		for (int i = 0; i < 40; i ++) {
 			leds[NUM_LEDS-1] = CHSV(220, 255, brigthtness + i);
+			leds[NUM_LEDS-1 + 60] = CHSV(220, 255, brigthtness + i);
+			leds[NUM_LEDS-1 + 120] = CHSV(220, 255, brigthtness + i);
 			FastLED.show();
 			delay(7);
 
@@ -225,6 +246,8 @@ void unicornPurpleRain(){
 		// glow down
 		for (int i = 40; i > 0; i --) {
 			leds[NUM_LEDS-1] = CHSV(220, 255, brigthtness + i);
+      leds[NUM_LEDS-1 + 60] = CHSV(220, 255, brigthtness + i);
+			leds[NUM_LEDS-1 + 120] = CHSV(220, 255, brigthtness + i);
 			FastLED.show();
 			delay(7);
 
@@ -236,29 +259,26 @@ void unicornPurpleRain(){
 		}
 
 		leds[NUM_LEDS-1] = CRGB::Black;
+		leds[NUM_LEDS-1 + 60] = CRGB::Black;
+		leds[NUM_LEDS-1 + 120] = CRGB::Black;
 		delay(20);
 	}
 }
 
-void unicornPaparazzi() {
-  int startSpark = random(0, (NUM_LEDS)-1);
-  boolean upOrDown = random(0,1);
+void unicornPaparazzi(byte popularity, byte delayy, byte h, byte s, byte v) {
 
-  leds[startSpark] = CHSV(30, 255, 255);
+  for (int i = 0; i < popularity; i ++) {
+    leds[random(0, NUM_LEDS-1)] = CHSV(h, s, v);
+  }
+
   FastLED.show();
-  delay(20);
-  leds[startSpark] = CHSV(30, 255, 10);
-  FastLED.show();
-  delay(20);
-  leds[startSpark] = CHSV(30, 255, 255);
-  FastLED.show();
-  delay(10);
-  leds[startSpark] = CRGB::Black;
+  setAllCHSV(0, 0, 0);
+  delay(delayy);
 }
 
-void setAllCHSV(byte h, byte s, byte v) {
-  for(int i = 0; i < NUM_LEDS; i++) {
-		leds[i] = CHSV(h, s, v);
-  }
-  FastLED.show();
+// lights up random segment, depends on controlSegment();
+void randomSegementLightUp(byte h, byte s, byte v) {
+  byte leg = random(0, 3);
+  byte seg = random(0, 4);
+  controlSegment(leg, seg, h, s, v);
 }
