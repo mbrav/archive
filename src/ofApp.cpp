@@ -104,9 +104,7 @@ void ofApp::update()
     byte = (toggle % 4) + 1;
     device.writeByte(byte);
 
-
-    // string output = ofSystem("whoami");
-    // ofLogNotice() << output;
+    sniff.update();
 
 }
 
@@ -124,7 +122,7 @@ void ofApp::draw()
     }
     else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*2) {
       signFont.drawString("do you beleive in", 120,200);
-      signFont.drawString("digital freedom?", 145,290);
+      signFont.drawString("digital freedom?", 150,290);
     }
     else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*3) {
       signFont.drawString("do you beleive in", 120,200);
@@ -137,6 +135,7 @@ void ofApp::draw()
       ofSetColor(255,255,255);
     }
 
+    sniff.draw(0,0);
     ofDrawBitmapStringHighlight("Connected to " + device.getPortName(), ofVec2f(5, ofGetHeight()-5));
 
 }

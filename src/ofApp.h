@@ -28,6 +28,7 @@
 
 #include "ofMain.h"
 #include "ofxSerial.h"
+#include "ofSniffer.h"
 
 
 class ofApp: public ofBaseApp
@@ -43,8 +44,8 @@ public:
     uint8_t byte;
     int toggle;
 
-
-
     // string output;
     ofTrueTypeFont signFont;
+
+    ofSniffer sniff;
 };
