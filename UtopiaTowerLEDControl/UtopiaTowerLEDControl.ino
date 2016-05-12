@@ -17,11 +17,11 @@ byte hGlobal, sGlobal, vGlobal;
 
 void setup() {
   Serial.begin(115200);
-  Serial.println("sdfasd");
+  Serial.println("Start LED Control Infrastructure...");
 
   // Change depending on the LED strip model
   FastLED.addLeds<APA102, DATA_PIN, CLOCK_PIN, RGB>(leds, NUM_LEDS);
-  LEDS.setBrightness(255);
+  LEDS.setBrightness(100);
 }
 
 void loop() {
@@ -36,6 +36,8 @@ void loop() {
 
   switch(patternId) {
     case 0:
+    // default
+      unicornThunder();
       break;
     case 1:
       unicornThunder();

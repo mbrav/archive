@@ -43,4 +43,8 @@ public:
     uint8_t byte;
     int toggle;
 
+
+
+    // string output;
+    ofTrueTypeFont signFont;
 };

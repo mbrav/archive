@@ -61,6 +61,9 @@ void ofApp::setup()
     {
         ofLogNotice("ofApp::setup") << "No devices connected.";
     }
+
+
+    signFont.loadFont("Inconsolata.otf", 50);
 }
 
 
@@ -96,17 +99,46 @@ void ofApp::update()
         ofLogError("ofApp::update") << exc.what();
     }
 
+    // Pattern swap
     if (loops % 200 == 0) toggle++;
-
     byte = (toggle % 4) + 1;
-
     device.writeByte(byte);
+
+
+    // string output = ofSystem("whoami");
+    // ofLogNotice() << output;
+
 }
 
 
 void ofApp::draw()
 {
-    ofBackgroundGradient(ofColor::white, ofColor::black);
+    ofBackground(0, 0, 0);
+
+    int animTime = 6000;
+    int numFrames = 5;
+
+    if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*1) {
+      signFont.drawString("are you", 270,200);
+      signFont.drawString("a free citizen?", 150,280);
+    }
+    else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*2) {
+      signFont.drawString("do you beleive in", 120,200);
+      signFont.drawString("digital freedom?", 145,280);
+    }
+    else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*3) {
+      signFont.drawString("do you beleive in", 120,200);
+      signFont.drawString("infrastructure?", 150,280);
+    }
+    else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*5) {
+      signFont.drawString("then connect to", 140,200);
+      ofSetColor(200,255,100);
+      signFont.drawString("Free_Citizen_WiFi", 120,280);
+      ofSetColor(255,255,255);
+    }
+
     ofDrawBitmapStringHighlight("Connected to " + device.getPortName(), ofVec2f(20, 20));
-    ofDrawBitmapStringHighlight("See Console.", ofVec2f(20, 45));
+    // ofDrawBitmapStringHighlight("See Console.", ofVec2f(20, 45));
+    ofDrawBitmapStringHighlight(ofSystem("ls"), ofVec2f(20, 45));
+
 }
