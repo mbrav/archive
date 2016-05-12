@@ -120,15 +120,15 @@ void ofApp::draw()
 
     if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*1) {
       signFont.drawString("are you", 270,200);
-      signFont.drawString("a free citizen?", 150,280);
+      signFont.drawString("a free citizen?", 150,290);
     }
     else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*2) {
       signFont.drawString("do you beleive in", 120,200);
-      signFont.drawString("digital freedom?", 145,280);
+      signFont.drawString("digital freedom?", 145,290);
     }
     else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*3) {
       signFont.drawString("do you beleive in", 120,200);
-      signFont.drawString("infrastructure?", 150,280);
+      signFont.drawString("infrastructure?", 150,290);
     }
     else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*5) {
       signFont.drawString("then connect to", 140,200);
@@ -137,8 +137,6 @@ void ofApp::draw()
       ofSetColor(255,255,255);
     }
 
-    ofDrawBitmapStringHighlight("Connected to " + device.getPortName(), ofVec2f(20, 20));
-    // ofDrawBitmapStringHighlight("See Console.", ofVec2f(20, 45));
-    ofDrawBitmapStringHighlight(ofSystem("ls"), ofVec2f(20, 45));
+    ofDrawBitmapStringHighlight("Connected to " + device.getPortName(), ofVec2f(5, ofGetHeight()-5));
 
 }
