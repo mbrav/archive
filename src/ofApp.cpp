@@ -100,7 +100,8 @@ void ofApp::update()
 
     // Pattern swap
     if (loops % 200 == 0) toggle++;
-    byte = (toggle % 4) + 1;
+
+    byte = 1;
     device.writeByte(byte);
 
     TowerClip.update();
@@ -111,8 +112,8 @@ void ofApp::draw()
 {
     TowerClip.draw(0,0);
 
-    int animTime = 6000;
-    int numFrames = 5;
+    int animTime = 18000;
+    int numFrames = 9;
 
     ofSetColor(0,0,0);
     if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*1) {
@@ -124,16 +125,30 @@ void ofApp::draw()
       signFont.drawString("digital freedom?", 150,290);
     }
     else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*3) {
-      signFont.drawString("do you beleive in", 120,200);
+      signFont.drawString("do you trust", 180,200);
       signFont.drawString("infrastructure?", 150,290);
     }
-    else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*5) {
-      signFont.drawString("then connect to", 140,200);
-      ofSetColor(200,255,100);
-      signFont.drawString("Free_Citizen_WiFi", 120,280);
+    else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*4) {
+      ofSetColor(255,189,40);
+      signFont.drawString("of course you do", 120,250);
+      ofSetColor(0,0,0);
+    }
+    else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*6) {
+      signFont.drawString("connect to", 220,200);
+      ofSetColor(255,189,40);
+      signFont.drawString("Free-Citizen-WiFi", 120,280);
+      ofSetColor(0,0,0);
+    }
+    else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*8) {
+      signFont.drawString("password", 260,200);
+      ofSetColor(255,189,40);
+      signFont.drawString("1234567890", 220,280);
+    }
+    else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*9) {
+      ;
     }
     ofSetColor(255,255,255);
 
-    ofDrawBitmapStringHighlight("Connected to " + device.getPortName(), ofVec2f(5, ofGetHeight()-5));
+    // ofDrawBitmapStringHighlight("Connected to " + device.getPortName(), ofVec2f(5, ofGetHeight()-5));
 
 }
