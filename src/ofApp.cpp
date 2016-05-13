@@ -103,9 +103,6 @@ void ofApp::update()
     if (loops % 200 == 0) toggle++;
     byte = (toggle % 4) + 1;
     device.writeByte(byte);
-
-    sniff.update();
-
 }
 
 
@@ -135,7 +132,6 @@ void ofApp::draw()
       ofSetColor(255,255,255);
     }
 
-    sniff.draw(0,0);
     ofDrawBitmapStringHighlight("Connected to " + device.getPortName(), ofVec2f(5, ofGetHeight()-5));
 
 }

@@ -612,8 +612,7 @@ obj/osx/Release/src/main.o: \
   /Users/descartes/openFrameworks/addons/ofxSerial/libs/ofxSerial/include/ofx/IO/SerialDeviceUtils.h \
   /Users/descartes/openFrameworks/addons/ofxSerial/libs/ofxSerial/include/ofx/IO/BufferedSerialDevice.h \
   /Users/descartes/openFrameworks/addons/ofxSerial/libs/ofxSerial/include/ofx/IO/SerialEvents.h \
-  /Users/descartes/openFrameworks/addons/ofxSerial/libs/ofxSerial/include/ofx/IO/PacketSerialDevice.h \
-  /Users/descartes/openFrameworks/apps/myApps/UtopiaTower/src/ofSniffer.h
+  /Users/descartes/openFrameworks/addons/ofxSerial/libs/ofxSerial/include/ofx/IO/PacketSerialDevice.h
 
 /Users/descartes/openFrameworks/apps/myApps/UtopiaTower/src/ofApp.h:
 
@@ -1840,5 +1839,3 @@ obj/osx/Release/src/main.o: \
 /Users/descartes/openFrameworks/addons/ofxSerial/libs/ofxSerial/include/ofx/IO/SerialEvents.h:
 
 /Users/descartes/openFrameworks/addons/ofxSerial/libs/ofxSerial/include/ofx/IO/PacketSerialDevice.h:
-
-/Users/descartes/openFrameworks/apps/myApps/UtopiaTower/src/ofSniffer.h:

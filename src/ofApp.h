@@ -28,7 +28,6 @@
 
 #include "ofMain.h"
 #include "ofxSerial.h"
-#include "ofSniffer.h"
 
 
 class ofApp: public ofBaseApp
@@ -46,6 +45,4 @@ public:
 
     // string output;
     ofTrueTypeFont signFont;
-
-    ofSniffer sniff;
 };
