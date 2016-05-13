@@ -27,12 +27,8 @@
 
 void ofApp::setup()
 {
-    // 1. Upload the Echo.ino sketch (in this example's Arduino/ folder) to
-    //    an Arduino board.
-    // 2. Check the "listDevices" call below to make sure the correct serial
-    //    device is connected.  This works with OSX but may require a different
-    //    port name for Linux or Windows.
-    // 3. Run this app.
+    ofSetVerticalSync(true);
+    ofBackground(255, 255, 255);
 
     std::vector<ofx::IO::SerialDeviceInfo> devicesInfo = ofx::IO::SerialDeviceUtils::listDevices();
 
@@ -113,11 +109,12 @@ void ofApp::update()
 
 void ofApp::draw()
 {
-    ofBackground(0, 0, 0);
+    TowerClip.draw(0,0);
 
     int animTime = 6000;
     int numFrames = 5;
 
+    ofSetColor(0,0,0);
     if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*1) {
       signFont.drawString("are you", 270,200);
       signFont.drawString("a free citizen?", 150,290);
@@ -134,8 +131,8 @@ void ofApp::draw()
       signFont.drawString("then connect to", 140,200);
       ofSetColor(200,255,100);
       signFont.drawString("Free_Citizen_WiFi", 120,280);
-      ofSetColor(255,255,255);
     }
+    ofSetColor(255,255,255);
 
     ofDrawBitmapStringHighlight("Connected to " + device.getPortName(), ofVec2f(5, ofGetHeight()-5));
 
