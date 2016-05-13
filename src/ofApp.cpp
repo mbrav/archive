@@ -112,49 +112,54 @@ void ofApp::draw()
 {
     TowerClip.draw(0,0);
 
-    int animTime = 18000;
+    int currentFrameN = TowerClip.getCurrentFrame();
+    // amountof frames to wait befroe animation starts
+    int framesBeforeStart = 300;
+    int animTime = 600;
     int numFrames = 9;
 
     ofSetColor(0,0,0);
 
+
+
     // don't overlay Viedo's credits
-    if (TowerClip.getCurrentFrame() > 300) {
-      if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*1) {
+    if (TowerClip.getCurrentFrame() > framesBeforeStart) {
+      if (((currentFrameN - framesBeforeStart) % animTime) < (animTime/numFrames)*1) {
         signFont.drawString("are you", 270,200);
         signFont.drawString("a free citizen?", 150,290);
       }
-      else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*2) {
+      else if (((currentFrameN - framesBeforeStart) % animTime) < (animTime/numFrames)*2) {
         signFont.drawString("do you beleive in", 120,200);
         signFont.drawString("digital freedom?", 150,290);
       }
-      else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*3) {
+      else if (((currentFrameN - framesBeforeStart) % animTime) < (animTime/numFrames)*3) {
         signFont.drawString("do you trust", 180,200);
         signFont.drawString("infrastructure?", 150,290);
       }
-      else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*4) {
+      else if (((currentFrameN - 3framesBeforeStart) % animTime) < (animTime/numFrames)*4) {
         ofSetColor(255,189,40);
         signFont.drawString("of course you do", 120,250);
         ofSetColor(0,0,0);
       }
-      else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*6) {
+      else if (((currentFrameN - framesBeforeStart) % animTime) < (animTime/numFrames)*6) {
         signFont.drawString("connect to", 220,200);
         ofSetColor(255,189,40);
         signFont.drawString("Free-Citizen-WiFi", 120,280);
         ofSetColor(0,0,0);
       }
-      else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*8) {
+      else if (((currentFrameN - framesBeforeStart) % animTime) < (animTime/numFrames)*8) {
         signFont.drawString("password", 260,200);
         ofSetColor(255,189,40);
         signFont.drawString("1234567890", 220,280);
       }
-      else if (ofGetElapsedTimeMillis() % animTime < (animTime/numFrames)*9) {
+      else if (((currentFrameN - framesBeforeStart) % animTime) < (animTime/numFrames)*9) {
         ;
       }
     }
 
     ofSetColor(255,255,255);
 
-      ofDrawBitmapString("frame: " + ofToString(TowerClip.getCurrentFrame()) + "/"+ofToString(TowerClip.getTotalNumFrames()),20,380);
+      // ofDrawBitmapString("frame: " + ofToString(TowerClip.getCurrentFrame()) + "/"+ofToString(TowerClip.getTotalNumFrames()),20,380);
 
     // ofDrawBitmapStringHighlight("Connected to " + device.getPortName(), ofVec2f(5, ofGetHeight()-5));
 
