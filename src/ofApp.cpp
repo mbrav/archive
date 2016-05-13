@@ -136,7 +136,7 @@ void ofApp::draw()
         signFont.drawString("do you trust", 180,200);
         signFont.drawString("infrastructure?", 150,290);
       }
-      else if (((currentFrameN - 3framesBeforeStart) % animTime) < (animTime/numFrames)*4) {
+      else if (((currentFrameN - framesBeforeStart) % animTime) < (animTime/numFrames)*4) {
         ofSetColor(255,189,40);
         signFont.drawString("of course you do", 120,250);
         ofSetColor(0,0,0);
