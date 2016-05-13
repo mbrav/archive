@@ -64,6 +64,9 @@ void ofApp::setup()
 
 
     signFont.loadFont("Inconsolata.otf", 50);
+    TowerClip.load("ExploitationOfUtopia480.mov");
+    TowerClip.setLoopState(OF_LOOP_NORMAL);
+    TowerClip.play();
 }
 
 
@@ -103,6 +106,8 @@ void ofApp::update()
     if (loops % 200 == 0) toggle++;
     byte = (toggle % 4) + 1;
     device.writeByte(byte);
+
+    TowerClip.update();
 }
 
 

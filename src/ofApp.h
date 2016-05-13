@@ -44,5 +44,6 @@ public:
     int toggle;
 
     // string output;
+    ofVideoPlayer TowerClip;
     ofTrueTypeFont signFont;
 };
