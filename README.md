@@ -1,4 +1,4 @@
-## Infrastructural Utopia Tower, 2016
+## Infrastructural Utopia Tower (2016)
 *Digital Installation Piece*
 *[Video](https://vimeo.com/166409996)*
 
