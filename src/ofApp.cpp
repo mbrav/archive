@@ -143,13 +143,13 @@ void ofApp::draw()
       }
       else if (((currentFrameN - framesBeforeStart) % animTime) < (animTime/numFrames)*6) {
         signFont.drawString("connect to", 220,200);
-        ofSetColor(255,189,40);
+        ofSetColor(189,143,40);
         signFont.drawString("Free-Citizen-WiFi", 120,280);
         ofSetColor(0,0,0);
       }
       else if (((currentFrameN - framesBeforeStart) % animTime) < (animTime/numFrames)*8) {
         signFont.drawString("password", 260,200);
-        ofSetColor(255,189,40);
+        ofSetColor(189,143,40);
         signFont.drawString("1234567890", 220,280);
       }
       else if (((currentFrameN - framesBeforeStart) % animTime) < (animTime/numFrames)*9) {
