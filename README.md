@@ -1,4 +1,4 @@
-## The Endeavour's Guide for the 21st Century
+## Endeavour's Guide for the 21st Century
 A project based on on reviving James Cook's geographic discoveries that where made while he was the captain of *[Endeavour](https://en.wikipedia.org/wiki/HMS_Endeavour)*. The device is capable of displaying the direction it is directed by using three 7 segment displays.
 
 ### Showcase
