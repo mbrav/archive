@@ -9,6 +9,8 @@ The circut for the setup can be found in the the ["Schematics"](https://github.c
 - A ST7735 TFT screen connected throught the SPI pins.
 - A DHT sensor connected to the A1(15) pin on the Arduino Uno
 
+![Schematic](https://github.com/mbrav/ThermoStar/blob/master/Schematics/SchematicImage.png)
+
 <h2>Dependencies </h2> 
 [Adafruit DHT library](https://github.com/adafruit/DHT-sensor-library)
 
@@ -34,4 +36,3 @@ they will be the same anyway. 📊
 - Displays the current air temperature and moisture. ⛅️☔️❄️
 - Keeps track of the coldest and hottest temperature readings during
 the past 12 and 24 hours. 🕛🕝🕢🕥
-
