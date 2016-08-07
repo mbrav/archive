@@ -1,3 +1,5 @@
+![screenshot](https://c1.staticflickr.com/9/8787/28389454205_6c3c3ffe1a_z.jpg)
+
 ## Description
 Stardust Music Composer* is an experiment that emphasizes on interactivity and visualization and combining it with music composition. Current Digital Audio Workstation (DAW) software used for music production by professionals, does not incorporate any aspects of interaction outside of the technical realm. This experimental project seeks to add a visual element to the music production process and combine it with an interactive aspect.
 
