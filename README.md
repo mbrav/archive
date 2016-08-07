@@ -13,4 +13,4 @@ The visualization is composed of many particles that act like stardust. When the
 
 ## Copyright Material
 
-* Audio sample from Miles Davis's *Blue In Green *
+- Audio sample from Miles Davis's *Blue In Green*
