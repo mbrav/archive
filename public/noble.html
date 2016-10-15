@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Technelogical Feudalism</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <h1>Hello Noble!</h1>
+    <div class="box">
+      <h2>Please recall your <strong>noble oath</strong>. We have many peasants that are willing to sneak into the nobles these days...</h2>
+      <input type="text" class="enter" placeholder="type in your noble oath" id="text-input"/>
+      <a href="/prism"><p id = "submit">submit</p></a>
+    </div>
+  </body>
+  <script src="socket.io-1.4.5.js"></script>
+  <script src="p5.min.js"></script>
+  <script src="p5.dom.js"></script>
+  <script>
+    var socket;
+
+    var onputText;
+    var textInput, submitButton;
+
+    function setup() {
+      noCanvas();
+
+      socket = io.connect('http://162.243.239.240:8002');
+
+      submitButton = select('#submit');
+      textInput = select('#text-input');
+      submitButton.mousePressed(submit);
+    }
+
+    function draw() {
+    }
+
+    function submit() {
+      inputText = textInput.value();
+
+      var data = {
+        oath: inputText,
+        message: " "
+      }
+
+      socket.emit('send-data',data);
+    }
+  </script>
+</html>

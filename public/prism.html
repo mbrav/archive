@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Technelogical Feudalism</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <h1>Welcome to the Prism Pyramid!</h1>
+    <h2>Surveiling peasants has never been easier!</h2>
+    <textarea class="output"  wrap="off" id="textbox">
+    </textarea>
+  </body>
+  <script src="socket.io-1.4.5.js"></script>
+  <script src="p5.min.js"></script>
+  <script src="p5.dom.js"></script>
+  <script>
+
+    var onputText;
+    var textInput, submitButton;
+    var socket = io.connect('http://162.243.239.240:8002');
+
+    var times = 0;
+    var textArea;
+    var texts = " ";
+    var globalData;
+
+    var defined = false;
+
+
+    function setup() {
+      createCanvas(500, 300);
+      background(0);
+      textArea = select('#textbox');
+      textSize(20);
+    }
+
+
+    function draw() {
+        background(0);
+
+        // var ratioX = globalData.windowW/500;
+        // var ratioY = globalData.windowH/300;
+        // console.log("ratioX = " + ratioX);
+        // // resize Canvas
+        // // console.log("RESIZE!");
+        // // resizeCanvas(500, globalData.windowH / ratio);
+        var newMousX, newMousY;
+        if (defined) {
+          var ratioX = globalData.windowW/500;
+          var ratioY = globalData.windowH/300;
+          newMousX = globalData.mouseX / ratioX;
+          newMousY = globalData.mouseY / ratioY
+        }
+        fill(108, 20, 43);
+        stroke(108, 20, 43);
+        rect(newMousX - 10, newMousY -10, 10, 10);
+
+        if (defined) {
+          if (globalData.mousePressed) {
+            stroke(255, 255, 255);
+            text("click!", newMousX, newMousY + 20);
+          }
+        }
+    }
+
+    socket.on('spy-data', function (data) {
+      globalData = data;
+      times++;
+      console.log(data);
+      console.log("received," + times, "packet");
+
+      // generate string
+      var string = "MouseX: " + data.mouseX + "px \n"
+      + "MouseY: " + data.mouseY + "px \n"
+      + "windowWidth: " + data.windowW + "px \n"
+      + "windowHeight: " + data.windowH + "px \n";
+      + "mousePressed: " + data.mousePressed+ "\n";
+
+      // append string
+      texts = texts + string;
+
+      if (texts.lenght > 4000) {
+        texts = " ";
+      }
+      // write to text area
+      textArea.html(text);
+      textArea.focus;
+      textArea.scrollTop = textArea.scrollHeight;
+
+      if (globalData.mouseX != null && globalData.mouseY != null) {
+        defined = true;
+      } else {
+        defime = false;
+        console.log("problem with defining variables...");
+      }
+
+      // document.getElementById('textbox').focus
+    });
+
+
+
+
+  </script>
+</html>
