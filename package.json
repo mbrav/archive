@@ -1,0 +1,32 @@
+{
+  "name": "data-seek",
+  "version": "1.0.0",
+  "description": "Exploring the undefined boundaries of rational and irrational data",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Da-Ta!\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbrav/DataSeek.git"
+  },
+  "keywords": [
+    "data",
+    "surveilance",
+    "rationality",
+    "user",
+    "3d",
+    "three.js"
+  ],
+  "author": "Michael Braverman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbrav/DataSeek/issues"
+  },
+  "homepage": "https://github.com/mbrav/DataSeek#readme"
+}
