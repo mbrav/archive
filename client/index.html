@@ -10,31 +10,52 @@
     <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
   </head>
   <body>
-    <!-- <h1>Data Seek</h1>
-    <h2>Exploring the undefined boundaries of rational and irrational data</h2> -->
+    <div class="content">
+      <h2><span>a realm of</span></h2>
+      <h1><span>data personalities</span></h1>
+      <h2><span>where every individual is assigned a unique ID</span></h2>
+    </div>
     <!-- <button type="button" name="button" onclick="data()">Send</button> -->
-    <canvas id="ctx" width="300" height="300"></canvas>
+    <canvas id="ctx"></canvas>
   </body>
   <script type="text/javascript">
     var canvas = document.getElementById('ctx').getContext('2d');
+    var canvasDOM = document.getElementById('ctx');
     var socket = io();
 
-    var random = Math.random();
+    // settings
+    var colors = {};
+    var fontSize;
 
-    var data = function(){
-      socket.emit('data', {
-        user:'Edward Snowden ' + random
+    setup();
+    function setup() {
+      canvasDOM.width  = window.innerWidth;
+      canvasDOM.height = window.innerHeight;
+      colors.r = Math.floor(Math.random() * 255);
+      colors.g = Math.floor(Math.random() * 255);
+      colors.b = Math.floor(Math.random() * 255);
+
+      fontSize = Math.floor(Math.random() * 24 + 16);
+
+      // send settings
+      socket.emit('settings', {
+        width: canvasDOM.width,
+        height: canvasDOM.height,
+        color: colors,
+        fontSize: fontSize
       });
     }
 
-    socket.on('NSAmsg', function(data){
-      console.log(data.msg);
-    });
+    socket.on('newPositions', function(data){
 
-    socket.on('newPosition', function(data){
-      console.log(data);
-      canvas.clearRect(0,0,500,500);
-      canvas.fillText(random, data.x, data.y);
+      // draw data that fades
+      canvas.fillStyle = 'rgba(255,255,255,0.1)';
+      canvas.fillRect(0, 0, canvasDOM.width, canvasDOM.height);
+      for (var i = 0; i < data.length; i++) {
+        canvas.fillStyle = 'rgb('+ data[i].color.r  + ',' + data[i].color.g  + ',' + data[i].color.b  + ')';
+        canvas.font = "" + data[i].fontSize + "px serif";
+        canvas.fillText(data[i].name, data[i].x, data[i].y);
+      }
     });
   </script>
 </html>
