@@ -10,23 +10,31 @@
     <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
   </head>
   <body>
-    <h1>Data Seek</h1>
-    <h2>Exploring the undefined boundaries of rational and irrational data</h2>
-    <button type="button" name="button" onclick="data()">Send</button>
+    <!-- <h1>Data Seek</h1>
+    <h2>Exploring the undefined boundaries of rational and irrational data</h2> -->
+    <!-- <button type="button" name="button" onclick="data()">Send</button> -->
+    <canvas id="ctx" width="300" height="300"></canvas>
   </body>
   <script type="text/javascript">
+    var canvas = document.getElementById('ctx').getContext('2d');
     var socket = io();
 
     var random = Math.random();
 
     var data = function(){
       socket.emit('data', {
-        user:'Edward Snowden ' + Math.random()
+        user:'Edward Snowden ' + random
       });
     }
 
     socket.on('NSAmsg', function(data){
       console.log(data.msg);
+    });
+
+    socket.on('newPosition', function(data){
+      console.log(data);
+      canvas.clearRect(0,0,500,500);
+      canvas.fillText(random, data.x, data.y);
     });
   </script>
 </html>
