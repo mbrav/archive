@@ -18,6 +18,7 @@ console.log('SERVER STARTED');
 
 var socketList = {};
 
+// RECEIVING DATA
 var io = require('socket.io')(serv,{});
 io.sockets.on('connection', function(socket) {
 	console.log('SOCKET CONNEXION');
@@ -26,17 +27,21 @@ io.sockets.on('connection', function(socket) {
 	socket.on('settings', function(clientSettings) {
 		console.log('Client Settings Received', clientSettings);
 
-		var id = Math.random();
-		socket.id = id;
-		socket.width = clientSettings.width;
-		socket.height = clientSettings.height;
-		socket.name = "" + Math.floor(1000000 * id); // convert id into a name
-		socket.x = Math.random() * clientSettings.width;
-		socket.y = Math.random() * clientSettings.height;
-		socket.color = clientSettings.color;
-		socket.fontSize = clientSettings.fontSize;
+		socket.id = clientSettings.id;
+		socket.x = clientSettings.x;
+		socket.y = clientSettings.y;
+		socket.z = clientSettings.z;
 		socketList[socket.id] = socket;
   });
+
+	// update socket data when new position recieved from a player
+	socket.on('playerPosition', function(playerPos) {
+		if(socketList[playerPos.id]!=null) {
+			socketList[playerPos.id].x = playerPos.x;
+			socketList[playerPos.id].y = playerPos.y;
+			socketList[playerPos.id].z = playerPos.z;
+		}
+	});
 
 	// disconnect client when he leaves
 	socket.on('disconnect', function() {
@@ -44,8 +49,8 @@ io.sockets.on('connection', function(socket) {
 	});
 });
 
-// set refresh rate
-var fps = 100;
+// SENDING DATA
+var refresh = 60; // set refresh rate
 setInterval(function(){
 
 	// data pack about all other players
@@ -54,23 +59,13 @@ setInterval(function(){
 	// update every player
 	for (var i in socketList) {
 		var socket = socketList[i];
-		socket.x +=2;
-		// limit to the canvas
-		if (socket.x > socket.width - socket.fontSize) {
-			socket.x = 0;
-			socket.y += socket.fontSize;
-			if (socket.y > socket.height) {
-				socket.y = 0;
-			}
-		}
 
-		// update player data pack
+		// update the player data pack
 		pack.push({
 			x:socket.x,
 			y:socket.y,
-			name:socket.name,
-			color:socket.color,
-			fontSize:socket.fontSize
+			z:socket.z,
+			id:socket.id
 		});
 	}
 
@@ -80,4 +75,4 @@ setInterval(function(){
 		var socket = socketList[i];
 		socket.emit('newPositions',pack);
 	}
-}, 1000/fps);
+}, 1000/refresh);
