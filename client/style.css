@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: 'Merriweather', serif;
   background-color: #f9f9f9;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   /*text-align: center;*/
 }
 h1 {

@@ -5,7 +5,7 @@ var socket = io();
 var userId; // user id
 
 var camera,scene,renderer;
-var pointLight;
+var light;
 
 // player geomteries
 var players = [];
@@ -16,15 +16,15 @@ var clock = new THREE.Clock();
 
 // fetch other player positions
 socket.on('newPositions', function(data){
-  // draw players
+  // set the positions of all other players
   for (var i = 0; i < data.length; i++) {
-    players[i].cube.position.x = data[i].x;
-    players[i].cube.position.y = data[i].y;
-    players[i].cube.position.z = data[i].z + 20; // avoid the cube getting into the view
+    players[i].sphere.position.x = data[i].x;
+    players[i].sphere.position.y = data[i].y;
+    players[i].sphere.position.z = data[i].z + 20; // avoid the cube getting into the view
   }
 });
 
-// send postions
+// send positions to the server at a regular interval
 setInterval(function(){
   if (userId != null) {
     socket.emit('playerPosition', {
@@ -43,6 +43,8 @@ function init() {
 
   // renderer setup
   renderSetup();
+  // create scene
+  scene = new THREE.Scene();
 
   // camera setup
   var viewAngle = 75;
@@ -51,22 +53,19 @@ function init() {
   var far = 40000;
   camera = new THREE.PerspectiveCamera(viewAngle, aspectRatio, near, far);
 
-  // create scene
-  scene = new THREE.Scene();
-
   // createPlayers
   for (var i = 0; i < 99; i++) {
     createPlayers();
   }
 
   // lights
-  pointLight = new THREE.PointLight(0xFFFFFF);
-  pointLight.position.x = 10;
-  pointLight.position.y = 50;
-  pointLight.position.z = 130;
+  light = new THREE.DirectionalLight( 0xffffff, 2);
+  light.position.x = 10;
+  light.position.y = 50;
+  light.position.z = 130;
 
   // eviornment
-  var skyColor = new THREE.Color(0.4, 0.5, 0.3);
+  var skyColor = new THREE.Color(0.8, 0.8, 0.8);
   renderer.setClearColor(skyColor, 1.0);
 
   // fly controls
@@ -78,7 +77,7 @@ function init() {
   controls.dragToLook = false;
 
   // add everyhting to the scene
-  scene.add(pointLight);
+  scene.add(light);
   scene.add(camera);
 
   camera.position.x = Math.random() * 100;
@@ -87,7 +86,7 @@ function init() {
 
   userId = Math.random();
 
-  // send player object
+  // send player settings
   socket.emit('settings', {
     x: camera.position.x,
     y: camera.position.y,
@@ -112,22 +111,33 @@ function animatedRender() {
 }
 
 function createPlayers() {
-  var geometry = new THREE.BoxGeometry(10, 10, 10);
+  var radius = 5;
+  var segments = 20;
+  var rings = 20;
+  var geometry = new THREE.SphereGeometry(radius, segments, rings);
+
+  var color = {
+    r: Math.floor(Math.random() * 100) + 155,
+    g: Math.floor(Math.random() * 100) + 155,
+    b: Math.floor(Math.random() * 100) + 155,
+    a: Math.random()
+  };
+
   var material = new THREE.MeshStandardMaterial({
-    color: 0xCCAA00,
+    color: 'rgb(' + color.r + ',' + color.g + ',' + color.b + ')',
     wireframe: false
   });
 
-  var cube = new THREE.Mesh(geometry, material);
-  scene.add(cube);
+  var sphere = new THREE.Mesh(geometry, material);
+  scene.add(sphere);
 
-  cube.position.x = Math.random() * 100;
-  cube.position.y = Math.random() * 100;
-  cube.position.z = Math.random() * 100 - 200;
+  sphere.position.x = Math.random() * 200;
+  sphere.position.y = Math.random() * 200;
+  sphere.position.z = Math.random() * 200 - 200;
 
   // add to array of players
   players.push({
-    cube
+    sphere
   });
 }
 
