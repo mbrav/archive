@@ -10,7 +10,7 @@ app.get('/',function(req, res) {
 });
 
 // make everything in the /client folder available to the user
-app.use('/client',express.static(__dirname + '/client'));
+app.use(express.static('client'));
 
 // socket.io connection port
 serv.listen(2000);
@@ -27,9 +27,9 @@ io.sockets.on('connection', function(socket) {
 		console.log('Client Settings Received', clientSettings);
 
 		var id = Math.random();
+		socket.id = id;
 		socket.width = clientSettings.width;
 		socket.height = clientSettings.height;
-		socket.id = id;
 		socket.name = "" + Math.floor(1000000 * id); // convert id into a name
 		socket.x = Math.random() * clientSettings.width;
 		socket.y = Math.random() * clientSettings.height;

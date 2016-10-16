@@ -6,8 +6,8 @@
     <title>Data Seek</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
-    <link href='client/style.css' rel='stylesheet' type='text/css'>
-    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <script src="lib/socket.io-1.4.8.js"></script>
   </head>
   <body>
     <div class="content">
@@ -20,45 +20,5 @@
     <!-- <button type="button" name="button" onclick="data()">Send</button> -->
     <canvas id="ctx"></canvas>
   </body>
-  <script type="text/javascript">
-    var canvas = document.getElementById('ctx'); // DOM canvas
-    var ctx = canvas.getContext('2d'); // drawing canavs
-    var socket = io();
-
-    // settings
-    var colors = {};
-    var fontSize;
-
-    setup();
-    function setup() {
-      canvas.width  = window.innerWidth;
-      canvas.height = window.innerHeight;
-      colors.r = Math.floor(Math.random() * 255);
-      colors.g = Math.floor(Math.random() * 255);
-      colors.b = Math.floor(Math.random() * 255);
-
-      fontSize = Math.floor(Math.random() * 64 + 32);
-
-      // send settings
-      socket.emit('settings', {
-        width: canvas.width,
-        height: canvas.height,
-        color: colors,
-        fontSize: fontSize
-      });
-    }
-
-    socket.on('newPositions', function(data){
-
-      // draw data that fades
-      ctx.fillStyle = 'rgba(255,255,255,0.1)';
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-      console.log(data);
-      for (var i = 0; i < data.length; i++) {
-        ctx.fillStyle = 'rgb('+ data[i].color.r  + ',' + data[i].color.g  + ',' + data[i].color.b  + ')';
-        ctx.font = "" + data[i].fontSize + "px serif";
-        ctx.fillText(data[i].name, data[i].x, data[i].y);
-      }
-    });
-  </script>
+  <script language="javascript" type="text/javascript" src="js/script.js"></script>
 </html>
