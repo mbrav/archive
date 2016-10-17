@@ -23,32 +23,6 @@ var thisPlayer = {
   }
 };
 
-// fetch other player positions
-socket.on('newPositions', function(data){
-  // set the positions of all other players
-  for (var i = 0; i < data.length; i++) {
-    players[i].sphere.position.x = data[i].x;
-    players[i].sphere.position.y = data[i].y;
-    players[i].sphere.position.z = data[i].z + 20; // avoid the cube getting into the view
-
-    console.log(data[i]);
-    players[i].sphere.material.emissive = new THREE.Color(
-      "rgba(" + data[i].color.r + "," + data[i].color.g + "," + data[i].color.b + "," + data[i].color.a + ")"
-    );
-  }
-});
-
-// send positions to the server at a regular interval
-setInterval(function(){
-  if (userId != null) {
-    socket.emit('playerPosition', {
-      x: camera.position.x,
-      y: camera.position.y,
-      z: camera.position.z,
-      id: userId
-    });
-  }
-}, 30);
 
 init();
 animatedRender();
@@ -63,7 +37,7 @@ function init() {
   // camera setup
   var viewAngle = 75;
   var aspectRatio = window.innerWidth / window.innerHeight;
-  var near = 0.1;
+  var near = 5.2; // set to the radius of the balls to avoid flcikering
   var far = 40000;
   camera = new THREE.PerspectiveCamera(viewAngle, aspectRatio, near, far);
 
@@ -84,7 +58,7 @@ function init() {
 
   // fly controls
   controls = new THREE.FlyControls( camera );
-  controls.movementSpeed = 100;
+  controls.movementSpeed = 60;
   controls.domElement = container;
   controls.rollSpeed = 0.3;
   controls.autoForward = false;
@@ -129,6 +103,34 @@ function animatedRender() {
   controls.update(delta);
   renderer.render(scene, camera);
 }
+
+// fetch other player positions
+socket.on('newPositions', function(data){
+  // set the positions of all other players
+  for (var i = 0; i < data.length; i++) {
+
+    // update player positions
+    players[i].sphere.position.x = data[i].x;
+    players[i].sphere.position.y = data[i].y;
+    players[i].sphere.position.z = data[i].z;
+
+    players[i].sphere.material.emissive = new THREE.Color(
+      "rgba(" + data[i].color.r + "," + data[i].color.g + "," + data[i].color.b + "," + data[i].color.a + ")"
+    );
+  }
+});
+
+// send positions to the server at a regular interval
+setInterval(function(){
+  if (userId != null) {
+    socket.emit('playerPosition', {
+      x: camera.position.x,
+      y: camera.position.y,
+      z: camera.position.z,
+      id: userId
+    });
+  }
+}, 30);
 
 function createPlayers() {
   var radius = 5;

@@ -49,8 +49,11 @@ io.sockets.on('connection', function(socket) {
 
 	// disconnect player when he leaves
 	socket.on('disconnect', function() {
-		console.log('Client "' + socketList[socket.id].id + '" Disconnected');
-		delete socketList[socket.id];
+		// if statement that prevents server crash
+		if (socketList[socket.id]!= null) {
+			console.log('Client "' + socketList[socket.id].id + '" Disconnected');
+			delete socketList[socket.id];
+		}
 	});
 });
 
