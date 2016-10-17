@@ -14,6 +14,15 @@ var players = [];
 var controls;
 var clock = new THREE.Clock();
 
+var thisPlayer = {
+  color : {
+    r: Math.floor(Math.random() * 100) + 155,
+    g: Math.floor(Math.random() * 100) + 155,
+    b: Math.floor(Math.random() * 100) + 155,
+    a: 1
+  }
+};
+
 // fetch other player positions
 socket.on('newPositions', function(data){
   // set the positions of all other players
@@ -21,6 +30,11 @@ socket.on('newPositions', function(data){
     players[i].sphere.position.x = data[i].x;
     players[i].sphere.position.y = data[i].y;
     players[i].sphere.position.z = data[i].z + 20; // avoid the cube getting into the view
+
+    console.log(data[i]);
+    players[i].sphere.material.emissive = new THREE.Color(
+      "rgba(" + data[i].color.r + "," + data[i].color.g + "," + data[i].color.b + "," + data[i].color.a + ")"
+    );
   }
 });
 
@@ -91,7 +105,13 @@ function init() {
     x: camera.position.x,
     y: camera.position.y,
     z: camera.position.z,
-    id:userId
+    id:userId,
+    color: {
+      r: thisPlayer.color.r,
+      g: thisPlayer.color.g,
+      b: thisPlayer.color.b,
+      a: thisPlayer.color.a
+    }
   });
 }
 
@@ -116,15 +136,8 @@ function createPlayers() {
   var rings = 20;
   var geometry = new THREE.SphereGeometry(radius, segments, rings);
 
-  var color = {
-    r: Math.floor(Math.random() * 100) + 155,
-    g: Math.floor(Math.random() * 100) + 155,
-    b: Math.floor(Math.random() * 100) + 155,
-    a: Math.random()
-  };
-
   var material = new THREE.MeshStandardMaterial({
-    color: 'rgb(' + color.r + ',' + color.g + ',' + color.b + ')',
+    color: 0x555555,
     wireframe: false
   });
 

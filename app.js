@@ -21,18 +21,21 @@ var socketList = {};
 // RECEIVING DATA
 var io = require('socket.io')(serv,{});
 io.sockets.on('connection', function(socket) {
-	console.log('NEW SOCKET CONNEXION');
-
 	// setup the client once his settings are received
 	socket.on('settings', function(clientSettings) {
-
 		socket.id = clientSettings.id;
 		socket.x = clientSettings.x;
 		socket.y = clientSettings.y;
 		socket.z = clientSettings.z;
+		socket.color = {
+			r: clientSettings.color.r,
+			g: clientSettings.color.g,
+			b: clientSettings.color.b,
+			a: clientSettings.color.a
+		}
 		socketList[socket.id] = socket;
-		console.log('- client settings received');
-		console.log('- clients online: ', socketList.length);
+		console.log('Client "' + socket.id + '" Connected');
+		// console.log('- clients online: ', clientsOnline);
   });
 
 	// update socket data when new position recieved from a player
@@ -44,8 +47,9 @@ io.sockets.on('connection', function(socket) {
 		}
 	});
 
-	// disconnect client when he leaves
+	// disconnect player when he leaves
 	socket.on('disconnect', function() {
+		console.log('Client "' + socketList[socket.id].id + '" Disconnected');
 		delete socketList[socket.id];
 	});
 });
@@ -59,14 +63,20 @@ setInterval(function(){
 
 	// update every player
 	for (var i in socketList) {
-		var socket = socketList[i];
+		var player = socketList[i];
 
 		// update the player data pack
 		pack.push({
-			x:socket.x,
-			y:socket.y,
-			z:socket.z,
-			id:socket.id
+			x:player.x,
+			y:player.y,
+			z:player.z,
+			id:player.id,
+			color : {
+				r: player.color.r,
+				g: player.color.g,
+				b: player.color.b,
+				a: player.color.a
+			}
 		});
 	}
 
