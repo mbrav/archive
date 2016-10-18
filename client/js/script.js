@@ -58,7 +58,7 @@ function init() {
 
   // fly controls
   controls = new THREE.FlyControls( camera );
-  controls.movementSpeed = 60;
+  controls.movementSpeed = 40;
   controls.domElement = container;
   controls.rollSpeed = 0.3;
   controls.autoForward = false;
@@ -87,6 +87,11 @@ function init() {
       a: thisPlayer.color.a
     }
   });
+
+  // smooth operator
+  audio_player.src = 'http://www.mbrav.com/audio/smooth-operator.mp3';
+  audio_player.play();
+  audio_player.currentTime = 24;
 }
 
 function animatedRender() {
