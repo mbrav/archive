@@ -1,3 +1,5 @@
+if (!Detector.webgl) Detector.addGetWebGLMessage();
+
 var audioCtx = new (window.AudioContext || window.webkit.Audio.Context)();
 var oscillator = audioCtx.createOscillator();
 var gainNode = audioCtx.createGain();

@@ -1,17 +1,10 @@
+if (!Detector.webgl) Detector.addGetWebGLMessage();
+
 var camera, scene,renderer;
 var cube,group;
 var ambientLight1, spotLight1, spotLight2;
 
-var floorGeometry = new THREE.BoxGeometry( 4000, 4000, 1 );
-var floorMaterial = new THREE.MeshPhongMaterial({
-  color: 0x555555,
-  // opacity: 0.4,
-  // transparent: true,
-});
-
-var meshFloor = new THREE.Mesh( floorGeometry, floorMaterial);
-
-var scale = 150; //   scale/n
+var scale = 150; // 1/n
 
 // data statistics
 var maxXcordinate = 0;
@@ -85,14 +78,6 @@ function init() {
     spotLight2.decay = 1.2;
     spotLight2.distance = 300;
 
-    // shadow casting
-    // spotLight1.castShadow = true;
-    // spotLight1.shadow.mapSize.width = 128;
-    // spotLight1.shadow.mapSize.height = 128;
-    // spotLight1.shadow.camera.near = 5;
-    // spotLight1.shadow.camera.far = 400;
-    // spotLight1.shadow.camera.fov = 30;
-
     camera.position.z = 100;
 
     controls = new THREE.FlyControls( camera );
@@ -105,14 +90,14 @@ function init() {
     scene.fog = new THREE.Fog(0x777777, near, 400);
 
     // floor
+    var floorGeometry = new THREE.BoxGeometry( 4000, 4000, 1 );
+    var floorMaterial = new THREE.MeshPhongMaterial({color: 0x555555});
+    var meshFloor = new THREE.Mesh( floorGeometry, floorMaterial);
     meshFloor.receiveShadow = true;
-		meshFloor.position.set( 0, 0, -1);
+    meshFloor.position.set( 0, 0, -1);
 
-    scene.add(group);
-    scene.add(meshFloor);
-    scene.add(ambientLight);
-    scene.add(spotLight1);
-    scene.add(spotLight2);
+    scene.add(group, meshFloor);
+    scene.add(ambientLight, spotLight1, spotLight2);
     scene.add(camera);
 }
 
@@ -129,28 +114,20 @@ function createCubes() {
     group = new THREE.Group();
 
     for (var i = 0; i < graffitData.length; i++) {
-
       cube = new THREE.Mesh(geometry, material);
       cube.position.x = ((parseInt(graffitData[i][1]) - minXcordinate) - middleX/2)/scale;
       cube.position.y = ((parseInt(graffitData[i][2]) - minYcordinate) - middleY/2)/scale;
       cube.position.z = Math.random()*20;
-
       cube.updateMatrix();
       group.add(cube);
-
     }
-
-    console.log(group);
 }
 
 function animatedRender() {
-  // update time
-  var d = new Date();
-  var t = d.getMilliseconds();
   requestAnimationFrame(animatedRender);
-  var delta = clock.getDelta();
 
   // fly over control
+  var delta = clock.getDelta();
   controls.update(delta);
   renderer.render(scene, camera);
 

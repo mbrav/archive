@@ -1,3 +1,5 @@
+if (!Detector.webgl) Detector.addGetWebGLMessage();
+
 var camera, scene,renderer;
 var cube,group;
 var pointLight;
