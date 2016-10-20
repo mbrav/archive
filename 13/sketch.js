@@ -12,6 +12,9 @@ var pointLight = new THREE.PointLight(0xFFFFFF);
 
 var clock = new THREE.Clock();
 
+
+var tickTock;
+
 function init() {
 
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -74,14 +77,12 @@ function createCube() {
 			}
 
     }
-
-    console.log(group);
 }
 
 function createSphere() {
     var radius = 50;
-    var segments = 4;
-    var rings = 4;
+    var segments = 200;
+    var rings = 200;
     var sphereMaterial = new THREE.MeshLambertMaterial({
         color: 0xCCCCCC,
         wireframe: false
@@ -89,6 +90,9 @@ function createSphere() {
     var sphereGeometry = new THREE.SphereGeometry(radius, segments, rings);
     sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
     sphere.position.x = 200;
+
+    console.log(sphere.geometry.vertices);
+
 }
 
 function animatedRender() {
@@ -102,6 +106,15 @@ function animatedRender() {
     var n = d.getMilliseconds();
     var skyColor = new THREE.Color(Math.sin(n*0.0003) + 0.4, Math.cos(n*0.0001) + 0.4, Math.sin(n*0.0002) + 0.4);
     renderer.setClearColor(skyColor, 1.0);
+
+
+    for (var i = 0; i < sphere.geometry.vertices.length; i++) {
+      sphere.geometry.vertices[i].x += Math.random() * 0.2 - 0.1;
+      sphere.geometry.vertices[i].y += Math.random() * 0.2 - 0.1;
+      sphere.geometry.vertices[i].z += Math.random() * 0.2 - 0.1;
+    }
+    
+    sphere.geometry.verticesNeedUpdate = true;
 }
 
 
