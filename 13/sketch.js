@@ -5,15 +5,12 @@ var far = 4000;
 var camera = new THREE.PerspectiveCamera(viewAngle, aspectRatio, near, far);
 var scene = new THREE.Scene();
 var renderer = new THREE.WebGLRenderer();
-var cube, controls, container;
+var controls, container;
 var group;
 var sphere;
 var pointLight = new THREE.PointLight(0xFFFFFF);
 
 var clock = new THREE.Clock();
-
-
-var tickTock;
 
 function init() {
 
@@ -55,15 +52,17 @@ function createCube() {
     }
     var material = new THREE.MeshStandardMaterial({
         vertexColors: THREE.FaceColors,
-        wireframe: false
+        wireframe: false,
+        opacity : 0.8,
+        transparent: true
     });
     group = new THREE.Group();
     for (var i = 0; i < 40; i++) {
 			for (var j = 0; j < 40; j++) {
-				var randomHeight = Math.round(Math.random() * 10);
+				var randomHeight = Math.round(Math.random() * 8);
 
 				for (var z = 0; z < randomHeight; z++) {
-					cube = new THREE.Mesh(geometry, material);
+					var cube = new THREE.Mesh(geometry, material);
 					// cube.position.x = Math.random() * 2000 - 1000;
 					// cube.position.y = Math.random() * 2000 - 1000;
 					cube.position.x = i * 50 - 1000;
@@ -80,18 +79,20 @@ function createCube() {
 }
 
 function createSphere() {
-    var radius = 50;
-    var segments = 200;
-    var rings = 200;
-    var sphereMaterial = new THREE.MeshLambertMaterial({
-        color: 0xCCCCCC,
+    var radius = 40;
+    var segments = 100;
+    var rings = 100;
+    var sphereMaterial = new THREE.MeshStandardMaterial({
+        opacity : 0.8,
+        transparent: true,
+        color: 0xddaa66,
         wireframe: false
     });
     var sphereGeometry = new THREE.SphereGeometry(radius, segments, rings);
     sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
     sphere.position.x = 200;
 
-    console.log(sphere.geometry.vertices);
+    // console.log(sphere.geometry.vertices);
 
 }
 
@@ -99,8 +100,6 @@ function animatedRender() {
     requestAnimationFrame(animatedRender);
     var delta = clock.getDelta();
     controls.update(delta);
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
     renderer.render(scene, camera);
     var d = new Date();
     var n = d.getMilliseconds();
@@ -109,12 +108,26 @@ function animatedRender() {
 
 
     for (var i = 0; i < sphere.geometry.vertices.length; i++) {
-      sphere.geometry.vertices[i].x += Math.random() * 0.2 - 0.1;
-      sphere.geometry.vertices[i].y += Math.random() * 0.2 - 0.1;
-      sphere.geometry.vertices[i].z += Math.random() * 0.2 - 0.1;
+      sphere.geometry.vertices[i].x += Math.random() * 2 - 1;
+      sphere.geometry.vertices[i].y += Math.random() * 2 - 1;
+      sphere.geometry.vertices[i].z += Math.random() * 2 - 1;
     }
-    
+
+    // update the sphere.geometry.vertices
     sphere.geometry.verticesNeedUpdate = true;
+
+    for (var i = 0; i < group.children.length; i++) {
+      for (var j = 0; j < group.children[i].geometry.vertices.length; j++) {
+        group.children[i].geometry.vertices[j].x += Math.random() * 0.02 - 0.01;
+        group.children[i].geometry.vertices[j].y += Math.random() * 0.02 - 0.01;
+        // group.children[i].geometry.vertices[j].z += Math.random() * 0.1 - 0.05;
+      }
+      // update the city vertices
+      group.children[i].geometry.verticesNeedUpdate = true;
+    }
+
+    console.log(group.children[5].geometry.vertices[2]);
+
 }
 
 
