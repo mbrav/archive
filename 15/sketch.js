@@ -1,3 +1,5 @@
+if (!Detector.webgl) Detector.addGetWebGLMessage();
+
 var viewAngle = 65;
 var aspectRatio = window.innerWidth / window.innerHeight;
 var near = 0.1;
