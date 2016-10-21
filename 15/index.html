@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title id="page-title"></title>
     <link href='../lib/organizer.css' rel='stylesheet' type='text/css'>
-    <title id="page-title"></title>
     <style>
         body {
             padding: 0;
@@ -36,34 +35,9 @@
           <li id="next-project"></li>
       </ul>
   </div>
-  <script id="vertexShader" type="x-shader/x-vertex">
-      void main() {
-        gl_Position = vec4( position, 1.0 );
-      }
-      </script>
-
-      <script id="fragmentShader" type="x-shader/x-fragment">
-
-      uniform vec2 u_resolution;
-      uniform vec2 u_mouse;
-      uniform float u_time;
-
-      void main(){
-        vec2 st = vec2(gl_FragCoord.x/u_resolution.x,gl_FragCoord.y/u_resolution.y);
-        st.x *= u_resolution.x/u_resolution.y;
-        vec3 color = vec3(0.0);
-        float d = 0.0;
-
-        st = st *2.-1.;
-
-        d = length( max(abs(st)-0.001,-0.136) );
-
-        // vec4 finalColor = vec4(fract(d*cos(u_time/100.0)*13.704*inversesqrt(d)), fract(d*sin(u_time/100.0)*22.216*inversesqrt(d)), fract(d*-sin(u_time/100.0)*7.2*inversesqrt(d)),1.)
-
-        gl_FragColor = vec4(fract(d*cos(u_time/200.0)*13.704*inversesqrt(d)-0.8), fract(d*sin(u_time/200.0)*22.216*inversesqrt(d)-0.8), fract(d*-sin(u_time/200.0)*7.2*inversesqrt(d)-0.8),1.);
-      }
-      </script>
   <script language="javascript" src="../lib/three.min.js"></script>
+  <script language="javascript" src="../lib/plugins/Detector.js"></script>
+  <script language="javascript" src="../lib/plugins/FlyControls.js"></script>
   <script language="javascript" type="text/javascript" src="sketch.js"></script>
 </body>
 </html>
@@ -72,5 +46,5 @@
 </script>
 <script type="text/javascript">
     // set project's number and name
-    projectSetup(15, "three.js ");
+    projectSetup(15, "World of Ice Nine");
 </script>

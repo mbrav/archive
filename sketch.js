@@ -1,14 +1,14 @@
 var viewAngle = 75;
 var aspectRatio = window.innerWidth / window.innerHeight;
 var near = 0.1;
-var far = 4000;
+var far = 8000;
 var camera = new THREE.PerspectiveCamera(viewAngle, aspectRatio, near, far);
 var scene = new THREE.Scene();
 var renderer = new THREE.WebGLRenderer();
 var controls, container;
 var group;
 var sphere;
-var pointLight = new THREE.PointLight(0xFFFFFF);
+var pointLight = new THREE.PointLight(0xffaa88);
 
 var clock = new THREE.Clock();
 
@@ -16,9 +16,6 @@ function init() {
 
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(window.devicePixelRatio ? window.devicePixelRatio : 1);
-    pointLight.position.x = 10;
-    pointLight.position.y = 50;
-    pointLight.position.z = 130;
 
     container = document.createElement( 'div' );
     document.body.appendChild( container );
@@ -38,7 +35,9 @@ function init() {
     scene.add(group);
     scene.add(sphere);
     scene.add(pointLight);
-    camera.position.z = 300;
+    camera.position.z = 200;
+    camera.rotation.y = -Math.PI/4;
+    camera.rotation.x = Math.PI/2;
     scene.add(camera);
 }
 
@@ -67,31 +66,29 @@ function createCube() {
 					// cube.position.y = Math.random() * 2000 - 1000;
 					cube.position.x = i * 50 - 1000;
 					cube.position.y = j * 50 - 1000;
-					cube.position.z = z * 25 - 500;
+					cube.position.z = z * 25;
 					// cube.scale.z = Math.random() * 30;
 					cube.scale.set(Math.random(), Math.random(), 1.0);
 					cube.updateMatrix();
 					group.add(cube);
 				}
 			}
+
     }
 }
 
 function createSphere() {
-    var radius = 40;
+    var radius = 400;
     var segments = 100;
     var rings = 100;
     var sphereMaterial = new THREE.MeshStandardMaterial({
         opacity : 0.8,
         transparent: true,
-        color: 0x3dd8f7,
-        wireframe: false,
-        emissive: 0x3dd8f7,
-        emissiveIntensity: 0.4
+        color: 0xffffff,
+        wireframe: false
     });
     var sphereGeometry = new THREE.SphereGeometry(radius, segments, rings);
     sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-    sphere.position.x = 200;
 
     // console.log(sphere.geometry.vertices);
 
@@ -104,18 +101,24 @@ function animatedRender() {
     renderer.render(scene, camera);
     var d = new Date();
     var n = d.getMilliseconds();
-    var skyColor = new THREE.Color(0.9, 0.9,0.9);
+    var skyColor = new THREE.Color(0.9,0.9,0.9);
     renderer.setClearColor(skyColor, 1.0);
 
 
     for (var i = 0; i < sphere.geometry.vertices.length; i++) {
-      sphere.geometry.vertices[i].x += Math.random() * 4 - 2;
-      sphere.geometry.vertices[i].y += Math.random() * 4 - 2;
-      sphere.geometry.vertices[i].z += Math.random() * 4 - 2;
+      sphere.geometry.vertices[i].x += Math.random() * 30 - 15;
+      sphere.geometry.vertices[i].y += Math.random() * 30 - 15;
+      sphere.geometry.vertices[i].z += Math.random() * 30 - 15;
     }
 
     // update the sphere.geometry.vertices
     sphere.geometry.verticesNeedUpdate = true;
+    sphere.position.x = Math.sin(d*0.0002) * 1500;
+    sphere.position.z = Math.cos(d*0.0002) * 1500;
+
+    pointLight.position.x = sphere.position.x;
+    pointLight.position.y = sphere.position.y;
+    pointLight.position.z = sphere.position.z;
 
     for (var i = 0; i < group.children.length; i++) {
       for (var j = 0; j < group.children[i].geometry.vertices.length; j++) {
@@ -126,7 +129,8 @@ function animatedRender() {
       // update the city vertices
       group.children[i].geometry.verticesNeedUpdate = true;
     }
-    console.log(group.children[5].geometry.vertices[2]);
+
+    // console.log(group.children[5].geometry.vertices[2]);
 
 }
 
