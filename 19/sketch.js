@@ -78,6 +78,8 @@ function init() {
     controls.dragToLook = false;
 
     scene.fog = new THREE.Fog(0xffffff, near, 400);
+    var skyColor = new THREE.Color(1.0, 1.0, 1.0);
+    renderer.setClearColor(skyColor, 1.0);
 
     scene.add(group);
     scene.add(pointLight);
@@ -168,8 +170,6 @@ function animatedRender() {
       group.children[i].position.z = groupNotebook[i].posZ * Math.abs(Math.cos(t/2000));
     }
 
-    var skyColor = new THREE.Color(1.0, 1.0, 1.0);
-    renderer.setClearColor(skyColor, 1.0);
 }
 
 function onWindowResize() {

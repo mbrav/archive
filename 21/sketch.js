@@ -88,6 +88,8 @@ function init() {
     controls.dragToLook = false;
 
     scene.fog = new THREE.Fog(0x777777, near, 400);
+    var skyColor = new THREE.Color(0, 0, 0);
+    renderer.setClearColor(skyColor, 1.0);
 
     // floor
     var floorGeometry = new THREE.BoxGeometry( 4000, 4000, 1 );
@@ -137,8 +139,6 @@ function animatedRender() {
   spotLight2.position.x = Math.sin(camera.position.x/10);
   spotLight2.position.y = Math.cos(camera.position.y/10);
 
-  var skyColor = new THREE.Color(0, 0, 0);
-  renderer.setClearColor(skyColor, 1.0);
 }
 
 function onWindowResize() {

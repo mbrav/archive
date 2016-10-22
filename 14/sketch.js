@@ -47,6 +47,7 @@ function createCube() {
     var geometry = new THREE.BoxGeometry(30, 30, 30);
 
     var material = new THREE.MeshStandardMaterial({
+      shading: THREE.FlatShading,
         roughness: 0.9,
         metalness: 1.0,
         color: 0xffffff,

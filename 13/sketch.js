@@ -84,6 +84,7 @@ function createSphere() {
     var segments = 100;
     var rings = 100;
     var sphereMaterial = new THREE.MeshStandardMaterial({
+      shading: THREE.FlatShading,
         opacity : 0.8,
         transparent: true,
         color: 0x3dd8f7,
@@ -94,8 +95,6 @@ function createSphere() {
     var sphereGeometry = new THREE.SphereGeometry(radius, segments, rings);
     sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
     sphere.position.x = 200;
-
-    // console.log(sphere.geometry.vertices);
 
 }
 
@@ -128,8 +127,6 @@ function animatedRender() {
       // update the city vertices
       group.children[i].geometry.verticesNeedUpdate = true;
     }
-    console.log(group.children[5].geometry.vertices[2]);
-
 }
 
 

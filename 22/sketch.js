@@ -95,6 +95,8 @@ function init() {
 		meshFloor.position.set( 0, 0, -1);
 
     scene.fog = new THREE.Fog(0x777777, near, 400);
+    var skyColor = new THREE.Color(0, 0, 0);
+    renderer.setClearColor(skyColor, 1.0);
 
     scene.add(group);
     scene.add(meshFloor);
@@ -171,8 +173,6 @@ function animatedRender() {
   spotLight1.target = camera;
 
 
-  var skyColor = new THREE.Color(0, 0, 0);
-  renderer.setClearColor(skyColor, 1.0);
 }
 
 function onWindowResize() {

@@ -74,6 +74,8 @@ function init() {
     controls.dragToLook = false;
 
     scene.fog = new THREE.Fog(0xffffff, near, 600);
+    var skyColor = new THREE.Color(1.0, 1.0, 1.0);
+    renderer.setClearColor(skyColor, 1.0);
 
     scene.add(group);
     scene.add(pointLight);
@@ -112,8 +114,6 @@ function animatedRender() {
 
     renderer.render(scene, camera);
 
-    var skyColor = new THREE.Color(1.0, 1.0, 1.0);
-    renderer.setClearColor(skyColor, 1.0);
 }
 
 function onWindowResize() {

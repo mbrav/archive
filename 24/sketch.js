@@ -29,12 +29,12 @@ function init() {
     container.appendChild(renderer.domElement);
     window.addEventListener('resize', onWindowResize, false);
 
-    camera.position.z = 200;
+    camera.position.z = 100;
     // controls
     controls = new THREE.FlyControls( camera );
     controls.movementSpeed = 50;
     controls.domElement = container;
-    controls.rollSpeed = 0.4;
+    controls.rollSpeed = 0.04;
     controls.autoForward = false;
     controls.dragToLook = false;
 
@@ -71,6 +71,7 @@ function animatedRender() {
     // rotate sphere
     spheres[i].sphere.rotation.x += 0.01;
     spheres[i].sphere.rotation.y += 0.01;
+    spheres[i].sphere.rotation.z += 0.01;
     // spheres[i].sphere.rotation.y += Math.PI;
 
     // set the vertices so that they update
@@ -80,25 +81,25 @@ function animatedRender() {
 
     for (var j = 0; j < vertices.length; j++) {
 
-      // trigonmetry stuff  
+      // trigonmetry stuff
       var radius = Math.sqrt(Math.pow(initCords[j].x, 2) + Math.pow(initCords[j].y, 2) + Math.pow(initCords[j].z, 2));
       var polar = Math.acos(initCords[j].z/radius);
       var azimuthal = Math.atan2(initCords[j].y, initCords[j].x);
 
       // variable
-      var radiusVar = azimuthal * Math.cos(time/2000) * 20;
+      var radiusVar = Math.sin(polar*5) * Math.cos(time/2000) * 5;
 
-      vertices[j].x = (radius + radiusVar) * Math.sin(polar) * Math.cos(azimuthal);
+      vertices[j].x = (radius - radiusVar) * Math.sin(polar) * Math.cos(azimuthal);
       vertices[j].y = (radius + radiusVar) * Math.sin(polar) * Math.sin(azimuthal);
-      vertices[j].z = (radius + radiusVar) * Math.cos(polar);
+      vertices[j].z = (radius - radiusVar) * Math.cos(polar);
     }
   }
 }
 
 function createSphere() {
   var radius = 10;
-  var segments = 60;
-  var rings = 60;
+  var segments = 100;
+  var rings = 100;
   var geometry = new THREE.SphereGeometry(radius, segments, rings);
 
   var material = new THREE.MeshStandardMaterial({

@@ -34,7 +34,7 @@ function init() {
     controls = new THREE.FlyControls( camera );
     controls.movementSpeed = 50;
     controls.domElement = container;
-    controls.rollSpeed = 0.4;
+    controls.rollSpeed = 0.04;
     controls.autoForward = false;
     controls.dragToLook = false;
 
@@ -69,9 +69,9 @@ function animatedRender() {
   // Spherical and Geographic Coordinates control
   for (var i = 0; i < spheres.length; i++) {
     // rotate sphere
-    spheres[i].sphere.rotation.x += 0.01;
-    spheres[i].sphere.rotation.y += 0.01;
-    // spheres[i].sphere.rotation.y += Math.PI;
+    // spheres[i].sphere.rotation.x += 0.001;
+    // spheres[i].sphere.rotation.y += 0.001;
+    // spheres[i].sphere.rotation.z += 0.001;
 
     // set the vertices so that they update
     spheres[i].sphere.geometry.verticesNeedUpdate = true;
@@ -80,13 +80,13 @@ function animatedRender() {
 
     for (var j = 0; j < vertices.length; j++) {
 
-      // trigonmetry stuff  
+      // trigonmetry stuff
       var radius = Math.sqrt(Math.pow(initCords[j].x, 2) + Math.pow(initCords[j].y, 2) + Math.pow(initCords[j].z, 2));
       var polar = Math.acos(initCords[j].z/radius);
       var azimuthal = Math.atan2(initCords[j].y, initCords[j].x);
 
       // variable
-      var radiusVar = azimuthal * Math.cos(time/2000) * 20;
+      var radiusVar = Math.cos(j/4 + time/100) * 2;
 
       vertices[j].x = (radius + radiusVar) * Math.sin(polar) * Math.cos(azimuthal);
       vertices[j].y = (radius + radiusVar) * Math.sin(polar) * Math.sin(azimuthal);
@@ -96,22 +96,22 @@ function animatedRender() {
 }
 
 function createSphere() {
-  var radius = 10;
-  var segments = 60;
-  var rings = 60;
+  var radius = 60;
+  var segments = 100;
+  var rings = 100;
   var geometry = new THREE.SphereGeometry(radius, segments, rings);
 
   var material = new THREE.MeshStandardMaterial({
     shading: THREE.FlatShading,
     roughness: 0.7,
     metalness: 1.0,
+    // opacity : 1,
+    // transparent: true,
     color: 0xffffff,
     emissive: 0xffffff,
     emissiveIntensity: 0.3,
     wireframe: false,
-    wireframeLinewidth: 3,
-    opacity : 1,
-    transparent: true
+    wireframeLinewidth: 3
   });
 
   var sphere = new THREE.Mesh(geometry, material);
