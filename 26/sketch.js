@@ -34,7 +34,7 @@ function init() {
     controls = new THREE.FlyControls( camera );
     controls.movementSpeed = 100;
     controls.domElement = container;
-    controls.rollSpeed = 0.04;
+    controls.rollSpeed = 0.4;
     controls.autoForward = false;
     controls.dragToLook = false;
 
