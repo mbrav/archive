@@ -5,14 +5,12 @@ for (var i = 0; i < farmerMarkets.length; i++) {
   // console.log(address);
 }
 
-// getCoords("300 East 56th Street Apt. 22M New York NY 10022");
-
 var geocoder;
 var map;
 
 function initialize() {
   geocoder = new google.maps.Geocoder();
-  var latlng = new google.maps.LatLng(-34.397, 150.644);
+  var latlng = new google.maps.LatLng(40.88, -73.82);
   var mapOptions = {
     zoom: 8,
     center: latlng

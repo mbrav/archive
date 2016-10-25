@@ -2,7 +2,7 @@ var storage = [];
 var count = 0;
 
 // specify what the data variable is
-var data = waterQualityComplaints.data;
+var data = waterQualityComplaints;
 init();
 
 function init() {
@@ -12,6 +12,7 @@ function init() {
 }
 
 function getDataInfo() {
+  console.log(data);
   console.log("Data Length: " + data.length);
   for (var i = 0; i < data[30].length; i++) {
     console.log(i, data[30][i]);
