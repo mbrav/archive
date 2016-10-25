@@ -13,7 +13,7 @@ function projectSetup(projectNumber, projectName) {
 
   if (projectNumber > 1) {
     var pastProject = document.getElementById('past-project');
-    pastLink = "../" + doubleDigit(projectNumber+1) + "/index.html";
+    pastLink = "../" + doubleDigit(projectNumber-1) + "/index.html";
     pastProject.innerHTML = "<a href='"+ pastLink+ "'>" +"back </a>";
   }
 
