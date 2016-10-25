@@ -85,10 +85,7 @@ function init() {
 
     // create geometries
     createCubes();
-
-    console.log(group.children[10].position.x, group.children[10].position.y);
-    console.log(middleX/scale, middleY/scale);
-    console.log(camera.position.x, camera.position.y);
+    createLines();
 
     camera.position.x = group.children[50].position.x;
     camera.position.y = group.children[50].position.y;
@@ -96,33 +93,8 @@ function init() {
     scene.add(group);
     scene.add(pointLight);
     scene.add(camera);
-
-
-    // console.log(graffitData);
-    // console.log(graffitData[600])0
 }
 
-function createCubes() {
-
-    var geometry = new THREE.BoxGeometry(1, 1, 1);
-    var material = new THREE.MeshStandardMaterial({
-        vertexColors: THREE.FaceColors,
-        wireframe: false
-    });
-    group = new THREE.Group();
-
-    for (var i = 0; i < farmerMarketsCords.length; i++) {
-
-      cube = new THREE.Mesh(geometry, material);
-      cube.position.x = (farmerMarketsCords[i].lat - minXcordinate)/scale;
-      cube.position.y = (farmerMarketsCords[i].lng - minYcordinate)/scale;
-      cube.position.z = 0;
-
-      cube.updateMatrix();
-      group.add(cube);
-
-    }
-}
 
 function animatedRender() {
     requestAnimationFrame(animatedRender);
@@ -130,7 +102,55 @@ function animatedRender() {
     controls.update(delta);
 
     renderer.render(scene, camera);
+
 }
+
+function createCubes() {
+
+  var geometry = new THREE.BoxGeometry(1, 1, 1);
+  var material = new THREE.MeshStandardMaterial({
+    vertexColors: THREE.FaceColors,
+    wireframe: false
+  });
+  group = new THREE.Group();
+
+  for (var i = 0; i < farmerMarketsCords.length; i++) {
+
+    cube = new THREE.Mesh(geometry, material);
+    cube.position.x = (farmerMarketsCords[i].lat - minXcordinate)/scale;
+    cube.position.y = (farmerMarketsCords[i].lng - minYcordinate)/scale;
+    cube.position.z = 0;
+
+    cube.updateMatrix();
+    group.add(cube);
+
+  }
+}
+
+function createLines() {
+  var x, y, z, vertices = [], holes = [];
+  var mesh;
+  var geometry = new THREE.Geometry();
+  var material = new THREE.MeshBasicMaterial({
+    color: 0xaaaaaa
+  });
+
+  for ( var i = 0; i < farmerMarketsCords.length; i ++ ) {
+    x = (farmerMarketsCords[i].lat - minXcordinate)/scale;
+    y = (farmerMarketsCords[i].lng - minYcordinate)/scale;
+    // z = -Math.random() * 30;
+
+    vertices.push(new THREE.Vector3(x, y, z));
+  }
+
+  geometry.vertices = vertices;
+
+  geometry.computeBoundingBox();
+  geometry.computeVertexNormals();
+  mesh = new THREE.Line( geometry, material );
+  scene.add(mesh);
+}
+
 
 function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
