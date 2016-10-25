@@ -16,7 +16,7 @@ animatedRender();
 function init() {
 
     // specify the dataFile
-    data = greenthumbCommunityGardens;
+    data = coolRoofs;
 
     var viewAngle = 75;
     var aspectRatio = window.innerWidth / window.innerHeight;
@@ -91,8 +91,8 @@ function createCubes() {
   for (var i = 0; i < data.length; i++) {
 
     cube = new THREE.Mesh(geometry, material);
-    cube.position.x = data[i].location.lat/scale;
-    cube.position.y = data[i].location.lng/scale;
+    cube.position.x = data[i].lat/scale;
+    cube.position.y = data[i].lng/scale;
     cube.position.z = 0;
 
     // cube.updateMatrix();

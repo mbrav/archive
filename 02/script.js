@@ -2,7 +2,7 @@ var camera, scene,renderer;
 var cube,group;
 var pointLight;
 
-// data file 
+// data file
 var data;
 var scale = 0.002; //   scale/n
 
@@ -47,9 +47,9 @@ function init() {
     camera.rotation.z = -Math.PI/2;
 
     controls = new THREE.FlyControls( camera );
-    controls.movementSpeed = 40;
+    controls.movementSpeed = 30;
     controls.domElement = container;
-    controls.rollSpeed = 0.3;
+    controls.rollSpeed = 0.2;
     controls.autoForward = false;
     controls.dragToLook = false;
 

@@ -27,9 +27,9 @@ function init() {
 
 function getDataInfo() {
   console.log("Length of Address Data: " + data.length);
-  // for (var i = 0; i < data[3].length; i++) {
-  //   console.log(i, data[3][i]);
-  // }
+  for (var i = 0; i < data[3].length; i++) {
+    console.log(i, data[3][i]);
+  }
 }
 
 function startGeocoding() {
