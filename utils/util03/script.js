@@ -2,7 +2,7 @@ var storage = [];
 var count = 0;
 
 // specify what the data variable is
-var data = coolRoofs.data;
+var data = foodScrapSites.data;
 init();
 
 function init() {
@@ -23,8 +23,8 @@ function generateCleanDataFile() {
   for (var i = 0; i < data.length; i++) {
     // add new variables to the custom object
     storage.push({
-      lat: data[i][13][1],
-      lng: data[i][13][2]
+      lat: data[i][10][1],
+      lng: data[i][10][2]
     });
   }
   console.log(storage);
