@@ -2,7 +2,7 @@ var storage = [];
 var count = 0;
 
 // specify what the data variable is
-var data = wholesaleMarkets.data;
+var data = publicRecyclingBins.data;
 init();
 
 function init() {
@@ -23,12 +23,12 @@ function generateCleanDataFile() {
   for (var i = 17; i < data.length; i++) {
     // add new variables to the custom object
     storage.push({
-      lat: data[i][11][1],
-      lng: data[i][11][2]
+      lat: data[i][12],
+      lng: data[i][13]
     });
   }
   console.log(storage);
-  console.save(storage, "data.js");
+  console.save(storage, "cords.js");
 }
 
 // HACK: console save file function
