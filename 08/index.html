@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title id="page-title"></title>
+    <link href='../libraries/organizer.css' rel='stylesheet' type='text/css'>
+    <script language="javascript" type="text/javascript" src="../data/wholesale-markets-cords.js"></script>
+    <script language="javascript" src="../libraries/three.min.js"></script>
+    <script language="javascript" src="../libraries/plugins/Detector.js"></script>
+    <script language="javascript" src="../libraries/plugins/FlyControls.js"></script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #data-text {
+            color: rgba(225, 231, 234, 0.2);
+            font-size: 40px;
+        }
+
+        /*canvas {
+          width: 100%;
+          height: 100%;
+        }*/
+
+        #title {
+          z-index: 1;
+        }
+
+        .box {
+          margin: 0 auto;
+          /*width: 50%;*/
+          width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+  <div id="title">
+      <h1 id="project-name"></h1>
+      <ul id="project-nav">
+          <li id="past-project"></li>
+          <li id="next-project"></li>
+      </ul>
+  </div>
+</body>
+</html>
+<script language="javascript" type="text/javascript" src="script.js"></script>
+<!-- organizer that allows navogation to next project  -->
+<script src="../libraries/organizer.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+    // set project's number and name
+    projectSetup(8, "NYC Approved Wholesale Markets");
+</script>

@@ -16,7 +16,7 @@ animatedRender();
 function init() {
 
     // specify the dataFile
-    data = nycDomainRegistrations;
+    data = wholesaleMarkets;
 
     var viewAngle = 75;
     var aspectRatio = window.innerWidth / window.innerHeight;
@@ -42,9 +42,9 @@ function init() {
     // light
     pointLight = new THREE.PointLight(0xFFFFFF);
     pointLight.position.z = 10;
-    camera.rotation.x = -1;
-    camera.rotation.y = 0.5;
-    // camera.rotation.z = Math.PI/2;
+    camera.position.z = -100;
+    camera.rotation.x = Math.PI;
+    camera.rotation.z = -Math.PI/2;
 
     controls = new THREE.FlyControls( camera );
     controls.movementSpeed = 30;
@@ -61,8 +61,8 @@ function init() {
     // create geometries
     createCubes();
 
-    camera.position.x = 20525.341;
-    camera.position.y = -36766.058;
+    camera.position.x = group.children[5].position.x;
+    camera.position.y = group.children[5].position.y;
 
     scene.add(group);
     scene.add(pointLight);
@@ -76,10 +76,12 @@ function animatedRender() {
     controls.update(delta);
 
     renderer.render(scene, camera);
+
 }
 
 function createCubes() {
 
+  var geometry = new THREE.BoxGeometry(1, 1, 1);
   var material = new THREE.MeshStandardMaterial({
     vertexColors: THREE.FaceColors,
     wireframe: false
@@ -88,12 +90,10 @@ function createCubes() {
 
   for (var i = 0; i < data.length; i++) {
 
-    // different geometry
-    var geometry = new THREE.BoxGeometry(2 + data[i].info.count/100, 2 + data[i].info.count/100, data[i].info.count/10);
     cube = new THREE.Mesh(geometry, material);
-    cube.position.x = data[i].location.lat/scale;
-    cube.position.y = data[i].location.lng/scale;
-    cube.position.z = -data[i].info.count/20;
+    cube.position.x = data[i].lat/scale;
+    cube.position.y = data[i].lng/scale;
+    cube.position.z = 0;
 
     // cube.updateMatrix();
     group.add(cube);

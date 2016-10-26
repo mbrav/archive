@@ -2,7 +2,7 @@ var storage = [];
 var count = 0;
 
 // specify what the data variable is
-var data = projectsInConstruction.data;
+var data = wholesaleMarkets.data;
 init();
 
 function init() {
@@ -23,8 +23,8 @@ function generateCleanDataFile() {
   for (var i = 17; i < data.length; i++) {
     // add new variables to the custom object
     storage.push({
-      lat: data[i][15][1],
-      lng: data[i][15][2]
+      lat: data[i][11][1],
+      lng: data[i][11][2]
     });
   }
   console.log(storage);
