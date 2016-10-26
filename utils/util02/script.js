@@ -2,7 +2,7 @@ var geocoder;
 var map;
 
 // specify data variable based on the .js file included in the .html
-var data = greenthumbCommunityGardens.data;
+var data = nycDomainRegistrations.data;
 
 // new object storage
 var storage = [];
@@ -28,19 +28,20 @@ function init() {
 function getDataInfo() {
   console.log("Length of Address Data: " + data.length);
   for (var i = 0; i < data[3].length; i++) {
-    console.log(i, data[3][i]);
+    console.log(i, data[0][i]);
   }
 }
 
 function startGeocoding() {
   setInterval(function(){
     if (count < data.length) {
-      var address = data[count][12] + ", " + data[count][16] + ", " + "NY";
+      // var address = data[count][12] + ", " + data[count][16] + ", " + "NY";
+      var address = data[count][8];
       console.log("GEOCODE REQUEST: ", address);
 
       // extra data to include in object storage
       var additionalData = {
-        parkSize : data[count][14]
+        count : parseInt(data[count][10])
       };
 
       // request address to geocode (and include additionalData in output)
@@ -52,7 +53,7 @@ function startGeocoding() {
       console.save(storage, "geocoded-data.js");
     }
     count++;
-  },1020);
+  },2000);
 }
 
 // geocode address using Google Maps API
