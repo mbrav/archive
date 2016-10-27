@@ -74,6 +74,7 @@ function init() {
     generateData05();
     generateData06();
     generateData07();
+    generateData08();
     generateData10();
 
     // add in all the geopmtery groups
@@ -285,7 +286,6 @@ function generateData07() {
   });
 
   var group = new THREE.Group();
-  console.log(data);
   for (var i = 0; i < data.length; i++) {
     var height = data[i].info.count/100;
     var geometry = new THREE.BoxGeometry(2 + data[i].info.count/500, 2 + data[i].info.count/500, height);
@@ -293,6 +293,30 @@ function generateData07() {
     cube.position.x = data[i].location.lat/scale;
     cube.position.y = data[i].location.lng/scale;
     cube.position.z = -height/2;
+
+    group.add(cube);
+
+  }
+  groups.push(group);
+}
+
+function generateData08() {
+
+  // specify data set
+  var data = dataSets.wholesaleMarkets;
+  console.log("Data length: " + data.length);
+  var geometry = new THREE.BoxGeometry(0.5, 0.5, 0.5);
+  var material = new THREE.MeshStandardMaterial({
+    vertexColors: THREE.FaceColors,
+    wireframe: false
+  });
+
+  var group = new THREE.Group();
+  for (var i = 0; i < data.length; i++) {
+    cube = new THREE.Mesh(geometry, material);
+    cube.position.x = data[i].lat/scale;
+    cube.position.y = data[i].lng/scale;
+    cube.position.z = 0;
 
     group.add(cube);
 
