@@ -1,7 +1,7 @@
 # graffiti-data
 *by Jessica Herzog & Michael Braverman*
 
-nyc-data is based on many asbpect of this project
+nyc-data is based on this project
 
 A data visualization based on [DSNY Graffiti Reports]( https://data.cityofnewyork.us/City-Government/DSNY-Graffiti-Information/gpwd-npar) from [ NYC OpenData](https://data.cityofnewyork.us/).
 
@@ -21,5 +21,5 @@ Uses [three.js](https://threejs.org/) for 3d visualization.
 
 ## [0x06](https://mbrav.github.io/nydc/graffiti/06/index.html) - I know your Data Device
 
-Only works mobile devices.
+Only works on mobile devices.
 ![0x06](img/06.png)

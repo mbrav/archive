@@ -27,11 +27,13 @@ Data visualization can be politicized and manipulated through symbols. It can fo
 
 ![11 - NYDC Combined visualization](http://i.imgur.com/qU7KqxJ.png)
 
-The converted data can be [found here]((https://github.com/mbrav/nydc/data) as .js files.
+The converted data can be [found here](https://github.com/mbrav/nydc/tree/master/utils) as .js files.
+
+Some of the parts of this project are based on [graffiti-data](https://github.com/mbrav/nydc/tree/master/graffiti).
 
 ## Process
 
-[data](https://github.com/mbrav/nydc/utils) - a set of utilities that where used for geocoding and parsing the data.
+[utils](https://github.com/mbrav/nydc/utils) - a set of utilities that where used for geocoding and parsing the data.
 
 Geocoding [NYC Greenthumb Community Gardens](https://youtu.be/WlM96wBV5nU) using Google's API
 
