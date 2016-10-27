@@ -9,9 +9,11 @@ NYC Data - [Farmer Markets](https://data.cityofnewyork.us/Environment/NYC-Greent
 ## Process
 
 Geocoding [NYC Greenthumb Community Gardens](https://youtu.be/WlM96wBV5nU)
+
 Geocoding [NYC Farmer Markets](https://youtu.be/byGIZ4QIHOM)
 
 ## Influence
 
 Cao Fei's - [RMB City](https://www.youtube.com/watch?v=9MhfATPZA0g)
+
 Cao Fei's - [China Tracy](https://www.youtube.com/watch?v=5vcR7OkzHkI)
