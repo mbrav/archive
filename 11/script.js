@@ -75,6 +75,7 @@ function init() {
     generateData06();
     generateData07();
     generateData08();
+    generateData09();
     generateData10();
 
     // add in all the geopmtery groups
@@ -97,6 +98,7 @@ function animatedRender() {
     // animate the data that is animated
     animateGenerateData01();
     animateGenerateData06();
+    animateGenerateData09();
 
 }
 
@@ -194,8 +196,8 @@ function generateData04() {
   console.log("Data length: " + data.length);
   var geometry = new THREE.BoxGeometry(1, 1, 0.4);
   var material = new THREE.MeshStandardMaterial({
-    emissive: 0x2f88d6,
-    emissiveIntensity: 1.0,
+    emissive: 0x6a6ee8,
+    emissiveIntensity: 0.5,
     opacity: 1.0,
     vertexColors: THREE.FaceColors,
     wireframe: false
@@ -324,25 +326,40 @@ function generateData08() {
   groups.push(group);
 }
 
-function animateGenerateData01() {
-  for (var i = 0; i < groups[1].children.length; i++) {
+function generateData09() {
 
-    var pos = groups[1].children[i].position;
+  // specify data set
+  var data = dataSets.publicRecyclingBins;
+  console.log("Data length: " + data.length);
+  var geometry;
+  var material = new THREE.MeshStandardMaterial({
+    color: 0xb9fc99,
+    emissive: 0xb9fc99,
+    emissiveIntensity: 0.5,
+    vertexColors: THREE.FaceColors,
+    wireframe: false
+  });
 
-    groups[1].children[i].position.z = Math.cos(clock.elapsedTime + pos.x/2) * Math.sin(clock.elapsedTime + pos.y/2)* 1;
+  var group = new THREE.Group();
+  for (var i = 0; i < data.length; i++) {
+    geometry = new THREE.TorusKnotBufferGeometry( 0.5, 0.15, 24, 8 );
+
+    cube = new THREE.Mesh(geometry, material);
+    cube.position.x = data[i].lat/scale;
+    cube.position.y = data[i].lng/scale;
+    cube.position.z = 0;
+
+
+    // random rotation when generated
+    cube.rotation.x = Math.random() * Math.PI*2
+
+    // cube.updateMatrix();
+    group.add(cube);
 
   }
+  groups.push(group);
 }
 
-function animateGenerateData06() {
-  for (var i = 0; i < groups[6-1].children.length; i++) {
-
-    var pos = groups[6-1].children[i].position;
-
-    groups[6-1].children[i].scale.z = Math.cos(clock.elapsedTime + pos.x/6) * Math.sin(clock.elapsedTime + pos.y/8)* 2;
-
-  }
-}
 
 function generateData10() {
 
@@ -377,6 +394,38 @@ function generateData10() {
     group.add(cube);
   }
   groups.push(group);
+}
+
+function animateGenerateData01() {
+  for (var i = 0; i < groups[1].children.length; i++) {
+
+    var pos = groups[1].children[i].position;
+
+    groups[1].children[i].position.z = Math.cos(clock.elapsedTime + pos.x/2) * Math.sin(clock.elapsedTime + pos.y/2)* 1;
+
+  }
+}
+
+function animateGenerateData06() {
+  for (var i = 0; i < groups[5].children.length; i++) {
+
+    var pos = groups[6-1].children[i].position;
+
+    groups[6-1].children[i].scale.z = Math.cos(clock.elapsedTime + pos.x/6) * Math.sin(clock.elapsedTime + pos.y/8)* 2;
+
+  }
+}
+
+function animateGenerateData09() {
+  for (var i = 0; i < groups[8].children.length; i++) {
+
+    var pos = groups[8].children[i].position;
+
+    groups[8].children[i].rotation.x += 0.01;
+    groups[8].children[i].rotation.y += 0.01;
+    groups[8].children[i].rotation.z += 0.01;
+
+  }
 }
 
 function onWindowResize() {
