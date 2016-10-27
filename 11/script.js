@@ -71,6 +71,7 @@ function init() {
     generateData02();
     generateData03();
     generateData04();
+    generateData05();
     generateData10();
 
     // add in all the geopmtery groups
@@ -131,6 +132,8 @@ function generateData02() {
   var material = new THREE.MeshStandardMaterial({
     emissive: 0x2f88d6,
     emissiveIntensity: 1.0,
+    opacity: 0.6,
+    transparent: true,
     vertexColors: THREE.FaceColors,
     wireframe: false
   });
@@ -182,12 +185,11 @@ function generateData04() {
   // specify data set
   var data = dataSets.coolRoofs;
   console.log("Data length: " + data.length);
-  var geometry = new THREE.BoxGeometry(2, 2, 0.4);
+  var geometry = new THREE.BoxGeometry(1, 1, 0.4);
   var material = new THREE.MeshStandardMaterial({
     emissive: 0x2f88d6,
     emissiveIntensity: 1.0,
-    opacity: 0.4,
-    transparent: true,
+    opacity: 1.0,
     vertexColors: THREE.FaceColors,
     wireframe: false
   });
@@ -196,6 +198,36 @@ function generateData04() {
   for (var i = 0; i < data.length; i++) {
 
     cube = new THREE.Mesh(geometry, material);
+    cube.position.x = data[i].lat/scale;
+    cube.position.y = data[i].lng/scale;
+    cube.position.z = 0;
+
+    // cube.updateMatrix();
+    group.add(cube);
+
+  }
+  groups.push(group);
+}
+
+function generateData05() {
+
+  // specify data set
+  var data = dataSets.foodScrapSites;
+  console.log("Data length: " + data.length);
+  var geometry = new THREE.IcosahedronBufferGeometry(1.5, 0)
+  var material = new THREE.MeshPhongMaterial({
+    shading: THREE.FlatShading,
+    emissive: 0x890779,
+    emissiveIntensity: 0.7,
+    vertexColors: THREE.FaceColors,
+    wireframe: false
+  });
+
+  var group = new THREE.Group();
+  for (var i = 0; i < data.length; i++) {
+
+    cube = new THREE.Mesh(geometry, material);
+    cube.rotation.x = Math.PI/2;
     cube.position.x = data[i].lat/scale;
     cube.position.y = data[i].lng/scale;
     cube.position.z = 0;
@@ -223,7 +255,7 @@ function generateData10() {
 
   var group = new THREE.Group();
   for (var i = 0; i < data.length; i++) {
-    geometry = new THREE.BoxGeometry(1, 4, 1);
+    geometry = new THREE.BoxGeometry(0.7, 3, 1);
     cube = new THREE.Mesh(geometry, material);
     cube.position.x = data[i].lat/scale;
     cube.position.y = data[i].lng/scale;
@@ -231,7 +263,7 @@ function generateData10() {
 
     group.add(cube);
 
-    geometry = new THREE.BoxGeometry(4, 1, 1);
+    geometry = new THREE.BoxGeometry(3, 0.7, 1);
     cube = new THREE.Mesh(geometry, material);
     cube.position.x = data[i].lat/scale;
     cube.position.y = data[i].lng/scale;
