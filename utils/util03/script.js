@@ -2,7 +2,7 @@ var storage = [];
 var count = 0;
 
 // specify what the data variable is
-var data = publicRecyclingBins.data;
+var data = healthHospitalFacilities.data;
 init();
 
 function init() {
@@ -20,11 +20,11 @@ function getDataInfo() {
 }
 
 function generateCleanDataFile() {
-  for (var i = 17; i < data.length; i++) {
+  for (var i = 0; i < data.length; i++) {
     // add new variables to the custom object
     storage.push({
-      lat: data[i][12],
-      lng: data[i][13]
+      lat: data[i][13][1],
+      lng: data[i][13][2]
     });
   }
   console.log(storage);
