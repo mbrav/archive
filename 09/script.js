@@ -118,6 +118,7 @@ function animateCubes() {
 
     group.children[i].rotation.x += 0.01;
     group.children[i].rotation.y += 0.01;
+    group.children[i].rotation.z += 0.01;
 
   }
 }

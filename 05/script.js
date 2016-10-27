@@ -82,12 +82,12 @@ function animatedRender() {
 function createCubes() {
 
   var geometry = new THREE.IcosahedronBufferGeometry(2, 0)
-  var material = new THREE.MeshStandardMaterial({
+  var material = new THREE.MeshPhongMaterial({
     shading: THREE.FlatShading,
-    roughness: 1.0,
-    metalness: 1.0,
-    emissive: 0xbfa94a,
-    emissiveIntensity: 0.5,
+    roughness: 0.5,
+    metalness:0.5,
+    emissive: 0x890779,
+    emissiveIntensity: 0.7,
     vertexColors: THREE.FaceColors,
     wireframe: false
   });
