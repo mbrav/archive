@@ -14,7 +14,6 @@ var clock = new THREE.Clock();
 init();
 animatedRender();
 
-
 function init() {
     dataSets = {
       farmerMarketsCords,
@@ -28,7 +27,6 @@ function init() {
       publicRecyclingBins,
       healthHospitalFacilities
     };
-    console.log(dataSets);
 
     var viewAngle = 75;
     var aspectRatio = window.innerWidth / window.innerHeight;
@@ -68,7 +66,10 @@ function init() {
     renderer.setClearColor(skyColor, 1.0);
 
     // create geometries out of data
+    console.log("LOADING datasets...");
     generateData01();
+    generateData02();
+    generateData03();
     generateData10();
 
     // add in all the geopmtery groups
@@ -88,6 +89,91 @@ function animatedRender() {
 
     renderer.render(scene, camera);
 
+}
+
+function generateData01() {
+
+  // specify data set
+  var data = dataSets.healthHospitalFacilities;
+  console.log("Data length: " + data.length);
+  var geometry;
+  var material = new THREE.MeshStandardMaterial({
+    emissive: 0x8de564,
+    emissiveIntensity: 0.5,
+    vertexColors: THREE.FaceColors,
+    wireframe: false
+  });
+
+  var group = new THREE.Group();
+  var coneHeight = 5;
+  for (var i = 0; i < data.length; i++) {
+    geometry = new THREE.ConeBufferGeometry( 1, coneHeight, 20 );
+
+    cube = new THREE.Mesh(geometry, material);
+    cube.rotation.x = -Math.PI/2;
+    cube.position.x = data[i].lat/scale;
+    cube.position.y = data[i].lng/scale;
+    cube.position.z = -coneHeight/2;
+
+    // cube.updateMatrix();
+    group.add(cube);
+  }
+  groups.push(group);
+}
+
+function generateData02() {
+
+  // specify data set
+  var data = dataSets.waterQualityComplaints;
+  console.log("Data length: " + data.length);
+  var geometry = new THREE.SphereGeometry( 0.5, 5, 5 );
+  var material = new THREE.MeshStandardMaterial({
+    emissive: 0x2f88d6,
+    emissiveIntensity: 1.0,
+    vertexColors: THREE.FaceColors,
+    wireframe: false
+  });
+
+  var group = new THREE.Group();
+  for (var i = 0; i < data.length; i++) {
+    var cube = new THREE.Mesh(geometry, material);
+    cube.position.x = data[i].lat/scale;
+    cube.position.y = data[i].lng/scale;
+    cube.position.z = 0;
+
+    // cube.updateMatrix();
+    group.add(cube);
+  }
+  groups.push(group);
+}
+
+function generateData03() {
+
+  // specify data set
+  var data = dataSets.greenthumbCommunityGardens;;
+  console.log("Data length: " + data.length);
+  var geometry;
+  var material = new THREE.MeshStandardMaterial({
+    color: 0xf9fc79,
+    emissive: 0xf9fc79,
+    emissiveIntensity: 0.5,
+    vertexColors: THREE.FaceColors,
+    wireframe: false
+  });
+
+  var group = new THREE.Group();
+  for (var i = 0; i < data.length; i++) {
+    var geometry = new THREE.CylinderGeometry( 1, 1, 1, 32 );
+    cube = new THREE.Mesh(geometry, material);
+    cube.rotation.x = Math.PI/2;
+    cube.position.x = data[i].location.lat/scale;
+    cube.position.y = data[i].location.lng/scale;
+    cube.position.z = 0;
+
+    // cube.updateMatrix();
+    group.add(cube);
+  }
+  groups.push(group);
 }
 
 function generateData10() {
@@ -125,35 +211,6 @@ function generateData10() {
   groups.push(group);
 }
 
-function generateData01() {
-
-  // specify data set
-  var data = dataSets.healthHospitalFacilities;
-  console.log("Data Lenght: " + data.length);
-  var geometry;
-  var material = new THREE.MeshStandardMaterial({
-    emissive: 0x8de564,
-    emissiveIntensity: 0.5,
-    vertexColors: THREE.FaceColors,
-    wireframe: false
-  });
-
-  var group = new THREE.Group();
-  var coneHeight = 10;
-  for (var i = 0; i < data.length; i++) {
-    geometry = new THREE.ConeBufferGeometry( 2, coneHeight, 20 );
-
-    cube = new THREE.Mesh(geometry, material);
-    cube.rotation.x = -Math.PI/2;
-    cube.position.x = data[i].lat/scale;
-    cube.position.y = data[i].lng/scale;
-    cube.position.z = -coneHeight/2;
-
-    // cube.updateMatrix();
-    group.add(cube);
-  }
-  groups.push(group);
-}
 
 
 function onWindowResize() {
