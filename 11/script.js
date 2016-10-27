@@ -72,6 +72,7 @@ function init() {
     generateData03();
     generateData04();
     generateData05();
+    generateData06();
     generateData10();
 
     // add in all the geopmtery groups
@@ -90,6 +91,10 @@ function animatedRender() {
     controls.update(delta);
 
     renderer.render(scene, camera);
+
+    // animate the data that is animated
+    animateGenerateData01();
+    animateGenerateData06();
 
 }
 
@@ -214,7 +219,7 @@ function generateData05() {
   // specify data set
   var data = dataSets.foodScrapSites;
   console.log("Data length: " + data.length);
-  var geometry = new THREE.IcosahedronBufferGeometry(1.5, 0)
+  var geometry = new THREE.IcosahedronBufferGeometry(1, 0)
   var material = new THREE.MeshPhongMaterial({
     shading: THREE.FlatShading,
     emissive: 0x890779,
@@ -237,6 +242,53 @@ function generateData05() {
 
   }
   groups.push(group);
+}
+
+function generateData06() {
+
+  // specify data set
+  var data = dataSets.projectsInConstruction;
+  console.log("Data length: " + data.length);
+  var geometry;
+  var material = new THREE.MeshStandardMaterial({
+    wireframe: true,
+    wireframeLinewidth: 2,
+    vertexColors: THREE.FaceColors,
+  });
+
+  var group = new THREE.Group();
+  for (var i = 0; i < data.length; i++) {
+    var randomHeight =  Math.random()*5 + 4;
+    geometry = new THREE.BoxGeometry(0.5, 0.5, randomHeight);
+    cube = new THREE.Mesh(geometry, material);
+    cube.position.x = data[i].lat/scale;
+    cube.position.y = data[i].lng/scale;
+    cube.position.z = -randomHeight/2;
+
+    group.add(cube);
+
+  }
+  groups.push(group);
+}
+
+function animateGenerateData01() {
+  for (var i = 0; i < groups[1].children.length; i++) {
+
+    var pos = groups[1].children[i].position;
+
+    groups[1].children[i].position.z = Math.cos(clock.elapsedTime + pos.x/2) * Math.sin(clock.elapsedTime + pos.y/2)* 1;
+
+  }
+}
+
+function animateGenerateData06() {
+  for (var i = 0; i < groups[6-1].children.length; i++) {
+
+    var pos = groups[6-1].children[i].position;
+
+    groups[6-1].children[i].scale.z = Math.cos(clock.elapsedTime + pos.x/6) * Math.sin(clock.elapsedTime + pos.y/8)* 2;
+
+  }
 }
 
 function generateData10() {
