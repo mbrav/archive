@@ -5,36 +5,18 @@
     <title id="page-title"></title>
     <link href='../libraries/organizer.css' rel='stylesheet' type='text/css'>
     <script language="javascript" type="text/javascript" src="../data/farmer-markets-cords.js"></script>
+    <script language="javascript" type="text/javascript" src="../data/water-quality-complaints.js"></script>
+    <script language="javascript" type="text/javascript" src="../data/greenthumb-community-gardens-cords.js"></script>
+    <script language="javascript" type="text/javascript" src="../data/food-scrap-sites-cords.js"></script>
+    <script language="javascript" type="text/javascript" src="../data/cool-roofs-cords.js"></script>
+    <script language="javascript" type="text/javascript" src="../data/projects-in-construction-cords.js"></script>
+    <script language="javascript" type="text/javascript" src="../data/nyc-domain-registrations-cords.js"></script>
+    <script language="javascript" type="text/javascript" src="../data/wholesale-markets-cords.js"></script>
+    <script language="javascript" type="text/javascript" src="../data/public-recycling-bins-cords.js"></script>
+    <script language="javascript" type="text/javascript" src="../data/health-hospital-facilities-cords.js"></script>
     <script language="javascript" src="../libraries/three.min.js"></script>
     <script language="javascript" src="../libraries/plugins/Detector.js"></script>
     <script language="javascript" src="../libraries/plugins/FlyControls.js"></script>
-    <!-- replace built-in triangulation with Earcut -->
-    <script language="javascript" src="../libraries/plugins/earcut.js"></script>
-    <script>
-      function addContour( vertices, contour ) {
-          for ( var i = 0; i < contour.length; i++ ) {
-              vertices.push( contour[i].x );
-              vertices.push( contour[i].y );
-          }
-      }
-      THREE.ShapeUtils.triangulateShape = function ( contour, holes ) {
-          var vertices = [];
-          addContour( vertices, contour );
-          var holeIndices = [];
-          var holeIndex = contour.length;
-          for ( i = 0; i < holes.length; i++ ) {
-              holeIndices.push( holeIndex );
-              holeIndex += holes[i].length;
-              addContour( vertices, holes[i] );
-          }
-          var result = earcut( vertices, holeIndices, 2 );
-          var grouped = [];
-          for ( var i = 0; i < result.length; i += 3 ) {
-              grouped.push( result.slice( i, i + 3 ) );
-          }
-          return grouped;
-      };
-    </script>
     <style>
         body {
             padding: 0;
@@ -79,5 +61,5 @@
 </script>
 <script type="text/javascript">
     // set project's number and name
-    projectSetup(1, "NYC Farmer Markets");
+    projectSetup(11, "NYC Data City");
 </script>
