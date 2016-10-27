@@ -70,6 +70,7 @@ function init() {
     generateData01();
     generateData02();
     generateData03();
+    generateData04();
     generateData10();
 
     // add in all the geopmtery groups
@@ -150,7 +151,7 @@ function generateData02() {
 function generateData03() {
 
   // specify data set
-  var data = dataSets.greenthumbCommunityGardens;;
+  var data = dataSets.greenthumbCommunityGardens;
   console.log("Data length: " + data.length);
   var geometry;
   var material = new THREE.MeshStandardMaterial({
@@ -172,6 +173,36 @@ function generateData03() {
 
     // cube.updateMatrix();
     group.add(cube);
+  }
+  groups.push(group);
+}
+
+function generateData04() {
+
+  // specify data set
+  var data = dataSets.coolRoofs;
+  console.log("Data length: " + data.length);
+  var geometry = new THREE.BoxGeometry(2, 2, 0.4);
+  var material = new THREE.MeshStandardMaterial({
+    emissive: 0x2f88d6,
+    emissiveIntensity: 1.0,
+    opacity: 0.4,
+    transparent: true,
+    vertexColors: THREE.FaceColors,
+    wireframe: false
+  });
+
+  var group = new THREE.Group();
+  for (var i = 0; i < data.length; i++) {
+
+    cube = new THREE.Mesh(geometry, material);
+    cube.position.x = data[i].lat/scale;
+    cube.position.y = data[i].lng/scale;
+    cube.position.z = 0;
+
+    // cube.updateMatrix();
+    group.add(cube);
+
   }
   groups.push(group);
 }
@@ -210,8 +241,6 @@ function generateData10() {
   }
   groups.push(group);
 }
-
-
 
 function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
