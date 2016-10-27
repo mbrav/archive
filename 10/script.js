@@ -81,23 +81,32 @@ function animatedRender() {
 
 function createCubes() {
 
-  var geometry = new THREE.BoxGeometry(1, 1, 1);
+  var geometry;
   var material = new THREE.MeshStandardMaterial({
+    color: 0xff0000,
+    emissive: 0xff0000,
+    emissiveIntensity: 0.6,
     vertexColors: THREE.FaceColors,
     wireframe: false
   });
   group = new THREE.Group();
 
   for (var i = 0; i < data.length; i++) {
-
+    geometry = new THREE.BoxGeometry(1, 4, 1);
     cube = new THREE.Mesh(geometry, material);
     cube.position.x = data[i].lat/scale;
     cube.position.y = data[i].lng/scale;
     cube.position.z = 0;
 
-    // cube.updateMatrix();
     group.add(cube);
 
+    geometry = new THREE.BoxGeometry(4, 1, 1);
+    cube = new THREE.Mesh(geometry, material);
+    cube.position.x = data[i].lat/scale;
+    cube.position.y = data[i].lng/scale;
+    cube.position.z = 0;
+
+    group.add(cube);
   }
 }
 
