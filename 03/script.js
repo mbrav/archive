@@ -81,16 +81,20 @@ function animatedRender() {
 
 function createCubes() {
 
-  var geometry = new THREE.BoxGeometry(1, 1, 1);
+  var geometry;
   var material = new THREE.MeshStandardMaterial({
+    color: 0xb9fc99,
+    emissive: 0xb9fc99,
+    emissiveIntensity: 0.5,
     vertexColors: THREE.FaceColors,
     wireframe: false
   });
   group = new THREE.Group();
 
   for (var i = 0; i < data.length; i++) {
-
+    var geometry = new THREE.CylinderGeometry( 1, 1, 1, 32 );
     cube = new THREE.Mesh(geometry, material);
+    cube.rotation.x = Math.PI/2;
     cube.position.x = data[i].location.lat/scale;
     cube.position.y = data[i].location.lng/scale;
     cube.position.z = 0;

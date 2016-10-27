@@ -81,8 +81,12 @@ function animatedRender() {
 
 function createCubes() {
 
-  var geometry = new THREE.BoxGeometry(1, 1, 1);
+  var geometry = new THREE.BoxGeometry(2, 2, 0.4);
   var material = new THREE.MeshStandardMaterial({
+    emissive: 0x2f88d6,
+    emissiveIntensity: 1.0,
+    opacity: 0.4,
+    transparent: true,
     vertexColors: THREE.FaceColors,
     wireframe: false
   });

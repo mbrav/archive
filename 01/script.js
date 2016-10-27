@@ -4,7 +4,7 @@ var pointLight;
 
 // data file
 var data;
-var scale = 0.006; //   scale/n
+var scale = 0.002; //   scale/n
 
 // data statistics
 var maxXcordinate = 0;
@@ -113,19 +113,24 @@ function animatedRender() {
 
 function createCubes() {
 
-  var geometry = new THREE.BoxGeometry(1, 1, 1);
+  var geometry;
   var material = new THREE.MeshStandardMaterial({
+    emissive: 0x8de564,
+    emissiveIntensity: 0.5,
     vertexColors: THREE.FaceColors,
     wireframe: false
   });
   group = new THREE.Group();
 
+  var coneHeight = 10;
   for (var i = 0; i < data.length; i++) {
+    geometry = new THREE.ConeBufferGeometry( 2, coneHeight, 20 );
 
     cube = new THREE.Mesh(geometry, material);
+    cube.rotation.x = -Math.PI/2;
     cube.position.x = (data[i].lat - minXcordinate)/scale;
     cube.position.y = (data[i].lng - minYcordinate)/scale;
-    cube.position.z = 0;
+    cube.position.z = -coneHeight/2;
 
     // cube.updateMatrix();
     group.add(cube);

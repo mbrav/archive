@@ -82,7 +82,9 @@ function createCubes() {
 
   var material = new THREE.MeshStandardMaterial({
     vertexColors: THREE.FaceColors,
-    wireframe: false
+    wireframe: false,
+    opacity: 0.4,
+    transparent: true
   });
   group = new THREE.Group();
 

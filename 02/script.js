@@ -77,12 +77,16 @@ function animatedRender() {
 
     renderer.render(scene, camera);
 
+    animateCubes();
+
 }
 
 function createCubes() {
 
-  var geometry = new THREE.BoxGeometry(0.5, 0.5, 0.5);
+  var geometry = new THREE.SphereGeometry( 0.5, 5, 5 );
   var material = new THREE.MeshStandardMaterial({
+    emissive: 0x2f88d6,
+    emissiveIntensity: 1.0,
     vertexColors: THREE.FaceColors,
     wireframe: false
   });
@@ -97,6 +101,16 @@ function createCubes() {
 
     // cube.updateMatrix();
     group.add(cube);
+
+  }
+}
+
+function animateCubes() {
+  for (var i = 0; i < group.children.length; i++) {
+
+    var pos = group.children[i].position;
+
+    group.children[i].position.z = Math.cos(clock.elapsedTime + pos.x/6) * Math.sin(clock.elapsedTime + pos.y/8)* 2;
 
   }
 }

@@ -77,23 +77,27 @@ function animatedRender() {
 
     renderer.render(scene, camera);
 
+    animateCubes();
+
 }
 
 function createCubes() {
 
-  var geometry = new THREE.BoxGeometry(1, 1, 1);
+  var geometry;
   var material = new THREE.MeshStandardMaterial({
+    wireframe: true,
+    wireframeLinewidth: 2,
     vertexColors: THREE.FaceColors,
-    wireframe: false
   });
   group = new THREE.Group();
 
   for (var i = 0; i < data.length; i++) {
-
+    var randomHeight =  Math.random()*10;
+    geometry = new THREE.BoxGeometry(1, 1, randomHeight);
     cube = new THREE.Mesh(geometry, material);
     cube.position.x = data[i].lat/scale;
     cube.position.y = data[i].lng/scale;
-    cube.position.z = 0;
+    cube.position.z = -randomHeight/2;
 
     // cube.updateMatrix();
     group.add(cube);
@@ -101,6 +105,15 @@ function createCubes() {
   }
 }
 
+function animateCubes() {
+  for (var i = 0; i < group.children.length; i++) {
+
+    var pos = group.children[i].position;
+
+    group.children[i].scale.z = Math.cos(clock.elapsedTime + pos.x/6) * Math.sin(clock.elapsedTime + pos.y/8)* 2;
+
+  }
+}
 
 function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;

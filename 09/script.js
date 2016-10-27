@@ -77,26 +77,47 @@ function animatedRender() {
 
     renderer.render(scene, camera);
 
+    animateCubes();
+
 }
 
 function createCubes() {
 
-  var geometry = new THREE.BoxGeometry(1, 1, 1);
+  var geometry;
   var material = new THREE.MeshStandardMaterial({
+    color: 0xb9fc99,
+    emissive: 0xb9fc99,
+    emissiveIntensity: 0.5,
     vertexColors: THREE.FaceColors,
     wireframe: false
   });
   group = new THREE.Group();
 
   for (var i = 0; i < data.length; i++) {
+    geometry = new THREE.TorusKnotBufferGeometry( 0.7, 0.15, 24, 8 );
 
     cube = new THREE.Mesh(geometry, material);
     cube.position.x = data[i].lat/scale;
     cube.position.y = data[i].lng/scale;
     cube.position.z = 0;
 
+
+    // random rotation when generated
+    cube.rotation.x = Math.random() * Math.PI*2
+
     // cube.updateMatrix();
     group.add(cube);
+
+  }
+}
+
+function animateCubes() {
+  for (var i = 0; i < group.children.length; i++) {
+
+    var pos = group.children[i].position;
+
+    group.children[i].rotation.x += 0.01;
+    group.children[i].rotation.y += 0.01;
 
   }
 }
