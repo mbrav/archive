@@ -73,6 +73,7 @@ function init() {
     generateData04();
     generateData05();
     generateData06();
+    generateData07();
     generateData10();
 
     // add in all the geopmtery groups
@@ -264,6 +265,34 @@ function generateData06() {
     cube.position.x = data[i].lat/scale;
     cube.position.y = data[i].lng/scale;
     cube.position.z = -randomHeight/2;
+
+    group.add(cube);
+
+  }
+  groups.push(group);
+}
+
+function generateData07() {
+
+  // specify data set
+  var data = dataSets.nycDomainRegistrations;
+  console.log("Data length: " + data.length);
+  var material = new THREE.MeshStandardMaterial({
+    vertexColors: THREE.FaceColors,
+    wireframe: false,
+    opacity: 0.1,
+    transparent: true
+  });
+
+  var group = new THREE.Group();
+  console.log(data);
+  for (var i = 0; i < data.length; i++) {
+    var height = data[i].info.count/100;
+    var geometry = new THREE.BoxGeometry(2 + data[i].info.count/500, 2 + data[i].info.count/500, height);
+    cube = new THREE.Mesh(geometry, material);
+    cube.position.x = data[i].location.lat/scale;
+    cube.position.y = data[i].location.lng/scale;
+    cube.position.z = -height/2;
 
     group.add(cube);
 
