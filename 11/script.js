@@ -70,13 +70,13 @@ function init() {
     generateData01();
     generateData02();
     generateData03();
-    generateData04();
-    generateData05();
-    generateData06();
-    generateData07();
-    generateData08();
-    generateData09();
-    generateData10();
+    // generateData04();
+    // generateData05();
+    // generateData06();
+    // generateData07();
+    // generateData08();
+    // generateData09();
+    // generateData10();
 
     // add in all the geopmtery groups
     for (var i = 0; i < groups.length; i++) {
@@ -96,9 +96,9 @@ function animatedRender() {
     renderer.render(scene, camera);
 
     // animate the data that is animated
-    animateGenerateData01();
-    animateGenerateData06();
-    animateGenerateData09();
+    // animateGenerateData01();
+    // animateGenerateData06();
+    // animateGenerateData09();
 
 }
 
