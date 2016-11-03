@@ -49,6 +49,11 @@ Geocoding [NYC Greenthumb Community Gardens](https://youtu.be/WlM96wBV5nU) using
 
 Geocoding [NYC Farmer Markets](https://youtu.be/byGIZ4QIHOM) using Google's API
 
+### Made with
+
+* [three.js](https://threejs.org/) and WebGL
+* [NYC Open Data](https://nycopendata.socrata.com/) 
+
 ## Influence
 
 Cao Fei's - [RMB City](https://www.youtube.com/watch?v=9MhfATPZA0g)
