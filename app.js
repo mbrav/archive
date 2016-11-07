@@ -5,6 +5,8 @@ var express = require('express');
 var app = express();
 var serv = require('http').Server(app);
 
+var clientsOnline = 0;
+
 app.get('/',function(req, res) {
 	res.sendFile(__dirname + '/client/index.html');
 });
@@ -22,71 +24,28 @@ var socketList = {};
 var io = require('socket.io')(serv,{});
 io.sockets.on('connection', function(socket) {
 	// setup the client once his settings are received
-	socket.on('settings', function(clientSettings) {
-		socket.id = clientSettings.id;
-		socket.x = clientSettings.x;
-		socket.y = clientSettings.y;
-		socket.z = clientSettings.z;
-		socket.color = {
-			r: clientSettings.color.r,
-			g: clientSettings.color.g,
-			b: clientSettings.color.b,
-			a: clientSettings.color.a
-		}
-		socketList[socket.id] = socket;
-		console.log('Client "' + socket.id + '" Connected');
-		// console.log('- clients online: ', clientsOnline);
-  });
+	console.log("New Client");
+	clientsOnline++;
 
 	// update socket data when new position recieved from a player
-	socket.on('playerPosition', function(playerPos) {
-		if(socketList[playerPos.id]!=null) {
-			socketList[playerPos.id].x = playerPos.x;
-			socketList[playerPos.id].y = playerPos.y;
-			socketList[playerPos.id].z = playerPos.z;
-		}
+	socket.on('clientMessage', function(msg) {
+		console.log("Clent message!");
+		console.log(msg);
 	});
 
 	// disconnect player when he leaves
 	socket.on('disconnect', function() {
-		// if statement that prevents server crash
-		if (socketList[socket.id]!= null) {
-			console.log('Client "' + socketList[socket.id].id + '" Disconnected');
-			delete socketList[socket.id];
-		}
+		console.log("Client disconnect");
+		clientsOnline--;
 	});
 });
 
 // SENDING DATA
-var refresh = 60; // set refresh rate
+var refresh = 2; // set refresh rate (times per second)
 setInterval(function(){
-
-	// data pack about all other players
-	var pack = [];
-
-	// update every player
-	for (var i in socketList) {
-		var player = socketList[i];
-
-		// update the player data pack
-		pack.push({
-			x:player.x,
-			y:player.y,
-			z:player.z,
-			id:player.id,
-			color : {
-				r: player.color.r,
-				g: player.color.g,
-				b: player.color.b,
-				a: player.color.a
-			}
-		});
+	var pack = {
+		msg: "hey client!",
+		clientsOnline: clientsOnline
 	}
-
-	// send info about every player to every player
-	// (yes, that's right)
-	for (var i in socketList) {
-		var socket = socketList[i];
-		socket.emit('newPositions',pack);
-	}
+	io.emit('serverMessage',pack);
 }, 1000/refresh);
