@@ -41,11 +41,11 @@ io.sockets.on('connection', function(socket) {
 });
 
 // SENDING DATA
-var refresh = 2; // set refresh rate (times per second)
-setInterval(function(){
-	var pack = {
-		msg: "hey client!",
-		clientsOnline: clientsOnline
-	}
-	io.emit('serverMessage',pack);
-}, 1000/refresh);
+// var refresh = 2; // set refresh rate (times per second)
+// setInterval(function(){
+// 	var pack = {
+// 		msg: "hey client!",
+// 		clientsOnline: clientsOnline
+// 	}
+// 	io.emit('serverMessage',pack);
+// }, 1000/refresh);
