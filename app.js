@@ -62,8 +62,8 @@ setInterval(function(){
 		'"We are going to take things away from you on behalf of the common good."',
 		'"Im not going to have some reporters pawing through our papers."',
 		'"We came, we saw, he died"',
-		"It's this vast right-wing conspiracy that has been against my husband.",
-		"Don't let anybody tell you that it's corporations and businesses that create jobs.",
+		'"Its this vast right-wing conspiracy that has been against my husband."',
+		'"Dont let anybody tell you that its corporations and businesses that create jobs."',
 	];
 
 	io.emit('serverMessage', {
