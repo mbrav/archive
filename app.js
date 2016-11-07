@@ -29,23 +29,50 @@ io.sockets.on('connection', function(socket) {
 
 	// update socket data when new position recieved from a player
 	socket.on('clientMessage', function(msg) {
-		console.log("Clent message!");
+		console.log("new client connected");
 		console.log(msg);
+		io.emit('newClient', {
+			clientsOnline: clientsOnline
+		});
 	});
 
 	// disconnect player when he leaves
 	socket.on('disconnect', function() {
 		console.log("Client disconnect");
 		clientsOnline--;
+		io.emit('clientDisconnect', {
+			clientsOnline: clientsOnline
+		});
 	});
 });
 
-// SENDING DATA
-// var refresh = 2; // set refresh rate (times per second)
-// setInterval(function(){
-// 	var pack = {
-// 		msg: "hey client!",
-// 		clientsOnline: clientsOnline
-// 	}
-// 	io.emit('serverMessage',pack);
-// }, 1000/refresh);
+// server message
+var refresh = 0.4; // set refresh rate (times per second)
+setInterval(function(){
+
+	var serverMessages = [
+		"sounds like it is time you close your browser window ...",
+		"can't read any email's? there aren't any",
+		"CNN claims this is illegal ...",
+		"guess who is going to become presisdent anyway ...",
+		"a f**k up? just blame the Russians",
+		"Sudian Arabian camels...",
+		// "2 politcal parties, 4 banks, 3 oil firms, 4 big media companies, 97 jelly bean flavours, 56 bagel flavours. FREEDOM OF CHOICE!",
+		'"God bless the America we are trying to create."',
+		'"We are going to take things away from you on behalf of the common good."',
+		'"Im not going to have some reporters pawing through our papers."',
+		'"We came, we saw, he died"',
+		"It's this vast right-wing conspiracy that has been against my husband.",
+		"Don't let anybody tell you that it's corporations and businesses that create jobs.",
+	];
+
+	io.emit('serverMessage', {
+			msg: serverMessages[Math.floor(Math.random()*serverMessages.length)]
+			// msg: "test"
+	});
+
+}, 1000/refresh);
+
+function opacityFormula(usersOnline) {
+  return Math.exp(usersOnline/100)-1;
+}

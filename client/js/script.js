@@ -2,16 +2,17 @@ var socket = io();
 
 init();
 
-console.log("Data Seek");
+var feed, terminal;
+var clientsOnline;
 
 function init() {
+  feed = document.getElementById("feed");
+  terminal = document.getElementById("terminal");
   // send player settings
   socket.emit('clientMessage', {
     msg: "hi",
     id: Math.random()
   });
-
-  console.log(emails);
 
   for (var i = 0; i < emails.length; i++) {
     var title = document.createElement("h1");
@@ -29,20 +30,44 @@ function init() {
     var content = document.createElement("p");
     content.appendChild(document.createTextNode("To: " + emails[i].body));
 
-    var element = document.getElementById("feed");
-    element.appendChild(title);
-    element.appendChild(fromWho);
-    element.appendChild(toWho);
-    element.appendChild(date);
-    element.appendChild(content);
+    feed.appendChild(title);
+    feed.appendChild(fromWho);
+    feed.appendChild(toWho);
+    feed.appendChild(date);
+    feed.appendChild(content);
   }
 
-  socket.on('serverMessage', function(msg){
-    console.log("server msg");
-    console.log(msg);
+  socket.on('newClient', function(msg){
+    clientsOnline = msg.clientsOnline;
+    updateBasedOnClientsOnline();
+    var terminalMessage = document.createElement("p");
 
-    // document.getElementById("feed").innerHTML = "Clients Online: " + msg.clientsOnline;
-
-
+    terminalMessage.appendChild(document.createTextNode("NEW USER CONNECTS, " + msg.clientsOnline + " users remain online "));
+    terminal.appendChild(terminalMessage);
   });
+
+  socket.on('clientDisconnect', function(msg){
+    clientsOnline = msg.clientsOnline;
+    updateBasedOnClientsOnline();
+    var terminalMessage = document.createElement("p");
+
+    terminalMessage.appendChild(document.createTextNode("USER DISCONNECTS, " + msg.clientsOnline + " users remain online "));
+    terminal.appendChild(terminalMessage);
+  });
+
+  socket.on('serverMessage', function(msg){
+    var terminalMessage = document.createElement("p");
+
+    terminalMessage.appendChild(document.createTextNode(msg.msg));
+    terminal.appendChild(terminalMessage);
+  });
+}
+
+function updateBasedOnClientsOnline() {
+  feed.style.opacity = opacityFormula(clientsOnline);
+  console.log(opacityFormula(clientsOnline));
+}
+
+function opacityFormula(usersOnline) {
+  return Math.exp(usersOnline/60)-1;
 }
