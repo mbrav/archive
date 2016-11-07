@@ -4,7 +4,7 @@ if (!Detector.webgl) Detector.addGetWebGLMessage();
 var socket = io();
 var userId; // user id
 
-var camera,scene,renderer;
+// var camera,scene,renderer;
 var light;
 
 // player geomteries
@@ -22,7 +22,6 @@ var thisPlayer = {
     a: 1
   }
 };
-
 
 init();
 animatedRender();
@@ -87,17 +86,26 @@ function init() {
       a: thisPlayer.color.a
     }
   });
-
-  // smooth operator
-  audio_player.src = 'http://www.mbrav.com/audio/smooth-operator.mp3';
-  audio_player.play();
-  audio_player.currentTime = 24;
 }
 
 function animatedRender() {
   // update time
   var d = new Date();
   var t = d.getMilliseconds();
+
+  // wiggle wiggle <--
+  for (var i = 0; i < players.length; i++) {
+    for (var j = 0; j < players[i].sphere.geometry.vertices.length; j++) {
+      var initValues = players[i].sphere.initValues;
+
+      players[i].sphere.geometry.vertices[j].x = initValues.x + Math.random()*10 - 5;
+      players[i].sphere.geometry.vertices[j].y = initValues.y + Math.random()*10 - 5;
+      // players[i].sphere.geometry.vertices[j].y = initValues.y + Math.random()*2 - 1;
+      // players[i].sphere.geometry.vertices[j].z += Math.random() * 0.1 - 0.05;
+    }
+    players[i].sphere.geometry.verticesNeedUpdate = true;
+  }
+
 
   // render
   requestAnimationFrame(animatedRender);
@@ -154,6 +162,15 @@ function createPlayers() {
   sphere.position.x = Math.random() * 200;
   sphere.position.y = Math.random() * 200;
   sphere.position.z = Math.random() * 200 - 200;
+
+  for (var i = 0; i < sphere.geometry.vertices.length; i++) {
+    // keep track of the initial generate values
+    sphere.initValues = {
+      x : sphere.geometry.vertices[i].x,
+      y : sphere.geometry.vertices[i].y,
+      z : sphere.geometry.vertices[i].z,
+    };
+  }
 
   // add to array of players
   players.push({
