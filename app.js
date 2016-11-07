@@ -47,7 +47,7 @@ io.sockets.on('connection', function(socket) {
 });
 
 // server message
-var refresh = 0.4; // set refresh rate (times per second)
+var refresh = 0.1; // set refresh rate (times per second)
 setInterval(function(){
 
 	var serverMessages = [
