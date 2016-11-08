@@ -26,13 +26,17 @@ io.sockets.on('connection', function(socket) {
 	// setup the client once his settings are received
 	console.log("New Client");
 	clientsOnline++;
+	console.log(socket);
 
 	// update socket data when new position recieved from a player
 	socket.on('clientMessage', function(msg) {
 		console.log("new client connected");
 		console.log(msg);
+
 		io.emit('newClient', {
-			clientsOnline: clientsOnline
+			clientsOnline: clientsOnline,
+			host: socket.handshake.headers.host,
+			agent: socket.handshake.headers["user-agent"]
 		});
 	});
 

@@ -42,7 +42,7 @@ function init() {
     updateBasedOnClientsOnline();
     var terminalMessage = document.createElement("p");
 
-    terminalMessage.appendChild(document.createTextNode("NEW USER CONNECTS, " + msg.clientsOnline + " users remain online "));
+    terminalMessage.appendChild(document.createTextNode("NEW USER CONNECTS, IP:" + msg.host + " AGENT: " + msg.agent + "--- " + msg.clientsOnline + " users remain online "));
     terminal.appendChild(terminalMessage);
   });
 
