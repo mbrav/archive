@@ -43,8 +43,21 @@ h1 > span, h2 > span {
 }
 
 #terminal p {
-  color: green;
   font-family: Hack, monospace;
-  font-size: 8px;
+  font-size: 10px;
   margin: 2px;
+}
+
+#terminal p b {
+  color: orange;
+}
+
+#terminal p i {
+  font-style: italic;
+  font-style: bold;
+}
+
+#terminal p span {
+  text-decoration: underline;
+  color: green;
 }

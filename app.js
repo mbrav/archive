@@ -26,7 +26,6 @@ io.sockets.on('connection', function(socket) {
 	// setup the client once his settings are received
 	console.log("New Client");
 	clientsOnline++;
-	console.log(socket);
 
 	// update socket data when new position recieved from a player
 	socket.on('clientMessage', function(msg) {
