@@ -3,21 +3,22 @@ var socket = io();
 
 init();
 
-var feed, terminal;
-var clientsOnline;
-
 function init() {
-  feed = document.getElementById("feed");
-  terminal = document.getElementById("terminal");
   // send player settings
-  socket.emit('clientMessage', {
-    msg: "hi",
-    id: Math.random()
+  socket.emit('clientInit', {
+    msg: "hi"
+  });
+
+  // response from the server
+  socket.on('clientInitResponse', function(msg){
+    for (var i = 0; i < msg.chatRecord.length; i++) {
+      logConnectedUser(msg.chatRecord[i]);
+    }
   });
 
   for (var i = 0; i < emails.length; i++) {
 
-    $('#feed')
+    $('#mail-feed')
       .append($('<h1>').text(emails[i].subject))
       .append($('<h2>').text(emails[i].from))
       .append($('<h2>').text("To: " + emails[i].to))
@@ -25,27 +26,17 @@ function init() {
       .append($('<p>').text(emails[i].body));
   }
 
-  socket.on('newClient', function(msg){
+  socket.on('newClientBrodcast', function(msg){
     clientsOnline = msg.clientsOnline;
-    updateBasedOnClientsOnline();
-    var terminalMessage = document.createElement("p");
+    updateBasedOnClientsOnline(clientsOnline);
 
-    $('#terminal').append(
-      $('<p>').html(
-        "<span>USER CONNECTS</span>"
-        + " <b> IP: </b>"
-        + msg.host
-        + " <b> AGENT: </b>"
-        + msg.agent
-        + "<br> <b> "
-        + msg.clientsOnline
-        + "</b> users remain online "
-      ));
+    console.log(msg);
+
+    logConnectedUser(msg.chatRecord);
   });
 
   socket.on('clientDisconnect', function(msg){
-    clientsOnline = msg.clientsOnline;
-    updateBasedOnClientsOnline();
+    updateBasedOnClientsOnline(clientsOnline);
 
     $('#terminal').append(
       $('<p>').html(
@@ -64,9 +55,26 @@ function init() {
   });
 }
 
-function updateBasedOnClientsOnline() {
-  feed.style.opacity = opacityFormula(clientsOnline);
-  console.log(opacityFormula(clientsOnline));
+function logConnectedUser(dataObject) {
+  $('#terminal').append(
+    $('<p>').html(
+      "<span>USER CONNECTS</span>"
+      + " <b> IP: </b>"
+      + dataObject.host
+      + " <b> TIME: </b>"
+      + dataObject.time
+      + " <b> AGENT: </b>"
+      + dataObject.agent
+      + "<br> <b> "
+      + dataObject.clientsOnline
+      + "</b> users remain online "
+    )
+  );
+}
+
+function updateBasedOnClientsOnline(usersOnline) {
+  $('#mail-feed').css("opacity", opacityFormula(usersOnline));
+  console.log(opacityFormula(usersOnline));
 }
 
 function opacityFormula(usersOnline) {

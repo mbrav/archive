@@ -18,7 +18,7 @@ app.use(express.static('client'));
 serv.listen(2000);
 console.log('SERVER STARTED');
 
-var socketList = {};
+var chatRecord = [];
 
 // RECEIVING DATA
 var io = require('socket.io')(serv,{});
@@ -28,16 +28,37 @@ io.sockets.on('connection', function(socket) {
 	clientsOnline++;
 
 	// update socket data when new position recieved from a player
-	socket.on('clientMessage', function(msg) {
+	socket.on('clientInit', function(msg) {
 		console.log("new client connected");
 		console.log(msg);
 
-		io.emit('newClient', {
+		// SOCKET - sends just to current client
+		// send the chat history to client
+		socket.emit('clientInitResponse', {
+			chatRecord:chatRecord,
+			clientsOnline: clientsOnline
+		});
+
+		// store in record
+		var time = new Date().getTime();
+		var date = new Date(time);
+		chatRecord.push({
 			clientsOnline: clientsOnline,
 			host: socket.handshake.headers.host,
-			agent: socket.handshake.headers["user-agent"]
+			agent: socket.handshake.headers["user-agent"],
+			time: date.toString()
+		});
+		console.log(chatRecord[chatRecord.length]);
+
+		//  - sends just to current client
+		// send the nmost recent messat to everyoone
+		io.emit('newClientBrodcast', {
+			chatRecord:chatRecord[chatRecord.length-1],
+			clientsOnline: clientsOnline
 		});
 	});
+
+
 
 	// disconnect player when he leaves
 	socket.on('disconnect', function() {

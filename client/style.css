@@ -21,7 +21,7 @@ h1 > span, h2 > span {
   padding: 5px;
 }
 
-#feed {
+#mail-feed {
   /*blank by default*/
   opacity: 0;
   max-width: 800px;
