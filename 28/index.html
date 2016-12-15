@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title id="page-title"></title>
     <link href='../lib/organizer.css' rel='stylesheet' type='text/css'>
-    <title id="page-title"></title>
     <style>
         body {
             padding: 0;
@@ -16,19 +15,13 @@
             font-size: 40px;
         }
 
-        /*canvas {
+        canvas {
           width: 100%;
           height: 100%;
-        }*/
+        }
 
         #title {
           z-index: 1;
-        }
-
-        .box {
-          margin: 0 auto;
-          /*width: 50%;*/
-          width: 100%;
         }
 
     </style>
@@ -42,12 +35,9 @@
           <li id="next-project"></li>
       </ul>
   </div>
-
-  <div class="box">
-    <h1>I know your Data Device</h1>
-    <p id="data-output">
-    </p>
-  </div>
+  <script language="javascript" src="../lib/three.min.js"></script>
+  <script language="javascript" src="../lib/plugins/Detector.js"></script>
+  <script language="javascript" src="../lib/plugins/FlyControls.js"></script>
   <script language="javascript" type="text/javascript" src="sketch.js"></script>
 </body>
 </html>
@@ -56,5 +46,5 @@
 </script>
 <script type="text/javascript">
     // set project's number and name
-    projectSetup(16, "I know your Data Device");
+    projectSetup(28, "Shadows");
 </script>

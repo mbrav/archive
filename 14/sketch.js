@@ -110,9 +110,9 @@ function animatedRender() {
     renderer.setClearColor(skyColor, 1.0);
 
     for (var i = 0; i < sphere.geometry.vertices.length; i++) {
-      sphere.geometry.vertices[i].x += Math.random() * 20 - 10;
-      sphere.geometry.vertices[i].y += Math.random() * 20 - 10;
-      sphere.geometry.vertices[i].z += Math.random() * 20 - 10;
+      sphere.geometry.vertices[i].x += Math.random() * 8 - 4;
+      sphere.geometry.vertices[i].y += Math.random() * 8 - 4;
+      sphere.geometry.vertices[i].z += Math.random() * 8 - 4;
     }
 
     // update the sphere.geometry.vertices
