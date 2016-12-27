@@ -39,11 +39,11 @@ function init() {
     controls.dragToLook = false;
 
     pointLight = new THREE.PointLight( 0xe8c878);
-    pointLight.add( new THREE.Mesh( new THREE.SphereGeometry( 30, 16, 8 ), new THREE.MeshBasicMaterial( { color: 0xe8c878, wireframe: true} ) ) );
+    // pointLight.add( new THREE.Mesh( new THREE.SphereGeometry( 30, 16, 8 ), new THREE.MeshBasicMaterial( { color: 0xe8c878, wireframe: true} ) ) );
 
     pointLight2 = new THREE.PointLight( 0x78e8c8);
-    pointLight2.add( new THREE.Mesh( new THREE.SphereGeometry( 30, 16, 8 ), new THREE.MeshBasicMaterial( { color: 0x78e8c8, wireframe: true} ) ) );
-    pointLight2.position.x = -300;
+    // pointLight2.add( new THREE.Mesh( new THREE.SphereGeometry( 30, 16, 8 ), new THREE.MeshBasicMaterial( { color: 0x78e8c8, wireframe: true} ) ) );
+    // pointLight2.position.x = -300;
 
     var skyColor = new THREE.Color(0.95, 0.95, 0.95);
     renderer.setClearColor(skyColor, 1.0);
