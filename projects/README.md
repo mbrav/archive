@@ -1,7 +1,7 @@
 # Code2-SP16
 
-Code from Code 2 class at Parsons BFADT
+Code from Code 2 class at Parsons BFADT, Spring 2016
 
 **Instructor**: [Bryan Ma](https://github.com/whoisbma)
 
-Spring 2016
+Fall 2016

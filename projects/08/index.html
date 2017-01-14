@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>happy-api</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../css/colors.css">
+    <style>
+      * {
+          margin: 0;
+      }
+
+      body {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 120%;
+      }
+
+      svg {
+        position: absolute;
+
+      }
+
+      h1 {
+        position: absolute;
+        left: 10px;
+      }
+
+      h1 span {
+        font-size: 70%;
+      }
+
+      p {
+        position: absolute;
+        text-align: center;
+        top: 45px;
+        left: 10px;
+      }
+
+      textarea {
+        margin: 0;
+        resize: none;
+        outline: none;
+        resize:none;
+        color: #444;
+        border-radius: 6px;
+        font-size: 15px;
+        padding: 10px;
+      }
+
+      button {
+        position: absolute;
+        left: 0;
+        height: 40px;
+        font-size: 18px;
+        border-width: 1px;
+        border-color: #666;
+        background-color: white;
+        border-radius: 7px;
+        color: #6CA4BB;
+      }
+
+
+    </style>
+  </head>
+  <body class="bg-silver">
+
+    <h1 class="blue"> happy-api<span class="aqua"> d3.js</span></h1>
+    <p name="myform">
+      <textarea id="input" placeholder="Enter your word here..." rows="1"></textarea>
+      <button id = "submit">submit</button>
+    </p>
+
+  </body>
+  <script src="../d3.js"></script>
+  <script src="script.js"></script>
+</html>
