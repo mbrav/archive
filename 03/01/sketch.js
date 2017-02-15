@@ -1,14 +1,14 @@
 if (!Detector.webgl) Detector.addGetWebGLMessage();
 
 var container;
-var camera, controls, scene, renderer;
+var camera, scene, renderer, controls;
 
 var clock = new THREE.Clock();
 
 init();
 animate();
 
-var controls;
+var control;
 var line, line2;
 
 function init() {
@@ -16,7 +16,9 @@ function init() {
     container = document.getElementById('container');
 
     camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 10000);
-    camera.position.set(0, 0, 100);
+    camera.position.set(0, 0, 150);
+
+    controls = new THREE.TrackballControls( camera );
 
     scene = new THREE.Scene();
     // scene.fog = new THREE.FogExp2(0xaaaaaa, 0.0025);
@@ -38,8 +40,8 @@ function init() {
     scene.add(line, line2);
     // renderer.render(scene, camera);
 
-    // controls
-    controls = new function() {
+    // control
+    control = new function() {
         this.rotX = 0.4;
         this.rotY = 0.4;
         this.rotZ = 0.4;
@@ -47,9 +49,9 @@ function init() {
 
     // var gui = new dat.GUI();
     //
-    // gui.add(controls, 'rotX', 0, 2);
-    // gui.add(controls, 'rotY', 0, 2);
-    // gui.add(controls, 'rotZ', 0, 2);
+    // gui.add(control, 'rotX', 0, 2);
+    // gui.add(control, 'rotY', 0, 2);
+    // gui.add(control, 'rotZ', 0, 2);
 
     renderer = new THREE.WebGLRenderer({
         antialias: true
@@ -73,21 +75,23 @@ function onWindowResize() {
 
     renderer.setSize(window.innerWidth, window.innerHeight);
 
-    controls.handleResize();
+    control.handleResize();
 
 }
 
 function animate() {
 
-    camera.position.x = Math.cos(clock.elapsedTime)*100*controls.rotX;
-    camera.position.y = Math.sin(clock.elapsedTime)*100*controls.rotY;
-    camera.position.z = Math.sin(clock.elapsedTime)*100*controls.rotZ;
+    // camera.position.x = Math.cos(clock.elapsedTime)*150*control.rotX;
+    // camera.position.y = Math.sin(clock.elapsedTime)*150*control.rotY;
+    // camera.position.z = Math.sin(clock.elapsedTime)*150*control.rotZ;
 
 
     camera.lookAt(scene.position);
 
-    for (var i = 0; i < line.geometry.vertices.length; i++) {
-    }
+    // for (var i = 0; i < line.geometry.vertices.length; i++) {
+    // }
+
+    controls.update();
 
     requestAnimationFrame(animate);
     render();

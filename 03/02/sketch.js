@@ -1,14 +1,14 @@
 if (!Detector.webgl) Detector.addGetWebGLMessage();
 
 var container;
-var camera, controls, scene, renderer;
+var camera, scene, renderer, controls;
 
 var clock = new THREE.Clock();
 
 init();
 animate();
 
-var controls;
+var control;
 
 var lines;
 
@@ -23,6 +23,8 @@ function init() {
 
     camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 10000);
     camera.position.set(0, 0, 100);
+
+    controls = new THREE.TrackballControls( camera );
 
     scene = new THREE.Scene();
     // scene.fog = new THREE.FogExp2(0xaaaaaa, 0.0025);
@@ -65,8 +67,8 @@ function init() {
 
     scene.add(lines.gyro.x, lines.gyro.y, lines.gyro.z,lines.accelerometer.x, lines.accelerometer.y, lines.accelerometer.z);
 
-    // controls
-    controls = new function() {
+    // control
+    control = new function() {
         this.rotX = 0.4;
         this.rotY = 0.4;
         this.rotZ = 0.4;
@@ -74,9 +76,9 @@ function init() {
 
     // var gui = new dat.GUI();
 
-    // gui.add(controls, 'rotX', 0, 2);
-    // gui.add(controls, 'rotY', 0, 2);
-    // gui.add(controls, 'rotZ', 0, 2);
+    // gui.add(control, 'rotX', 0, 2);
+    // gui.add(control, 'rotY', 0, 2);
+    // gui.add(control, 'rotZ', 0, 2);
 
     console.log(lines.gyro.x.geometry.vertices.length);
 
@@ -102,20 +104,12 @@ function onWindowResize() {
 
     renderer.setSize(window.innerWidth, window.innerHeight);
 
-    controls.handleResize();
+    control.handleResize();
 
 }
 
 function animate() {
-
-    // camera.position.x = Math.cos(clock.elapsedTime) * 100 * controls.rotX;
-    // camera.position.y = Math.sin(clock.elapsedTime) * 100 * controls.rotY;
-    // camera.position.z += 0.9;
-    camera.position.x = Math.sin(clock.elapsedTime/10.)*300;
-    camera.position.y = Math.sin(clock.elapsedTime/3.)*50;
-    camera.position.z = Math.cos(clock.elapsedTime/6.)*100;
-    //
-
+  
     camera.lookAt(scene.position);
 
     for (var i = data.length-1; i >5; i--) {
@@ -132,6 +126,8 @@ function animate() {
     }
 
     console.log(lines.gyro.x.geometry.vertices[24].y);
+
+    controls.update();
 
     requestAnimationFrame(animate);
     render();
