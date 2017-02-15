@@ -1,7 +1,7 @@
 # Lab-SP17
 Code from Lab: Collaboration, Parsons BFADT, Spring 2017
 
-*Instructor:* Aaron Lehr
+**Instructor:** Aaron Lehr
 
 ## [01](01/) - terra-form
 
