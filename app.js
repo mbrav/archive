@@ -6,6 +6,8 @@ var fs = require('fs');
 var exec = require('child_process').exec;
 var crypto = require('crypto');
 
+var port = 3000;
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res) {
@@ -36,7 +38,7 @@ app.post('/upload', function(req, res) {
 
     appendCSV(newFileName + '\n', './public/list.csv');
 
-    var command = 'jp2a --html --width=200 --color --verbose ./uploads/' + newFileName + '.jpg > public/ascii/' + newFileName + '.html';
+    var command = 'jp2a --html --fill --width=160 --color --verbose ./uploads/' + newFileName + '.jpg > public/ascii/' + newFileName + '.html';
     console.log(command);
     exec(command, (err, stdout, stderr) => {
       if (err) {
@@ -71,6 +73,6 @@ function appendCSV(string, file) {
 }
 
 
-var server = app.listen(3000, function() {
-  console.log('Server listening on port 3000');
+var server = app.listen(port , function() {
+  console.log('Server listening on port ' + port);
 });
