@@ -36,7 +36,7 @@ app.post('/upload', function(req, res) {
 
     appendCSV(newFileName + '\n', './public/list.csv');
 
-    var command = 'jp2a --html --width=200 --color ' + './uploads/' + newFileName + '.jpg > public/ascii/' + newFileName + '.html';
+    var command = 'jp2a --html --width=200 --color --verbose ./uploads/' + newFileName + '.jpg > public/ascii/' + newFileName + '.html';
     console.log(command);
     exec(command, (err, stdout, stderr) => {
       if (err) {
