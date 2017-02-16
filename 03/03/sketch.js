@@ -86,7 +86,7 @@ function init() {
         antialias: true
     });
 
-    renderer.setClearColor(0xf9f1e3);
+    renderer.setClearColor(0xeeeeee);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
 
@@ -158,7 +158,6 @@ function animate() {
 
     }
 
-    console.log(lines.gyro.x.geometry.vertices[24].y);
 
     controls.update();
 

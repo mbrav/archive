@@ -70,7 +70,7 @@ function init() {
       scene.add(group);
     });
 
-    renderer.setClearColor(0xFFFFFF);
+    renderer.setClearColor(0xeeeeee);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
 

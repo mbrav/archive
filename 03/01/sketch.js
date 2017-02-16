@@ -16,7 +16,7 @@ function init() {
     container = document.getElementById('container');
 
     camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 10000);
-    camera.position.set(0, 0, 150);
+    camera.position.set(-120, 0, 120);
 
     controls = new THREE.TrackballControls( camera );
 
@@ -25,8 +25,8 @@ function init() {
 
 
     //create a blue LineBasicMaterial
-    var material = new THREE.LineBasicMaterial({ color: 0x4e683f });
-    var material2 = new THREE.LineBasicMaterial({ color: 0x3f4e68});
+    var material = new THREE.LineBasicMaterial({ color: 0x333333});
+    var material2 = new THREE.LineBasicMaterial({ color: 0x777777, transparent: true, opacity: 0.6});
     var geometry = new THREE.Geometry();
     var geometry2 = new THREE.Geometry();
 
@@ -57,7 +57,7 @@ function init() {
         antialias: true
     });
 
-    renderer.setClearColor(0xf9f1e3);
+    renderer.setClearColor(0xeeeeee);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
 
