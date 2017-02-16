@@ -47,8 +47,6 @@ app.post('/upload', function(req, res) {
       exec('rm ./uploads/' + newFileName + '.jpg');
     });
 
-
-
   });
 
   // log any errors that occur
