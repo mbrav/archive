@@ -1,0 +1,16 @@
+{
+  "name": "asciify",
+  "version": "1.0.0",
+  "description": "An image uploader that converts colered images into ASCII",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Braverman",
+  "license": "MIT",
+  "dependencies": {
+    "crypto": "0.0.3",
+    "express": "^4.14.1",
+    "formidable": "^1.1.1"
+  }
+}
