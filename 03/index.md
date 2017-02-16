@@ -38,6 +38,12 @@ The *Data Altar* of my museum walks.
 ## [08](08/index.html)
 ![screenshot](img08.png)
 
+## Combined Visualization
+
+This is a speculative narrative that I decided to combine with the visualization. I imagined a world where people are treated as *data subjects* or entities who's actions and subjective experiences can be quantified and determined. This can potentially undermine the very notion of art, as technologic advancements in brain-computer interfaces seem to be the perfect mean towards such an end.  
+
+![screenshot](imgViz.png)
+
 ### Notes
 
 Click on the titles to run in browser.
