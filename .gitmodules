@@ -1,0 +1,3 @@
+[submodule "05"]
+	path = 05
+	url = https://github.com/mbrav/asciify
