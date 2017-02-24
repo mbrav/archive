@@ -10,3 +10,7 @@ Code from Lab: Collaboration, Parsons BFADT, Spring 2017
 ## [03](03/) - museum-visualization
 
 ## [04](04/) - ascii
+
+## [05](05/) - ASCIIfy
+
+## [06](06/) - Web Scraping
