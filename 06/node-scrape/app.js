@@ -22,18 +22,15 @@ function scrape(l) {
 function wikiFaces() {
   var baseURL = 'https://en.wikipedia.org';
 
-  var first = "A",last = "Z";
-
-  for (var i = first.charCodeAt(0); i <= last.charCodeAt(0); i++) {
-    var letter = String.fromCharCode(i);
+  // var first = "A",last = "Z";\
+  // for (var i = first.charCodeAt(0); i <= last.charCodeAt(0); i++) {
+    // var letter = String.fromCharCode(i);
 
     request({
       method: 'GET',
-      url: baseURL + '/wiki/List_of_mathematicians_(' + letter + ')'
+      url: baseURL + '/wiki/List_of_geneticists'
     }, function(err, response, body) {
       if (err) return console.error(err);
-
-      // console.log(body);
 
       var $ = cheerio.load(body);
 
@@ -57,7 +54,7 @@ function wikiFaces() {
           var img = $2('table.infobox img', body2);
           var title = $2('h1.firstHeading', body2);
 
-          var command = 'wget "http:' + img.attr('src') + '" -P ./wiki-faces-scrapes';
+          var command = 'wget "http:' + img.attr('src') + '" -P ./wiki-faces-geneticists';
 
           if (img.attr('src') != null && img.attr('src') != undefined) {
             console.log(command);
@@ -69,13 +66,10 @@ function wikiFaces() {
               console.log(stdout);
             });
           }
-
-          // console.log(title.text(),img.attr('src'));
-
         });
       });
     });
-  }
+  // }
 }
 
 // scraping MoMaPS1 past exibitions
