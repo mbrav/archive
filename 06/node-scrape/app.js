@@ -1,74 +1,81 @@
 var cheerio = require('cheerio');
 var request = require('request');
-
+var jsonfile = require('jsonfile');
+var fs = require('fs');
 var exec = require('child_process').exec;
 
 wikiFaces();
 // momaPS1();
 // parsonStudentWork();
 
-function scrape(l) {
-  request({
-    method: 'GET',
-    url: l
-  }, function(err, response, body) {
-    if (err) return console.error(err);
-    console.log("HI!");
-    console.log(body);
-  });
-}
-
 // scraping wikiFaces past exibitions
 function wikiFaces() {
   var baseURL = 'https://en.wikipedia.org';
 
-  // var first = "A",last = "Z";\
-  // for (var i = first.charCodeAt(0); i <= last.charCodeAt(0); i++) {
-    // var letter = String.fromCharCode(i);
+  request({
+    method: 'GET',
+    url: baseURL + '/wiki/List_of_mineralogists'
+  }, function(err, response, body) {
+    if (err) return console.error(err);
 
-    request({
-      method: 'GET',
-      url: baseURL + '/wiki/List_of_geneticists'
-    }, function(err, response, body) {
-      if (err) return console.error(err);
+    var fileName = 'mineralogists.csv';
+    //setup the csv
+    var csvInitText = "name, img, birth, death, length \n";
+    fs.appendFile(fileName, csvInitText, function (err) {
+      if (err) throw err;
+    });
 
-      var $ = cheerio.load(body);
+    var $ = cheerio.load(body);
 
-      $('div.mw-content-ltr ul li').each(function() {
-        var link = $('a', this);
+    // got throught the list of people
+    $('div.mw-content-ltr ul li').each(function() {
+      var link = $('a', this);
 
-        // person link
-        var a = $('a', this);
-        var l = baseURL + a.attr('href');
-        // console.log('requesting: ' + l);
+      // person link
+      var a = $('a', this);
+      var l = baseURL + a.attr('href');
 
-        // go to the link of the exibition
-        request({
-          method: 'GET',
-          url: l
-        }, function(err, response, body2) {
-          if (err) return console.error(err);
+      // go to the link of the person's page
+      request({
+        method: 'GET',
+        url: l
+      }, function(err, response, body2) {
+        if (err) return console.error(err);
 
-          var $2 = cheerio.load(body2);
+        var $2 = cheerio.load(body2);
 
-          var img = $2('table.infobox img', body2);
-          var title = $2('h1.firstHeading', body2);
+        var img = $2('table.infobox img', body2);
+        var birth = $2('table.infobox .bday', body2);
+        var death = $2('table.infobox .dday', body2);
+        var title = $2('h1.firstHeading', body2);
+        var textContent = $2('div.mw-content-ltr', body2);
 
-          var command = 'wget "http:' + img.attr('src') + '" -P ./wiki-faces-geneticists';
+        var txt = title.text().trim() + ", http:" + img.attr('src') + ", " + birth.text().trim() + ", " +  death.text().trim() + ", " + textContent.text().length + '\n';
 
-          if (img.attr('src') != null && img.attr('src') != undefined) {
-            console.log(command);
-            exec(command, (err, stdout, stderr) => {
-              if (err) {
-                console.error(err);
-                return;
-              }
-              console.log(stdout);
-            });
-          }
-        });
+        console.log(txt);
+
+        // include only pages with images
+        if (img.attr('src') != null) {
+          fs.appendFile(fileName, txt, function (err) {
+            if (err) throw err;
+          });
+        }
+
+        // save files
+        // var command = 'wget \'http:' + img.attr('src') + '\' -P ./wiki-faces-biologists';
+        // if (img.attr('src') != null && img.attr('src') != undefined) {
+        //   // console.log(command);
+        //   exec(command, (err, stdout, stderr) => {
+        //     if (err) {
+        //       console.error(err);
+        //       return;
+        //     }
+        //     console.log(stdout);
+        //   });
+        // }
       });
     });
+  });
   // }
 }
 
@@ -152,3 +159,5 @@ function parsonStudentWork() {
     });
   });
 }
+
+// Oh, I did not realize that haha.
