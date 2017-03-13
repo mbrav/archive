@@ -18,10 +18,12 @@ a {
   color: #3f4e68;
   position: absolute;
   bottom: 0px;
+  right: 0px;
   padding: 5px;
   z-index:100;
 }
+
 #info p {
   text-align: left;
-  margin: 0;
+  margin: 10px;
 }

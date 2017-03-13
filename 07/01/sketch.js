@@ -1,18 +1,18 @@
+// Wiki Faces
+// Created by Michael Braverman on March 13, 2017
+//
+// MIT License
+// Copyright (c) 2017 Michael G. Braverman
+
 if (!Detector.webgl) Detector.addGetWebGLMessage();
 
-var container;
-var camera, scene, renderer, controls;
+var container, camera, scene, renderer, clock;
 
-var clock = new THREE.Clock();
+var group1, group2, group3, group4, group5, group6, group7, group8, group9, group10;
+var control, raycaster, mouse, INTERSECTED;
 
 init();
 animate();
-
-var control, group1, group2, group3, group4, group5, group6, group7, group8, group9, group10;
-
-// hover objects from: https://github.com/mrdoob/three.js/blob/master/examples/webgl_interactive_cubes.html
-var raycaster, mouse, INTERSECTED;
-
 
 function init() {
 
@@ -20,9 +20,43 @@ function init() {
 
   mouse = new THREE.Vector2();
   raycaster = new THREE.Raycaster();
+  clock = new THREE.Clock();
+  camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 10000);
+  camera.position.set(0, 0, 3000);
+  controls = new THREE.TrackballControls(camera);
+  scene = new THREE.Scene();
+  // scene.fog = new THREE.Fog(0xaaaaaa, 0.001);
 
+  window.addEventListener('resize', onWindowResize, false);
+  window.addEventListener('mousemove', onMouseMove, false);
+  window.requestAnimationFrame(render);
 
-  // controls
+  renderer = new THREE.WebGLRenderer({
+    antialias: true
+  });
+
+  renderer.setClearColor(0xeeeeee);
+  renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.sortObjects = false;
+
+  container.innerHTML = "";
+  container.appendChild(renderer.domElement);
+
+  var group1 = createCubeGroup(biologist, getRandomColor(), 0);
+  var group2 = createCubeGroup(chemists, getRandomColor(), 1);
+  var group3 = createCubeGroup(climate_scientists, getRandomColor(), 2);
+  var group4 = createCubeGroup(computer_scientists, getRandomColor(), 3);
+  var group5 = createCubeGroup(cosmologists, getRandomColor(), 4);
+  var group6 = createCubeGroup(geneticists, getRandomColor(), 5);
+  var group7 = createCubeGroup(geophysicists, getRandomColor(), 6);
+  var group8 = createCubeGroup(logicians, getRandomColor(), 7);
+  var group9 = createCubeGroup(physicists, getRandomColor(), 8);
+  var group10 = createCubeGroup(statisticians, getRandomColor(), 9);
+
+  scene.add(group1, group2, group3, group4, group5, group6, group7, group8, group9, group10);
+
+  // GUI controls
   parameters = {
     visible1: true,
     visible2: true,
@@ -68,49 +102,6 @@ function init() {
   gui.add(parameters, 'visible10').name("Statisticians").listen().onChange(function(value) {
     group10.visible = value;
   });
-
-
-  camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 10000);
-  camera.position.set(0, 0, 3000);
-
-  controls = new THREE.TrackballControls(camera);
-
-  scene = new THREE.Scene();
-  // scene.fog = new THREE.FogExp2(0xaaaaaa, 0.0025);
-
-  var group1 = createCube(biologist, getRandomColor(), 0);
-  var group2 = createCube(chemists, getRandomColor(), 1);
-  var group3 = createCube(climate_scientists, getRandomColor(), 2);
-  var group4 = createCube(computer_scientists, getRandomColor(), 3);
-  var group5 = createCube(cosmologists, getRandomColor(), 4);
-  var group6 = createCube(geneticists, getRandomColor(), 5);
-  var group7 = createCube(geophysicists, getRandomColor(), 6);
-  var group8 = createCube(logicians, getRandomColor(), 7);
-  var group9 = createCube(physicists, getRandomColor(), 8);
-  var group10 = createCube(statisticians, getRandomColor(), 9);
-
-  // console.log(cosmologists);
-  // scene.add(group1);
-  scene.add(group1, group2, group3, group4, group5, group6, group7, group8, group9, group10);
-
-  window.addEventListener('resize', onWindowResize, false);
-  window.addEventListener('mousemove', onMouseMove, false);
-
-  window.requestAnimationFrame(render);
-
-  // for selecting objects
-  renderer = new THREE.WebGLRenderer({
-    antialias: true
-  });
-
-  renderer.setClearColor(0xeeeeee);
-  renderer.setPixelRatio(window.devicePixelRatio);
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.sortObjects = false;
-
-  container.innerHTML = "";
-  container.appendChild(renderer.domElement);
-
 }
 
 function getRandomColor() {
@@ -122,7 +113,8 @@ function getRandomColor() {
   return color;
 }
 
-function createCube(data, shapeColor, offset) {
+// creates a cube with data inside
+function createCubeGroup(data, shapeColor, offset) {
 
   var group = new THREE.Group();
   for (var i = 0; i < data.length; i++) {
@@ -148,6 +140,8 @@ function createCube(data, shapeColor, offset) {
     cube.position.x = i * 3 - data.length / 2 * 3;
     cube.position.y = death.getFullYear() - 1700;
     cube.position.z = offset * 100;
+
+    cube.data = data[i];
 
     // cube.scale.z = Math.random() * 30;
     // cube.scale.set(Math.random(), Math.random(), 1.0);
@@ -183,19 +177,9 @@ function onMouseMove(event) {
 function animate() {
 
   camera.lookAt(scene.position);
-
   camera.updateMatrixWorld();
-
-  // for (var i = 0; i < line.geometry.vertices.length; i++) {
-  //   line.geometry.vertices[i].x = Math.cos(i/12) * 42 * clock.getDelta(scene.position);
-  //   line.geometry.vertices[i].y = Math.cos(i/22) * 42 * clock.getDelta(scene.position);
-  //   line.geometry.vertices[i].z = Math.cos(i/12) * 42 * clock.getDelta(scene.position);
-  // }
-
   controls.update();
-
   requestAnimationFrame(animate);
-
   // RENDER
   render();
 
@@ -212,14 +196,29 @@ function render() {
   if (intersects.length > 0) {
     if (INTERSECTED != intersects[0].object.parent) {
       if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
-      // console.log(intersects[0].object);
       INTERSECTED = intersects[0].object;
       INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
       INTERSECTED.material.emissive.setHex(0xff0000);
+      var data = INTERSECTED.data;
+      // console.log(data.FIELD1, "Born: " + data.FIELD3, "Died: " + data.FIELD4, "Words on Wiki: " + data.FIELD5);
+
+      // set info about the person
+      $("#info #name").html(data.FIELD1);
+      $("#info img").attr("src", data.FIELD2);
+      $("#info #birth span").html(data.FIELD3);
+      $("#info #birth span").html(data.FIELD3);
+      $("#info #death span").html(data.FIELD4);
+      $("#info #words span").html(data.FIELD5);
+      $("#info").show();
+
     }
   } else {
     if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
     INTERSECTED = null;
+
+    // hide the info box
+    $("#info").hide();
+
   }
 
   renderer.render(scene, camera);
