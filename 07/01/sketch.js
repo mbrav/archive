@@ -18,11 +18,6 @@ function init() {
 
   container = document.getElementById('container');
 
-  // for selecting objects
-  renderer = new THREE.WebGLRenderer({
-    antialias: true
-  });
-
   mouse = new THREE.Vector2();
   raycaster = new THREE.Raycaster();
 
@@ -103,14 +98,18 @@ function init() {
 
   window.requestAnimationFrame(render);
 
+  // for selecting objects
+  renderer = new THREE.WebGLRenderer({
+    antialias: true
+  });
+
   renderer.setClearColor(0xeeeeee);
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.sortObjects = false;
 
   container.innerHTML = "";
   container.appendChild(renderer.domElement);
-
-  console.log(scene.children);
 
 }
 
@@ -174,7 +173,7 @@ function onMouseMove(event) {
 
   // calculate mouse position in normalized device coordinates
   // (-1 to +1) for both components
-  // event.preventDefault();
+  event.preventDefault();
 
   mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
   mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
@@ -209,10 +208,11 @@ function render() {
   raycaster.setFromCamera(mouse, camera);
 
   // calculate objects intersecting the picking ray
-  var intersects = raycaster.intersectObjects(scene.children);
+  var intersects = raycaster.intersectObjects(scene.children, true);
   if (intersects.length > 0) {
-    if (INTERSECTED != intersects[0].object) {
+    if (INTERSECTED != intersects[0].object.parent) {
       if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
+      // console.log(intersects[0].object);
       INTERSECTED = intersects[0].object;
       INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
       INTERSECTED.material.emissive.setHex(0xff0000);
