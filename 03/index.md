@@ -4,29 +4,29 @@ A visualization of sensor data collected with a phone during a visit to the The 
 
 Using three.js and WebGL
 
-### [01](01/index.html)
+### [01](01/)
 
 My museum walk represented in accelerometer and gyro readings.
 The positioning of the coordinates depends on the x, y, and z readings.
 
 ![screenshot](img01.png)
 
-### [02](02/index.html)
+### [02](02/)
 
 My museum walk represented in accelerometer and gyro readings.
 The coordinates are represented in a graph-like style.
 
 ![screenshot](img02.png)
 
-### [03](03/index.html)
+### [03](03/)
 
 The *Data Altar* of my museum walks.
 ![screenshot](img03.png)
 
-### [04](04/index.html)
+### [04](04/)
 ![screenshot](img04.png)
 
-### [05](05/index.html)
+### [05](05/)
 ![screenshot](img05.png)
 
 ### [06](06/index.html)
