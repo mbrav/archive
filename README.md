@@ -14,3 +14,5 @@ Code from Lab: Collaboration, Parsons BFADT, Spring 2017
 ## [05](https://github.com/mbrav/asciify) - ASCIIfy
 
 ## [06](06/) - Web Scraping
+
+## [07  - Midterm](07/) - Wiki Faces

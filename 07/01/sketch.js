@@ -21,8 +21,10 @@ function init() {
   mouse = new THREE.Vector2();
   raycaster = new THREE.Raycaster();
   clock = new THREE.Clock();
-  camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 10000);
+  camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 1000000);
   camera.position.set(0, 0, 3000);
+
+  console.log(camera);
   controls = new THREE.TrackballControls(camera);
   scene = new THREE.Scene();
   // scene.fog = new THREE.Fog(0xaaaaaa, 0.001);
@@ -176,7 +178,7 @@ function onMouseMove(event) {
 
 function animate() {
 
-  camera.lookAt(scene.position);
+  // camera.lookAt(scene.position);
   camera.updateMatrixWorld();
   controls.update();
   requestAnimationFrame(animate);
@@ -203,11 +205,12 @@ function render() {
       // console.log(data.FIELD1, "Born: " + data.FIELD3, "Died: " + data.FIELD4, "Words on Wiki: " + data.FIELD5);
 
       // set info about the person
+      var birthDate = new Date(data.FIELD3);
+      var deathDate = new Date(data.FIELD4);
       $("#info #name").html(data.FIELD1);
       $("#info img").attr("src", data.FIELD2);
-      $("#info #birth span").html(data.FIELD3);
-      $("#info #birth span").html(data.FIELD3);
-      $("#info #death span").html(data.FIELD4);
+      $("#info #birth span").html(birthDate.toDateString());
+      $("#info #death span").html(deathDate.toDateString());
       $("#info #words span").html(data.FIELD5);
       $("#info").show();
 
