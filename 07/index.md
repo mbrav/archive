@@ -8,7 +8,7 @@ Wiki Faces is a project that aims to visualize the life spans and portraits of h
 
 Events like the destruction of [Library of Alexandria](https://en.wikipedia.org/wiki/Library_of_Alexandria) during the Muslim conquest of Egypt in AD 642, demonstrated how one of the most valuable resources of human knowledge perished following an unfortunate event. Wikipedia has a page dedicated to [Terminal Event Management Policy](https://en.wikipedia.org/wiki/Wikipedia:Terminal_Event_Management_Policy) which outlines the steps that must me undertaken in order to safeguard the content of the encyclopedia.
 
-![](https://c1.staticflickr.com/3/2815/32663368913_94d7b51d72_b.jpg)*The destruction of Library of Alexandria. It was one of the largest and most significant libraries of the ancient world*
+![](https://c1.staticflickr.com/3/2815/32663368913_94d7b51d72_b.jpg)*The destruction of Library of Alexandria. It was one of the largest and most significant libraries of the ancient world, almost like Wikipedia is today.*
 
 With this in mind, *Wiki Faces* aims to visualize and represent the faces of people who contributed to the establishment of this sum of human collective knowledge. Without biologist, chemists, historians and thousands of other types of human figures, there would not be sufficient human curiosity for something like an encyclopedia or a Wikipedia to even come into existence.
 
