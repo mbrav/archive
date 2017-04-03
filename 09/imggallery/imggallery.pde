@@ -1,10 +1,9 @@
 
-
 //declraing an array of images
-// PImage[] images = new PImage[maxImages];
 ImageBox[] boxImages;
 int maxImages = 100; //total images
 int imageIndex = 0; //initial image to be displayed is the first
+float imgSize = 40;
 
 int loop;
 
@@ -16,56 +15,34 @@ void setup() {
   gifExport.setRepeat(0);
   gifExport.setQuality(2);
 
-  size(200, 200, P3D);
+  size(600, 600, P3D);
 
-  pixelDensity(1);
+  pixelDensity(2);
 
-  // for (int i = 0; i < images.length; i ++ ) {
-  //
-  //   images[i] = loadImage( "img" + i + ".jpg" );
-  // }
   boxImages = new ImageBox[maxImages];
   for (int i = 0; i < maxImages; i++) {
-    boxImages[i] = new ImageBox(40, "img" + i + ".jpg");
+    boxImages[i] = new ImageBox(i * imgSize, imgSize * int(((i * imgSize)/width)), imgSize, "img" + i + ".jpg");
   }
 
-  frameRate(10);
+  frameRate(30);
 }
 
 void draw() {
 
   background(0);
 
-  // for (int i = 0; i < maxImages; i++) {
-    boxImages[int(random(0, maxImages))].update();
-  // }
+  for (int i = 0; i < maxImages; i++) {
+    boxImages[i].update();
+  }
 
-  // for (int i = 0; i < maxImages; i ++ ) {
-  //   for (int j = 0; j < maxImages; j ++ ) {
-  //     image(images[(imageIndex + loop + j) % maxImages], 10*i, 10*j, 10, 10);
-  //
-  //     imageIndex = (imageIndex + 1) % images.length;
-  //   }
-  // }
-
-  // background(0);
-  // translate(random(1, width), random(1, height));
-  // for (int j = 0; j < maxImages; j ++ ) {
-  //   int h = 30;
-  //   beginShape();
-  //   texture(images[j]);
-  //   vertex(-100, -100, 0, 0, 0);
-  //   vertex( 100, -100, 0, 400, 0);
-  //   vertex( 100, 100, 0, 400, 400);
-  //   vertex(-100, 100, 0, 0, 400);
-  //   endShape();
-  // }
-
-  // int frames = 30;
-  // if (loop == frames) {
+  // int frames = 60; // total output frames
+  // int skips = 2; // skip frames
+  // int startLoop = 0; // set to 0 to start from beginning
+  // if (loop == startLoop + frames * skips) {
   //   gifExport.finish();
-  //   println("gif saved");
-  // } else if (loop < frames) {
+  //   println("GIF saved");
+  // } else if (loop < frames * skips + startLoop && loop%skips == 0 && loop > startLoop) {
+  //   println("frame: " + loop/skips + ", loop:" + loop);
   //   gifExport.setDelay(1);
   //   gifExport.addFrame();
   // }
