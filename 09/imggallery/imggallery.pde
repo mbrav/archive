@@ -7,6 +7,8 @@ float imgSize = 40;
 float varX, pressX, varY, pressY = 0;
 
 int loop;
+int sortLoop; // loop for doing sorting stuff
+int frameSkip = 10;
 
 import gifAnimation.*;
 GifMaker gifExport;
@@ -27,7 +29,7 @@ void setup() {
     boxImages[i] = new ImageBox(((i*imgSize)%width)+imgSize, (int((i*imgSize)/width)+1) * imgSize, imgSize/2, "img" + i + ".jpg");
   }
 
-  frameRate(30);
+  frameRate(60);
 }
 
 void draw() {
@@ -46,38 +48,28 @@ void draw() {
   }
   popMatrix();
 
-  if (loop%10 == 0) {
-    if (loop < 400) {
-      for (int i = 0; i < boxImages.length; i++) {
-        // image swap
-        int swap1 = i;
-        int swap2 = loop;
+  if (sortLoop < maxImages) {
+    for (int i = sortLoop; i < boxImages.length; i++) {
+      // box swap
+      int swap1 = i;
+      int swap2 = sortLoop;
 
-        if (boxImages[swap1].avgColor.x < boxImages[swap2].avgColor.x ) {
-          PImage imgTemp = boxImages[swap1].img;
-          boxImages[swap1].imgSwap(boxImages[swap2].img);
-          boxImages[swap2].img = imgTemp;
-        }
+      if (boxImages[swap1].avgColor.x < boxImages[swap2].avgColor.x ) {
+        // swap class
+        boxImages[swap1].boxSwap(boxImages[swap2]);
+        // swap in array
+        ImageBox temp = boxImages[swap1];
+        boxImages[swap1] = boxImages[swap2];
+        boxImages[swap2] = temp;
       }
     }
   }
 
-  // // image swap
-  // int swap1 = int(random(0, boxImages.length));
-  // int swap2 = int(random(0, boxImages.length));
-  //
-  // if (boxImages[swap1].avgColor.x < boxImages[swap2].avgColor.x ) {
-  //   PImage imgTemp = boxImages[swap1].img;
-  //   boxImages[swap1].imgSwap(boxImages[swap2].img);
-  //   boxImages[swap2].img = imgTemp;
-  // }
 
   if (mousePressed) {
     varX = pressX-mouseX;
     varY = pressY-mouseY;
   }
-
-  // println(mouseX);
 
   // int frames = 60; // total output frames
   // int skips = 2; // skip frames
@@ -91,6 +83,10 @@ void draw() {
   //   gifExport.addFrame();
   // }
 
+
+  if (loop % frameSkip == 0) {
+    sortLoop ++;
+  }
   loop++;
 }
 

@@ -6,13 +6,11 @@ class ImageBox {
   PVector pos;
   PVector posDisplace;
   PVector rotDisplace;
-  PVector speed;
   PVector avgColor;
 
   ImageBox(float posX, float posY, float iSize, String imgPath) {
-    initPos = new PVector(posX, posY, 10);
+    initPos = new PVector(posX, posY, 0);
     pos = initPos;
-    speed = new PVector(random(1.0, 5.0), random(1.0, 5.0), 0);
     posDisplace = new PVector(0,0,0);
     rotDisplace = new PVector(0,0,0);
 
@@ -24,10 +22,11 @@ class ImageBox {
     avgColor = extractColorFromImage(img);
   }
 
-  void imgSwap(PImage swapImage) {
-    img = swapImage;
-    posDisplace.set(0, 0, random(0, 100));
-    posDisplace.set(random(0, 100), random(0, 100), random(0, 100));
+  void boxSwap(ImageBox swapBox) {
+    PVector temPos = swapBox.pos;
+    posDisplace.set(swapBox.pos.x, swapBox.pos.y, 1000);
+    swapBox.pos = pos;
+    pos = temPos;
   }
 
   void setPos(float newX, float newY, float newZ) {
@@ -45,6 +44,8 @@ class ImageBox {
     rotateZ(rotDisplace.z);
     beginShape();
     texture(img);
+    float minus = (abs(posDisplace.x) + abs(posDisplace.y))/2;
+    tint(255, 255 - minus, 255 - minus, 255); // fade tint based on distance
     vertex(pos.x - imgSize + posDisplace.x, pos.y - imgSize + posDisplace.y, pos.z + posDisplace.z, 0, 0);
     vertex(pos.x + imgSize + posDisplace.x, pos.y - imgSize + posDisplace.y, pos.z + posDisplace.z, 200, 0);
     vertex(pos.x + imgSize + posDisplace.x, pos.y + imgSize + posDisplace.y, pos.z + posDisplace.z, 200, 200);
@@ -52,25 +53,8 @@ class ImageBox {
     endShape();
 
     // dampen displacement
-    posDisplace.mult(0.8);
-    rotDisplace.mult(0.8);
-
-    // pos.x += speed.x;
-    // pos.y += speed.y;
-    // pos.z += speed.z;
-
-    if (pos.x >= width || pos.x <= 0) {
-      pos.x += -speed.x;
-      speed.x = -speed.x;
-    }
-    if (pos.y >= height || pos.y <= 0) {
-      pos.y += -speed.y;
-      speed.y = -speed.y;
-    }
-    if (pos.z >= imgSize|| pos.y <= 0) {
-      pos.z += -speed.z;
-      speed.z = -speed.z;
-    }
+    posDisplace.mult(0.9);
+    rotDisplace.mult(0.9 );
   }
 }
 
@@ -87,6 +71,5 @@ PVector extractColorFromImage(PImage img) {
   g /= img.pixels.length;
   b /= img.pixels.length;
 
-  // PVector col = new PVector(r,g,b);
   return new PVector(r,g,b);
 }
