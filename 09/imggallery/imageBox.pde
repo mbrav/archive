@@ -1,3 +1,6 @@
+// Created by: Michael Braverman
+// April 1, 2017
+
 class ImageBox {
   PImage img;
 
@@ -24,7 +27,7 @@ class ImageBox {
 
   void boxSwap(ImageBox swapBox) {
     PVector temPos = swapBox.pos;
-    posDisplace.set(swapBox.pos.x, swapBox.pos.y, 1000);
+    posDisplace.set(swapBox.pos.x, swapBox.pos.y, 100);
     swapBox.pos = pos;
     pos = temPos;
   }
@@ -53,8 +56,8 @@ class ImageBox {
     endShape();
 
     // dampen displacement
-    posDisplace.mult(0.9);
-    rotDisplace.mult(0.9 );
+    posDisplace.mult(0.95);
+    rotDisplace.mult(0.95);
   }
 }
 

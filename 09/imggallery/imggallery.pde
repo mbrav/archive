@@ -1,7 +1,9 @@
+// Created by: Michael Braverman
+// April 1, 2017
 
 //declraing an array of images
 ImageBox[] boxImages;
-int maxImages = 400; //total images
+int maxImages = 100; //total images
 int imageIndex = 0; //initial image to be displayed is the first
 float imgSize = 40;
 float varX, pressX, varY, pressY = 0;
@@ -10,6 +12,7 @@ int loop;
 int sortLoop; // loop for doing sorting stuff
 int frameSkip = 10;
 
+// gif library: https://github.com/01010101/GifAnimation
 import gifAnimation.*;
 GifMaker gifExport;
 
@@ -20,13 +23,13 @@ void setup() {
 
   size(600, 600, P3D);
 
-  pixelDensity(2);
+  // pixelDensity(2);
 
   boxImages = new ImageBox[maxImages];
 
-  float imgSize = 30;
+  float imgSize = 40;
   for (int i = 0; i < maxImages; i++) {
-    boxImages[i] = new ImageBox(((i*imgSize)%width)+imgSize, (int((i*imgSize)/width)+1) * imgSize, imgSize/2, "img" + i + ".jpg");
+    boxImages[i] = new ImageBox(((i*imgSize)%width)+imgSize/2, (int((i*imgSize)/width)+0.5) * imgSize, imgSize/2, "img" + i + ".jpg");
   }
 
   frameRate(60);
@@ -36,7 +39,7 @@ void draw() {
 
   background(0);
 
-
+  // 3D transform
   pushMatrix();
   rotateX(varX/100.0);
   rotateY(varY/100.0);
@@ -57,7 +60,7 @@ void draw() {
       if (boxImages[swap1].avgColor.x < boxImages[swap2].avgColor.x ) {
         // swap class
         boxImages[swap1].boxSwap(boxImages[swap2]);
-        // swap in array
+        // swap in array boxImages[] array
         ImageBox temp = boxImages[swap1];
         boxImages[swap1] = boxImages[swap2];
         boxImages[swap2] = temp;
@@ -65,29 +68,36 @@ void draw() {
     }
   }
 
-
+  // rotation interaction
   if (mousePressed) {
     varX = pressX-mouseX;
     varY = pressY-mouseY;
   }
 
-  // int frames = 60; // total output frames
-  // int skips = 2; // skip frames
-  // int startLoop = 0; // set to 0 to start from beginning
-  // if (loop == startLoop + frames * skips) {
-  //   gifExport.finish();
-  //   println("GIF saved");
-  // } else if (loop < frames * skips + startLoop && loop%skips == 0 && loop > startLoop) {
-  //   println("frame: " + loop/skips + ", loop:" + loop);
-  //   gifExport.setDelay(1);
-  //   gifExport.addFrame();
-  // }
-
-
+  // apply sorting every other frameSkip frame
   if (loop % frameSkip == 0) {
     sortLoop ++;
   }
+
+  // GIF
+  captureGifFrame(60, 5, 600);
+
+  // count as a loop
   loop++;
+}
+
+// frames - total output frames
+// skips - skip frames
+// startLoop - from what loop to start
+void captureGifFrame(int frames, int skips, int startLoop) {
+  if (loop == startLoop + frames * skips) {
+    gifExport.finish();
+    println("GIF saved");
+  } else if (loop < frames * skips + startLoop && loop%skips == 0 && loop > startLoop) {
+    println("frame: " + loop/skips + ", loop:" + loop);
+    gifExport.setDelay(1);
+    gifExport.addFrame();
+  }
 }
 
 void mousePressed()
