@@ -23,8 +23,9 @@ void setup() {
 
   size(600, 600, P3D);
 
-  // pixelDensity(2);
+  // pixelDensity(2); // for retina display
 
+  // make a box array
   boxImages = new ImageBox[maxImages];
 
   float imgSize = 40;
@@ -43,20 +44,20 @@ void draw() {
   pushMatrix();
   rotateX(varX/100.0);
   rotateY(varY/100.0);
-  // rotateY(PI/6.0);
   for (int i = 0; i < maxImages; i++) {
     boxImages[i].update();
-    float rhytm = map(pow(abs(exp(sin(mouseX/6. * 0.03 - i * 0.01))), 50), 0, 1, -500, 500);
-    // boxImages[i].setPos(boxImages[i].pos.x, boxImages[i].pos.y, rhytm );
   }
   popMatrix();
 
+
+  // sort images
   if (sortLoop < maxImages) {
     for (int i = sortLoop; i < boxImages.length; i++) {
       // box swap
       int swap1 = i;
       int swap2 = sortLoop;
 
+      // sort by red value (x, y, x) is (r, g, b)
       if (boxImages[swap1].avgColor.x < boxImages[swap2].avgColor.x ) {
         // swap class
         boxImages[swap1].boxSwap(boxImages[swap2]);
@@ -79,7 +80,7 @@ void draw() {
     sortLoop ++;
   }
 
-  // GIF
+  // capture GIF
   captureGifFrame(60, 5, 600);
 
   // count as a loop

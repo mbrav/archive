@@ -12,6 +12,7 @@ class ImageBox {
   PVector avgColor;
 
   ImageBox(float posX, float posY, float iSize, String imgPath) {
+    // to keep track of where it was positioned initially
     initPos = new PVector(posX, posY, 0);
     pos = initPos;
     posDisplace = new PVector(0,0,0);
@@ -25,26 +26,29 @@ class ImageBox {
     avgColor = extractColorFromImage(img);
   }
 
+  // a function that swaps the postions of two ImageBoxes
   void boxSwap(ImageBox swapBox) {
     PVector temPos = swapBox.pos;
     posDisplace.set(swapBox.pos.x, swapBox.pos.y, 100);
+    rotDisplace.set(random(0, PI/2), random(0, PI/2), random(0, PI/2));
     swapBox.pos = pos;
     pos = temPos;
   }
 
+  // set postion of box
   void setPos(float newX, float newY, float newZ) {
     pos.set(newX, newY, newZ);
   }
 
   void update() {
-    // simple image
-    // image(img, pos.x, pos.y, 30, 30);
-
-    // vertex image
-    // translate(pos.x, pos.y);
     rotateX(rotDisplace.x);
     rotateY(rotDisplace.y);
     rotateZ(rotDisplace.z);
+
+    // simple image
+    // image(img, pos.x + posDisplace.x, pos.y + posDisplace.y, pos.z + posDisplace.z, imgSize);
+
+    // vertex image
     beginShape();
     texture(img);
     float minus = (abs(posDisplace.x) + abs(posDisplace.y))/2;
@@ -61,6 +65,8 @@ class ImageBox {
   }
 }
 
+// avg color of image
+// from: http://stackoverflow.com/questions/34723998/getting-the-dominant-color-in-processing
 PVector extractColorFromImage(PImage img) {
   img.loadPixels();
   int r = 0, g = 0, b = 0;
