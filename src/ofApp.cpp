@@ -10,6 +10,8 @@
  //                    |_|
 
 void ofApp::setup() {
+
+  myModel.test();
   ofSetLogLevel(OF_LOG_VERBOSE);
   ofBackground(130);
 
@@ -40,6 +42,7 @@ void ofApp::setup() {
     ofxAssimpModelLoader modelTemp;
     ofMesh meshTemp;
     ofVbo vboTemp;
+    ofVec3f randomPos(ofRandom(-50, 50), ofRandom(-50, 50), ofRandom(-50, 50));
 
 
  //                      _      _   _                 _
@@ -50,7 +53,7 @@ void ofApp::setup() {
 
 
     modelTemp.loadModel("m" + ofToString(i%modelFiles+1) + ".stl", false);
-    modelTemp.setPosition(ofRandom(-1000, 1000), ofRandom(-1000, 1000), ofRandom(-1000, 1000));
+    modelTemp.setPosition(randomPos.x, randomPos.y, randomPos.z);
 
 
  //  _ __ ___   ___  ___| |__
@@ -58,38 +61,32 @@ void ofApp::setup() {
  // | | | | | |  __/\__ \ | | |
  // |_| |_| |_|\___||___/_| |_|
 
+
     meshTemp = modelTemp.getMesh(0);
+    meshTemp.setMode(OF_PRIMITIVE_TRIANGLES);
     // meshTemp.setPosition(ofRandom(-1000, 1000), ofRandom(-1000, 1000), ofRandom(-1000, 1000));
     // OF_PRIMITIVE_TRIANGLES means every three vertices create a triangle
-  	meshTemp.setMode(OF_PRIMITIVE_TRIANGLES);
 
 
     // ofColor color;
     ofColor color((int)ofRandom(256.0f), (int)ofRandom(256.0f), (int)ofRandom(256.0f));
-    for (int i = 0; i < meshTemp.getNumIndices() - 2; i += 3) {
+    for (int i = 0; i < meshTemp.getNumIndices() - 2; i += 1) {
+
+      ofVec3f vert = meshTemp.getVertex(i);
+      vert.x += randomPos.x;
+      vert.y += randomPos.y;
+      vert.z += randomPos.z;
+
+      meshTemp.setVertex(i, vert);
 
 
-      if (i % 300 == 0) {
+      if (i % 3000 == 0) {
 
         color = ofColor((int)ofRandom(256.0f), (int)ofRandom(256.0f), (int)ofRandom(256.0f));
 
       }
       meshTemp.addColor(color);
-      meshTemp.addColor(color);
-      meshTemp.addColor(color);
     }
-
-    ofPushMatrix();
-
-    ofTranslate(ofRandom(-1000, 1000) , ofRandom(-1000, 1000), ofRandom(-1000, 1000));
-
-    // randomize
-    // if (i % 2 == 0) {
-    //   model[i].draw(OF_MESH_FILL);
-    // } else {
-    //   model[i].draw(OF_MESH_POINTS);
-    // }
-    ofPopMatrix();
 
 
    //        _
