@@ -24,16 +24,15 @@ public:
   void dragEvent(ofDragInfo dragInfo);
   void gotMessage(ofMessage msg);
 
-  const int modelFiles = 6; // number of files
-  const int modelNum = 20; // number of models
+  const int modelFiles = 6; // number of file models
+  const int modelNum = 20; // number of total models to display
 
-  vector<ofxAssimpModelLoader> models;
+  vector<ofxAssimpModelLoader> model; // model array
 
   ofLight light;
 
 	ofLight areaLight;
 	ofEasyCam camera;
-	ofMaterial materialPlane;
 
 	ofVec2f lightRot;
 

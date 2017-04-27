@@ -5,11 +5,11 @@ void ofApp::setup() {
   ofSetLogLevel(OF_LOG_VERBOSE);
   ofBackground(130);
 
-  ofDisableArbTex(); // we need GL_TEXTURE_2D for our models coords.
+  ofDisableArbTex(); // we need GL_TEXTURE_2D for our model coords.
 
   areaLight.setup();
   areaLight.enable();
-  areaLight.setAreaLight(120, 120);
+  // areaLight.setAreaLight(120, 120);
   // areaLight.setSpotlight(80,3);
   areaLight.setAmbientColor(ofFloatColor(0.8, 0.8, 0.8));
   areaLight.setAttenuation(1.0, 0.01, 0.01);
@@ -21,10 +21,6 @@ void ofApp::setup() {
 
   ofBackground(0, 0, 0);
 
-  materialPlane.setAmbientColor(ofFloatColor(0, 0, 0, 1.0));
-  materialPlane.setDiffuseColor(ofFloatColor(1, 1, 1, 1.0));
-  materialPlane.setSpecularColor(ofFloatColor(1, 1, 1, 1.0));
-  materialPlane.setShininess(100);
 
   lightRot = ofVec2f(0);
 
@@ -36,9 +32,9 @@ void ofApp::setup() {
     ofxAssimpModelLoader modelTemp;
 
     modelTemp.loadModel("m" + ofToString(i%modelFiles+1) + ".stl", false);
-    modelTemp.setPosition(ofRandom(0, 2000), ofRandom(0, 2000), ofRandom(0, 2000));
+    modelTemp.setPosition(ofRandom(-1000, 1000), ofRandom(-1000, 1000), ofRandom(-1000, 1000));
 
-    models.push_back(modelTemp);
+    model.push_back(modelTemp);
 
   }
 
@@ -49,7 +45,7 @@ void ofApp::update() {
   // model.update();
 
   // for (unsigned int i = 0; i < modelNum; i++) {
-  //   models[i].update();
+  //   model[i].update();
   // }
 
   // mesh = model.getCurrentAnimatedMesh(0);
@@ -65,13 +61,13 @@ void ofApp::update() {
 
 //--------------------------------------------------------------
 void ofApp::draw() {
+  ofBackground(50, 50, 50, 0);
+  ofSetColor(100, 100, 100, 255);
   camera.begin();
-	materialPlane.begin();
-
 
   for (unsigned int i = 0; i < modelNum; i++) {
 
-    ofSetColor(0);
+    // model[i].drawFaces();
 
     ofEnableBlendMode(OF_BLENDMODE_ALPHA);
 
@@ -83,31 +79,40 @@ void ofApp::draw() {
     ofEnableSeparateSpecularLight();
 
     ofPushMatrix();
-    ofTranslate(models[i].getPosition().x + 100, models[i].getPosition().y, 0);
-    ofRotate(ofGetElapsedTimef()*8.0, ofGetElapsedTimef()*5.6, 0, 0);
-    ofTranslate(-models[i].getPosition().x, - models[i].getPosition().y, 0);
-    models[i].drawFaces();
-    ofPopMatrix();
-  #ifndef TARGET_PROGRAMMABLE_GL
-    glEnable(GL_NORMALIZE);
-  #endif
-    ofPushMatrix();
-    ofTranslate(models[i].getPosition().x - 300, models[i].getPosition().y, 0);
-    ofRotate(-mouseX, 0, 1, 0);
-    ofTranslate(-models[i].getPosition().x, -models[i].getPosition().y, 0);
 
-    ofxAssimpMeshHelper &meshHelper = models[i].getMeshHelper(0);
+    ofTranslate(model[i].getPosition().x + 100, model[i].getPosition().y, 0);
+    ofRotate(ofGetElapsedTimef()*8.0*i, ofGetElapsedTimef()*5.6*i, 0, 0);
+    ofTranslate(-model[i].getPosition().x, - model[i].getPosition().y, 0);
 
-    ofMultMatrix(models[i].getModelMatrix());
-    ofMultMatrix(meshHelper.matrix);
-
-    ofMaterial &material = meshHelper.material;
-
-    material.begin();
-    // meshes[i].drawWireframe();
-    material.end();
+    // randomize
+    if (i % 2 == 0) {
+      model[i].draw(OF_MESH_FILL);
+    } else {
+      model[i].draw(OF_MESH_POINTS);
+    }
 
     ofPopMatrix();
+
+  // #ifndef TARGET_PROGRAMMABLE_GL
+  //   glEnable(GL_NORMALIZE);
+  // #endif
+    // ofPushMatrix();
+    // ofTranslate(model[i].getPosition().x - 300, model[i].getPosition().y, 0);
+    // ofRotate(-mouseX, 0, 1, 0);
+    // ofTranslate(-model[i].getPosition().x, -model[i].getPosition().y, 0);
+    //
+    // ofxAssimpMeshHelper &meshHelper = model[i].getMeshHelper(0);
+    //
+    // ofMultMatrix(model[i].getModelMatrix());
+    // ofMultMatrix(meshHelper.matrix);
+    //
+    // ofMaterial &material = meshHelper.material;
+
+    // material.begin();
+    // // meshe[i].drawWireframe();
+    // material.end();
+
+    // ofPopMatrix();
   }
 
   // int size = 50;
@@ -134,7 +139,6 @@ void ofApp::draw() {
   ofDisableLighting();
   ofDisableSeparateSpecularLight();
 
-  materialPlane.end();
   areaLight.draw();
   camera.end();
 
