@@ -1,6 +1,14 @@
 #include "ofApp.h"
 
 //--------------------------------------------------------------
+
+ //           _
+ //  ___  ___| |_ _   _ _ __
+ // / __|/ _ \ __| | | | '_ \
+ // \__ \  __/ |_| |_| | |_) |
+ // |___/\___|\__|\__,_| .__/
+ //                    |_|
+
 void ofApp::setup() {
   ofSetLogLevel(OF_LOG_VERBOSE);
   ofBackground(130);
@@ -30,17 +38,87 @@ void ofApp::setup() {
   for (unsigned int i = 0; i < modelNum; i++) {
 
     ofxAssimpModelLoader modelTemp;
+    ofMesh meshTemp;
+    ofVbo vboTemp;
+
+
+ //                      _      _   _                 _
+ //  _ __ ___   ___   __| | ___| | | | ___   __ _  __| |
+ // | '_ ` _ \ / _ \ / _` |/ _ \ | | |/ _ \ / _` |/ _` |
+ // | | | | | | (_) | (_| |  __/ | | | (_) | (_| | (_| |
+ // |_| |_| |_|\___/ \__,_|\___|_| |_|\___/ \__,_|\__,_|
+
 
     modelTemp.loadModel("m" + ofToString(i%modelFiles+1) + ".stl", false);
     modelTemp.setPosition(ofRandom(-1000, 1000), ofRandom(-1000, 1000), ofRandom(-1000, 1000));
 
+
+ //  _ __ ___   ___  ___| |__
+ // | '_ ` _ \ / _ \/ __| '_ \
+ // | | | | | |  __/\__ \ | | |
+ // |_| |_| |_|\___||___/_| |_|
+
+    meshTemp = modelTemp.getMesh(0);
+    // meshTemp.setPosition(ofRandom(-1000, 1000), ofRandom(-1000, 1000), ofRandom(-1000, 1000));
+    // OF_PRIMITIVE_TRIANGLES means every three vertices create a triangle
+  	meshTemp.setMode(OF_PRIMITIVE_TRIANGLES);
+
+
+    // ofColor color;
+    ofColor color((int)ofRandom(256.0f), (int)ofRandom(256.0f), (int)ofRandom(256.0f));
+    for (int i = 0; i < meshTemp.getNumIndices() - 2; i += 3) {
+
+
+      if (i % 300 == 0) {
+
+        color = ofColor((int)ofRandom(256.0f), (int)ofRandom(256.0f), (int)ofRandom(256.0f));
+
+      }
+      meshTemp.addColor(color);
+      meshTemp.addColor(color);
+      meshTemp.addColor(color);
+    }
+
+    ofPushMatrix();
+
+    ofTranslate(ofRandom(-1000, 1000) , ofRandom(-1000, 1000), ofRandom(-1000, 1000));
+
+    // randomize
+    // if (i % 2 == 0) {
+    //   model[i].draw(OF_MESH_FILL);
+    // } else {
+    //   model[i].draw(OF_MESH_POINTS);
+    // }
+    ofPopMatrix();
+
+
+   //        _
+   // __   _| |__   ___
+   // \ \ / / '_ \ / _ \
+   //  \ V /| |_) | (_) |
+   //   \_/ |_.__/ \___/
+
+    // The possible options for usage are: GL_STREAM_DRAW, GL_STREAM_READ, GL_STREAM_COPY, GL_STATIC_DRAW, GL_STATIC_READ, GL_STATIC_COPY, GL_DYNAMIC_DRAW, GL_DYNAMIC_READ, or GL_DYNAMIC_COP
+    vboTemp.setMesh(meshTemp, GL_STATIC_DRAW);
+
     model.push_back(modelTemp);
+    mesh.push_back(meshTemp);
+    vbo.push_back(vboTemp);
 
   }
 
 }
 
 //--------------------------------------------------------------
+
+
+ //                  _       _
+ //  _   _ _ __   __| | __ _| |_ ___
+ // | | | | '_ \ / _` |/ _` | __/ _ \
+ // | |_| | |_) | (_| | (_| | ||  __/
+ //  \__,_| .__/ \__,_|\__,_|\__\___|
+ //       |_|
+ //
 void ofApp::update() {
   // model.update();
 
@@ -60,60 +138,65 @@ void ofApp::update() {
 }
 
 //--------------------------------------------------------------
+
+
+ //      _
+ //   __| |_ __ __ ___      __
+ //  / _` | '__/ _` \ \ /\ / /
+ // | (_| | | | (_| |\ V  V /
+ //  \__,_|_|  \__,_| \_/\_/
+
 void ofApp::draw() {
-  ofBackground(50, 50, 50, 0);
-  ofSetColor(100, 100, 100, 255);
+  ofBackground(255, 255, 255, 255);
+  ofSetColor(20, 20, 20, 255);
   camera.begin();
+
+  ofEnableDepthTest();
+    // light.enable();
+    ofEnableSeparateSpecularLight();
 
   for (unsigned int i = 0; i < modelNum; i++) {
 
-    // model[i].drawFaces();
+    // vbo[i].draw(GL_QUADS,0,24);
 
-    ofEnableBlendMode(OF_BLENDMODE_ALPHA);
 
-    ofEnableDepthTest();
-  #ifndef TARGET_PROGRAMMABLE_GL
-    glShadeModel(GL_SMOOTH); // some model / light stuff
-  #endif
-    light.enable();
-    ofEnableSeparateSpecularLight();
-
-    ofPushMatrix();
-
-    ofTranslate(model[i].getPosition().x + 100, model[i].getPosition().y, 0);
-    ofRotate(ofGetElapsedTimef()*8.0*i, ofGetElapsedTimef()*5.6*i, 0, 0);
-    ofTranslate(-model[i].getPosition().x, - model[i].getPosition().y, 0);
 
     // randomize
-    if (i % 2 == 0) {
-      model[i].draw(OF_MESH_FILL);
-    } else {
-      model[i].draw(OF_MESH_POINTS);
-    }
-
-    ofPopMatrix();
-
-  // #ifndef TARGET_PROGRAMMABLE_GL
-  //   glEnable(GL_NORMALIZE);
-  // #endif
-    // ofPushMatrix();
-    // ofTranslate(model[i].getPosition().x - 300, model[i].getPosition().y, 0);
-    // ofRotate(-mouseX, 0, 1, 0);
-    // ofTranslate(-model[i].getPosition().x, -model[i].getPosition().y, 0);
-    //
-    // ofxAssimpMeshHelper &meshHelper = model[i].getMeshHelper(0);
-    //
-    // ofMultMatrix(model[i].getModelMatrix());
-    // ofMultMatrix(meshHelper.matrix);
-    //
-    // ofMaterial &material = meshHelper.material;
-
-    // material.begin();
-    // // meshe[i].drawWireframe();
-    // material.end();
-
-    // ofPopMatrix();
+    // if (i % 2 == 0) {
+    //   mesh[i].draw(OF_MESH_FILL);
+    // } else {
+    //   mesh[i].draw(OF_MESH_POINTS);
+    // }
+    mesh[i].draw(OF_MESH_FILL); // draw an ofMesh (slower) when no key is pressed
   }
+
+  // for (unsigned int i = 0; i < modelNum; i++) {
+  //
+  //   // model[i].drawFaces();
+  //
+  //   // ofEnableBlendMode(OF_BLENDMODE_ALPHA);
+  //   //
+  // // #ifndef TARGET_PROGRAMMABLE_GL
+  // //   glShadeModel(GL_SMOOTH); // some model / light stuff
+  //   light.enable();
+  //   ofEnableSeparateSpecularLight();
+  // // #endif
+  //
+  //   ofPushMatrix();
+  //
+  //   ofTranslate(model[i].getPosition().x + 100, model[i].getPosition().y, 0);
+  //   ofRotate(ofGetElapsedTimef()*8.0*i, ofGetElapsedTimef()*5.6*i, 0, 0);
+  //   ofTranslate(-model[i].getPosition().x, - model[i].getPosition().y, 0);
+  //
+  //   // randomize
+  //   // if (i % 2 == 0) {
+  //   //   model[i].draw(OF_MESH_FILL);
+  //   // } else {
+  //   //   model[i].draw(OF_MESH_POINTS);
+  //   // }
+  //   ofPopMatrix();
+  //
+  // }
 
   // int size = 50;
   // int circleSize = 10;

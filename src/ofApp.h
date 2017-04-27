@@ -25,9 +25,11 @@ public:
   void gotMessage(ofMessage msg);
 
   const int modelFiles = 6; // number of file models
-  const int modelNum = 20; // number of total models to display
+  const int modelNum = 10; // number of total models to display
 
   vector<ofxAssimpModelLoader> model; // model array
+  vector<ofMesh> mesh; // mesh array
+  vector<ofVbo> vbo; // vbo array
 
   ofLight light;
 
