@@ -24,17 +24,13 @@ public:
   void dragEvent(ofDragInfo dragInfo);
   void gotMessage(ofMessage msg);
 
-  ofxAssimpModelLoader model;
+  // ofxAssimpModelLoader model;
 
-  const int modelNum = 10;
+  const int modelNum = 100;
   // ofxAssimpModelLoader models[10];
 
   vector<ofxAssimpModelLoader> models;
-  // vector<ofMesh> meshes;
 
-  // ofMesh meshes[10];
-
-  // ofMesh mesh;
   ofLight light;
 
 	ofLight areaLight;
@@ -42,9 +38,6 @@ public:
 	ofMaterial materialPlane;
 
 	ofVec2f lightRot;
-
-	vector<ofPoint> points;
-	int randomInts [100];
 
 };
 
