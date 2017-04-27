@@ -3,31 +3,16 @@
 //--------------------------------------------------------------
 void ofApp::setup() {
   ofSetLogLevel(OF_LOG_VERBOSE);
-  ofBackground(0);
+  ofBackground(130);
 
   ofDisableArbTex(); // we need GL_TEXTURE_2D for our models coords.
-
-  // model.loadModel("Terracotta_neck-amphora_storage_jar.stl", false);
-  // model.setPosition(ofRandom(0, 200), ofRandom(0, 200), ofRandom(0, 200));
-
-  // model2.loadModel("Marble_Strigilated_vase_with_snake_handles.stl");
-  // model2.setPosition(ofRandom(0, 200), ofRandom(0, 200),ofRandom(0, 200));
-  //
-  // model3.loadModel("marble_statue_of_a_lion.stl");
-  // model3.setPosition(ofRandom(0, 200), ofRandom(0, 200),ofRandom(0, 200));
-  //
-  // model4.loadModel("test.stl");
-  // model4.setPosition(ofRandom(0, 200), ofRandom(0, 200),ofRandom(0, 200));
-  //
-  // model5.loadModel("Figure_of_a_horse.stl");
-  // model5.setPosition(ofRandom(0, 200), ofRandom(0, 200),ofRandom(0, 200));
 
   areaLight.setup();
   areaLight.enable();
   areaLight.setAreaLight(120, 120);
   // areaLight.setSpotlight(80,3);
   areaLight.setAmbientColor(ofFloatColor(0.8, 0.8, 0.8));
-  areaLight.setAttenuation(1.0, 0.0001, 0.0001);
+  areaLight.setAttenuation(1.0, 0.01, 0.01);
   areaLight.setDiffuseColor(ofFloatColor(0.9, 0.9, 1));
   areaLight.setSpecularColor(ofFloatColor(1, 0.8, 1));
   // areaLight.rotate(-90,ofVec3f(1,0,0));
@@ -50,7 +35,7 @@ void ofApp::setup() {
 
     ofxAssimpModelLoader modelTemp;
 
-    modelTemp.loadModel("Terracotta_neck-amphora_storage_jar.stl", false);
+    modelTemp.loadModel("m" + ofToString(i%modelFiles+1) + ".stl", false);
     modelTemp.setPosition(ofRandom(0, 2000), ofRandom(0, 2000), ofRandom(0, 2000));
 
     models.push_back(modelTemp);
@@ -83,8 +68,6 @@ void ofApp::draw() {
   camera.begin();
 	materialPlane.begin();
 
-
-	// generate new values for connections
 
   for (unsigned int i = 0; i < modelNum; i++) {
 
@@ -157,62 +140,13 @@ void ofApp::draw() {
 
   ofSetColor(255, 255, 255);
   ofDrawBitmapString("fps: " + ofToString(ofGetFrameRate(), 2), 10, 15);
-  ofDrawBitmapString("keys 1-5 load models, spacebar to trigger animation", 10,
-                     30);
-  // ofDrawBitmapString("drag to control animation with mouseY", 10, 45);
-  // ofDrawBitmapString("num animations for this model: " +
-  //                        ofToString(model.getAnimationCount()),
-  //                    10, 60);
+
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key) {
   if (key == 'f')
     ofToggleFullscreen();
-  ofPoint modelPosition(ofGetWidth() * 0.5, (float)ofGetHeight() * 0.75);
-  // switch (key) {
-  // case '1':
-  //   model.loadModel("Terracotta_neck-amphora_storage_jar.stl");
-  //   model.setPosition(modelPosition.x, modelPosition.y, modelPosition.z);
-  //   ofEnableSeparateSpecularLight();
-  //   break;
-  // case '2':
-  //   model.loadModel("Terracotta_neck-amphora_storage_jar.stl");
-  //   model.setPosition(modelPosition.x, modelPosition.y, modelPosition.z);
-  //   model.setRotation(0, -180, 1, 0, 0);
-  //   ofEnableSeparateSpecularLight();
-  //   break;
-  // case '3':
-  //   model.loadModel("Marble_Strigilated_vase_with_snake_handles.stl");
-  //   model.setPosition(modelPosition.x, modelPosition.y, modelPosition.z);
-  //   ofDisableSeparateSpecularLight();
-  //   break;
-  // case '4':
-  //   model.loadModel("marble_statue_of_a_lion.stl");
-  //   model.setPosition(modelPosition.x, modelPosition.y, modelPosition.z);
-  //   model.setRotation(90, 0, 90, 0, 1);
-  //   ofDisableSeparateSpecularLight();
-  //   break;
-  // case '5':
-  //   model.loadModel("Figure_of_a_horse.stl");
-  //   model.setPosition(modelPosition.x, modelPosition.y, modelPosition.z);
-  //   ofDisableSeparateSpecularLight();
-  //   break;
-  // case '6':
-  //   model.loadModel("test.stl");
-  //   model.setPosition(modelPosition.x, modelPosition.y, modelPosition.z);
-  //   model.setRotation(0, -90, 90, 0, 1);
-  //   ofDisableSeparateSpecularLight();
-  //   break;
-  // case ' ':
-  //   // bAnimate = !bAnimate;
-  //   break;
-  // default:
-  //   break;
-  // }
-
-  // mesh = model.getMesh(0);
-
 }
 
 //--------------------------------------------------------------

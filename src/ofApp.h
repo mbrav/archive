@@ -24,10 +24,8 @@ public:
   void dragEvent(ofDragInfo dragInfo);
   void gotMessage(ofMessage msg);
 
-  // ofxAssimpModelLoader model;
-
-  const int modelNum = 100;
-  // ofxAssimpModelLoader models[10];
+  const int modelFiles = 6; // number of files
+  const int modelNum = 20; // number of models
 
   vector<ofxAssimpModelLoader> models;
 

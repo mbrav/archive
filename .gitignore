@@ -12,6 +12,9 @@ libs/openFrameworksCompiled/lib/*/*
 # apothecary
 scripts/apothecary
 
+.gitkeep
+.DS_Store
+
 # rule to avoid non-official addons going into git
 # see addons/.gitignore
 addons/*
