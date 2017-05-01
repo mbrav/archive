@@ -5,6 +5,8 @@
 #include "ofVboMesh.h"
 #include "ofxAssimpModelLoader.h"
 
+#include "ofModel.h"
+
 class ofApp : public ofBaseApp {
 
 public:
@@ -25,7 +27,7 @@ public:
   void gotMessage(ofMessage msg);
 
   const int modelFiles = 6; // number of file models
-  const int modelNum = 10; // number of total models to display
+  const int modelNum = 60; // number of total models to display
 
   vector<ofxAssimpModelLoader> model; // model array
   vector<ofMesh> mesh; // mesh array
@@ -37,6 +39,8 @@ public:
 	ofEasyCam camera;
 
 	ofVec2f lightRot;
+
+  ofModel myModel;
 
 };
 

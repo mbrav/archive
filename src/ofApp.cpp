@@ -42,7 +42,7 @@ void ofApp::setup() {
     ofxAssimpModelLoader modelTemp;
     ofMesh meshTemp;
     ofVbo vboTemp;
-    ofVec3f randomPos(ofRandom(-50, 50), ofRandom(-50, 50), ofRandom(-50, 50));
+    ofVec3f randomPos(ofRandom(-200, 200), ofRandom(-200, 200), ofRandom(-200, 200));
 
 
  //                      _      _   _                 _
@@ -82,7 +82,7 @@ void ofApp::setup() {
 
       if (i % (meshTemp.getNumIndices()/50) == 0) {
 
-        color = ofColor((int)ofRandom(256.0f), (int)ofRandom(256.0f), (int)ofRandom(256.0f));
+        color = ofColor((int)ofRandom(150.0f)+100, (int)ofRandom(150.0f)+100, (int)ofRandom(150.0f)+100);
 
       }
       meshTemp.addColor(color);
@@ -118,7 +118,7 @@ void ofApp::setup() {
  //
 void ofApp::update() {
 
-  areaLight.setPosition(0,0,100);
+  areaLight.setPosition(0,0,100000);
 
 	areaLight.rotate(cos(lightRot.x)/2.,ofVec3f(1,0,0));
 	areaLight.rotate(sin(lightRot.y)/2.,ofVec3f(0,0,1));
@@ -126,17 +126,17 @@ void ofApp::update() {
 	// lightRot.x += 0.05;
 	// lightRot.y += 0.05;
 
-  for (unsigned int i = 0; i < modelNum; i++) {
-    for (int j = 0; j < mesh[i].getNumIndices() - 2; j += 1) {
-
-      ofVec3f vert = mesh[i].getVertex(j);
-      vert.x += ofRandom(0.01f);
-      vert.y += ofRandom(0.01f);
-      vert.z += ofRandom(0.01f);
-
-      mesh[i].setVertex(j, vert);
-    }
-  }
+  // for (unsigned int i = 0; i < modelNum; i++) {
+  //   for (int j = 0; j < mesh[i].getNumIndices() - 2; j += 1) {
+  //
+  //     ofVec3f vert = mesh[i].getVertex(j);
+  //     vert.x += ofRandom(0.01f);
+  //     vert.y += ofRandom(0.01f);
+  //     vert.z += ofRandom(0.01f);
+  //
+  //     mesh[i].setVertex(j, vert);
+  //   }
+  // }
 }
 
 //--------------------------------------------------------------
