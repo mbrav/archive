@@ -27,20 +27,17 @@ public:
   void gotMessage(ofMessage msg);
 
   const int modelFiles = 6; // number of file models
-  const int modelNum = 60; // number of total models to display
+  const int modelNum = 40; // number of total models to display
 
-  vector<ofxAssimpModelLoader> model; // model array
-  vector<ofMesh> mesh; // mesh array
-  vector<ofVbo> vbo; // vbo array
+  vector<ofModel> models;
+  ofModel myModel;
+
+  vector<ofPlanePrimitive> plane;
 
   ofLight light;
 
-	ofLight areaLight;
 	ofEasyCam camera;
 
-	ofVec2f lightRot;
-
-  ofModel myModel;
 
 };
 
