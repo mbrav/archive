@@ -12,7 +12,7 @@ void ofApp::setup() {
   ofSetLogLevel(OF_LOG_VERBOSE);
   ofBackground(130);
 
-  // ofDisableArbTex(); // we need GL_TEXTURE_2D for our model coords.
+  ofDisableArbTex(); // we need GL_TEXTURE_2D for our model coords.
 
   ofBackground(0, 0, 0);
 
@@ -37,7 +37,7 @@ void ofApp::setup() {
  //       |_|
  //
 void ofApp::update() {
-
+  models[0].disolve(0.0001);
 }
 
  //      _
@@ -56,6 +56,8 @@ void ofApp::draw() {
   // light.enable();
   ofEnableSeparateSpecularLight();
 
+  models[0].draw();
+
   for (unsigned int i = 0; i < modelNum; i++) {
 
     models[i].draw();
@@ -63,9 +65,8 @@ void ofApp::draw() {
   }
 
   ofDisableDepthTest();
-  // light.disable();
-  // ofDisableLighting();
-  // ofDisableSeparateSpecularLight();
+  light.disable();
+  ofDisableLighting();
 
   camera.end();
 
@@ -76,13 +77,11 @@ void ofApp::draw() {
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key) {
-  if (key == 'f')
-    ofToggleFullscreen();
+  if (key == 'f') ofToggleFullscreen();
 }
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key) {
-  //
 }
 
 //--------------------------------------------------------------

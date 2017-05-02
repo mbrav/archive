@@ -17,7 +17,9 @@ void ofModel::setup(string filePath) {
 
     ofColor color((int)ofRandom(25.0f), (int)ofRandom(25.0f), (int)ofRandom(25.0f));
 
+    initPos.set(0, 0, 0); // average position (center) of a model
     for (int i = 0; i < mesh.getNumIndices() - 2; i += 1) {
+
 
       ofVec3f vert = mesh.getVertex(i);
       vert.x += randomPos.x;
@@ -26,28 +28,44 @@ void ofModel::setup(string filePath) {
 
       mesh.setVertex(i, vert);
 
-
+      int contrast = 100;
       if (i % (mesh.getNumIndices()/50) == 0) {
-
-        color = ofColor((int)ofRandom(150.0f)+100, (int)ofRandom(150.0f)+100, (int)ofRandom(150.0f)+100);
+        // Random contrasting colors
+        float rand = ofRandom(1);
+        if (rand > 0.5){
+          color = ofColor(255 - (int)ofRandom(contrast), 255 - (int)ofRandom(contrast), 255 - (int)ofRandom(contrast));
+        } else {
+          color = ofColor((int)ofRandom(contrast), (int)ofRandom(contrast), (int)ofRandom(contrast));
+        }
+        // Random color
+        // color = ofColor((int)ofRandom(150.0f)+100, (int)ofRandom(150.0f)+100, (int)ofRandom(150.0f)+100);
 
       }
       mesh.addColor(color);
+
+      // add on to initial postion every loop
+      initPos.x += vert.x;
+      initPos.y += vert.y;
+      initPos.z += vert.z;
     }
+
+    // set average position (center)
+    initPos *= mesh.getNumIndices();
 
 };
 
-void ofModel::update() {
+void ofModel::disolve(float speed) {
 
-//   for (int j = 0; j < mesh.getNumIndices() - 2; j += 1) {
-//
-//     ofVec3f vert = mesh[i].getVertex(j);
-//     vert.x += ofRandom(0.01f);
-//     vert.y += ofRandom(0.01f);
-//     vert.z += ofRandom(0.01f);
-//
-//     mesh[i].setVertex(j, vert);
-//   }
+  for (int j = 0; j < mesh.getNumIndices() - 2; j += 1) {
+
+    ofVec3f vert = mesh.getVertex(j);
+
+    vert.x += ofRandom(-1,1)*speed;
+    vert.y += ofRandom(-1,1)*speed;
+    vert.z += ofRandom(-1,1)*speed;
+
+    mesh.setVertex(j, vert);
+  }
 
 };
 
@@ -56,6 +74,9 @@ void ofModel::draw() {
   mesh.draw(OF_MESH_FILL);
   // mesh.draw(OF_MESH_POINTS);
 };
+
+
+// OLD STUFF
 
 // int size = 50;
 // int circleSize = 10;

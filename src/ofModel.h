@@ -7,9 +7,10 @@ public:
 	float x;
 	void test();
 	void setup(string filePath);
-	void update();
+	void disolve(float speed);
 	void draw();
 private:
+	ofVec3f initPos;
 	ofxAssimpModelLoader model;
 	ofMesh mesh;
 };
