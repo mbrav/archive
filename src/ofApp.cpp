@@ -23,6 +23,7 @@ void ofApp::setup() {
 
     ofModel myModelTemp;
     myModelTemp.setup("m" + ofToString(i%modelFiles+1) + ".stl");
+    myModelTemp.setPos(ofVec3f(ofRandom(-100, 100), ofRandom(-100, 100), ofRandom(-100, 100)));
     models.push_back(myModelTemp);
 
   }
@@ -38,14 +39,18 @@ void ofApp::setup() {
 
 void ofApp::update() {
 
-  int ran = (int)ofRandom(0, modelNum);
-  models[ran].disolve(0.01);
-  models[ran].vDisplace();
+  // int ran = (int)ofRandom(0, modelNum);
+  // models[ran].disolve(0.01);
+  // models[ran].vDisplace();
 
   for (unsigned int i = 0; i < modelNum; i++) {
     models[i].rot.x += 0.05*i;
     models[i].rot.y += 0.08*i;
     models[i].rot.z += 0.07*i;
+
+    models[i].pos.x = models[i].initPos.x * cos(ofGetElapsedTimeMillis()/1000.1);
+    models[i].pos.y = models[i].initPos.y * sin(ofGetElapsedTimeMillis()/1000.1);
+    models[i].pos.z = models[i].initPos.z * sin(ofGetElapsedTimeMillis()/1000.1)-cos(ofGetElapsedTimeMillis()/1000.1);
   }
 
   loop++;

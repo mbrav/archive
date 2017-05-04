@@ -8,16 +8,21 @@ ofModel::~ofModel() {
 
 }
 
+void ofModel::setPos(ofVec3f posSet) {
+  pos = posSet;
+  initPos = posSet;
+}
+
 void ofModel::setup(string filePath) {
+    pos.set(0, 0, 0);
+    initPos.set(0, 0, 0);
+
     model.loadModel(filePath, false);
-    ofVec3f randomPos(ofRandom(-100, 100), ofRandom(-100, 100), ofRandom(-100, 100));
-    model.setPosition(randomPos.x, randomPos.y, randomPos.z);
     mesh = model.getMesh(0);
     mesh.setMode(OF_PRIMITIVE_TRIANGLES);
 
     ofColor color((int)ofRandom(25.0f), (int)ofRandom(25.0f), (int)ofRandom(25.0f), (int)ofRandom(25.0f));
 
-    pos.set(randomPos.x, randomPos.y, randomPos.z);
 
     for (int i = 0; i < mesh.getNumIndices() - 2; i += 1) {
 
