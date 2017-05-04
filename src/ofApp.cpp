@@ -35,9 +35,22 @@ void ofApp::setup() {
  // | |_| | |_) | (_| | (_| | ||  __/
  //  \__,_| .__/ \__,_|\__,_|\__\___|
  //       |_|
- //
+
 void ofApp::update() {
-  models[0].disolve(0.0001);
+
+  if (loop % 10 == 0) {
+    for (unsigned int i = 1; i < modelNum; i += 2) {
+      models[i].disolve(0.01);
+      models[i].vDisplace();
+    }
+  } else if (loop % 10 == 5) {
+    for (unsigned int i = 0; i < modelNum; i += 2) {
+      models[i].disolve(0.01);
+      models[i].vDisplace();
+    }
+  }
+
+  loop++;
 }
 
  //      _
@@ -56,7 +69,7 @@ void ofApp::draw() {
   // light.enable();
   ofEnableSeparateSpecularLight();
 
-  models[0].draw();
+  // models[0].draw();
 
   for (unsigned int i = 0; i < modelNum; i++) {
 

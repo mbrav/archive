@@ -56,15 +56,21 @@ void ofModel::setup(string filePath) {
 
 void ofModel::disolve(float speed) {
 
+  for (int j = 1; j < mesh.getNumIndices()-1; j += 1) {
+
+    ofVec3f vert = mesh.getVertex(j-1);
+    ofVec3f vert2 = mesh.getVertex(j);
+
+    vert = vert2;
+
+    mesh.setVertex(j-1, vert);
+  }
+
+};
+
+void ofModel::vDisplace() {
+
   for (int j = 0; j < mesh.getNumIndices() - 2; j += 1) {
-
-    ofVec3f vert = mesh.getVertex(j);
-
-    vert.x += ofRandom(-1,1)*speed;
-    vert.y += ofRandom(-1,1)*speed;
-    vert.z += ofRandom(-1,1)*speed;
-
-    mesh.setVertex(j, vert);
   }
 
 };

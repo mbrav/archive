@@ -38,6 +38,7 @@ public:
 
 	ofEasyCam camera;
 
+  unsigned int loop;
 
 };
 
