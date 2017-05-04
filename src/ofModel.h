@@ -5,6 +5,7 @@ public:
 	ofModel();
 	~ofModel();
 	ofVec3f pos;
+	ofVec3f rot;
 	void test();
 	void setup(string filePath);
 	void disolve(float speed);

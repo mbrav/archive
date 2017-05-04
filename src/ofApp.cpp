@@ -38,16 +38,14 @@ void ofApp::setup() {
 
 void ofApp::update() {
 
-  if (loop % 10 == 0) {
-    for (unsigned int i = 1; i < modelNum; i += 2) {
-      models[i].disolve(0.01);
-      models[i].vDisplace();
-    }
-  } else if (loop % 10 == 5) {
-    for (unsigned int i = 0; i < modelNum; i += 2) {
-      models[i].disolve(0.01);
-      models[i].vDisplace();
-    }
+  int ran = (int)ofRandom(0, modelNum);
+  models[ran].disolve(0.01);
+  models[ran].vDisplace();
+
+  for (unsigned int i = 0; i < modelNum; i++) {
+    models[i].rot.x += 0.05*i;
+    models[i].rot.y += 0.08*i;
+    models[i].rot.z += 0.07*i;
   }
 
   loop++;
