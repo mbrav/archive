@@ -2,7 +2,6 @@
 #define _TEST_APP
 
 #include "ofMain.h"
-#include "ofVboMesh.h"
 #include "ofxAssimpModelLoader.h"
 
 #include "ofModel.h"
@@ -30,7 +29,6 @@ public:
   const int modelNum = 40; // number of total models to display
 
   vector<ofModel> models;
-  ofModel myModel;
 
   vector<ofPlanePrimitive> plane;
 
@@ -38,6 +36,8 @@ public:
 
 	ofEasyCam camera;
 
+
+  // loop counter
   unsigned int loop;
 
 };

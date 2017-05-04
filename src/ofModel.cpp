@@ -76,6 +76,7 @@ void ofModel::vDisplace() {
 
 
 void ofModel::draw() {
+
   ofPushMatrix();
   ofTranslate(pos.x, pos.y, pos.z);
   ofRotateX(rot.x);

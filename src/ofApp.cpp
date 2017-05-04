@@ -87,7 +87,13 @@ void ofApp::draw() {
   camera.end();
 
   ofSetColor(255, 255, 255);
-  ofDrawBitmapString("fps: " + ofToString(ofGetFrameRate(), 2), 10, 15);
+
+  string string1 = " When we take a glimpse into the night sky, \n most of us rarely realize that \n  we are looking at history. \n Whatever we see in the night sky, is a collection of photons that \n traveled for thousands and millions of years from their point of origin. \n The photons coming from Alpha Centauri for example, which is our \n closest neighboring stellar system, \n is already 4.3 years old by the time it reaches our telescopes. \n When we look at the center of our galaxy, we see light that is 27,000 years old. \n When we observe Andromeda, our neighboring galaxy, we see light that is 2.5 million years old. \n Our night sky is filled with the cosmic past, and the gigabytes of data collected by all kinds of telescopes, \n have yet to be 'excavated' and reveal an alien civilization that may be lurking among the data. \n The sky, can be considered a opaque sediment that you can see through, and \n  observe the timeline of the universe's history. \n Just by looking at the sky, we become 'observer archeologists' \n  who are engaged in an act of excavating the past.";
+
+  ofDrawBitmapStringHighlight("SCENE I — The Sky", 20, ofGetHeight()-270, ofColor(40), ofColor(210));
+  ofDrawBitmapStringHighlight(string1, 20, ofGetHeight()-250, ofColor(210), ofColor(40));
+
+  // ofDrawBitmapStringHighlight("SCENE I " + ofToString(ofGetFrameRate(), 2), ofGetWidth()/2-40, ofGetHeight()/2-30, ofColor(200), ofColor(50));
 
 }
 
