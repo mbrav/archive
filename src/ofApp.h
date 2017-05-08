@@ -52,6 +52,7 @@ public:
 
   string titleString;
   string textString;
+  bool showDescription;
 
   vector<ofModel> models;
 
@@ -60,6 +61,8 @@ public:
   ofLight light;
 
 	ofEasyCam camera;
+  ofShader shader;
+	bool doShader;
 
 
   // loop counter

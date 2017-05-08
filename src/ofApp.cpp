@@ -8,6 +8,18 @@
  //                    |_|
 
 void ofApp::setup() {
+  doShader = true;
+  showDescription = true;
+  // #ifdef TARGET_OPENGLES
+	// shader.load("shaders_gles/noise.vert","shaders_gles/noise.frag");
+	// #else
+	// if(ofIsGLProgrammableRenderer()){
+	// 	shader.load("shaders_gl3/noise.vert", "shaders_gl3/noise.frag");
+	// }else{
+	// 	shader.load("shaders/noise.vert", "shaders/noise.frag");
+	// }
+	// #endif
+  shader.load("shaders/noise.vert", "shaders/noise.frag");
 
   ofSetLogLevel(OF_LOG_VERBOSE);
   ofBackground(130);
@@ -66,6 +78,18 @@ void ofApp::update() {
 
 void ofApp::draw() {
 
+  if( doShader ){
+		shader.begin();
+			//we want to pass in some varrying values to animate our type / color
+			shader.setUniform1f("timeValX", ofGetElapsedTimef() * 0.1 );
+			shader.setUniform1f("timeValY", -ofGetElapsedTimef() * 0.18 );
+
+			//we also pass in the mouse position
+			//we have to transform the coords to what the shader is expecting which is 0,0 in the center and y axis flipped.
+			shader.setUniform2f("mouse", mouseX - ofGetWidth()/2, ofGetHeight()/2-mouseY );
+
+	}
+
   if (scene == 1) {
     scene1();
   } else if (scene == 2) {
@@ -88,8 +112,15 @@ void ofApp::draw() {
   //   scene9();
   // }
 
-  ofDrawBitmapStringHighlight(titleString, 20, ofGetHeight()-270, ofColor(40), ofColor(210));
-  ofDrawBitmapStringHighlight(textString, 20, ofGetHeight()-250, ofColor(210), ofColor(40));
+  if( doShader ){
+		shader.end();
+	}
+
+  // scene description
+  if (showDescription) {
+    ofDrawBitmapStringHighlight(titleString, 20, ofGetHeight()-270, ofColor(40), ofColor(210));
+    ofDrawBitmapStringHighlight(textString, 20, ofGetHeight()-250, ofColor(210), ofColor(40));
+  }
 
   // ofDrawBitmapStringHighlight("SCENE I " + ofToString(ofGetFrameRate(), 2), ofGetWidth()/2-40, ofGetHeight()/2-30, ofColor(200), ofColor(50));
 
@@ -195,6 +226,8 @@ void ofApp::keyPressed(int key) {
   if (key == '7') scene = 7;
   if (key == '8') scene = 8;
   if (key == '9') scene = 9;
+  if( key == 's') doShader = !doShader;
+  if( key == 's') showDescription = !showDescription;
 }
 
 //--------------------------------------------------------------
