@@ -3,7 +3,6 @@
 
 #include "ofMain.h"
 #include "ofxAssimpModelLoader.h"
-
 #include "ofModel.h"
 
 class ofApp : public ofBaseApp {
@@ -12,6 +11,8 @@ public:
   void setup();
   void update();
   void draw();
+  void scene1();
+  void scene2();
 
   void keyPressed(int key);
   void keyReleased(int key);
@@ -25,8 +26,15 @@ public:
   void dragEvent(ofDragInfo dragInfo);
   void gotMessage(ofMessage msg);
 
+  // Scene1 scene1;
+
   const int modelFiles = 6; // number of file models
   const int modelNum = 40; // number of total models to display
+
+  int scene;
+
+  string titleString;
+  string textString;
 
   vector<ofModel> models;
 

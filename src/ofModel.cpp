@@ -72,7 +72,7 @@ void ofModel::vDisplace() {
   //
   // }
 
-};
+}
 
 
 void ofModel::draw() {
@@ -85,7 +85,7 @@ void ofModel::draw() {
   mesh.draw(OF_MESH_FILL);
   ofPopMatrix();
   // mesh.draw(OF_MESH_POINTS);
-};
+}
 
 
 // OLD STUFF
