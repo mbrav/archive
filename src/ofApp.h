@@ -11,8 +11,25 @@ public:
   void setup();
   void update();
   void draw();
+
   void scene1();
+  void scene1setup();
   void scene2();
+  void scene2setup();
+  void scene3();
+  void scene3setup();
+  void scene4();
+  void scene4setup();
+  void scene5();
+  void scene5setup();
+  void scene6();
+  void scene6setup();
+  void scene7();
+  void scene7setup();
+  void scene8();
+  void scene8setup();
+  void scene9();
+  void scene9setup();
 
   void keyPressed(int key);
   void keyReleased(int key);

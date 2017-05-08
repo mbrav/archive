@@ -70,7 +70,23 @@ void ofApp::draw() {
     scene1();
   } else if (scene == 2) {
     scene2();
+  } else if (scene == 3) {
+    scene3();
   }
+
+  // else if (scene == 4) {
+  //   scene4();
+  // } else if (scene == 5) {
+  //   scene5();
+  // } else if (scene == 6) {
+  //   scene6();
+  // } else if (scene == 7) {
+  //   scene7();
+  // } else if (scene == 8) {
+  //   scene8();
+  // } else if (scene == 9) {
+  //   scene9();
+  // }
 
   ofDrawBitmapStringHighlight(titleString, 20, ofGetHeight()-270, ofColor(40), ofColor(210));
   ofDrawBitmapStringHighlight(textString, 20, ofGetHeight()-250, ofColor(210), ofColor(40));
@@ -138,11 +154,47 @@ void ofApp::scene2() {
   ofSetColor(255, 255, 255);
 }
 
+void ofApp::scene3() {
+  titleString = "SCENE III — WTF";
+  textString = "jdl;skfjg;lsdjfgl;j";
+
+  ofBackground(cos(ofGetElapsedTimeMillis()/3400.0)*255, cos(ofGetElapsedTimeMillis()/2400.0)*255, cos(ofGetElapsedTimeMillis()/4400.0)*255, 255);
+  ofSetColor(cos(ofGetElapsedTimeMillis()/3300.0*255), cos(ofGetElapsedTimeMillis()/1400.0*255), cos(ofGetElapsedTimeMillis()/3600.0)*255, 255);
+  camera.begin();
+
+  ofEnableDepthTest();
+  // light.enable();
+  ofEnableSeparateSpecularLight();
+
+  // models[0].draw();
+
+  for (unsigned int i = 0; i < modelNum; i++) {
+
+    models[i].draw();
+
+  }
+
+  ofDisableDepthTest();
+  light.disable();
+  ofDisableLighting();
+
+  camera.end();
+
+  ofSetColor(cos(ofGetElapsedTimeMillis()/1400.0)*255, cos(ofGetElapsedTimeMillis()/3600.0)*255, cos(ofGetElapsedTimeMillis()/2600.0)*255, 255);
+}
+
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key) {
   if (key == 'f') ofToggleFullscreen();
   if (key == '1') scene = 1;
   if (key == '2') scene = 2;
+  if (key == '3') scene = 3;
+  if (key == '4') scene = 4;
+  if (key == '5') scene = 5;
+  if (key == '6') scene = 6;
+  if (key == '7') scene = 7;
+  if (key == '8') scene = 8;
+  if (key == '9') scene = 9;
 }
 
 //--------------------------------------------------------------
