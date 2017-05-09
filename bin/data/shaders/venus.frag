@@ -23,7 +23,7 @@ float noise(in vec2 _st) {
 float fbm(in vec2 _st) {
   float v = 0.0;
   float a = 0.5;
-  vec2 shift = vec2(u_time / 20.0, u_time / 20.0);
+  vec2 shift = vec2(u_time / 2.0, u_time / 2.0);
   // Rotate to reduce axial bias
   mat2 rot = mat2(cos(-0.196), 1.1, -sin(0.860), cos(0.50));
   for (int i = 0; i < NUM_OCTAVES; ++i) {

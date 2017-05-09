@@ -225,13 +225,13 @@ void ofApp::scene3() {
 
     if( i == randNum && loop % 5 == 0){
       shader.begin();
-        //we want to pass in some varrying values to animate our type / color
-        shader.setUniform1f("timeValX", ofGetElapsedTimef() * 0.1 );
-        shader.setUniform1f("timeValY", -ofGetElapsedTimef() * 0.18 );
+      //we want to pass in some varrying values to animate our type / color
+      shader.setUniform1f("timeValX", ofGetElapsedTimef() * 0.1 );
+      shader.setUniform1f("timeValY", -ofGetElapsedTimef() * 0.18 );
 
-        //we also pass in the mouse position
-        //we have to transform the coords to what the shader is expecting which is 0,0 in the center and y axis flipped.
-        shader.setUniform2f("mouse", mouseX - ofGetWidth()/2, ofGetHeight()/2-mouseY );
+      //we also pass in the mouse position
+      //we have to transform the coords to what the shader is expecting which is 0,0 in the center and y axis flipped.
+      shader.setUniform2f("mouse", mouseX - ofGetWidth()/2, ofGetHeight()/2-mouseY );
     }
 
     models[i].draw();
@@ -261,6 +261,11 @@ void ofApp::scene3() {
  //
 void ofApp::scene4() {
 
+  ofBackground(cos(ofGetElapsedTimeMillis()/3400.0)*255, cos(ofGetElapsedTimeMillis()/2400.0)*255, cos(ofGetElapsedTimeMillis()/4400.0)*255, 255);
+  ofSetColor(cos(ofGetElapsedTimeMillis()/3300.0*255), cos(ofGetElapsedTimeMillis()/1400.0*255), cos(ofGetElapsedTimeMillis()/3600.0)*255, 255);
+
+  camera.begin();
+
   if( doShader ){
     shader2.begin();
       //we want to pass in some varrying values to animate our type / color
@@ -271,14 +276,20 @@ void ofApp::scene4() {
 
   }
 
-  ofRect(0, 0, ofGetWidth(), ofGetHeight());
+  for (unsigned int i = 0; i < modelNum; i++) {
 
+    models[i].draw();
+
+  }
 
   if( doShader ){
     shader2.end();
   }
 
+  camera.end();
+
 }
+
 
 
  //  ____  ____   ___   ____ ____      _    __  __    ____ ___  _   _ _____ ____   ___  _     ____
