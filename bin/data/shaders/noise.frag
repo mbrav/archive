@@ -28,7 +28,10 @@ void main(){
 	// 	gl_FragColor.a = 0.0;
 	// }
 	if( mod(xVal, 2.0) == 0.5 && mod(yVal, 2.0) == 0.5 ){
-		gl_FragColor = vec4(cos(yVal*timeValX/20.), sin(yVal*timeValY/20.), cos(xVal*timeValX/20.), 1.0);
+		gl_FragColor = vec4(cos(yVal*timeValX/1.31), sin(yVal*timeValY/1.213), cos(xVal*timeValX/1.2341), 1.0);
+	} else {
+		gl_FragColor = vec4(cos(timeValX/40.));
+
 	}
 
 	// if( mod(xVal, 3.0) == 0.5 && mod(yVal, 3.0) == 0.5 ){

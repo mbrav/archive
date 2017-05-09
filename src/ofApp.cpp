@@ -78,17 +78,16 @@ void ofApp::update() {
 
 void ofApp::draw() {
 
-  if( doShader ){
-		shader.begin();
-			//we want to pass in some varrying values to animate our type / color
-			shader.setUniform1f("timeValX", ofGetElapsedTimef() * 0.1 );
-			shader.setUniform1f("timeValY", -ofGetElapsedTimef() * 0.18 );
-
-			//we also pass in the mouse position
-			//we have to transform the coords to what the shader is expecting which is 0,0 in the center and y axis flipped.
-			shader.setUniform2f("mouse", mouseX - ofGetWidth()/2, ofGetHeight()/2-mouseY );
-
-	}
+  // if( doShader ){
+  //   shader.begin();
+  //     //we want to pass in some varrying values to animate our type / color
+  //     shader.setUniform1f("timeValX", ofGetElapsedTimef() * 0.1 );
+  //     shader.setUniform1f("timeValY", -ofGetElapsedTimef() * 0.18 );
+  //
+  //     //we also pass in the mouse position
+  //     //we have to transform the coords to what the shader is expecting which is 0,0 in the center and y axis flipped.
+  //     shader.setUniform2f("mouse", mouseX - ofGetWidth()/2, ofGetHeight()/2-mouseY );
+  // }
 
   if (scene == 1) {
     scene1();
@@ -112,9 +111,9 @@ void ofApp::draw() {
   //   scene9();
   // }
 
-  if( doShader ){
-		shader.end();
-	}
+  // if( doShader ){
+	// 	shader.end();
+	// }
 
   // scene description
   if (showDescription) {
@@ -201,7 +200,24 @@ void ofApp::scene3() {
 
   for (unsigned int i = 0; i < modelNum; i++) {
 
+    int randNum = (int)ofRandom(i,modelNum);
+
+    if( i == randNum && loop % 5 == 0){
+      shader.begin();
+        //we want to pass in some varrying values to animate our type / color
+        shader.setUniform1f("timeValX", ofGetElapsedTimef() * 0.1 );
+        shader.setUniform1f("timeValY", -ofGetElapsedTimef() * 0.18 );
+
+        //we also pass in the mouse position
+        //we have to transform the coords to what the shader is expecting which is 0,0 in the center and y axis flipped.
+        shader.setUniform2f("mouse", mouseX - ofGetWidth()/2, ofGetHeight()/2-mouseY );
+    }
+
     models[i].draw();
+
+    if( i == randNum && loop % 5 == 0){
+      shader.end();
+    }
 
   }
 
