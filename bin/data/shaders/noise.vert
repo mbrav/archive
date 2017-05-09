@@ -44,9 +44,9 @@ void main(){
 	gl_TexCoord[0] = gl_MultiTexCoord0;
 
 	//get our current vertex position so we can modify it
-	vec4 pos = gl_ProjectionMatrix * gl_ModelViewMatrix * gl_Vertex * vec4(cos(mouse.x));
+	vec4 pos = gl_ProjectionMatrix * gl_ModelViewMatrix * gl_Vertex * vec4(cos(timeValX/10.));
 
-	//generate some noise values based on vertex position and the time value which comes in from our OF app
+	//generate some noise values based on vertex position and the time value which com/es in from our OF app
 	float noiseAmntX = noise( vec2(-timeValX + pos.x / 1000.0f, 100.0f), 20.0 );
 	float noiseAmntY = noise( vec2(timeValY + pos.y / 1000.0f, pos.x / 200.0f), 20.0 );
 

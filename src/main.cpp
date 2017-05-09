@@ -7,8 +7,8 @@ int main( ){
 	// ofSetupOpenGL(300,200, OF_WINDOW);			// <-------- setup the GL context
 
 	ofSetLogLevel(OF_LOG_VERBOSE);
-	int windowWidth = 1024;
-	int windowHeight = 600;
+	int windowWidth = 1980;
+	int windowHeight = 1080;
 
 	#ifdef TARGET_OPENGLES
     	ofGLESWindowSettings settings;

@@ -13,7 +13,7 @@ void ofModel::setPos(ofVec3f posSet) {
   initPos = posSet;
 }
 
-void ofModel::setup(string filePath) {
+void ofModel::setup(string filePath, bool setVerticeColor) {
     pos.set(0, 0, 0);
     initPos.set(0, 0, 0);
 
@@ -21,33 +21,37 @@ void ofModel::setup(string filePath) {
     mesh = model.getMesh(0);
     mesh.setMode(OF_PRIMITIVE_TRIANGLES);
 
-    ofColor color((int)ofRandom(25.0f), (int)ofRandom(25.0f), (int)ofRandom(25.0f), (int)ofRandom(25.0f));
+    // randmize vertice colors
+    if (setVerticeColor) {
+      ofColor color((int)ofRandom(25.0f), (int)ofRandom(25.0f), (int)ofRandom(25.0f), (int)ofRandom(25.0f));
 
 
-    for (int i = 0; i < mesh.getNumIndices() - 2; i += 1) {
+      for (int i = 0; i < mesh.getNumIndices() - 2; i += 1) {
 
-      // ofVec3f vert = mesh.getVertex(i);
-      // vert.x += randomPos.x;
-      // vert.y += randomPos.y;
-      // vert.z += randomPos.z;
-      //
-      // mesh.setVertex(i, vert);
+        // ofVec3f vert = mesh.getVertex(i);
+        // vert.x += randomPos.x;
+        // vert.y += randomPos.y;
+        // vert.z += randomPos.z;
+        //
+        // mesh.setVertex(i, vert);
 
-      int contrast = 100;
-      if (i % (mesh.getNumIndices()/50) == 0) {
-        // Random contrasting colors
-        float rand = ofRandom(1);
-        if (rand > 0.5){
-          color = ofColor(255 - (int)ofRandom(contrast), 255 - (int)ofRandom(contrast), 255 - (int)ofRandom(contrast), 255 - (int)ofRandom(contrast));
-        } else {
-          color = ofColor((int)ofRandom(contrast), (int)ofRandom(contrast), (int)ofRandom(contrast), (int)ofRandom(contrast));
+        int contrast = 100;
+        if (i % (mesh.getNumIndices()/50) == 0) {
+          // Random contrasting colors
+          float rand = ofRandom(1);
+          if (rand > 0.5){
+            color = ofColor(255 - (int)ofRandom(contrast), 255 - (int)ofRandom(contrast), 255 - (int)ofRandom(contrast), 255 - (int)ofRandom(contrast));
+          } else {
+            color = ofColor((int)ofRandom(contrast), (int)ofRandom(contrast), (int)ofRandom(contrast), (int)ofRandom(contrast));
+          }
+          // Random color
+          // color = ofColor((int)ofRandom(150.0f)+100, (int)ofRandom(150.0f)+100, (int)ofRandom(150.0f)+100);
+
         }
-        // Random color
-        // color = ofColor((int)ofRandom(150.0f)+100, (int)ofRandom(150.0f)+100, (int)ofRandom(150.0f)+100);
-
+        mesh.addColor(color);
       }
-      mesh.addColor(color);
     }
+
 
 };
 

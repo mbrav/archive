@@ -9,7 +9,7 @@
 
 void ofApp::setup() {
   doShader = true;
-  showDescription = true;
+  showDescription = false;
   // #ifdef TARGET_OPENGLES
 	// shader.load("shaders_gles/noise.vert","shaders_gles/noise.frag");
 	// #else
@@ -31,12 +31,12 @@ void ofApp::setup() {
   camera.setFarClip(20000);
   // camera.move(0,0,15000);
 
-  scene = 1; // set scene to one
+  scene = 3; // set scene to one
 
   for (unsigned int i = 0; i < modelNum; i++) {
 
     ofModel myModelTemp;
-    myModelTemp.setup("m" + ofToString(i%modelFiles+1) + ".stl");
+    myModelTemp.setup("m" + ofToString(i%modelFiles+1) + ".stl", false);
     myModelTemp.setPos(ofVec3f(ofRandom(-100, 100), ofRandom(-100, 100), ofRandom(-100, 100)));
     models.push_back(myModelTemp);
 
@@ -227,7 +227,7 @@ void ofApp::keyPressed(int key) {
   if (key == '8') scene = 8;
   if (key == '9') scene = 9;
   if( key == 's') doShader = !doShader;
-  if( key == 's') showDescription = !showDescription;
+  if( key == 'd') showDescription = !showDescription;
 }
 
 //--------------------------------------------------------------

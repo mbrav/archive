@@ -8,7 +8,7 @@ public:
 	ofVec3f pos;
 	ofVec3f rot;
 	void test();
-	void setup(string filePath);
+	void setup(string filePath, bool setVerticeColor);
 	void setPos(ofVec3f posSet);
 	void disolve(float speed);
 	void vDisplace();
