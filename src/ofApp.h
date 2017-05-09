@@ -46,7 +46,7 @@ public:
   // Scene1 scene1;
 
   const int modelFiles = 6; // number of file models
-  const int modelNum = 40; // number of total models to display
+  const int modelNum = 1; // number of total models to display
 
   int scene;
 
@@ -62,6 +62,7 @@ public:
 
 	ofEasyCam camera;
   ofShader shader;
+  ofShader shader2; // venus
 	bool doShader;
 
 

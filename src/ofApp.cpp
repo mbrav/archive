@@ -20,6 +20,7 @@ void ofApp::setup() {
 	// }
 	// #endif
   shader.load("shaders/noise.vert", "shaders/noise.frag");
+  shader2.load("shaders/venus.vert", "shaders/venus.frag");
 
   ofSetLogLevel(OF_LOG_VERBOSE);
   ofBackground(130);
@@ -31,7 +32,7 @@ void ofApp::setup() {
   camera.setFarClip(20000);
   // camera.move(0,0,15000);
 
-  scene = 3; // set scene to one
+  scene = 4; // set scene to one
 
   for (unsigned int i = 0; i < modelNum; i++) {
 
@@ -95,11 +96,11 @@ void ofApp::draw() {
     scene2();
   } else if (scene == 3) {
     scene3();
+  } else if (scene == 4) {
+    scene4();
   }
 
-  // else if (scene == 4) {
-  //   scene4();
-  // } else if (scene == 5) {
+  // else if (scene == 5) {
   //   scene5();
   // } else if (scene == 6) {
   //   scene6();
@@ -124,6 +125,13 @@ void ofApp::draw() {
   // ofDrawBitmapStringHighlight("SCENE I " + ofToString(ofGetFrameRate(), 2), ofGetWidth()/2-40, ofGetHeight()/2-30, ofColor(200), ofColor(50));
 
 }
+
+
+ //  ____   ____ _____ _   _ _____   _
+ // / ___| / ___| ____| \ | | ____| / |
+ // \___ \| |   |  _| |  \| |  _|   | |
+ //  ___) | |___| |___| |\  | |___  | |
+ // |____/ \____|_____|_| \_|_____| |_|
 
 void ofApp::scene1() {
   titleString = "SCENE I — The Sky";
@@ -155,6 +163,12 @@ void ofApp::scene1() {
 }
 
 
+ //  ____   ____ _____ _   _ _____   ____
+ // / ___| / ___| ____| \ | | ____| |___ \
+ // \___ \| |   |  _| |  \| |  _|     __) |
+ //  ___) | |___| |___| |\  | |___   / __/
+ // |____/ \____|_____|_| \_|_____| |_____|
+
 void ofApp::scene2() {
   titleString = "SCENE II — The Light";
   textString = "jdl;skfjg;lsdjfgl;j";
@@ -183,6 +197,13 @@ void ofApp::scene2() {
 
   ofSetColor(255, 255, 255);
 }
+
+
+ //  ____   ____ _____ _   _ _____   _____
+ // / ___| / ___| ____| \ | | ____| |___ /
+ // \___ \| |   |  _| |  \| |  _|     |_ \
+ //  ___) | |___| |___| |\  | |___   ___) |
+ // |____/ \____|_____|_| \_|_____| |____/
 
 void ofApp::scene3() {
   titleString = "SCENE III — WTF";
@@ -229,6 +250,43 @@ void ofApp::scene3() {
 
   ofSetColor(cos(ofGetElapsedTimeMillis()/1400.0)*255, cos(ofGetElapsedTimeMillis()/3600.0)*255, cos(ofGetElapsedTimeMillis()/2600.0)*255, 255);
 }
+
+
+
+ //  ____   ____ _____ _   _ _____   _  _
+ // / ___| / ___| ____| \ | | ____| | || |
+ // \___ \| |   |  _| |  \| |  _|   | || |_
+ //  ___) | |___| |___| |\  | |___  |__   _|
+ // |____/ \____|_____|_| \_|_____|    |_|
+ //
+void ofApp::scene4() {
+
+  if( doShader ){
+    shader2.begin();
+      //we want to pass in some varrying values to animate our type / color
+      shader2.setUniform1f("u_time", ofGetElapsedTimef());
+      shader2.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
+
+      // test
+
+  }
+
+  ofRect(0, 0, ofGetWidth(), ofGetHeight());
+
+
+  if( doShader ){
+    shader2.end();
+  }
+
+}
+
+
+ //  ____  ____   ___   ____ ____      _    __  __    ____ ___  _   _ _____ ____   ___  _     ____
+ // |  _ \|  _ \ / _ \ / ___|  _ \    / \  |  \/  |  / ___/ _ \| \ | |_   _|  _ \ / _ \| |   / ___|
+ // | |_) | |_) | | | | |  _| |_) |  / _ \ | |\/| | | |  | | | |  \| | | | | |_) | | | | |   \___ \
+ // |  __/|  _ <| |_| | |_| |  _ <  / ___ \| |  | | | |__| |_| | |\  | | | |  _ <| |_| | |___ ___) |
+ // |_|   |_| \_\\___/ \____|_| \_\/_/   \_\_|  |_|  \____\___/|_| \_| |_| |_| \_\\___/|_____|____/
+ //
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key) {
