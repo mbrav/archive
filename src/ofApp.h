@@ -45,29 +45,26 @@ public:
 
   // Scene1 scene1;
 
+  ofLight light;
+	ofEasyCam camera;
+
   const int modelFiles = 6; // number of file models
   const int modelNum = 40; // number of total models to display
+  vector<ofModel> models;
 
-  int scene;
+  int scene; // number of the scene
+  // loop counter
+  unsigned int loop;
 
   string titleString;
   string textString;
   bool showDescription;
 
-  vector<ofModel> models;
-
-  vector<ofPlanePrimitive> plane;
-
-  ofLight light;
-
-	ofEasyCam camera;
   ofShader shader;
   ofShader shader2; // venus
-	bool doShader;
+  bool doShader;
 
 
-  // loop counter
-  unsigned int loop;
 
 };
 

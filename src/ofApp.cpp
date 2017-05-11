@@ -251,8 +251,6 @@ void ofApp::scene3() {
   ofSetColor(cos(ofGetElapsedTimeMillis()/1400.0)*255, cos(ofGetElapsedTimeMillis()/3600.0)*255, cos(ofGetElapsedTimeMillis()/2600.0)*255, 255);
 }
 
-
-
  //  ____   ____ _____ _   _ _____   _  _
  // / ___| / ___| ____| \ | | ____| | || |
  // \___ \| |   |  _| |  \| |  _|   | || |_
