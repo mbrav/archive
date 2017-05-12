@@ -13,22 +13,22 @@ May 2017
 - [ ] Make a project title screen, name, date, etc.
 - [ ] Polish Attract Mode
 - [ ] Finish scenes
-  - [ ] Scene 1
-  - [ ] Scene 2
-  - [ ] Scene 3
-  - [ ] Scene 4
+  - [x] Scene 1
+  - [x] Scene 2
+  - [x] Scene 3
+  - [x] Scene 4
   - [ ] Scene 5
   - [ ] Scene 6
   - [ ] Scene 7
   - [ ] Scene 8
   - [ ] Scene 9
 - [ ] Music Setup
-- [ ] Bug Fixing 
+- [ ] Bug Fixing
 
 #### Visual Stuff and Misc
 - [ ] Scene transitions
 - [ ] Add new forms of visuals
 - [ ] Add more 3D models
-- [ ] Decrease poly count of 3D models if necessary
+  - [ ] Decrease poly count of 3D models if necessary
 
 #### Other Stuff

@@ -77,6 +77,9 @@ public:
 
   ofShader shader;
   ofShader shader2; // venus
+  ofShader shader3; // totality
+  ofShader shader4; // world-of-waves
+  ofShader shader5; // tearlines
   bool doShader;
 };
 

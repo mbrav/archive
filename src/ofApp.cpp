@@ -21,6 +21,9 @@ void ofApp::setup() {
   // #endif
   shader.load("shaders/noise.vert", "shaders/noise.frag");
   shader2.load("shaders/venus.vert", "shaders/venus.frag");
+  shader3.load("shaders/venus2.vert", "shaders/venus2.frag");
+  shader4.load("shaders/world-of-waves.vert", "shaders/world-of-waves.frag");
+  shader5.load("shaders/tearlines.vert", "shaders/tearlines.frag");
 
   // ofSetLogLevel(OF_LOG_VERBOSE);
   ofBackground(130);
@@ -48,15 +51,13 @@ void ofApp::setup() {
   // draw models in a grid
   for (unsigned int i = 0; i < (int)sqrt(modelNum); i++) {
     // acount the remainer if the number is not a sqaure root
-    for (unsigned int j = 0;
-         j < (int)sqrt(modelNum); j++) {
+    for (unsigned int j = 0; j < (int)sqrt(modelNum); j++) {
       models[i * j].setPos(ofVec3f(i * 50, j * 50, 0));
       models[i * j].resetInitPos();
 
       cout << i << j << endl;
     }
   }
-
 }
 
 //                  _       _
@@ -68,7 +69,7 @@ void ofApp::setup() {
 
 void ofApp::update() {
 
-PROFILE_BEGIN("Update");
+  PROFILE_BEGIN("Update");
   // if a scene changed, run the setup for the new scene
   if (scene == 1) {
     if (prevScene != scene) {
@@ -172,23 +173,23 @@ void ofApp::draw() {
 
   PROFILE_BEGIN("Draw");
 
-  if (scene == 1) {;
+  if (scene == 1) {
     scene1();
-  } else if (scene == 2) {;
+  } else if (scene == 2) {
     scene2();
-  } else if (scene == 3) {;
+  } else if (scene == 3) {
     scene3();
-  } else if (scene == 4) {;
+  } else if (scene == 4) {
     scene4();
-  } else if (scene == 5) {;
+  } else if (scene == 5) {
     scene5();
-  } else if (scene == 6) {;
+  } else if (scene == 6) {
     scene6();
-  } else if (scene == 7) {;
+  } else if (scene == 7) {
     scene7();
-  } else if (scene == 8) {;
+  } else if (scene == 8) {
     scene8();
-  } else if (scene == 9) {;
+  } else if (scene == 9) {
     scene9();
   }
 
@@ -233,12 +234,11 @@ void ofApp::scene1update() {
   for (unsigned int i = 0; i < modelNum; i++) {
 
     models[i].setPos(
-        ofVec3f(models[i].pos.x, models[i].pos.y, cos(ofGetElapsedTimeMillis()/(1023.25 + i * 12.235)) * 5.0));
-
+        ofVec3f(models[i].pos.x, models[i].pos.y,
+                cos(ofGetElapsedTimeMillis() / (1023.25 + i * 12.235)) * 5.0));
   }
 
   PROFILE_END();
-
 }
 
 void ofApp::scene1() {
@@ -327,7 +327,19 @@ void ofApp::scene2() {
   // light.enable();
   ofEnableSeparateSpecularLight();
 
-  // models[0].draw();
+  if (doShader) {
+    shader5.begin();
+    // we want to pass in some varrying values to animate our type / color
+    shader5.setUniform1f("u_time", ofGetElapsedTimef());
+    shader5.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
+  }
+
+  ofRect(0, 0, ofGetWidth(), ofGetHeight());
+
+  if (doShader) {
+    shader5.end();
+  }
+
 
   for (unsigned int i = 0; i < modelNum; i++) {
 
@@ -446,17 +458,16 @@ void ofApp::scene4() {
 
   for (unsigned int i = 0; i < modelNum; i++) {
     if (doShader) {
-      shader2.begin();
+      shader4.begin();
       // we want to pass in some varrying values to animate our type / color
-      shader2.setUniform1f("u_time", ofGetElapsedTimef());
-      shader2.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
-
+      shader4.setUniform1f("u_time", ofGetElapsedTimef());
+      shader4.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
     }
 
     models[i].draw();
 
     if (doShader) {
-      shader2.end();
+      shader4.end();
     }
   }
 
@@ -464,46 +475,31 @@ void ofApp::scene4() {
   PROFILE_END();
 }
 
-void ofApp::scene5setup() {
-  PROFILE_BEGIN("Scene 5 setup()");
-  PROFILE_END();
-}
+void ofApp::scene5setup() {}
 
 void ofApp::scene5update() {}
 
 void ofApp::scene5() {}
 
-void ofApp::scene6setup() {
-  PROFILE_BEGIN("Scene 6 setup()");
-  PROFILE_END();
-}
+void ofApp::scene6setup() {}
 
 void ofApp::scene6update() {}
 
 void ofApp::scene6() {}
 
-void ofApp::scene7setup() {
-  PROFILE_BEGIN("Scene 7 setup()");
-  PROFILE_END();
-}
+void ofApp::scene7setup() {}
 
 void ofApp::scene7update() {}
 
 void ofApp::scene7() {}
 
-void ofApp::scene8setup() {
-  PROFILE_BEGIN("Scene 8 setup()");
-  PROFILE_END();
-}
+void ofApp::scene8setup() {}
 
 void ofApp::scene8update() {}
 
 void ofApp::scene8() {}
 
-void ofApp::scene9setup() {
-  PROFILE_BEGIN("Scene 9 setup()");
-  PROFILE_END();
-}
+void ofApp::scene9setup() {}
 
 void ofApp::scene9update() {}
 
