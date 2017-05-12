@@ -5,8 +5,12 @@ ofModel::ofModel() {}
 ofModel::~ofModel() {}
 
 void ofModel::setPos(ofVec3f posSet) {
-  pos = posSet;
   initPos = posSet;
+  pos = posSet;
+}
+
+void ofModel::resetInitPos() {
+  initPos = pos;
 }
 
 void ofModel::setup(string filePath) {
@@ -41,7 +45,6 @@ void ofModel::colorVertices() {
         color = ofColor(
             255 - (int)ofRandom(contrast), 255 - (int)ofRandom(contrast),
             255 - (int)ofRandom(contrast), 255 - (int)ofRandom(contrast));
-      } else {
         color = ofColor((int)ofRandom(contrast), (int)ofRandom(contrast),
                         (int)ofRandom(contrast), (int)ofRandom(contrast));
       }
@@ -75,15 +78,14 @@ void ofModel::verticesDisplace() {
 }
 
 void ofModel::draw() {
-
   ofPushMatrix();
-  ofTranslate(pos.x, pos.y, pos.z);
-  ofRotateX(rot.x);
-  ofRotateY(rot.y);
-  ofRotateZ(rot.z);
-  mesh.draw(OF_MESH_FILL);
+    ofTranslate(pos.x, pos.y, pos.z);
+    ofRotateX(rot.x);
+    ofRotateY(rot.y);
+    ofRotateZ(rot.z);
+    mesh.draw(OF_MESH_FILL);
+    // mesh.draw(OF_MESH_POINTS);
   ofPopMatrix();
-  // mesh.draw(OF_MESH_POINTS);
 }
 
 // OLD STUFF

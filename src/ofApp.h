@@ -13,22 +13,31 @@ public:
   void draw();
 
   void scene1();
+  void scene1update();
   void scene1setup();
   void scene2();
+  void scene2update();
   void scene2setup();
   void scene3();
+  void scene3update();
   void scene3setup();
   void scene4();
+  void scene4update();
   void scene4setup();
   void scene5();
+  void scene5update();
   void scene5setup();
   void scene6();
+  void scene6update();
   void scene6setup();
   void scene7();
+  void scene7update();
   void scene7setup();
   void scene8();
+  void scene8update();
   void scene8setup();
   void scene9();
+  void scene9update();
   void scene9setup();
 
   void keyPressed(int key);

@@ -22,7 +22,7 @@ void ofApp::setup() {
   shader.load("shaders/noise.vert", "shaders/noise.frag");
   shader2.load("shaders/venus.vert", "shaders/venus.frag");
 
-  ofSetLogLevel(OF_LOG_VERBOSE);
+  // ofSetLogLevel(OF_LOG_VERBOSE);
   ofBackground(130);
 
   ofDisableArbTex(); // we need GL_TEXTURE_2D for our model coords.
@@ -32,18 +32,31 @@ void ofApp::setup() {
   camera.setFarClip(20000);
   // camera.move(0,0,15000);
 
-  scene = 4; // set scene to one
+  scene = 1; // set scene to one
   prevScene = 0;
 
   for (unsigned int i = 0; i < modelNum; i++) {
 
     ofModel myModelTemp;
     myModelTemp.setup("m" + ofToString(i % modelFiles + 1) + ".stl");
-    // myModelTemp.colorVertices();
+    myModelTemp.colorVertices();
     myModelTemp.setPos(
         ofVec3f(ofRandom(-100, 100), ofRandom(-100, 100), ofRandom(-100, 100)));
     models.push_back(myModelTemp);
   }
+
+  // draw models in a grid
+  for (unsigned int i = 0; i < (int)sqrt(modelNum); i++) {
+    // acount the remainer if the number is not a sqaure root
+    for (unsigned int j = 0;
+         j < (int)sqrt(modelNum); j++) {
+      models[i * j].setPos(ofVec3f(i * 50, j * 50, 0));
+      models[i * j].resetInitPos();
+
+      cout << i << j << endl;
+    }
+  }
+
 }
 
 //                  _       _
@@ -58,65 +71,79 @@ void ofApp::update() {
   // if a scene changed, run the setup for the new scene
   if (scene == 1) {
     if (prevScene != scene) {
+      cout << "scene 1: SETUP!" << endl;
       scene1setup();
       prevScene = scene;
+    } else {
+      scene1update();
     }
   } else if (scene == 2) {
     if (prevScene != scene) {
+      cout << "scene 2: SETUP!" << endl;
       scene2setup();
       prevScene = scene;
+    } else {
+      scene2update();
     }
   } else if (scene == 3) {
     if (prevScene != scene) {
+      cout << "scene 3: SETUP!" << endl;
       scene3setup();
       prevScene = scene;
+    } else {
+      scene3update();
     }
   } else if (scene == 4) {
     if (prevScene != scene) {
+      cout << "scene 4: SETUP!" << endl;
       scene4setup();
       prevScene = scene;
+    } else {
+      scene4update();
     }
   } else if (scene == 5) {
     if (prevScene != scene) {
+      cout << "scene 5: SETUP!" << endl;
       scene5setup();
       prevScene = scene;
+    } else {
+      scene5update();
     }
   } else if (scene == 6) {
     if (prevScene != scene) {
-      scene6setup();
+      cout << "scene 6: SETUP!" << endl;
+      scene8setup();
       prevScene = scene;
+    } else {
+      scene8update();
     }
   } else if (scene == 7) {
     if (prevScene != scene) {
+      cout << "scene 7: SETUP!" << endl;
       scene7setup();
       prevScene = scene;
+    } else {
+      scene7update();
     }
   } else if (scene == 8) {
     if (prevScene != scene) {
+      cout << "scene 8: SETUP!" << endl;
       scene8setup();
       prevScene = scene;
+    } else {
+      scene8update();
     }
   } else if (scene == 9) {
     if (prevScene != scene) {
+      cout << "scene 9: SETUP!" << endl;
       scene9setup();
       prevScene = scene;
+    } else {
+      scene9update();
     }
   }
 
-  for (unsigned int i = 0; i < modelNum; i++) {
-    models[i].rot.x += 0.05 * i;
-    models[i].rot.y += 0.08 * i;
-    models[i].rot.z += 0.07 * i;
-
-    models[i].pos.x =
-        models[i].initPos.x * cos(ofGetElapsedTimeMillis() / 1000.1);
-    models[i].pos.y =
-        models[i].initPos.y * sin(ofGetElapsedTimeMillis() / 1000.1);
-    models[i].pos.z =
-        models[i].initPos.z * sin(ofGetElapsedTimeMillis() / 1000.1) -
-        cos(ofGetElapsedTimeMillis() / 1000.1);
-  }
-
+  // count loop
   loop++;
 }
 
@@ -141,22 +168,31 @@ void ofApp::draw() {
   // }
 
   if (scene == 1) {
+    cout << "scene 1: loop n" << loop << endl;
     scene1();
   } else if (scene == 2) {
+    cout << "scene 2: loop n" << loop << endl;
     scene2();
   } else if (scene == 3) {
+    cout << "scene 3: loop n" << loop << endl;
     scene3();
   } else if (scene == 4) {
+    cout << "scene 4: loop n" << loop << endl;
     scene4();
   } else if (scene == 5) {
+    cout << "scene 5: loop n" << loop << endl;
     scene5();
   } else if (scene == 6) {
+    cout << "scene 6: loop n" << loop << endl;
     scene6();
   } else if (scene == 7) {
+    cout << "scene 7: loop n" << loop << endl;
     scene7();
   } else if (scene == 8) {
+    cout << "scene 8: loop n" << loop << endl;
     scene8();
   } else if (scene == 9) {
+    cout << "scene 9: loop n" << loop << endl;
     scene9();
   }
 
@@ -183,13 +219,19 @@ void ofApp::draw() {
 // |____/ \____|_____|_| \_|_____| |_|
 
 void ofApp::scene1setup() {
-  cout << "scene 1: setup" << endl;
+
+  // draw models in a grid
+}
+
+void ofApp::scene1update() {
 
   for (unsigned int i = 0; i < modelNum; i++) {
-    for (unsigned int j = 0; j < modelNum; j++) {
-      models[i*j].setPos(ofVec3f(ofRandom(-100, 100), ofRandom(-100, 100), ofRandom(-100, 100)));
-    }
+
+    models[i].setPos(
+        ofVec3f(models[i].pos.x, models[i].pos.y, cos(ofGetElapsedTimeMillis()/(1023.25 + i * 12.235)) * 5.0));
+
   }
+
 }
 
 void ofApp::scene1() {
@@ -204,7 +246,8 @@ void ofApp::scene1() {
       "telescopes. When we look at the center of our galaxy, we see light \n "
       "that is 27,000 years old. When we observe Andromeda, our neighboring \n "
       "galaxy, we see light that is 2.5 million years old. Our night sky is \n "
-      "filled with the cosmic past, and the gigabytes of data collected by all \n "
+      "filled with the cosmic past, and the gigabytes of data collected by all "
+      "\n "
       "kinds of telescopes, have yet to be 'excavated' and reveal an alien \n "
       "civilization that may be lurking among the data. The sky, can be \n "
       "considered a opaque sediment that you can see through, and observe \n "
@@ -219,8 +262,6 @@ void ofApp::scene1() {
   ofEnableDepthTest();
   // light.enable();
   ofEnableSeparateSpecularLight();
-
-  // models[0].draw();
 
   for (unsigned int i = 0; i < modelNum; i++) {
 
@@ -243,6 +284,22 @@ void ofApp::scene1() {
 // |____/ \____|_____|_| \_|_____| |_____|
 
 void ofApp::scene2setup() {}
+
+void ofApp::scene2update() {
+  for (unsigned int i = 0; i < modelNum; i++) {
+    models[i].rot.x += 0.05 * i;
+    models[i].rot.y += 0.08 * i;
+    models[i].rot.z += 0.07 * i;
+
+    models[i].pos.x =
+        models[i].initPos.x * cos(ofGetElapsedTimeMillis() / 1000.1);
+    models[i].pos.y =
+        models[i].initPos.y * sin(ofGetElapsedTimeMillis() / 1000.1);
+    models[i].pos.z =
+        models[i].initPos.z * sin(ofGetElapsedTimeMillis() / 1000.1) -
+        cos(ofGetElapsedTimeMillis() / 1000.1);
+  }
+}
 
 void ofApp::scene2() {
   titleString = "SCENE II — The Light";
@@ -279,6 +336,8 @@ void ofApp::scene2() {
 // |____/ \____|_____|_| \_|_____| |____/
 
 void ofApp::scene3setup() {}
+
+void ofApp::scene3update() {}
 
 void ofApp::scene3() {
   titleString = "SCENE III — WTF";
@@ -341,6 +400,8 @@ void ofApp::scene3() {
 
 void ofApp::scene4setup() {}
 
+void ofApp::scene4update() {}
+
 void ofApp::scene4() {
 
   ofBackground(cos(ofGetElapsedTimeMillis() / 3400.0) * 255,
@@ -375,21 +436,31 @@ void ofApp::scene4() {
 
 void ofApp::scene5setup() {}
 
+void ofApp::scene5update() {}
+
 void ofApp::scene5() {}
 
 void ofApp::scene6setup() {}
+
+void ofApp::scene6update() {}
 
 void ofApp::scene6() {}
 
 void ofApp::scene7setup() {}
 
+void ofApp::scene7update() {}
+
 void ofApp::scene7() {}
 
 void ofApp::scene8setup() {}
 
+void ofApp::scene8update() {}
+
 void ofApp::scene8() {}
 
 void ofApp::scene9setup() {}
+
+void ofApp::scene9update() {}
 
 void ofApp::scene9() {}
 

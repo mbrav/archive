@@ -7,13 +7,13 @@ public:
   ofVec3f initPos;
   ofVec3f pos;
   ofVec3f rot;
-  void test();
   void setup(string filePath);
+	void draw();
   void setPos(ofVec3f posSet);
+  void resetInitPos();
   void disolve(float speed);
   void colorVertices();
   void verticesDisplace();
-  void draw();
 
 private:
   ofxAssimpModelLoader model;

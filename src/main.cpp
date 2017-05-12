@@ -8,8 +8,8 @@ int main() {
   // context
 
   ofSetLogLevel(OF_LOG_VERBOSE);
-  int windowWidth = 1980;
-  int windowHeight = 1080;
+  int windowWidth = 1280;
+  int windowHeight = 720;
 
 #ifdef TARGET_OPENGLES
   ofGLESWindowSettings settings;
