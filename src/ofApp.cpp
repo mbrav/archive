@@ -184,26 +184,32 @@ void ofApp::draw() {
 
 void ofApp::scene1setup() {
   cout << "scene 1: setup" << endl;
+
+  for (unsigned int i = 0; i < modelNum; i++) {
+    for (unsigned int j = 0; j < modelNum; j++) {
+      models[i*j].setPos(ofVec3f(ofRandom(-100, 100), ofRandom(-100, 100), ofRandom(-100, 100)));
+    }
+  }
 }
 
 void ofApp::scene1() {
   titleString = "SCENE I — The Sky";
   textString =
-      " When we take a glimpse into the night sky, \n most of us rarely "
-      "realize that \n  we are looking at history. \n Whatever we see in the "
-      "night sky, is a collection of photons that \n traveled for thousands "
-      "and millions of years from their point of origin. \n The photons coming "
-      "from Alpha Centauri for example, which is our \n closest neighboring "
-      "stellar system, \n is already 4.3 years old by the time it reaches our "
-      "telescopes. \n When we look at the center of our galaxy, we see light "
-      "that is 27,000 years old. \n When we observe Andromeda, our neighboring "
-      "galaxy, we see light that is 2.5 million years old. \n Our night sky is "
-      "filled with the cosmic past, and the gigabytes of data collected by all "
-      "kinds of telescopes, \n have yet to be 'excavated' and reveal an alien "
-      "civilization that may be lurking among the data. \n The sky, can be "
-      "considered a opaque sediment that you can see through, and \n  observe "
-      "the timeline of the universe's history. \n Just by looking at the sky, "
-      "we become 'observer archeologists' \n  who are engaged in an act of "
+      " When we take a glimpse into the night sky, most of us rarely \n "
+      "realize that we are looking at history. Whatever we see in the \n "
+      "night sky, is a collection of photons that traveled for thousands \n "
+      "and millions of years from their point of origin. The photons coming \n "
+      "from Alpha Centauri for example, which is our closest neighboring \n "
+      "stellar system, is already 4.3 years old by the time it reaches our \n "
+      "telescopes. When we look at the center of our galaxy, we see light \n "
+      "that is 27,000 years old. When we observe Andromeda, our neighboring \n "
+      "galaxy, we see light that is 2.5 million years old. Our night sky is \n "
+      "filled with the cosmic past, and the gigabytes of data collected by all \n "
+      "kinds of telescopes, have yet to be 'excavated' and reveal an alien \n "
+      "civilization that may be lurking among the data. The sky, can be \n "
+      "considered a opaque sediment that you can see through, and observe \n "
+      "the timeline of the universe's history. Just by looking at the sky, \n "
+      "we become 'observer archeologists' who are engaged in an act of \n "
       "excavating the past.";
 
   ofBackground(0, 0, 0, 255);
