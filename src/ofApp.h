@@ -52,7 +52,9 @@ public:
   const int modelNum = 40; // number of total models to display
   vector<ofModel> models;
 
+  // scene control
   int scene; // number of the scene
+  int prevScene; // number of the scene
   // loop counter
   unsigned int loop;
 

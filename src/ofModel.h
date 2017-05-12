@@ -8,10 +8,11 @@ public:
 	ofVec3f pos;
 	ofVec3f rot;
 	void test();
-	void setup(string filePath, bool setVerticeColor);
+	void setup(string filePath);
 	void setPos(ofVec3f posSet);
 	void disolve(float speed);
-	void vDisplace();
+	void colorVertices();
+	void verticesDisplace();
 	void draw();
 private:
 	ofxAssimpModelLoader model;

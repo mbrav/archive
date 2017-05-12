@@ -33,11 +33,13 @@ void ofApp::setup() {
   // camera.move(0,0,15000);
 
   scene = 4; // set scene to one
+  prevScene=0;
 
   for (unsigned int i = 0; i < modelNum; i++) {
 
     ofModel myModelTemp;
-    myModelTemp.setup("m" + ofToString(i%modelFiles+1) + ".stl", false);
+    myModelTemp.setup("m" + ofToString(i%modelFiles+1) + ".stl");
+    // myModelTemp.colorVertices();
     myModelTemp.setPos(ofVec3f(ofRandom(-100, 100), ofRandom(-100, 100), ofRandom(-100, 100)));
     models.push_back(myModelTemp);
 
@@ -53,11 +55,6 @@ void ofApp::setup() {
  //       |_|
 
 void ofApp::update() {
-
-  // int ran = (int)ofRandom(0, modelNum);
-  // models[ran].disolve(0.01);
-  // models[ran].vDisplace();
-
   for (unsigned int i = 0; i < modelNum; i++) {
     models[i].rot.x += 0.05*i;
     models[i].rot.y += 0.08*i;
@@ -91,26 +88,69 @@ void ofApp::draw() {
   // }
 
   if (scene == 1) {
-    scene1();
+    if (prevScene != scene) {
+      scene1setup();
+      prevScene = scene;
+    } else {
+      scene1();
+    }
   } else if (scene == 2) {
-    scene2();
+    if (prevScene != scene) {
+      scene2setup();
+      prevScene = scene;
+    } else {
+      scene2();
+    }
   } else if (scene == 3) {
-    scene3();
+    if (prevScene != scene) {
+      scene3setup();
+      prevScene = scene;
+    } else {
+      scene3();
+    }
   } else if (scene == 4) {
-    scene4();
+    if (prevScene != scene) {
+      scene4setup();
+      prevScene = scene;
+    } else {
+      scene4();
+    }
+  } else if (scene == 5) {
+    if (prevScene != scene) {
+      scene5setup();
+      prevScene = scene;
+    } else {
+      scene5();
+    }
+  } else if (scene == 6) {
+    if (prevScene != scene) {
+      scene6setup();
+      prevScene = scene;
+    } else {
+      scene6();
+    }
+  } else if (scene == 7) {
+    if (prevScene != scene) {
+      scene7setup();
+      prevScene = scene;
+    } else {
+      scene7();
+    }
+  } else if (scene == 8) {
+    if (prevScene != scene) {
+      scene8setup();
+      prevScene = scene;
+    } else {
+      scene8();
+    }
+  } else if (scene == 9) {
+    if (prevScene != scene) {
+      scene9setup();
+      prevScene = scene;
+    } else {
+      scene9();
+    }
   }
-
-  // else if (scene == 5) {
-  //   scene5();
-  // } else if (scene == 6) {
-  //   scene6();
-  // } else if (scene == 7) {
-  //   scene7();
-  // } else if (scene == 8) {
-  //   scene8();
-  // } else if (scene == 9) {
-  //   scene9();
-  // }
 
   // if( doShader ){
 	// 	shader.end();
@@ -132,6 +172,10 @@ void ofApp::draw() {
  // \___ \| |   |  _| |  \| |  _|   | |
  //  ___) | |___| |___| |\  | |___  | |
  // |____/ \____|_____|_| \_|_____| |_|
+
+void ofApp::scene1setup() {
+
+}
 
 void ofApp::scene1() {
   titleString = "SCENE I — The Sky";
@@ -169,6 +213,10 @@ void ofApp::scene1() {
  //  ___) | |___| |___| |\  | |___   / __/
  // |____/ \____|_____|_| \_|_____| |_____|
 
+void ofApp::scene2setup() {
+
+}
+
 void ofApp::scene2() {
   titleString = "SCENE II — The Light";
   textString = "jdl;skfjg;lsdjfgl;j";
@@ -204,6 +252,10 @@ void ofApp::scene2() {
  // \___ \| |   |  _| |  \| |  _|     |_ \
  //  ___) | |___| |___| |\  | |___   ___) |
  // |____/ \____|_____|_| \_|_____| |____/
+
+void ofApp::scene3setup() {
+
+}
 
 void ofApp::scene3() {
   titleString = "SCENE III — WTF";
@@ -256,7 +308,11 @@ void ofApp::scene3() {
  // \___ \| |   |  _| |  \| |  _|   | || |_
  //  ___) | |___| |___| |\  | |___  |__   _|
  // |____/ \____|_____|_| \_|_____|    |_|
- //
+
+void ofApp::scene4setup() {
+
+}
+
 void ofApp::scene4() {
 
   ofBackground(cos(ofGetElapsedTimeMillis()/3400.0)*255, cos(ofGetElapsedTimeMillis()/2400.0)*255, cos(ofGetElapsedTimeMillis()/4400.0)*255, 255);
@@ -287,6 +343,37 @@ void ofApp::scene4() {
   camera.end();
 
 }
+
+void ofApp::scene5setup() {
+}
+
+void ofApp::scene5() {
+}
+
+void ofApp::scene6setup() {
+}
+
+void ofApp::scene6() {
+}
+
+void ofApp::scene7setup() {
+}
+
+void ofApp::scene7() {
+}
+
+void ofApp::scene8setup() {
+}
+
+void ofApp::scene8() {
+}
+
+void ofApp::scene9setup() {
+}
+
+void ofApp::scene9() {
+}
+
 
 
 
