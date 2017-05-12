@@ -2,7 +2,7 @@
 
 uniform float timeValX = 1.0;
 uniform float timeValY = 1.0;
-uniform vec2 mouse;
+uniform vec2 u_mouse;
 
 // generate a random value from four points
 vec4 rand(vec2 A, vec2 B, vec2 C, vec2 D) {

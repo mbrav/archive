@@ -1,7 +1,7 @@
 #include "ofModel.h"
 
 // debug profiler
-// #define PROFILER_DISABLED
+#define PROFILER_DISABLED
 #include "ofxProfiler.h"
 
 ofModel::ofModel() {}
@@ -60,6 +60,13 @@ void ofModel::colorVertices() {
     mesh.addColor(color);
   }
   PROFILE_END();
+}
+
+void ofModel::colorVertices(ofColor color) {
+  cout << color << endl;
+  for (int i = 0; i < mesh.getNumIndices(); i += 1) {
+    mesh.addColor(ofColor(color));
+  }
 }
 
 void ofModel::disolve(float speed) {

@@ -2,6 +2,7 @@
 
 uniform vec2 u_resolution = vec2(1.0, 1.0);
 uniform float u_time = 1.0;
+uniform vec2 u_mouse;
 
 void main() {
   vec2 st =

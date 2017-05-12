@@ -2,6 +2,7 @@
 
 uniform float timeValX = 1.0;
 uniform float timeValY = 1.0;
+uniform vec2 u_mouse;
 
 void main() {
   // this is the fragment shader

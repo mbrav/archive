@@ -6,7 +6,7 @@
 #include "ofxAssimpModelLoader.h"
 
 // debug profiler
-// #define PROFILER_DISABLED
+#define PROFILER_DISABLED
 #include "ofxProfiler.h"
 
 class ofApp : public ofBaseApp {
@@ -80,6 +80,8 @@ public:
   ofShader shader3; // totality
   ofShader shader4; // world-of-waves
   ofShader shader5; // tearlines
+  // Star Nest BY Pablo RomÃ¡n Andrioli https://www.shadertoy.com/view/XlfGRj
+  ofShader shader6;
   bool doShader;
 };
 

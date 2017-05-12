@@ -13,6 +13,7 @@ public:
   void resetInitPos();
   void disolve(float speed);
   void colorVertices();
+  void colorVertices(ofColor color);
   void verticesDisplace();
 
 private:

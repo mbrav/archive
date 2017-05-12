@@ -24,6 +24,7 @@ void ofApp::setup() {
   shader3.load("shaders/venus2.vert", "shaders/venus2.frag");
   shader4.load("shaders/world-of-waves.vert", "shaders/world-of-waves.frag");
   shader5.load("shaders/tearlines.vert", "shaders/tearlines.frag");
+  shader6.load("shaders/star-nest.vert", "shaders/star-nest.frag");
 
   // ofSetLogLevel(OF_LOG_VERBOSE);
   ofBackground(130);
@@ -42,7 +43,7 @@ void ofApp::setup() {
 
     ofModel myModelTemp;
     myModelTemp.setup("m" + ofToString(i % modelFiles + 1) + ".stl");
-    myModelTemp.colorVertices();
+    myModelTemp.colorVertices(ofColor(255));
     myModelTemp.setPos(
         ofVec3f(ofRandom(-100, 100), ofRandom(-100, 100), ofRandom(-100, 100)));
     models.push_back(myModelTemp);
@@ -294,7 +295,38 @@ void ofApp::scene1() {
 // |____/ \____|_____|_| \_|_____| |_____|
 
 void ofApp::scene2setup() {
+
+
   PROFILE_BEGIN("Scene 2 setup()");
+  titleString = "SCENE I — The Sky";
+  textString =
+      " When we take a glimpse into the night sky, most of us rarely \n "
+      "realize that we are looking at history. Whatever we see in the \n "
+      "night sky, is a collection of photons that traveled for thousands \n "
+      "and millions of years from their point of origin. The photons coming \n "
+      "from Alpha Centauri for example, which is our closest neighboring \n "
+      "stellar system, is already 4.3 years old by the time it reaches our \n "
+      "telescopes. When we look at the center of our galaxy, we see light \n "
+      "that is 27,000 years old. When we observe Andromeda, our neighboring \n "
+      "galaxy, we see light that is 2.5 million years old. Our night sky is \n "
+      "filled with the cosmic past, and the gigabytes of data collected by all "
+      "\n "
+      "kinds of telescopes, have yet to be 'excavated' and reveal an alien \n "
+      "civilization that may be lurking among the data. The sky, can be \n "
+      "considered a opaque sediment that you can see through, and observe \n "
+      "the timeline of the universe's history. Just by looking at the sky, \n "
+      "we become 'observer archeologists' who are engaged in an act of \n "
+      "excavating the past.";
+  for (unsigned int i = 0; i < modelNum; i++) {
+
+    models[i].colorVertices(ofColor(1.0, 1.0, 1.0, 1.0));
+  }
+  ofBackground(255, 255, 255, 255);
+  ofSetColor(20, 20, 20, 255);
+
+  ofEnableDepthTest();
+  // light.enable();
+  ofEnableSeparateSpecularLight();
   PROFILE_END();
 }
 
@@ -319,27 +351,21 @@ void ofApp::scene2() {
   titleString = "SCENE II — The Light";
   textString = "jdl;skfjg;lsdjfgl;j";
 
-  ofBackground(255, 255, 255, 255);
-  ofSetColor(20, 20, 20, 255);
-  camera.begin();
-
-  ofEnableDepthTest();
-  // light.enable();
-  ofEnableSeparateSpecularLight();
 
   if (doShader) {
-    shader5.begin();
+    shader6.begin();
     // we want to pass in some varrying values to animate our type / color
-    shader5.setUniform1f("u_time", ofGetElapsedTimef());
-    shader5.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
+    shader6.setUniform1f("u_time", ofGetElapsedTimef());
+    shader6.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
   }
 
   ofRect(0, 0, ofGetWidth(), ofGetHeight());
 
   if (doShader) {
-    shader5.end();
+    shader6.end();
   }
 
+  camera.begin();
 
   for (unsigned int i = 0; i < modelNum; i++) {
 
