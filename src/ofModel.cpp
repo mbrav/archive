@@ -1,12 +1,8 @@
 #include "ofModel.h"
 
-ofModel::ofModel() {
+ofModel::ofModel() {}
 
-}
-
-ofModel::~ofModel() {
-
-}
+ofModel::~ofModel() {}
 
 void ofModel::setPos(ofVec3f posSet) {
   pos = posSet;
@@ -14,21 +10,19 @@ void ofModel::setPos(ofVec3f posSet) {
 }
 
 void ofModel::setup(string filePath) {
-    pos.set(0, 0, 0);
-    initPos.set(0, 0, 0);
+  pos.set(0, 0, 0);
+  initPos.set(0, 0, 0);
 
-    model.loadModel(filePath, false);
-    mesh = model.getMesh(0);
-    mesh.setMode(OF_PRIMITIVE_TRIANGLES);
+  model.loadModel(filePath, false);
+  mesh = model.getMesh(0);
+  mesh.setMode(OF_PRIMITIVE_TRIANGLES);
 
-    // randmize vertice colors
-
-
+  // randmize vertice colors
 };
 
 void ofModel::colorVertices() {
-  ofColor color((int)ofRandom(25.0f), (int)ofRandom(25.0f), (int)ofRandom(25.0f), (int)ofRandom(25.0f));
-
+  ofColor color((int)ofRandom(25.0f), (int)ofRandom(25.0f),
+                (int)ofRandom(25.0f), (int)ofRandom(25.0f));
 
   for (int i = 0; i < mesh.getNumIndices() - 2; i += 1) {
 
@@ -40,17 +34,20 @@ void ofModel::colorVertices() {
     // mesh.setVertex(i, vert);
 
     int contrast = 100;
-    if (i % (mesh.getNumIndices()/50) == 0) {
+    if (i % (mesh.getNumIndices() / 50) == 0) {
       // Random contrasting colors
       float rand = ofRandom(1);
-      if (rand > 0.5){
-        color = ofColor(255 - (int)ofRandom(contrast), 255 - (int)ofRandom(contrast), 255 - (int)ofRandom(contrast), 255 - (int)ofRandom(contrast));
+      if (rand > 0.5) {
+        color = ofColor(
+            255 - (int)ofRandom(contrast), 255 - (int)ofRandom(contrast),
+            255 - (int)ofRandom(contrast), 255 - (int)ofRandom(contrast));
       } else {
-        color = ofColor((int)ofRandom(contrast), (int)ofRandom(contrast), (int)ofRandom(contrast), (int)ofRandom(contrast));
+        color = ofColor((int)ofRandom(contrast), (int)ofRandom(contrast),
+                        (int)ofRandom(contrast), (int)ofRandom(contrast));
       }
       // Random color
-      // color = ofColor((int)ofRandom(150.0f)+100, (int)ofRandom(150.0f)+100, (int)ofRandom(150.0f)+100);
-
+      // color = ofColor((int)ofRandom(150.0f)+100, (int)ofRandom(150.0f)+100,
+      // (int)ofRandom(150.0f)+100);
     }
     mesh.addColor(color);
   }
@@ -58,16 +55,15 @@ void ofModel::colorVertices() {
 
 void ofModel::disolve(float speed) {
 
-  for (int j = 1; j < mesh.getNumIndices()-1; j += 1) {
+  for (int j = 1; j < mesh.getNumIndices() - 1; j += 1) {
 
-    ofVec3f vert = mesh.getVertex(j-1);
+    ofVec3f vert = mesh.getVertex(j - 1);
     ofVec3f vert2 = mesh.getVertex(j);
 
     vert = vert2;
 
-    mesh.setVertex(j-1, vert);
+    mesh.setVertex(j - 1, vert);
   }
-
 };
 
 void ofModel::verticesDisplace() {
@@ -76,9 +72,7 @@ void ofModel::verticesDisplace() {
   //
   //
   // }
-
 }
-
 
 void ofModel::draw() {
 
@@ -91,7 +85,6 @@ void ofModel::draw() {
   ofPopMatrix();
   // mesh.draw(OF_MESH_POINTS);
 }
-
 
 // OLD STUFF
 
@@ -106,7 +99,8 @@ void ofModel::draw() {
 //   for (unsigned int j = 0; j < size; j++) {
 //     x = (circleSize*circleSpacing) * i - width;
 //     y = (circleSize*circleSpacing) * j - width;
-//     z = (cos(ofGetElapsedTimeMillis()/213.+i)*1.3 + cos(ofGetElapsedTimeMillis()/123.+j)) * 8.0;
+//     z = (cos(ofGetElapsedTimeMillis()/213.+i)*1.3 +
+//     cos(ofGetElapsedTimeMillis()/123.+j)) * 8.0;
 //
 //
 //     ofDrawSphere(x,y,z, circleSize);

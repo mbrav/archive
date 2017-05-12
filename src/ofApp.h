@@ -2,8 +2,8 @@
 #define _TEST_APP
 
 #include "ofMain.h"
-#include "ofxAssimpModelLoader.h"
 #include "ofModel.h"
+#include "ofxAssimpModelLoader.h"
 
 class ofApp : public ofBaseApp {
 
@@ -46,14 +46,14 @@ public:
   // Scene1 scene1;
 
   ofLight light;
-	ofEasyCam camera;
+  ofEasyCam camera;
 
   const int modelFiles = 6; // number of file models
-  const int modelNum = 40; // number of total models to display
+  const int modelNum = 40;  // number of total models to display
   vector<ofModel> models;
 
   // scene control
-  int scene; // number of the scene
+  int scene;     // number of the scene
   int prevScene; // number of the scene
   // loop counter
   unsigned int loop;
@@ -65,9 +65,6 @@ public:
   ofShader shader;
   ofShader shader2; // venus
   bool doShader;
-
-
-
 };
 
 #endif
