@@ -54,6 +54,55 @@ void ofApp::setup() {
 //       |_|
 
 void ofApp::update() {
+
+  // if a scene changed, run the setup for the new scene
+  if (scene == 1) {
+    if (prevScene != scene) {
+      scene1setup();
+      prevScene = scene;
+    }
+  } else if (scene == 2) {
+    if (prevScene != scene) {
+      scene2setup();
+      prevScene = scene;
+    }
+  } else if (scene == 3) {
+    if (prevScene != scene) {
+      scene3setup();
+      prevScene = scene;
+    }
+  } else if (scene == 4) {
+    if (prevScene != scene) {
+      scene4setup();
+      prevScene = scene;
+    }
+  } else if (scene == 5) {
+    if (prevScene != scene) {
+      scene5setup();
+      prevScene = scene;
+    }
+  } else if (scene == 6) {
+    if (prevScene != scene) {
+      scene6setup();
+      prevScene = scene;
+    }
+  } else if (scene == 7) {
+    if (prevScene != scene) {
+      scene7setup();
+      prevScene = scene;
+    }
+  } else if (scene == 8) {
+    if (prevScene != scene) {
+      scene8setup();
+      prevScene = scene;
+    }
+  } else if (scene == 9) {
+    if (prevScene != scene) {
+      scene9setup();
+      prevScene = scene;
+    }
+  }
+
   for (unsigned int i = 0; i < modelNum; i++) {
     models[i].rot.x += 0.05 * i;
     models[i].rot.y += 0.08 * i;
@@ -92,68 +141,23 @@ void ofApp::draw() {
   // }
 
   if (scene == 1) {
-    if (prevScene != scene) {
-      scene1setup();
-      prevScene = scene;
-    } else {
-      scene1();
-    }
+    scene1();
   } else if (scene == 2) {
-    if (prevScene != scene) {
-      scene2setup();
-      prevScene = scene;
-    } else {
-      scene2();
-    }
+    scene2();
   } else if (scene == 3) {
-    if (prevScene != scene) {
-      scene3setup();
-      prevScene = scene;
-    } else {
-      scene3();
-    }
+    scene3();
   } else if (scene == 4) {
-    if (prevScene != scene) {
-      scene4setup();
-      prevScene = scene;
-    } else {
-      scene4();
-    }
+    scene4();
   } else if (scene == 5) {
-    if (prevScene != scene) {
-      scene5setup();
-      prevScene = scene;
-    } else {
-      scene5();
-    }
+    scene5();
   } else if (scene == 6) {
-    if (prevScene != scene) {
-      scene6setup();
-      prevScene = scene;
-    } else {
-      scene6();
-    }
+    scene6();
   } else if (scene == 7) {
-    if (prevScene != scene) {
-      scene7setup();
-      prevScene = scene;
-    } else {
-      scene7();
-    }
+    scene7();
   } else if (scene == 8) {
-    if (prevScene != scene) {
-      scene8setup();
-      prevScene = scene;
-    } else {
-      scene8();
-    }
+    scene8();
   } else if (scene == 9) {
-    if (prevScene != scene) {
-      scene9setup();
-      prevScene = scene;
-    } else {
-      scene9();
-    }
+    scene9();
   }
 
   // if( doShader ){
@@ -178,7 +182,9 @@ void ofApp::draw() {
 //  ___) | |___| |___| |\  | |___  | |
 // |____/ \____|_____|_| \_|_____| |_|
 
-void ofApp::scene1setup() {}
+void ofApp::scene1setup() {
+  cout << "scene 1: setup" << endl;
+}
 
 void ofApp::scene1() {
   titleString = "SCENE I — The Sky";
@@ -381,11 +387,10 @@ void ofApp::scene9setup() {}
 
 void ofApp::scene9() {}
 
-
- //                  _             _
- //   ___ ___  _ __ | |_ _ __ ___ | |___
- //  / __/ _ \| '_ \| __| '__/ _ \| / __|
- // | (_| (_) | | | | |_| | | (_) | \__ \
+//                  _             _
+//   ___ ___  _ __ | |_ _ __ ___ | |___
+//  / __/ _ \| '_ \| __| '__/ _ \| / __|
+// | (_| (_) | | | | |_| | | (_) | \__ \
  //  \___\___/|_| |_|\__|_|  \___/|_|___/
 
 //--------------------------------------------------------------
