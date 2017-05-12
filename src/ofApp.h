@@ -5,6 +5,10 @@
 #include "ofModel.h"
 #include "ofxAssimpModelLoader.h"
 
+// debug profiler
+// #define PROFILER_DISABLED
+#include "ofxProfiler.h"
+
 class ofApp : public ofBaseApp {
 
 public:

@@ -68,6 +68,7 @@ void ofApp::setup() {
 
 void ofApp::update() {
 
+PROFILE_BEGIN("Update");
   // if a scene changed, run the setup for the new scene
   if (scene == 1) {
     if (prevScene != scene) {
@@ -143,6 +144,8 @@ void ofApp::update() {
     }
   }
 
+  PROFILE_END();
+
   // count loop
   loop++;
 }
@@ -167,34 +170,29 @@ void ofApp::draw() {
   //     mouseX - ofGetWidth()/2, ofGetHeight()/2-mouseY );
   // }
 
-  if (scene == 1) {
-    cout << "scene 1: loop n" << loop << endl;
+  PROFILE_BEGIN("Draw");
+
+  if (scene == 1) {;
     scene1();
-  } else if (scene == 2) {
-    cout << "scene 2: loop n" << loop << endl;
+  } else if (scene == 2) {;
     scene2();
-  } else if (scene == 3) {
-    cout << "scene 3: loop n" << loop << endl;
+  } else if (scene == 3) {;
     scene3();
-  } else if (scene == 4) {
-    cout << "scene 4: loop n" << loop << endl;
+  } else if (scene == 4) {;
     scene4();
-  } else if (scene == 5) {
-    cout << "scene 5: loop n" << loop << endl;
+  } else if (scene == 5) {;
     scene5();
-  } else if (scene == 6) {
-    cout << "scene 6: loop n" << loop << endl;
+  } else if (scene == 6) {;
     scene6();
-  } else if (scene == 7) {
-    cout << "scene 7: loop n" << loop << endl;
+  } else if (scene == 7) {;
     scene7();
-  } else if (scene == 8) {
-    cout << "scene 8: loop n" << loop << endl;
+  } else if (scene == 8) {;
     scene8();
-  } else if (scene == 9) {
-    cout << "scene 9: loop n" << loop << endl;
+  } else if (scene == 9) {;
     scene9();
   }
+
+  PROFILE_END();
 
   // if( doShader ){
   // 	shader.end();
@@ -210,6 +208,9 @@ void ofApp::draw() {
 
   // ofDrawBitmapStringHighlight("SCENE I " + ofToString(ofGetFrameRate(), 2),
   // ofGetWidth()/2-40, ofGetHeight()/2-30, ofColor(200), ofColor(50));
+
+  // output profile
+  cout << ofxProfiler::getResults();
 }
 
 //  ____   ____ _____ _   _ _____   _
@@ -219,11 +220,15 @@ void ofApp::draw() {
 // |____/ \____|_____|_| \_|_____| |_|
 
 void ofApp::scene1setup() {
+  PROFILE_BEGIN("Scene 1 setup()");
+
+  PROFILE_END();
 
   // draw models in a grid
 }
 
 void ofApp::scene1update() {
+  PROFILE_BEGIN("Scene 1 update()");
 
   for (unsigned int i = 0; i < modelNum; i++) {
 
@@ -232,9 +237,12 @@ void ofApp::scene1update() {
 
   }
 
+  PROFILE_END();
+
 }
 
 void ofApp::scene1() {
+  PROFILE_BEGIN("Scene 1 draw()");
   titleString = "SCENE I — The Sky";
   textString =
       " When we take a glimpse into the night sky, most of us rarely \n "
@@ -255,7 +263,7 @@ void ofApp::scene1() {
       "we become 'observer archeologists' who are engaged in an act of \n "
       "excavating the past.";
 
-  ofBackground(0, 0, 0, 255);
+  ofBackground(255, 255, 255, 255);
   ofSetColor(200, 200, 200, 255);
   camera.begin();
 
@@ -275,6 +283,8 @@ void ofApp::scene1() {
   camera.end();
 
   ofSetColor(0, 0, 0);
+
+  PROFILE_END();
 }
 
 //  ____   ____ _____ _   _ _____   ____
@@ -283,7 +293,10 @@ void ofApp::scene1() {
 //  ___) | |___| |___| |\  | |___   / __/
 // |____/ \____|_____|_| \_|_____| |_____|
 
-void ofApp::scene2setup() {}
+void ofApp::scene2setup() {
+  PROFILE_BEGIN("Scene 2 setup()");
+  PROFILE_END();
+}
 
 void ofApp::scene2update() {
   for (unsigned int i = 0; i < modelNum; i++) {
@@ -302,6 +315,7 @@ void ofApp::scene2update() {
 }
 
 void ofApp::scene2() {
+  PROFILE_BEGIN("Scene 2 draw()");
   titleString = "SCENE II — The Light";
   textString = "jdl;skfjg;lsdjfgl;j";
 
@@ -327,6 +341,7 @@ void ofApp::scene2() {
   camera.end();
 
   ofSetColor(255, 255, 255);
+  PROFILE_END();
 }
 
 //  ____   ____ _____ _   _ _____   _____
@@ -335,11 +350,18 @@ void ofApp::scene2() {
 //  ___) | |___| |___| |\  | |___   ___) |
 // |____/ \____|_____|_| \_|_____| |____/
 
-void ofApp::scene3setup() {}
+void ofApp::scene3setup() {
+  PROFILE_BEGIN("Scene 3 setup()");
+  PROFILE_END();
+}
 
-void ofApp::scene3update() {}
+void ofApp::scene3update() {
+  PROFILE_BEGIN("Scene 3 update()");
+  PROFILE_END();
+}
 
 void ofApp::scene3() {
+  PROFILE_BEGIN("Scene 3 draw()");
   titleString = "SCENE III — WTF";
   textString = "jdl;skfjg;lsdjfgl;j";
 
@@ -390,6 +412,8 @@ void ofApp::scene3() {
   ofSetColor(cos(ofGetElapsedTimeMillis() / 1400.0) * 255,
              cos(ofGetElapsedTimeMillis() / 3600.0) * 255,
              cos(ofGetElapsedTimeMillis() / 2600.0) * 255, 255);
+
+  PROFILE_END();
 }
 
 //  ____   ____ _____ _   _ _____   _  _
@@ -398,11 +422,18 @@ void ofApp::scene3() {
 //  ___) | |___| |___| |\  | |___  |__   _|
 // |____/ \____|_____|_| \_|_____|    |_|
 
-void ofApp::scene4setup() {}
+void ofApp::scene4setup() {
+  PROFILE_BEGIN("Scene 4 setup()");
+  PROFILE_END();
+}
 
-void ofApp::scene4update() {}
+void ofApp::scene4update() {
+  PROFILE_BEGIN("Scene 4 update()");
+  PROFILE_END();
+}
 
 void ofApp::scene4() {
+  PROFILE_BEGIN("Scene 4 draw()");
 
   ofBackground(cos(ofGetElapsedTimeMillis() / 3400.0) * 255,
                cos(ofGetElapsedTimeMillis() / 2400.0) * 255,
@@ -413,52 +444,66 @@ void ofApp::scene4() {
 
   camera.begin();
 
-  if (doShader) {
-    shader2.begin();
-    // we want to pass in some varrying values to animate our type / color
-    shader2.setUniform1f("u_time", ofGetElapsedTimef());
-    shader2.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
-
-    // test
-  }
-
   for (unsigned int i = 0; i < modelNum; i++) {
+    if (doShader) {
+      shader2.begin();
+      // we want to pass in some varrying values to animate our type / color
+      shader2.setUniform1f("u_time", ofGetElapsedTimef());
+      shader2.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
+
+    }
 
     models[i].draw();
-  }
 
-  if (doShader) {
-    shader2.end();
+    if (doShader) {
+      shader2.end();
+    }
   }
 
   camera.end();
+  PROFILE_END();
 }
 
-void ofApp::scene5setup() {}
+void ofApp::scene5setup() {
+  PROFILE_BEGIN("Scene 5 setup()");
+  PROFILE_END();
+}
 
 void ofApp::scene5update() {}
 
 void ofApp::scene5() {}
 
-void ofApp::scene6setup() {}
+void ofApp::scene6setup() {
+  PROFILE_BEGIN("Scene 6 setup()");
+  PROFILE_END();
+}
 
 void ofApp::scene6update() {}
 
 void ofApp::scene6() {}
 
-void ofApp::scene7setup() {}
+void ofApp::scene7setup() {
+  PROFILE_BEGIN("Scene 7 setup()");
+  PROFILE_END();
+}
 
 void ofApp::scene7update() {}
 
 void ofApp::scene7() {}
 
-void ofApp::scene8setup() {}
+void ofApp::scene8setup() {
+  PROFILE_BEGIN("Scene 8 setup()");
+  PROFILE_END();
+}
 
 void ofApp::scene8update() {}
 
 void ofApp::scene8() {}
 
-void ofApp::scene9setup() {}
+void ofApp::scene9setup() {
+  PROFILE_BEGIN("Scene 9 setup()");
+  PROFILE_END();
+}
 
 void ofApp::scene9update() {}
 
@@ -496,6 +541,8 @@ void ofApp::keyPressed(int key) {
     doShader = !doShader;
   if (key == 'd')
     showDescription = !showDescription;
+  if (key == 'q')
+    ofExit();
 }
 
 //--------------------------------------------------------------
