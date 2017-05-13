@@ -7,11 +7,11 @@ May 2017
 
 #### General
 - [ ] Draft a Narrative
-  - [ ] Get the text captions or speech working
+  - [x] Get the text captions or speech working
   - [ ] Include the narrative as text or speech
-- [ ] Finish project Description
+- [x] Finish project Description
 - [x] Make a project title screen, name, date, etc.
-- [ ] Polish Attract Mode
+- [x] Polish Attract Mode
 - [ ] Finish scenes
   - [x] Scene 1
   - [x] Scene 2

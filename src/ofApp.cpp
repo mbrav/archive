@@ -103,6 +103,7 @@ void ofApp::update() {
   // set to welcome screen when innactive for some time
   if (ofGetElapsedTimeMillis() > 5000 + unatendedTime) {
     scene = 0;
+    timer1 = ofGetElapsedTimeMillis();
   }
 
   // cout << camera.getDrag() << endl;
@@ -296,7 +297,7 @@ void ofApp::scene0() {
     shader6.setUniform1f("u_time", ofGetElapsedTimef());
     shader6.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
 
-    shader6.setUniform1f("zoom", camera.getDistance() / 500.0);
+    shader6.setUniform1f("zoom", (ofGetElapsedTimeMillis()-timer1)/10000.);
   }
 
   ofRect(0, 0, ofGetWidth(), ofGetHeight());
@@ -600,10 +601,6 @@ void ofApp::scene3() {
 
   camera.end();
 
-  ofSetColor(cos(ofGetElapsedTimeMillis() / 1400.0) * 255,
-             cos(ofGetElapsedTimeMillis() / 3600.0) * 255,
-             cos(ofGetElapsedTimeMillis() / 2600.0) * 255, 255);
-
   PROFILE_END();
 }
 
@@ -732,6 +729,8 @@ void ofApp::keyPressed(int key) {
     ofToggleFullscreen();
   if (key == '0')
     scene = 0;
+  if (key == ' ')
+    scene++;
   if (key == '1')
     scene = 1;
   if (key == '2')
