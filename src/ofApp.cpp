@@ -12,7 +12,7 @@ void ofApp::setup() {
   doShader = true;
   showDescription = true;
 
-  unatendedTime = 60000; // 1 munute after no interaction
+  unatendedTimer = 60000; // return to title when unresponsive for a minute
 
   // TEXTS STUFF
   darkText = ofColor(30);
@@ -101,7 +101,7 @@ void ofApp::setup() {
 void ofApp::update() {
 
   // set to welcome screen when innactive for some time
-  if (ofGetElapsedTimeMillis() > 5000 + unatendedTime) {
+  if (ofGetElapsedTimeMillis() > 5000 + unatendedTimer) {
     scene = 0;
     timer1 = ofGetElapsedTimeMillis();
   }
@@ -161,10 +161,10 @@ void ofApp::update() {
   } else if (scene == 6) {
     if (prevScene != scene) {
       cout << "scene 6: SETUP!" << endl;
-      scene8setup();
+      scene6setup();
       prevScene = scene;
     } else {
-      scene8update();
+      scene6update();
     }
   } else if (scene == 7) {
     if (prevScene != scene) {
@@ -368,6 +368,33 @@ void ofApp::scene0() {
 
 void ofApp::scene1setup() {
 
+  titleString = "SCENE I — The Cosmos";
+  textString =
+  " When we take a glimpse into the night sky, most of us rarely \n "
+  "realize that we are looking at history. Whatever we see in the \n "
+  "night sky, is a collection of photons that traveled for thousands \n "
+  "and millions of years from their point of origin. The photons coming "
+  "\n "
+  "from Alpha Centauri for example, which is our closest neighboring \n "
+  "stellar system, is already 4.3 years old by the time it reaches our "
+  "\n "
+  "telescopes. When we look at the center of our galaxy, we see light \n "
+  "that is 27,000 years old. When we observe Andromeda, our neighboring "
+  "\n "
+  "galaxy, we see light that is 2.5 million years old. Our night sky is "
+  "\n "
+  "filled with the cosmic past, and the gigabytes of data collected by "
+  "all "
+  "\n "
+  "kinds of telescopes, have yet to be 'excavated' and reveal an alien "
+  "\n "
+  "civilization that may be lurking among the data. The sky, can be \n "
+  "considered a opaque sediment that you can see through, and observe \n "
+  "the timeline of the universe's history. Just by looking at the sky, "
+  "\n "
+  "we become 'observer archeologists' who are engaged in an act of \n "
+  "excavating the past.";
+
   PROFILE_BEGIN("Scene 1 setup()");
   for (unsigned int i = 0; i < modelNum; i++) {
 
@@ -387,32 +414,6 @@ void ofApp::scene1update() { modelOrbitRotate(); }
 
 void ofApp::scene1() {
   PROFILE_BEGIN("Scene 2 draw()");
-  titleString = "SCENE I — The Cosmos";
-  textString =
-      " When we take a glimpse into the night sky, most of us rarely \n "
-      "realize that we are looking at history. Whatever we see in the \n "
-      "night sky, is a collection of photons that traveled for thousands \n "
-      "and millions of years from their point of origin. The photons coming "
-      "\n "
-      "from Alpha Centauri for example, which is our closest neighboring \n "
-      "stellar system, is already 4.3 years old by the time it reaches our "
-      "\n "
-      "telescopes. When we look at the center of our galaxy, we see light \n "
-      "that is 27,000 years old. When we observe Andromeda, our neighboring "
-      "\n "
-      "galaxy, we see light that is 2.5 million years old. Our night sky is "
-      "\n "
-      "filled with the cosmic past, and the gigabytes of data collected by "
-      "all "
-      "\n "
-      "kinds of telescopes, have yet to be 'excavated' and reveal an alien "
-      "\n "
-      "civilization that may be lurking among the data. The sky, can be \n "
-      "considered a opaque sediment that you can see through, and observe \n "
-      "the timeline of the universe's history. Just by looking at the sky, "
-      "\n "
-      "we become 'observer archeologists' who are engaged in an act of \n "
-      "excavating the past.";
 
   if (doShader) {
     shader6.begin();
@@ -456,7 +457,31 @@ void ofApp::scene1() {
 
 void ofApp::scene2setup() {
   titleString = "SCENE II — The Light";
-  textString = "jdl;skfjg;lsdjfgl;j";
+  textString =
+  " When we take a glimpse into the night sky, most of us rarely \n "
+  "realize that we are looking at history. Whatever we see in the \n "
+  "night sky, is a collection of photons that traveled for thousands \n "
+  "and millions of years from their point of origin. The photons coming "
+  "\n "
+  "from Alpha Centauri for example, which is our closest neighboring \n "
+  "stellar system, is already 4.3 years old by the time it reaches our "
+  "\n "
+  "telescopes. When we look at the center of our galaxy, we see light \n "
+  "that is 27,000 years old. When we observe Andromeda, our neighboring "
+  "\n "
+  "galaxy, we see light that is 2.5 million years old. Our night sky is "
+  "\n "
+  "filled with the cosmic past, and the gigabytes of data collected by "
+  "all "
+  "\n "
+  "kinds of telescopes, have yet to be 'excavated' and reveal an alien "
+  "\n "
+  "civilization that may be lurking among the data. The sky, can be \n "
+  "considered a opaque sediment that you can see through, and observe \n "
+  "the timeline of the universe's history. Just by looking at the sky, "
+  "\n "
+  "we become 'observer archeologists' who are engaged in an act of \n "
+  "excavating the past.";
   PROFILE_BEGIN("Scene 2 setup()");
 
   PROFILE_END();
@@ -473,32 +498,6 @@ void ofApp::scene2update() {
 
 void ofApp::scene2() {
   PROFILE_BEGIN("Scene 2 draw()");
-  titleString = "SCENE I — The Sky";
-  textString =
-      " When we take a glimpse into the night sky, most of us rarely \n "
-      "realize that we are looking at history. Whatever we see in the \n "
-      "night sky, is a collection of photons that traveled for thousands \n "
-      "and millions of years from their point of origin. The photons coming "
-      "\n "
-      "from Alpha Centauri for example, which is our closest neighboring \n "
-      "stellar system, is already 4.3 years old by the time it reaches our "
-      "\n "
-      "telescopes. When we look at the center of our galaxy, we see light \n "
-      "that is 27,000 years old. When we observe Andromeda, our neighboring "
-      "\n "
-      "galaxy, we see light that is 2.5 million years old. Our night sky is "
-      "\n "
-      "filled with the cosmic past, and the gigabytes of data collected by "
-      "all "
-      "\n "
-      "kinds of telescopes, have yet to be 'excavated' and reveal an alien "
-      "\n "
-      "civilization that may be lurking among the data. The sky, can be \n "
-      "considered a opaque sediment that you can see through, and observe \n "
-      "the timeline of the universe's history. Just by looking at the sky, "
-      "\n "
-      "we become 'observer archeologists' who are engaged in an act of \n "
-      "excavating the past.";
 
   ofBackground(255, 255, 255, 255);
   ofSetColor(200, 200, 200, 255);
@@ -574,9 +573,9 @@ void ofApp::scene3() {
              cos(ofGetElapsedTimeMillis() / 3600.0) * 255, 255);
   camera.begin();
 
-  ofEnableDepthTest();
+  // ofEnableDepthTest();
   // light.enable();
-  ofEnableSeparateSpecularLight();
+  // ofEnableSeparateSpecularLight();
 
   // models[0].draw();
 
@@ -603,14 +602,14 @@ void ofApp::scene3() {
 
     models[i].draw();
 
-    if (i == randNum && loop % 5 == 0) {
+    if ((i % 3) == (randNum % 3)) {
       shader6.end();
     }
   }
 
-  ofDisableDepthTest();
-  light.disable();
-  ofDisableLighting();
+  // ofDisableDepthTest();
+  // light.disable();
+  // ofDisableLighting();
 
   camera.end();
 
@@ -670,11 +669,100 @@ void ofApp::scene4() {
   PROFILE_END();
 }
 
-void ofApp::scene5setup() {}
+/*
+███████  ██████ ███████ ███    ██ ███████ ███████
+██      ██      ██      ████   ██ ██      ██
+███████ ██      █████   ██ ██  ██ █████   ███████
+     ██ ██      ██      ██  ██ ██ ██           ██
+███████  ██████ ███████ ██   ████ ███████ ███████
+*/
 
-void ofApp::scene5update() {}
+void ofApp::scene5setup() {
+  titleString = "SCENE V — The artifacts";
+  textString =
+  " When we take a glimpse into the night sky, most of us rarely \n "
+  "realize that we are looking at history. Whatever we see in the \n "
+  "night sky, is a collection of photons that traveled for thousands \n "
+  "and millions of years from their point of origin. The photons coming "
+  "\n "
+  "from Alpha Centauri for example, which is our closest neighboring \n "
+  "stellar system, is already 4.3 years old by the time it reaches our "
+  "\n "
+  "telescopes. When we look at the center of our galaxy, we see light \n "
+  "that is 27,000 years old. When we observe Andromeda, our neighboring "
+  "\n "
+  "galaxy, we see light that is 2.5 million years old. Our night sky is "
+  "\n "
+  "filled with the cosmic past, and the gigabytes of data collected by "
+  "all "
+  "\n "
+  "kinds of telescopes, have yet to be 'excavated' and reveal an alien "
+  "\n "
+  "civilization that may be lurking among the data. The sky, can be \n "
+  "considered a opaque sediment that you can see through, and observe \n "
+  "the timeline of the universe's history. Just by looking at the sky, "
+  "\n "
+  "we become 'observer archeologists' who are engaged in an act of \n "
+  "excavating the past.";
 
-void ofApp::scene5() {}
+  int dist = 50;
+  for (unsigned int i = 0; i < modelNum; i++) {
+      models[i].setPos(ofVec3f(0, 0, 0));
+  }
+}
+
+void ofApp::scene5update() {
+
+  models[(ofGetElapsedTimeMillis()/2000)%modelNum].setRot(ofVec3f(ofGetElapsedTimeMillis()/100.0));
+
+}
+
+void ofApp::scene5() {
+
+  if (doShader) {
+    shader4.begin();
+    // we want to pass in some varrying values to animate our type / color
+    shader4.setUniform1f("u_time", ofGetElapsedTimef());
+    shader4.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
+  }
+
+  ofRect(0, 0, ofGetWidth(), ofGetHeight());
+
+  if (doShader) {
+    shader4.end();
+  }
+
+
+  camera.begin();
+    if (doShader) {
+      shader6.begin();
+      // we want to pass in some varrying values to animate our type / color
+      shader6.setUniform1f("u_time", ofGetElapsedTimef());
+      shader6.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
+
+      shader6.setUniform2f("u_mouse", mouseX - ofGetWidth() / 2,
+                           ofGetHeight() / 2 - mouseY);
+      shader6.setUniform1f("zoom", camera.getDistance() / 500.0);
+    }
+
+    models[(ofGetElapsedTimeMillis()/2000)%modelNum].draw();
+
+    if (doShader) {
+      shader6.end();
+    }
+
+  camera.end();
+
+}
+
+/*
+███████  ██████ ███████ ███    ██ ███████  ██████
+██      ██      ██      ████   ██ ██      ██
+███████ ██      █████   ██ ██  ██ █████   ███████
+     ██ ██      ██      ██  ██ ██ ██      ██    ██
+███████  ██████ ███████ ██   ████ ███████  ██████
+*/
+
 
 void ofApp::scene6setup() {}
 
@@ -682,17 +770,41 @@ void ofApp::scene6update() {}
 
 void ofApp::scene6() {}
 
+/*
+███████  ██████ ███████ ███    ██ ███████ ███████
+██      ██      ██      ████   ██ ██           ██
+███████ ██      █████   ██ ██  ██ █████       ██
+     ██ ██      ██      ██  ██ ██ ██         ██
+███████  ██████ ███████ ██   ████ ███████    ██
+*/
+
 void ofApp::scene7setup() {}
 
 void ofApp::scene7update() {}
 
 void ofApp::scene7() {}
 
+/*
+███████  ██████ ███████ ███    ██ ███████  █████
+██      ██      ██      ████   ██ ██      ██   ██
+███████ ██      █████   ██ ██  ██ █████    █████
+     ██ ██      ██      ██  ██ ██ ██      ██   ██
+███████  ██████ ███████ ██   ████ ███████  █████
+*/
+
 void ofApp::scene8setup() {}
 
 void ofApp::scene8update() {}
 
 void ofApp::scene8() {}
+
+/*
+███████  ██████ ███████ ███    ██ ███████  █████
+██      ██      ██      ████   ██ ██      ██   ██
+███████ ██      █████   ██ ██  ██ █████    ██████
+     ██ ██      ██      ██  ██ ██ ██           ██
+███████  ██████ ███████ ██   ████ ███████  █████
+*/
 
 void ofApp::scene9setup() {}
 
@@ -736,7 +848,7 @@ void ofApp::modelOrbitRotate() {
 void ofApp::keyPressed(int key) {
   // set the timer when a key is pressed
 
-  unusedTime = ofGetElapsedTimeMillis();
+  unatendedTime = ofGetElapsedTimeMillis();
 
   if (key == 'f')
     ofToggleFullscreen();
@@ -775,22 +887,22 @@ void ofApp::keyReleased(int key) {}
 
 //--------------------------------------------------------------
 void ofApp::mouseMoved(int x, int y) {
-  unusedTime = ofGetElapsedTimeMillis();
+  unatendedTime = ofGetElapsedTimeMillis();
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button) {
-  unusedTime = ofGetElapsedTimeMillis();
+  unatendedTime = ofGetElapsedTimeMillis();
 }
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button) {
-  unusedTime = ofGetElapsedTimeMillis();
+  unatendedTime = ofGetElapsedTimeMillis();
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button) {
-  unusedTime = ofGetElapsedTimeMillis();
+  unatendedTime = ofGetElapsedTimeMillis();
 }
 
 //--------------------------------------------------------------
@@ -801,7 +913,7 @@ void ofApp::mouseExited(int x, int y) {}
 
 //--------------------------------------------------------------
 void ofApp::windowResized(int w, int h) {
-  unusedTime = ofGetElapsedTimeMillis();
+  unatendedTime = ofGetElapsedTimeMillis();
 }
 
 //--------------------------------------------------------------
@@ -809,5 +921,5 @@ void ofApp::gotMessage(ofMessage msg) {}
 
 //--------------------------------------------------------------
 void ofApp::dragEvent(ofDragInfo dragInfo) {
-  unusedTime = ofGetElapsedTimeMillis();
+  unatendedTime = ofGetElapsedTimeMillis();
 }

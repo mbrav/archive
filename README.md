@@ -17,7 +17,7 @@ May 2017
   - [x] Scene 2
   - [x] Scene 3
   - [x] Scene 4
-  - [ ] Scene 5
+  - [x] Scene 5
   - [ ] Scene 6
   - [ ] Scene 7
   - [ ] Scene 8

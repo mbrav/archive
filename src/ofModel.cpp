@@ -13,6 +13,10 @@ void ofModel::setPos(ofVec3f posSet) {
   pos = posSet;
 }
 
+void ofModel::setRot(ofVec3f rotSet) {
+  rot = rotSet;
+}
+
 void ofModel::resetInitPos() {
   initPos = pos;
 }

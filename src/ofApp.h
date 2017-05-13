@@ -80,10 +80,9 @@ public:
   int prevScene; // number of the scene
   // loop counter
   unsigned int loop;
-  int unatendedTime;
+  int unatendedTime, unatendedTimer;
 
   // timers
-  float unusedTime;
   float timer1; // for star shader
 
   ofColor darkText, lightText;

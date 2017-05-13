@@ -10,6 +10,7 @@ public:
   void setup(string filePath);
 	void draw();
   void setPos(ofVec3f posSet);
+  void setRot(ofVec3f rotSet);
   void resetInitPos();
   void disolve(float speed);
   void colorVertices();
