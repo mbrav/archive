@@ -10,7 +10,7 @@ May 2017
   - [ ] Get the text captions or speech working
   - [ ] Include the narrative as text or speech
 - [ ] Finish project Description
-- [ ] Make a project title screen, name, date, etc.
+- [x] Make a project title screen, name, date, etc.
 - [ ] Polish Attract Mode
 - [ ] Finish scenes
   - [x] Scene 1
@@ -27,7 +27,7 @@ May 2017
 
 #### Visual Stuff and Misc
 - [ ] Scene transitions
-- [ ] Add new forms of visuals
+- [x] Add new forms of visuals
 - [ ] Add more 3D models
   - [ ] Decrease poly count of 3D models if necessary
 

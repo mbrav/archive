@@ -12,6 +12,9 @@ void ofApp::setup() {
   doShader = true;
   showDescription = true;
 
+  unatendedTime = 60000; // 1 munute after no interaction
+
+  // TEXTS STUFF
   darkText = ofColor(30);
   lightText = ofColor(220);
 
@@ -26,6 +29,7 @@ void ofApp::setup() {
   ptMono.load("pt-mono.ttf", 12, true, true);
   ptMono.setLineHeight(18.0f);
   ptMono.setLetterSpacing(1.037);
+
   // #ifdef TARGET_OPENGLES
   // shader.load("shaders_gles/noise.vert","shaders_gles/noise.frag");
   // #else
@@ -35,12 +39,21 @@ void ofApp::setup() {
   // 	shader.load("shaders/noise.vert", "shaders/noise.frag");
   // }
   // #endif
+
+  //shaders
   shader.load("shaders/noise.vert", "shaders/noise.frag");
   shader2.load("shaders/venus.vert", "shaders/venus.frag");
   shader3.load("shaders/venus2.vert", "shaders/venus2.frag");
   shader4.load("shaders/world-of-waves.vert", "shaders/world-of-waves.frag");
   shader5.load("shaders/tearlines.vert", "shaders/tearlines.frag");
   shader6.load("shaders/star-nest.vert", "shaders/star-nest.frag");
+
+  shaders.push_back(shader);
+  shaders.push_back(shader2);
+  shaders.push_back(shader3);
+  shaders.push_back(shader4);
+  shaders.push_back(shader5);
+  shaders.push_back(shader6);
 
   // ofSetLogLevel(OF_LOG_VERBOSE);
   ofBackground(130);
@@ -86,6 +99,11 @@ void ofApp::setup() {
 */
 
 void ofApp::update() {
+
+  // set to welcome screen when innactive for some time
+  if (ofGetElapsedTimeMillis() > 5000 + unatendedTime) {
+    scene = 0;
+  }
 
   // cout << camera.getDrag() << endl;
 
@@ -189,19 +207,6 @@ void ofApp::update() {
 
 void ofApp::draw() {
 
-  // if( doShader ){
-  //   shader.begin();
-  //     //we want to pass in some varrying values to animate our type / color
-  //     shader.setUniform1f("timeValX", ofGetElapsedTimef() * 0.1 );
-  //     shader.setUniform1f("timeValY", -ofGetElapsedTimef() * 0.18 );
-  //
-  //     //we also pass in the mouse position
-  //     //we have to transform the coords to what the shader is expecting
-  //     which is 0,0 in the center and y axis flipped.
-  //     shader.setUniform2f("mouse", mouseX - ofGetWidth()/2,
-  //     ofGetHeight()/2-mouseY );
-  // }
-
   PROFILE_BEGIN("Draw");
 
   if (scene == 0) {
@@ -228,12 +233,8 @@ void ofApp::draw() {
 
   PROFILE_END();
 
-  // if( doShader ){
-  // 	shader.end();
-  // }
-
   // scene description
-  if (showDescription) {
+  if (showDescription && scene != 0) {
     // ofDrawRectangle(200, 200, 200, 200);
     int margin = 10;
 
@@ -273,35 +274,73 @@ void ofApp::draw() {
 ██ ██   ████    ██    ██   ██  ██████
 */
 
-void ofApp::scene0setup() {}
+void ofApp::scene0setup() {
+  ofBackground(255, 255, 255, 255);
+  ofSetColor(20, 20, 20, 255);
+
+  // ofEnableDepthTest();
+  // ofDisableDepthTest();
+  // light.enable();
+}
 
 void ofApp::scene0update() {}
 
 void ofApp::scene0() {
 
-  int margin = 30;
+  // toggle throught all the shaders
+  // int si = (ofGetElapsedTimeMillis()*1000)%sizeof(shaders);
 
+  if (doShader) {
+    shader6.begin();
+    // we want to pass in some varrying values to animate our type / color
+    shader6.setUniform1f("u_time", ofGetElapsedTimef());
+    shader6.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
+
+    shader6.setUniform1f("zoom", camera.getDistance() / 500.0);
+  }
+
+  ofRect(0, 0, ofGetWidth(), ofGetHeight());
+
+  if (doShader) {
+    shader6.end();
+  }
+
+
+  // TITLE AND SUBITILE
+
+  int margin = 30;
+  float float1 = cos(ofGetElapsedTimef()/2.3245) * 30;;
+  float float2 = sin(ofGetElapsedTimef()/1.2345) * 20;;
   // ofSetRectMode(OF_RECTMODE_CENTER); //set rectangle mode to the center
 
   ofRectangle textRectTitle =
-      ptMonoProjectTitle.getStringBoundingBox("Digital Archeaology", ofGetWidth()/2-370, ofGetHeight()/2);
+      ptMonoProjectTitle.getStringBoundingBox("Digital Archeaology", ofGetWidth()/2-370, ofGetHeight()/2 - float1);
   ofSetColor(lightText);
   ofDrawRectangle(textRectTitle.x - margin, textRectTitle.y - margin,
                   textRectTitle.width + margin * 2,
                   textRectTitle.height + margin * 2);
   ofSetColor(darkText);
-  ptMonoProjectTitle.drawString("Digital Archeaology", ofGetWidth()/2-370, ofGetHeight()/2);
+  ptMonoProjectTitle.drawString("Digital Archeaology", ofGetWidth()/2-370, ofGetHeight()/2 - float1);
 
   margin = 10;
 
   ofRectangle textRectSubTitle =
-      ptMonoProjectSubTitle.getStringBoundingBox("by Michael Braverman", ofGetWidth()/2-200, ofGetHeight()/2 + 100);
+      ptMonoProjectSubTitle.getStringBoundingBox("by Michael Braverman", ofGetWidth()/2-200, ofGetHeight()/2 + 100 - float2);
   ofSetColor(darkText);
   ofDrawRectangle(textRectSubTitle.x - margin, textRectSubTitle.y - margin,
                   textRectSubTitle.width + margin * 2,
                   textRectSubTitle.height + margin * 2);
   ofSetColor(lightText);
-  ptMonoProjectSubTitle.drawString("by Michael Braverman", ofGetWidth()/2-200, ofGetHeight()/2 + 100);
+  ptMonoProjectSubTitle.drawString("by Michael Braverman", ofGetWidth()/2-200, ofGetHeight()/2 + 100 - float2);
+
+  // light.disable();
+  // ofDisableLighting();
+
+  camera.begin();
+
+  camera.end();
+
+  PROFILE_END();
 
 }
 
@@ -320,6 +359,7 @@ void ofApp::scene1setup() {
 
     models[i].colorVertices(ofColor(1.0, 1.0, 1.0, 1.0));
   }
+
   ofBackground(255, 255, 255, 255);
   ofSetColor(20, 20, 20, 255);
 
@@ -684,8 +724,14 @@ void ofApp::modelOrbitRotate() {
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key) {
+  // set the timer when a key is pressed
+
+  unusedTime = ofGetElapsedTimeMillis();
+
   if (key == 'f')
     ofToggleFullscreen();
+  if (key == '0')
+    scene = 0;
   if (key == '1')
     scene = 1;
   if (key == '2')
@@ -708,8 +754,8 @@ void ofApp::keyPressed(int key) {
     doShader = !doShader;
   if (key == 'd')
     showDescription = !showDescription;
-  if (key == 'q')
-    ofExit();
+  // if (key == 'q')
+  //   ofExit();
 }
 
 //--------------------------------------------------------------

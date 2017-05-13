@@ -80,6 +80,8 @@ public:
   int prevScene; // number of the scene
   // loop counter
   unsigned int loop;
+  float unusedTime;
+  int unatendedTime;
 
   ofColor darkText, lightText;
   string titleString;
@@ -94,6 +96,7 @@ public:
   // Star Nest BY Pablo RomÃ¡n Andrioli https://www.shadertoy.com/view/XlfGRj
   ofShader shader6;
   bool doShader;
+  vector<ofShader> shaders;
 };
 
 #endif
