@@ -10,7 +10,22 @@
 
 void ofApp::setup() {
   doShader = true;
-  showDescription = false;
+  showDescription = true;
+
+  darkText = ofColor(30);
+  lightText = ofColor(220);
+
+  ptMonoProjectTitle.load("pt-mono.ttf", 48, true, true);
+  ptMonoProjectTitle.setLineHeight(48.0f);
+  ptMonoProjectTitle.setLetterSpacing(1.037);
+
+  ptMonoProjectSubTitle.load("pt-mono.ttf", 28, true, true);
+  ptMonoProjectSubTitle.setLineHeight(28.0f);
+  ptMonoProjectSubTitle.setLetterSpacing(1.037);
+
+  ptMono.load("pt-mono.ttf", 12, true, true);
+  ptMono.setLineHeight(18.0f);
+  ptMono.setLetterSpacing(1.037);
   // #ifdef TARGET_OPENGLES
   // shader.load("shaders_gles/noise.vert","shaders_gles/noise.frag");
   // #else
@@ -37,7 +52,7 @@ void ofApp::setup() {
   camera.setFarClip(20000);
   // camera.move(0,0,15000);
 
-  scene = 1; // set scene to one
+  scene = 0; // set scene to one
   prevScene = 0;
 
   for (unsigned int i = 0; i < modelNum; i++) {
@@ -76,7 +91,15 @@ void ofApp::update() {
 
   PROFILE_BEGIN("Update");
   // if a scene changed, run the setup for the new scene
-  if (scene == 1) {
+  if (scene == 0) {
+    if (prevScene != scene) {
+      cout << "scene 0: SETUP!" << endl;
+      scene0setup();
+      prevScene = scene;
+    } else {
+      scene0update();
+    }
+  } else if (scene == 1) {
     if (prevScene != scene) {
       cout << "scene 1: SETUP!" << endl;
       scene1setup();
@@ -173,14 +196,17 @@ void ofApp::draw() {
   //     shader.setUniform1f("timeValY", -ofGetElapsedTimef() * 0.18 );
   //
   //     //we also pass in the mouse position
-  //     //we have to transform the coords to what the shader is expecting which
-  //     is 0,0 in the center and y axis flipped. shader.setUniform2f("mouse",
-  //     mouseX - ofGetWidth()/2, ofGetHeight()/2-mouseY );
+  //     //we have to transform the coords to what the shader is expecting
+  //     which is 0,0 in the center and y axis flipped.
+  //     shader.setUniform2f("mouse", mouseX - ofGetWidth()/2,
+  //     ofGetHeight()/2-mouseY );
   // }
 
   PROFILE_BEGIN("Draw");
 
-  if (scene == 1) {
+  if (scene == 0) {
+    scene0();
+  } else if (scene == 1) {
     scene1();
   } else if (scene == 2) {
     scene2();
@@ -208,17 +234,75 @@ void ofApp::draw() {
 
   // scene description
   if (showDescription) {
-    ofDrawBitmapStringHighlight(titleString, 20, ofGetHeight() - 270,
-                                ofColor(40), ofColor(210));
-    ofDrawBitmapStringHighlight(textString, 20, ofGetHeight() - 250,
-                                ofColor(210), ofColor(40));
+    // ofDrawRectangle(200, 200, 200, 200);
+    int margin = 10;
+
+    // text caption
+    ofRectangle textRect =
+        ptMono.getStringBoundingBox(textString, 20, ofGetHeight() - 300);
+    ofSetColor(darkText);
+    ofDrawRectangle(textRect.x - margin, textRect.y - margin * 2,
+                    textRect.width + margin * 2, textRect.height + margin * 3);
+    ofSetColor(lightText);
+    ptMono.drawString(textString, 20, ofGetHeight() - 300);
+
+    // title
+    ofRectangle textRectTitle =
+        ptMono.getStringBoundingBox(titleString, 20, ofGetHeight() - 340);
+    ofSetColor(lightText);
+    ofDrawRectangle(textRectTitle.x - margin, textRectTitle.y - margin,
+                    textRectTitle.width + margin * 2,
+                    textRectTitle.height + margin * 2);
+    ofSetColor(darkText);
+    ptMono.drawString(titleString, 20, ofGetHeight() - 340);
+
+    ofDrawBitmapStringHighlight("FPS " + ofToString(ofGetFrameRate()), 20, 20);
   }
 
-  // ofDrawBitmapStringHighlight("SCENE I " + ofToString(ofGetFrameRate(), 2),
   // ofGetWidth()/2-40, ofGetHeight()/2-30, ofColor(200), ofColor(50));
 
   // output profile
   cout << ofxProfiler::getResults();
+}
+
+/*
+██ ███    ██ ████████ ██████   ██████
+██ ████   ██    ██    ██   ██ ██  ████
+██ ██ ██  ██    ██    ██████  ██ ██ ██
+██ ██  ██ ██    ██    ██   ██ ████  ██
+██ ██   ████    ██    ██   ██  ██████
+*/
+
+void ofApp::scene0setup() {}
+
+void ofApp::scene0update() {}
+
+void ofApp::scene0() {
+
+  int margin = 30;
+
+  // ofSetRectMode(OF_RECTMODE_CENTER); //set rectangle mode to the center
+
+  ofRectangle textRectTitle =
+      ptMonoProjectTitle.getStringBoundingBox("Digital Archeaology", ofGetWidth()/2-370, ofGetHeight()/2);
+  ofSetColor(lightText);
+  ofDrawRectangle(textRectTitle.x - margin, textRectTitle.y - margin,
+                  textRectTitle.width + margin * 2,
+                  textRectTitle.height + margin * 2);
+  ofSetColor(darkText);
+  ptMonoProjectTitle.drawString("Digital Archeaology", ofGetWidth()/2-370, ofGetHeight()/2);
+
+  margin = 10;
+
+  ofRectangle textRectSubTitle =
+      ptMonoProjectSubTitle.getStringBoundingBox("by Michael Braverman", ofGetWidth()/2-200, ofGetHeight()/2 + 100);
+  ofSetColor(darkText);
+  ofDrawRectangle(textRectSubTitle.x - margin, textRectSubTitle.y - margin,
+                  textRectSubTitle.width + margin * 2,
+                  textRectSubTitle.height + margin * 2);
+  ofSetColor(lightText);
+  ptMonoProjectSubTitle.drawString("by Michael Braverman", ofGetWidth()/2-200, ofGetHeight()/2 + 100);
+
 }
 
 /*
@@ -231,26 +315,7 @@ void ofApp::draw() {
 
 void ofApp::scene1setup() {
 
-  PROFILE_BEGIN("Scene 2 setup()");
-  titleString = "SCENE II — The Sky";
-  textString =
-      " When we take a glimpse into the night sky, most of us rarely \n "
-      "realize that we are looking at history. Whatever we see in the \n "
-      "night sky, is a collection of photons that traveled for thousands \n "
-      "and millions of years from their point of origin. The photons coming \n "
-      "from Alpha Centauri for example, which is our closest neighboring \n "
-      "stellar system, is already 4.3 years old by the time it reaches our \n "
-      "telescopes. When we look at the center of our galaxy, we see light \n "
-      "that is 27,000 years old. When we observe Andromeda, our neighboring \n "
-      "galaxy, we see light that is 2.5 million years old. Our night sky is \n "
-      "filled with the cosmic past, and the gigabytes of data collected by all "
-      "\n "
-      "kinds of telescopes, have yet to be 'excavated' and reveal an alien \n "
-      "civilization that may be lurking among the data. The sky, can be \n "
-      "considered a opaque sediment that you can see through, and observe \n "
-      "the timeline of the universe's history. Just by looking at the sky, \n "
-      "we become 'observer archeologists' who are engaged in an act of \n "
-      "excavating the past.";
+  PROFILE_BEGIN("Scene 1 setup()");
   for (unsigned int i = 0; i < modelNum; i++) {
 
     models[i].colorVertices(ofColor(1.0, 1.0, 1.0, 1.0));
@@ -268,8 +333,32 @@ void ofApp::scene1update() { modelOrbitRotate(); }
 
 void ofApp::scene1() {
   PROFILE_BEGIN("Scene 2 draw()");
-  titleString = "SCENE II — The Light";
-  textString = "jdl;skfjg;lsdjfgl;j";
+  titleString = "SCENE I — The Cosmos";
+  textString =
+      " When we take a glimpse into the night sky, most of us rarely \n "
+      "realize that we are looking at history. Whatever we see in the \n "
+      "night sky, is a collection of photons that traveled for thousands \n "
+      "and millions of years from their point of origin. The photons coming "
+      "\n "
+      "from Alpha Centauri for example, which is our closest neighboring \n "
+      "stellar system, is already 4.3 years old by the time it reaches our "
+      "\n "
+      "telescopes. When we look at the center of our galaxy, we see light \n "
+      "that is 27,000 years old. When we observe Andromeda, our neighboring "
+      "\n "
+      "galaxy, we see light that is 2.5 million years old. Our night sky is "
+      "\n "
+      "filled with the cosmic past, and the gigabytes of data collected by "
+      "all "
+      "\n "
+      "kinds of telescopes, have yet to be 'excavated' and reveal an alien "
+      "\n "
+      "civilization that may be lurking among the data. The sky, can be \n "
+      "considered a opaque sediment that you can see through, and observe \n "
+      "the timeline of the universe's history. Just by looking at the sky, "
+      "\n "
+      "we become 'observer archeologists' who are engaged in an act of \n "
+      "excavating the past.";
 
   if (doShader) {
     shader6.begin();
@@ -312,7 +401,9 @@ void ofApp::scene1() {
 */
 
 void ofApp::scene2setup() {
-  PROFILE_BEGIN("Scene 1 setup()");
+  titleString = "SCENE II — The Light";
+  textString = "jdl;skfjg;lsdjfgl;j";
+  PROFILE_BEGIN("Scene 2 setup()");
 
   PROFILE_END();
 
@@ -320,31 +411,38 @@ void ofApp::scene2setup() {
 }
 
 void ofApp::scene2update() {
-  PROFILE_BEGIN("Scene 1 update()");
+  PROFILE_BEGIN("Scene 2 update()");
   modelOrbitRotate()
 
       PROFILE_END();
 }
 
 void ofApp::scene2() {
-  PROFILE_BEGIN("Scene 1 draw()");
+  PROFILE_BEGIN("Scene 2 draw()");
   titleString = "SCENE I — The Sky";
   textString =
       " When we take a glimpse into the night sky, most of us rarely \n "
       "realize that we are looking at history. Whatever we see in the \n "
       "night sky, is a collection of photons that traveled for thousands \n "
-      "and millions of years from their point of origin. The photons coming \n "
-      "from Alpha Centauri for example, which is our closest neighboring \n "
-      "stellar system, is already 4.3 years old by the time it reaches our \n "
-      "telescopes. When we look at the center of our galaxy, we see light \n "
-      "that is 27,000 years old. When we observe Andromeda, our neighboring \n "
-      "galaxy, we see light that is 2.5 million years old. Our night sky is \n "
-      "filled with the cosmic past, and the gigabytes of data collected by all "
+      "and millions of years from their point of origin. The photons coming "
       "\n "
-      "kinds of telescopes, have yet to be 'excavated' and reveal an alien \n "
+      "from Alpha Centauri for example, which is our closest neighboring \n "
+      "stellar system, is already 4.3 years old by the time it reaches our "
+      "\n "
+      "telescopes. When we look at the center of our galaxy, we see light \n "
+      "that is 27,000 years old. When we observe Andromeda, our neighboring "
+      "\n "
+      "galaxy, we see light that is 2.5 million years old. Our night sky is "
+      "\n "
+      "filled with the cosmic past, and the gigabytes of data collected by "
+      "all "
+      "\n "
+      "kinds of telescopes, have yet to be 'excavated' and reveal an alien "
+      "\n "
       "civilization that may be lurking among the data. The sky, can be \n "
       "considered a opaque sediment that you can see through, and observe \n "
-      "the timeline of the universe's history. Just by looking at the sky, \n "
+      "the timeline of the universe's history. Just by looking at the sky, "
+      "\n "
       "we become 'observer archeologists' who are engaged in an act of \n "
       "excavating the past.";
 

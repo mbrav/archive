@@ -18,6 +18,9 @@ public:
   void draw();
 
   // scene controls
+  void scene0();
+  void scene0update();
+  void scene0setup();
   void scene1();
   void scene1update();
   void scene1setup();
@@ -61,6 +64,10 @@ public:
   void dragEvent(ofDragInfo dragInfo);
   void gotMessage(ofMessage msg);
 
+  ofTrueTypeFont ptMonoProjectTitle;
+  ofTrueTypeFont ptMonoProjectSubTitle;
+  ofTrueTypeFont ptMono;
+
   ofLight light;
   ofEasyCam camera;
 
@@ -74,6 +81,7 @@ public:
   // loop counter
   unsigned int loop;
 
+  ofColor darkText, lightText;
   string titleString;
   string textString;
   bool showDescription;
