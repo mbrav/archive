@@ -310,29 +310,42 @@ void ofApp::scene0() {
   // TITLE AND SUBITILE
 
   int margin = 30;
-  float float1 = cos(ofGetElapsedTimef()/2.3245) * 30;;
-  float float2 = sin(ofGetElapsedTimef()/1.2345) * 20;;
+  float float1 = cos(ofGetElapsedTimef()/2.3245) * 30;
+  float float2 = sin(ofGetElapsedTimef()/1.2345) * 20;
+  float float3 = sin(ofGetElapsedTimef()/1.7312) * 10;
   // ofSetRectMode(OF_RECTMODE_CENTER); //set rectangle mode to the center
 
   ofRectangle textRectTitle =
-      ptMonoProjectTitle.getStringBoundingBox("Digital Archeaology", ofGetWidth()/2-370, ofGetHeight()/2 - float1);
+      ptMonoProjectTitle.getStringBoundingBox("Digital Archeaology", ofGetWidth()/2-370, ofGetHeight()/2 - 100 - float1);
   ofSetColor(lightText);
   ofDrawRectangle(textRectTitle.x - margin, textRectTitle.y - margin,
                   textRectTitle.width + margin * 2,
                   textRectTitle.height + margin * 2);
   ofSetColor(darkText);
-  ptMonoProjectTitle.drawString("Digital Archeaology", ofGetWidth()/2-370, ofGetHeight()/2 - float1);
+  ptMonoProjectTitle.drawString("Digital Archeaology", ofGetWidth()/2-370, ofGetHeight()/2 - 100 - float1);
 
   margin = 10;
 
+  // subtitle
   ofRectangle textRectSubTitle =
-      ptMonoProjectSubTitle.getStringBoundingBox("by Michael Braverman", ofGetWidth()/2-200, ofGetHeight()/2 + 100 - float2);
+      ptMonoProjectSubTitle.getStringBoundingBox("by Michael Braverman", ofGetWidth()/2-200, ofGetHeight()/2 - float2);
   ofSetColor(darkText);
   ofDrawRectangle(textRectSubTitle.x - margin, textRectSubTitle.y - margin,
                   textRectSubTitle.width + margin * 2,
                   textRectSubTitle.height + margin * 2);
   ofSetColor(lightText);
-  ptMonoProjectSubTitle.drawString("by Michael Braverman", ofGetWidth()/2-200, ofGetHeight()/2 + 100 - float2);
+  ptMonoProjectSubTitle.drawString("by Michael Braverman", ofGetWidth()/2-200, ofGetHeight()/2 - float2);
+
+
+  // instruction
+  textRectSubTitle =
+      ptMono.getStringBoundingBox("Press SPACE to begin your journey", ofGetWidth()/2-150, ofGetHeight()/2 + 200 - float3);
+  ofSetColor(lightText);
+  ofDrawRectangle(textRectSubTitle.x - margin, textRectSubTitle.y - margin,
+                  textRectSubTitle.width + margin * 2,
+                  textRectSubTitle.height + margin * 2);
+  ofSetColor(darkText);
+  ptMono.drawString("Press SPACE to begin your journey", ofGetWidth()/2-150, ofGetHeight()/2 + 200 - float3);
 
   // light.disable();
   // ofDisableLighting();
@@ -721,8 +734,6 @@ void ofApp::modelOrbitRotate() {
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key) {
-
-  cout << key << endl;
   // set the timer when a key is pressed
 
   unusedTime = ofGetElapsedTimeMillis();
@@ -732,7 +743,7 @@ void ofApp::keyPressed(int key) {
   if (key == '0')
     scene = 0;
   if (key == ' ')
-    scene++;
+    scene = (scene+1)%9;
   if (key == '1')
     scene = 1;
   if (key == '2')
