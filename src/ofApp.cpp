@@ -450,6 +450,9 @@ void ofApp::scene2setup() {
   for (unsigned int i = 0; i < modelNum; i++) {
 
     models[i].colorVertices();
+
+    models[i].setPos(
+        ofVec3f(ofRandom(-200, 200), ofRandom(-200, 200), ofRandom(-200, 200)));
   }
 
   ofBackground(255, 255, 255, 255);
@@ -514,7 +517,7 @@ void ofApp::scene3setup() {
       "the excavators to choose which tools to use in order to \n"
       "excavate an artifact's past.\n"
       "\n"
-      "But are all tools are able to \n"
+      "But are all tools able to \n"
       "reveal the meaningfulness of an artifact? Can excavation tools \n"
       "account all meaningfulness of its objects, or is there \n"
       "something that excavation tools omit?\n"
@@ -585,6 +588,12 @@ void ofApp::scene4setup() {
       "Data is the holy grail of ordering chaos and \n"
       "transforming it into order. If this is the current trend in \n"
       "archeology, then what does it do to the value of the artifacts?\n";
+
+  for (unsigned int i = 0; i < modelNum; i++) {
+
+    models[i].setPos(
+        ofVec3f(ofRandom(-200, 200), ofRandom(-200, 200), ofRandom(-200, 200)));
+  }
 }
 
 void ofApp::scene4update() {
@@ -659,7 +668,18 @@ void ofApp::scene4() {
 ███████  ██████ ███████ ██   ████ ███████     ███████
 */
 
-void ofApp::scene5setup() {}
+void ofApp::scene5setup() {
+  textDisplace = 110;
+  titleString = "Chapter V: Anthropic Artifacts";
+  textString = "When we take a look at archaeologic artifacts, how do we want \n"
+               "to treat and consider them? Should we stop digitizing the \n"
+               "past, and learn how to appreciate it as something that is \n"
+               "beyond mere information, but that of eternal value, \n"
+               "humanistic, and infinite? Should we return to worshiping \n"
+               "Pharaohs like Ancient Egyptians did, or Egyptians did Zeus, or \n"
+               "Romans did Jupiter? Could digitizing the past be the most \n"
+               "logical and obvious thing to do?\n";
+}
 
 void ofApp::scene5update() {}
 
@@ -705,32 +725,11 @@ void ofApp::scene5() {
 */
 
 void ofApp::scene6setup() {
-  titleString = "SCENE V — The artifacts";
-  textString =
-      " When we take a glimpse into the night sky, most of us rarely \n "
-      "realize that we are looking at history. Whatever we see in the \n "
-      "night sky, is a collection of photons that traveled for thousands \n "
-      "and millions of years from their point of origin. The photons coming "
-      "\n "
-      "from Alpha Centauri for example, which is our closest neighboring \n "
-      "stellar system, is already 4.3 years old by the time it reaches our "
-      "\n "
-      "telescopes. When we look at the center of our galaxy, we see light \n "
-      "that is 27,000 years old. When we observe Andromeda, our neighboring "
-      "\n "
-      "galaxy, we see light that is 2.5 million years old. Our night sky is "
-      "\n "
-      "filled with the cosmic past, and the gigabytes of data collected by "
-      "all "
-      "\n "
-      "kinds of telescopes, have yet to be 'excavated' and reveal an alien "
-      "\n "
-      "civilization that may be lurking among the data. The sky, can be \n "
-      "considered a opaque sediment that you can see through, and observe \n "
-      "the timeline of the universe's history. Just by looking at the sky, "
-      "\n "
-      "we become 'observer archeologists' who are engaged in an act of \n "
-      "excavating the past.";
+  titleString = "Chapter VI: The End";
+  textString = "Take a moment to enjoy these digitized artifacts. Some of \n"
+               "these would probably disintegrate after a few millions of \n"
+               "years, but maybe their digital replica's would exist for \n"
+               "longer.\n";
 
   for (unsigned int i = 0; i < modelNum; i++) {
     models[i].setPos(ofVec3f(0, 0, 0));
@@ -864,7 +863,7 @@ void ofApp::keyPressed(int key) {
   if (key == '0')
     scene = 0;
   if (key == ' ')
-    scene = (scene + 1) % 6;
+    scene = (scene + 1) % 7;
   if (key == '1')
     scene = 1;
   if (key == '2')

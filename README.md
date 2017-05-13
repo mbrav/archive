@@ -17,9 +17,9 @@ These are a few artifacts that are part of human history which emerged out of th
 
 As artifacts become introduced in human history, so is meaning. Objects are valued for their inner qualities and this is what makes history itself meaningful. Each historic artifact possesses its own inner world. It is therefore up to the excavators to choose which tools to use in order to excavate an artifact's past.
 
-But are all tools are able to reveal the meaningfulness of an artifact? Can excavation tools account all meaningfulness of its objects, or is there something that excavation tools omit?
+But are all tools able to reveal the meaningfulness of an artifact? Can excavation tools account all meaningfulness of its objects, or is there something that excavation tools omit?
 
-Zoom into the artifacts using the mouse wheel to reveal their inner world.
+Zoom into the artifacts using the MOUSE WHEEL to reveal their inner world.
 
 ### Chapter IV: Digitization
 
@@ -29,7 +29,11 @@ Data is the holy grail of ordering chaos and transforming it into order. If this
 
 ### Chapter V: Anthropic Artifacts
 
-### Chapter VI: Individual Artifacts
+When we take a look at archaeologic artifacts, how do we want to treat and consider them? Should we stop digitizing the past, and learn how to appreciate it as something that is beyond mere information, but that of eternal value, humanistic, and infinite? Should we return to worshiping Pharaohs like Ancient Egyptians did, or Egyptians did Zeus, or Romans did Jupiter? Could digitizing the past be the most logical and obvious thing to do?
+
+### Chapter VI: The End
+
+Take a moment to enjoy these digitized artifacts. Some of these would probably disintegrate after a few millions of years, but maybe their digital replica's would exist for longer. 
 
 ## Todo
 
