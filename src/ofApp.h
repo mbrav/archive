@@ -3,6 +3,7 @@
 
 #include "ofMain.h"
 #include "ofModel.h"
+#include "Rects.h"
 #include "ofxAssimpModelLoader.h"
 
 // debug profiler
@@ -16,6 +17,7 @@ public:
   void update();
   void draw();
 
+  // scene controls
   void scene1();
   void scene1update();
   void scene1setup();
@@ -44,6 +46,9 @@ public:
   void scene9update();
   void scene9setup();
 
+  // other functions
+  void modelOrbitRotate();
+
   void keyPressed(int key);
   void keyReleased(int key);
   void mouseMoved(int x, int y);
@@ -55,8 +60,6 @@ public:
   void windowResized(int w, int h);
   void dragEvent(ofDragInfo dragInfo);
   void gotMessage(ofMessage msg);
-
-  // Scene1 scene1;
 
   ofLight light;
   ofEasyCam camera;

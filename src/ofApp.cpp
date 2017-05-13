@@ -1,11 +1,12 @@
 #include "ofApp.h"
 
-//           _
-//  ___  ___| |_ _   _ _ __
-// / __|/ _ \ __| | | | '_ \
-// \__ \  __/ |_| |_| | |_) |
-// |___/\___|\__|\__,_| .__/
-//                    |_|
+/*
+███████ ███████ ████████ ██    ██ ██████
+██      ██         ██    ██    ██ ██   ██
+███████ █████      ██    ██    ██ ██████
+     ██ ██         ██    ██    ██ ██
+███████ ███████    ██     ██████  ██
+*/
 
 void ofApp::setup() {
   doShader = true;
@@ -61,14 +62,17 @@ void ofApp::setup() {
   }
 }
 
-//                  _       _
-//  _   _ _ __   __| | __ _| |_ ___
-// | | | | '_ \ / _` |/ _` | __/ _ \
-// | |_| | |_) | (_| | (_| | ||  __/
-//  \__,_| .__/ \__,_|\__,_|\__\___|
-//       |_|
+/*
+██    ██ ██████  ██████   █████  ████████ ███████
+██    ██ ██   ██ ██   ██ ██   ██    ██    ██
+██    ██ ██████  ██   ██ ███████    ██    █████
+██    ██ ██      ██   ██ ██   ██    ██    ██
+ ██████  ██      ██████  ██   ██    ██    ███████
+*/
 
 void ofApp::update() {
+
+  // cout << camera.getDrag() << endl;
 
   PROFILE_BEGIN("Update");
   // if a scene changed, run the setup for the new scene
@@ -152,11 +156,13 @@ void ofApp::update() {
   loop++;
 }
 
-//      _
-//   __| |_ __ __ ___      __
-//  / _` | '__/ _` \ \ /\ / /
-// | (_| | | | (_| |\ V  V /
-//  \__,_|_|  \__,_| \_/\_/
+/*
+██████  ██████   █████  ██     ██
+██   ██ ██   ██ ██   ██ ██     ██
+██   ██ ██████  ███████ ██  █  ██
+██   ██ ██   ██ ██   ██ ██ ███ ██
+██████  ██   ██ ██   ██  ███ ███
+*/
 
 void ofApp::draw() {
 
@@ -215,90 +221,18 @@ void ofApp::draw() {
   cout << ofxProfiler::getResults();
 }
 
-//  ____   ____ _____ _   _ _____   _
-// / ___| / ___| ____| \ | | ____| / |
-// \___ \| |   |  _| |  \| |  _|   | |
-//  ___) | |___| |___| |\  | |___  | |
-// |____/ \____|_____|_| \_|_____| |_|
+/*
+███████  ██████ ███████ ███    ██ ███████  ██
+██      ██      ██      ████   ██ ██      ███
+███████ ██      █████   ██ ██  ██ █████    ██
+     ██ ██      ██      ██  ██ ██ ██       ██
+███████  ██████ ███████ ██   ████ ███████  ██
+*/
 
 void ofApp::scene1setup() {
-  PROFILE_BEGIN("Scene 1 setup()");
-
-  PROFILE_END();
-
-  // draw models in a grid
-}
-
-void ofApp::scene1update() {
-  PROFILE_BEGIN("Scene 1 update()");
-
-  for (unsigned int i = 0; i < modelNum; i++) {
-
-    models[i].setPos(
-        ofVec3f(models[i].pos.x, models[i].pos.y,
-                cos(ofGetElapsedTimeMillis() / (1023.25 + i * 12.235)) * 5.0));
-  }
-
-  PROFILE_END();
-}
-
-void ofApp::scene1() {
-  PROFILE_BEGIN("Scene 1 draw()");
-  titleString = "SCENE I — The Sky";
-  textString =
-      " When we take a glimpse into the night sky, most of us rarely \n "
-      "realize that we are looking at history. Whatever we see in the \n "
-      "night sky, is a collection of photons that traveled for thousands \n "
-      "and millions of years from their point of origin. The photons coming \n "
-      "from Alpha Centauri for example, which is our closest neighboring \n "
-      "stellar system, is already 4.3 years old by the time it reaches our \n "
-      "telescopes. When we look at the center of our galaxy, we see light \n "
-      "that is 27,000 years old. When we observe Andromeda, our neighboring \n "
-      "galaxy, we see light that is 2.5 million years old. Our night sky is \n "
-      "filled with the cosmic past, and the gigabytes of data collected by all "
-      "\n "
-      "kinds of telescopes, have yet to be 'excavated' and reveal an alien \n "
-      "civilization that may be lurking among the data. The sky, can be \n "
-      "considered a opaque sediment that you can see through, and observe \n "
-      "the timeline of the universe's history. Just by looking at the sky, \n "
-      "we become 'observer archeologists' who are engaged in an act of \n "
-      "excavating the past.";
-
-  ofBackground(255, 255, 255, 255);
-  ofSetColor(200, 200, 200, 255);
-  camera.begin();
-
-  ofEnableDepthTest();
-  // light.enable();
-  ofEnableSeparateSpecularLight();
-
-  for (unsigned int i = 0; i < modelNum; i++) {
-
-    models[i].draw();
-  }
-
-  ofDisableDepthTest();
-  light.disable();
-  ofDisableLighting();
-
-  camera.end();
-
-  ofSetColor(0, 0, 0);
-
-  PROFILE_END();
-}
-
-//  ____   ____ _____ _   _ _____   ____
-// / ___| / ___| ____| \ | | ____| |___ \
-// \___ \| |   |  _| |  \| |  _|     __) |
-//  ___) | |___| |___| |\  | |___   / __/
-// |____/ \____|_____|_| \_|_____| |_____|
-
-void ofApp::scene2setup() {
-
 
   PROFILE_BEGIN("Scene 2 setup()");
-  titleString = "SCENE I — The Sky";
+  titleString = "SCENE II — The Sky";
   textString =
       " When we take a glimpse into the night sky, most of us rarely \n "
       "realize that we are looking at history. Whatever we see in the \n "
@@ -330,33 +264,20 @@ void ofApp::scene2setup() {
   PROFILE_END();
 }
 
-void ofApp::scene2update() {
-  for (unsigned int i = 0; i < modelNum; i++) {
-    models[i].rot.x += 0.05 * i;
-    models[i].rot.y += 0.08 * i;
-    models[i].rot.z += 0.07 * i;
+void ofApp::scene1update() { modelOrbitRotate(); }
 
-    models[i].pos.x =
-        models[i].initPos.x * cos(ofGetElapsedTimeMillis() / 1000.1);
-    models[i].pos.y =
-        models[i].initPos.y * sin(ofGetElapsedTimeMillis() / 1000.1);
-    models[i].pos.z =
-        models[i].initPos.z * sin(ofGetElapsedTimeMillis() / 1000.1) -
-        cos(ofGetElapsedTimeMillis() / 1000.1);
-  }
-}
-
-void ofApp::scene2() {
+void ofApp::scene1() {
   PROFILE_BEGIN("Scene 2 draw()");
   titleString = "SCENE II — The Light";
   textString = "jdl;skfjg;lsdjfgl;j";
-
 
   if (doShader) {
     shader6.begin();
     // we want to pass in some varrying values to animate our type / color
     shader6.setUniform1f("u_time", ofGetElapsedTimef());
     shader6.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
+
+    shader6.setUniform1f("zoom", camera.getDistance() / 500.0);
   }
 
   ofRect(0, 0, ofGetWidth(), ofGetHeight());
@@ -382,11 +303,95 @@ void ofApp::scene2() {
   PROFILE_END();
 }
 
-//  ____   ____ _____ _   _ _____   _____
-// / ___| / ___| ____| \ | | ____| |___ /
-// \___ \| |   |  _| |  \| |  _|     |_ \
-//  ___) | |___| |___| |\  | |___   ___) |
-// |____/ \____|_____|_| \_|_____| |____/
+/*
+███████  ██████ ███████ ███    ██ ███████     ██████
+██      ██      ██      ████   ██ ██               ██
+███████ ██      █████   ██ ██  ██ █████        █████
+     ██ ██      ██      ██  ██ ██ ██          ██
+███████  ██████ ███████ ██   ████ ███████     ███████
+*/
+
+void ofApp::scene2setup() {
+  PROFILE_BEGIN("Scene 1 setup()");
+
+  PROFILE_END();
+
+  // draw models in a grid
+}
+
+void ofApp::scene2update() {
+  PROFILE_BEGIN("Scene 1 update()");
+  modelOrbitRotate()
+
+      PROFILE_END();
+}
+
+void ofApp::scene2() {
+  PROFILE_BEGIN("Scene 1 draw()");
+  titleString = "SCENE I — The Sky";
+  textString =
+      " When we take a glimpse into the night sky, most of us rarely \n "
+      "realize that we are looking at history. Whatever we see in the \n "
+      "night sky, is a collection of photons that traveled for thousands \n "
+      "and millions of years from their point of origin. The photons coming \n "
+      "from Alpha Centauri for example, which is our closest neighboring \n "
+      "stellar system, is already 4.3 years old by the time it reaches our \n "
+      "telescopes. When we look at the center of our galaxy, we see light \n "
+      "that is 27,000 years old. When we observe Andromeda, our neighboring \n "
+      "galaxy, we see light that is 2.5 million years old. Our night sky is \n "
+      "filled with the cosmic past, and the gigabytes of data collected by all "
+      "\n "
+      "kinds of telescopes, have yet to be 'excavated' and reveal an alien \n "
+      "civilization that may be lurking among the data. The sky, can be \n "
+      "considered a opaque sediment that you can see through, and observe \n "
+      "the timeline of the universe's history. Just by looking at the sky, \n "
+      "we become 'observer archeologists' who are engaged in an act of \n "
+      "excavating the past.";
+
+  ofBackground(255, 255, 255, 255);
+  ofSetColor(200, 200, 200, 255);
+  camera.begin();
+
+  ofEnableDepthTest();
+  // light.enable();
+  ofEnableSeparateSpecularLight();
+
+  if (doShader) {
+    shader6.begin();
+    // we want to pass in some varrying values to animate our type / color
+    shader6.setUniform1f("u_time", ofGetElapsedTimef());
+    shader6.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
+
+    shader6.setUniform2f("u_mouse", mouseX - ofGetWidth() / 2,
+                         ofGetHeight() / 2 - mouseY);
+    shader6.setUniform1f("zoom", camera.getDistance() / 500.0);
+  }
+
+  for (unsigned int i = 0; i < modelNum; i++) {
+
+    models[i].draw();
+  }
+
+  if (doShader) {
+    shader6.end();
+  }
+
+  ofDisableDepthTest();
+  light.disable();
+  ofDisableLighting();
+
+  camera.end();
+
+  PROFILE_END();
+}
+
+/*
+███████  ██████ ███████ ███    ██ ███████ ██████
+██      ██      ██      ████   ██ ██           ██
+███████ ██      █████   ██ ██  ██ █████    █████
+     ██ ██      ██      ██  ██ ██ ██           ██
+███████  ██████ ███████ ██   ████ ███████ ██████
+*/
 
 void ofApp::scene3setup() {
   PROFILE_BEGIN("Scene 3 setup()");
@@ -395,6 +400,12 @@ void ofApp::scene3setup() {
 
 void ofApp::scene3update() {
   PROFILE_BEGIN("Scene 3 update()");
+  for (unsigned int i = 0; i < modelNum; i++) {
+
+    models[i].setPos(
+        ofVec3f(models[i].pos.x, models[i].pos.y,
+                cos(ofGetElapsedTimeMillis() / (1023.25 + i * 12.235)) * 5.0));
+  }
   PROFILE_END();
 }
 
@@ -421,23 +432,27 @@ void ofApp::scene3() {
 
     int randNum = (int)ofRandom(i, modelNum);
 
-    if (i == randNum && loop % 5 == 0) {
-      shader.begin();
+    if ((i % 3) == (randNum % 3)) {
+      shader6.begin();
       // we want to pass in some varrying values to animate our type / color
-      shader.setUniform1f("timeValX", ofGetElapsedTimef() * 0.1);
-      shader.setUniform1f("timeValY", -ofGetElapsedTimef() * 0.18);
+
+      shader6.setUniform1f("u_time", ofGetElapsedTimef());
+      shader6.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
 
       // we also pass in the mouse position
       // we have to transform the coords to what the shader is expecting which
       // is 0,0 in the center and y axis flipped.
-      shader.setUniform2f("mouse", mouseX - ofGetWidth() / 2,
-                          ofGetHeight() / 2 - mouseY);
+      shader6.setUniform2f("u_mouse", mouseX - ofGetWidth() / 2,
+                           ofGetHeight() / 2 - mouseY);
+
+      shader6.setUniform1f("zoom", camera.getDistance() / 500.0);
+      // shader6.setUniform2f("rotation", camera.getDistance()/500.0);
     }
 
     models[i].draw();
 
     if (i == randNum && loop % 5 == 0) {
-      shader.end();
+      shader6.end();
     }
   }
 
@@ -454,11 +469,13 @@ void ofApp::scene3() {
   PROFILE_END();
 }
 
-//  ____   ____ _____ _   _ _____   _  _
-// / ___| / ___| ____| \ | | ____| | || |
-// \___ \| |   |  _| |  \| |  _|   | || |_
-//  ___) | |___| |___| |\  | |___  |__   _|
-// |____/ \____|_____|_| \_|_____|    |_|
+/*
+███████  ██████ ███████ ███    ██ ███████     ██   ██
+██      ██      ██      ████   ██ ██          ██   ██
+███████ ██      █████   ██ ██  ██ █████       ███████
+     ██ ██      ██      ██  ██ ██ ██               ██
+███████  ██████ ███████ ██   ████ ███████          ██
+*/
 
 void ofApp::scene4setup() {
   PROFILE_BEGIN("Scene 4 setup()");
@@ -484,16 +501,20 @@ void ofApp::scene4() {
 
   for (unsigned int i = 0; i < modelNum; i++) {
     if (doShader) {
-      shader4.begin();
+      shader6.begin();
       // we want to pass in some varrying values to animate our type / color
-      shader4.setUniform1f("u_time", ofGetElapsedTimef());
-      shader4.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
+      shader6.setUniform1f("u_time", ofGetElapsedTimef());
+      shader6.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
+
+      shader6.setUniform2f("u_mouse", mouseX - ofGetWidth() / 2,
+                           ofGetHeight() / 2 - mouseY);
+      shader6.setUniform1f("zoom", camera.getDistance() / 500.0);
     }
 
     models[i].draw();
 
     if (doShader) {
-      shader4.end();
+      shader6.end();
     }
   }
 
@@ -531,11 +552,37 @@ void ofApp::scene9update() {}
 
 void ofApp::scene9() {}
 
-//                  _             _
-//   ___ ___  _ __ | |_ _ __ ___ | |___
-//  / __/ _ \| '_ \| __| '__/ _ \| / __|
-// | (_| (_) | | | | |_| | | (_) | \__ \
- //  \___\___/|_| |_|\__|_|  \___/|_|___/
+/*
+███████ ██    ██ ███    ██  ██████ ████████ ██  ██████  ███    ██ ███████
+██      ██    ██ ████   ██ ██         ██    ██ ██    ██ ████   ██ ██
+█████   ██    ██ ██ ██  ██ ██         ██    ██ ██    ██ ██ ██  ██ ███████
+██      ██    ██ ██  ██ ██ ██         ██    ██ ██    ██ ██  ██ ██      ██
+██       ██████  ██   ████  ██████    ██    ██  ██████  ██   ████ ███████
+*/
+
+void ofApp::modelOrbitRotate() {
+  for (unsigned int i = 0; i < modelNum; i++) {
+    models[i].rot.x += 0.05 * i;
+    models[i].rot.y += 0.08 * i;
+    models[i].rot.z += 0.07 * i;
+
+    models[i].pos.x =
+        models[i].initPos.x * cos(ofGetElapsedTimeMillis() / 1000.1);
+    models[i].pos.y =
+        models[i].initPos.y * sin(ofGetElapsedTimeMillis() / 1000.1);
+    models[i].pos.z =
+        models[i].initPos.z * sin(ofGetElapsedTimeMillis() / 1000.1) -
+        cos(ofGetElapsedTimeMillis() / 1000.1);
+  }
+}
+
+/*
+ ██████  ██████  ███    ██ ████████ ██████   ██████  ██      ███████
+██      ██    ██ ████   ██    ██    ██   ██ ██    ██ ██      ██
+██      ██    ██ ██ ██  ██    ██    ██████  ██    ██ ██      ███████
+██      ██    ██ ██  ██ ██    ██    ██   ██ ██    ██ ██           ██
+ ██████  ██████  ██   ████    ██    ██   ██  ██████  ███████ ███████
+*/
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key) {

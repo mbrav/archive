@@ -13,7 +13,8 @@ uniform vec2 u_mouse;
 #define volsteps 10
 #define stepsize 0.2
 
-#define zoom 0.800
+// #define zoom 0.800
+uniform float zoom = 0.800;
 #define tile 0.850
 #define speed 0.010
 
@@ -66,5 +67,5 @@ void main() {
     s += stepsize;
   }
   v = mix(vec3(length(v)), v, saturation); // color adjust
-  gl_FragColor = vec4((v * .01), 1.);
+  gl_FragColor = vec4((v * .01), 2.);
 }

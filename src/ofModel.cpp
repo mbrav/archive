@@ -63,7 +63,7 @@ void ofModel::colorVertices() {
 }
 
 void ofModel::colorVertices(ofColor color) {
-  cout << color << endl;
+  // cout << color << endl;
   for (int i = 0; i < mesh.getNumIndices(); i += 1) {
     mesh.addColor(ofColor(color));
   }
