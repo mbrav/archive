@@ -64,15 +64,22 @@ public:
   void dragEvent(ofDragInfo dragInfo);
   void gotMessage(ofMessage msg);
 
+  // text
   ofTrueTypeFont ptMonoProjectTitle;
   ofTrueTypeFont ptMonoProjectSubTitle;
   ofTrueTypeFont ptMono;
+
+  ofColor darkText, lightText;
+  string titleString;
+  string textString;
+  int textDisplace;
+  bool showDescription;
 
   ofLight light;
   ofEasyCam camera;
 
   const int modelFiles = 6; // number of file models
-  const int modelNum = 40;  // number of total models to display
+  const int modelNum = 30;  // number of total models to display
   vector<ofModel> models;
 
   // scene control
@@ -80,16 +87,10 @@ public:
   int prevScene; // number of the scene
   // loop counter
   unsigned int loop;
-  int unatendedTime, unatendedTimer;
+  float unatendedTime, unatendedTimer;
 
   // timers
   float timer1; // for star shader
-
-  ofColor darkText, lightText;
-  string titleString;
-  string textString;
-  bool showDescription;
-
   ofShader shader;
   ofShader shader2; // venus
   ofShader shader3; // totality
@@ -97,6 +98,7 @@ public:
   ofShader shader5; // tearlines
   // Star Nest BY Pablo RomÃ¡n Andrioli https://www.shadertoy.com/view/XlfGRj
   ofShader shader6;
+  ofShader shader7; // pixelated
   bool doShader;
   vector<ofShader> shaders;
 };
