@@ -297,7 +297,7 @@ void ofApp::scene0() {
     shader6.setUniform1f("u_time", ofGetElapsedTimef());
     shader6.setUniform2f("u_resolution", ofGetWidth(), ofGetHeight());
 
-    shader6.setUniform1f("zoom", (ofGetElapsedTimeMillis()-timer1)/10000.);
+    shader6.setUniform1f("zoom", sin(ofGetElapsedTimeMillis()/10000.));
   }
 
   ofRect(0, 0, ofGetWidth(), ofGetHeight());
@@ -721,6 +721,8 @@ void ofApp::modelOrbitRotate() {
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key) {
+
+  cout << key << endl;
   // set the timer when a key is pressed
 
   unusedTime = ofGetElapsedTimeMillis();
@@ -761,16 +763,24 @@ void ofApp::keyPressed(int key) {
 void ofApp::keyReleased(int key) {}
 
 //--------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y) {}
+void ofApp::mouseMoved(int x, int y) {
+  unusedTime = ofGetElapsedTimeMillis();
+}
 
 //--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button) {}
+void ofApp::mouseDragged(int x, int y, int button) {
+  unusedTime = ofGetElapsedTimeMillis();
+}
 
 //--------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button) {}
+void ofApp::mousePressed(int x, int y, int button) {
+  unusedTime = ofGetElapsedTimeMillis();
+}
 
 //--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button) {}
+void ofApp::mouseReleased(int x, int y, int button) {
+  unusedTime = ofGetElapsedTimeMillis();
+}
 
 //--------------------------------------------------------------
 void ofApp::mouseEntered(int x, int y) {}
@@ -779,10 +789,14 @@ void ofApp::mouseEntered(int x, int y) {}
 void ofApp::mouseExited(int x, int y) {}
 
 //--------------------------------------------------------------
-void ofApp::windowResized(int w, int h) {}
+void ofApp::windowResized(int w, int h) {
+  unusedTime = ofGetElapsedTimeMillis();
+}
 
 //--------------------------------------------------------------
 void ofApp::gotMessage(ofMessage msg) {}
 
 //--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo) {}
+void ofApp::dragEvent(ofDragInfo dragInfo) {
+  unusedTime = ofGetElapsedTimeMillis();
+}
