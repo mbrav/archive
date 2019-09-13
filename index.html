@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>2019.js</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1 class="title" data-text="whats gucci?">2019.js</h1>
+    <main>
+      <h2>2019.js</h2>
+        <a class="project-link" href="http://mbrav.github.io/old_portfolio/"><h3><span>01</span>CSS Stuff</h3></a>
+    </main>
+  </body>
+  <script type="text/javascript">
+
+    var allElements = document.getElementsByTagName('span' );
+
+    for (var i = 0; i < allElements.length; i++) {
+      var text = allElements[i].textContent;
+      allElements[i].textContent = roman(text);
+    }
+
+    // roman numerator
+    function roman(num) {
+      var lookup = {M:1000, CM:900, D:500, CD:400, C:100, XC:90, L:50, XL:40, X:10, IX:9, V:5, IV:4, I:1}
+      var string = '';
+      for (var i in lookup) {
+        while (num >= lookup[i]) {
+          string += i;
+          num -= lookup[i];
+        }
+      }
+      return string;
+    }
+
+    var morse = {
+      a: ". ___",
+      b: "___ . . .",
+      c: "___ . ___ .",
+      d: "___ . .",
+      e: ".",
+      f: ". . ___ .",
+      g: "___ ___ .",
+      h: ". . . .",
+      i: ". .",
+      j: ". ___ ___ ___ ___",
+      k: "___ . ___",
+      l: ". ___ . .",
+      m: "___ ___",
+      n: "___ .",
+      o: "___ ___ ___",
+      p: ". ___ ___ .",
+      q: "___ ___ . ___",
+      r: ". ___ .",
+      s: ". . .",
+      t: "___",
+      u: ". . ___",
+      v: ". . . ___",
+      w: ". ___ ___",
+      x: "___ . . ___",
+      y: "___ . ___ ___",
+      z: "___ ___ . .",
+      1: ". ___ ___ ___",
+      2: ". . ___ ___ ___",
+      3: ". . . ___ ___",
+      4: ". . . . ___",
+      5: ". . . . .",
+      6: "___ . . . .",
+      7: "___ ___ . . .",
+      8: "___ ___ ___ . .",
+      9: "___ ___ ___ ___ .",
+      0: "___ ___ ___ ___ ___",
+      " ": "/", //spaces
+      //I don'nt know if the following are correct or not...
+      ".": ". ___ . ___ . ___",
+      ",": "___ . . ___",
+      ":": "___ . . .",
+      "?": ". . ___ . .",
+      "'": ". ____ .",
+      "-": "___ . . . . ___",
+      "/": "___ . . ___ .",
+      "(": "___ . ___ .",
+      ")": "___ . ___ . ___",
+      "\"": ". ___ . . ___ .",
+      "@": ". ___ . ___ .",
+      "=": "___ . . . ___",
+      "&": ". ___ . . .",
+      ";": "___ . ___ . ___ .",
+      "+": ". ___ . ___ .",
+      "_": ". . ___ . __",
+      "$": ". . . ___ . . ___",
+      "!": "___ . ___ . ____"
+    };
+
+    // var inp = document.getElementById("inp");
+    // var butt = document.getElementById("butt");
+    // var out = document.getElementById("out");
+    //
+    // butt.addEventListener("click", function() {
+    //   var conv = inp.value;
+    //   conv = conv.toLowerCase();
+    //   conv = conv.split("");
+    //   for (var i = 0; i < conv.length; i++) {
+    //     conv[i] = morse[conv[i]];
+    //   }
+    //
+    //   conv = conv.join(" ");
+    //   console.log(conv);
+    //   out.innerHTML = conv;
+    // });
+
+  </script>
+</html>
