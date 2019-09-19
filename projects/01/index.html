@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>squarework</title>
+    <title id="page-title"></title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,9 +15,24 @@
     }
     </style>
   </head>
+
+  <link href='../../css/organizer.css' rel='stylesheet' type='text/css'>
   <body>
+
+    <div id="title">
+  			<h1 id="project-name"></h1>
+  			<ul id="project-nav">
+  					<li id="past-project"></li>
+  					<li id="next-project"></li>
+  			</ul>
+  	</div>
 
   </body>
   <script src="../p5.min.js"></script>
   <script src="script.js"></script>
+  <script type="text/javascript" src='../../js/organizer.js'></script>
+  <script type="text/javascript">
+    // set project's number and name
+    projectSetup(1, "CSS Stuff");
+  </script>
 </html>

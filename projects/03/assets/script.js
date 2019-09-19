@@ -146,6 +146,6 @@ function loop() {
 			// console.log(numbers[0]);
 		}
 	}
-	// console.log(mod);
+	console.log(mod);
 	loopCount ++;
 }
