@@ -1,121 +1,88 @@
-var loopCount = 0;
+
+
+
+// run until the laws of mathemtics break
+// while (loopCount < 100) {
+// 	loop ();
+// }
+
+var myWrap =  document.getElementById('wrapper');
+var element = document.createElement("div");
+element.className = "module"
+
+// color pallete
+var pallete = [
+	"#464159",
+	"#6c7b95",
+	"#8bbabb",
+	"#c7f0db"
+];
+
+var color = 0;
+var degrees = 0;
+var w = 0;
+var h = 0;
+
+var i = 0;
 
 init ();
 
-// run until the laws of mathemtics break
-while (loopCount < 100) {
-	loop ();
-}
+var myInterval = setInterval(appendFunc, 500);
 
 function init() {
-	var myWrap =  document.getElementById('wrapper');
-	var element = document.createElement("div");
-	element.className = "module"
+	// setInterval(appendFunc, 200);
 
-	// color pallete
-	var pallete = [
-		"#464159",
-		"#6c7b95",
-		"#8bbabb",
-		"#c7f0db"
-	];
+	setTimeout( function(){
+		clearInterval(myInterval)
+	}, 20000);
+}
 
-	var color = 0;
-	var degrees = 0;
-	var w = 0;
-	var h = 0;
 
-	for (var i = 0; i < 400; i++) {
+function appendFunc() {
+
+		console.log("test!");
 
 		w = Math.cos(i/20) * 200 + 500;
 		h = Math.cos(i/30) * 20 + 30;
 
-		// var module = `
-		// 	<div class="module" style="background-color:rgb(255,255,255)">
-		// 	<p> i = ${i}, color = ${color}, w = ${w}, h = ${h}, deg = ${degrees}</p>
-		// 		<div class="module_child"
-		// 			style="
-		// 				background-color:rgb(${(Math.cos(i/100) * 255 + 100)},0,0);
-		// 				transform: rotate(${degrees}deg);
-		// 				width: ${w}px;
-		// 				height: ${h}px;">
-		// 		</div>
-		// 		<div class="module_child"
-		// 			style="
-		// 				background-color:rgb(0,${(Math.cos(i/100) * 255 + 100)},0);
-		// 				transform: rotate(${degrees + 60}deg);
-		// 				width: ${w}px;
-		// 				height: ${h}px;">
-		// 		</div>
-		// 		<div class="module_child"
-		// 			style="
-		// 				background-color:rgb(0,0,${(Math.cos(i/100) * 255 + 100)});
-		// 				transform: rotate(${degrees + 120}deg);
-		// 				width: ${w}px;
-		// 				height: ${h}px;">
-		// 		</div>
-		// 		<div class="module_child"
-		// 			style="
-		// 				background-color:rgb(${(Math.cos(i/100) * 255 + 100)},0,0);
-		// 				transform: rotate(${degrees + 180}deg);
-		// 				width: ${w}px;
-		// 				height: ${h}px;">
-		// 		</div>
-		// 		<div class="module_child"
-		// 			style="
-		// 				background-color:rgb(0,${(Math.cos(i/100) * 255 + 100)},0);
-		// 				transform: rotate(${degrees + 240}deg);
-		// 				width: ${w}px;
-		// 				height: ${h}px;">
-		// 		</div>
-		// 		<div class="module_child"
-		// 			style="
-		// 				background-color:rgb(0,0,${(Math.cos(i/100) * 255 + 100)});
-		// 				transform: rotate(${degrees + 300}deg);
-		// 				width: ${w}px;
-		// 				height: ${h}px;">
-		// 		</div>
-		// 	</div>
-		// `;
-
 		var module = `
 			<div class="module" style="background-color:${pallete[0]}">
-				<div class="module_child"
+				<div class="module_child" id="module-${i}-0"
 					style="
 						background-color:${pallete[1]};
 						transform: rotate(${degrees}deg);
 						width: ${w}px;
 						height: ${h}px;">
 				</div>
-				<div class="module_child"
+				<div class="module_child" id="module-${i}-1"
 					style="
 						background-color:${pallete[2]};
 						transform: rotate(${degrees + 60}deg);
 						width: ${w}px;
 						height: ${h}px;">
 				</div>
-				<div class="module_child"
+				<div class="module_child" id="module-${i}-2"
 					style="
 						background-color:${pallete[3]};
 						transform: rotate(${degrees + 120}deg);
 						width: ${w}px;
 						height: ${h}px;">
 				</div>
-				<div class="module_child"
+				<div class="module_child" id="module-${i}-3"
 					style="
 						background-color:${pallete[1]};
 						transform: rotate(${degrees + 180}deg);
 						width: ${w}px;
 						height: ${h}px;">
 				</div>
-				<div class="module_child"
+				<div class="module_child" id="module-${i}-4"
 					style="
 						background-color:${pallete[2]};
 						transform: rotate(${degrees + 240}deg);
 						width: ${w}px;
 						height: ${h}px;">
 				</div>
-				<div class="module_child"
+				<div class="module_child" id="module-${i}-5"
 					style="
 						background-color:${pallete[3]};
 						transform: rotate(${degrees + 300}deg);
@@ -130,22 +97,11 @@ function init() {
 		document.getElementById('wrapper').innerHTML += module;
 
 		color ++;
-		color ++;
 		degrees += 5;
-	}
-}
+		i++;
 
-function loop() {
-	var mod = document.getElementsByClassName('module');
-
-	for (var i = 0; i < mod.length; i++) {
-		for (var j = 0; j < mod[i].children.length; j++) {
-			// console.log(mod[i].children[j].offsetWidth);
-			// console.log(mod[5].children[1].offsetHeight);
-			mod[i].children[j].style.transform = loopCount + "deg";
-			// console.log(numbers[0]);
-		}
-	}
-	console.log(mod);
-	loopCount ++;
+		// if(i >= 10){ // defining the maximum amount of cycles
+		// 	console.log("we're done!");
+		// 	clearInterval(myInterval);
+		// }
 }

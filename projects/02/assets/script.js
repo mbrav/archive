@@ -130,7 +130,6 @@ function init() {
 		document.getElementById('wrapper').innerHTML += module;
 
 		color ++;
-		color ++;
 		degrees += 5;
 	}
 }

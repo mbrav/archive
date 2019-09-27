@@ -4,9 +4,12 @@
 
 body {
 	font-family: Helvetica;
+	background-color: #464159;
 }
+
 .module {
 	height: 20px;
+	position: absolute;
 
 }
 
