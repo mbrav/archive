@@ -18,6 +18,7 @@ var pallete = [
 	"#c7f0db"
 ];
 
+
 var color = 0;
 var degrees = 0;
 var w = 0;
@@ -27,7 +28,9 @@ var i = 0;
 
 init ();
 
-var myInterval = setInterval(appendFunc, 500);
+var myInterval = setInterval(appendFunc, 200);
+
+
 
 function init() {
 	// setInterval(appendFunc, 200);
@@ -47,42 +50,42 @@ function appendFunc() {
 
 		var module = `
 			<div class="module" style="background-color:${pallete[0]}">
-				<div class="module_child" id="module-${i}-0"
+				<div class="module_child"
 					style="
 						background-color:${pallete[1]};
 						transform: rotate(${degrees}deg);
 						width: ${w}px;
 						height: ${h}px;">
 				</div>
-				<div class="module_child" id="module-${i}-1"
+				<div class="module_child"
 					style="
 						background-color:${pallete[2]};
 						transform: rotate(${degrees + 60}deg);
 						width: ${w}px;
 						height: ${h}px;">
 				</div>
-				<div class="module_child" id="module-${i}-2"
+				<div class="module_child"
 					style="
 						background-color:${pallete[3]};
 						transform: rotate(${degrees + 120}deg);
 						width: ${w}px;
 						height: ${h}px;">
 				</div>
-				<div class="module_child" id="module-${i}-3"
+				<div class="module_child"
 					style="
 						background-color:${pallete[1]};
 						transform: rotate(${degrees + 180}deg);
 						width: ${w}px;
 						height: ${h}px;">
 				</div>
-				<div class="module_child" id="module-${i}-4"
+				<div class="module_child"
 					style="
 						background-color:${pallete[2]};
 						transform: rotate(${degrees + 240}deg);
 						width: ${w}px;
 						height: ${h}px;">
 				</div>
-				<div class="module_child" id="module-${i}-5"
+				<div class="module_child"
 					style="
 						background-color:${pallete[3]};
 						transform: rotate(${degrees + 300}deg);
@@ -98,10 +101,9 @@ function appendFunc() {
 
 		color ++;
 		degrees += 5;
-		i++;
 
-		// if(i >= 10){ // defining the maximum amount of cycles
-		// 	console.log("we're done!");
-		// 	clearInterval(myInterval);
-		// }
+		if(i >= 10){ // defining the maximum amount of cycles
+			console.log("we're done!");
+			clearInterval(myAnimating);
+		}
 }
