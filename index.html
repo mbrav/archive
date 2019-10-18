@@ -19,6 +19,8 @@
         <a class="project-link" href="projects/01/index.html"><h3><span>01</span>CSS Stuff</h3></a>
         <a class="project-link" href="projects/02/index.html"><h3><span>02</span>modular generative pattern</h3></a>
         <a class="project-link" href="projects/03/index.html"><h3><span>03</span>modular generative pattern II</h3></a>
+        <a class="project-link" href="projects/04/index.html"><h3><span>04</span>event pattern</h3></a>
+        <!-- <a class="project-link" href="projects/05/index.html"><h3><span>05</span>event pattern</h3></a> -->
     </main>
   </body>
   <script type="text/javascript">
@@ -27,7 +29,7 @@
 
     for (var i = 0; i < allElements.length; i++) {
       var text = allElements[i].textContent;
-      allElements[i].textContent = roman(text);
+      allElements[i].textContent = "Week " + roman(text);
     }
 
     // roman numerator
