@@ -35,38 +35,7 @@ function selectModules() {
 			$(this).css("background-color", colorPallete[2])
 		}
 	);
-
-	// console.log(modules);
-	//
-	// for(i=0; i<modules.length; i++) {
-	// 		modules[i].hover(
-	// 			function() {
-	// 				$(this).css("background-color", "yellow")
-	// 			}, function() {
-	// 				$(this).css("background-color", "red")
-	// 			});
-	// }
-
-	// sels = document.getElementsByClassName('module_child');
-	// console.log(sels);
 }
-
-function triggerFunction(element, i){
-	console.log("click");
-
-	console.log(sels[i]);
-
-	console.log(element.isThisTriggered);
-
-	if(element.isThisTriggered === false){
-		element.style.backgroundColor = colorPallete[0];
-		element.isThisTriggered = true;
-	}else{
-		element.style.backgroundColor = colorPallete[1];
-		element.isThisTriggered = false;
-	}
-}
-
 
 function generateModules() {
 	var myWrap =  document.getElementById('wrapper');
