@@ -8,6 +8,7 @@ init();
 animate();
 
 function init() {
+	console.log(evictions);
 
 	camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 10000);
 	camera.position.z = 300;
@@ -98,7 +99,7 @@ function animate() {
 	requestAnimationFrame(animate);
 
 	render();
-	stats.update();
+	// stats.update();
 
 }
 
