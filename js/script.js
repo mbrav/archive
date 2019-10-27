@@ -2,18 +2,23 @@ var renderer, scene, camera, stats;
 
 var particleSystem, uniforms, geometry;
 
-var particles = 100000;
+var particles = 10000;
+
+var raycaster, mouse, INTERSECTED;
 
 init();
 animate();
 
 function init() {
-	console.log(evictions);
+	// console.log(evictions);
 
 	camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 10000);
 	camera.position.z = 300;
 
 	scene = new THREE.Scene();
+
+	mouse = new THREE.Vector2();
+	raycaster = new THREE.Raycaster();
 
 	uniforms = {
 
@@ -37,7 +42,7 @@ function init() {
 	});
 
 
-	var radius = 200;
+	var radius = 100;
 
 	geometry = new THREE.BufferGeometry();
 
@@ -51,7 +56,8 @@ function init() {
 
 		positions.push((Math.random() * 2 - 1) * radius);
 		positions.push((Math.random() * 2 - 1) * radius);
-		positions.push((Math.random() * 2 - 1) * radius);
+		// positions.push((Math.random() * 2 - 1) * radius);
+		positions.push(0);
 
 		color.setHSL(i / particles, 1.0, 0.5);
 
@@ -94,6 +100,17 @@ function onWindowResize() {
 
 }
 
+function onMouseMove(event) {
+
+	// calculate mouse position in normalized device coordinates
+	// (-1 to +1) for both components
+	event.preventDefault();
+
+	mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+	mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+}
+
 function animate() {
 
 	requestAnimationFrame(animate);
@@ -105,20 +122,22 @@ function animate() {
 
 function render() {
 
-	var time = Date.now() * 0.005;
+	var time = Date.now() * 0.0008;
 
-	particleSystem.rotation.z = 0.01 * time;
+	particleSystem.rotation.z = 0.1 * time;
 
 	var sizes = geometry.attributes.size.array;
 
 	for (var i = 0; i < particles; i++) {
 
-		sizes[i] = 10 * (1 + Math.sin(0.1 * i + time));
+		// sizes[i] = 10 * (1 + Math.sin(0.1 * i + time));
+		sizes[i] = 30;
 
 	}
 
 	geometry.attributes.size.needsUpdate = true;
 
-	renderer.render(scene, camera);
 
-}
+		renderer.render(scene, camera);
+
+	}
