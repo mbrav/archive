@@ -30,7 +30,7 @@ function startGeocoding() {
 
       var request = data[count];
 
-      console.log("GEOCODE REQUEST: ", request);
+      console.log("GEOCODE REQUEST FOR ", count, ": ", request);
 
       var settings = {
         "async": true,
@@ -47,7 +47,7 @@ function startGeocoding() {
       }
 
       $.ajax(settings).done(function(response) {
-        console.log("GEOCODE RESPONSE: ", response);
+        console.log("GEOCODE RESPONSE: ", response[0]);
         var output = {
           lon: response[0].lon,
           lat: response[0].lat,
@@ -58,9 +58,9 @@ function startGeocoding() {
 
         storage.push(output);
 
-        count++;
       });
 
+			count++;
 
 		}
 
