@@ -2,19 +2,19 @@
 // Michael Braverman © 2019
 
 
-var renderer, scene, camera, stats;
+var renderer, scene, camera;
 var particleSystem, uniforms, geometry;
-var raycaster, mouse, INTERSECTED;
 
-var dataStatistics = calculateStatistics(evictions);
+var mouse, raycaster;
+
+var data = evictions;
+var dataStatistics = calculateStatistics(data);
 var particles = dataStatistics.length;
 
 init();
 animate();
 
 function init() {
-
-	// console.log(evictions);
 
 	camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 10000);
 	camera.position.z = 300;
@@ -61,7 +61,7 @@ function init() {
 		// X
 		positions.push(
 			mapFunction(
-				evictions[i].lon,
+				data[i].lon,
 				dataStatistics.lon.min,
 				dataStatistics.lon.max,
 				0,
@@ -72,7 +72,7 @@ function init() {
 		// Y
 		positions.push(
 			mapFunction(
-				evictions[i].lat,
+				data[i].lat,
 				dataStatistics.lat.min,
 				dataStatistics.lat.max,
 				0,
@@ -103,7 +103,10 @@ function init() {
 
 	scene.add(particleSystem);
 
-	renderer = new THREE.WebGLRenderer();
+	renderer = new THREE.WebGLRenderer({
+		antialias: true
+	});
+
 	renderer.setPixelRatio(window.devicePixelRatio);
 	renderer.setSize(window.innerWidth, window.innerHeight);
 
@@ -111,6 +114,9 @@ function init() {
 	container.appendChild(renderer.domElement);
 
 	window.addEventListener('resize', onWindowResize, false);
+	window.addEventListener('mousemove', onMouseMove, false );
+
+	// console.log(scene.children);
 
 }
 
@@ -139,14 +145,32 @@ function render() {
 
 	geometry.attributes.size.needsUpdate = true;
 
+	// raycaster
 	renderer.render(scene, camera);
+
+	// update the picking ray with the camera and mouse position
+	raycaster.setFromCamera( mouse, camera );
+
+	// calculate objects intersecting the picking ray
+	var intersects = raycaster.intersectObjects( scene.children );
+
+	for ( var i = 0; i < intersects.length; i++ ) {
+
+		console.log(intersects[ i ]);
+
+		// intersects[ i ].object.material.color.set( 0xff0000 );
+
+	}
+
+	renderer.render( scene, camera );
+
 
 }
 
 function calculateStatistics(dat) {
 
 	var dataStats = {
-		"length": evictions.length,
+		"length": data.length,
 		"lat": {
 			"min": 0,
 			"max": 0
