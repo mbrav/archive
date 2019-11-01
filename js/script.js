@@ -16,7 +16,7 @@ animate();
 
 function init() {
 
-	camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 1, 10000);
+	camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 100000);
 	camera.position.z = 300;
 
 	scene = new THREE.Scene();
@@ -95,7 +95,7 @@ function init() {
 
 		colors.push(color.r, color.g, color.b);
 
-		sizes.push(16);
+		sizes.push(3);
 
 	}
 
@@ -143,7 +143,7 @@ function render() {
 	for (var i = 0; i < particles; i++) {
 
 		// sizes[i] = 10 * (1 + Math.sin(0.1 * i + time));
-		sizes[i] = 30;
+		// sizes[i] = 30;
 
 	}
 
@@ -163,7 +163,7 @@ function render() {
 		// console.log(intersects[0]);
 
 		// intersects[ i ].object.material.color.set( 0xff0000 );
-		$("#info #name").html(data[intersects[0].index].first_name);
+		$("#info #name").html(data[intersects[0].index].first_name + " " + data[intersects[0].index].last_name);
 		$("#info img").attr("src", data.FIELD2);
 		$("#info #date span").html(data[intersects[0].index].date);
 		$("#info #lon span").html(data[intersects[0].index].lon);
@@ -184,11 +184,13 @@ function calculateStatistics(dat) {
 		"length": data.length,
 		"lat": {
 			"min": 0,
-			"max": 0
+			"max": 0,
+			"avg": 0
 		},
 		"lon": {
 			"min": 0,
-			"max": 0
+			"max": 0,
+			"avg": 0
 		},
 		"settings": {
 			"lat": {
@@ -202,8 +204,11 @@ function calculateStatistics(dat) {
 		}
 	};
 
-	// calculate max and min values of the data
+	var goodDataIndexCount = 0; latCount = 0.0, lonCount = 0.0; // stat shit
+	// calculate max, min and avg values of the data
 	for (var i = 0; i < dat.length; i++) {
+
+		// min, max, even for bad data
 		if (dataStats.lat.min > dat[i].lat) {
 			dataStats.lat.min = dat[i].lat;
 		}
@@ -216,7 +221,29 @@ function calculateStatistics(dat) {
 		if (dataStats.lon.max < dat[i].lon) {
 			dataStats.lon.max = dat[i].lon;
 		}
+
+		// count good data
+		if (dataStats.settings.lat.min < dat[i].lat || dataStats.settings.lat.max > dat[i].lat || dataStats.settings.lon.min < dat[i].lon || dataStats.settings.lon.max > dat[i].lon) {
+			// count as good index
+			goodDataIndexCount ++;
+			// add to average count
+			latCount = parseFloat(dat[i].lat);
+			lonCount = parseFloat(dat[i].lon);
+		} else {
+			console.log("bad data");
+		}
 	}
+
+	console.log(latCount, lonCount);
+
+	// divide it up to get average
+	latCount = latCount/goodDataIndexCount;
+	lonCount = lonCount/goodDataIndexCount;
+	//save into stats
+	dataStats.lat.avg = latCount;
+	dataStats.lon.avg = lonCount;
+
+
 
 	console.log(dataStats);
 	return dataStats;
