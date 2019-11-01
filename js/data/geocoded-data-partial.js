@@ -24260,5 +24260,29272 @@ var evictions = [
         "date": "01/11/2017",
         "first_name": "Ileana",
         "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.891518",
+        "lat": "40.844089",
+        "date": "12/04/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8637846526098",
+        "lat": "40.86627555",
+        "date": "10/03/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.871750741875",
+        "lat": "40.8289559",
+        "date": "07/14/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9290929",
+        "lat": "40.8606635",
+        "date": "02/11/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9760764442878",
+        "lat": "40.7867051",
+        "date": "03/28/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9445025",
+        "lat": "40.7535631",
+        "date": "11/19/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.955394",
+        "lat": "40.640674",
+        "date": "11/09/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-74.002169648705",
+        "lat": "40.5776879",
+        "date": "09/05/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8152788651759",
+        "lat": "40.5859118",
+        "date": "12/12/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9466279",
+        "lat": "40.6838647",
+        "date": "09/12/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8497328200229",
+        "lat": "40.8323427",
+        "date": "07/10/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8584618764894",
+        "lat": "40.87764485",
+        "date": "09/07/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9643842",
+        "lat": "40.7960362",
+        "date": "06/18/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-74.0086585",
+        "lat": "40.7057836",
+        "date": "12/14/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9509718449721",
+        "lat": "40.67748955",
+        "date": "01/05/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "12/07/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9125074897052",
+        "lat": "40.85009915",
+        "date": "04/17/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9411382",
+        "lat": "40.8438146",
+        "date": "08/22/2018",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "01/25/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "09/15/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9329284567091",
+        "lat": "40.6718351",
+        "date": "12/05/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9366818185857",
+        "lat": "40.6898831",
+        "date": "10/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9470292266653",
+        "lat": "40.68606105",
+        "date": "05/03/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "10/26/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8550767564562",
+        "lat": "40.69343735",
+        "date": "09/27/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9463271105845",
+        "lat": "40.78843515",
+        "date": "01/11/2018",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.8682174121033",
+        "lat": "40.8619768",
+        "date": "05/30/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8987672",
+        "lat": "40.870049",
+        "date": "09/28/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8972342992905",
+        "lat": "40.89613105",
+        "date": "03/29/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.810244",
+        "lat": "40.740601",
+        "date": "09/08/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8530029897408",
+        "lat": "40.6736932",
+        "date": "03/12/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9162537",
+        "lat": "40.8355608",
+        "date": "07/06/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8504568",
+        "lat": "40.8395604",
+        "date": "10/31/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "05/16/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.878485661017",
+        "lat": "40.8749976610169",
+        "date": "10/17/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.952473307908",
+        "lat": "40.82535725",
+        "date": "03/29/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9316377142857",
+        "lat": "40.7018735714286",
+        "date": "06/01/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8948666068039",
+        "lat": "40.8274135",
+        "date": "03/21/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "12/15/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9572219126367",
+        "lat": "40.6319827",
+        "date": "08/29/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9577267841935",
+        "lat": "40.65408125",
+        "date": "10/19/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.784425",
+        "lat": "40.682812",
+        "date": "08/13/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9188077",
+        "lat": "40.8714789",
+        "date": "11/01/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8864547835938",
+        "lat": "40.8586179",
+        "date": "07/24/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8692489",
+        "lat": "40.8587429",
+        "date": "08/30/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.82651",
+        "lat": "40.860172",
+        "date": "02/28/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.911051",
+        "lat": "40.874808",
+        "date": "07/12/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9009547692631",
+        "lat": "40.87903915",
+        "date": "01/15/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9004359",
+        "lat": "40.85418",
+        "date": "02/02/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8639569268921",
+        "lat": "40.73617985",
+        "date": "12/07/2018",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-74.131952",
+        "lat": "40.638754",
+        "date": "05/05/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9461308020396",
+        "lat": "40.6379363",
+        "date": "05/02/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.982299",
+        "lat": "40.5767762",
+        "date": "10/15/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "01/25/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8639040259398",
+        "lat": "40.75950425",
+        "date": "09/26/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9297923108371",
+        "lat": "40.65327955",
+        "date": "03/26/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "07/30/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.982416",
+        "lat": "40.744853",
+        "date": "09/16/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8605713",
+        "lat": "40.8556356",
+        "date": "05/09/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9260868150392",
+        "lat": "40.6648915",
+        "date": "02/09/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9849253",
+        "lat": "40.60658625",
+        "date": "01/11/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9587596820181",
+        "lat": "40.6907017",
+        "date": "05/21/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8901908458158",
+        "lat": "40.8262356",
+        "date": "05/07/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.902785530203",
+        "lat": "40.8579385",
+        "date": "07/17/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9691277972381",
+        "lat": "40.6085479",
+        "date": "05/02/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9166913",
+        "lat": "40.8384294",
+        "date": "05/07/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.905835472408",
+        "lat": "40.87125395",
+        "date": "01/23/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.787793",
+        "lat": "40.771662",
+        "date": "03/21/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.915739642824",
+        "lat": "40.8553399",
+        "date": "04/19/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "07/16/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "05/08/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8348800809545",
+        "lat": "40.87861715",
+        "date": "09/13/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8561831",
+        "lat": "40.8776328",
+        "date": "09/28/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8440702113666",
+        "lat": "40.68975725",
+        "date": "11/17/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9161771",
+        "lat": "40.688163",
+        "date": "09/07/2017",
+        "first_name": "Robert",
+        "last_name": "Solimine"
+    },
+    {
+        "lon": "-73.9831976",
+        "lat": "40.7011258",
+        "date": "03/10/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9163656231884",
+        "lat": "40.8566597246377",
+        "date": "08/06/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "01/11/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9227189",
+        "lat": "40.6973588",
+        "date": "12/13/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-73.9989350093312",
+        "lat": "40.7461128735553",
+        "date": "09/06/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9070990174205",
+        "lat": "40.67263305",
+        "date": "01/03/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8945574418126",
+        "lat": "40.85675915",
+        "date": "01/18/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.95585060507",
+        "lat": "40.62413445",
+        "date": "09/25/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8940011428571",
+        "lat": "40.8244342857143",
+        "date": "02/19/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8669556682982",
+        "lat": "40.83720155",
+        "date": "08/28/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "09/14/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.886773",
+        "lat": "40.74845",
+        "date": "06/17/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9392591104765",
+        "lat": "40.8236905",
+        "date": "02/13/2018",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "03/24/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8754305715534",
+        "lat": "40.68405115",
+        "date": "03/12/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9462036915821",
+        "lat": "40.72412685",
+        "date": "11/21/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.930264532967",
+        "lat": "40.77319915",
+        "date": "12/07/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.899532",
+        "lat": "40.724019",
+        "date": "07/20/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8686405",
+        "lat": "40.8655544",
+        "date": "01/25/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.90857695",
+        "lat": "40.67723665",
+        "date": "05/02/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9372037",
+        "lat": "40.82024895",
+        "date": "04/07/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.7573331717695",
+        "lat": "40.73736625",
+        "date": "05/02/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0048125407136",
+        "lat": "40.74729485",
+        "date": "01/03/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9162019",
+        "lat": "40.838975",
+        "date": "01/11/2017",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8702012993216",
+        "lat": "40.67338615",
+        "date": "06/06/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9104493709259",
+        "lat": "40.8379492600248",
+        "date": "01/23/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9053887015126",
+        "lat": "40.64690105",
+        "date": "07/17/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.932547337012",
+        "lat": "40.6473505",
+        "date": "04/05/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8637758241885",
+        "lat": "40.8891886",
+        "date": "10/27/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9443242584013",
+        "lat": "40.82617125",
+        "date": "01/14/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9685444289942",
+        "lat": "40.57956235",
+        "date": "05/10/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.7879585817096",
+        "lat": "40.59711055",
+        "date": "03/08/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-74.1479962062577",
+        "lat": "40.6148267",
+        "date": "01/10/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.1432514",
+        "lat": "40.554205",
+        "date": "01/17/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.866577",
+        "lat": "40.683723",
+        "date": "10/09/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8781893602414",
+        "lat": "40.8845337",
+        "date": "02/21/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.7770852246631",
+        "lat": "40.71461135",
+        "date": "08/20/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.95474",
+        "lat": "40.609747",
+        "date": "06/11/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7672445884238",
+        "lat": "40.7083379",
+        "date": "03/21/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "10/24/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8665562",
+        "lat": "40.8548021",
+        "date": "01/17/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9871090229895",
+        "lat": "40.76919",
+        "date": "04/05/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "11/08/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8959568888889",
+        "lat": "40.8273078888889",
+        "date": "07/12/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9204543685299",
+        "lat": "40.7410747",
+        "date": "09/07/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8462586006757",
+        "lat": "40.90433555",
+        "date": "04/24/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8691414",
+        "lat": "40.8716303",
+        "date": "04/23/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8002550586025",
+        "lat": "40.70601455",
+        "date": "05/28/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8547098507515",
+        "lat": "40.8408683",
+        "date": "11/20/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9471293",
+        "lat": "40.6553003",
+        "date": "03/02/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-73.9561293",
+        "lat": "40.7713444",
+        "date": "03/13/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9416556532746",
+        "lat": "40.6956768",
+        "date": "08/20/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9543774",
+        "lat": "40.8013758",
+        "date": "10/18/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.7913966",
+        "lat": "40.6792432",
+        "date": "05/16/2019",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.7707899",
+        "lat": "40.7632599",
+        "date": "01/31/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.79003",
+        "lat": "40.682755",
+        "date": "11/28/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9092102",
+        "lat": "40.6547247",
+        "date": "06/26/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8747438",
+        "lat": "40.6862404",
+        "date": "06/11/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.92845445",
+        "lat": "40.70114665",
+        "date": "12/10/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.975929",
+        "lat": "40.7549267",
+        "date": "09/20/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9956798421053",
+        "lat": "40.7621357368421",
+        "date": "08/03/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9549914736842",
+        "lat": "40.6399876842105",
+        "date": "06/13/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9509662601328",
+        "lat": "40.8244195",
+        "date": "02/22/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8655468773022",
+        "lat": "40.8398011",
+        "date": "08/15/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.76206",
+        "lat": "40.663097",
+        "date": "06/28/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.7540607532125",
+        "lat": "40.67785715",
+        "date": "01/26/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "03/13/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9254269309809",
+        "lat": "40.86469375",
+        "date": "11/03/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8654332327941",
+        "lat": "40.6804489",
+        "date": "11/08/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9151693",
+        "lat": "40.8423497",
+        "date": "09/25/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9533071",
+        "lat": "40.6134672",
+        "date": "05/10/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9420786339171",
+        "lat": "40.64156635",
+        "date": "01/04/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.908416",
+        "lat": "40.659653",
+        "date": "03/12/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8657002173913",
+        "lat": "40.6701457391304",
+        "date": "06/19/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/04/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9256036059323",
+        "lat": "40.64604175",
+        "date": "05/15/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9213767553386",
+        "lat": "40.82720115",
+        "date": "11/20/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9166201",
+        "lat": "40.6869781",
+        "date": "09/21/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.91948485",
+        "lat": "40.6283464",
+        "date": "03/29/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9024868303753",
+        "lat": "40.70411355",
+        "date": "02/16/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.813769",
+        "lat": "40.696623",
+        "date": "06/14/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7992095759671",
+        "lat": "40.79188015",
+        "date": "05/01/2017",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.9195321",
+        "lat": "40.6673243",
+        "date": "11/20/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8926282",
+        "lat": "40.8698781",
+        "date": "09/06/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.816347701502",
+        "lat": "40.7262557",
+        "date": "03/06/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "09/24/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9836755051941",
+        "lat": "40.7791678",
+        "date": "12/18/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8658880573308",
+        "lat": "40.87243285",
+        "date": "09/13/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.8491261117382",
+        "lat": "40.6850611",
+        "date": "05/20/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0864960869565",
+        "lat": "40.6422130434783",
+        "date": "01/03/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8997560812749",
+        "lat": "40.88517005",
+        "date": "01/22/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.729075",
+        "lat": "40.675902",
+        "date": "02/02/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8595965279547",
+        "lat": "40.74130405",
+        "date": "05/14/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.869490714",
+        "lat": "40.8556992",
+        "date": "09/04/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9839095573613",
+        "lat": "40.77599815",
+        "date": "01/11/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8939202",
+        "lat": "40.8661362",
+        "date": "08/17/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7423236020408",
+        "lat": "40.5969300918367",
+        "date": "04/01/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.91323",
+        "lat": "40.6756497",
+        "date": "12/13/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.999252",
+        "lat": "40.572352",
+        "date": "03/17/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.7863338965517",
+        "lat": "40.8484211034483",
+        "date": "05/03/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9896730747408",
+        "lat": "40.76484305",
+        "date": "09/13/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.942192197894",
+        "lat": "40.68660105",
+        "date": "08/29/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-74.0197173251057",
+        "lat": "40.6400466",
+        "date": "03/06/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8691414",
+        "lat": "40.8716303",
+        "date": "06/20/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.889646",
+        "lat": "40.852468",
+        "date": "03/27/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.8111511",
+        "lat": "40.588822",
+        "date": "07/22/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9009864810799",
+        "lat": "40.85719215",
+        "date": "04/04/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8581491533028",
+        "lat": "40.83530855",
+        "date": "05/01/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.843855",
+        "lat": "40.684373",
+        "date": "08/14/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.849174",
+        "lat": "40.837192",
+        "date": "07/19/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.898214",
+        "lat": "40.863021",
+        "date": "10/12/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7952509447904",
+        "lat": "40.59133305",
+        "date": "12/17/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.920261",
+        "lat": "40.6654179",
+        "date": "08/16/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9512360811038",
+        "lat": "40.6510003",
+        "date": "12/05/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9169047010801",
+        "lat": "40.85353865",
+        "date": "08/01/2019",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.8586822500973",
+        "lat": "40.8899486",
+        "date": "07/18/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8104531124013",
+        "lat": "40.79186475",
+        "date": "03/06/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.919039",
+        "lat": "40.628374",
+        "date": "01/23/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9237991",
+        "lat": "40.6713083",
+        "date": "01/14/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9285080248352",
+        "lat": "40.65783575",
+        "date": "09/07/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8851438965517",
+        "lat": "40.8505588275862",
+        "date": "07/13/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.931678",
+        "lat": "40.832446",
+        "date": "11/30/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "12/15/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9128776615277",
+        "lat": "40.84163515",
+        "date": "07/30/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8883782475932",
+        "lat": "40.87057595",
+        "date": "01/04/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9000183357758",
+        "lat": "40.66633925",
+        "date": "06/23/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8728973646894",
+        "lat": "40.75283475",
+        "date": "08/20/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8599984",
+        "lat": "40.8679869",
+        "date": "04/21/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.91558",
+        "lat": "40.81143",
+        "date": "07/19/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9165824",
+        "lat": "40.6806055",
+        "date": "02/08/2017",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.9100715",
+        "lat": "40.7545065",
+        "date": "03/03/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.707692",
+        "lat": "40.741426",
+        "date": "03/28/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8881774",
+        "lat": "40.8466251",
+        "date": "05/18/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8828441",
+        "lat": "40.7015397",
+        "date": "04/05/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8963195",
+        "lat": "40.8660774",
+        "date": "06/07/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9125230718128",
+        "lat": "40.8486046",
+        "date": "07/18/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.0030475",
+        "lat": "40.7317358",
+        "date": "01/06/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.7287819",
+        "lat": "40.7483685",
+        "date": "10/19/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9089955422317",
+        "lat": "40.6858151",
+        "date": "01/23/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "09/24/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7499656384464",
+        "lat": "40.69449715",
+        "date": "06/22/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.784803",
+        "lat": "40.696262",
+        "date": "01/31/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.7640134310751",
+        "lat": "40.5955063",
+        "date": "01/22/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9946758102912",
+        "lat": "40.7218449",
+        "date": "05/21/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8639259536022",
+        "lat": "40.8477203",
+        "date": "06/22/2017",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-74.0057573803608",
+        "lat": "40.65124235",
+        "date": "10/16/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "05/08/2018",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.9046237880262",
+        "lat": "40.8138205",
+        "date": "10/24/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9383989672794",
+        "lat": "40.80342195",
+        "date": "10/24/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8959568888889",
+        "lat": "40.8273078888889",
+        "date": "06/05/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8309327",
+        "lat": "40.7658699",
+        "date": "01/04/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8820096844154",
+        "lat": "40.7364192",
+        "date": "03/11/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9080700648139",
+        "lat": "40.8464834",
+        "date": "01/25/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9801358405797",
+        "lat": "40.7207013913043",
+        "date": "05/02/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "02/07/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "08/01/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9337268",
+        "lat": "40.8472116",
+        "date": "01/17/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.92477",
+        "lat": "40.815558",
+        "date": "09/06/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.765875",
+        "lat": "40.661248",
+        "date": "06/26/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9070206529983",
+        "lat": "40.75643285",
+        "date": "08/28/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9952179",
+        "lat": "40.7308592",
+        "date": "01/25/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8659805421305",
+        "lat": "40.8312281",
+        "date": "02/26/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9770735",
+        "lat": "40.7881136",
+        "date": "07/18/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.955296",
+        "lat": "40.774326",
+        "date": "06/20/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9217438947368",
+        "lat": "40.8105165789474",
+        "date": "10/02/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9217241268343",
+        "lat": "40.6570081",
+        "date": "03/27/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8655270097316",
+        "lat": "40.87019835",
+        "date": "07/13/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.939581",
+        "lat": "40.590706",
+        "date": "07/09/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8875942389109",
+        "lat": "40.832719",
+        "date": "02/07/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9594550712752",
+        "lat": "40.68132975",
+        "date": "02/21/2018",
+        "first_name": "Jeffrey",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.8629433710536",
+        "lat": "40.6672232",
+        "date": "12/12/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8591624",
+        "lat": "40.8941359",
+        "date": "01/03/2018",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.9925401773582",
+        "lat": "40.70005535",
+        "date": "05/16/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9679287",
+        "lat": "40.6843856",
+        "date": "12/01/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.840667",
+        "lat": "40.657139",
+        "date": "03/07/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9711527046467",
+        "lat": "40.6395067",
+        "date": "11/03/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9262514670551",
+        "lat": "40.6615025",
+        "date": "03/29/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8224327541267",
+        "lat": "40.74302345",
+        "date": "06/18/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "02/15/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "09/25/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8758580017469",
+        "lat": "40.83001665",
+        "date": "04/17/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8959591314516",
+        "lat": "40.6922976",
+        "date": "06/21/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8672502",
+        "lat": "40.8396348",
+        "date": "06/15/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8664821",
+        "lat": "40.8180009",
+        "date": "07/13/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8679117",
+        "lat": "40.8753974",
+        "date": "02/27/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.889989555556",
+        "lat": "40.8188439",
+        "date": "07/23/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9269001143375",
+        "lat": "40.62616165",
+        "date": "07/17/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.954864",
+        "lat": "40.580378",
+        "date": "07/20/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9044451287861",
+        "lat": "40.8536153",
+        "date": "02/17/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9238827",
+        "lat": "40.7451005",
+        "date": "06/06/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9337268",
+        "lat": "40.8472116",
+        "date": "08/21/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9732546",
+        "lat": "40.7895773",
+        "date": "07/11/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-74.871618",
+        "lat": "43.408777",
+        "date": "06/13/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.918871",
+        "lat": "40.656484",
+        "date": "01/18/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9128557",
+        "lat": "40.8396122",
+        "date": "03/06/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.941627",
+        "lat": "40.649973",
+        "date": "01/20/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8858993344031",
+        "lat": "40.8373359",
+        "date": "07/11/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9178196737077",
+        "lat": "40.6826792",
+        "date": "03/20/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8769421562518",
+        "lat": "40.68270005",
+        "date": "01/23/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8506447",
+        "lat": "40.7893069",
+        "date": "05/25/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9748576987145",
+        "lat": "40.6969263",
+        "date": "05/09/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.930040972973",
+        "lat": "40.6495838648649",
+        "date": "11/30/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-74.1114229375",
+        "lat": "40.56279828125",
+        "date": "09/25/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9076289426002",
+        "lat": "40.84895315",
+        "date": "12/03/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9722730000557",
+        "lat": "40.7837729",
+        "date": "04/22/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.7894231124024",
+        "lat": "40.7139738",
+        "date": "07/27/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "03/20/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8661192797139",
+        "lat": "40.8428936",
+        "date": "01/22/2018",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.88704215",
+        "lat": "40.8176875",
+        "date": "06/09/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9965034",
+        "lat": "40.6025961",
+        "date": "01/18/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9086156",
+        "lat": "40.8445484",
+        "date": "02/20/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9536543295426",
+        "lat": "40.68939895",
+        "date": "01/17/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.0066821",
+        "lat": "40.7222015",
+        "date": "04/25/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9684092769222",
+        "lat": "40.7570643",
+        "date": "03/11/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8910388",
+        "lat": "40.8697515",
+        "date": "04/13/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.849247",
+        "lat": "40.72845",
+        "date": "08/27/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8778366887879",
+        "lat": "40.8734112",
+        "date": "03/15/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.91071515",
+        "lat": "40.68728995",
+        "date": "03/15/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9519073278175",
+        "lat": "40.59984015",
+        "date": "09/14/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9687329",
+        "lat": "40.7906105",
+        "date": "11/01/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9132939",
+        "lat": "40.8316243",
+        "date": "03/02/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9518996395625",
+        "lat": "40.6544475",
+        "date": "09/25/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9378113",
+        "lat": "40.6512609",
+        "date": "09/29/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.917791",
+        "lat": "40.6726324468085",
+        "date": "03/06/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.938000854675",
+        "lat": "40.69645555",
+        "date": "10/10/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.845742",
+        "lat": "40.872797",
+        "date": "11/30/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9166172",
+        "lat": "40.693662",
+        "date": "07/09/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.702699403712",
+        "lat": "40.7416217",
+        "date": "05/16/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8953266",
+        "lat": "40.8605286",
+        "date": "05/09/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9394293333333",
+        "lat": "40.808454",
+        "date": "01/24/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9156183",
+        "lat": "40.8340021",
+        "date": "01/13/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.957274",
+        "lat": "40.642869",
+        "date": "07/31/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9511235108961",
+        "lat": "40.5957629",
+        "date": "02/08/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.979205",
+        "lat": "40.695944",
+        "date": "08/20/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.955756",
+        "lat": "40.820641",
+        "date": "03/12/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.891475953279",
+        "lat": "40.6689031",
+        "date": "02/28/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9364687",
+        "lat": "40.8138001",
+        "date": "03/27/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "03/21/2018",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "03/15/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.942795",
+        "lat": "40.786202",
+        "date": "02/14/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9640197245066",
+        "lat": "40.64285255",
+        "date": "02/23/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9073556363636",
+        "lat": "40.8256716",
+        "date": "11/28/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9921397841339",
+        "lat": "40.6040034",
+        "date": "10/02/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8372599085927",
+        "lat": "40.5785053",
+        "date": "03/06/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8135211380522",
+        "lat": "40.70098185",
+        "date": "02/15/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9292528909917",
+        "lat": "40.67020955",
+        "date": "10/03/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.86899145",
+        "lat": "40.8338433",
+        "date": "09/05/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9542249790316",
+        "lat": "40.66503415",
+        "date": "11/02/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.81469295",
+        "lat": "40.69205705",
+        "date": "02/17/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.945999891627",
+        "lat": "40.6329919",
+        "date": "10/01/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.92797265",
+        "lat": "40.6496638",
+        "date": "07/09/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.938101257234",
+        "lat": "40.6706179",
+        "date": "03/22/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8922257997008",
+        "lat": "40.8542975003206",
+        "date": "06/20/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9075435225705",
+        "lat": "40.851846",
+        "date": "07/01/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8556472547964",
+        "lat": "40.87945565",
+        "date": "09/06/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9936042237097",
+        "lat": "40.6356725",
+        "date": "01/09/2018",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.779604",
+        "lat": "40.694302",
+        "date": "10/01/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9687329",
+        "lat": "40.7906105",
+        "date": "01/16/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-74.003607",
+        "lat": "40.651357",
+        "date": "05/23/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9373295135135",
+        "lat": "40.8067523513513",
+        "date": "06/07/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "03/22/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.971623",
+        "lat": "40.644312",
+        "date": "09/19/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.98281",
+        "lat": "40.694083",
+        "date": "08/07/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.953354125",
+        "lat": "40.653863375",
+        "date": "05/01/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9473299911692",
+        "lat": "40.81149375",
+        "date": "07/06/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.926525",
+        "lat": "40.833562",
+        "date": "02/14/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9523738824009",
+        "lat": "40.6602187",
+        "date": "09/11/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8330168006545",
+        "lat": "40.70680025",
+        "date": "10/23/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.853903",
+        "lat": "40.6840846",
+        "date": "09/13/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9157332",
+        "lat": "40.8517895",
+        "date": "02/14/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.902711",
+        "lat": "40.8658363",
+        "date": "01/10/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8905062694539",
+        "lat": "40.84799275",
+        "date": "10/10/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9462409187057",
+        "lat": "40.8260701",
+        "date": "03/02/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "10/30/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9261375762174",
+        "lat": "40.67236495",
+        "date": "07/11/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9762031",
+        "lat": "40.7218369",
+        "date": "06/29/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9558380002885",
+        "lat": "40.7478926",
+        "date": "03/22/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.900641",
+        "lat": "40.863608",
+        "date": "03/22/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.925334",
+        "lat": "40.7678792",
+        "date": "08/02/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8875832881356",
+        "lat": "40.8747504576271",
+        "date": "12/06/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8529988981167",
+        "lat": "40.89397245",
+        "date": "01/31/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.89677694197",
+        "lat": "40.86673195",
+        "date": "09/18/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.859721",
+        "lat": "40.742678",
+        "date": "01/03/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9182263457038",
+        "lat": "40.8432241",
+        "date": "06/27/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.7396354442335",
+        "lat": "40.69278085",
+        "date": "05/04/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9057314075896",
+        "lat": "40.81048205",
+        "date": "02/22/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9315225",
+        "lat": "40.6677462",
+        "date": "02/07/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.922053",
+        "lat": "40.655514",
+        "date": "01/11/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.853679",
+        "lat": "40.88829",
+        "date": "05/17/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8714455",
+        "lat": "40.7299484",
+        "date": "02/21/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "11/14/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "08/20/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.7452541515993",
+        "lat": "40.71663245",
+        "date": "08/30/2018",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.7795049930835",
+        "lat": "40.70363765",
+        "date": "06/06/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.962537",
+        "lat": "40.7959059",
+        "date": "03/08/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9822071803461",
+        "lat": "40.7300142",
+        "date": "02/22/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9271864",
+        "lat": "40.8634286",
+        "date": "04/12/2018",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "04/18/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "02/08/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7982445150478",
+        "lat": "40.78342495",
+        "date": "10/16/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "10/16/2017",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.9784859",
+        "lat": "40.7175354",
+        "date": "03/21/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9413326228055",
+        "lat": "40.8107533",
+        "date": "08/31/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "07/19/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.902515",
+        "lat": "40.837003",
+        "date": "06/05/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9088926",
+        "lat": "40.8646163",
+        "date": "07/31/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9216784",
+        "lat": "40.8392391",
+        "date": "06/14/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8918215656285",
+        "lat": "40.67026965",
+        "date": "05/31/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9579103",
+        "lat": "40.6895361",
+        "date": "03/06/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.942683",
+        "lat": "40.584213",
+        "date": "06/27/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8842443194315",
+        "lat": "40.87613505",
+        "date": "11/01/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9627859402209",
+        "lat": "40.79527305",
+        "date": "06/06/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8227993798905",
+        "lat": "40.7564482",
+        "date": "01/17/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8377911649033",
+        "lat": "40.870461",
+        "date": "03/19/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8506676895771",
+        "lat": "40.72305605",
+        "date": "04/26/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.8643395300224",
+        "lat": "40.6746354",
+        "date": "05/16/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7885738",
+        "lat": "40.7020589",
+        "date": "06/18/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9006987743165",
+        "lat": "40.82258875",
+        "date": "12/04/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.742768713719",
+        "lat": "40.7225533",
+        "date": "08/06/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.91914155",
+        "lat": "40.80979435",
+        "date": "05/17/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8536451",
+        "lat": "40.8837639",
+        "date": "07/26/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8665085",
+        "lat": "40.8563031",
+        "date": "04/28/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/17/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7653654127515",
+        "lat": "40.66601235",
+        "date": "02/22/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.892455",
+        "lat": "40.87148",
+        "date": "12/19/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9881805384615",
+        "lat": "40.7206493846154",
+        "date": "06/11/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8692953636364",
+        "lat": "40.8670199090909",
+        "date": "09/14/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.903939",
+        "lat": "40.856266",
+        "date": "07/11/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8549384300368",
+        "lat": "40.8796084",
+        "date": "04/15/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-74.002904",
+        "lat": "40.727877",
+        "date": "07/12/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9139683799078",
+        "lat": "40.6860813",
+        "date": "09/20/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.98097015",
+        "lat": "40.61852315",
+        "date": "05/24/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9710397513364",
+        "lat": "40.67694945",
+        "date": "09/24/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8848763",
+        "lat": "40.8504057",
+        "date": "06/04/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8564326028307",
+        "lat": "40.74560665",
+        "date": "03/09/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8615317105739",
+        "lat": "40.8879739",
+        "date": "02/27/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8942436",
+        "lat": "40.8558619",
+        "date": "09/19/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.1937269674049",
+        "lat": "40.5323453",
+        "date": "07/24/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "02/09/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8259993939316",
+        "lat": "40.6990721",
+        "date": "01/08/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8634053076923",
+        "lat": "40.6713774615385",
+        "date": "08/12/2019",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.1380125450345",
+        "lat": "40.63590645",
+        "date": "09/24/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "10/30/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8305458",
+        "lat": "40.7024161",
+        "date": "09/18/2018",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.79308565",
+        "lat": "40.69943965",
+        "date": "01/31/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.942158122449",
+        "lat": "40.8188900612245",
+        "date": "05/29/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9584650123818",
+        "lat": "40.64084525",
+        "date": "01/11/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9777513533974",
+        "lat": "40.5940865",
+        "date": "08/04/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9533327",
+        "lat": "40.8086693",
+        "date": "01/23/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.750699",
+        "lat": "40.746067",
+        "date": "09/25/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8811088",
+        "lat": "40.8255375",
+        "date": "06/28/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "06/11/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9442614390244",
+        "lat": "40.6792653414634",
+        "date": "05/09/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9292762",
+        "lat": "40.8345535",
+        "date": "09/13/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8699436",
+        "lat": "40.7423474",
+        "date": "06/12/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9540643959406",
+        "lat": "40.76846785",
+        "date": "02/20/2018",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.1330337649989",
+        "lat": "40.59799435",
+        "date": "05/30/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8901571153319",
+        "lat": "40.7016287",
+        "date": "05/19/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "10/16/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8846958",
+        "lat": "40.8514699",
+        "date": "04/26/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0218971567708",
+        "lat": "40.63046785",
+        "date": "02/13/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8920712476431",
+        "lat": "40.84716725",
+        "date": "02/14/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8011754656882",
+        "lat": "40.7625058",
+        "date": "11/15/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.984908875",
+        "lat": "40.71641775",
+        "date": "01/13/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.94264285",
+        "lat": "40.70569855",
+        "date": "05/05/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.824403",
+        "lat": "40.681351",
+        "date": "08/14/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9238822798686",
+        "lat": "40.66893315",
+        "date": "06/06/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9322569",
+        "lat": "40.6610937",
+        "date": "11/29/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9438497636101",
+        "lat": "40.83378175",
+        "date": "06/05/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "12/21/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9804394",
+        "lat": "40.7522888",
+        "date": "08/20/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9804064",
+        "lat": "40.7779076",
+        "date": "02/08/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.805154",
+        "lat": "40.718804",
+        "date": "11/15/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.847745",
+        "lat": "40.905285",
+        "date": "09/05/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8890666",
+        "lat": "40.866942",
+        "date": "04/04/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9489334956497",
+        "lat": "40.64223575",
+        "date": "08/21/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7438789",
+        "lat": "40.7229811",
+        "date": "01/25/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "02/13/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8921235417929",
+        "lat": "40.8567355",
+        "date": "11/29/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.955043",
+        "lat": "40.800468",
+        "date": "04/06/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9456990027637",
+        "lat": "40.63849005",
+        "date": "04/23/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8841259",
+        "lat": "40.8497257",
+        "date": "06/20/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9022081203021",
+        "lat": "40.8632043",
+        "date": "06/20/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9702218429418",
+        "lat": "40.79616825",
+        "date": "01/05/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9827529165857",
+        "lat": "40.74165035",
+        "date": "05/26/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9303249526634",
+        "lat": "40.8307935",
+        "date": "08/15/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.97976",
+        "lat": "40.732622",
+        "date": "02/14/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.936919",
+        "lat": "40.849301",
+        "date": "12/17/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.98847065",
+        "lat": "40.5970486",
+        "date": "04/24/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.867183",
+        "lat": "40.814567",
+        "date": "11/09/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8587799",
+        "lat": "40.6681574",
+        "date": "09/06/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8540773600325",
+        "lat": "40.82525385",
+        "date": "07/12/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "05/16/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-74.0075698113156",
+        "lat": "40.7047056",
+        "date": "10/16/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "02/04/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9622737210526",
+        "lat": "40.6515068",
+        "date": "09/04/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9109012",
+        "lat": "40.8479074",
+        "date": "05/29/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8593519751193",
+        "lat": "40.86325415",
+        "date": "01/27/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8961074125693",
+        "lat": "40.82567795",
+        "date": "11/26/2018",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-74.000628",
+        "lat": "40.755106",
+        "date": "08/16/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.939377552051",
+        "lat": "40.64321625",
+        "date": "06/27/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9243714",
+        "lat": "40.8228148",
+        "date": "06/06/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.7618122819464",
+        "lat": "40.59553095",
+        "date": "01/13/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9159936139343",
+        "lat": "40.687657",
+        "date": "03/27/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8231607703207",
+        "lat": "40.75517855",
+        "date": "02/08/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9506291",
+        "lat": "40.8228989",
+        "date": "09/18/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-74.1567409772185",
+        "lat": "40.5806555",
+        "date": "03/18/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7933814731807",
+        "lat": "40.6925132",
+        "date": "10/02/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.982073",
+        "lat": "40.724774",
+        "date": "10/19/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7833934969238",
+        "lat": "40.67304235",
+        "date": "01/11/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.785961",
+        "lat": "40.738546",
+        "date": "06/05/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.852796",
+        "lat": "40.669521",
+        "date": "04/27/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.930996",
+        "lat": "40.6677135",
+        "date": "03/07/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8922257997008",
+        "lat": "40.8542975003206",
+        "date": "01/30/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.7990135",
+        "lat": "40.7068428",
+        "date": "03/31/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9233792368954",
+        "lat": "40.85117595",
+        "date": "09/26/2017",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.1075980424489",
+        "lat": "40.5790428",
+        "date": "12/15/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "02/27/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.93545",
+        "lat": "40.8137238",
+        "date": "09/23/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9594682",
+        "lat": "40.65206815",
+        "date": "10/23/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.90419003125",
+        "lat": "40.76744559375",
+        "date": "10/26/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9822644005252",
+        "lat": "40.6124896",
+        "date": "09/15/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.741524244898",
+        "lat": "40.5959081632653",
+        "date": "01/07/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.92368555",
+        "lat": "40.61346575",
+        "date": "02/02/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.1202037502348",
+        "lat": "40.63986815",
+        "date": "02/28/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8852086087532",
+        "lat": "40.86678795",
+        "date": "09/13/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.769834",
+        "lat": "40.682337",
+        "date": "05/31/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8728001",
+        "lat": "40.8783791",
+        "date": "01/06/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9125132142502",
+        "lat": "40.6564852",
+        "date": "04/15/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8030500540015",
+        "lat": "40.7584935",
+        "date": "03/31/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.746929",
+        "lat": "40.653665",
+        "date": "06/27/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8604766015566",
+        "lat": "40.73722215",
+        "date": "05/15/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8454993061353",
+        "lat": "40.69406105",
+        "date": "04/10/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.915622",
+        "lat": "40.656129",
+        "date": "07/31/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9755208690544",
+        "lat": "40.7855768",
+        "date": "07/17/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8929593",
+        "lat": "40.746686",
+        "date": "03/16/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "07/23/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.85124",
+        "lat": "40.7847127",
+        "date": "01/28/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8787362",
+        "lat": "40.67825225",
+        "date": "05/07/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9005145815845",
+        "lat": "40.85314455",
+        "date": "09/21/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9060043045642",
+        "lat": "40.6648704",
+        "date": "08/02/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8738803149766",
+        "lat": "40.7459561",
+        "date": "12/18/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8637846526098",
+        "lat": "40.86627555",
+        "date": "01/12/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "10/29/2018",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-74.124423",
+        "lat": "40.631486",
+        "date": "07/05/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.917382",
+        "lat": "40.823199",
+        "date": "03/16/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8645567466151",
+        "lat": "40.87070575",
+        "date": "11/29/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0338328163265",
+        "lat": "40.612768244898",
+        "date": "07/09/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8920712476431",
+        "lat": "40.84716725",
+        "date": "07/20/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7786915896076",
+        "lat": "40.7142424",
+        "date": "06/07/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8876114",
+        "lat": "40.7472491",
+        "date": "09/12/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.890094",
+        "lat": "40.646697",
+        "date": "02/14/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.929357",
+        "lat": "40.650491",
+        "date": "04/05/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9553268083605",
+        "lat": "40.7298382",
+        "date": "09/03/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.896766",
+        "lat": "40.639944",
+        "date": "02/27/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9890987567403",
+        "lat": "40.61880925",
+        "date": "04/09/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.808268",
+        "lat": "40.823452",
+        "date": "03/06/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9112061",
+        "lat": "40.8464022",
+        "date": "07/22/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.976049",
+        "lat": "40.631276",
+        "date": "06/27/2019",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.9103419",
+        "lat": "40.754618",
+        "date": "09/18/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9925018163265",
+        "lat": "40.7451653877551",
+        "date": "07/30/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7290154",
+        "lat": "40.7228607",
+        "date": "07/31/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8862141083769",
+        "lat": "40.8792859",
+        "date": "11/09/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9725085",
+        "lat": "40.7435459",
+        "date": "01/13/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "01/30/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9150661",
+        "lat": "40.8505174",
+        "date": "06/01/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9201698",
+        "lat": "40.8336416",
+        "date": "10/29/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8882373496649",
+        "lat": "40.6653319",
+        "date": "04/13/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8686695587748",
+        "lat": "40.6905034",
+        "date": "09/20/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8921215",
+        "lat": "40.66400625",
+        "date": "05/16/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "06/10/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8415",
+        "lat": "40.697682",
+        "date": "05/11/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "09/01/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "09/07/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "08/20/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-74.000568",
+        "lat": "40.761565",
+        "date": "12/18/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9803161047072",
+        "lat": "40.6153463",
+        "date": "07/14/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.757799",
+        "lat": "40.608771",
+        "date": "05/09/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9471293",
+        "lat": "40.6553003",
+        "date": "09/21/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9799431",
+        "lat": "40.6940473",
+        "date": "02/03/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9476305555556",
+        "lat": "40.6869053333333",
+        "date": "09/27/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.804393",
+        "lat": "40.6802873",
+        "date": "10/02/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9509577",
+        "lat": "40.6406735",
+        "date": "10/11/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9705025",
+        "lat": "40.7892417",
+        "date": "12/14/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.7573818866497",
+        "lat": "40.7142338",
+        "date": "06/28/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9862076",
+        "lat": "40.7435495",
+        "date": "05/01/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8898269195874",
+        "lat": "40.8259581",
+        "date": "10/04/2017",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.93299035",
+        "lat": "40.5854669",
+        "date": "11/01/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9447138",
+        "lat": "40.7547474",
+        "date": "06/15/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.813858",
+        "lat": "40.588773",
+        "date": "12/18/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.991661",
+        "lat": "40.766411",
+        "date": "04/21/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "10/02/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8288374961223",
+        "lat": "40.83129555",
+        "date": "04/21/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.946407660165",
+        "lat": "40.62613815",
+        "date": "09/04/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.925399",
+        "lat": "40.738111",
+        "date": "09/07/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8867368439743",
+        "lat": "40.81283945",
+        "date": "06/17/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.97976",
+        "lat": "40.732622",
+        "date": "02/23/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.822746",
+        "lat": "40.756447",
+        "date": "10/31/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.88919",
+        "lat": "40.703971",
+        "date": "05/02/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "03/12/2018",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.9135018632018",
+        "lat": "40.7049476",
+        "date": "03/07/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8920712476431",
+        "lat": "40.84716725",
+        "date": "12/11/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8638777",
+        "lat": "40.6705463",
+        "date": "04/11/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9516308447081",
+        "lat": "40.65755835",
+        "date": "01/03/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8793307",
+        "lat": "40.8819511",
+        "date": "07/26/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9082802",
+        "lat": "40.6420132",
+        "date": "03/21/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8979555361472",
+        "lat": "40.83013665",
+        "date": "01/19/2017",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.9414979731398",
+        "lat": "40.7622935",
+        "date": "09/21/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-74.008079",
+        "lat": "40.709385",
+        "date": "05/14/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9013995364835",
+        "lat": "40.8732826",
+        "date": "09/29/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.807416",
+        "lat": "40.692355",
+        "date": "01/12/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9011250821613",
+        "lat": "40.8360957",
+        "date": "09/06/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.92124",
+        "lat": "40.820976",
+        "date": "05/02/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9714849",
+        "lat": "40.7943557",
+        "date": "03/13/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "01/28/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8926472569021",
+        "lat": "40.6806799",
+        "date": "06/15/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.961597",
+        "lat": "40.655081",
+        "date": "10/15/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.863309",
+        "lat": "40.87265",
+        "date": "08/09/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.7670676950322",
+        "lat": "40.6985842",
+        "date": "11/14/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9012704186046",
+        "lat": "40.832764",
+        "date": "09/21/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8610504",
+        "lat": "40.8926328",
+        "date": "02/04/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8831839919053",
+        "lat": "40.64864585",
+        "date": "01/10/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "04/25/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8999571",
+        "lat": "40.8143935",
+        "date": "02/22/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8848763",
+        "lat": "40.8504057",
+        "date": "06/01/2018",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.137769",
+        "lat": "40.611323",
+        "date": "09/12/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "07/20/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8949941",
+        "lat": "40.859724",
+        "date": "05/13/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "02/22/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9533525068781",
+        "lat": "40.7343945",
+        "date": "01/12/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9084707692308",
+        "lat": "40.6783870769231",
+        "date": "07/02/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.972434",
+        "lat": "40.698351",
+        "date": "07/06/2018",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.1032133529412",
+        "lat": "40.6309445882353",
+        "date": "03/09/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.886384",
+        "lat": "40.869728",
+        "date": "07/27/2017",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.9011532050403",
+        "lat": "40.83171915",
+        "date": "04/05/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9257592",
+        "lat": "40.8411481",
+        "date": "01/31/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8614079",
+        "lat": "40.833732",
+        "date": "01/25/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.90857695",
+        "lat": "40.67723665",
+        "date": "03/30/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.89202105",
+        "lat": "40.66733985",
+        "date": "04/27/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8122816620354",
+        "lat": "40.7252062",
+        "date": "04/24/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "01/28/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9198693898477",
+        "lat": "40.69199975",
+        "date": "05/22/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.931117",
+        "lat": "40.664112",
+        "date": "05/22/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8909432881356",
+        "lat": "40.6705235",
+        "date": "05/24/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9647595",
+        "lat": "40.5877143",
+        "date": "09/04/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9063348521763",
+        "lat": "40.8459433",
+        "date": "05/24/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9806706",
+        "lat": "40.6956721",
+        "date": "08/05/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.7735403",
+        "lat": "40.670744",
+        "date": "07/12/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.922054",
+        "lat": "40.676011",
+        "date": "07/31/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "08/16/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9784926",
+        "lat": "40.7774689",
+        "date": "08/19/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.7424616",
+        "lat": "40.5957817",
+        "date": "07/24/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9256320179886",
+        "lat": "40.74305",
+        "date": "08/01/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.960216",
+        "lat": "40.69439",
+        "date": "08/29/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.85682315",
+        "lat": "40.6674072",
+        "date": "02/13/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.935424",
+        "lat": "40.821881",
+        "date": "07/13/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "05/23/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9271369",
+        "lat": "40.8235333",
+        "date": "01/26/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.93793415",
+        "lat": "40.7513874",
+        "date": "01/29/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9053052",
+        "lat": "40.6613767",
+        "date": "01/27/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8978767524145",
+        "lat": "40.83014055",
+        "date": "03/11/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8613571092037",
+        "lat": "40.8388205",
+        "date": "06/08/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8337467918717",
+        "lat": "40.84671135",
+        "date": "06/19/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9162642",
+        "lat": "40.8197407",
+        "date": "12/13/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.856324",
+        "lat": "40.83733",
+        "date": "03/20/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.7593385",
+        "lat": "40.7249356",
+        "date": "10/02/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8520872588314",
+        "lat": "40.88613965",
+        "date": "05/04/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "08/22/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.754171",
+        "lat": "40.593458",
+        "date": "07/23/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7270101",
+        "lat": "40.7264983",
+        "date": "12/04/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.962075",
+        "lat": "40.770195",
+        "date": "01/15/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8904209387755",
+        "lat": "40.8218625102041",
+        "date": "01/16/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9321574680513",
+        "lat": "40.68705835",
+        "date": "12/08/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9407458451975",
+        "lat": "40.7916811900835",
+        "date": "08/13/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8935039644035",
+        "lat": "40.85895385",
+        "date": "01/16/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9716221538462",
+        "lat": "40.6976045769231",
+        "date": "07/17/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.88254695",
+        "lat": "40.66788445",
+        "date": "08/15/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9063180536884",
+        "lat": "40.8646542",
+        "date": "05/31/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8852132",
+        "lat": "40.8421169",
+        "date": "01/31/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9404194375",
+        "lat": "40.68805353125",
+        "date": "01/08/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.0017107",
+        "lat": "40.7378388",
+        "date": "01/03/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.76211225",
+        "lat": "40.5947138",
+        "date": "10/11/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9357762",
+        "lat": "40.8519653",
+        "date": "05/24/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8303977905128",
+        "lat": "40.84872995",
+        "date": "01/22/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8943017161579",
+        "lat": "40.7719675",
+        "date": "02/23/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8650466802876",
+        "lat": "40.8556432",
+        "date": "01/23/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9992948306425",
+        "lat": "40.6409811",
+        "date": "08/30/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8936371084037",
+        "lat": "40.8565344",
+        "date": "09/10/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7885302",
+        "lat": "40.7122519",
+        "date": "03/06/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.884948",
+        "lat": "40.674185",
+        "date": "07/22/2019",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.1084634",
+        "lat": "40.5621232",
+        "date": "11/22/2017",
+        "first_name": "Jeffrey",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9084384",
+        "lat": "40.6639202",
+        "date": "01/11/2019",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-74.0070768046216",
+        "lat": "40.60388585",
+        "date": "10/26/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9122655",
+        "lat": "40.8750497",
+        "date": "08/12/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.7864931421977",
+        "lat": "40.84556075",
+        "date": "04/19/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-76.404362",
+        "lat": "38.38114",
+        "date": "11/09/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9424647688997",
+        "lat": "40.70142705",
+        "date": "08/10/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8880863580298",
+        "lat": "40.84287575",
+        "date": "07/19/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.875952",
+        "lat": "40.879206",
+        "date": "05/18/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.911683",
+        "lat": "40.854038",
+        "date": "06/28/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.909344071304",
+        "lat": "40.82089545",
+        "date": "12/13/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8930330204082",
+        "lat": "40.8308505510204",
+        "date": "06/04/2019",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.9229518390471",
+        "lat": "40.673984",
+        "date": "02/13/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8791560997746",
+        "lat": "40.64298585",
+        "date": "06/07/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8997460692214",
+        "lat": "40.85037485",
+        "date": "03/14/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8845336297889",
+        "lat": "40.67848515",
+        "date": "01/22/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9126719492807",
+        "lat": "40.82828365",
+        "date": "02/27/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9447402",
+        "lat": "40.8140578",
+        "date": "01/09/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8961268965517",
+        "lat": "40.6648462068965",
+        "date": "11/27/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9160350927132",
+        "lat": "40.85322875",
+        "date": "04/13/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.846433",
+        "lat": "40.885174",
+        "date": "01/10/2018",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.1075980424489",
+        "lat": "40.5790428",
+        "date": "11/28/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9841739769755",
+        "lat": "40.73553445",
+        "date": "07/13/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8381799009038",
+        "lat": "40.88365535",
+        "date": "02/07/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.8791836173801",
+        "lat": "40.872566",
+        "date": "08/22/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.875889",
+        "lat": "40.87486",
+        "date": "04/09/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8668197834404",
+        "lat": "40.8387142",
+        "date": "01/03/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8973666",
+        "lat": "40.74813325",
+        "date": "12/15/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.7424616",
+        "lat": "40.5957817",
+        "date": "01/09/2019",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.9440769",
+        "lat": "40.6971119",
+        "date": "10/09/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.955105587517",
+        "lat": "40.6206098",
+        "date": "01/11/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.936914",
+        "lat": "40.8098723793103",
+        "date": "09/23/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.95386125",
+        "lat": "40.707923375",
+        "date": "04/18/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8146857976695",
+        "lat": "40.6911111",
+        "date": "09/15/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.7912443862984",
+        "lat": "40.699097",
+        "date": "12/06/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-85.761888",
+        "lat": "42.62183",
+        "date": "12/19/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.945763",
+        "lat": "40.804517",
+        "date": "03/16/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-74.0398169588435",
+        "lat": "40.62443605",
+        "date": "05/16/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8882577635647",
+        "lat": "40.75208585",
+        "date": "06/07/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "12/20/2017",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.989238",
+        "lat": "40.743323",
+        "date": "05/30/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.90731",
+        "lat": "40.693933",
+        "date": "09/14/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "04/05/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.895384",
+        "lat": "40.825962",
+        "date": "05/14/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8281904489796",
+        "lat": "40.8530435306122",
+        "date": "11/28/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.930402",
+        "lat": "40.831833",
+        "date": "09/14/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9232906728219",
+        "lat": "40.85156555",
+        "date": "04/17/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9044497",
+        "lat": "40.8323736",
+        "date": "06/21/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9543388126058",
+        "lat": "40.61225105",
+        "date": "05/15/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.849783",
+        "lat": "40.681526",
+        "date": "07/20/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9060043045642",
+        "lat": "40.6648704",
+        "date": "01/11/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.91102515",
+        "lat": "40.65765395",
+        "date": "03/21/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9703241546131",
+        "lat": "40.7509596",
+        "date": "07/25/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.842869153229",
+        "lat": "40.8973678",
+        "date": "01/16/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.831644",
+        "lat": "40.6932322",
+        "date": "01/30/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "01/23/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9339614",
+        "lat": "40.6652585",
+        "date": "08/22/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9376687205895",
+        "lat": "40.62238115",
+        "date": "11/02/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9467723",
+        "lat": "40.6322365",
+        "date": "01/19/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8321173",
+        "lat": "40.7562406",
+        "date": "01/10/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "01/29/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9234654",
+        "lat": "40.8075452",
+        "date": "09/10/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8574583",
+        "lat": "40.830964",
+        "date": "06/25/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9907278",
+        "lat": "40.7559486",
+        "date": "04/17/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8473165619577",
+        "lat": "40.8398383",
+        "date": "01/07/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8974152586827",
+        "lat": "40.6473441",
+        "date": "08/14/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8762588",
+        "lat": "40.8756156",
+        "date": "07/25/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "01/20/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9112558",
+        "lat": "40.8613295",
+        "date": "04/05/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9446016",
+        "lat": "40.7561117",
+        "date": "12/04/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.88805305",
+        "lat": "40.86667695",
+        "date": "01/25/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.832232",
+        "lat": "40.764168",
+        "date": "06/24/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9772263",
+        "lat": "40.6955234",
+        "date": "06/29/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9063508922633",
+        "lat": "40.85133775",
+        "date": "09/08/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8641471967665",
+        "lat": "40.8293997",
+        "date": "08/18/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9009864810799",
+        "lat": "40.85719215",
+        "date": "04/30/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.898567",
+        "lat": "40.830227",
+        "date": "05/07/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8766421859572",
+        "lat": "40.82011475",
+        "date": "01/03/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8734484379747",
+        "lat": "40.821654",
+        "date": "03/01/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.818832209742",
+        "lat": "40.74996785",
+        "date": "02/07/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9732421845755",
+        "lat": "40.73758055",
+        "date": "10/16/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.936638176549",
+        "lat": "40.61865355",
+        "date": "06/23/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8693253",
+        "lat": "40.7734447",
+        "date": "02/27/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.84545225878",
+        "lat": "40.87201725",
+        "date": "03/20/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.7414",
+        "lat": "40.654747",
+        "date": "11/22/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9485562047793",
+        "lat": "40.67574845",
+        "date": "03/06/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.90228695",
+        "lat": "40.61381675",
+        "date": "04/12/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9451727194958",
+        "lat": "40.8375956",
+        "date": "01/17/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8458687488606",
+        "lat": "40.90360365",
+        "date": "09/18/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "07/23/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9280316666667",
+        "lat": "40.6954811333333",
+        "date": "02/08/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9305232",
+        "lat": "40.6734191",
+        "date": "11/28/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-80.055259",
+        "lat": "26.762367",
+        "date": "04/30/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9421477629728",
+        "lat": "40.81170565",
+        "date": "08/22/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8880978",
+        "lat": "40.8128631",
+        "date": "01/27/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7873068600294",
+        "lat": "40.7035575",
+        "date": "06/06/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8205073961696",
+        "lat": "40.7629528",
+        "date": "07/10/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9404086181863",
+        "lat": "40.7862352",
+        "date": "08/11/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9601316927062",
+        "lat": "40.68271595",
+        "date": "07/08/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "10/18/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.907873",
+        "lat": "40.8625499",
+        "date": "05/08/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8671582495495",
+        "lat": "40.850871",
+        "date": "08/18/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.069062013385",
+        "lat": "40.61627335",
+        "date": "02/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.944794112248",
+        "lat": "40.6865807",
+        "date": "03/21/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.89704",
+        "lat": "40.8663995",
+        "date": "09/14/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.87075685",
+        "lat": "40.70343355",
+        "date": "01/03/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8657136",
+        "lat": "40.8633049",
+        "date": "08/20/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9173716242803",
+        "lat": "40.67570755",
+        "date": "02/21/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8704467084665",
+        "lat": "40.85850025",
+        "date": "10/29/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9253314597745",
+        "lat": "40.65191765",
+        "date": "07/18/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.864746",
+        "lat": "40.8525307",
+        "date": "06/06/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9527559522231",
+        "lat": "40.65554975",
+        "date": "04/24/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9366331491228",
+        "lat": "40.8200570789474",
+        "date": "06/18/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8714231930871",
+        "lat": "40.8275506",
+        "date": "05/21/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9058556678927",
+        "lat": "40.63721145",
+        "date": "08/09/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9470975058271",
+        "lat": "40.6920645",
+        "date": "10/01/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8268267912752",
+        "lat": "40.700919",
+        "date": "05/23/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "02/21/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9357728",
+        "lat": "40.68962335",
+        "date": "11/21/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7626419",
+        "lat": "40.6800407",
+        "date": "11/26/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8899214",
+        "lat": "40.7537681",
+        "date": "10/16/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "10/10/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8816524531552",
+        "lat": "40.6746521",
+        "date": "08/15/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8946977696089",
+        "lat": "40.86720175",
+        "date": "07/25/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9926741507563",
+        "lat": "40.61877585",
+        "date": "05/15/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.972812213281",
+        "lat": "40.7252852005342",
+        "date": "03/29/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8838294039814",
+        "lat": "40.7384211",
+        "date": "12/13/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9469061153201",
+        "lat": "40.8305247",
+        "date": "04/10/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9642922645549",
+        "lat": "40.64470975",
+        "date": "01/03/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.864839",
+        "lat": "40.660794",
+        "date": "11/01/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.777825",
+        "lat": "40.730286",
+        "date": "07/12/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-74.0032304265777",
+        "lat": "40.7527811",
+        "date": "03/07/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9052431076747",
+        "lat": "40.7066862",
+        "date": "08/10/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "03/06/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9118250949026",
+        "lat": "40.67961735",
+        "date": "10/02/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.87628",
+        "lat": "40.831486",
+        "date": "06/26/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9209023504023",
+        "lat": "40.69215355",
+        "date": "07/30/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9081164545455",
+        "lat": "40.8258217272727",
+        "date": "01/31/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8820011221944",
+        "lat": "40.8779677",
+        "date": "05/10/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9019554071737",
+        "lat": "40.8359729",
+        "date": "08/22/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "04/08/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7825439798741",
+        "lat": "40.69836425",
+        "date": "09/17/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.917791",
+        "lat": "40.6726324468085",
+        "date": "06/05/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8820011221944",
+        "lat": "40.8779677",
+        "date": "08/02/2017",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "10/31/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.00326645134",
+        "lat": "40.75246805",
+        "date": "04/25/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9376779733383",
+        "lat": "40.84282135",
+        "date": "02/16/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8753666852891",
+        "lat": "40.73770135",
+        "date": "04/10/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9848746594407",
+        "lat": "40.72050315",
+        "date": "06/06/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.960137",
+        "lat": "40.667411",
+        "date": "02/13/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8935808779704",
+        "lat": "40.86785545",
+        "date": "06/26/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.977311",
+        "lat": "40.7210573",
+        "date": "04/10/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9954736",
+        "lat": "40.762031",
+        "date": "07/24/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "02/03/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8506018",
+        "lat": "40.8351618",
+        "date": "02/28/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8964710909897",
+        "lat": "40.8476748",
+        "date": "09/25/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9402149251711",
+        "lat": "40.65062015",
+        "date": "06/29/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.864528",
+        "lat": "40.676465",
+        "date": "06/14/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.90115",
+        "lat": "40.859134",
+        "date": "06/14/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.8378485174819",
+        "lat": "40.68233575",
+        "date": "08/28/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9003747272727",
+        "lat": "40.6665195454545",
+        "date": "10/10/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9742389635561",
+        "lat": "40.6841634",
+        "date": "11/29/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.094393",
+        "lat": "40.641062",
+        "date": "09/14/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9189461",
+        "lat": "40.6536316",
+        "date": "11/21/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.8964710909897",
+        "lat": "40.8476748",
+        "date": "09/25/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9402149251711",
+        "lat": "40.65062015",
+        "date": "06/29/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.90115",
+        "lat": "40.859134",
+        "date": "09/18/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.864528",
+        "lat": "40.676465",
+        "date": "06/14/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.8378485174819",
+        "lat": "40.68233575",
+        "date": "08/28/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9003747272727",
+        "lat": "40.6665195454545",
+        "date": "10/10/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9742389635561",
+        "lat": "40.6841634",
+        "date": "11/29/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-73.9189461",
+        "lat": "40.6536316",
+        "date": "11/21/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-74.094393",
+        "lat": "40.641062",
+        "date": "11/21/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.8843360508832",
+        "lat": "40.6649569",
+        "date": "04/03/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9334166861481",
+        "lat": "40.669417",
+        "date": "08/31/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8905062694539",
+        "lat": "40.84799275",
+        "date": "12/13/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.913929",
+        "lat": "40.825539",
+        "date": "11/08/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.1715077755696",
+        "lat": "40.6381355",
+        "date": "03/15/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8864109",
+        "lat": "40.8547442",
+        "date": "10/23/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9314809387755",
+        "lat": "40.8570691428571",
+        "date": "03/13/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9479989231823",
+        "lat": "40.6930554",
+        "date": "11/21/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.877905",
+        "lat": "40.675029",
+        "date": "05/29/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.00371535",
+        "lat": "40.6417734",
+        "date": "07/10/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8832092229839",
+        "lat": "40.86930595",
+        "date": "05/17/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8582765176925",
+        "lat": "40.8385631",
+        "date": "09/13/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.153620949214",
+        "lat": "40.59017575",
+        "date": "02/22/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8970590632803",
+        "lat": "40.86397165",
+        "date": "09/09/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8821135510204",
+        "lat": "40.8253085306122",
+        "date": "10/26/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9563908",
+        "lat": "40.821846",
+        "date": "10/12/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.992212615658",
+        "lat": "40.7182022",
+        "date": "02/17/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7476254",
+        "lat": "40.6037618",
+        "date": "05/10/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.95332435",
+        "lat": "40.7277567",
+        "date": "10/01/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8837445",
+        "lat": "40.8450058",
+        "date": "10/24/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9102523540759",
+        "lat": "40.8417477",
+        "date": "01/20/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9017793723588",
+        "lat": "40.87223655",
+        "date": "07/07/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9462219285714",
+        "lat": "40.7973399285714",
+        "date": "02/24/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8643613995415",
+        "lat": "40.8863039",
+        "date": "12/06/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.904600525",
+        "lat": "40.658322675",
+        "date": "08/21/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9480413844622",
+        "lat": "40.79607325",
+        "date": "05/22/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9957661052632",
+        "lat": "40.7301048421053",
+        "date": "07/18/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8917529",
+        "lat": "40.65902415",
+        "date": "07/24/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.944233",
+        "lat": "40.802146",
+        "date": "06/13/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9143866540875",
+        "lat": "40.8406678",
+        "date": "04/10/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.986652",
+        "lat": "40.615233",
+        "date": "04/22/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9082653",
+        "lat": "40.8742457",
+        "date": "08/22/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.7381251130045",
+        "lat": "40.7079958",
+        "date": "02/01/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9478151",
+        "lat": "40.6631259",
+        "date": "03/13/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.7930528",
+        "lat": "40.7379674",
+        "date": "02/20/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9411707259111",
+        "lat": "40.8311538520726",
+        "date": "09/21/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9345023",
+        "lat": "40.8488466",
+        "date": "02/05/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9596327826087",
+        "lat": "40.7303257826087",
+        "date": "08/01/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9024588235212",
+        "lat": "40.7761673",
+        "date": "03/16/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9079256326531",
+        "lat": "40.6805451836735",
+        "date": "03/20/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.913992366893",
+        "lat": "40.8603649",
+        "date": "12/18/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.961939",
+        "lat": "40.7116327",
+        "date": "11/05/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.915072",
+        "lat": "40.829666025641",
+        "date": "05/10/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "03/24/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8849104677469",
+        "lat": "40.83793855",
+        "date": "06/30/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8911127009563",
+        "lat": "40.883555",
+        "date": "04/01/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "08/01/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8672848947569",
+        "lat": "40.7520251",
+        "date": "01/24/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "10/22/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9508821153582",
+        "lat": "40.61362975",
+        "date": "05/09/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9233005422634",
+        "lat": "40.8297655",
+        "date": "01/09/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9801557173014",
+        "lat": "40.63926925",
+        "date": "03/21/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9149468",
+        "lat": "40.8422515",
+        "date": "05/17/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8578733888547",
+        "lat": "40.73300735",
+        "date": "07/03/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8639569268921",
+        "lat": "40.73617985",
+        "date": "02/01/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8464662966878",
+        "lat": "40.89842105",
+        "date": "06/08/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.753732",
+        "lat": "40.658876",
+        "date": "01/30/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9501752126502",
+        "lat": "40.6331071",
+        "date": "11/20/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.8843956117282",
+        "lat": "40.68018815",
+        "date": "02/13/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.991661",
+        "lat": "40.766411",
+        "date": "08/06/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.814706",
+        "lat": "40.762179",
+        "date": "02/07/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9133962148237",
+        "lat": "40.83316355",
+        "date": "03/08/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "09/13/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.874191711343",
+        "lat": "40.6762",
+        "date": "10/13/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8658759290513",
+        "lat": "40.8839883",
+        "date": "02/07/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8674720204082",
+        "lat": "40.9004198571429",
+        "date": "08/01/2017",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.13080905",
+        "lat": "40.63026375",
+        "date": "04/27/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8839324120171",
+        "lat": "40.65265645",
+        "date": "03/01/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8826169",
+        "lat": "40.8474916",
+        "date": "09/06/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "03/02/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8928519119885",
+        "lat": "40.87105795",
+        "date": "03/24/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.932092",
+        "lat": "40.855157",
+        "date": "01/08/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "09/21/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "03/13/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "05/08/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "08/05/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9143737147112",
+        "lat": "40.84611535",
+        "date": "03/16/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.0793078571429",
+        "lat": "40.6382877142857",
+        "date": "11/15/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9086156",
+        "lat": "40.8445484",
+        "date": "02/20/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8802710703647",
+        "lat": "40.8280478",
+        "date": "03/29/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.784852",
+        "lat": "40.738483",
+        "date": "01/16/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9607316875",
+        "lat": "40.66042975",
+        "date": "07/30/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.951025",
+        "lat": "40.775222",
+        "date": "04/26/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8829385833935",
+        "lat": "40.6816027",
+        "date": "05/09/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.916313",
+        "lat": "40.847848",
+        "date": "05/14/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9156256",
+        "lat": "40.8353899",
+        "date": "09/30/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9456990027637",
+        "lat": "40.63849005",
+        "date": "05/02/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8847508616201",
+        "lat": "40.87147525",
+        "date": "06/03/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.84974565",
+        "lat": "40.8907323",
+        "date": "06/08/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8935480795",
+        "lat": "40.85229615",
+        "date": "09/08/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9005939",
+        "lat": "40.8491992",
+        "date": "08/10/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.905098",
+        "lat": "40.853391",
+        "date": "09/17/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7979923481531",
+        "lat": "40.6948374",
+        "date": "10/23/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.7941798",
+        "lat": "40.67549945",
+        "date": "03/13/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9041962105263",
+        "lat": "40.656953631579",
+        "date": "03/31/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.865236375",
+        "lat": "40.84303725",
+        "date": "08/12/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.961735156238",
+        "lat": "40.67452765",
+        "date": "01/04/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8713713",
+        "lat": "40.8542212",
+        "date": "01/13/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9535069",
+        "lat": "40.6397848",
+        "date": "05/16/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8471673",
+        "lat": "40.88371",
+        "date": "04/25/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8451791021162",
+        "lat": "40.84018005",
+        "date": "12/11/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9443526666667",
+        "lat": "40.7918418888889",
+        "date": "08/02/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9317558017988",
+        "lat": "40.665422",
+        "date": "01/18/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9370148016881",
+        "lat": "40.8375011",
+        "date": "08/06/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9390334",
+        "lat": "40.8464232",
+        "date": "06/02/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9204230172533",
+        "lat": "40.69516725",
+        "date": "06/04/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9621228011694",
+        "lat": "40.79863045",
+        "date": "01/22/2018",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "09/14/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.942403",
+        "lat": "40.6601932",
+        "date": "03/15/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9552082142857",
+        "lat": "40.6524390714286",
+        "date": "03/23/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.822428",
+        "lat": "40.7509633",
+        "date": "05/06/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.861047",
+        "lat": "40.692074",
+        "date": "01/04/2017",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.93869335",
+        "lat": "40.58687525",
+        "date": "06/03/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0308191966209",
+        "lat": "40.6158075",
+        "date": "06/29/2018",
+        "first_name": "Jeffrey",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.8056416",
+        "lat": "40.70389575",
+        "date": "09/03/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8951177910097",
+        "lat": "40.8527345",
+        "date": "05/08/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.998424",
+        "lat": "40.629985",
+        "date": "01/29/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.908355875",
+        "lat": "40.8121798125",
+        "date": "07/23/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7511533449714",
+        "lat": "40.70371955",
+        "date": "08/16/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.970213",
+        "lat": "40.645143",
+        "date": "11/06/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9230810782076",
+        "lat": "40.66946325",
+        "date": "09/25/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9260130337054",
+        "lat": "40.68736015",
+        "date": "01/05/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8554483",
+        "lat": "40.8247995",
+        "date": "06/20/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8655270097316",
+        "lat": "40.87019835",
+        "date": "08/15/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9263477",
+        "lat": "40.7422311",
+        "date": "04/17/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.8939395",
+        "lat": "40.682798",
+        "date": "07/16/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9110905",
+        "lat": "40.8465655",
+        "date": "01/29/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.767772",
+        "lat": "40.710625",
+        "date": "06/05/2017",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.9579671",
+        "lat": "40.6651478",
+        "date": "08/14/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.77426",
+        "lat": "40.685057",
+        "date": "12/01/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.832371",
+        "lat": "40.708325",
+        "date": "05/07/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9594427585798",
+        "lat": "40.6061636",
+        "date": "01/19/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.881929303343",
+        "lat": "40.85380195",
+        "date": "04/12/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.8616664872768",
+        "lat": "40.68092135",
+        "date": "09/26/2019",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.0805991569688",
+        "lat": "40.6425099",
+        "date": "01/16/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9441415076434",
+        "lat": "40.70854175",
+        "date": "03/30/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.906628972973",
+        "lat": "40.6570007702703",
+        "date": "05/26/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8993731189581",
+        "lat": "40.86122775",
+        "date": "08/06/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "03/15/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7485673",
+        "lat": "40.6078042",
+        "date": "01/03/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9552091",
+        "lat": "40.6800898",
+        "date": "07/12/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.899840124196",
+        "lat": "40.8565867",
+        "date": "05/29/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8702294",
+        "lat": "40.8400218",
+        "date": "10/30/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9578819",
+        "lat": "40.7175294",
+        "date": "02/26/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8825044",
+        "lat": "40.8788494",
+        "date": "09/14/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8571231",
+        "lat": "40.6845364",
+        "date": "11/30/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9164758002042",
+        "lat": "40.85640285",
+        "date": "07/30/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9206961",
+        "lat": "40.8274534",
+        "date": "10/18/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9907278",
+        "lat": "40.7559486",
+        "date": "03/14/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.7782517172601",
+        "lat": "40.5941169",
+        "date": "04/23/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8609784705769",
+        "lat": "40.8633123",
+        "date": "10/18/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9563580080006",
+        "lat": "40.6679386",
+        "date": "01/18/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "05/21/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8916863474475",
+        "lat": "40.81102905",
+        "date": "09/18/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9474946564856",
+        "lat": "40.63951745",
+        "date": "10/19/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.8696026282411",
+        "lat": "40.87123735",
+        "date": "02/06/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8569422",
+        "lat": "40.7580974",
+        "date": "07/13/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9011681036423",
+        "lat": "40.85877505",
+        "date": "10/10/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9688313096298",
+        "lat": "40.58455905",
+        "date": "02/26/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9133665266785",
+        "lat": "40.8340436",
+        "date": "05/21/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.730095",
+        "lat": "40.673517",
+        "date": "06/17/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8945538676048",
+        "lat": "40.8473545",
+        "date": "10/03/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9116104841246",
+        "lat": "40.60725425",
+        "date": "05/07/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.7940518",
+        "lat": "40.7090837",
+        "date": "01/10/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9373836",
+        "lat": "40.8450388",
+        "date": "09/11/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.967509",
+        "lat": "40.685294",
+        "date": "04/06/2018",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.0799739",
+        "lat": "40.5961775",
+        "date": "02/22/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.858404",
+        "lat": "40.734787",
+        "date": "11/09/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8134177983192",
+        "lat": "40.58583845",
+        "date": "10/15/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9914118333333",
+        "lat": "40.7176783333333",
+        "date": "09/07/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8303604493428",
+        "lat": "40.8480188",
+        "date": "04/03/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8542829142188",
+        "lat": "40.82088215",
+        "date": "09/19/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.748216",
+        "lat": "40.60485",
+        "date": "08/30/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.8752820273944",
+        "lat": "40.8737312",
+        "date": "04/11/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9895479",
+        "lat": "40.7196683",
+        "date": "05/16/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.930928",
+        "lat": "40.695742",
+        "date": "05/16/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8864056",
+        "lat": "40.8538889",
+        "date": "08/28/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.996068",
+        "lat": "40.7396323",
+        "date": "11/15/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "01/22/2018",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.7724327780645",
+        "lat": "40.7130083",
+        "date": "11/28/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.946788",
+        "lat": "40.82996",
+        "date": "09/14/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0107590022972",
+        "lat": "40.64778135",
+        "date": "04/13/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8631908851937",
+        "lat": "40.88762205",
+        "date": "10/31/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.934925125",
+        "lat": "40.853664875",
+        "date": "08/23/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.136356",
+        "lat": "40.636257",
+        "date": "11/07/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9314250567324",
+        "lat": "40.831484",
+        "date": "06/19/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9014685",
+        "lat": "40.8556162",
+        "date": "01/30/2017",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "07/25/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.8734860376046",
+        "lat": "40.74706595",
+        "date": "03/16/2018",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.9996314111029",
+        "lat": "40.64750465",
+        "date": "02/02/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9054478",
+        "lat": "40.834642",
+        "date": "09/04/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "05/02/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.90493595",
+        "lat": "40.68278655",
+        "date": "09/12/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.854013",
+        "lat": "40.830145",
+        "date": "04/20/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9233128348858",
+        "lat": "40.6704286",
+        "date": "02/27/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.93128445",
+        "lat": "40.65770695",
+        "date": "09/06/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "08/26/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8679962769663",
+        "lat": "40.8718248",
+        "date": "04/20/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9235396",
+        "lat": "40.6781043",
+        "date": "11/16/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.7439754341996",
+        "lat": "40.6649244",
+        "date": "04/19/2017",
+        "first_name": "Jeffrey",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9098442",
+        "lat": "40.6708927",
+        "date": "05/30/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9227299773842",
+        "lat": "40.67036685",
+        "date": "12/14/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.878238663247",
+        "lat": "40.749336",
+        "date": "10/26/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.99635",
+        "lat": "40.5739604",
+        "date": "08/20/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8783825998483",
+        "lat": "40.8281201",
+        "date": "09/04/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-74.0024179",
+        "lat": "40.57673825",
+        "date": "03/13/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "06/11/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8910630743189",
+        "lat": "40.8497717",
+        "date": "04/24/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "05/18/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9792777",
+        "lat": "40.6942428",
+        "date": "04/27/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.761882",
+        "lat": "40.7240003",
+        "date": "01/31/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.893226",
+        "lat": "40.659372",
+        "date": "03/14/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.86684071172",
+        "lat": "40.83658945",
+        "date": "08/04/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9223924",
+        "lat": "40.8656136",
+        "date": "06/21/2017",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.9787173934045",
+        "lat": "40.7258024",
+        "date": "03/20/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8023121996425",
+        "lat": "40.8093269849609",
+        "date": "01/19/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9017793723588",
+        "lat": "40.87223655",
+        "date": "03/06/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8902907844828",
+        "lat": "40.8715329",
+        "date": "09/16/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.8443117632299",
+        "lat": "40.68327595",
+        "date": "04/26/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "08/08/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.895815",
+        "lat": "40.855373",
+        "date": "02/04/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9433659183673",
+        "lat": "40.6318355510204",
+        "date": "09/18/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8578006363921",
+        "lat": "40.80991205",
+        "date": "05/05/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9525596",
+        "lat": "40.6643963",
+        "date": "07/05/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9591372146303",
+        "lat": "40.64445195",
+        "date": "10/19/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9590928",
+        "lat": "40.7074864",
+        "date": "07/19/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9372427446163",
+        "lat": "40.81648745",
+        "date": "05/30/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.1627005751631",
+        "lat": "40.63136775",
+        "date": "08/29/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8690233029479",
+        "lat": "40.68721305",
+        "date": "03/21/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.7899382953782",
+        "lat": "40.6843465",
+        "date": "11/19/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9612656391665",
+        "lat": "40.64644525",
+        "date": "09/26/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8771059565217",
+        "lat": "40.6712158695652",
+        "date": "09/29/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9035783090044",
+        "lat": "40.70598925",
+        "date": "01/30/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9990826",
+        "lat": "40.76296",
+        "date": "07/31/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "08/16/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "08/14/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9224305",
+        "lat": "40.8693093",
+        "date": "01/19/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.917181",
+        "lat": "40.8346054",
+        "date": "04/24/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9068165945522",
+        "lat": "40.8191676",
+        "date": "02/24/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.950608",
+        "lat": "40.647951",
+        "date": "01/31/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8726757",
+        "lat": "40.6856046",
+        "date": "06/14/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9466147664286",
+        "lat": "40.8260628",
+        "date": "06/21/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8936693646244",
+        "lat": "40.84216815",
+        "date": "01/16/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9375246888861",
+        "lat": "40.6901896",
+        "date": "07/30/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.99170255",
+        "lat": "40.7143102",
+        "date": "12/21/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.140687",
+        "lat": "40.6244425",
+        "date": "08/24/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9154434",
+        "lat": "40.655865",
+        "date": "07/13/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8951616926719",
+        "lat": "40.7503789",
+        "date": "02/11/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8311761",
+        "lat": "40.7574472",
+        "date": "08/23/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9416344354635",
+        "lat": "40.8117355",
+        "date": "02/04/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0298807142857",
+        "lat": "40.618289877551",
+        "date": "10/11/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9248241000051",
+        "lat": "40.8683722",
+        "date": "05/22/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.912108",
+        "lat": "40.693928",
+        "date": "06/12/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9437248577621",
+        "lat": "40.6383772",
+        "date": "05/24/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "04/04/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.922251",
+        "lat": "40.6354882",
+        "date": "04/09/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.955756",
+        "lat": "40.820641",
+        "date": "04/18/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8758633",
+        "lat": "40.8261246",
+        "date": "07/25/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.94235",
+        "lat": "40.6627309",
+        "date": "02/21/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9336509899579",
+        "lat": "40.85126965",
+        "date": "08/13/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "08/14/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.863831",
+        "lat": "40.846837",
+        "date": "03/26/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8936221326434",
+        "lat": "40.85600835",
+        "date": "08/06/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7681542405415",
+        "lat": "40.6985908",
+        "date": "01/07/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8818543333333",
+        "lat": "40.683671",
+        "date": "10/09/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.906739",
+        "lat": "40.689799",
+        "date": "12/06/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8985849314003",
+        "lat": "40.8167657",
+        "date": "05/11/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9413716940147",
+        "lat": "40.8174229",
+        "date": "10/26/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.86446",
+        "lat": "40.69237",
+        "date": "05/16/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8481227",
+        "lat": "40.8428054",
+        "date": "09/07/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.87286",
+        "lat": "40.752776",
+        "date": "10/10/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.903096345713",
+        "lat": "40.6674011",
+        "date": "01/31/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8896852700402",
+        "lat": "40.868789",
+        "date": "05/15/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9275108328452",
+        "lat": "40.65509865",
+        "date": "03/14/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8565480612245",
+        "lat": "40.9002270408163",
+        "date": "09/10/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8732772",
+        "lat": "40.8790901",
+        "date": "01/29/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.739119",
+        "lat": "40.664128",
+        "date": "02/15/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8860239",
+        "lat": "40.7479821",
+        "date": "01/23/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8271599",
+        "lat": "40.8765039",
+        "date": "02/28/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9389989",
+        "lat": "40.8001605",
+        "date": "01/30/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9121844046551",
+        "lat": "40.6791702",
+        "date": "03/07/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8876003",
+        "lat": "40.8752674",
+        "date": "04/20/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8815952951922",
+        "lat": "40.87946315",
+        "date": "05/31/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "10/09/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9397134980946",
+        "lat": "40.67491145",
+        "date": "01/25/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9716362",
+        "lat": "40.5941763",
+        "date": "06/14/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8625941208774",
+        "lat": "40.88741735",
+        "date": "02/27/2019",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.073911",
+        "lat": "40.61731",
+        "date": "08/13/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8692939292929",
+        "lat": "40.8669982121212",
+        "date": "05/02/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.913818156751",
+        "lat": "40.6808908",
+        "date": "08/06/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9157332",
+        "lat": "40.8517895",
+        "date": "01/09/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9233792368954",
+        "lat": "40.85117595",
+        "date": "12/18/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8859326468859",
+        "lat": "40.8729073",
+        "date": "01/06/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8879859589762",
+        "lat": "40.8652608",
+        "date": "04/25/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.94232505",
+        "lat": "40.5890514",
+        "date": "07/17/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9046508",
+        "lat": "40.860985",
+        "date": "04/23/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9175359",
+        "lat": "40.65923165",
+        "date": "12/03/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9189",
+        "lat": "40.674644",
+        "date": "06/06/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.98255",
+        "lat": "40.761496",
+        "date": "02/13/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9252995506133",
+        "lat": "40.8262795",
+        "date": "04/23/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9275108328452",
+        "lat": "40.65509865",
+        "date": "07/03/2019",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "09/26/2019",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.975491",
+        "lat": "40.615089",
+        "date": "07/26/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8561994196339",
+        "lat": "40.89041445",
+        "date": "04/16/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.8533735032219",
+        "lat": "40.6812206",
+        "date": "04/03/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "04/17/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8665448738536",
+        "lat": "40.86635605",
+        "date": "11/21/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8930330204082",
+        "lat": "40.8308505510204",
+        "date": "07/08/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.7910693043217",
+        "lat": "40.6877886",
+        "date": "07/23/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.951293",
+        "lat": "40.71137525",
+        "date": "07/17/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.91042145",
+        "lat": "40.65993285",
+        "date": "05/12/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.92681",
+        "lat": "40.657003",
+        "date": "10/30/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.8782397853386",
+        "lat": "40.6576516",
+        "date": "11/30/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.81504765",
+        "lat": "40.58559605",
+        "date": "03/15/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9236005281063",
+        "lat": "40.82406085",
+        "date": "05/20/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "08/22/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9449996912177",
+        "lat": "40.6385703",
+        "date": "11/29/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8620033",
+        "lat": "40.88059665",
+        "date": "08/15/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.72509865",
+        "lat": "40.76003245",
+        "date": "08/28/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7632207352354",
+        "lat": "40.71356175",
+        "date": "04/06/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9023091265038",
+        "lat": "40.70265885",
+        "date": "07/31/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.795668",
+        "lat": "40.589922",
+        "date": "05/25/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8637758241885",
+        "lat": "40.8891886",
+        "date": "09/27/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.846293046537",
+        "lat": "40.78900365",
+        "date": "06/12/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8850004000433",
+        "lat": "40.8547455",
+        "date": "01/28/2019",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.9451187",
+        "lat": "40.7806567",
+        "date": "08/13/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "01/12/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8803021",
+        "lat": "40.8303429",
+        "date": "09/20/2019",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.940132",
+        "lat": "40.716453",
+        "date": "09/19/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9080033241843",
+        "lat": "40.8507621",
+        "date": "02/14/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8271599",
+        "lat": "40.8765039",
+        "date": "05/02/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9363640204082",
+        "lat": "40.6370735510204",
+        "date": "03/21/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "01/13/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8634676022414",
+        "lat": "40.69136025",
+        "date": "02/26/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.7866517834772",
+        "lat": "40.59091",
+        "date": "06/07/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.8296628011683",
+        "lat": "40.7527305",
+        "date": "03/12/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9434392006644",
+        "lat": "40.6324869",
+        "date": "09/19/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9307580784571",
+        "lat": "40.7978933",
+        "date": "03/29/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9203422404995",
+        "lat": "40.7637155",
+        "date": "11/17/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9002732543986",
+        "lat": "40.85365445",
+        "date": "03/23/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0275173108081",
+        "lat": "40.6237866",
+        "date": "08/23/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.750017",
+        "lat": "40.605081",
+        "date": "02/14/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9831141",
+        "lat": "40.7578879",
+        "date": "09/26/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8841225856212",
+        "lat": "40.8672283",
+        "date": "04/26/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.7457498",
+        "lat": "40.6023362",
+        "date": "07/19/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8936173703704",
+        "lat": "40.8594308518519",
+        "date": "02/23/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8777449926386",
+        "lat": "40.8279742",
+        "date": "08/30/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9057538930338",
+        "lat": "40.9035691",
+        "date": "08/10/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.886033206148",
+        "lat": "40.7130511",
+        "date": "06/22/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9245089",
+        "lat": "40.8618571",
+        "date": "02/13/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "07/09/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.79700725",
+        "lat": "40.6949749",
+        "date": "01/11/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8678344029456",
+        "lat": "40.74780065",
+        "date": "06/26/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.897308731679",
+        "lat": "40.66141795",
+        "date": "10/06/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "01/30/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8693337",
+        "lat": "40.8673662",
+        "date": "03/07/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8915628585889",
+        "lat": "40.8593814",
+        "date": "08/07/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9493450798803",
+        "lat": "40.6650574",
+        "date": "04/02/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "10/23/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.836677",
+        "lat": "40.577887",
+        "date": "03/20/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9337309",
+        "lat": "40.6399828",
+        "date": "02/06/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9090209477428",
+        "lat": "40.7087895",
+        "date": "08/22/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9223277447856",
+        "lat": "40.85243495",
+        "date": "04/02/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-74.0061245",
+        "lat": "40.7247568",
+        "date": "01/11/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8977804319131",
+        "lat": "40.66320465",
+        "date": "08/01/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8622706653192",
+        "lat": "40.7114506",
+        "date": "11/17/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9033304863824",
+        "lat": "40.77126365",
+        "date": "03/30/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.761229258203",
+        "lat": "40.7364622",
+        "date": "03/07/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-74.0237221634937",
+        "lat": "40.6332802",
+        "date": "01/22/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8832939",
+        "lat": "40.8767099",
+        "date": "06/15/2018",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "11/16/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.7888927692308",
+        "lat": "40.8482516153846",
+        "date": "01/09/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9168493349683",
+        "lat": "40.8894032993134",
+        "date": "04/19/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8935039644035",
+        "lat": "40.85895385",
+        "date": "01/30/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9990826",
+        "lat": "40.76296",
+        "date": "08/25/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.2183353451319",
+        "lat": "40.53636505",
+        "date": "02/06/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8676757777778",
+        "lat": "40.8520311111111",
+        "date": "04/19/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8840834815396",
+        "lat": "40.8495243",
+        "date": "04/12/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.845465",
+        "lat": "40.786274",
+        "date": "08/28/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "03/05/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8612571428571",
+        "lat": "40.8767754285714",
+        "date": "04/25/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9431461751169",
+        "lat": "40.8155024",
+        "date": "04/12/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9547207",
+        "lat": "40.7360113",
+        "date": "08/30/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.916785",
+        "lat": "40.8391937",
+        "date": "05/06/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.8811901966422",
+        "lat": "40.680395",
+        "date": "01/16/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.831644",
+        "lat": "40.6932322",
+        "date": "10/22/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.825152",
+        "lat": "40.701272",
+        "date": "08/06/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9755736530612",
+        "lat": "40.6235358163265",
+        "date": "07/07/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8661980441584",
+        "lat": "40.8636263",
+        "date": "04/24/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.978833689614",
+        "lat": "40.78144345",
+        "date": "02/01/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.843898043169",
+        "lat": "40.6747799",
+        "date": "08/13/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9060874",
+        "lat": "40.8508992",
+        "date": "06/03/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9851873481476",
+        "lat": "40.5900149",
+        "date": "07/18/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9768308",
+        "lat": "40.7469712",
+        "date": "10/08/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9368197959184",
+        "lat": "40.849540755102",
+        "date": "02/19/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8960118625326",
+        "lat": "40.85506405",
+        "date": "11/21/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.848076",
+        "lat": "40.905486",
+        "date": "01/06/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8773372977451",
+        "lat": "40.64608545",
+        "date": "08/01/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9511303531967",
+        "lat": "40.6795082",
+        "date": "05/03/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.807316",
+        "lat": "40.589862",
+        "date": "07/11/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9118829934418",
+        "lat": "40.83057915",
+        "date": "01/11/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-74.0041374",
+        "lat": "40.5980439",
+        "date": "10/03/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9246879318182",
+        "lat": "40.6767449545455",
+        "date": "10/17/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9181017173025",
+        "lat": "40.6973863",
+        "date": "08/27/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-74.002169648705",
+        "lat": "40.5776879",
+        "date": "08/16/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0867716",
+        "lat": "40.6409479",
+        "date": "07/12/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9097031350552",
+        "lat": "40.6856996",
+        "date": "01/03/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9428150239283",
+        "lat": "40.62786375",
+        "date": "05/18/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8713933801891",
+        "lat": "40.87836465",
+        "date": "09/26/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8580426378512",
+        "lat": "40.8893033",
+        "date": "03/08/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8915864084231",
+        "lat": "40.8257481",
+        "date": "03/29/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8267567438031",
+        "lat": "40.7662922",
+        "date": "03/20/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8865694",
+        "lat": "40.6628919",
+        "date": "02/21/2017",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9443966718327",
+        "lat": "40.81830545",
+        "date": "05/15/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9195326",
+        "lat": "40.6363036",
+        "date": "10/25/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9457818205883",
+        "lat": "40.82879555",
+        "date": "04/09/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9043896",
+        "lat": "40.6583542",
+        "date": "07/27/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.94645885",
+        "lat": "40.6865049",
+        "date": "01/19/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "09/01/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9163656231884",
+        "lat": "40.8566597246377",
+        "date": "02/07/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8882458874681",
+        "lat": "40.83420475",
+        "date": "10/19/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8571022193518",
+        "lat": "40.8397425",
+        "date": "07/13/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8190208016393",
+        "lat": "40.680409",
+        "date": "06/12/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8883605722781",
+        "lat": "40.86553425",
+        "date": "02/01/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8917249",
+        "lat": "40.8621291",
+        "date": "08/22/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9134404861615",
+        "lat": "40.8402473",
+        "date": "09/17/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9066774645229",
+        "lat": "40.6474512",
+        "date": "06/01/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9005050159472",
+        "lat": "40.81512925",
+        "date": "03/14/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.912637",
+        "lat": "40.854808",
+        "date": "12/10/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9123457",
+        "lat": "40.8229281",
+        "date": "11/15/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9053884261475",
+        "lat": "40.85705205",
+        "date": "12/04/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8913735",
+        "lat": "40.6762303",
+        "date": "04/07/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9765423",
+        "lat": "40.7204952",
+        "date": "01/07/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.913385505265",
+        "lat": "40.8084104",
+        "date": "06/26/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "09/11/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.8731971838972",
+        "lat": "40.68428235",
+        "date": "08/13/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8338512937465",
+        "lat": "40.70594885",
+        "date": "09/09/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.893672",
+        "lat": "40.659964",
+        "date": "09/24/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9421503101958",
+        "lat": "40.68437815",
+        "date": "01/19/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9416754898367",
+        "lat": "40.7896813",
+        "date": "08/10/2017",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.85658455418",
+        "lat": "40.83024175",
+        "date": "08/19/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9644779330215",
+        "lat": "40.6733403",
+        "date": "09/26/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9064853",
+        "lat": "40.7592478",
+        "date": "03/07/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "08/01/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.973607",
+        "lat": "40.753492",
+        "date": "06/03/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7633627891927",
+        "lat": "40.69595495",
+        "date": "02/24/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8885813955063",
+        "lat": "40.85636255",
+        "date": "03/03/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9261590312545",
+        "lat": "40.6884883",
+        "date": "06/26/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9655279188351",
+        "lat": "40.63352685",
+        "date": "08/20/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "01/29/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8190058994513",
+        "lat": "40.7015436",
+        "date": "05/05/2017",
+        "first_name": "Jeffrey",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.782333229419",
+        "lat": "40.7086178",
+        "date": "06/09/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "06/07/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.83556585",
+        "lat": "40.66256545",
+        "date": "02/25/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8824316122449",
+        "lat": "40.8539934081633",
+        "date": "11/14/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.885841",
+        "lat": "40.7287162",
+        "date": "03/24/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9109012",
+        "lat": "40.8479074",
+        "date": "03/01/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8465684418747",
+        "lat": "40.90404305",
+        "date": "11/21/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8925074285714",
+        "lat": "40.8208944693878",
+        "date": "01/09/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9504341474408",
+        "lat": "40.6519266",
+        "date": "04/02/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8633216",
+        "lat": "40.8676498",
+        "date": "09/11/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8980030918827",
+        "lat": "40.8815004",
+        "date": "03/03/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.858205",
+        "lat": "40.66739",
+        "date": "03/16/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9317522198793",
+        "lat": "40.69378645",
+        "date": "08/21/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9027741237337",
+        "lat": "40.86553205",
+        "date": "10/03/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9381789787031",
+        "lat": "40.62431955",
+        "date": "10/29/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "05/24/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8819415",
+        "lat": "40.852786",
+        "date": "01/18/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9531938",
+        "lat": "40.6559645",
+        "date": "03/05/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.968696",
+        "lat": "40.763068",
+        "date": "02/07/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8490036945122",
+        "lat": "40.8834808",
+        "date": "03/08/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.8852992950408",
+        "lat": "40.66434945",
+        "date": "11/08/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9110418589674",
+        "lat": "40.8522066",
+        "date": "05/29/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8800996626716",
+        "lat": "40.84560775",
+        "date": "05/03/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8917531002257",
+        "lat": "40.86649335",
+        "date": "03/20/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.89246325",
+        "lat": "40.73272495",
+        "date": "08/15/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9035540692111",
+        "lat": "40.87288585",
+        "date": "10/17/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.91281505",
+        "lat": "40.65780565",
+        "date": "02/15/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9752448834135",
+        "lat": "40.7946456",
+        "date": "01/20/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9515135",
+        "lat": "40.6957603",
+        "date": "09/30/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7560257991209",
+        "lat": "40.7100405",
+        "date": "02/23/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8853289872068",
+        "lat": "40.74255315",
+        "date": "03/26/2018",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.9907278",
+        "lat": "40.7559486",
+        "date": "09/07/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8061825240381",
+        "lat": "40.7050887",
+        "date": "05/19/2017",
+        "first_name": "Jeffrey",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9816532864348",
+        "lat": "40.59185245",
+        "date": "04/24/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9138049975528",
+        "lat": "40.8289674",
+        "date": "06/06/2017",
+        "first_name": "Jeffrey",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9020195294118",
+        "lat": "40.6449975588235",
+        "date": "01/31/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-76.877763",
+        "lat": "38.06277",
+        "date": "04/01/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8624770235256",
+        "lat": "40.7372329",
+        "date": "01/04/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9217503",
+        "lat": "40.669388",
+        "date": "07/19/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "05/18/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8850115801589",
+        "lat": "40.8511867",
+        "date": "07/12/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9149401",
+        "lat": "40.8466789",
+        "date": "07/19/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9005362",
+        "lat": "40.9034126",
+        "date": "05/30/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8668056203692",
+        "lat": "40.85903535",
+        "date": "07/17/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8775021979361",
+        "lat": "40.68174605",
+        "date": "01/25/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.895476505759",
+        "lat": "40.86539275",
+        "date": "10/03/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9617615",
+        "lat": "40.7635026",
+        "date": "03/17/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.903136464726",
+        "lat": "40.88277585",
+        "date": "11/15/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8705117967083",
+        "lat": "40.7468004",
+        "date": "01/09/2018",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.999039059782",
+        "lat": "40.70910915",
+        "date": "10/27/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9043966",
+        "lat": "40.6696676",
+        "date": "10/30/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.776273",
+        "lat": "40.598318",
+        "date": "07/26/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8563359538499",
+        "lat": "40.88795415",
+        "date": "04/06/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.945254",
+        "lat": "40.810056",
+        "date": "09/05/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.97578",
+        "lat": "40.752468",
+        "date": "05/14/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9365631000333",
+        "lat": "40.81749655",
+        "date": "09/20/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8865027777778",
+        "lat": "40.83503",
+        "date": "10/04/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9311223857453",
+        "lat": "40.6285113",
+        "date": "10/09/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8836333997001",
+        "lat": "40.8507573",
+        "date": "09/05/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.997748",
+        "lat": "40.643774",
+        "date": "09/25/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.982417",
+        "lat": "40.691162",
+        "date": "09/20/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8583053372444",
+        "lat": "40.8869389",
+        "date": "04/09/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9386341449275",
+        "lat": "40.80346215",
+        "date": "07/20/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "08/30/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9041213053339",
+        "lat": "40.65614105",
+        "date": "09/28/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0369699183673",
+        "lat": "40.6196535306122",
+        "date": "02/16/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9185963320823",
+        "lat": "40.83761215",
+        "date": "05/29/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.7879585817096",
+        "lat": "40.59711055",
+        "date": "04/20/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.894458",
+        "lat": "40.8595434",
+        "date": "01/10/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9260252",
+        "lat": "40.8609589",
+        "date": "02/09/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.7699729",
+        "lat": "40.6765515",
+        "date": "08/19/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "08/26/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "09/25/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8422403461152",
+        "lat": "40.68215145",
+        "date": "08/11/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9752448834135",
+        "lat": "40.7946456",
+        "date": "10/11/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9417454906974",
+        "lat": "40.8345947",
+        "date": "05/29/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9048976",
+        "lat": "40.8601207",
+        "date": "04/03/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9567266719189",
+        "lat": "40.6564537",
+        "date": "05/04/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9284658",
+        "lat": "40.7049476",
+        "date": "12/05/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8777995",
+        "lat": "40.88378975",
+        "date": "03/05/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9504341474408",
+        "lat": "40.6519266",
+        "date": "09/12/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9985044285714",
+        "lat": "40.7609968367347",
+        "date": "01/18/2018",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.8832939",
+        "lat": "40.8767099",
+        "date": "08/05/2019",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9071336079593",
+        "lat": "40.68353325",
+        "date": "07/13/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8752322",
+        "lat": "40.8315845",
+        "date": "10/30/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8635792",
+        "lat": "40.88657925",
+        "date": "09/06/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8772555",
+        "lat": "40.8334758",
+        "date": "04/19/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9012004",
+        "lat": "40.8127597",
+        "date": "07/17/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.736389274735",
+        "lat": "40.66277705",
+        "date": "01/04/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.917382",
+        "lat": "40.823199",
+        "date": "01/23/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9015135266376",
+        "lat": "40.6682305",
+        "date": "03/19/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9112485814688",
+        "lat": "40.83589075",
+        "date": "11/08/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/09/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.7904014",
+        "lat": "40.7692673",
+        "date": "09/20/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8920168350845",
+        "lat": "40.86683285",
+        "date": "11/29/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8990512857143",
+        "lat": "40.8540927142857",
+        "date": "07/09/2019",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.736105621246",
+        "lat": "40.65127715",
+        "date": "10/02/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/13/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-74.0148730845967",
+        "lat": "40.641103",
+        "date": "06/14/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9027659291053",
+        "lat": "40.8588716",
+        "date": "08/11/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9585688688056",
+        "lat": "40.71816355",
+        "date": "04/24/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8004035687517",
+        "lat": "40.71030685",
+        "date": "12/17/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.97976",
+        "lat": "40.732622",
+        "date": "07/20/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9359759",
+        "lat": "40.6511397",
+        "date": "06/08/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "02/19/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.984635",
+        "lat": "40.744477",
+        "date": "06/15/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.748216",
+        "lat": "40.60485",
+        "date": "05/10/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9012687575758",
+        "lat": "40.8127805454545",
+        "date": "04/20/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8790223677981",
+        "lat": "40.8291905",
+        "date": "02/07/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.854906",
+        "lat": "40.904537",
+        "date": "01/03/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8571368979592",
+        "lat": "40.8317629795918",
+        "date": "01/20/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.888636",
+        "lat": "40.833817",
+        "date": "06/13/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "07/27/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9145459",
+        "lat": "40.673986",
+        "date": "10/25/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-74.00008985",
+        "lat": "40.6606169",
+        "date": "09/21/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/14/2017",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "02/22/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.84454",
+        "lat": "40.775645",
+        "date": "03/05/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "05/15/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9088926",
+        "lat": "40.8646163",
+        "date": "11/16/2017",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.9272714105025",
+        "lat": "40.6710212",
+        "date": "07/13/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0372418408425",
+        "lat": "40.6187302",
+        "date": "04/05/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8887742161853",
+        "lat": "40.8361477",
+        "date": "06/21/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8460434942745",
+        "lat": "40.87792185",
+        "date": "07/10/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8961830017705",
+        "lat": "40.8844756",
+        "date": "04/21/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.860278",
+        "lat": "40.892038",
+        "date": "01/06/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8587247165811",
+        "lat": "40.88659145",
+        "date": "09/05/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.889811",
+        "lat": "40.701078",
+        "date": "09/18/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9318694523337",
+        "lat": "40.756378",
+        "date": "08/20/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "10/17/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9239719",
+        "lat": "40.8668682",
+        "date": "04/13/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9022369",
+        "lat": "40.8595042",
+        "date": "09/11/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0908961890041",
+        "lat": "40.64502335",
+        "date": "07/20/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9060043045642",
+        "lat": "40.6648704",
+        "date": "09/27/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.00326645134",
+        "lat": "40.75246805",
+        "date": "06/14/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9004359",
+        "lat": "40.85418",
+        "date": "07/13/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9170558",
+        "lat": "40.8689682",
+        "date": "09/13/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8882780334131",
+        "lat": "40.74634835",
+        "date": "08/14/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.926485",
+        "lat": "40.635927",
+        "date": "08/14/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.940358",
+        "lat": "40.674518",
+        "date": "11/16/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9203224",
+        "lat": "40.6584442",
+        "date": "01/11/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9183574",
+        "lat": "40.8324201",
+        "date": "06/13/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8245719017263",
+        "lat": "40.8790551",
+        "date": "09/25/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.849098",
+        "lat": "40.905758",
+        "date": "10/10/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9927221",
+        "lat": "40.7592431",
+        "date": "01/22/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.94338",
+        "lat": "40.632036",
+        "date": "06/20/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8631421869197",
+        "lat": "40.8552034",
+        "date": "12/19/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8883230526316",
+        "lat": "40.6726612105263",
+        "date": "04/09/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8758186480638",
+        "lat": "40.82528515",
+        "date": "12/15/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.920856625",
+        "lat": "40.864165625",
+        "date": "03/19/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "06/19/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.866933",
+        "lat": "40.873131",
+        "date": "01/09/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9637619039792",
+        "lat": "40.763403",
+        "date": "09/28/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9663399557818",
+        "lat": "40.71078915",
+        "date": "07/22/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8783973840771",
+        "lat": "40.64581045",
+        "date": "03/20/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.748216",
+        "lat": "40.60485",
+        "date": "03/30/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.786918",
+        "lat": "40.847716",
+        "date": "04/24/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-74.0105467428571",
+        "lat": "40.7236171714286",
+        "date": "07/20/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9223584114991",
+        "lat": "40.66665485",
+        "date": "10/09/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9355447677193",
+        "lat": "40.67111425",
+        "date": "03/18/2019",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.9155670593773",
+        "lat": "40.6593233",
+        "date": "06/12/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.96900496032",
+        "lat": "40.57757105",
+        "date": "10/10/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9010253990484",
+        "lat": "40.8316764",
+        "date": "03/27/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9506002",
+        "lat": "40.8255052",
+        "date": "02/14/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "04/27/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8295088808408",
+        "lat": "40.75524765",
+        "date": "11/02/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.885746",
+        "lat": "40.831754",
+        "date": "08/15/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8814924051245",
+        "lat": "40.67440525",
+        "date": "09/05/2019",
+        "first_name": "Jeffrey",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.867159287643",
+        "lat": "40.66662945",
+        "date": "01/04/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8960118625326",
+        "lat": "40.85506405",
+        "date": "10/09/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.976476608642",
+        "lat": "40.75015225",
+        "date": "01/30/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8953967",
+        "lat": "40.8609982",
+        "date": "08/20/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9124315251002",
+        "lat": "40.68945005",
+        "date": "09/14/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9232906728219",
+        "lat": "40.85156555",
+        "date": "09/12/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.94105375",
+        "lat": "40.6262495",
+        "date": "04/17/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8882213918264",
+        "lat": "40.82740635",
+        "date": "06/05/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8975582",
+        "lat": "40.8586977",
+        "date": "04/27/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9669823838384",
+        "lat": "40.5813255",
+        "date": "01/13/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9019714",
+        "lat": "40.8629038",
+        "date": "04/08/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9378700075813",
+        "lat": "40.695687",
+        "date": "01/31/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.953507",
+        "lat": "40.635683",
+        "date": "08/16/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9065009843165",
+        "lat": "40.8571492",
+        "date": "04/21/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.08786495",
+        "lat": "40.6395733",
+        "date": "06/28/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9586641437413",
+        "lat": "40.6713898",
+        "date": "05/26/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8715317880027",
+        "lat": "40.75217705",
+        "date": "09/19/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8813985563621",
+        "lat": "40.8555159",
+        "date": "04/06/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8007493",
+        "lat": "40.5972371",
+        "date": "02/13/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8534351",
+        "lat": "40.897922",
+        "date": "02/23/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8788353385768",
+        "lat": "40.6710778",
+        "date": "06/03/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.816683851965",
+        "lat": "40.72690905",
+        "date": "03/10/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9507181",
+        "lat": "40.8011739",
+        "date": "08/16/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9309615",
+        "lat": "40.6668317",
+        "date": "05/10/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "08/15/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.759882",
+        "lat": "40.60033",
+        "date": "12/18/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9743856511183",
+        "lat": "40.60891825",
+        "date": "02/15/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.916177",
+        "lat": "40.85085",
+        "date": "05/22/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9433926939536",
+        "lat": "40.7958244",
+        "date": "05/08/2017",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.952893",
+        "lat": "40.638031",
+        "date": "07/12/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8464774586207",
+        "lat": "40.8710089",
+        "date": "01/16/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.98739515",
+        "lat": "40.58707765",
+        "date": "07/10/2018",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-73.7801976547233",
+        "lat": "40.68957525",
+        "date": "11/21/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8492434478065",
+        "lat": "40.8691365",
+        "date": "09/29/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.821548",
+        "lat": "40.765956",
+        "date": "07/18/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-74.1179153",
+        "lat": "40.6364959",
+        "date": "08/01/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9897851",
+        "lat": "40.74470165",
+        "date": "05/28/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.938966",
+        "lat": "40.8162421",
+        "date": "09/12/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-74.0086585",
+        "lat": "40.7057836",
+        "date": "07/18/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8640756164626",
+        "lat": "40.87015455",
+        "date": "06/13/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9400313",
+        "lat": "40.8461567",
+        "date": "10/25/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9413864125255",
+        "lat": "40.7982108",
+        "date": "01/31/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8374850522461",
+        "lat": "40.57898665",
+        "date": "04/27/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9625405778973",
+        "lat": "40.76211715",
+        "date": "01/11/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "01/03/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8993755920197",
+        "lat": "40.83920315",
+        "date": "05/20/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.766997",
+        "lat": "40.698649",
+        "date": "05/16/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8181059",
+        "lat": "40.7654485",
+        "date": "04/23/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8337617844678",
+        "lat": "40.8470841",
+        "date": "01/09/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9058571867908",
+        "lat": "40.6766765",
+        "date": "07/24/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8703998105893",
+        "lat": "40.8336548",
+        "date": "01/02/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8840952",
+        "lat": "40.66734055",
+        "date": "01/10/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8727712086045",
+        "lat": "40.6667551",
+        "date": "04/22/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "08/23/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.918363",
+        "lat": "40.6726635744681",
+        "date": "07/17/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.860623",
+        "lat": "40.8247842",
+        "date": "11/09/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9926292",
+        "lat": "40.7119774",
+        "date": "03/07/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.867183",
+        "lat": "40.814567",
+        "date": "04/06/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9656061",
+        "lat": "40.7975391",
+        "date": "09/05/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9540807477303",
+        "lat": "40.6715961",
+        "date": "04/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "04/12/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9506407674419",
+        "lat": "40.6525133255814",
+        "date": "04/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8924896",
+        "lat": "40.8580279",
+        "date": "05/03/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.889691213299",
+        "lat": "40.8555369",
+        "date": "06/16/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9145863",
+        "lat": "40.8516304",
+        "date": "05/22/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9566900377232",
+        "lat": "40.584283",
+        "date": "02/15/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9643842",
+        "lat": "40.7960362",
+        "date": "01/05/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9879482172701",
+        "lat": "40.72040175",
+        "date": "08/20/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.789377",
+        "lat": "40.682534",
+        "date": "06/15/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.884208",
+        "lat": "40.633697",
+        "date": "03/20/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9511794",
+        "lat": "40.7698299",
+        "date": "04/25/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9233713328328",
+        "lat": "40.7449148",
+        "date": "04/24/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8642209502815",
+        "lat": "40.73671315",
+        "date": "11/16/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8939104798183",
+        "lat": "40.6597314",
+        "date": "05/14/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8809280266504",
+        "lat": "40.64970015",
+        "date": "01/19/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.7660473",
+        "lat": "40.70909685",
+        "date": "08/26/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9516308447081",
+        "lat": "40.65755835",
+        "date": "06/20/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8656682896396",
+        "lat": "40.86500195",
+        "date": "01/18/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9572658071674",
+        "lat": "40.62858675",
+        "date": "03/16/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8540773600325",
+        "lat": "40.82525385",
+        "date": "01/09/2018",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "05/06/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9479845",
+        "lat": "40.8159927",
+        "date": "02/26/2019",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9093870950735",
+        "lat": "40.8757929",
+        "date": "09/28/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8541109",
+        "lat": "40.7216284",
+        "date": "03/24/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9928149588214",
+        "lat": "40.76615255",
+        "date": "03/09/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9902614081633",
+        "lat": "40.7468349183673",
+        "date": "11/29/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.903281801346",
+        "lat": "40.64088655",
+        "date": "04/27/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9379930319192",
+        "lat": "40.799362",
+        "date": "12/13/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8872640639586",
+        "lat": "40.83248525",
+        "date": "11/20/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9223276534434",
+        "lat": "40.82367525",
+        "date": "10/24/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7811606394475",
+        "lat": "40.7015615",
+        "date": "02/20/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9262476",
+        "lat": "40.7578457",
+        "date": "07/09/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9305752",
+        "lat": "40.7664367",
+        "date": "05/17/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8578760524209",
+        "lat": "40.8951068",
+        "date": "11/28/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-74.025336",
+        "lat": "40.62077",
+        "date": "05/22/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9044235263158",
+        "lat": "40.6568375789474",
+        "date": "03/30/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9007813579408",
+        "lat": "40.9022893",
+        "date": "09/04/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9573251724138",
+        "lat": "40.6300722758621",
+        "date": "02/14/2019",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.792791",
+        "lat": "40.679213",
+        "date": "03/19/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8234718",
+        "lat": "40.832263",
+        "date": "05/31/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9689912",
+        "lat": "40.7659455",
+        "date": "02/02/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8489270273656",
+        "lat": "40.82531665",
+        "date": "06/26/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "06/21/2017",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.76207535",
+        "lat": "40.67126705",
+        "date": "12/14/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7388943",
+        "lat": "40.7210625",
+        "date": "03/06/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9566900377232",
+        "lat": "40.584283",
+        "date": "06/28/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8738803149766",
+        "lat": "40.7459561",
+        "date": "02/01/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8676978",
+        "lat": "40.8326989",
+        "date": "02/27/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9569423",
+        "lat": "40.6275687",
+        "date": "09/17/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.902579",
+        "lat": "40.81737",
+        "date": "10/06/2017",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "06/05/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.94619",
+        "lat": "40.822762",
+        "date": "10/11/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8734860376046",
+        "lat": "40.74706595",
+        "date": "04/26/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8820259",
+        "lat": "40.8692484",
+        "date": "05/02/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.878238663247",
+        "lat": "40.749336",
+        "date": "03/06/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.945592",
+        "lat": "40.82507",
+        "date": "10/12/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9024259",
+        "lat": "40.8298106",
+        "date": "06/13/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8587799",
+        "lat": "40.6681574",
+        "date": "05/01/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9789496",
+        "lat": "40.7263522",
+        "date": "12/03/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.8695193860112",
+        "lat": "40.73769375",
+        "date": "04/05/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9792279072313",
+        "lat": "40.72480975",
+        "date": "05/16/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.999206",
+        "lat": "40.737167",
+        "date": "03/29/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "08/02/2019",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "11/15/2017",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8970408784091",
+        "lat": "40.9029086",
+        "date": "11/27/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9358009435078",
+        "lat": "40.8528697",
+        "date": "04/07/2017",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-74.0046775",
+        "lat": "40.6757227",
+        "date": "02/14/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.934925125",
+        "lat": "40.853664875",
+        "date": "06/13/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9485562047793",
+        "lat": "40.67574845",
+        "date": "12/07/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9293596002527",
+        "lat": "40.6682189",
+        "date": "05/14/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9311862",
+        "lat": "40.8552564",
+        "date": "02/07/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8960234949617",
+        "lat": "40.81828575",
+        "date": "09/06/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.909588",
+        "lat": "40.823411",
+        "date": "02/06/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.942742",
+        "lat": "40.834087",
+        "date": "02/13/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7985104387566",
+        "lat": "40.6683017",
+        "date": "07/18/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-74.1965012270307",
+        "lat": "40.5367978",
+        "date": "10/05/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.87370325",
+        "lat": "40.66659875",
+        "date": "08/13/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9236731566424",
+        "lat": "40.7721875",
+        "date": "02/24/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9186937833502",
+        "lat": "40.6674043",
+        "date": "06/20/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.836961",
+        "lat": "40.755918",
+        "date": "09/20/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9103922185391",
+        "lat": "40.76709665",
+        "date": "07/28/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9174407872054",
+        "lat": "40.86963825",
+        "date": "05/30/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.8803419",
+        "lat": "40.6637363",
+        "date": "07/26/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "11/08/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9140378985177",
+        "lat": "40.83753625",
+        "date": "02/16/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9874905177438",
+        "lat": "40.7492824",
+        "date": "06/26/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8647157",
+        "lat": "40.8531765",
+        "date": "11/22/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9347789677399",
+        "lat": "40.65414035",
+        "date": "01/18/2019",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9166735357451",
+        "lat": "40.6771428",
+        "date": "04/30/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8695157945658",
+        "lat": "40.82746155",
+        "date": "04/09/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9628750184286",
+        "lat": "40.79872665",
+        "date": "06/10/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8175018024723",
+        "lat": "40.7258732",
+        "date": "02/08/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9499861177256",
+        "lat": "40.67822645",
+        "date": "01/19/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "04/05/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8637758241885",
+        "lat": "40.8891886",
+        "date": "05/29/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9186273048446",
+        "lat": "40.82855615",
+        "date": "07/31/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.7382138739063",
+        "lat": "40.693585",
+        "date": "05/09/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9176996",
+        "lat": "40.8540686",
+        "date": "08/03/2017",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.77791147161",
+        "lat": "40.7090883",
+        "date": "04/09/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8644131688852",
+        "lat": "40.8355956",
+        "date": "10/17/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9141684633989",
+        "lat": "40.83701625",
+        "date": "08/03/2017",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.77791147161",
+        "lat": "40.7090883",
+        "date": "12/14/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-74.015184",
+        "lat": "40.655207",
+        "date": "07/01/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8855875470293",
+        "lat": "40.6714276",
+        "date": "06/22/2018",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.0784117780063",
+        "lat": "40.6393605",
+        "date": "01/18/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9773732",
+        "lat": "40.7628066",
+        "date": "03/06/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9080700648139",
+        "lat": "40.8464834",
+        "date": "03/17/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.788602",
+        "lat": "40.696756",
+        "date": "02/02/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8809090867765",
+        "lat": "40.83280875",
+        "date": "11/24/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9434998",
+        "lat": "40.7557346",
+        "date": "04/12/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8993922776981",
+        "lat": "40.8796210930443",
+        "date": "11/14/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8893838790774",
+        "lat": "40.85880585",
+        "date": "01/04/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.1484890556655",
+        "lat": "40.62986195",
+        "date": "06/26/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "06/14/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.8568615483671",
+        "lat": "40.69321185",
+        "date": "03/23/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9878334667497",
+        "lat": "40.7619676",
+        "date": "05/11/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9659070184833",
+        "lat": "40.65306915",
+        "date": "05/07/2019",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.0770647960699",
+        "lat": "40.6259956",
+        "date": "11/05/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.997018",
+        "lat": "40.73938",
+        "date": "05/10/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.902325800322",
+        "lat": "40.83456815",
+        "date": "03/26/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8578862109981",
+        "lat": "40.66784405",
+        "date": "09/04/2018",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.933788",
+        "lat": "40.855459",
+        "date": "09/03/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8951177910097",
+        "lat": "40.8527345",
+        "date": "03/06/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8625428",
+        "lat": "40.8593992",
+        "date": "04/18/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8828748",
+        "lat": "40.7376175",
+        "date": "08/12/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.764395",
+        "lat": "40.665998",
+        "date": "07/30/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "07/20/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7482007",
+        "lat": "40.6084641",
+        "date": "06/06/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9608175",
+        "lat": "40.6474607",
+        "date": "09/06/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.897209650375",
+        "lat": "40.8230552",
+        "date": "04/09/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8768255941148",
+        "lat": "40.6544766596994",
+        "date": "05/07/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7537523971285",
+        "lat": "40.71167995",
+        "date": "10/02/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9972763",
+        "lat": "40.7613755",
+        "date": "04/16/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-74.0017293125",
+        "lat": "40.7270941875",
+        "date": "06/21/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.88351495",
+        "lat": "40.6808474",
+        "date": "01/04/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.820832",
+        "lat": "40.584525",
+        "date": "01/03/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9434221",
+        "lat": "40.7877891",
+        "date": "05/23/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9419883877551",
+        "lat": "40.7894578163265",
+        "date": "12/01/2017",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9041534716243",
+        "lat": "40.88192135",
+        "date": "02/17/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8720801",
+        "lat": "40.7508987",
+        "date": "11/13/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "02/20/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8061176745648",
+        "lat": "40.70481105",
+        "date": "10/10/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9402621565731",
+        "lat": "40.80099055",
+        "date": "05/22/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.992043",
+        "lat": "40.759774",
+        "date": "02/02/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "03/15/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9159227",
+        "lat": "40.8386484",
+        "date": "10/12/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.88884295",
+        "lat": "40.6653495",
+        "date": "10/02/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.8853308",
+        "lat": "40.6709722",
+        "date": "06/19/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.7867793454372",
+        "lat": "40.59718385",
+        "date": "04/04/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8758633",
+        "lat": "40.8261246",
+        "date": "08/09/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.923590960951",
+        "lat": "40.7735434",
+        "date": "11/15/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8450525",
+        "lat": "40.8423555",
+        "date": "05/09/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8290921891525",
+        "lat": "40.75476445",
+        "date": "11/15/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8635482",
+        "lat": "40.8685329",
+        "date": "04/27/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9464175860772",
+        "lat": "40.6514306",
+        "date": "08/15/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8864220462649",
+        "lat": "40.8380625189072",
+        "date": "11/02/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9023918759809",
+        "lat": "40.8123171",
+        "date": "05/01/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8899264052151",
+        "lat": "40.86566425",
+        "date": "04/04/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8965470948856",
+        "lat": "40.8572622",
+        "date": "12/04/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.819511",
+        "lat": "40.688185",
+        "date": "08/13/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.8453661952789",
+        "lat": "40.68651375",
+        "date": "03/11/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9510999",
+        "lat": "40.6630024",
+        "date": "03/08/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9262546790387",
+        "lat": "40.83704115",
+        "date": "05/17/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9532747772745",
+        "lat": "40.8179384",
+        "date": "06/05/2019",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-74.162666",
+        "lat": "40.918748",
+        "date": "04/20/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "05/24/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.981396797823",
+        "lat": "40.6853294",
+        "date": "02/01/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9256857",
+        "lat": "40.8097663",
+        "date": "04/25/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.803616",
+        "lat": "40.677089",
+        "date": "06/17/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.995975",
+        "lat": "40.609843",
+        "date": "02/04/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-74.21952465",
+        "lat": "40.54624405",
+        "date": "03/02/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.986981",
+        "lat": "40.753314",
+        "date": "02/17/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.760874",
+        "lat": "40.605521",
+        "date": "04/08/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8036830675833",
+        "lat": "40.69188505",
+        "date": "04/06/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-76.748739",
+        "lat": "37.958755",
+        "date": "05/05/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.901506",
+        "lat": "40.866632",
+        "date": "08/25/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9524521943338",
+        "lat": "40.82581315",
+        "date": "05/18/2018",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "12/18/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.942065",
+        "lat": "40.81141",
+        "date": "02/22/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8613295",
+        "lat": "40.687508",
+        "date": "07/10/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.982576522061",
+        "lat": "40.74635635",
+        "date": "12/07/2018",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-74.131952",
+        "lat": "40.638754",
+        "date": "12/13/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "02/20/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-74.0333892",
+        "lat": "40.617249",
+        "date": "08/02/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "05/11/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8570426122449",
+        "lat": "40.8326827346939",
+        "date": "08/08/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9013995364835",
+        "lat": "40.8732826",
+        "date": "06/12/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-74.030402",
+        "lat": "40.634125",
+        "date": "11/06/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9516860341693",
+        "lat": "40.6531095",
+        "date": "09/07/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8575937",
+        "lat": "40.73973015",
+        "date": "01/06/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9853146",
+        "lat": "40.6098675",
+        "date": "12/04/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9270218030292",
+        "lat": "40.83202855",
+        "date": "10/11/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9407617222222",
+        "lat": "40.6805192222222",
+        "date": "05/17/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "07/05/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.81895167071",
+        "lat": "40.7645395",
+        "date": "05/30/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9968293",
+        "lat": "40.5733814",
+        "date": "11/16/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7563337368378",
+        "lat": "40.59418425",
+        "date": "06/19/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9143716204756",
+        "lat": "40.8426787",
+        "date": "08/06/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "03/29/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.90754505",
+        "lat": "40.6356467",
+        "date": "06/14/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8447028384576",
+        "lat": "40.7836079",
+        "date": "05/01/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9600715247067",
+        "lat": "40.606754",
+        "date": "03/13/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/16/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.918883",
+        "lat": "40.8800573",
+        "date": "06/27/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.891651",
+        "lat": "40.762843",
+        "date": "01/10/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.82775",
+        "lat": "40.767543",
+        "date": "07/18/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8435513",
+        "lat": "40.88841995",
+        "date": "10/26/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9040621",
+        "lat": "40.8306105",
+        "date": "12/11/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9090502",
+        "lat": "40.8239776",
+        "date": "10/11/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9204409",
+        "lat": "40.6837907",
+        "date": "01/24/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.910325",
+        "lat": "40.8332413",
+        "date": "01/23/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.897373",
+        "lat": "40.883722",
+        "date": "07/24/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8904463554835",
+        "lat": "40.84955285",
+        "date": "06/05/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8837055",
+        "lat": "40.8459121",
+        "date": "05/30/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "08/02/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "09/29/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9188644",
+        "lat": "40.8356776",
+        "date": "10/30/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8245516542812",
+        "lat": "40.7529502",
+        "date": "12/08/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9420786339171",
+        "lat": "40.64156635",
+        "date": "12/05/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.93968000893",
+        "lat": "40.8249465",
+        "date": "11/09/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9661547125142",
+        "lat": "40.7061968",
+        "date": "09/30/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9620801796421",
+        "lat": "40.7034388",
+        "date": "06/15/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/28/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9195272",
+        "lat": "40.7539329",
+        "date": "11/08/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.917753",
+        "lat": "40.742433",
+        "date": "10/31/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "10/31/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9015907040074",
+        "lat": "40.85986275",
+        "date": "07/17/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9180514029672",
+        "lat": "40.7695516",
+        "date": "04/24/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.940827",
+        "lat": "40.823145",
+        "date": "02/07/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.7561261924281",
+        "lat": "40.6063505",
+        "date": "05/16/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.817508",
+        "lat": "40.719114",
+        "date": "04/25/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-74.0016253006152",
+        "lat": "40.62823315",
+        "date": "08/16/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9001733514544",
+        "lat": "40.760128",
+        "date": "06/25/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7949059207724",
+        "lat": "40.6842198",
+        "date": "05/17/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8872366153071",
+        "lat": "40.6651814",
+        "date": "02/23/2018",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "07/25/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.865417325",
+        "lat": "40.82222135",
+        "date": "01/23/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9137804",
+        "lat": "40.68628505",
+        "date": "03/28/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8359902857143",
+        "lat": "40.8698863469388",
+        "date": "08/25/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.847139",
+        "lat": "40.884875",
+        "date": "09/06/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8841259",
+        "lat": "40.8497257",
+        "date": "01/22/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8515833788859",
+        "lat": "40.90525735",
+        "date": "04/24/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9181841609122",
+        "lat": "40.744295",
+        "date": "05/02/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9211420527746",
+        "lat": "40.8308862",
+        "date": "08/03/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9556053471499",
+        "lat": "40.6557138",
+        "date": "05/18/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8281895",
+        "lat": "40.8884329",
+        "date": "01/30/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "07/31/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8968016",
+        "lat": "40.9098596",
+        "date": "06/19/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.915225",
+        "lat": "40.801755",
+        "date": "04/19/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.983963",
+        "lat": "40.72214704",
+        "date": "03/18/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8900225290109",
+        "lat": "40.84713165",
+        "date": "06/24/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8854050464269",
+        "lat": "40.87505275",
+        "date": "04/09/2018",
+        "first_name": "Jeffrey",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9676139875817",
+        "lat": "40.6291393",
+        "date": "07/10/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9372903",
+        "lat": "40.8490854",
+        "date": "05/17/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.00326645134",
+        "lat": "40.75246805",
+        "date": "02/21/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8948127",
+        "lat": "40.8322463",
+        "date": "04/09/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8792963750979",
+        "lat": "40.82747115",
+        "date": "09/20/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.80725435",
+        "lat": "40.7606471",
+        "date": "07/12/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.8142268",
+        "lat": "40.7635746",
+        "date": "10/31/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7959492",
+        "lat": "40.697319",
+        "date": "08/15/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9724095",
+        "lat": "40.7960384",
+        "date": "08/25/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9907278",
+        "lat": "40.7559486",
+        "date": "05/24/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8918215656285",
+        "lat": "40.67026965",
+        "date": "07/17/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.95759575",
+        "lat": "40.6338116",
+        "date": "05/25/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9846632960469",
+        "lat": "40.69129235",
+        "date": "03/29/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9217280115393",
+        "lat": "40.83987085",
+        "date": "08/20/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.846314",
+        "lat": "40.8400735",
+        "date": "04/09/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.896634",
+        "lat": "40.833942",
+        "date": "02/07/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8781893602414",
+        "lat": "40.8845337",
+        "date": "01/12/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.988134",
+        "lat": "40.7439412",
+        "date": "11/17/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8890324285714",
+        "lat": "40.8331560816327",
+        "date": "04/17/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.97116765509",
+        "lat": "40.63716865",
+        "date": "03/08/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7940518",
+        "lat": "40.7090837",
+        "date": "04/06/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9483",
+        "lat": "40.827347",
+        "date": "07/12/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9190699982293",
+        "lat": "40.67551355",
+        "date": "05/21/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9278508215928",
+        "lat": "40.8189316",
+        "date": "05/16/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9040817",
+        "lat": "40.8281857",
+        "date": "09/04/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-74.0273634",
+        "lat": "40.6064204",
+        "date": "06/27/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8283866691941",
+        "lat": "40.85490305",
+        "date": "06/24/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.7866517834772",
+        "lat": "40.59091",
+        "date": "02/07/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "08/01/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.915146",
+        "lat": "40.765872",
+        "date": "01/09/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.941518145941",
+        "lat": "40.8280113",
+        "date": "01/14/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8843820564593",
+        "lat": "40.74278535",
+        "date": "08/15/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8026438941506",
+        "lat": "40.70566535",
+        "date": "05/11/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.905651737975",
+        "lat": "40.8477422",
+        "date": "04/11/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9346563747303",
+        "lat": "40.8449141",
+        "date": "10/06/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8927282791444",
+        "lat": "40.866735",
+        "date": "04/09/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9817052302222",
+        "lat": "40.78560985",
+        "date": "02/26/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.906747225561",
+        "lat": "40.851091",
+        "date": "01/16/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9202316451135",
+        "lat": "40.68726075",
+        "date": "06/12/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8688849",
+        "lat": "40.8666994",
+        "date": "08/21/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8660066",
+        "lat": "40.7611461",
+        "date": "07/31/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9729053",
+        "lat": "40.69222745",
+        "date": "03/12/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9763412680483",
+        "lat": "40.6318666",
+        "date": "12/19/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "01/03/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8502804",
+        "lat": "40.8909735",
+        "date": "04/16/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-74.0027773669165",
+        "lat": "40.6006391",
+        "date": "05/25/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.914197",
+        "lat": "40.813337",
+        "date": "03/20/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9381492",
+        "lat": "40.8056574",
+        "date": "09/12/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.761742117621",
+        "lat": "40.59518985",
+        "date": "01/18/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.898341",
+        "lat": "40.645165",
+        "date": "03/23/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9318194",
+        "lat": "40.8578553",
+        "date": "02/19/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.850416356875",
+        "lat": "40.8763125",
+        "date": "11/15/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9049525755676",
+        "lat": "40.825802",
+        "date": "08/01/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9174624502354",
+        "lat": "40.8101032",
+        "date": "01/26/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.906391",
+        "lat": "40.8445853",
+        "date": "07/16/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8621814",
+        "lat": "40.8232497",
+        "date": "10/25/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.999435",
+        "lat": "40.738455",
+        "date": "01/25/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.979845",
+        "lat": "40.6959613",
+        "date": "03/20/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.7858276",
+        "lat": "40.5964475",
+        "date": "05/03/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8953531",
+        "lat": "40.8337712",
+        "date": "02/28/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8815668597015",
+        "lat": "40.6690304",
+        "date": "11/22/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8554483",
+        "lat": "40.8247995",
+        "date": "05/08/2019",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.9490489",
+        "lat": "40.6877717",
+        "date": "07/02/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8856392893569",
+        "lat": "40.7533158",
+        "date": "07/26/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9364285",
+        "lat": "40.7605685",
+        "date": "09/24/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7890254",
+        "lat": "40.67022795",
+        "date": "01/08/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8729847",
+        "lat": "40.8800026",
+        "date": "01/05/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.7742554",
+        "lat": "40.678162",
+        "date": "02/08/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.999435",
+        "lat": "40.738455",
+        "date": "06/05/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9388687503108",
+        "lat": "40.8367157",
+        "date": "12/04/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9146895221294",
+        "lat": "40.68601485",
+        "date": "08/17/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9606927",
+        "lat": "40.7622362",
+        "date": "04/10/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8349853",
+        "lat": "40.7070899",
+        "date": "01/10/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8747048",
+        "lat": "40.68901",
+        "date": "08/02/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-74.0071765464163",
+        "lat": "40.73116665",
+        "date": "10/31/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "02/14/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.82465025",
+        "lat": "40.8619255",
+        "date": "08/09/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9150530872431",
+        "lat": "40.69872005",
+        "date": "05/24/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "04/01/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.94795",
+        "lat": "40.824377",
+        "date": "12/18/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9130567419907",
+        "lat": "40.8329182",
+        "date": "09/13/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9996416",
+        "lat": "40.5773088",
+        "date": "03/05/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9241234",
+        "lat": "40.7706788",
+        "date": "04/30/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.88596815",
+        "lat": "40.6712894",
+        "date": "09/19/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8906419082328",
+        "lat": "40.7669141",
+        "date": "03/02/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.884422",
+        "lat": "40.734711",
+        "date": "01/08/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9841490776616",
+        "lat": "40.75796775",
+        "date": "03/10/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.0066821",
+        "lat": "40.7222015",
+        "date": "11/21/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9400782",
+        "lat": "40.8335399",
+        "date": "05/19/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.75984",
+        "lat": "40.594546",
+        "date": "04/27/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.834724",
+        "lat": "40.683805",
+        "date": "07/11/2018",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.989195",
+        "lat": "40.74358",
+        "date": "03/02/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8386771716144",
+        "lat": "40.6931596",
+        "date": "09/25/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.7374029965346",
+        "lat": "40.7196233",
+        "date": "04/17/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9527321446626",
+        "lat": "40.57779535",
+        "date": "07/16/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.7841201",
+        "lat": "40.5920228",
+        "date": "08/27/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.0021349",
+        "lat": "40.7510351",
+        "date": "11/29/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9663358567802",
+        "lat": "40.69196655",
+        "date": "08/21/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8424850290908",
+        "lat": "40.7190807",
+        "date": "01/11/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9396298",
+        "lat": "40.6875616",
+        "date": "05/16/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9528816",
+        "lat": "40.8036999",
+        "date": "07/01/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9141645384615",
+        "lat": "40.6726757692308",
+        "date": "03/16/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.862436",
+        "lat": "40.884637",
+        "date": "05/03/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8953531",
+        "lat": "40.8337712",
+        "date": "03/29/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "06/12/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9434814285714",
+        "lat": "40.833566877551",
+        "date": "12/14/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.822276916661",
+        "lat": "40.7823297",
+        "date": "08/14/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8579063",
+        "lat": "40.8962243",
+        "date": "12/13/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "07/16/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.88679555",
+        "lat": "40.6632015",
+        "date": "01/26/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9298398071407",
+        "lat": "40.7015912",
+        "date": "03/16/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.760289",
+        "lat": "40.66064",
+        "date": "10/16/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.1952329161624",
+        "lat": "40.5468264",
+        "date": "02/09/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "01/02/2018",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.7284209007958",
+        "lat": "40.7036181",
+        "date": "05/23/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9538068",
+        "lat": "40.7754697",
+        "date": "03/10/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.814698499071",
+        "lat": "40.70865015",
+        "date": "01/16/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9513039257938",
+        "lat": "40.6333659",
+        "date": "08/20/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9770735",
+        "lat": "40.7881136",
+        "date": "11/30/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.93035",
+        "lat": "40.694069",
+        "date": "03/25/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9090719376322",
+        "lat": "40.87623475",
+        "date": "10/26/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8814232",
+        "lat": "40.6666737",
+        "date": "01/17/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9044497",
+        "lat": "40.8323736",
+        "date": "06/21/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.929645",
+        "lat": "40.851989",
+        "date": "01/13/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "05/03/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "05/16/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.85496738833",
+        "lat": "40.8769319",
+        "date": "09/26/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9290753",
+        "lat": "40.8562226",
+        "date": "09/29/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9163656231884",
+        "lat": "40.8566597246377",
+        "date": "01/03/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9151947272727",
+        "lat": "40.821413",
+        "date": "03/15/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "11/30/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9241181762287",
+        "lat": "40.8366818",
+        "date": "09/15/2017",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.8905814528584",
+        "lat": "40.6691469",
+        "date": "06/14/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8922948",
+        "lat": "40.7512893",
+        "date": "07/30/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9053081852717",
+        "lat": "40.8306327",
+        "date": "03/12/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9612576264374",
+        "lat": "40.6493868",
+        "date": "02/22/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.817047",
+        "lat": "40.721938",
+        "date": "01/12/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7780766968073",
+        "lat": "40.6885663",
+        "date": "03/28/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9204568763413",
+        "lat": "40.66492295",
+        "date": "07/05/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.747965",
+        "lat": "40.5983364",
+        "date": "03/29/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8694268783172",
+        "lat": "40.84243795",
+        "date": "04/12/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.86416035",
+        "lat": "40.82945795",
+        "date": "04/20/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8189160130386",
+        "lat": "40.6822028",
+        "date": "03/01/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8859842",
+        "lat": "40.8194093",
+        "date": "10/19/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9844008",
+        "lat": "40.7154671",
+        "date": "08/29/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9528101759209",
+        "lat": "40.77046895",
+        "date": "09/22/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9267880455831",
+        "lat": "40.68352625",
+        "date": "09/28/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7937483",
+        "lat": "40.6943091",
+        "date": "05/14/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8624770235256",
+        "lat": "40.7372329",
+        "date": "01/26/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.97976",
+        "lat": "40.732622",
+        "date": "01/11/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9243837779476",
+        "lat": "40.66458965",
+        "date": "12/15/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9106173",
+        "lat": "40.83272",
+        "date": "05/08/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9293172503746",
+        "lat": "40.6711495",
+        "date": "07/27/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8959314057426",
+        "lat": "40.6673198",
+        "date": "07/23/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.975380101617",
+        "lat": "40.580942",
+        "date": "06/18/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9183901610133",
+        "lat": "40.75459975",
+        "date": "04/03/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9335905",
+        "lat": "40.8465398",
+        "date": "05/15/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9756961",
+        "lat": "40.61161045",
+        "date": "08/23/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8921718149581",
+        "lat": "40.84381845",
+        "date": "08/27/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9584933704893",
+        "lat": "40.76200775",
+        "date": "05/02/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8974905555555",
+        "lat": "40.8298811111111",
+        "date": "06/11/2019",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "06/28/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.806363",
+        "lat": "40.714527",
+        "date": "03/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.929417",
+        "lat": "40.860052",
+        "date": "03/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7347508",
+        "lat": "40.7166547",
+        "date": "08/01/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9090007142857",
+        "lat": "40.8268077142857",
+        "date": "06/14/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0345434114978",
+        "lat": "40.614343",
+        "date": "07/03/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9603124",
+        "lat": "40.6567388",
+        "date": "04/07/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8784390945804",
+        "lat": "40.83067845",
+        "date": "09/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9192462930374",
+        "lat": "40.68362485",
+        "date": "09/22/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8220558",
+        "lat": "40.8653369",
+        "date": "10/27/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8221269",
+        "lat": "40.7648152",
+        "date": "09/28/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8647157",
+        "lat": "40.8531765",
+        "date": "01/19/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9668791",
+        "lat": "40.6872322",
+        "date": "07/28/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.882759",
+        "lat": "40.843163",
+        "date": "12/14/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9033962073991",
+        "lat": "40.6661077",
+        "date": "02/28/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.81444225",
+        "lat": "40.7074011",
+        "date": "05/29/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.85182165",
+        "lat": "40.82757165",
+        "date": "04/17/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9230097",
+        "lat": "40.8140653",
+        "date": "02/05/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "05/15/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8787797058824",
+        "lat": "40.8842691176471",
+        "date": "08/28/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.7526123046066",
+        "lat": "40.59416275",
+        "date": "09/07/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.887163",
+        "lat": "40.756323",
+        "date": "07/23/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9598339",
+        "lat": "40.6893608",
+        "date": "05/13/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8950005270068",
+        "lat": "40.640236",
+        "date": "12/07/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.7947151515547",
+        "lat": "40.7085616",
+        "date": "03/14/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8538232",
+        "lat": "40.8316513",
+        "date": "04/12/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9493337938158",
+        "lat": "40.65458935",
+        "date": "01/18/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8976611",
+        "lat": "40.7077354",
+        "date": "12/05/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9177486",
+        "lat": "40.8540219",
+        "date": "08/21/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.974085",
+        "lat": "40.604631",
+        "date": "03/26/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9111984975156",
+        "lat": "40.69547575",
+        "date": "09/05/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.889768",
+        "lat": "40.866511",
+        "date": "07/26/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9359204820619",
+        "lat": "40.65196505",
+        "date": "04/25/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.914577014418",
+        "lat": "40.83288895",
+        "date": "03/07/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "09/18/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "05/09/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9092070481967",
+        "lat": "40.8344362",
+        "date": "05/24/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8879216471548",
+        "lat": "40.8338948",
+        "date": "03/28/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9699847443896",
+        "lat": "40.749353",
+        "date": "04/05/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.872991872562",
+        "lat": "40.753632",
+        "date": "04/12/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "07/11/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.7990135",
+        "lat": "40.7068428",
+        "date": "04/26/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9118093686927",
+        "lat": "40.82990265",
+        "date": "02/01/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8683875997657",
+        "lat": "40.87417975",
+        "date": "04/28/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.867183",
+        "lat": "40.814567",
+        "date": "01/22/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.985413",
+        "lat": "40.759994",
+        "date": "01/10/2018",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.945064",
+        "lat": "40.6964704",
+        "date": "01/10/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9433615",
+        "lat": "40.6936831",
+        "date": "01/12/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9800945631935",
+        "lat": "40.74061315",
+        "date": "11/21/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9778931930186",
+        "lat": "40.68872155",
+        "date": "02/20/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.948862",
+        "lat": "40.807602",
+        "date": "09/12/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8871494",
+        "lat": "40.8426876",
+        "date": "05/01/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9567057148481",
+        "lat": "40.71187295",
+        "date": "07/24/2019",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "04/12/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.88884295",
+        "lat": "40.6653495",
+        "date": "11/19/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7764171600774",
+        "lat": "40.66855255",
+        "date": "09/16/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8759696845171",
+        "lat": "40.6713733",
+        "date": "02/20/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8801990197047",
+        "lat": "40.6822504",
+        "date": "02/06/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8071484",
+        "lat": "40.7032337",
+        "date": "06/07/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9615517",
+        "lat": "40.8004915",
+        "date": "01/16/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9311919774647",
+        "lat": "40.7744616",
+        "date": "08/09/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8629517",
+        "lat": "40.6918386",
+        "date": "05/30/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8634798",
+        "lat": "40.8715247",
+        "date": "06/14/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8568090200015",
+        "lat": "40.7528107",
+        "date": "05/11/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9322873765702",
+        "lat": "40.6941404",
+        "date": "08/30/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9097761696105",
+        "lat": "40.8440309",
+        "date": "01/08/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9031636517087",
+        "lat": "40.83098135",
+        "date": "07/05/2019",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.0958417234441",
+        "lat": "40.63275965",
+        "date": "09/27/2019",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9265385691122",
+        "lat": "40.65493755",
+        "date": "04/09/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8644131688852",
+        "lat": "40.8355956",
+        "date": "07/25/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.956595",
+        "lat": "40.6876442",
+        "date": "05/15/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9489489525688",
+        "lat": "40.64723745",
+        "date": "09/06/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.824553",
+        "lat": "40.683769",
+        "date": "11/02/2018",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "04/19/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8964343298821",
+        "lat": "40.832175",
+        "date": "06/22/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.899157",
+        "lat": "40.615392",
+        "date": "12/05/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8936250664179",
+        "lat": "40.82756215",
+        "date": "01/03/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8348231531189",
+        "lat": "40.8692082",
+        "date": "05/20/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9538579030942",
+        "lat": "40.63419515",
+        "date": "05/02/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.7417442137405",
+        "lat": "40.6816074",
+        "date": "08/01/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9627583829658",
+        "lat": "40.67595625",
+        "date": "09/05/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9182263457038",
+        "lat": "40.8432241",
+        "date": "11/14/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9255923",
+        "lat": "40.8250082",
+        "date": "05/31/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9006834450973",
+        "lat": "40.8586958",
+        "date": "07/23/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.872446192295",
+        "lat": "40.8780078",
+        "date": "01/23/2018",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.134751",
+        "lat": "40.552832",
+        "date": "03/17/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.8071776",
+        "lat": "40.678056",
+        "date": "06/01/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.889215572778",
+        "lat": "40.8539968",
+        "date": "11/27/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9537742506204",
+        "lat": "40.74468225",
+        "date": "04/10/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8877262293623",
+        "lat": "40.83797025",
+        "date": "04/10/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8799679743476",
+        "lat": "40.8762561",
+        "date": "02/05/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9375074864865",
+        "lat": "40.6825594324324",
+        "date": "08/03/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8748639465365",
+        "lat": "40.82762365",
+        "date": "06/21/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.993089",
+        "lat": "40.713582",
+        "date": "05/19/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9088926",
+        "lat": "40.8646163",
+        "date": "03/11/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9180334166667",
+        "lat": "40.8320885416667",
+        "date": "03/11/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8643395300224",
+        "lat": "40.6746354",
+        "date": "08/17/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9104327935501",
+        "lat": "40.6593547",
+        "date": "10/03/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9126452355682",
+        "lat": "40.80703465",
+        "date": "04/17/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9338285297347",
+        "lat": "40.70359675",
+        "date": "01/11/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8959376842105",
+        "lat": "40.8177424736842",
+        "date": "06/06/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8665762117477",
+        "lat": "40.8372424",
+        "date": "07/11/2018",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "01/31/2017",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8617439",
+        "lat": "40.6767396",
+        "date": "02/05/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9806232",
+        "lat": "40.7133207",
+        "date": "03/29/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.906462521772",
+        "lat": "40.67477175",
+        "date": "03/08/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.922705",
+        "lat": "40.753293",
+        "date": "05/19/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8812001375828",
+        "lat": "40.74365305",
+        "date": "10/16/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9265725",
+        "lat": "40.8647974",
+        "date": "05/03/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9418515",
+        "lat": "40.8171478",
+        "date": "11/20/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.949955",
+        "lat": "40.652138",
+        "date": "02/07/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9359909",
+        "lat": "40.8481368",
+        "date": "06/19/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8825550960991",
+        "lat": "40.85137825",
+        "date": "12/15/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8513853",
+        "lat": "40.8325241",
+        "date": "06/08/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.900055",
+        "lat": "40.820563",
+        "date": "06/12/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8278546633134",
+        "lat": "40.8480103",
+        "date": "09/10/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.917476",
+        "lat": "40.814818",
+        "date": "06/21/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.987238",
+        "lat": "40.721282",
+        "date": "10/25/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "02/01/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.02058115",
+        "lat": "40.6400333",
+        "date": "10/11/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "05/10/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9324933955329",
+        "lat": "40.65186265",
+        "date": "11/28/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9004761431618",
+        "lat": "40.820348870374",
+        "date": "07/16/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9349425555556",
+        "lat": "40.6501046666667",
+        "date": "06/01/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.8625003333333",
+        "lat": "40.67087625",
+        "date": "06/13/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8729667205805",
+        "lat": "40.83226385",
+        "date": "06/03/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.949697",
+        "lat": "40.783752",
+        "date": "01/17/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0197861020408",
+        "lat": "40.6446087346939",
+        "date": "04/08/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.7523115",
+        "lat": "40.6105505",
+        "date": "02/16/2017",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.9579671",
+        "lat": "40.6651478",
+        "date": "02/16/2017",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.9579671",
+        "lat": "40.6651478",
+        "date": "01/09/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8293245006981",
+        "lat": "40.8747455",
+        "date": "05/10/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9196722",
+        "lat": "40.7824664",
+        "date": "03/06/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.78320875",
+        "lat": "40.6918692",
+        "date": "06/22/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8055156",
+        "lat": "40.7025482",
+        "date": "09/19/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8911203997324",
+        "lat": "40.6674749",
+        "date": "07/17/2018",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.7449896118495",
+        "lat": "40.69861605",
+        "date": "06/07/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8654274",
+        "lat": "40.8600626",
+        "date": "02/11/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.917888",
+        "lat": "40.741807",
+        "date": "06/13/2018",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.993339",
+        "lat": "40.574623",
+        "date": "04/11/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8452935263158",
+        "lat": "40.8371662631579",
+        "date": "04/18/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9572502525212",
+        "lat": "40.81488915",
+        "date": "09/20/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "08/08/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9240587883412",
+        "lat": "40.69311465",
+        "date": "06/14/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9607900647642",
+        "lat": "40.6508805",
+        "date": "09/18/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.926732",
+        "lat": "40.655372",
+        "date": "07/27/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "06/23/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8869080999174",
+        "lat": "40.6829434",
+        "date": "06/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9118829934418",
+        "lat": "40.83057915",
+        "date": "01/15/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.7762527",
+        "lat": "40.6754091",
+        "date": "02/06/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9024882808519",
+        "lat": "40.86423495",
+        "date": "01/26/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9520697413793",
+        "lat": "40.709516",
+        "date": "11/14/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8899441",
+        "lat": "40.86931",
+        "date": "06/15/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9244855257125",
+        "lat": "40.84705505",
+        "date": "12/05/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.822109252893",
+        "lat": "40.75821625",
+        "date": "11/13/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9208759728572",
+        "lat": "40.63238365",
+        "date": "01/02/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9188693688153",
+        "lat": "40.8281223",
+        "date": "08/17/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9430262",
+        "lat": "40.7979596",
+        "date": "10/11/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9675697461829",
+        "lat": "40.79929305",
+        "date": "06/08/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7649127",
+        "lat": "40.6113074",
+        "date": "04/09/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0039306761181",
+        "lat": "40.72752645",
+        "date": "09/14/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.944911",
+        "lat": "40.68837",
+        "date": "07/06/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "06/04/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "02/16/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.84766",
+        "lat": "40.885055",
+        "date": "12/01/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8629353413562",
+        "lat": "40.89055815",
+        "date": "04/16/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8634053076923",
+        "lat": "40.6713774615385",
+        "date": "12/19/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "09/23/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8528913430193",
+        "lat": "40.7383682",
+        "date": "08/05/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9574528",
+        "lat": "40.6302619",
+        "date": "02/01/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8024426741171",
+        "lat": "40.78256685",
+        "date": "05/24/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8641096493873",
+        "lat": "40.85522725",
+        "date": "01/03/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8866446202532",
+        "lat": "40.8358289367089",
+        "date": "01/06/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.942611",
+        "lat": "40.66061",
+        "date": "01/06/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9383302455878",
+        "lat": "40.72183105",
+        "date": "08/26/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/06/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.900672",
+        "lat": "40.613744",
+        "date": "08/03/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9232906728219",
+        "lat": "40.85156555",
+        "date": "02/15/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.942389408039",
+        "lat": "40.81912425",
+        "date": "04/14/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9559502413793",
+        "lat": "40.7133295172414",
+        "date": "03/07/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8979991462926",
+        "lat": "40.6388704348697",
+        "date": "01/07/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9597787428222",
+        "lat": "40.6454333",
+        "date": "11/08/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9090789",
+        "lat": "40.8533596",
+        "date": "01/25/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8655137",
+        "lat": "40.8679836",
+        "date": "02/22/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7614826299865",
+        "lat": "40.5981049",
+        "date": "05/21/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9841900126258",
+        "lat": "40.6913165",
+        "date": "04/24/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9065804369501",
+        "lat": "40.6771036",
+        "date": "08/29/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9507806",
+        "lat": "40.7239657",
+        "date": "01/24/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.900308",
+        "lat": "40.8544667",
+        "date": "02/15/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.89759915",
+        "lat": "40.64702955",
+        "date": "09/16/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8655270097316",
+        "lat": "40.87019835",
+        "date": "09/19/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-88.973685",
+        "lat": "42.515064",
+        "date": "08/07/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-74.004764455384",
+        "lat": "40.7074203",
+        "date": "10/10/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.822075",
+        "lat": "40.863925",
+        "date": "01/22/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.946701",
+        "lat": "40.683902",
+        "date": "03/08/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8882499251274",
+        "lat": "40.82764775",
+        "date": "07/19/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8959195700904",
+        "lat": "40.82781105",
+        "date": "06/10/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "10/16/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.754419",
+        "lat": "40.604978",
+        "date": "02/08/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.883380555002",
+        "lat": "40.8398566",
+        "date": "04/07/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.00326645134",
+        "lat": "40.75246805",
+        "date": "04/26/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "06/04/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8656682896396",
+        "lat": "40.86500195",
+        "date": "10/13/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9099216857143",
+        "lat": "40.8191299142857",
+        "date": "08/03/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8959795",
+        "lat": "40.821812",
+        "date": "10/26/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-74.0030804",
+        "lat": "40.6415223",
+        "date": "03/31/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8555601493031",
+        "lat": "40.83944555",
+        "date": "03/20/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8693394053221",
+        "lat": "40.84833185",
+        "date": "04/26/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.902745",
+        "lat": "40.852014",
+        "date": "12/13/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.910282",
+        "lat": "40.652713",
+        "date": "12/13/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.954362",
+        "lat": "40.6747987",
+        "date": "03/07/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.87231",
+        "lat": "40.7507894",
+        "date": "10/31/2017",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.9389985535619",
+        "lat": "40.7880487",
+        "date": "01/16/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-74.00036721072",
+        "lat": "40.74463285",
+        "date": "08/02/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8792979993892",
+        "lat": "40.8720288",
+        "date": "06/08/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.919306",
+        "lat": "40.843146",
+        "date": "05/15/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9188523813031",
+        "lat": "40.7492238",
+        "date": "06/03/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9671611989587",
+        "lat": "40.7677143",
+        "date": "03/16/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.896088359375",
+        "lat": "40.869004140625",
+        "date": "10/11/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.787396",
+        "lat": "40.70572",
+        "date": "08/31/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7933629081198",
+        "lat": "40.7099358",
+        "date": "02/15/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9453550508287",
+        "lat": "40.8070443",
+        "date": "01/07/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9034450410367",
+        "lat": "40.8534978",
+        "date": "02/05/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9485474837022",
+        "lat": "40.67477915",
+        "date": "04/17/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9609895",
+        "lat": "40.6488459",
+        "date": "02/01/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.909857",
+        "lat": "40.819113",
+        "date": "01/16/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.888407",
+        "lat": "40.6615662",
+        "date": "02/14/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9275367411011",
+        "lat": "40.8350304",
+        "date": "04/26/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9773732",
+        "lat": "40.7628066",
+        "date": "09/29/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9128770607843",
+        "lat": "40.8611915",
+        "date": "02/22/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8959635651165",
+        "lat": "40.8551907",
+        "date": "07/16/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.761390412527",
+        "lat": "40.66506205",
+        "date": "05/30/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8604816145218",
+        "lat": "40.7595334",
+        "date": "07/23/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9622064828434",
+        "lat": "40.65223255",
+        "date": "07/15/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "08/31/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9952505855562",
+        "lat": "40.6261363",
+        "date": "01/12/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9274321184627",
+        "lat": "40.6700881",
+        "date": "01/14/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9259211662556",
+        "lat": "40.8407366",
+        "date": "04/26/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9090109105406",
+        "lat": "40.65633775",
+        "date": "01/18/2017",
+        "first_name": "Jeffrey",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.8669744",
+        "lat": "40.6682053",
+        "date": "04/12/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.98619065",
+        "lat": "40.6141802",
+        "date": "09/05/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9387352",
+        "lat": "40.8379159",
+        "date": "06/28/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.915918",
+        "lat": "40.655941",
+        "date": "03/18/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8646617235493",
+        "lat": "40.87094425",
+        "date": "10/22/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.817133284772",
+        "lat": "40.71143455",
+        "date": "06/27/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8803095",
+        "lat": "40.8459145",
+        "date": "09/04/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8993316057272",
+        "lat": "40.67585565",
+        "date": "08/21/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8692292",
+        "lat": "40.8544141",
+        "date": "04/11/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.902054017625",
+        "lat": "40.87618895",
+        "date": "02/14/2019",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.9641135029966",
+        "lat": "40.67355745",
+        "date": "03/20/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8961830017705",
+        "lat": "40.8844756",
+        "date": "01/04/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9177233",
+        "lat": "40.8418772",
+        "date": "06/12/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9034221",
+        "lat": "40.8760328",
+        "date": "07/25/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9135108",
+        "lat": "40.8336885",
+        "date": "07/24/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.919335",
+        "lat": "40.661369",
+        "date": "10/26/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9136327185912",
+        "lat": "40.84472235",
+        "date": "05/25/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.0035703485745",
+        "lat": "40.73994225",
+        "date": "12/04/2017",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.92668555",
+        "lat": "40.7029557",
+        "date": "01/08/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "09/12/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.91157",
+        "lat": "40.8548304",
+        "date": "05/25/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-74.0013091",
+        "lat": "40.5985742",
+        "date": "05/16/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.86443335",
+        "lat": "40.8184825",
+        "date": "01/12/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9478151",
+        "lat": "40.6631259",
+        "date": "08/26/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8835083493046",
+        "lat": "40.6571134",
+        "date": "03/29/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9154278",
+        "lat": "40.7745585",
+        "date": "08/04/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9193289",
+        "lat": "40.6589766",
+        "date": "05/08/2019",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.9844395",
+        "lat": "40.6825888",
+        "date": "06/09/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.931458",
+        "lat": "40.850478",
+        "date": "01/29/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9057086749984",
+        "lat": "40.8520697",
+        "date": "01/18/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9136424114292",
+        "lat": "40.8544613",
+        "date": "02/22/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9229608819086",
+        "lat": "40.6162589",
+        "date": "09/17/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7601726861086",
+        "lat": "40.71217365",
+        "date": "05/18/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9085931",
+        "lat": "40.8611097",
+        "date": "01/06/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9199244789648",
+        "lat": "40.8295296",
+        "date": "07/31/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.87854545",
+        "lat": "40.660136",
+        "date": "07/11/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.748204",
+        "lat": "40.596488",
+        "date": "11/14/2018",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.9918727813571",
+        "lat": "40.61666175",
+        "date": "01/29/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9871174567426",
+        "lat": "40.7633079",
+        "date": "07/10/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.882523",
+        "lat": "40.880203",
+        "date": "07/31/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8823343645447",
+        "lat": "40.82884185",
+        "date": "04/18/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9318610943493",
+        "lat": "40.6534531",
+        "date": "08/21/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9039197",
+        "lat": "40.8474158",
+        "date": "07/27/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9085533810319",
+        "lat": "40.85831025",
+        "date": "03/28/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.859942524445",
+        "lat": "40.87104895",
+        "date": "02/06/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7661914398834",
+        "lat": "40.71149655",
+        "date": "05/03/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.875874",
+        "lat": "40.8313571",
+        "date": "10/24/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9955439",
+        "lat": "40.7604284",
+        "date": "04/03/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9118554",
+        "lat": "40.8288137",
+        "date": "11/19/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8691814940176",
+        "lat": "40.68776975",
+        "date": "09/25/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8335227001828",
+        "lat": "40.6911281",
+        "date": "03/03/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8348800809545",
+        "lat": "40.87861715",
+        "date": "04/11/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.98832555",
+        "lat": "40.64242955",
+        "date": "05/25/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "08/03/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.923653",
+        "lat": "40.6646",
+        "date": "07/16/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "01/07/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9232969333333",
+        "lat": "40.8622118",
+        "date": "05/11/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9813556",
+        "lat": "40.7174633",
+        "date": "03/06/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.906604",
+        "lat": "40.636611",
+        "date": "07/20/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "12/19/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0001078608745",
+        "lat": "40.675275",
+        "date": "07/03/2018",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "01/11/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "01/11/2019",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-74.0070768046216",
+        "lat": "40.60388585",
+        "date": "10/30/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9623708",
+        "lat": "40.6471591",
+        "date": "01/19/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9218054",
+        "lat": "40.8691449",
+        "date": "11/14/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8430770011771",
+        "lat": "40.68188045",
+        "date": "01/23/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9374133483867",
+        "lat": "40.7605412",
+        "date": "08/02/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8898934879985",
+        "lat": "40.8263488",
+        "date": "11/14/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.0828836421386",
+        "lat": "40.62191635",
+        "date": "11/08/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "07/17/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8810282147639",
+        "lat": "40.82719075",
+        "date": "05/09/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9186632",
+        "lat": "40.8363459",
+        "date": "06/13/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8612129",
+        "lat": "40.8923449",
+        "date": "01/11/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.86116",
+        "lat": "40.819262",
+        "date": "07/23/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8924715",
+        "lat": "40.67262",
+        "date": "04/01/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0156430443186",
+        "lat": "40.6439539",
+        "date": "04/10/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.909857",
+        "lat": "40.819113",
+        "date": "01/06/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9444379330737",
+        "lat": "40.58571205",
+        "date": "11/09/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9012967761812",
+        "lat": "40.86375805",
+        "date": "05/30/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8166853499902",
+        "lat": "40.68581245",
+        "date": "09/18/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.93529245",
+        "lat": "40.67189295",
+        "date": "04/18/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8257291",
+        "lat": "40.7586437",
+        "date": "04/06/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "05/10/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9006656742318",
+        "lat": "40.74737785",
+        "date": "01/23/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.855314964089",
+        "lat": "40.72852265",
+        "date": "03/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-78.193707",
+        "lat": "43.001065",
+        "date": "02/14/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8199469528939",
+        "lat": "40.6826087",
+        "date": "11/28/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9066344285714",
+        "lat": "40.8462244285714",
+        "date": "01/04/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "03/18/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8676757777778",
+        "lat": "40.8520311111111",
+        "date": "01/22/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9143888934194",
+        "lat": "40.6556359",
+        "date": "02/09/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.766015",
+        "lat": "40.70254",
+        "date": "09/22/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0333437815055",
+        "lat": "40.6118031",
+        "date": "04/02/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "01/12/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-79.809335",
+        "lat": "44.746072",
+        "date": "01/12/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9173063469388",
+        "lat": "40.8393784081633",
+        "date": "10/05/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9181403393847",
+        "lat": "40.81112815",
+        "date": "03/29/2018",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.1695487984842",
+        "lat": "40.6354269",
+        "date": "04/11/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.75563755",
+        "lat": "40.75392835",
+        "date": "03/06/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-74.026941853801",
+        "lat": "40.6367909",
+        "date": "09/01/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8854058",
+        "lat": "40.8172194",
+        "date": "01/12/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9584362",
+        "lat": "40.6413255",
+        "date": "02/05/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.956382",
+        "lat": "40.703696",
+        "date": "08/21/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.8216153735647",
+        "lat": "40.7303352",
+        "date": "08/21/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8610883625731",
+        "lat": "40.8707808",
+        "date": "03/27/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.91141475",
+        "lat": "40.64251805",
+        "date": "09/18/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9046738678921",
+        "lat": "40.8479349",
+        "date": "05/11/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9322569",
+        "lat": "40.6610937",
+        "date": "07/10/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.938631",
+        "lat": "40.8052",
+        "date": "02/14/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.92094745",
+        "lat": "40.76239235",
+        "date": "02/14/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9029581421848",
+        "lat": "40.8622139",
+        "date": "01/09/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9383313575142",
+        "lat": "40.8417736",
+        "date": "11/14/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.0828836421386",
+        "lat": "40.62191635",
+        "date": "08/14/2018",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.7944005255605",
+        "lat": "40.6914082",
+        "date": "07/12/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.7860712879213",
+        "lat": "40.59547535",
+        "date": "12/07/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9495225702483",
+        "lat": "40.61217685",
+        "date": "01/24/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.755814",
+        "lat": "40.699869",
+        "date": "09/26/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8466149",
+        "lat": "40.8440594",
+        "date": "06/22/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "08/14/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8987590501447",
+        "lat": "40.8153796",
+        "date": "04/12/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9381492",
+        "lat": "40.8056574",
+        "date": "01/11/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9511544",
+        "lat": "40.6582433",
+        "date": "09/25/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9408964857214",
+        "lat": "40.60180555",
+        "date": "01/16/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9423354",
+        "lat": "40.6040228",
+        "date": "11/29/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/05/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.956200537755",
+        "lat": "40.73560075",
+        "date": "07/02/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.92456455",
+        "lat": "40.65462445",
+        "date": "05/09/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9308725",
+        "lat": "40.85301",
+        "date": "12/11/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9523",
+        "lat": "40.592514",
+        "date": "03/16/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "01/28/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.935855",
+        "lat": "40.7642",
+        "date": "02/28/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8769383205156",
+        "lat": "40.8732244",
+        "date": "01/09/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8678524",
+        "lat": "40.8652684",
+        "date": "01/25/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.90363185",
+        "lat": "40.81675205",
+        "date": "12/14/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8419492",
+        "lat": "40.6858639",
+        "date": "05/10/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9310522953447",
+        "lat": "40.6890334",
+        "date": "10/09/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8954179313882",
+        "lat": "40.86340095",
+        "date": "04/04/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9257946551724",
+        "lat": "40.8616482068966",
+        "date": "08/22/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7753922064199",
+        "lat": "40.5992997",
+        "date": "03/16/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8647297",
+        "lat": "40.8381395",
+        "date": "06/07/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9597564630549",
+        "lat": "40.71216005",
+        "date": "01/29/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9939998",
+        "lat": "40.7228406",
+        "date": "01/08/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.8235054031981",
+        "lat": "40.70101655",
+        "date": "06/06/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9078315336354",
+        "lat": "40.78023935",
+        "date": "07/23/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9125259411765",
+        "lat": "40.8232901176471",
+        "date": "12/06/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9918420710116",
+        "lat": "40.7632646",
+        "date": "02/15/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9489175406336",
+        "lat": "40.6717832",
+        "date": "11/15/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9500955277265",
+        "lat": "40.6774052",
+        "date": "03/05/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9322825",
+        "lat": "40.6610915",
+        "date": "05/01/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9354123860697",
+        "lat": "40.60292245",
+        "date": "03/08/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9495705",
+        "lat": "40.6443188",
+        "date": "05/15/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9159118",
+        "lat": "40.8398111",
+        "date": "05/04/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8925559",
+        "lat": "40.8467124",
+        "date": "03/19/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8902007",
+        "lat": "40.8580098",
+        "date": "11/30/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9290481",
+        "lat": "40.7751748",
+        "date": "08/01/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8969705426238",
+        "lat": "40.8575121",
+        "date": "04/18/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.902325800322",
+        "lat": "40.83456815",
+        "date": "06/11/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7501125",
+        "lat": "40.6030076666667",
+        "date": "01/27/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8982166",
+        "lat": "40.8546858",
+        "date": "07/09/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.878512",
+        "lat": "40.661369",
+        "date": "06/08/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9380928907522",
+        "lat": "40.8256436",
+        "date": "09/17/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8535262",
+        "lat": "40.7269607",
+        "date": "03/20/2019",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-74.0044708",
+        "lat": "40.6741789",
+        "date": "09/16/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.904051794666",
+        "lat": "40.65587015",
+        "date": "07/10/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.97976",
+        "lat": "40.732622",
+        "date": "07/26/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8621062",
+        "lat": "40.8907",
+        "date": "09/18/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.88382",
+        "lat": "40.851499",
+        "date": "05/18/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.861250935192",
+        "lat": "40.7323255",
+        "date": "05/25/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "08/30/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9189326197387",
+        "lat": "40.82800895",
+        "date": "04/24/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9349946",
+        "lat": "40.8478974",
+        "date": "08/30/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9068639157585",
+        "lat": "40.8574864",
+        "date": "11/02/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "10/23/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.89855",
+        "lat": "40.845825",
+        "date": "07/12/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8686492566688",
+        "lat": "40.76293325",
+        "date": "01/09/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "03/15/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.97976",
+        "lat": "40.732622",
+        "date": "08/05/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9229748476697",
+        "lat": "40.67597015",
+        "date": "09/18/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9292528909917",
+        "lat": "40.67020955",
+        "date": "06/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9168163564426",
+        "lat": "40.8481935",
+        "date": "10/26/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9411148181818",
+        "lat": "40.6832993636364",
+        "date": "01/29/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0093577763415",
+        "lat": "40.65155705",
+        "date": "03/21/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8490868800355",
+        "lat": "40.87577585",
+        "date": "05/30/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8978270783931",
+        "lat": "40.6416541",
+        "date": "10/04/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8756566800731",
+        "lat": "40.66847675",
+        "date": "10/01/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9152839",
+        "lat": "40.6090684",
+        "date": "02/04/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9081123",
+        "lat": "40.8765276",
+        "date": "03/09/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9361077677154",
+        "lat": "40.7611737",
+        "date": "05/02/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9293404218118",
+        "lat": "40.6938462",
+        "date": "09/05/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9378081",
+        "lat": "40.8093729",
+        "date": "04/28/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8625855",
+        "lat": "40.8584369",
+        "date": "08/10/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8888754620833",
+        "lat": "40.86654965",
+        "date": "01/09/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8911577906717",
+        "lat": "40.8277042",
+        "date": "09/05/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.749654",
+        "lat": "40.71524",
+        "date": "04/05/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9865440631059",
+        "lat": "40.7777184",
+        "date": "05/09/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/27/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7996763",
+        "lat": "40.6932825",
+        "date": "01/03/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9357322965084",
+        "lat": "40.6828957",
+        "date": "07/10/2019",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.2162828523433",
+        "lat": "40.55168435",
+        "date": "05/06/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.755023",
+        "lat": "40.67565195",
+        "date": "04/17/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9730589877841",
+        "lat": "40.7916227",
+        "date": "08/21/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8787448",
+        "lat": "40.82976615",
+        "date": "02/02/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8306467",
+        "lat": "40.70648825",
+        "date": "11/15/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8224034",
+        "lat": "40.7614218",
+        "date": "08/17/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "12/15/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8986188",
+        "lat": "40.8530499",
+        "date": "05/17/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8911626010612",
+        "lat": "40.8321494",
+        "date": "08/15/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/18/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.7902431199374",
+        "lat": "40.7074693",
+        "date": "08/14/2019",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.741462",
+        "lat": "40.698036",
+        "date": "09/11/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.85832628114",
+        "lat": "40.6681491",
+        "date": "08/27/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9468986217991",
+        "lat": "40.8032830853543",
+        "date": "03/21/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8878539119611",
+        "lat": "40.8653785",
+        "date": "04/28/2017",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.082348",
+        "lat": "40.6232515",
+        "date": "09/23/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9559921686768",
+        "lat": "40.64681165",
+        "date": "04/10/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8356902931452",
+        "lat": "40.8709837",
+        "date": "07/17/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8703555102041",
+        "lat": "40.8669547142857",
+        "date": "01/30/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9369313",
+        "lat": "40.8131567",
+        "date": "05/04/2018",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "09/25/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8962985",
+        "lat": "40.8574302",
+        "date": "08/21/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9183298",
+        "lat": "40.8334187",
+        "date": "01/23/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.750699",
+        "lat": "40.746067",
+        "date": "06/25/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9186632",
+        "lat": "40.8363459",
+        "date": "05/02/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.91216475",
+        "lat": "40.6609025",
+        "date": "09/01/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9702218429418",
+        "lat": "40.79616825",
+        "date": "09/27/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-74.00932",
+        "lat": "40.738849",
+        "date": "11/01/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8666249",
+        "lat": "40.839397",
+        "date": "09/15/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.966169",
+        "lat": "40.639403",
+        "date": "05/28/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8557195297115",
+        "lat": "40.87948385",
+        "date": "08/08/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9233792368954",
+        "lat": "40.85117595",
+        "date": "12/04/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8982051343698",
+        "lat": "40.8987122",
+        "date": "03/01/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9685444289942",
+        "lat": "40.57956235",
+        "date": "10/23/2018",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.907018",
+        "lat": "40.744328",
+        "date": "11/08/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "06/14/2019",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.0790357902179",
+        "lat": "40.61659185",
+        "date": "01/10/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8962339501694",
+        "lat": "40.86767225",
+        "date": "01/24/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.857858628702",
+        "lat": "40.8381274",
+        "date": "01/25/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "03/29/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8216435213699",
+        "lat": "40.7626853",
+        "date": "04/09/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "01/15/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-74.01487855",
+        "lat": "40.70804825",
+        "date": "07/03/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9061476026637",
+        "lat": "40.87154805",
+        "date": "01/09/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.833292",
+        "lat": "40.754515",
+        "date": "02/14/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9455814024162",
+        "lat": "40.82987105",
+        "date": "06/27/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8840492737996",
+        "lat": "40.85364115",
+        "date": "09/11/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9288931",
+        "lat": "40.8531932",
+        "date": "08/03/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8970839",
+        "lat": "40.64704725",
+        "date": "06/22/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8010031",
+        "lat": "40.5960566",
+        "date": "02/19/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8267334",
+        "lat": "40.8605765",
+        "date": "01/09/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8961830017705",
+        "lat": "40.8844756",
+        "date": "02/17/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9209547694229",
+        "lat": "40.84940525",
+        "date": "09/12/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9301841204883",
+        "lat": "40.66795485",
+        "date": "08/21/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.7847396997358",
+        "lat": "40.78699505",
+        "date": "08/02/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "03/05/2018",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.9394628",
+        "lat": "40.7882372",
+        "date": "07/24/2019",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "10/03/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.8981983410534",
+        "lat": "40.629087",
+        "date": "08/08/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8360773931466",
+        "lat": "40.86891075",
+        "date": "06/04/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9521340398668",
+        "lat": "40.59954795",
+        "date": "03/26/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.890515185175",
+        "lat": "40.67081615",
+        "date": "07/06/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.812004",
+        "lat": "40.6640554",
+        "date": "06/13/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9417371",
+        "lat": "40.81053225",
+        "date": "11/30/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.7794017401776",
+        "lat": "40.75435835",
+        "date": "06/13/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8703573469388",
+        "lat": "40.8670202857143",
+        "date": "03/23/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8614219675917",
+        "lat": "40.73694015",
+        "date": "02/26/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "05/25/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-119.800639",
+        "lat": "36.296009",
+        "date": "05/14/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.937528",
+        "lat": "40.795674",
+        "date": "10/31/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9543774",
+        "lat": "40.8013758",
+        "date": "05/05/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8610788788203",
+        "lat": "40.87718465",
+        "date": "02/26/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.938014537135",
+        "lat": "40.82429",
+        "date": "02/27/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7885302",
+        "lat": "40.7122519",
+        "date": "05/30/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9840251",
+        "lat": "40.62128315",
+        "date": "04/19/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9049880202004",
+        "lat": "40.67648755",
+        "date": "08/30/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.90366355",
+        "lat": "40.71585695",
+        "date": "08/05/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.988275",
+        "lat": "40.698577",
+        "date": "08/21/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9640348",
+        "lat": "40.7560875",
+        "date": "09/16/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9370914859724",
+        "lat": "40.71300865",
+        "date": "08/18/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "12/10/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9708310493024",
+        "lat": "40.60005135",
+        "date": "02/21/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9753685",
+        "lat": "40.7443966",
+        "date": "09/26/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.906097",
+        "lat": "40.827876",
+        "date": "05/15/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.921056",
+        "lat": "40.707182",
+        "date": "11/28/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9263876666667",
+        "lat": "40.8062866666667",
+        "date": "09/24/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8958437035393",
+        "lat": "40.86815805",
+        "date": "03/29/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9631214386526",
+        "lat": "40.6406968",
+        "date": "05/17/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8851609280447",
+        "lat": "40.75343535",
+        "date": "04/03/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.937713",
+        "lat": "40.820073",
+        "date": "12/18/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9518752546704",
+        "lat": "40.6888806",
+        "date": "06/01/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.91845495",
+        "lat": "40.6844683",
+        "date": "10/11/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9567779550541",
+        "lat": "40.6698856",
+        "date": "04/08/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9278443967283",
+        "lat": "40.8585963",
+        "date": "04/03/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.925161",
+        "lat": "40.659921",
+        "date": "09/05/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8338512937465",
+        "lat": "40.70594885",
+        "date": "04/12/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "08/17/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9622226184783",
+        "lat": "40.60019005",
+        "date": "01/11/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.8912196293887",
+        "lat": "40.6618969",
+        "date": "02/22/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9686425555556",
+        "lat": "40.6967010740741",
+        "date": "12/29/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.940676",
+        "lat": "40.656415",
+        "date": "06/30/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "03/18/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8905952528584",
+        "lat": "40.669202",
+        "date": "03/30/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8515914644675",
+        "lat": "40.88977745",
+        "date": "01/12/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.7371617376612",
+        "lat": "40.70834705",
+        "date": "05/16/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9449809",
+        "lat": "40.7488051",
+        "date": "02/01/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0006318893804",
+        "lat": "40.738244",
+        "date": "10/24/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.899162",
+        "lat": "40.660665",
+        "date": "10/25/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.97985535",
+        "lat": "40.7211698",
+        "date": "10/12/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.922883",
+        "lat": "40.6748467",
+        "date": "07/24/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8954270241842",
+        "lat": "40.7523691",
+        "date": "04/24/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.90762915",
+        "lat": "40.82214275",
+        "date": "11/27/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "05/03/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9118859225089",
+        "lat": "40.8512210039494",
+        "date": "01/16/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.931678",
+        "lat": "40.832446",
+        "date": "07/17/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9088926",
+        "lat": "40.8646163",
+        "date": "09/04/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/07/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.7635546",
+        "lat": "40.6952651",
+        "date": "08/15/2017",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-74.0241279000483",
+        "lat": "40.63235445",
+        "date": "08/13/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.949489",
+        "lat": "40.7621746",
+        "date": "05/05/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.7866517834772",
+        "lat": "40.59091",
+        "date": "04/09/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.911518",
+        "lat": "40.8754564",
+        "date": "09/17/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9114762048996",
+        "lat": "40.83660065",
+        "date": "12/18/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9125520540751",
+        "lat": "40.84928695",
+        "date": "01/15/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.84439125",
+        "lat": "40.869689",
+        "date": "04/18/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9130263478261",
+        "lat": "40.6464445217391",
+        "date": "05/15/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9550409230072",
+        "lat": "40.64020955",
+        "date": "10/13/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9064862368421",
+        "lat": "40.8318085263158",
+        "date": "11/15/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "04/17/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.949982207169",
+        "lat": "40.7925036",
+        "date": "09/12/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8202662",
+        "lat": "40.70483",
+        "date": "11/15/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.848076",
+        "lat": "40.905486",
+        "date": "11/05/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9709963",
+        "lat": "40.7925",
+        "date": "03/21/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9092512",
+        "lat": "40.6977695",
+        "date": "07/22/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7665000807502",
+        "lat": "40.71292585",
+        "date": "09/18/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "02/01/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9858577690344",
+        "lat": "40.77008305",
+        "date": "07/12/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.889466",
+        "lat": "40.6667673",
+        "date": "01/03/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8286421",
+        "lat": "40.7097222",
+        "date": "04/26/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9289193886997",
+        "lat": "40.86312885",
+        "date": "10/05/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "03/20/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "11/08/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9425593962888",
+        "lat": "40.68732345",
+        "date": "10/10/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9785587",
+        "lat": "40.7392097",
+        "date": "05/01/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.987695",
+        "lat": "40.729587",
+        "date": "09/05/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9502354987084",
+        "lat": "40.677897",
+        "date": "04/23/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "11/28/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.87426890625",
+        "lat": "40.65658940625",
+        "date": "02/06/2018",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.0847698631039",
+        "lat": "40.6396881",
+        "date": "04/16/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "01/25/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "04/26/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9030370745359",
+        "lat": "40.66717705",
+        "date": "03/12/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8776577242615",
+        "lat": "40.8245811",
+        "date": "10/05/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-74.0030294189762",
+        "lat": "40.5995634",
+        "date": "05/01/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8651138",
+        "lat": "40.8871019",
+        "date": "03/07/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8746326",
+        "lat": "40.8769603",
+        "date": "09/01/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.909588",
+        "lat": "40.823411",
+        "date": "04/02/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8912612282874",
+        "lat": "40.8660789",
+        "date": "03/12/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.830253495719",
+        "lat": "40.70835535",
+        "date": "11/08/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9104306",
+        "lat": "40.8460518",
+        "date": "02/02/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8639569268921",
+        "lat": "40.73617985",
+        "date": "06/20/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8491496423042",
+        "lat": "40.7230834",
+        "date": "05/23/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8892891",
+        "lat": "40.868167",
+        "date": "02/22/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.875688",
+        "lat": "40.6770342580645",
+        "date": "01/11/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9528619",
+        "lat": "40.7716285",
+        "date": "02/14/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8980442696914",
+        "lat": "40.8578869",
+        "date": "07/16/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8267301",
+        "lat": "40.7024369",
+        "date": "05/10/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8635482",
+        "lat": "40.8685329",
+        "date": "01/13/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "10/16/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9863663",
+        "lat": "40.7424976",
+        "date": "12/11/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9911555",
+        "lat": "40.71437695",
+        "date": "04/19/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8592572",
+        "lat": "40.7682686",
+        "date": "12/14/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.874926",
+        "lat": "40.668332",
+        "date": "01/04/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.928184",
+        "lat": "40.83395375",
+        "date": "10/11/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "11/29/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.10611715",
+        "lat": "40.5672033",
+        "date": "09/12/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8583212059181",
+        "lat": "40.8844069",
+        "date": "02/14/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8057777",
+        "lat": "40.7164105",
+        "date": "02/19/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.944689",
+        "lat": "40.740909",
+        "date": "11/29/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9375606630399",
+        "lat": "40.66620975",
+        "date": "08/09/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8676154722036",
+        "lat": "40.83908055",
+        "date": "03/13/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9146705708015",
+        "lat": "40.76619485",
+        "date": "03/27/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9990826",
+        "lat": "40.76296",
+        "date": "10/16/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "03/26/2019",
+        "first_name": "Jeffrey",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9087057",
+        "lat": "40.6709313",
+        "date": "08/10/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8885491146609",
+        "lat": "40.82815355",
+        "date": "06/14/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.7967340505993",
+        "lat": "40.69044305",
+        "date": "06/13/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8611671799537",
+        "lat": "40.83943465",
+        "date": "09/10/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8739187",
+        "lat": "40.8403516",
+        "date": "10/19/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9259430293368",
+        "lat": "40.8265998",
+        "date": "05/04/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9013585",
+        "lat": "40.8854549",
+        "date": "04/03/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.7898553",
+        "lat": "40.7123948",
+        "date": "02/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8740122",
+        "lat": "40.66408305",
+        "date": "10/24/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.761106",
+        "lat": "40.600261",
+        "date": "04/11/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9840959",
+        "lat": "40.7393892",
+        "date": "09/17/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.867704",
+        "lat": "40.6848104",
+        "date": "04/06/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8468759385452",
+        "lat": "40.89502875",
+        "date": "05/14/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.7804689823501",
+        "lat": "40.76205725",
+        "date": "04/27/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8796864467329",
+        "lat": "40.68027345",
+        "date": "07/31/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8656892608696",
+        "lat": "40.6701020869565",
+        "date": "04/24/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8597294659402",
+        "lat": "40.73976415",
+        "date": "10/15/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9060043045642",
+        "lat": "40.6648704",
+        "date": "08/21/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.890135",
+        "lat": "40.844681",
+        "date": "05/30/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.92986",
+        "lat": "40.686961",
+        "date": "02/01/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.915209",
+        "lat": "40.831978",
+        "date": "08/22/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8626594705882",
+        "lat": "40.8793105",
+        "date": "01/29/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8693394053221",
+        "lat": "40.84833185",
+        "date": "07/03/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8508176810398",
+        "lat": "40.72981665",
+        "date": "02/27/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8659465023969",
+        "lat": "40.82895915",
+        "date": "09/16/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9663158571429",
+        "lat": "40.5763494489796",
+        "date": "03/13/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9158764",
+        "lat": "40.8368292",
+        "date": "10/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9536142368421",
+        "lat": "40.6904531842105",
+        "date": "04/10/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "03/08/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8536291",
+        "lat": "40.836349",
+        "date": "04/21/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.009512098683",
+        "lat": "40.70542845",
+        "date": "06/06/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8666249",
+        "lat": "40.839397",
+        "date": "05/02/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-83.184853",
+        "lat": "42.567485",
+        "date": "12/14/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8678524",
+        "lat": "40.8652684",
+        "date": "09/12/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8210775",
+        "lat": "40.58474065",
+        "date": "08/30/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8072136249143",
+        "lat": "40.8152314",
+        "date": "10/17/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9499538",
+        "lat": "40.6429638",
+        "date": "05/10/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-73.9524198478165",
+        "lat": "40.80508775",
+        "date": "02/22/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9084620456238",
+        "lat": "40.64413555",
+        "date": "03/09/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.936588",
+        "lat": "40.668227",
+        "date": "03/09/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9535867445636",
+        "lat": "40.6127737",
+        "date": "03/21/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9902614081633",
+        "lat": "40.7468349183673",
+        "date": "05/14/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.880141",
+        "lat": "40.841985",
+        "date": "04/05/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.905266",
+        "lat": "40.812574",
+        "date": "04/04/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.916136",
+        "lat": "40.640078",
+        "date": "09/04/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8651138",
+        "lat": "40.8871019",
+        "date": "06/22/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9162642",
+        "lat": "40.8197407",
+        "date": "02/01/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.909245",
+        "lat": "40.844392",
+        "date": "07/18/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9241131",
+        "lat": "40.8238602",
+        "date": "07/27/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.222523",
+        "lat": "40.547202",
+        "date": "07/08/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9513039257938",
+        "lat": "40.6333659",
+        "date": "06/14/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9379854",
+        "lat": "40.8279218",
+        "date": "10/19/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9200516315789",
+        "lat": "40.8352225263158",
+        "date": "03/20/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "03/30/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "11/29/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.918057",
+        "lat": "40.687377",
+        "date": "02/09/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8613664",
+        "lat": "40.8920243",
+        "date": "08/11/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8148298526407",
+        "lat": "40.67211175",
+        "date": "07/19/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9014025381136",
+        "lat": "40.82964605",
+        "date": "08/05/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.85243405",
+        "lat": "40.6917102",
+        "date": "09/17/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9532449",
+        "lat": "40.7741968",
+        "date": "01/20/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8959262",
+        "lat": "40.8598699",
+        "date": "05/24/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8879216471548",
+        "lat": "40.8338948",
+        "date": "04/20/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.944630700998",
+        "lat": "40.6385891",
+        "date": "12/19/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9457720477192",
+        "lat": "40.67038575",
+        "date": "07/12/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8794525675663",
+        "lat": "40.88316645",
+        "date": "06/11/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8540393008463",
+        "lat": "40.86673605",
+        "date": "10/05/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "01/29/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8602023837233",
+        "lat": "40.8862092",
+        "date": "12/03/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9441900528094",
+        "lat": "40.6482282",
+        "date": "03/02/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-74.0041374",
+        "lat": "40.5980439",
+        "date": "05/23/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9066041244413",
+        "lat": "40.87873815",
+        "date": "07/11/2019",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.970729",
+        "lat": "40.763407",
+        "date": "12/14/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8884883965777",
+        "lat": "40.6635857",
+        "date": "10/25/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9020207081807",
+        "lat": "40.8256568631215",
+        "date": "07/27/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.935936",
+        "lat": "40.734679",
+        "date": "07/25/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.944233",
+        "lat": "40.802146",
+        "date": "04/03/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.1074795",
+        "lat": "40.5795929",
+        "date": "01/24/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.98471",
+        "lat": "40.751692",
+        "date": "05/08/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9393072437048",
+        "lat": "40.7974158",
+        "date": "03/02/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8813985563621",
+        "lat": "40.8555159",
+        "date": "05/15/2019",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.0812949642857",
+        "lat": "40.6402546785714",
+        "date": "07/25/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8364863874709",
+        "lat": "40.87462295",
+        "date": "06/05/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.944141",
+        "lat": "40.603165",
+        "date": "02/03/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.741524244898",
+        "lat": "40.5959081632653",
+        "date": "11/20/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.8779282",
+        "lat": "40.6613578",
+        "date": "02/20/2019",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.8687692176835",
+        "lat": "40.67887855",
+        "date": "03/26/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9873693676867",
+        "lat": "40.60878785",
+        "date": "03/14/2019",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.777322",
+        "lat": "40.593985",
+        "date": "05/15/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8627087058824",
+        "lat": "40.879323",
+        "date": "05/17/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.87319775",
+        "lat": "40.68079395",
+        "date": "05/29/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.917382",
+        "lat": "40.823199",
+        "date": "04/27/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "08/13/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8654408406116",
+        "lat": "40.85570105",
+        "date": "06/15/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8942003263836",
+        "lat": "40.85782265",
+        "date": "11/09/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.84748735",
+        "lat": "40.8832677",
+        "date": "10/09/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "08/23/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9124619",
+        "lat": "40.8213238",
+        "date": "09/12/2018",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.7963413158757",
+        "lat": "40.69266",
+        "date": "09/19/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8313232",
+        "lat": "40.8705324",
+        "date": "05/17/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0175966",
+        "lat": "40.67798885",
+        "date": "04/17/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.775554",
+        "lat": "40.76157",
+        "date": "09/18/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.818607",
+        "lat": "40.675159",
+        "date": "07/26/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9170558",
+        "lat": "40.8689682",
+        "date": "04/03/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "07/19/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9503578528512",
+        "lat": "40.68288855",
+        "date": "08/22/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.944881",
+        "lat": "40.634177",
+        "date": "04/22/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "08/16/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9395901046877",
+        "lat": "40.8116194",
+        "date": "07/26/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.00326645134",
+        "lat": "40.75246805",
+        "date": "01/05/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9021353168996",
+        "lat": "40.81669325",
+        "date": "04/26/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8915689154111",
+        "lat": "40.84351855",
+        "date": "12/17/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9739144",
+        "lat": "40.7435512",
+        "date": "06/22/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8560857902171",
+        "lat": "40.8787268",
+        "date": "09/17/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9875901",
+        "lat": "40.764457",
+        "date": "05/10/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9703261891892",
+        "lat": "40.6950666891892",
+        "date": "10/04/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9936615002094",
+        "lat": "40.7348752",
+        "date": "06/03/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.752724",
+        "lat": "40.677094",
+        "date": "06/29/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8994705",
+        "lat": "40.8848815",
+        "date": "09/21/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.950123",
+        "lat": "40.7508729",
+        "date": "11/27/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9024990272196",
+        "lat": "40.84791325",
+        "date": "09/21/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.89565305",
+        "lat": "40.73327775",
+        "date": "01/06/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9367835",
+        "lat": "40.680003",
+        "date": "09/17/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.735007",
+        "lat": "40.716231",
+        "date": "09/25/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.885008",
+        "lat": "40.843473",
+        "date": "08/12/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8024529",
+        "lat": "40.7053667",
+        "date": "05/02/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8645049",
+        "lat": "40.8377053",
+        "date": "02/15/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.1425257483952",
+        "lat": "40.62548595",
+        "date": "06/09/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.877727",
+        "lat": "40.672611",
+        "date": "01/09/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8705501",
+        "lat": "40.8808007",
+        "date": "12/12/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8566723609033",
+        "lat": "40.88971585",
+        "date": "08/21/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.8216153735647",
+        "lat": "40.7303352",
+        "date": "07/03/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9117312857143",
+        "lat": "40.6556857142857",
+        "date": "08/21/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9582281836735",
+        "lat": "40.5828774693878",
+        "date": "11/13/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8783117142857",
+        "lat": "40.825365",
+        "date": "11/27/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8985032009245",
+        "lat": "40.85781055",
+        "date": "10/03/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9246879318182",
+        "lat": "40.6767449545455",
+        "date": "07/17/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9101256",
+        "lat": "40.8120055",
+        "date": "04/25/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.877264225",
+        "lat": "40.75429635",
+        "date": "11/13/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.905689",
+        "lat": "40.848994",
+        "date": "11/13/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9442573964359",
+        "lat": "40.69861625",
+        "date": "11/15/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.86785155",
+        "lat": "40.67534535",
+        "date": "02/21/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9581926751536",
+        "lat": "40.6568125",
+        "date": "01/17/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "01/20/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8977394145603",
+        "lat": "40.88084745",
+        "date": "05/16/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.820583691162",
+        "lat": "40.75144055",
+        "date": "05/13/2019",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.0800596334399",
+        "lat": "40.64268275",
+        "date": "11/16/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.7881972",
+        "lat": "40.7126533",
+        "date": "11/27/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.992445",
+        "lat": "40.768066",
+        "date": "10/03/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.87011185",
+        "lat": "40.8256608",
+        "date": "06/19/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8647157",
+        "lat": "40.8531765",
+        "date": "09/16/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.741524244898",
+        "lat": "40.5959081632653",
+        "date": "07/09/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8284451960645",
+        "lat": "40.8514889",
+        "date": "02/21/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8966993",
+        "lat": "40.8482035",
+        "date": "01/22/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.937823",
+        "lat": "40.852127",
+        "date": "05/30/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9224323372957",
+        "lat": "40.84821465",
+        "date": "11/01/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9372379459862",
+        "lat": "40.8276528",
+        "date": "05/03/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/12/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9409756",
+        "lat": "40.8126754",
+        "date": "04/18/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8251167823225",
+        "lat": "40.87420015",
+        "date": "11/07/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9339022091009",
+        "lat": "40.75631365",
+        "date": "03/25/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9668103638118",
+        "lat": "40.57878595",
+        "date": "03/19/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8670353793626",
+        "lat": "40.85343755",
+        "date": "05/03/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "03/13/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.9293062804775",
+        "lat": "40.64897505",
+        "date": "07/26/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9380234607826",
+        "lat": "40.68749005",
+        "date": "08/16/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.754722232382",
+        "lat": "40.70629955",
+        "date": "03/15/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "08/17/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9079469",
+        "lat": "40.68510045",
+        "date": "05/15/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.7657533",
+        "lat": "40.7018128",
+        "date": "10/16/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-74.0390523300334",
+        "lat": "40.6183698",
+        "date": "06/08/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8547438836219",
+        "lat": "40.88994235",
+        "date": "09/22/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.923014",
+        "lat": "40.862713",
+        "date": "01/30/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9766441524178",
+        "lat": "40.6059717",
+        "date": "01/10/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-74.871618",
+        "lat": "43.408777",
+        "date": "01/10/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8871291232988",
+        "lat": "40.85316485",
+        "date": "08/02/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.74880465",
+        "lat": "40.5983283",
+        "date": "11/21/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9930840935213",
+        "lat": "40.68226395",
+        "date": "06/14/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8723371131473",
+        "lat": "40.87994155",
+        "date": "01/10/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9279064",
+        "lat": "40.6634031",
+        "date": "01/02/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.8905546278584",
+        "lat": "40.6690398",
+        "date": "08/31/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.86731775",
+        "lat": "40.69002375",
+        "date": "03/08/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8860443643247",
+        "lat": "40.74625545",
+        "date": "08/24/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8787404144598",
+        "lat": "40.8743409",
+        "date": "09/24/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8056354",
+        "lat": "40.7027438",
+        "date": "12/07/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "115.112347",
+        "lat": "-21.638474",
+        "date": "12/07/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.11813830225",
+        "lat": "40.55855165",
+        "date": "01/03/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9072756713977",
+        "lat": "40.8777447961967",
+        "date": "09/23/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8963822112863",
+        "lat": "40.85922185",
+        "date": "10/23/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "05/29/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9278443967283",
+        "lat": "40.8585963",
+        "date": "02/26/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8811835491167",
+        "lat": "40.6520676",
+        "date": "05/15/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8873912",
+        "lat": "40.8714722",
+        "date": "05/17/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.950442",
+        "lat": "40.823318",
+        "date": "01/25/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.859115",
+        "lat": "40.897874",
+        "date": "06/18/2018",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.2087002953716",
+        "lat": "40.5364941",
+        "date": "10/12/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9081314318428",
+        "lat": "40.82344755",
+        "date": "01/16/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9132797966633",
+        "lat": "40.65795685",
+        "date": "01/09/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8527641",
+        "lat": "40.8364619",
+        "date": "08/23/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9005490674234",
+        "lat": "40.6464653",
+        "date": "08/08/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.891982313493",
+        "lat": "40.86996655",
+        "date": "01/09/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8819415",
+        "lat": "40.852786",
+        "date": "03/30/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "08/28/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.810244",
+        "lat": "40.740601",
+        "date": "08/02/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.813924",
+        "lat": "40.789494",
+        "date": "07/17/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9153885",
+        "lat": "40.8355735",
+        "date": "06/09/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "02/21/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8731386094295",
+        "lat": "40.833155",
+        "date": "03/21/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.761062586725",
+        "lat": "40.73827255",
+        "date": "01/12/2017",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.9295048",
+        "lat": "40.7462043",
+        "date": "02/06/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-74.004736",
+        "lat": "40.728205",
+        "date": "08/09/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7584008369935",
+        "lat": "40.6988232",
+        "date": "07/10/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "04/30/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9621005513032",
+        "lat": "40.7659968",
+        "date": "04/06/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8265512161582",
+        "lat": "40.6856475",
+        "date": "11/09/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-74.871618",
+        "lat": "43.408777",
+        "date": "02/27/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9502772",
+        "lat": "40.63424125",
+        "date": "02/15/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9449347198583",
+        "lat": "40.82189605",
+        "date": "03/10/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8607889896102",
+        "lat": "40.84010165",
+        "date": "06/15/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.851923395378",
+        "lat": "40.84218625",
+        "date": "05/23/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9225853",
+        "lat": "40.8264283",
+        "date": "02/01/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8746901428571",
+        "lat": "40.8304753265306",
+        "date": "05/11/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "05/31/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8935480795",
+        "lat": "40.85229615",
+        "date": "02/14/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9623255157862",
+        "lat": "40.62882295",
+        "date": "05/01/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.99322528592",
+        "lat": "40.7695948",
+        "date": "12/14/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8851795101871",
+        "lat": "40.6399031",
+        "date": "11/14/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9223413",
+        "lat": "40.817939",
+        "date": "09/27/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "01/25/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.918058",
+        "lat": "40.842113",
+        "date": "10/10/2018",
+        "first_name": "Jeffrey",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.782442",
+        "lat": "40.6863887",
+        "date": "09/28/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.7737572",
+        "lat": "40.6776671",
+        "date": "09/27/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8871021",
+        "lat": "40.8155195",
+        "date": "11/17/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.7559902520973",
+        "lat": "40.60078615",
+        "date": "07/09/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.7452375153325",
+        "lat": "40.7656509",
+        "date": "03/03/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.935184817711",
+        "lat": "40.81210895",
+        "date": "11/03/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9685420462281",
+        "lat": "40.639137",
+        "date": "04/17/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.880968",
+        "lat": "40.739287",
+        "date": "06/01/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9130217",
+        "lat": "40.8438551",
+        "date": "06/20/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0001764665336",
+        "lat": "40.60791675",
+        "date": "01/15/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9243714",
+        "lat": "40.8228148",
+        "date": "07/25/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.926797",
+        "lat": "40.867209",
+        "date": "09/04/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8896418",
+        "lat": "40.81387",
+        "date": "03/03/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.853722",
+        "lat": "40.836285",
+        "date": "12/10/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.862383",
+        "lat": "40.682159",
+        "date": "06/07/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9497953",
+        "lat": "40.5919347",
+        "date": "09/11/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "08/14/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.915912",
+        "lat": "40.8388583",
+        "date": "05/14/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.774387",
+        "lat": "40.70686375",
+        "date": "04/23/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/21/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8812547103717",
+        "lat": "40.84029765",
+        "date": "03/18/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.862281",
+        "lat": "40.683299",
+        "date": "12/04/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9117572036825",
+        "lat": "40.8365701",
+        "date": "07/11/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.897955",
+        "lat": "40.824628",
+        "date": "11/29/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.913896173913",
+        "lat": "40.8085116956522",
+        "date": "11/29/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8996645178819",
+        "lat": "40.86170005",
+        "date": "06/03/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.831511",
+        "lat": "40.705885",
+        "date": "02/24/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9193701",
+        "lat": "40.845695",
+        "date": "03/23/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.85059955",
+        "lat": "40.6685979",
+        "date": "03/28/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.901751",
+        "lat": "40.657814",
+        "date": "04/06/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8792414",
+        "lat": "40.8217932",
+        "date": "06/27/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.884058",
+        "lat": "40.681279",
+        "date": "01/16/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8522221181913",
+        "lat": "40.89718695",
+        "date": "02/27/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.919001",
+        "lat": "40.687493",
+        "date": "01/25/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8004882",
+        "lat": "40.6724925",
+        "date": "02/16/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.922781909669",
+        "lat": "40.85228145",
+        "date": "06/01/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.92084115",
+        "lat": "40.7017557",
+        "date": "01/20/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9474499648809",
+        "lat": "40.81418305",
+        "date": "01/06/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8671435",
+        "lat": "40.8376076",
+        "date": "08/02/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.791025",
+        "lat": "40.764198",
+        "date": "02/15/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8792344892603",
+        "lat": "40.82720015",
+        "date": "08/13/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9378668",
+        "lat": "40.8245682",
+        "date": "01/31/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8920168350845",
+        "lat": "40.86683285",
+        "date": "06/14/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.831915",
+        "lat": "40.681922",
+        "date": "07/01/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.982514787028",
+        "lat": "40.7429138",
+        "date": "10/10/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8926810846581",
+        "lat": "40.74468965",
+        "date": "03/08/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9291311263765",
+        "lat": "40.6877172",
+        "date": "03/01/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8197630768754",
+        "lat": "40.70326035",
+        "date": "02/14/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9272887508527",
+        "lat": "40.66415945",
+        "date": "01/25/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8799809124733",
+        "lat": "40.6457473",
+        "date": "10/02/2018",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.994765",
+        "lat": "40.6183",
+        "date": "08/29/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9404717754894",
+        "lat": "40.74626",
+        "date": "04/12/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.116893",
+        "lat": "40.640147",
+        "date": "05/24/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.8835664",
+        "lat": "40.84865884",
+        "date": "09/04/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9709729838017",
+        "lat": "40.78450425",
+        "date": "03/12/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8260615",
+        "lat": "40.68381025",
+        "date": "04/12/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9104611",
+        "lat": "40.8329985",
+        "date": "05/24/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.796806",
+        "lat": "40.700434",
+        "date": "12/04/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7844755697765",
+        "lat": "40.69506365",
+        "date": "05/17/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8169797",
+        "lat": "40.7248912",
+        "date": "02/20/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9701413",
+        "lat": "40.5794795",
+        "date": "01/02/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9049534400445",
+        "lat": "40.85195155",
+        "date": "01/20/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.95249445",
+        "lat": "40.67428545",
+        "date": "07/13/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.846913",
+        "lat": "40.814929",
+        "date": "01/23/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9988890654493",
+        "lat": "40.61086375",
+        "date": "07/12/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7423236020408",
+        "lat": "40.5969300918367",
+        "date": "01/10/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9160913",
+        "lat": "40.6559375",
+        "date": "10/19/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8758633",
+        "lat": "40.8261246",
+        "date": "09/05/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9161951",
+        "lat": "40.6578767",
+        "date": "02/13/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.898214",
+        "lat": "40.863021",
+        "date": "01/16/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.920758080791",
+        "lat": "40.66976675",
+        "date": "01/30/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9793359",
+        "lat": "40.740677",
+        "date": "08/07/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "08/07/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8461646988891",
+        "lat": "40.83684645",
+        "date": "07/09/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/13/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9129246",
+        "lat": "40.834949",
+        "date": "01/06/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.8595508",
+        "lat": "40.7680548",
+        "date": "05/03/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.895166",
+        "lat": "40.847714",
+        "date": "01/07/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8613512587262",
+        "lat": "40.87887415",
+        "date": "10/17/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.984824",
+        "lat": "40.750743",
+        "date": "04/04/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "11/22/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.984778",
+        "lat": "40.63682",
+        "date": "08/22/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8591026331001",
+        "lat": "40.8370692",
+        "date": "03/08/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9067222624778",
+        "lat": "40.7714562",
+        "date": "04/05/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.882662",
+        "lat": "40.75376",
+        "date": "05/23/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9847613190744",
+        "lat": "40.73843505",
+        "date": "04/11/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.898421",
+        "lat": "40.863724",
+        "date": "06/23/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.876761619624",
+        "lat": "40.87419865",
+        "date": "09/07/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.849576",
+        "lat": "40.838629",
+        "date": "08/27/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8178431445136",
+        "lat": "40.7272738",
+        "date": "11/19/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.877086",
+        "lat": "40.677729",
+        "date": "01/10/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8930330204082",
+        "lat": "40.8308505510204",
+        "date": "03/10/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.7866517834772",
+        "lat": "40.59091",
+        "date": "05/10/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9094845",
+        "lat": "40.846721",
+        "date": "07/18/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.875874",
+        "lat": "40.8313571",
+        "date": "09/05/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "03/21/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.917791",
+        "lat": "40.6726324468085",
+        "date": "08/06/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9404086181863",
+        "lat": "40.7862352",
+        "date": "04/18/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.8414133",
+        "lat": "40.7186913",
+        "date": "01/19/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-73.9888965405642",
+        "lat": "40.76730785",
+        "date": "06/20/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.86827545",
+        "lat": "40.85994795",
+        "date": "02/06/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9012687575758",
+        "lat": "40.8127805454545",
+        "date": "02/15/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9141148125",
+        "lat": "40.82490825",
+        "date": "01/30/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.895709",
+        "lat": "40.677579",
+        "date": "07/31/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9119240816326",
+        "lat": "40.824382",
+        "date": "12/12/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8639373982599",
+        "lat": "40.68539365",
+        "date": "10/24/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8987672",
+        "lat": "40.870049",
+        "date": "06/07/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.895872",
+        "lat": "40.832047",
+        "date": "07/23/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8906806461538",
+        "lat": "40.8226274",
+        "date": "07/12/2018",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-74.0033917647059",
+        "lat": "40.6760997941176",
+        "date": "07/19/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7727211",
+        "lat": "40.67812",
+        "date": "03/01/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-74.2476689904302",
+        "lat": "40.5117962",
+        "date": "03/17/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9538369",
+        "lat": "40.7075972",
+        "date": "03/28/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9195998",
+        "lat": "40.8303371",
+        "date": "11/30/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9094517115865",
+        "lat": "40.8140951",
+        "date": "06/23/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.918349",
+        "lat": "40.849702",
+        "date": "09/13/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8988865028679",
+        "lat": "40.82899495",
+        "date": "12/15/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/23/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.986544",
+        "lat": "40.689945",
+        "date": "06/22/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.85306",
+        "lat": "40.8307325",
+        "date": "12/14/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.838521",
+        "lat": "40.684615",
+        "date": "05/05/2017",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.9060629",
+        "lat": "40.6578662",
+        "date": "02/28/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8768172",
+        "lat": "40.7407766",
+        "date": "08/28/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9559263846154",
+        "lat": "40.6628947692308",
+        "date": "01/22/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8914204",
+        "lat": "40.6599031",
+        "date": "07/02/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.8717078336368",
+        "lat": "40.76811245",
+        "date": "02/02/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9143716204756",
+        "lat": "40.8426787",
+        "date": "09/07/2017",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9936016309975",
+        "lat": "40.6122881",
+        "date": "03/10/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.0066821",
+        "lat": "40.7222015",
+        "date": "01/08/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9760793",
+        "lat": "40.7916271",
+        "date": "12/01/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7322285",
+        "lat": "40.7194818",
+        "date": "08/06/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9024982518539",
+        "lat": "40.8524645",
+        "date": "08/08/2017",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.9404932",
+        "lat": "40.8204285",
+        "date": "11/23/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7983529520771",
+        "lat": "40.5976687",
+        "date": "06/02/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.930065",
+        "lat": "40.687283",
+        "date": "06/20/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9703241546131",
+        "lat": "40.7509596",
+        "date": "12/17/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.855661438209",
+        "lat": "40.7389061",
+        "date": "05/11/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9013587575333",
+        "lat": "40.863587",
+        "date": "05/01/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9154912646707",
+        "lat": "40.6994565",
+        "date": "11/15/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.853722",
+        "lat": "40.836285",
+        "date": "09/06/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9458425615153",
+        "lat": "40.6752486",
+        "date": "06/11/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9529158",
+        "lat": "40.8143856",
+        "date": "03/28/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9844389077674",
+        "lat": "40.66975055",
+        "date": "11/27/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "04/02/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9470208768006",
+        "lat": "40.62573505",
+        "date": "03/30/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.908128",
+        "lat": "40.854058",
+        "date": "01/09/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.97976",
+        "lat": "40.732622",
+        "date": "09/06/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9069901",
+        "lat": "40.7412125",
+        "date": "02/14/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "11/28/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "07/12/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9887682",
+        "lat": "40.7577906",
+        "date": "11/13/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8624770235256",
+        "lat": "40.7372329",
+        "date": "01/30/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "02/23/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.80544",
+        "lat": "40.683976",
+        "date": "03/07/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "04/12/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8374850522461",
+        "lat": "40.57898665",
+        "date": "02/22/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9072012639716",
+        "lat": "40.84926345",
+        "date": "01/07/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.918774652826",
+        "lat": "40.70210665",
+        "date": "03/27/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "08/21/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-74.0130677",
+        "lat": "40.6756763",
+        "date": "01/18/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9947092785293",
+        "lat": "40.57575685",
+        "date": "10/29/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.864270031449",
+        "lat": "40.74864545",
+        "date": "09/26/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9089706743901",
+        "lat": "40.86203275",
+        "date": "09/21/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8895107",
+        "lat": "40.7493237",
+        "date": "09/24/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7890254",
+        "lat": "40.67022795",
+        "date": "07/03/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8979991462926",
+        "lat": "40.6388704348697",
+        "date": "08/24/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8302951836729",
+        "lat": "40.7562566",
+        "date": "06/12/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.873445",
+        "lat": "40.751791",
+        "date": "01/31/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0058958655267",
+        "lat": "40.7074899",
+        "date": "09/27/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "06/29/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.858119796983",
+        "lat": "40.72738475",
+        "date": "02/07/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9678737",
+        "lat": "40.768751",
+        "date": "05/08/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.748507041048",
+        "lat": "40.65799065",
+        "date": "02/06/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9342505333333",
+        "lat": "40.6983095333333",
+        "date": "03/03/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.7684579",
+        "lat": "40.6754814",
+        "date": "10/10/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8781925",
+        "lat": "40.8422231",
+        "date": "03/30/2017",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.994972",
+        "lat": "40.719877",
+        "date": "11/27/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.781316898595",
+        "lat": "40.69951375",
+        "date": "04/24/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9551686515046",
+        "lat": "40.65573735",
+        "date": "09/11/2017",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.895343396816",
+        "lat": "40.82721935",
+        "date": "01/14/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9256364413376",
+        "lat": "40.76561495",
+        "date": "09/06/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9183298",
+        "lat": "40.8334187",
+        "date": "10/18/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "11/09/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "03/09/2017",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.9231926312985",
+        "lat": "40.68318655",
+        "date": "05/21/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9244855257125",
+        "lat": "40.84705505",
+        "date": "12/18/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9175885769231",
+        "lat": "40.8232385",
+        "date": "01/05/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.00326645134",
+        "lat": "40.75246805",
+        "date": "07/11/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9656334801985",
+        "lat": "40.79495795",
+        "date": "10/19/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9168312857143",
+        "lat": "40.8374405714286",
+        "date": "04/01/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.929417",
+        "lat": "40.860052",
+        "date": "04/01/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0156430443186",
+        "lat": "40.6439539",
+        "date": "10/10/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8774192631404",
+        "lat": "40.67293185",
+        "date": "04/21/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8993531199371",
+        "lat": "40.87714505",
+        "date": "10/19/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.92036225",
+        "lat": "40.7010549",
+        "date": "03/31/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9026241",
+        "lat": "40.8499441",
+        "date": "07/23/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9157257",
+        "lat": "40.8129509",
+        "date": "09/14/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7618966537324",
+        "lat": "40.70873235",
+        "date": "03/08/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8848763",
+        "lat": "40.8504057",
+        "date": "07/02/2018",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.9002015",
+        "lat": "40.8720278",
+        "date": "10/02/2018",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.867943049861",
+        "lat": "40.8188774",
+        "date": "10/24/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.93345995",
+        "lat": "40.79661135",
+        "date": "09/01/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9116554507826",
+        "lat": "40.6980489",
+        "date": "05/10/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9454021",
+        "lat": "40.6493389",
+        "date": "01/10/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8852613439925",
+        "lat": "40.84050335",
+        "date": "05/04/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9397134980946",
+        "lat": "40.67491145",
+        "date": "02/06/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9024882808519",
+        "lat": "40.86423495",
+        "date": "04/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8814102937361",
+        "lat": "40.8431476",
+        "date": "08/28/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9559263846154",
+        "lat": "40.6628947692308",
+        "date": "02/08/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.832371",
+        "lat": "40.708325",
+        "date": "08/28/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8651888078038",
+        "lat": "40.7364228",
+        "date": "10/11/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8990151",
+        "lat": "40.8159108",
+        "date": "11/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.86905235",
+        "lat": "40.73935535",
+        "date": "12/13/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9223485",
+        "lat": "40.8637975",
+        "date": "05/31/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.94097575",
+        "lat": "40.6258215",
+        "date": "03/29/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8766775623939",
+        "lat": "40.87622715",
+        "date": "04/17/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9403959627727",
+        "lat": "40.84310155",
+        "date": "06/08/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8870226",
+        "lat": "40.8656272",
+        "date": "04/19/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8793876666667",
+        "lat": "40.8752766666667",
+        "date": "05/23/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9494417117006",
+        "lat": "40.77413645",
+        "date": "03/02/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8860443643247",
+        "lat": "40.74625545",
+        "date": "04/27/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8970225761364",
+        "lat": "40.84553505",
+        "date": "11/09/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "05/17/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.918809",
+        "lat": "40.817565",
+        "date": "11/28/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9223277447856",
+        "lat": "40.85243495",
+        "date": "01/22/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.860143",
+        "lat": "40.884518",
+        "date": "01/22/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.87208",
+        "lat": "40.750899",
+        "date": "10/22/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8604766015566",
+        "lat": "40.73722215",
+        "date": "09/06/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9102113045894",
+        "lat": "40.83678025",
+        "date": "04/12/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "01/03/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9528936",
+        "lat": "40.8035548",
+        "date": "02/27/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9566410526316",
+        "lat": "40.6761332105263",
+        "date": "03/22/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9059438",
+        "lat": "40.82035545",
+        "date": "09/22/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8264988005749",
+        "lat": "40.87432185",
+        "date": "09/13/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9585017985233",
+        "lat": "40.7627898",
+        "date": "09/18/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.937017",
+        "lat": "40.667715",
+        "date": "05/24/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9852227",
+        "lat": "40.6414544",
+        "date": "08/07/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "02/22/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8874246",
+        "lat": "40.7572838",
+        "date": "04/16/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8943754876712",
+        "lat": "40.67680015",
+        "date": "05/11/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8747871",
+        "lat": "40.8791241",
+        "date": "05/08/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.86112075",
+        "lat": "40.8915505",
+        "date": "10/18/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8218051",
+        "lat": "40.8328928",
+        "date": "02/21/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.0665223787811",
+        "lat": "40.6115475",
+        "date": "01/23/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9742151021816",
+        "lat": "40.7255236",
+        "date": "08/02/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.95042896875",
+        "lat": "40.7947919479167",
+        "date": "06/18/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8692292",
+        "lat": "40.8544141",
+        "date": "10/24/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "03/12/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8858084878837",
+        "lat": "40.8181988",
+        "date": "02/07/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "11/15/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8724461376615",
+        "lat": "40.8782217",
+        "date": "04/24/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9204367981477",
+        "lat": "40.82869475",
+        "date": "06/15/2018",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.9201025",
+        "lat": "40.8209172",
+        "date": "11/13/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.903733244898",
+        "lat": "40.8810901836735",
+        "date": "05/16/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9255923",
+        "lat": "40.8250082",
+        "date": "09/15/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9505507",
+        "lat": "40.6961795",
+        "date": "01/29/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.874595",
+        "lat": "40.756636",
+        "date": "05/03/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9154278",
+        "lat": "40.7745585",
+        "date": "05/19/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9813824",
+        "lat": "40.6952326",
+        "date": "08/17/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.942196",
+        "lat": "40.800481",
+        "date": "01/25/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.96198753355",
+        "lat": "40.65110645",
+        "date": "04/17/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0348057518795",
+        "lat": "40.63911965",
+        "date": "02/08/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0012314782609",
+        "lat": "40.608899826087",
+        "date": "01/08/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8963178",
+        "lat": "40.8496575",
+        "date": "09/14/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9300021344546",
+        "lat": "40.66541765",
+        "date": "02/27/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9495418",
+        "lat": "40.8116281",
+        "date": "11/29/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "06/08/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8667628",
+        "lat": "40.8562305",
+        "date": "01/06/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8903594",
+        "lat": "40.8688435",
+        "date": "01/08/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9040232192567",
+        "lat": "40.86140185",
+        "date": "07/25/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9406246321915",
+        "lat": "40.7996327",
+        "date": "02/05/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.908019007307",
+        "lat": "40.85051855",
+        "date": "08/29/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9046738678921",
+        "lat": "40.8479349",
+        "date": "02/15/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8305568016988",
+        "lat": "40.76253625",
+        "date": "12/15/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8883066099372",
+        "lat": "40.84575835",
+        "date": "01/04/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.876553",
+        "lat": "40.8261",
+        "date": "09/26/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.920971",
+        "lat": "40.815521",
+        "date": "07/25/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8977102330875",
+        "lat": "40.8159014",
+        "date": "06/08/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.00326645134",
+        "lat": "40.75246805",
+        "date": "04/10/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "11/15/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9557644",
+        "lat": "40.7771323",
+        "date": "08/03/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-74.0310468503472",
+        "lat": "40.6324443",
+        "date": "02/01/2019",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.084208875797",
+        "lat": "40.62031425",
+        "date": "03/08/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-77.411088",
+        "lat": "37.26813",
+        "date": "12/21/2018",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.9395901046877",
+        "lat": "40.8116194",
+        "date": "10/10/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.0064175",
+        "lat": "40.7256299",
+        "date": "07/25/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8058294",
+        "lat": "40.7023191",
+        "date": "02/22/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.895384",
+        "lat": "40.825962",
+        "date": "04/03/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8703573469388",
+        "lat": "40.8670202857143",
+        "date": "08/22/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.824211",
+        "lat": "40.7604947",
+        "date": "05/03/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8023121996425",
+        "lat": "40.8093269849609",
+        "date": "03/27/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8929593",
+        "lat": "40.746686",
+        "date": "03/07/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9039501",
+        "lat": "40.8283771",
+        "date": "08/16/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9322680667395",
+        "lat": "40.6713081",
+        "date": "10/26/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9057595",
+        "lat": "40.8504103",
+        "date": "08/14/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.959308261017",
+        "lat": "40.64301665",
+        "date": "02/11/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9523404",
+        "lat": "40.6516637",
+        "date": "03/15/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8362906486899",
+        "lat": "40.5795879",
+        "date": "08/02/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-74.1711714545455",
+        "lat": "40.6401962272727",
+        "date": "08/07/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9199884764036",
+        "lat": "40.6668672",
+        "date": "09/19/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9133422",
+        "lat": "40.7092862",
+        "date": "08/27/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0057621207514",
+        "lat": "40.6241875",
+        "date": "09/23/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9462540021809",
+        "lat": "40.6431397",
+        "date": "01/17/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9627804081633",
+        "lat": "40.7999908367347",
+        "date": "07/02/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9083476295709",
+        "lat": "40.6764487",
+        "date": "02/02/2018",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "08/16/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.7483689",
+        "lat": "40.5964256",
+        "date": "02/27/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.91074035",
+        "lat": "40.84232075",
+        "date": "07/13/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9433077",
+        "lat": "40.6934441",
+        "date": "05/28/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.910325",
+        "lat": "40.8332413",
+        "date": "03/29/2018",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "10/31/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9040090398558",
+        "lat": "40.88677345",
+        "date": "01/13/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "01/24/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8610504",
+        "lat": "40.8926328",
+        "date": "07/25/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9242835031847",
+        "lat": "40.836202522293",
+        "date": "09/13/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7957201243243",
+        "lat": "40.682674",
+        "date": "08/02/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9035598",
+        "lat": "40.8231196",
+        "date": "07/29/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9549105983516",
+        "lat": "40.64007835",
+        "date": "06/16/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.958603961246",
+        "lat": "40.6442778",
+        "date": "03/24/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.853214734398",
+        "lat": "40.83216505",
+        "date": "06/29/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9287045364675",
+        "lat": "40.85873795",
+        "date": "10/17/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9065147",
+        "lat": "40.864378",
+        "date": "10/02/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9738832376762",
+        "lat": "40.7259416",
+        "date": "02/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9123082541458",
+        "lat": "40.6578519",
+        "date": "08/02/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9631464",
+        "lat": "40.7961155",
+        "date": "05/11/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9516308447081",
+        "lat": "40.65755835",
+        "date": "06/14/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.7554523272762",
+        "lat": "40.6023577",
+        "date": "12/12/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9376355",
+        "lat": "40.6948972",
+        "date": "12/11/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8912250708842",
+        "lat": "40.8313636794324",
+        "date": "03/12/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7643039626513",
+        "lat": "40.70045455",
+        "date": "02/16/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9328364",
+        "lat": "40.6957729",
+        "date": "12/01/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9872295263158",
+        "lat": "40.7220595263158",
+        "date": "08/31/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9990826",
+        "lat": "40.76296",
+        "date": "05/23/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9566542",
+        "lat": "40.7472011",
+        "date": "10/16/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.96069645",
+        "lat": "40.67377605",
+        "date": "05/23/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8272406488909",
+        "lat": "40.71110275",
+        "date": "09/12/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.899647468169",
+        "lat": "40.8214253",
+        "date": "01/10/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "09/27/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9144076853821",
+        "lat": "40.6793198",
+        "date": "04/20/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8616930254283",
+        "lat": "40.8398686",
+        "date": "06/21/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9305752",
+        "lat": "40.7664367",
+        "date": "06/29/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9923279183673",
+        "lat": "40.7372865714286",
+        "date": "08/07/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.942611",
+        "lat": "40.66061",
+        "date": "07/24/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9175154735211",
+        "lat": "40.84857445",
+        "date": "02/21/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9527061490026",
+        "lat": "40.6413199",
+        "date": "06/05/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.861077",
+        "lat": "40.760326",
+        "date": "11/26/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8860112",
+        "lat": "40.7479099",
+        "date": "02/13/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7985104387566",
+        "lat": "40.6683017",
+        "date": "04/08/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9172173",
+        "lat": "40.69531125",
+        "date": "04/30/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.969804",
+        "lat": "40.648432",
+        "date": "04/16/2019",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.9207229",
+        "lat": "40.667283",
+        "date": "04/29/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "01/18/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7493984",
+        "lat": "40.604697",
+        "date": "03/15/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8092801",
+        "lat": "40.6923393",
+        "date": "03/31/2017",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9226363707482",
+        "lat": "40.6945875",
+        "date": "02/11/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9413049",
+        "lat": "40.8385018",
+        "date": "10/30/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8763950564298",
+        "lat": "40.83013855",
+        "date": "06/18/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.7750937",
+        "lat": "40.6761527",
+        "date": "04/25/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9763625",
+        "lat": "40.7864155",
+        "date": "01/23/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.901006122979",
+        "lat": "40.86392725",
+        "date": "07/11/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9267253729455",
+        "lat": "40.6872533",
+        "date": "02/08/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8225031",
+        "lat": "40.7503781",
+        "date": "06/11/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8910630743189",
+        "lat": "40.8497717",
+        "date": "09/13/2018",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.923176",
+        "lat": "40.63527",
+        "date": "05/25/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9014292777702",
+        "lat": "40.8674204",
+        "date": "05/21/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9753685",
+        "lat": "40.7443966",
+        "date": "05/01/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9834056326531",
+        "lat": "40.7290327755102",
+        "date": "04/28/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8400018431248",
+        "lat": "40.85636665",
+        "date": "04/17/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.943622",
+        "lat": "40.651223",
+        "date": "04/14/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.955179",
+        "lat": "40.800277",
+        "date": "12/14/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8928519119885",
+        "lat": "40.87105795",
+        "date": "05/08/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8016554",
+        "lat": "40.7078737",
+        "date": "08/10/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9091591082675",
+        "lat": "40.6627295",
+        "date": "01/09/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.8745598571429",
+        "lat": "40.6754511428571",
+        "date": "11/21/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-74.1117351639529",
+        "lat": "40.56352965",
+        "date": "01/20/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9187260408163",
+        "lat": "40.6358033265306",
+        "date": "08/10/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9191053",
+        "lat": "40.8231886",
+        "date": "10/10/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9914225709127",
+        "lat": "40.7657029",
+        "date": "12/12/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8742248706691",
+        "lat": "40.67571475",
+        "date": "08/21/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.858502",
+        "lat": "40.893592",
+        "date": "05/29/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "09/14/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.913624",
+        "lat": "40.804507",
+        "date": "04/06/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.8832260531401",
+        "lat": "40.6756131",
+        "date": "07/12/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.913897048671",
+        "lat": "40.8491744",
+        "date": "03/01/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8169797",
+        "lat": "40.7248912",
+        "date": "06/15/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.940551",
+        "lat": "40.5962437",
+        "date": "09/25/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8305568016988",
+        "lat": "40.76253625",
+        "date": "02/01/2018",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "10/03/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8785587927632",
+        "lat": "40.6735805",
+        "date": "04/01/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8985799381524",
+        "lat": "40.8663887",
+        "date": "01/06/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9296558",
+        "lat": "40.867305",
+        "date": "08/23/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.957861",
+        "lat": "40.815833",
+        "date": "08/23/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.936443",
+        "lat": "40.692477",
+        "date": "04/24/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "01/24/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9907278",
+        "lat": "40.7559486",
+        "date": "12/13/2018",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.8000861639752",
+        "lat": "40.6855637",
+        "date": "09/11/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9194586579784",
+        "lat": "40.85055715",
+        "date": "04/29/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7431774",
+        "lat": "40.6920145",
+        "date": "08/27/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.97976",
+        "lat": "40.732622",
+        "date": "07/20/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9264499108239",
+        "lat": "40.70264835",
+        "date": "05/14/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8281904489796",
+        "lat": "40.8530435306122",
+        "date": "09/25/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "06/15/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9307580784571",
+        "lat": "40.7978933",
+        "date": "03/03/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8839102441236",
+        "lat": "40.8548503",
+        "date": "11/03/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9616635504646",
+        "lat": "40.6455999",
+        "date": "06/13/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "04/15/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9061545",
+        "lat": "40.6702401",
+        "date": "03/12/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9117491946039",
+        "lat": "40.8359101",
+        "date": "03/27/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9749246",
+        "lat": "40.7224338",
+        "date": "07/02/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9178351949799",
+        "lat": "40.74595985",
+        "date": "04/25/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "04/06/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9198194063449",
+        "lat": "40.66618825",
+        "date": "06/11/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9136429539763",
+        "lat": "40.83535535",
+        "date": "06/26/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8221345511692",
+        "lat": "40.714397",
+        "date": "12/03/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "08/27/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9916585",
+        "lat": "40.7155666",
+        "date": "05/22/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9336514468213",
+        "lat": "40.59401945",
+        "date": "03/26/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8985799381524",
+        "lat": "40.8663887",
+        "date": "09/05/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9608271753277",
+        "lat": "40.65331935",
+        "date": "01/04/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.901885",
+        "lat": "40.872554",
+        "date": "01/08/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.891982313493",
+        "lat": "40.86996655",
+        "date": "12/18/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9023342146248",
+        "lat": "40.82273675",
+        "date": "03/01/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.986863",
+        "lat": "40.774809",
+        "date": "03/01/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.781496",
+        "lat": "40.741796",
+        "date": "12/12/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9243014376194",
+        "lat": "40.8119852",
+        "date": "03/31/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "08/29/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8577913998034",
+        "lat": "40.8146215",
+        "date": "10/15/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9089644408052",
+        "lat": "40.83481175",
+        "date": "08/31/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9021672",
+        "lat": "40.8245302",
+        "date": "05/15/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8037405343273",
+        "lat": "40.7565502",
+        "date": "12/07/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8831131470461",
+        "lat": "40.8540231",
+        "date": "09/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8562694685689",
+        "lat": "40.7549629",
+        "date": "08/22/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.984669",
+        "lat": "40.638937",
+        "date": "04/05/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-74.00881425",
+        "lat": "40.64582655",
+        "date": "10/19/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9522935",
+        "lat": "40.6508",
+        "date": "03/29/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8914596708333",
+        "lat": "40.83162715",
+        "date": "05/23/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.953329",
+        "lat": "40.778375",
+        "date": "09/15/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "03/08/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8626489431467",
+        "lat": "40.6818453",
+        "date": "11/15/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9448538235217",
+        "lat": "40.8221104",
+        "date": "10/30/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9756929",
+        "lat": "40.7233707",
+        "date": "07/07/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9735325575526",
+        "lat": "40.6464821",
+        "date": "02/16/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8658880573308",
+        "lat": "40.87243285",
+        "date": "11/09/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9195998",
+        "lat": "40.8303371",
+        "date": "10/23/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9206277478152",
+        "lat": "40.6711927",
+        "date": "11/26/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9253106",
+        "lat": "40.6728311",
+        "date": "06/28/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8322016518067",
+        "lat": "40.6553943",
+        "date": "08/09/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9373295135135",
+        "lat": "40.8067523513513",
+        "date": "05/24/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.879161975875",
+        "lat": "40.66737165",
+        "date": "09/28/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9226960227726",
+        "lat": "40.66052635",
+        "date": "04/05/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.870085468907",
+        "lat": "40.8721558",
+        "date": "03/23/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9289511",
+        "lat": "40.6682961",
+        "date": "06/11/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.931678",
+        "lat": "40.832446",
+        "date": "05/18/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8505572550753",
+        "lat": "40.8325476",
+        "date": "05/30/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.950124619164",
+        "lat": "40.82443775",
+        "date": "08/08/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "03/13/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8103326",
+        "lat": "40.6929446",
+        "date": "11/05/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8999771052632",
+        "lat": "40.854686",
+        "date": "04/05/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.783775801305",
+        "lat": "40.77692815",
+        "date": "02/17/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8921210086033",
+        "lat": "40.86614605",
+        "date": "08/06/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9585683939905",
+        "lat": "40.7167765",
+        "date": "09/04/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9619627942849",
+        "lat": "40.64518495",
+        "date": "03/15/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.892288",
+        "lat": "40.864946",
+        "date": "03/15/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.857078024006",
+        "lat": "40.74338445",
+        "date": "08/20/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.743911",
+        "lat": "40.714533",
+        "date": "02/08/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7982445150478",
+        "lat": "40.78342495",
+        "date": "10/25/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9211173151298",
+        "lat": "40.70208515",
+        "date": "02/23/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "04/24/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8634053076923",
+        "lat": "40.6713774615385",
+        "date": "09/07/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9372379459862",
+        "lat": "40.8276528",
+        "date": "01/12/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9064007",
+        "lat": "40.8477481",
+        "date": "11/07/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.930402",
+        "lat": "40.831833",
+        "date": "07/02/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.951187",
+        "lat": "40.665617",
+        "date": "04/20/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.992168",
+        "lat": "40.761672",
+        "date": "07/24/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9157139",
+        "lat": "40.833603",
+        "date": "01/31/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9388498979592",
+        "lat": "40.8181274489796",
+        "date": "03/14/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8645254596842",
+        "lat": "40.88718355",
+        "date": "08/28/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9144964474418",
+        "lat": "40.8145268",
+        "date": "02/22/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/29/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9594550712752",
+        "lat": "40.68132975",
+        "date": "01/10/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "07/02/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9323714736842",
+        "lat": "40.8569886315789",
+        "date": "02/13/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.967337939301",
+        "lat": "40.6332582",
+        "date": "04/09/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "02/05/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8883707872889",
+        "lat": "40.81850445",
+        "date": "11/14/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.0828836421386",
+        "lat": "40.62191635",
+        "date": "11/09/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8982685",
+        "lat": "40.8545546",
+        "date": "09/18/2018",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.8903196",
+        "lat": "40.6365303",
+        "date": "09/26/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8900858",
+        "lat": "40.8633166",
+        "date": "01/31/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-74.010111",
+        "lat": "40.710473",
+        "date": "06/01/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-73.924672",
+        "lat": "40.741745",
+        "date": "03/30/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8537682857143",
+        "lat": "40.83628",
+        "date": "08/17/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9567304618759",
+        "lat": "40.63959325",
+        "date": "01/06/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8551433311874",
+        "lat": "40.8892324",
+        "date": "06/05/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8296718447987",
+        "lat": "40.6901395",
+        "date": "05/29/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9430316",
+        "lat": "40.8356236",
+        "date": "01/09/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.855817",
+        "lat": "40.72309675",
+        "date": "03/28/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.830955",
+        "lat": "40.752739",
+        "date": "09/11/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9611457421243",
+        "lat": "40.6771815",
+        "date": "02/01/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9980599473187",
+        "lat": "40.7372282",
+        "date": "05/29/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/06/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8613270370874",
+        "lat": "40.8886942",
+        "date": "08/09/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8890042314957",
+        "lat": "40.8687565",
+        "date": "02/09/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8957471",
+        "lat": "40.821228",
+        "date": "09/09/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8679117",
+        "lat": "40.8753974",
+        "date": "02/11/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8338646442524",
+        "lat": "40.7056319",
+        "date": "08/09/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "11/08/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "12/07/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9265419",
+        "lat": "40.8086017",
+        "date": "06/25/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8821135510204",
+        "lat": "40.8253085306122",
+        "date": "01/08/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.916404",
+        "lat": "40.66227885",
+        "date": "06/22/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "04/09/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9898033061225",
+        "lat": "40.7319177142857",
+        "date": "01/12/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8802664",
+        "lat": "40.8826282",
+        "date": "11/16/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8747912439722",
+        "lat": "40.879602",
+        "date": "02/13/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.910309",
+        "lat": "40.823295",
+        "date": "03/27/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9128557",
+        "lat": "40.8396122",
+        "date": "05/13/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.99066135",
+        "lat": "40.75405575",
+        "date": "06/05/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9893136153846",
+        "lat": "40.5731535",
+        "date": "07/11/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.99757875",
+        "lat": "40.75449955",
+        "date": "01/10/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9176135306508",
+        "lat": "40.8714026",
+        "date": "04/10/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8464734380973",
+        "lat": "40.7257844",
+        "date": "01/30/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "11/15/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9508439591837",
+        "lat": "40.6329579591837",
+        "date": "08/01/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.92712935",
+        "lat": "40.6714763",
+        "date": "01/25/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7626123",
+        "lat": "40.699236",
+        "date": "11/21/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9057580514518",
+        "lat": "40.90799495",
+        "date": "09/05/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "02/22/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9619394256465",
+        "lat": "40.64438725",
+        "date": "06/27/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "06/22/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9327726",
+        "lat": "40.6538215",
+        "date": "10/26/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9254083192529",
+        "lat": "40.68481485",
+        "date": "08/15/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8995069229013",
+        "lat": "40.8716114",
+        "date": "09/13/2018",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.771619",
+        "lat": "40.668921",
+        "date": "10/11/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0138032365795",
+        "lat": "40.62485515",
+        "date": "01/06/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8656892608696",
+        "lat": "40.6701020869565",
+        "date": "05/21/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.730649",
+        "lat": "40.7220327",
+        "date": "08/28/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9048757",
+        "lat": "40.8572328",
+        "date": "02/28/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9383494840436",
+        "lat": "40.8257552",
+        "date": "06/13/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.909695",
+        "lat": "40.8184346",
+        "date": "07/31/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8778366887879",
+        "lat": "40.8734112",
+        "date": "06/20/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9583104980208",
+        "lat": "40.65549495",
+        "date": "07/10/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9910759891401",
+        "lat": "40.76374855",
+        "date": "03/29/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.920606455465",
+        "lat": "40.86727035",
+        "date": "12/04/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8581898568379",
+        "lat": "40.81212205",
+        "date": "03/18/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8979344",
+        "lat": "40.8569715",
+        "date": "09/12/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8879997",
+        "lat": "40.871592",
+        "date": "04/18/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8107899737829",
+        "lat": "40.7231602",
+        "date": "09/15/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9116013842551",
+        "lat": "40.6811207",
+        "date": "06/11/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9091030047567",
+        "lat": "40.8475162",
+        "date": "05/30/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.944077",
+        "lat": "40.683454",
+        "date": "04/19/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-73.953671",
+        "lat": "40.804345",
+        "date": "04/17/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9243714",
+        "lat": "40.8228148",
+        "date": "05/07/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.86827545",
+        "lat": "40.85994795",
+        "date": "11/16/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.910342",
+        "lat": "40.859424",
+        "date": "03/05/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7616642524175",
+        "lat": "40.68292155",
+        "date": "03/16/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9392748",
+        "lat": "40.8515807",
+        "date": "03/08/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.784726",
+        "lat": "40.691162",
+        "date": "04/26/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8917695",
+        "lat": "40.66469195",
+        "date": "10/09/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8973911323657",
+        "lat": "40.81568825",
+        "date": "10/03/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.922781909669",
+        "lat": "40.85228145",
+        "date": "05/01/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8785954803557",
+        "lat": "40.82497145",
+        "date": "03/23/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "06/05/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9378557878788",
+        "lat": "40.6595585555556",
+        "date": "12/03/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8371371374222",
+        "lat": "40.87483695",
+        "date": "05/29/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9039609227872",
+        "lat": "40.853984",
+        "date": "12/19/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8823114715486",
+        "lat": "40.7507567",
+        "date": "02/13/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9232906728219",
+        "lat": "40.85156555",
+        "date": "03/07/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8959376842105",
+        "lat": "40.8177424736842",
+        "date": "06/26/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9431771666667",
+        "lat": "40.6604925",
+        "date": "01/24/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8704379",
+        "lat": "40.7623465",
+        "date": "02/07/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9112237",
+        "lat": "40.8454154",
+        "date": "08/06/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "08/28/2017",
+        "first_name": "Robert",
+        "last_name": "Solimine"
+    },
+    {
+        "lon": "-73.980946546869",
+        "lat": "40.7000846",
+        "date": "01/03/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7420504359749",
+        "lat": "40.71707165",
+        "date": "04/11/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.884373143867",
+        "lat": "40.85292805",
+        "date": "07/01/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8319341644402",
+        "lat": "40.6900139",
+        "date": "07/24/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8225031",
+        "lat": "40.7503781",
+        "date": "04/25/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "07/20/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.97976",
+        "lat": "40.732622",
+        "date": "02/14/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9259430293368",
+        "lat": "40.8265998",
+        "date": "05/22/2017",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "04/29/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9030281",
+        "lat": "40.8803129",
+        "date": "05/05/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.7304437",
+        "lat": "40.7204253",
+        "date": "07/21/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0247637307743",
+        "lat": "40.64031415",
+        "date": "07/19/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9396696",
+        "lat": "40.6640401",
+        "date": "08/17/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9936332",
+        "lat": "40.7265472",
+        "date": "09/14/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9129550309518",
+        "lat": "40.83233125",
+        "date": "01/04/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8813871578947",
+        "lat": "40.8755784736842",
+        "date": "01/31/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0228494675549",
+        "lat": "40.6281439",
+        "date": "07/18/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8681089",
+        "lat": "40.8318154",
+        "date": "03/05/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8668056203692",
+        "lat": "40.85903535",
+        "date": "07/27/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9591681538462",
+        "lat": "40.7285992307692",
+        "date": "08/23/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.966258",
+        "lat": "40.710417",
+        "date": "08/02/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "03/26/2018",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.9306227777778",
+        "lat": "40.6902492222222",
+        "date": "03/17/2017",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.9193818",
+        "lat": "40.8199828",
+        "date": "12/05/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8957878340906",
+        "lat": "40.85839145",
+        "date": "08/16/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8865940352658",
+        "lat": "40.81606325",
+        "date": "08/22/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "01/18/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.850797",
+        "lat": "40.850756",
+        "date": "05/21/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.749811",
+        "lat": "40.70617",
+        "date": "06/05/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9526867470492",
+        "lat": "40.6733612",
+        "date": "09/18/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9382559251482",
+        "lat": "40.7991756",
+        "date": "09/12/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.7690543621833",
+        "lat": "40.7591642",
+        "date": "08/29/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.883522",
+        "lat": "40.668355",
+        "date": "08/14/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8579556313856",
+        "lat": "40.84115675",
+        "date": "06/04/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.76499715",
+        "lat": "40.6747062",
+        "date": "05/06/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9337578477752",
+        "lat": "40.68085145",
+        "date": "05/03/2018",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.922028",
+        "lat": "40.671528",
+        "date": "06/25/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "08/09/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9247607634903",
+        "lat": "40.86443645",
+        "date": "08/15/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8731978",
+        "lat": "40.8793415",
+        "date": "07/22/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9378557878788",
+        "lat": "40.6595585555556",
+        "date": "11/15/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.940305",
+        "lat": "40.818941",
+        "date": "04/09/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.762414",
+        "lat": "40.708951",
+        "date": "07/25/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8900863385959",
+        "lat": "40.63808065",
+        "date": "12/04/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9243315728606",
+        "lat": "40.86776515",
+        "date": "04/25/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8972617626406",
+        "lat": "40.857911",
+        "date": "02/08/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9502212",
+        "lat": "40.5972146",
+        "date": "07/17/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9968293",
+        "lat": "40.5733814",
+        "date": "03/21/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9031055724053",
+        "lat": "40.85668665",
+        "date": "05/15/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.910798",
+        "lat": "40.840395",
+        "date": "04/03/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.820251",
+        "lat": "40.68915",
+        "date": "01/25/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "11/20/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9269626",
+        "lat": "40.6689572",
+        "date": "02/07/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8880978",
+        "lat": "40.8128631",
+        "date": "01/25/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8995557575868",
+        "lat": "40.83241585",
+        "date": "03/29/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "18.503041",
+        "lat": "-34.039713",
+        "date": "03/11/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9510999",
+        "lat": "40.6630024",
+        "date": "08/25/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9098750596208",
+        "lat": "40.8530921",
+        "date": "03/29/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9217280115393",
+        "lat": "40.83987085",
+        "date": "08/21/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9147171707791",
+        "lat": "40.65716465",
+        "date": "08/12/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.985219",
+        "lat": "40.769228",
+        "date": "02/15/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.865949",
+        "lat": "40.852156",
+        "date": "01/09/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9425114",
+        "lat": "40.8235514",
+        "date": "02/24/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "04/24/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8820011221944",
+        "lat": "40.8779677",
+        "date": "01/28/2019",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-74.1160912083333",
+        "lat": "40.563649625",
+        "date": "11/13/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8174222",
+        "lat": "40.8148112",
+        "date": "03/13/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8011754656882",
+        "lat": "40.7625058",
+        "date": "07/17/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9777402",
+        "lat": "40.7794136",
+        "date": "10/16/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "01/09/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "02/24/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9022315200791",
+        "lat": "40.8511234",
+        "date": "04/03/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.947868",
+        "lat": "40.6666925",
+        "date": "08/23/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "04/04/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9077216",
+        "lat": "40.8158476",
+        "date": "02/20/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.898214",
+        "lat": "40.863021",
+        "date": "04/11/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.919256930045",
+        "lat": "40.8369867813633",
+        "date": "09/18/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9095903023256",
+        "lat": "40.8196318837209",
+        "date": "08/15/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.956276758634",
+        "lat": "40.6578949",
+        "date": "09/07/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "5.035708",
+        "lat": "43.837249",
+        "date": "03/07/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9370658",
+        "lat": "40.8075561",
+        "date": "08/13/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "01/30/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.931871268524",
+        "lat": "40.76421825",
+        "date": "04/26/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.7706463354985",
+        "lat": "40.66427455",
+        "date": "10/02/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.935259",
+        "lat": "40.659138",
+        "date": "07/25/2017",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "03/06/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9427876845392",
+        "lat": "40.81556845",
+        "date": "05/30/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9133962148237",
+        "lat": "40.83316355",
+        "date": "06/13/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8561611083517",
+        "lat": "40.88621485",
+        "date": "02/22/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9247436583394",
+        "lat": "40.5877514",
+        "date": "02/07/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8591638",
+        "lat": "40.8747766",
+        "date": "03/19/2018",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.729705",
+        "lat": "40.65359",
+        "date": "04/25/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "10/15/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.966387",
+        "lat": "40.708251",
+        "date": "12/08/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.914858382666",
+        "lat": "40.83261",
+        "date": "10/10/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9010253990484",
+        "lat": "40.8316764",
+        "date": "07/19/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.7940518",
+        "lat": "40.7090837",
+        "date": "10/16/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "07/30/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9282987",
+        "lat": "40.8666096",
+        "date": "07/10/2018",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-73.7801976547233",
+        "lat": "40.68957525",
+        "date": "06/10/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8820118981976",
+        "lat": "40.88118005",
+        "date": "05/17/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9707821035248",
+        "lat": "40.68113825",
+        "date": "01/30/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "02/06/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "01/26/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.8320035370344",
+        "lat": "40.75438715",
+        "date": "03/11/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0876187147614",
+        "lat": "40.63761865",
+        "date": "06/18/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9480596",
+        "lat": "40.6677592",
+        "date": "03/27/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8859589",
+        "lat": "40.7491048",
+        "date": "05/02/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.858561",
+        "lat": "40.890273",
+        "date": "01/03/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9210116",
+        "lat": "40.8292398",
+        "date": "12/07/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9504535",
+        "lat": "40.7504906",
+        "date": "09/27/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8607218664723",
+        "lat": "40.8822593",
+        "date": "08/13/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "04/17/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9078796291433",
+        "lat": "40.85535365",
+        "date": "02/21/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8567251844065",
+        "lat": "40.8982261041529",
+        "date": "01/05/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8818616",
+        "lat": "40.8808533",
+        "date": "03/05/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "09/23/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8995211836735",
+        "lat": "40.8403159387755",
+        "date": "09/06/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.749738",
+        "lat": "40.745631",
+        "date": "07/26/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9990826",
+        "lat": "40.76296",
+        "date": "11/30/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.8544927815865",
+        "lat": "40.7527107",
+        "date": "12/19/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.93672515",
+        "lat": "40.6887403",
+        "date": "05/25/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8620031",
+        "lat": "40.8242407",
+        "date": "12/18/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.922327",
+        "lat": "40.656874",
+        "date": "01/04/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9302607121212",
+        "lat": "40.848807530303",
+        "date": "08/24/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8603944261095",
+        "lat": "40.70334515",
+        "date": "04/25/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9583936075909",
+        "lat": "40.76770495",
+        "date": "01/04/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "07/03/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "03/30/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9072536598106",
+        "lat": "40.66523495",
+        "date": "05/13/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.7457498",
+        "lat": "40.6023362",
+        "date": "12/19/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9101415350047",
+        "lat": "40.61623725",
+        "date": "02/07/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.93089895",
+        "lat": "40.66497035",
+        "date": "01/02/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9464082",
+        "lat": "40.6252831",
+        "date": "06/17/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.816683560321",
+        "lat": "40.71245615",
+        "date": "03/12/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9078961172874",
+        "lat": "40.76677985",
+        "date": "05/16/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.873006365625",
+        "lat": "40.67583475",
+        "date": "10/19/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9471293",
+        "lat": "40.6553003",
+        "date": "07/14/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.982581",
+        "lat": "40.718592",
+        "date": "06/25/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8747894",
+        "lat": "40.6567295",
+        "date": "10/12/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8769988911863",
+        "lat": "40.75319115",
+        "date": "08/29/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9393306",
+        "lat": "40.8502257",
+        "date": "02/05/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "02/05/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.80266",
+        "lat": "40.690447",
+        "date": "07/16/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9425563574437",
+        "lat": "40.83449765",
+        "date": "02/03/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9399397585763",
+        "lat": "40.6872493",
+        "date": "06/13/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9905368601673",
+        "lat": "40.6029938",
+        "date": "11/01/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9038239",
+        "lat": "40.8569049",
+        "date": "07/16/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9021239",
+        "lat": "40.8579837",
+        "date": "11/14/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9873599871501",
+        "lat": "40.71899445",
+        "date": "08/09/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "10/05/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9099216857143",
+        "lat": "40.8191299142857",
+        "date": "09/03/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.905651737975",
+        "lat": "40.8477422",
+        "date": "04/01/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.75602445",
+        "lat": "40.6617799",
+        "date": "08/24/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8823941",
+        "lat": "40.8452178",
+        "date": "04/01/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "10/10/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9565752234469",
+        "lat": "40.7691872",
+        "date": "01/05/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.00326645134",
+        "lat": "40.75246805",
+        "date": "04/23/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8721267838068",
+        "lat": "40.7520957",
+        "date": "12/13/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.853354",
+        "lat": "40.739541",
+        "date": "01/17/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.84540145",
+        "lat": "40.8364099",
+        "date": "02/23/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8917787959184",
+        "lat": "40.8443137142857",
+        "date": "10/25/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.886107035752",
+        "lat": "40.81527965",
+        "date": "01/03/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8698486820699",
+        "lat": "40.841542",
+        "date": "09/26/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.879069",
+        "lat": "40.8708329",
+        "date": "05/26/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.757198",
+        "lat": "40.671316",
+        "date": "03/29/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9581926751536",
+        "lat": "40.6568125",
+        "date": "06/20/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9102830253568",
+        "lat": "40.83503925",
+        "date": "08/04/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "10/03/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8684128439571",
+        "lat": "40.74961095",
+        "date": "10/19/2017",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.8864775181598",
+        "lat": "40.81355725",
+        "date": "08/10/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8801814968563",
+        "lat": "40.68484735",
+        "date": "10/17/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9587608088372",
+        "lat": "40.60988285",
+        "date": "01/19/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.903141",
+        "lat": "40.8366028",
+        "date": "10/19/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9728929073444",
+        "lat": "40.68140175",
+        "date": "10/06/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9476894822315",
+        "lat": "40.7816975",
+        "date": "10/26/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8973494444444",
+        "lat": "40.8217694444444",
+        "date": "05/24/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9304586987741",
+        "lat": "40.76248775",
+        "date": "11/20/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7808772412983",
+        "lat": "40.68628135",
+        "date": "04/13/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "03/06/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9319108774734",
+        "lat": "40.85069865",
+        "date": "12/03/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9927221",
+        "lat": "40.7592431",
+        "date": "03/02/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8773241985611",
+        "lat": "40.82753545",
+        "date": "09/18/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7819941023865",
+        "lat": "40.67962105",
+        "date": "10/16/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9235517863919",
+        "lat": "40.84845605",
+        "date": "05/24/2018",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.131851",
+        "lat": "40.638354",
+        "date": "05/09/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9420148",
+        "lat": "40.8478515",
+        "date": "06/08/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8514914959669",
+        "lat": "40.68509535",
+        "date": "09/01/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9085603",
+        "lat": "40.6189361",
+        "date": "02/20/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.960137",
+        "lat": "40.667411",
+        "date": "07/01/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9780319978936",
+        "lat": "40.7751367",
+        "date": "12/10/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9016392783797",
+        "lat": "40.8570202",
+        "date": "08/28/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9753247980905",
+        "lat": "40.7198736",
+        "date": "02/08/2017",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-73.9213527",
+        "lat": "40.8286317",
+        "date": "02/02/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9499861177256",
+        "lat": "40.67822645",
+        "date": "12/19/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8569247",
+        "lat": "40.8343232",
+        "date": "10/09/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.799482668329",
+        "lat": "40.6805433",
+        "date": "08/28/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9967807777778",
+        "lat": "40.7561696111111",
+        "date": "04/21/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "01/23/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8316342550282",
+        "lat": "40.8779517",
+        "date": "04/27/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.8857095833333",
+        "lat": "40.6638676666667",
+        "date": "06/27/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.91687",
+        "lat": "40.842513",
+        "date": "03/28/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.7878013423164",
+        "lat": "40.5898957",
+        "date": "05/09/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.929397",
+        "lat": "40.759566",
+        "date": "03/27/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-74.0017125",
+        "lat": "40.731644",
+        "date": "05/11/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8973027",
+        "lat": "40.8262081",
+        "date": "09/01/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9005764647979",
+        "lat": "40.86075015",
+        "date": "04/11/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9418843173485",
+        "lat": "40.84372605",
+        "date": "11/15/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8980369",
+        "lat": "40.8589178",
+        "date": "09/27/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.98824095",
+        "lat": "40.6094585",
+        "date": "01/11/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9624471957798",
+        "lat": "40.71312855",
+        "date": "01/30/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8814167148014",
+        "lat": "40.6510178352328",
+        "date": "06/26/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9972763",
+        "lat": "40.7613755",
+        "date": "01/04/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9522949703794",
+        "lat": "40.64698745",
+        "date": "12/04/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8658759290513",
+        "lat": "40.8839883",
+        "date": "08/31/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "03/22/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9278251818182",
+        "lat": "40.6753532727273",
+        "date": "04/19/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9322244301423",
+        "lat": "40.653239",
+        "date": "05/07/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8811238",
+        "lat": "40.8708489",
+        "date": "09/07/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.953006089436",
+        "lat": "40.64045465",
+        "date": "05/01/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8997204",
+        "lat": "40.8233258",
+        "date": "07/07/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.8317891",
+        "lat": "40.6565942",
+        "date": "09/06/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.892808",
+        "lat": "40.745121",
+        "date": "03/09/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9263474942173",
+        "lat": "40.7039474",
+        "date": "05/05/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.7887168",
+        "lat": "40.5911203714286",
+        "date": "01/19/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9135159886489",
+        "lat": "40.68938925",
+        "date": "02/13/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9838272633348",
+        "lat": "40.7511865",
+        "date": "07/22/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.938468",
+        "lat": "40.688501",
+        "date": "04/18/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "01/30/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9844664285714",
+        "lat": "40.6917748571429",
+        "date": "07/07/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9381575265153",
+        "lat": "40.67721445",
+        "date": "08/13/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.878195",
+        "lat": "40.6838947",
+        "date": "02/17/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.903648",
+        "lat": "40.77173",
+        "date": "03/07/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.858637542054",
+        "lat": "40.73906525",
+        "date": "07/03/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8938436115562",
+        "lat": "40.66530525",
+        "date": "04/19/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.941424",
+        "lat": "40.6575784242424",
+        "date": "07/09/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9387968105864",
+        "lat": "40.8245724",
+        "date": "12/13/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8998814242786",
+        "lat": "40.86027305",
+        "date": "04/06/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8099066",
+        "lat": "40.7593975",
+        "date": "10/23/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9599192266437",
+        "lat": "40.57653255",
+        "date": "09/26/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8987147",
+        "lat": "40.85351635",
+        "date": "07/23/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9063508922633",
+        "lat": "40.85133775",
+        "date": "03/20/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8565270946852",
+        "lat": "40.8418546",
+        "date": "07/27/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-74.0288760966667",
+        "lat": "40.6369796",
+        "date": "05/25/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8883782475932",
+        "lat": "40.87057595",
+        "date": "02/23/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9131064911626",
+        "lat": "40.8072523",
+        "date": "09/25/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.953588425718",
+        "lat": "40.5864127",
+        "date": "07/14/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9096240707441",
+        "lat": "40.77398155",
+        "date": "04/06/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.801131",
+        "lat": "40.591481",
+        "date": "08/09/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8435975017535",
+        "lat": "40.7930442",
+        "date": "02/25/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.963004",
+        "lat": "40.683678",
+        "date": "01/25/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9044864",
+        "lat": "40.8630661",
+        "date": "08/28/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9399685434324",
+        "lat": "40.66776355",
+        "date": "08/22/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8809769004089",
+        "lat": "40.87874015",
+        "date": "03/20/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8776241",
+        "lat": "40.8738605",
+        "date": "05/30/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9462540021809",
+        "lat": "40.6431397",
+        "date": "03/08/2018",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.246495",
+        "lat": "40.510648",
+        "date": "10/24/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0325397354854",
+        "lat": "40.61329215",
+        "date": "11/13/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.760423903762",
+        "lat": "40.67339815",
+        "date": "01/07/2019",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.7862897425395",
+        "lat": "40.6906363",
+        "date": "09/27/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9296558",
+        "lat": "40.867305",
+        "date": "09/27/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.889171089262",
+        "lat": "40.84571055",
+        "date": "08/28/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "06/21/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7563942350119",
+        "lat": "40.6064291",
+        "date": "07/31/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-74.063336",
+        "lat": "40.612049",
+        "date": "06/19/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9471970446429",
+        "lat": "40.8229468",
+        "date": "03/20/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.86548525",
+        "lat": "40.8420221",
+        "date": "08/29/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "04/20/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9256859522433",
+        "lat": "40.65513475",
+        "date": "01/20/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9017793723588",
+        "lat": "40.87223655",
+        "date": "10/25/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.902711",
+        "lat": "40.8658363",
+        "date": "09/07/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8847922",
+        "lat": "40.8776664",
+        "date": "05/14/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8034448338851",
+        "lat": "40.7056141",
+        "date": "10/16/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9772886",
+        "lat": "40.730085",
+        "date": "03/16/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.90411875",
+        "lat": "40.832336",
+        "date": "06/27/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8723012959236",
+        "lat": "40.6760851",
+        "date": "07/23/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9973705945384",
+        "lat": "40.61121925",
+        "date": "04/12/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8845926640917",
+        "lat": "40.8463387",
+        "date": "01/04/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.950696010741",
+        "lat": "40.6406583",
+        "date": "04/09/2019",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9830675555556",
+        "lat": "40.6728998888889",
+        "date": "12/18/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "08/15/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.875748",
+        "lat": "40.670524",
+        "date": "02/06/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9605820030616",
+        "lat": "40.64971985",
+        "date": "08/28/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8945987579239",
+        "lat": "40.85420775",
+        "date": "06/14/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.867722",
+        "lat": "40.766148",
+        "date": "09/28/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9081279461977",
+        "lat": "40.835528",
+        "date": "08/07/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8828602466417",
+        "lat": "40.8821621",
+        "date": "08/08/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9052995113884",
+        "lat": "40.7245686",
+        "date": "02/07/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8467826529633",
+        "lat": "40.68250825",
+        "date": "03/07/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9918034541908",
+        "lat": "40.75837945",
+        "date": "12/11/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9979750769231",
+        "lat": "40.7574976923077",
+        "date": "01/26/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8826914515616",
+        "lat": "40.85427715",
+        "date": "03/07/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9470208768006",
+        "lat": "40.62573505",
+        "date": "05/24/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9903888867261",
+        "lat": "40.68310545",
+        "date": "10/24/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "10/31/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8803785390889",
+        "lat": "40.8244365",
+        "date": "04/16/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9427375",
+        "lat": "40.7959826",
+        "date": "06/27/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8609608163265",
+        "lat": "40.8246076530612",
+        "date": "05/28/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9376449821554",
+        "lat": "40.84042725",
+        "date": "03/19/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8545325782899",
+        "lat": "40.74665495",
+        "date": "01/12/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9165728",
+        "lat": "40.6266001",
+        "date": "03/08/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9751035337443",
+        "lat": "40.79316455",
+        "date": "01/19/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9233831657014",
+        "lat": "40.67221665",
+        "date": "08/14/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.886064",
+        "lat": "40.854669",
+        "date": "06/12/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9604075860839",
+        "lat": "40.65405305",
+        "date": "08/02/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "28.047229",
+        "lat": "-26.247827",
+        "date": "09/24/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.728706",
+        "lat": "40.661569",
+        "date": "04/20/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8540182",
+        "lat": "40.8868376",
+        "date": "05/16/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "04/08/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9891493786098",
+        "lat": "40.66782115",
+        "date": "06/13/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.784148",
+        "lat": "40.69554",
+        "date": "03/29/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8423162",
+        "lat": "40.7816866",
+        "date": "12/01/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.934866",
+        "lat": "40.6495899",
+        "date": "08/26/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7570280201554",
+        "lat": "40.60191435",
+        "date": "01/11/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.972812213281",
+        "lat": "40.7252852005342",
+        "date": "03/19/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8238587",
+        "lat": "40.7008452",
+        "date": "09/13/2018",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.771619",
+        "lat": "40.668921",
+        "date": "10/16/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.89486845",
+        "lat": "40.65952715",
+        "date": "04/29/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "06/27/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8631680154054",
+        "lat": "40.7364202",
+        "date": "11/29/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9040086",
+        "lat": "40.8324873",
+        "date": "05/09/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8820931228814",
+        "lat": "40.6711592",
+        "date": "02/23/2017",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9631448493623",
+        "lat": "40.6489642",
+        "date": "04/01/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-74.0349953421651",
+        "lat": "40.6201274",
+        "date": "05/06/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9702272829337",
+        "lat": "40.63290585",
+        "date": "10/30/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.970497",
+        "lat": "40.607653",
+        "date": "03/13/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "06/08/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.989613998063",
+        "lat": "40.73115395",
+        "date": "02/19/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8986235134018",
+        "lat": "40.82807295",
+        "date": "01/10/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9809265412856",
+        "lat": "40.7292139",
+        "date": "04/05/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "01/12/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.924744",
+        "lat": "40.866262",
+        "date": "02/27/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-74.0370052622951",
+        "lat": "40.6289531147541",
+        "date": "06/15/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9137852123566",
+        "lat": "40.8307207",
+        "date": "11/08/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9714444",
+        "lat": "40.7979717",
+        "date": "01/19/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.904627",
+        "lat": "40.82684",
+        "date": "02/04/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.831688",
+        "lat": "40.756598",
+        "date": "04/13/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8554483",
+        "lat": "40.8247995",
+        "date": "10/17/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8637882448038",
+        "lat": "40.88836825",
+        "date": "09/30/2019",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "03/20/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "02/06/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8480664614246",
+        "lat": "40.8901884",
+        "date": "09/07/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8973717454941",
+        "lat": "40.661634",
+        "date": "07/31/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8689359184228",
+        "lat": "40.855241",
+        "date": "05/01/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.858502",
+        "lat": "40.893592",
+        "date": "03/13/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.7759582925528",
+        "lat": "40.59614325",
+        "date": "03/26/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9236335",
+        "lat": "40.8137404",
+        "date": "01/03/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9202599",
+        "lat": "40.863549",
+        "date": "04/16/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.918377701943",
+        "lat": "40.81196505",
+        "date": "06/07/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8837619",
+        "lat": "40.8561502",
+        "date": "01/16/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.893737",
+        "lat": "40.859671",
+        "date": "07/14/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.91435948",
+        "lat": "40.80470916",
+        "date": "03/01/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9377191164026",
+        "lat": "40.6775643",
+        "date": "08/24/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-74.005931",
+        "lat": "40.649323",
+        "date": "10/25/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "01/10/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.778264585544",
+        "lat": "40.785387",
+        "date": "03/19/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9175885769231",
+        "lat": "40.8232385",
+        "date": "05/24/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9088868888519",
+        "lat": "40.8145119",
+        "date": "07/02/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8960118625326",
+        "lat": "40.85506405",
+        "date": "06/28/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8837493249075",
+        "lat": "40.7331951",
+        "date": "12/01/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.866470878389",
+        "lat": "40.8366289",
+        "date": "01/23/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.89857625",
+        "lat": "40.7512477",
+        "date": "11/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8911590517544",
+        "lat": "40.67307975",
+        "date": "05/30/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8181101632653",
+        "lat": "40.8870884489796",
+        "date": "03/30/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.961275",
+        "lat": "40.68449365",
+        "date": "04/11/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "07/10/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9877165",
+        "lat": "40.736878",
+        "date": "02/13/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9664611337432",
+        "lat": "40.80105915",
+        "date": "07/23/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9269001143375",
+        "lat": "40.62616165",
+        "date": "06/24/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9088055525602",
+        "lat": "40.8495815",
+        "date": "11/14/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9414312",
+        "lat": "40.6266897",
+        "date": "03/22/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9869046",
+        "lat": "40.7720042",
+        "date": "08/17/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8723815",
+        "lat": "40.6680094",
+        "date": "04/03/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.2190262012644",
+        "lat": "40.53846555",
+        "date": "07/20/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.858312",
+        "lat": "40.685071",
+        "date": "02/15/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9049182",
+        "lat": "40.8804619",
+        "date": "08/20/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "06/27/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.901885",
+        "lat": "40.872554",
+        "date": "10/20/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.961490093836",
+        "lat": "40.79931205",
+        "date": "05/02/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9225215766734",
+        "lat": "40.83081925",
+        "date": "02/14/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.902325800322",
+        "lat": "40.83456815",
+        "date": "06/05/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9797512435897",
+        "lat": "40.5780488461538",
+        "date": "09/26/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.856115",
+        "lat": "40.831583",
+        "date": "03/28/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-74.1114229375",
+        "lat": "40.56279828125",
+        "date": "06/21/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8858842",
+        "lat": "40.8426276",
+        "date": "07/17/2017",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.15469195",
+        "lat": "40.5842531",
+        "date": "08/04/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9009547692631",
+        "lat": "40.87903915",
+        "date": "01/19/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9089953289786",
+        "lat": "40.847852",
+        "date": "07/14/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9708927951305",
+        "lat": "40.67785315",
+        "date": "09/17/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0054962",
+        "lat": "40.7337857",
+        "date": "05/18/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.7451796818242",
+        "lat": "40.65671615",
+        "date": "10/11/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.955540050629",
+        "lat": "40.6765912",
+        "date": "09/19/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.7868505",
+        "lat": "40.8476192",
+        "date": "04/17/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.0064175",
+        "lat": "40.7256299",
+        "date": "07/23/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.930687",
+        "lat": "40.85193",
+        "date": "11/29/2017",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9166545",
+        "lat": "40.8283971",
+        "date": "04/09/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8218639",
+        "lat": "40.7611915",
+        "date": "06/05/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.869307",
+        "lat": "40.8669356",
+        "date": "04/04/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9122655",
+        "lat": "40.8750497",
+        "date": "10/09/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9032329307078",
+        "lat": "40.75609915",
+        "date": "07/30/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9282976596003",
+        "lat": "40.74127305",
+        "date": "07/20/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9207661",
+        "lat": "40.7138262",
+        "date": "05/25/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.94469015",
+        "lat": "40.8246304",
+        "date": "01/29/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9643193187378",
+        "lat": "40.6495738",
+        "date": "06/12/2017",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.858177",
+        "lat": "40.689403",
+        "date": "02/14/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9513092085034",
+        "lat": "40.8004665",
+        "date": "08/08/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "05/16/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8587799",
+        "lat": "40.6681574",
+        "date": "01/09/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.890137",
+        "lat": "40.821077",
+        "date": "06/28/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.953054",
+        "lat": "40.774116",
+        "date": "04/22/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7416946591363",
+        "lat": "40.6587035",
+        "date": "10/25/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8798253",
+        "lat": "40.8777788",
+        "date": "11/02/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.999435",
+        "lat": "40.738455",
+        "date": "01/26/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "08/10/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9599827270784",
+        "lat": "40.6464362",
+        "date": "08/09/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8906806461538",
+        "lat": "40.8226274",
+        "date": "12/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.91581805",
+        "lat": "40.6247565",
+        "date": "01/24/2017",
+        "first_name": "Jeffrey",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "07/18/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8684179112672",
+        "lat": "40.83368065",
+        "date": "08/21/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.7783526667428",
+        "lat": "40.68898255",
+        "date": "06/27/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9006658",
+        "lat": "40.8217014",
+        "date": "03/31/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9193701",
+        "lat": "40.845695",
+        "date": "08/16/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8553075546978",
+        "lat": "40.8258986",
+        "date": "12/01/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9371120722004",
+        "lat": "40.6823365",
+        "date": "05/22/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.8627460221113",
+        "lat": "40.8870985",
+        "date": "05/26/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9348559",
+        "lat": "40.6878962",
+        "date": "07/25/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8628656",
+        "lat": "40.739063",
+        "date": "05/23/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.94830495",
+        "lat": "40.6365542",
+        "date": "09/06/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.955111",
+        "lat": "40.786169",
+        "date": "09/06/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9104197120313",
+        "lat": "40.86139485",
+        "date": "12/18/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9874370519133",
+        "lat": "40.73920935",
+        "date": "09/09/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8609468848154",
+        "lat": "40.84745955",
+        "date": "04/03/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8731978",
+        "lat": "40.8793415",
+        "date": "12/04/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9690297333786",
+        "lat": "40.75159015",
+        "date": "04/11/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "05/02/2017",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.9890434",
+        "lat": "40.6841307",
+        "date": "02/05/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9605478280306",
+        "lat": "40.6495442",
+        "date": "02/13/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8811477593511",
+        "lat": "40.6489339",
+        "date": "08/10/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9264756",
+        "lat": "40.6629916",
+        "date": "06/06/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.7947151515547",
+        "lat": "40.7085616",
+        "date": "08/29/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8893761930774",
+        "lat": "40.8402928",
+        "date": "04/02/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "01/20/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9035598",
+        "lat": "40.8231196",
+        "date": "04/13/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.96116",
+        "lat": "40.649824",
+        "date": "02/21/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.849247",
+        "lat": "40.72845",
+        "date": "04/19/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8959105",
+        "lat": "40.66343005",
+        "date": "09/07/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "01/28/2019",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.7411134708194",
+        "lat": "40.71538815",
+        "date": "03/09/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9337642",
+        "lat": "40.6975164",
+        "date": "08/09/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8853368663814",
+        "lat": "40.85614335",
+        "date": "03/30/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "04/17/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9630969775656",
+        "lat": "40.62232085",
+        "date": "08/31/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.801675",
+        "lat": "40.755106",
+        "date": "11/26/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "07/18/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "10/03/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9252687523575",
+        "lat": "40.6526705",
+        "date": "05/31/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.912649",
+        "lat": "40.855051",
+        "date": "01/11/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9601653",
+        "lat": "40.67537885",
+        "date": "07/02/2019",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.7751447000402",
+        "lat": "40.6717759",
+        "date": "10/16/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9375737512803",
+        "lat": "40.8179045",
+        "date": "02/22/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.916517",
+        "lat": "40.8400529",
+        "date": "02/06/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9418650147714",
+        "lat": "40.84530565",
+        "date": "07/31/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.8880978",
+        "lat": "40.8128631",
+        "date": "11/28/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "01/03/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8297835768387",
+        "lat": "40.7621932",
+        "date": "04/05/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8805341",
+        "lat": "40.6602592",
+        "date": "06/25/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "01/30/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8659155714026",
+        "lat": "40.87681745",
+        "date": "04/25/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.973768",
+        "lat": "40.747289",
+        "date": "02/23/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9858313975549",
+        "lat": "40.72577955",
+        "date": "03/23/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.92919225",
+        "lat": "40.6474614",
+        "date": "09/05/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8794271067564",
+        "lat": "40.83374115",
+        "date": "10/30/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9228036015183",
+        "lat": "40.61968335",
+        "date": "06/03/2019",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9754992371988",
+        "lat": "40.6308505",
+        "date": "05/22/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8906806461538",
+        "lat": "40.8226274",
+        "date": "05/28/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.889974716347",
+        "lat": "40.84575485",
+        "date": "11/24/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8341891511094",
+        "lat": "40.88840475",
+        "date": "08/29/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-83.113807",
+        "lat": "40.608985",
+        "date": "10/07/2019",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.7878178375114",
+        "lat": "40.70932505",
+        "date": "04/21/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.870894",
+        "lat": "40.76358225",
+        "date": "01/11/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9488690663477",
+        "lat": "40.65065475",
+        "date": "08/16/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.931815",
+        "lat": "40.66514",
+        "date": "06/15/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8222446771125",
+        "lat": "40.680013",
+        "date": "06/20/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.880041216343",
+        "lat": "40.7486766",
+        "date": "02/14/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8949941",
+        "lat": "40.859724",
+        "date": "05/02/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9874905177438",
+        "lat": "40.7492824",
+        "date": "03/03/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8637758241885",
+        "lat": "40.8891886",
+        "date": "01/04/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.7697944",
+        "lat": "40.6754934",
+        "date": "09/27/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8951941425532",
+        "lat": "40.6640471",
+        "date": "03/08/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9338552308436",
+        "lat": "40.58532095",
+        "date": "02/06/2019",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8780874037809",
+        "lat": "40.8843545",
+        "date": "02/01/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9055054",
+        "lat": "40.7454914",
+        "date": "10/03/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "01/28/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "06/14/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.7554523272762",
+        "lat": "40.6023577",
+        "date": "09/05/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8832048220249",
+        "lat": "40.66556355",
+        "date": "01/26/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9899916",
+        "lat": "40.7103793",
+        "date": "04/18/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8217905204617",
+        "lat": "40.75607135",
+        "date": "05/14/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9097201532354",
+        "lat": "40.8841494",
+        "date": "09/07/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8733504994674",
+        "lat": "40.713919",
+        "date": "02/15/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9027659291053",
+        "lat": "40.8588716",
+        "date": "02/28/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "12/15/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.923852",
+        "lat": "40.840957",
+        "date": "09/27/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.831936678252",
+        "lat": "40.7614958",
+        "date": "06/07/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.7635546",
+        "lat": "40.6952651",
+        "date": "06/18/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.942601",
+        "lat": "40.806265",
+        "date": "01/08/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9863957305319",
+        "lat": "40.7125851",
+        "date": "01/08/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "05/10/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9301102530807",
+        "lat": "40.7695922",
+        "date": "10/24/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.909571",
+        "lat": "40.8444864",
+        "date": "12/08/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8558625454545",
+        "lat": "40.8989680909091",
+        "date": "08/09/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "08/27/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9392798496744",
+        "lat": "40.81817935",
+        "date": "10/09/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0834848819364",
+        "lat": "40.6209851",
+        "date": "03/06/2018",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-90.560515",
+        "lat": "39.830449",
+        "date": "06/26/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "02/28/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.879673167559",
+        "lat": "40.82967285",
+        "date": "06/28/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.849098",
+        "lat": "40.905758",
+        "date": "02/28/2019",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "11/15/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9163516511656",
+        "lat": "40.83464535",
+        "date": "11/08/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.868339",
+        "lat": "40.81956",
+        "date": "10/09/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "05/25/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.13296255",
+        "lat": "40.6315593",
+        "date": "06/02/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8963008976717",
+        "lat": "40.66778165",
+        "date": "08/20/2018",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.905",
+        "lat": "40.831041",
+        "date": "05/07/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7537749",
+        "lat": "40.71050455",
+        "date": "02/01/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9114200171572",
+        "lat": "40.6433382",
+        "date": "03/06/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7537749",
+        "lat": "40.71050455",
+        "date": "02/01/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8854521410001",
+        "lat": "40.85776115",
+        "date": "02/06/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9183210546583",
+        "lat": "40.68299375",
+        "date": "04/20/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8534351",
+        "lat": "40.897922",
+        "date": "02/13/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9213527",
+        "lat": "40.8286317",
+        "date": "08/06/2018",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.9253011",
+        "lat": "40.6688697",
+        "date": "04/19/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-74.0028493333333",
+        "lat": "40.7244567222222",
+        "date": "05/16/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9766111666667",
+        "lat": "40.5764988095238",
+        "date": "03/29/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9108717346939",
+        "lat": "40.8333295306122",
+        "date": "10/24/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9627027989458",
+        "lat": "40.66192035",
+        "date": "01/30/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9121909673247",
+        "lat": "40.8532597",
+        "date": "03/20/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9406199011765",
+        "lat": "40.81187045",
+        "date": "04/24/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7434709",
+        "lat": "40.7064479",
+        "date": "04/27/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.939696",
+        "lat": "40.837449",
+        "date": "07/03/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9228835452063",
+        "lat": "40.66985255",
+        "date": "05/15/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8691331531287",
+        "lat": "40.690492",
+        "date": "06/02/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9508155",
+        "lat": "40.6987138",
+        "date": "10/26/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "07/05/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8134177983192",
+        "lat": "40.58583845",
+        "date": "07/22/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9205807422543",
+        "lat": "40.8818984",
+        "date": "02/07/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9527988",
+        "lat": "40.7767372",
+        "date": "01/14/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.972434",
+        "lat": "40.698351",
+        "date": "09/06/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.82307485",
+        "lat": "40.7054642",
+        "date": "07/31/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9709553723085",
+        "lat": "40.67886205",
+        "date": "07/24/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8584389662041",
+        "lat": "40.83719085",
+        "date": "09/12/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8947545732267",
+        "lat": "40.85695255",
+        "date": "05/09/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8348800809545",
+        "lat": "40.87861715",
+        "date": "01/09/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.95137725",
+        "lat": "40.74531105",
+        "date": "12/13/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8668197834404",
+        "lat": "40.8387142",
+        "date": "11/30/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9101585",
+        "lat": "40.8335336",
+        "date": "05/10/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.963457359127",
+        "lat": "40.612214",
+        "date": "01/12/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9127548979592",
+        "lat": "40.8438545918367",
+        "date": "04/08/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9782131488124",
+        "lat": "40.77486775",
+        "date": "07/13/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9215277436902",
+        "lat": "40.8320548",
+        "date": "02/20/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8831126337766",
+        "lat": "40.67026385",
+        "date": "10/05/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.922781909669",
+        "lat": "40.85228145",
+        "date": "10/02/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9257908475865",
+        "lat": "40.67185235",
+        "date": "10/25/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8915826",
+        "lat": "40.8546778",
+        "date": "06/04/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.931815",
+        "lat": "40.66514",
+        "date": "05/20/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "07/17/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8859592893918",
+        "lat": "40.8371973",
+        "date": "07/15/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9909842366891",
+        "lat": "40.7596672",
+        "date": "01/09/2017",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.9542216701341",
+        "lat": "40.61657075",
+        "date": "04/18/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.905494",
+        "lat": "40.642172",
+        "date": "06/21/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8949941",
+        "lat": "40.859724",
+        "date": "11/09/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9104611",
+        "lat": "40.8329985",
+        "date": "07/27/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.930030188547",
+        "lat": "40.6507594",
+        "date": "01/18/2018",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9607388571429",
+        "lat": "40.7972408571429",
+        "date": "06/14/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9452933101019",
+        "lat": "40.8380804",
+        "date": "12/06/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8625003333333",
+        "lat": "40.67087625",
+        "date": "02/26/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9375737512803",
+        "lat": "40.8179045",
+        "date": "09/05/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9217111666667",
+        "lat": "40.8145883333333",
+        "date": "08/16/2017",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.9420755873099",
+        "lat": "40.8263957",
+        "date": "01/19/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9317325",
+        "lat": "40.7570504",
+        "date": "03/07/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7458655",
+        "lat": "40.7647451",
+        "date": "07/23/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8894499106691",
+        "lat": "40.74781485",
+        "date": "04/12/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.951764",
+        "lat": "40.800927",
+        "date": "04/12/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.994841",
+        "lat": "40.724936",
+        "date": "03/27/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9666747",
+        "lat": "40.7647352",
+        "date": "03/02/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.91188155",
+        "lat": "40.6571161",
+        "date": "05/10/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.8906426",
+        "lat": "40.8570275",
+        "date": "05/10/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9078505",
+        "lat": "40.847553",
+        "date": "08/16/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9596246521211",
+        "lat": "40.60400905",
+        "date": "04/01/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7613060451656",
+        "lat": "40.7042684",
+        "date": "08/28/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0931015351924",
+        "lat": "40.6392414",
+        "date": "10/01/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.971136",
+        "lat": "40.5811191",
+        "date": "04/09/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8692953636364",
+        "lat": "40.8670199090909",
+        "date": "06/12/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8701517",
+        "lat": "40.8815794",
+        "date": "04/20/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9574999669597",
+        "lat": "40.58820015",
+        "date": "01/17/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.9131836311131",
+        "lat": "40.74471175",
+        "date": "01/07/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9721000550055",
+        "lat": "40.75441415",
+        "date": "03/17/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9298485732824",
+        "lat": "40.66489465",
+        "date": "06/05/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.895207",
+        "lat": "40.8571806",
+        "date": "03/07/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.1061684539964",
+        "lat": "40.57519055",
+        "date": "11/28/2017",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.97976",
+        "lat": "40.732622",
+        "date": "04/25/2018",
+        "first_name": "Bruce",
+        "last_name": "Kemp"
+    },
+    {
+        "lon": "-73.782275",
+        "lat": "40.697511",
+        "date": "04/18/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9194448488525",
+        "lat": "40.83390685",
+        "date": "02/20/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9536543295426",
+        "lat": "40.68939895",
+        "date": "04/04/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9536536",
+        "lat": "40.82272",
+        "date": "07/24/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.898828",
+        "lat": "40.858665",
+        "date": "08/07/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "12/18/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.9433659183673",
+        "lat": "40.6318355510204",
+        "date": "10/04/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0835368232324",
+        "lat": "40.6142997",
+        "date": "04/27/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9206013",
+        "lat": "40.6592976",
+        "date": "02/20/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8942436",
+        "lat": "40.8558619",
+        "date": "08/20/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8758633",
+        "lat": "40.8261246",
+        "date": "04/17/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0275039787001",
+        "lat": "40.6363675",
+        "date": "10/24/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.7498092",
+        "lat": "40.7042898",
+        "date": "02/01/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9441564862069",
+        "lat": "40.6264944",
+        "date": "10/10/2017",
+        "first_name": "Robert",
+        "last_name": "Solimine"
+    },
+    {
+        "lon": "-73.980946546869",
+        "lat": "40.7000846",
+        "date": "08/04/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8089683030554",
+        "lat": "40.68472775",
+        "date": "06/22/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.9379194953437",
+        "lat": "40.8288441",
+        "date": "07/03/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9149895316104",
+        "lat": "40.6350474",
+        "date": "06/22/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.914819",
+        "lat": "40.8039113877551",
+        "date": "02/17/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9162019",
+        "lat": "40.838975",
+        "date": "07/18/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "04/12/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9670151029316",
+        "lat": "40.6380736",
+        "date": "10/12/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9085725121892",
+        "lat": "40.69397825",
+        "date": "04/06/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.925207688644",
+        "lat": "40.7405015",
+        "date": "02/14/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9008542867503",
+        "lat": "40.85370565",
+        "date": "08/27/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "02/07/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.9493489",
+        "lat": "40.8233487",
+        "date": "05/17/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9816944",
+        "lat": "40.689935",
+        "date": "10/01/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "01/14/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "07/09/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9029581421848",
+        "lat": "40.8622139",
+        "date": "02/28/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8450083",
+        "lat": "40.8832492",
+        "date": "01/20/2017",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.92088",
+        "lat": "40.700247",
+        "date": "04/20/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8048669324538",
+        "lat": "40.68613205",
+        "date": "07/11/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.944881",
+        "lat": "40.634177",
+        "date": "03/03/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "02/27/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0836611",
+        "lat": "40.6253866",
+        "date": "07/15/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9152369813722",
+        "lat": "40.6825999",
+        "date": "06/02/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.898421",
+        "lat": "40.863724",
+        "date": "06/14/2017",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.87815845",
+        "lat": "40.6616193",
+        "date": "09/13/2019",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9253441",
+        "lat": "40.660867",
+        "date": "03/06/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8803785390889",
+        "lat": "40.8244365",
+        "date": "09/12/2017",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8360773931466",
+        "lat": "40.86891075",
+        "date": "04/02/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.960605",
+        "lat": "40.766524",
+        "date": "04/02/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9238822798686",
+        "lat": "40.66893315",
+        "date": "07/07/2017",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.992573",
+        "lat": "40.714652",
+        "date": "07/06/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "03/10/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.90364465",
+        "lat": "40.7206925",
+        "date": "03/13/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.9003747272727",
+        "lat": "40.6665195454545",
+        "date": "06/28/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.920997",
+        "lat": "40.828087",
+        "date": "06/01/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.0319631",
+        "lat": "40.61704155",
+        "date": "07/25/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9117572036825",
+        "lat": "40.8365701",
+        "date": "10/03/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.92099",
+        "lat": "40.6992034",
+        "date": "02/07/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9079518137161",
+        "lat": "40.63675845",
+        "date": "05/13/2019",
+        "first_name": "Bernard",
+        "last_name": "Blake"
+    },
+    {
+        "lon": "-73.8348741793699",
+        "lat": "40.6824312",
+        "date": "06/22/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.964729",
+        "lat": "40.651644",
+        "date": "07/12/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9139683799078",
+        "lat": "40.6860813",
+        "date": "12/05/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9148259899015",
+        "lat": "40.83506025",
+        "date": "01/29/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.886873547197",
+        "lat": "40.84905745",
+        "date": "06/11/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9493803629917",
+        "lat": "40.83036115",
+        "date": "06/27/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-77.31628",
+        "lat": "42.336124",
+        "date": "03/24/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9109012",
+        "lat": "40.8479074",
+        "date": "02/07/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9004761431618",
+        "lat": "40.820348870374",
+        "date": "09/05/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-74.0030212452952",
+        "lat": "40.5980702",
+        "date": "05/18/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9088926",
+        "lat": "40.8646163",
+        "date": "04/02/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9490526",
+        "lat": "40.7700182",
+        "date": "09/05/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.996008",
+        "lat": "40.713456",
+        "date": "04/26/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.93597275",
+        "lat": "40.652193",
+        "date": "12/05/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "01/22/2019",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.9574538",
+        "lat": "40.6654818",
+        "date": "11/15/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.975366",
+        "lat": "40.641151",
+        "date": "11/01/2017",
+        "first_name": "Salavatore",
+        "last_name": "Giglio"
+    },
+    {
+        "lon": "-73.8902220836585",
+        "lat": "40.8710757",
+        "date": "06/18/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9907278",
+        "lat": "40.7559486",
+        "date": "05/21/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9548413564362",
+        "lat": "40.6317418",
+        "date": "08/31/2018",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.87609655",
+        "lat": "40.82467695",
+        "date": "09/20/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.92534445",
+        "lat": "40.65963985",
+        "date": "08/30/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.907647",
+        "lat": "40.845341",
+        "date": "01/20/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7917880589987",
+        "lat": "40.67586535",
+        "date": "05/12/2017",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.896573127339",
+        "lat": "40.8639056",
+        "date": "02/14/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9813556",
+        "lat": "40.7174633",
+        "date": "06/22/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8705616913776",
+        "lat": "40.67474375",
+        "date": "08/31/2018",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9234479",
+        "lat": "40.8088147",
+        "date": "03/22/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.940478",
+        "lat": "40.817041",
+        "date": "10/01/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9904303938134",
+        "lat": "40.76024865",
+        "date": "02/23/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.940597",
+        "lat": "40.674523",
+        "date": "07/10/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.83652",
+        "lat": "40.68149",
+        "date": "06/13/2017",
+        "first_name": "Ronald",
+        "last_name": "Pazant"
+    },
+    {
+        "lon": "-73.8660066",
+        "lat": "40.7611461",
+        "date": "05/11/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9498425996376",
+        "lat": "40.79997515",
+        "date": "10/20/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8959262",
+        "lat": "40.8598699",
+        "date": "02/25/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-74.0066253",
+        "lat": "40.7048909",
+        "date": "04/03/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.909588",
+        "lat": "40.823411",
+        "date": "01/08/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8973595696054",
+        "lat": "40.8814184",
+        "date": "05/09/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.92506965",
+        "lat": "40.6235119",
+        "date": "07/07/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7746271",
+        "lat": "40.6782579",
+        "date": "09/10/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.858502",
+        "lat": "40.893592",
+        "date": "11/28/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "01/16/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.950696010741",
+        "lat": "40.6406583",
+        "date": "10/16/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.915864335909",
+        "lat": "40.8333331",
+        "date": "03/25/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0109250597839",
+        "lat": "40.6379341",
+        "date": "07/11/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.97976",
+        "lat": "40.732622",
+        "date": "06/19/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "06/01/2017",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "09/11/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.754419",
+        "lat": "40.604978",
+        "date": "01/11/2018",
+        "first_name": "Richard",
+        "last_name": "Capuano"
+    },
+    {
+        "lon": "-73.9163607519577",
+        "lat": "40.78318075",
+        "date": "01/04/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9576648",
+        "lat": "40.6421509",
+        "date": "09/24/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "07/10/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9479609285714",
+        "lat": "40.6528204285714",
+        "date": "11/28/2017",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.967596",
+        "lat": "40.777048",
+        "date": "06/28/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9297229146307",
+        "lat": "40.68512055",
+        "date": "06/09/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "04/24/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.938569",
+        "lat": "40.797175",
+        "date": "10/08/2019",
+        "first_name": "Gary",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.92322545",
+        "lat": "40.6629899",
+        "date": "02/21/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-74.0045044",
+        "lat": "40.7476133",
+        "date": "08/15/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9293573",
+        "lat": "40.6504913",
+        "date": "05/05/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.741524244898",
+        "lat": "40.5959081632653",
+        "date": "07/20/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.960434493303",
+        "lat": "40.65163955",
+        "date": "06/20/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "05/01/2019",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.920328",
+        "lat": "40.731949",
+        "date": "06/06/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9702218429418",
+        "lat": "40.79616825",
+        "date": "03/26/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.914905",
+        "lat": "40.650722",
+        "date": "08/05/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9112941",
+        "lat": "40.8440225",
+        "date": "10/12/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.866972973623",
+        "lat": "40.85392475",
+        "date": "07/16/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8503558938116",
+        "lat": "40.85708125",
+        "date": "02/03/2017",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.865702884865",
+        "lat": "40.8372181",
+        "date": "05/24/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.7887168",
+        "lat": "40.5911203714286",
+        "date": "01/09/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.8095168544443",
+        "lat": "40.68275555",
+        "date": "02/23/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9132799894073",
+        "lat": "40.83728095",
+        "date": "03/21/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9230624",
+        "lat": "40.6628418",
+        "date": "08/07/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.92124",
+        "lat": "40.820976",
+        "date": "03/14/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8787208",
+        "lat": "40.8847081",
+        "date": "05/01/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9463173",
+        "lat": "40.8126453",
+        "date": "04/07/2017",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.9701272",
+        "lat": "40.6829358",
+        "date": "04/26/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9460019096154",
+        "lat": "40.67691405",
+        "date": "02/01/2019",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.9238261157484",
+        "lat": "40.828332",
+        "date": "08/10/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "04/29/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.916724",
+        "lat": "40.831216",
+        "date": "07/17/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9198338",
+        "lat": "40.6827875",
+        "date": "07/30/2018",
+        "first_name": "Vadim",
+        "last_name": "Barbarovich"
+    },
+    {
+        "lon": "-73.8357494363146",
+        "lat": "40.68469335",
+        "date": "01/23/2017",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.954559",
+        "lat": "40.811359",
+        "date": "03/25/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9552082142857",
+        "lat": "40.6524390714286",
+        "date": "03/06/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8726842776458",
+        "lat": "40.75814635",
+        "date": "03/12/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "01/24/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9160012659907",
+        "lat": "40.83454795",
+        "date": "03/07/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8878841",
+        "lat": "40.8289548",
+        "date": "06/19/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8920625",
+        "lat": "40.8685782",
+        "date": "12/18/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9092448",
+        "lat": "40.8443923",
+        "date": "08/12/2019",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7635582626263",
+        "lat": "40.6746331212121",
+        "date": "03/18/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7679181811752",
+        "lat": "40.6698473",
+        "date": "04/11/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-74.0842166374147",
+        "lat": "40.6447168",
+        "date": "05/21/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8476172680093",
+        "lat": "40.828103",
+        "date": "11/26/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.8866068672938",
+        "lat": "40.7481398",
+        "date": "06/20/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9230097",
+        "lat": "40.8140653",
+        "date": "02/16/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9590575916378",
+        "lat": "40.68945085",
+        "date": "03/26/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8762488887604",
+        "lat": "40.8310274",
+        "date": "07/19/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8720041607229",
+        "lat": "40.6802435",
+        "date": "04/11/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-74.0129939",
+        "lat": "40.6420451",
+        "date": "02/21/2019",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.9872609386766",
+        "lat": "40.66682355",
+        "date": "05/01/2019",
+        "first_name": "Kenneth",
+        "last_name": "Giachetta"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "10/26/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.9629086550546",
+        "lat": "40.6267858",
+        "date": "08/30/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.791806",
+        "lat": "40.689275",
+        "date": "05/02/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9411707259111",
+        "lat": "40.8311538520726",
+        "date": "02/20/2019",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "04/21/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9578944",
+        "lat": "40.669809",
+        "date": "10/08/2019",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "10/10/2017",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.9749790438589",
+        "lat": "40.6863207",
+        "date": "03/08/2019",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.9076722992466",
+        "lat": "40.83707675",
+        "date": "04/26/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9088793494661",
+        "lat": "40.8599979",
+        "date": "09/20/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8658311748608",
+        "lat": "40.86013525",
+        "date": "01/06/2017",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.8819418140169",
+        "lat": "40.67594255",
+        "date": "09/27/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "09/27/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8472822704559",
+        "lat": "40.83691245",
+        "date": "12/13/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.8900735405975",
+        "lat": "40.8221858",
+        "date": "07/24/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.928936",
+        "lat": "40.8339939",
+        "date": "05/22/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9102113045894",
+        "lat": "40.83678025",
+        "date": "05/24/2018",
+        "first_name": "George",
+        "last_name": "Essock"
+    },
+    {
+        "lon": "-73.888636",
+        "lat": "40.833817",
+        "date": "07/08/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.9647595",
+        "lat": "40.5877143",
+        "date": "11/02/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.873655",
+        "lat": "40.750747",
+        "date": "10/01/2018",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-74.073898",
+        "lat": "40.59228",
+        "date": "07/06/2017",
+        "first_name": "Steven",
+        "last_name": "Powell"
+    },
+    {
+        "lon": "-73.956582",
+        "lat": "40.652256",
+        "date": "12/14/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.975912",
+        "lat": "40.764155",
+        "date": "12/14/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-74.151842",
+        "lat": "40.589886",
+        "date": "12/21/2018",
+        "first_name": "Frank",
+        "last_name": "Siracusa"
+    },
+    {
+        "lon": "-73.9379795508145",
+        "lat": "40.6013271",
+        "date": "07/06/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7365926754074",
+        "lat": "40.6539851",
+        "date": "07/06/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.9728193812658",
+        "lat": "40.7630731",
+        "date": "01/18/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9451532525331",
+        "lat": "40.8215573",
+        "date": "07/31/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.7424322",
+        "lat": "40.7298979",
+        "date": "07/31/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8835644508241",
+        "lat": "40.87065005",
+        "date": "06/29/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.8289957508421",
+        "lat": "40.76911845",
+        "date": "01/12/2018",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.907012",
+        "lat": "40.862012",
+        "date": "09/04/2019",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.8818734736842",
+        "lat": "40.8444770526316",
+        "date": "07/13/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.7295648050077",
+        "lat": "40.6803928",
+        "date": "07/13/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9033099",
+        "lat": "40.8306681",
+        "date": "07/06/2018",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-74.0846588885352",
+        "lat": "40.62030985",
+        "date": "06/27/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9000028979914",
+        "lat": "40.8608608",
+        "date": "09/07/2017",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.874979",
+        "lat": "40.853551",
+        "date": "06/04/2018",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.9803148155314",
+        "lat": "40.7496904",
+        "date": "04/03/2018",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.945186",
+        "lat": "40.675591",
+        "date": "02/22/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9187563925855",
+        "lat": "40.8212212",
+        "date": "02/22/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9524986527199",
+        "lat": "40.65749585",
+        "date": "07/07/2017",
+        "first_name": "Maxine",
+        "last_name": "Chevlowe"
+    },
+    {
+        "lon": "-73.9432132728964",
+        "lat": "40.65134015",
+        "date": "06/29/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.1621238984524",
+        "lat": "40.5868131",
+        "date": "06/29/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8819937441638",
+        "lat": "40.8417975",
+        "date": "02/02/2017",
+        "first_name": "Justin",
+        "last_name": "Grossman"
+    },
+    {
+        "lon": "-73.7990314975351",
+        "lat": "40.70523715",
+        "date": "11/01/2018",
+        "first_name": "Robert",
+        "last_name": "Renzulli"
+    },
+    {
+        "lon": "-73.8844806347115",
+        "lat": "40.87483985",
+        "date": "07/17/2019",
+        "first_name": "Ileana",
+        "last_name": "Rivera"
+    },
+    {
+        "lon": "-73.879673167559",
+        "lat": "40.82967285",
+        "date": "05/16/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-73.8939202",
+        "lat": "40.8661362",
+        "date": "05/16/2018",
+        "first_name": "Thomas",
+        "last_name": "Bia"
+    },
+    {
+        "lon": "-74.00010464",
+        "lat": "40.68946748",
+        "date": "10/25/2018",
+        "first_name": "Jeffrey",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.833593",
+        "lat": "40.756682",
+        "date": "10/25/2018",
+        "first_name": "Jeffrey",
+        "last_name": "Rose"
+    },
+    {
+        "lon": "-73.8894851277496",
+        "lat": "40.85007645",
+        "date": "06/06/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.9076096515541",
+        "lat": "40.66385285",
+        "date": "03/15/2018",
+        "first_name": "Charles",
+        "last_name": "Marchisotto"
+    },
+    {
+        "lon": "-73.9788603",
+        "lat": "40.7187246",
+        "date": "12/14/2017",
+        "first_name": "Henry",
+        "last_name": "Daley"
+    },
+    {
+        "lon": "-73.853719",
+        "lat": "40.735485",
+        "date": "07/17/2017",
+        "first_name": "Darlene",
+        "last_name": "Barone"
+    },
+    {
+        "lon": "-73.908355875",
+        "lat": "40.8121798125",
+        "date": "04/03/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-74.0277647909411",
+        "lat": "40.62608",
+        "date": "04/03/2018",
+        "first_name": "Howard",
+        "last_name": "Schain"
+    },
+    {
+        "lon": "-73.894154",
+        "lat": "40.8273578",
+        "date": "02/22/2017",
+        "first_name": "John",
+        "last_name": "Villanueva"
+    },
+    {
+        "lon": "-73.92246815",
+        "lat": "40.80702445",
+        "date": "04/01/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8676163412617",
+        "lat": "40.67817405",
+        "date": "04/01/2019",
+        "first_name": "Richard",
+        "last_name": "McCoy"
+    },
+    {
+        "lon": "-73.8999771052632",
+        "lat": "40.854686",
+        "date": "09/26/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9916658261997",
+        "lat": "40.5767822",
+        "date": "09/26/2017",
+        "first_name": "Alfred",
+        "last_name": "Locascio"
+    },
+    {
+        "lon": "-73.9551272493173",
+        "lat": "40.6777449",
+        "date": "04/03/2018",
+        "first_name": "Edward",
+        "last_name": "Guida"
+    },
+    {
+        "lon": "-73.8799110809811",
+        "lat": "40.66627215",
+        "date": "09/24/2019",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
+    },
+    {
+        "lon": "-73.9117312857143",
+        "lat": "40.6556857142857",
+        "date": "09/05/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.9127024",
+        "lat": "40.8309146",
+        "date": "09/05/2018",
+        "first_name": "George",
+        "last_name": "Essock, Jr."
+    },
+    {
+        "lon": "-73.8873230971053",
+        "lat": "40.74342665",
+        "date": "06/13/2018",
+        "first_name": "Danny",
+        "last_name": "Weinheim"
     }
 ]

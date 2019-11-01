@@ -61,9 +61,13 @@ function init() {
 		// X
 		positions.push(
 			mapFunction(
-				data[i].lon,
-				dataStatistics.lon.min,
-				dataStatistics.lon.max,
+				clamp(
+					data[i].lon,
+					dataStatistics.settings.lon.min,
+					dataStatistics.settings.lon.max
+				),
+				dataStatistics.settings.lon.min,
+				dataStatistics.settings.lon.max,
 				0,
 				radius
 			)
@@ -72,9 +76,13 @@ function init() {
 		// Y
 		positions.push(
 			mapFunction(
-				data[i].lat,
-				dataStatistics.lat.min,
-				dataStatistics.lat.max,
+				clamp(
+					data[i].lat,
+					dataStatistics.lat.min,
+					dataStatistics.lat.max
+				),
+				dataStatistics.settings.lat.min,
+				dataStatistics.settings.lat.max,
 				0,
 				radius
 			)
@@ -87,7 +95,7 @@ function init() {
 
 		colors.push(color.r, color.g, color.b);
 
-		sizes.push(20);
+		sizes.push(16);
 
 	}
 
@@ -128,7 +136,7 @@ function render() {
 
 	var time = Date.now() * 0.0008;
 
-	particleSystem.rotation.z = 0.1 * time;
+	// particleSystem.rotation.z = 0.1 * time;
 
 	var sizes = geometry.attributes.size.array;
 
@@ -150,20 +158,20 @@ function render() {
 	// calculate objects intersecting the picking ray
 	var intersects = raycaster.intersectObjects( scene.children );
 
-	for ( var i = 0; i < intersects.length; i++ ) {
-
-		console.log(intersects[ i ]);
+	// Just chose first interesect rather than iterating throught all of them
+	if (intersects[0] != null) {
+		// console.log(intersects[0]);
 
 		// intersects[ i ].object.material.color.set( 0xff0000 );
-
-		$("#info #name").html(data[intersects[i].index].first_name);
+		$("#info #name").html(data[intersects[0].index].first_name);
 		$("#info img").attr("src", data.FIELD2);
-		$("#info #date span").html(data[intersects[i].index].date);
-		$("#info #lon span").html(data[intersects[i].index].lon);
-		$("#info #lat span").html(data[intersects[i].index].lat);
+		$("#info #date span").html(data[intersects[0].index].date);
+		$("#info #lon span").html(data[intersects[0].index].lon);
+		$("#info #lat span").html(data[intersects[0].index].lat);
 		$("#info").show();
-
 	}
+
+
 
 	renderer.render( scene, camera );
 
@@ -184,12 +192,12 @@ function calculateStatistics(dat) {
 		},
 		"settings": {
 			"lat": {
-				"min": 39,
-				"max": 41
+				"min": 40.45,
+				"max": 40.9
 			},
 			"lon": {
-				"min": -75.0,
-				"max": -73.0
+				"min": -74.3,
+				"max": -73.75
 			}
 		}
 	};
@@ -236,6 +244,12 @@ function onMouseMove(event) {
 
 }
 
+// Useful Math functions
+
 function mapFunction(value, low1, high1, low2, high2) {
     return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+}
+
+function clamp(val, min, max) {
+    return val > max ? max : val < min ? min : val;
 }
