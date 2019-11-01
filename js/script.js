@@ -83,10 +83,6 @@ function init() {
 		// Z
 		positions.push(0);
 
-		// positions.push((Math.random() * 2 - 1) * radius);
-		// positions.push((Math.random() * 2 - 1) * radius);
-		// positions.push((Math.random() * 2 - 1) * radius);
-
 		color.setHSL(i / particles, 1.0, 0.5);
 
 		colors.push(color.r, color.g, color.b);
@@ -159,6 +155,13 @@ function render() {
 		console.log(intersects[ i ]);
 
 		// intersects[ i ].object.material.color.set( 0xff0000 );
+
+		$("#info #name").html(data[intersects[i].index].first_name);
+		$("#info img").attr("src", data.FIELD2);
+		$("#info #date span").html(data[intersects[i].index].date);
+		$("#info #lon span").html(data[intersects[i].index].lon);
+		$("#info #lat span").html(data[intersects[i].index].lat);
+		$("#info").show();
 
 	}
 
