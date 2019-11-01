@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+}
+
+body {
+	font-family: Helvetica;
+	background-color: #222;
+	color: #CCC;
+}
+
+.wrapper {
+	margin: auto;
+  width: 60%;
+	text-align: center;
+}
+
+.feed {
+
+}
