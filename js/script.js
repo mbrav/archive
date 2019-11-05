@@ -1,8 +1,10 @@
 // Eviction City
 // Michael Braverman © 2019
 
+import * as THREE from './lib/three.module.js';
+import { OrbitControls } from './lib/OrbitControls.js';
 
-var renderer, scene, camera;
+var renderer, scene, camera, controls;
 var particleSystem, uniforms, geometry;
 
 var mouse, raycaster;
@@ -16,10 +18,30 @@ animate();
 
 function init() {
 
-	camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 100000);
-	camera.position.z = 300;
-
 	scene = new THREE.Scene();
+
+	renderer = new THREE.WebGLRenderer({
+		antialias: true
+	});
+
+	renderer.setPixelRatio(window.devicePixelRatio);
+	renderer.setSize(window.innerWidth, window.innerHeight);
+
+	var container = document.getElementById('container');
+	container.appendChild(renderer.domElement);
+
+	camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 100000);
+	camera.position.set(0, 0, 300);
+
+	// controls
+	controls = new OrbitControls( camera, renderer.domElement );
+	//controls.addEventListener( 'change', render ); // call this only in static scenes (i.e., if there is no animation loop)
+	controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
+	controls.dampingFactor = 0.05;
+	controls.screenSpacePanning = false;
+	controls.minDistance = 100;
+	controls.maxDistance = 500;
+	controls.maxPolarAngle = Math.PI / 2;
 
 	mouse = new THREE.Vector2();
 	raycaster = new THREE.Raycaster();
@@ -107,26 +129,15 @@ function init() {
 
 	scene.add(particleSystem);
 
-	renderer = new THREE.WebGLRenderer({
-		antialias: true
-	});
-
-	renderer.setPixelRatio(window.devicePixelRatio);
-	renderer.setSize(window.innerWidth, window.innerHeight);
-
-	var container = document.getElementById('container');
-	container.appendChild(renderer.domElement);
-
 	window.addEventListener('resize', onWindowResize, false);
 	window.addEventListener('mousemove', onMouseMove, false );
-
-	// console.log(scene.children);
 
 }
 
 function animate() {
 
 	requestAnimationFrame(animate);
+					controls.update(); // only required if controls.enableDamping = true, or if controls.autoRotate = true
 
 	render();
 
@@ -171,8 +182,6 @@ function render() {
 		$("#info").show();
 	}
 
-
-
 	renderer.render( scene, camera );
 
 
@@ -204,7 +213,7 @@ function calculateStatistics(dat) {
 		}
 	};
 
-	var goodDataIndexCount = 0; latCount = 0.0, lonCount = 0.0; // stat shit
+	var goodDataIndexCount = 0, latCount = 0.0, lonCount = 0.0; // stat shit
 	// calculate max, min and avg values of the data
 	for (var i = 0; i < dat.length; i++) {
 
