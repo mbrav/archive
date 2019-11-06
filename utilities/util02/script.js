@@ -8,7 +8,7 @@ var data = evictions;
 var storage = [];
 
 // keep count, useful once requests become exausted
-var count = 13388;
+var count = 17685;
 var start_count = count;
 
 init();
@@ -70,7 +70,7 @@ function startGeocoding() {
 			// save result to a file
 			console.save(storage, "geocoded-data.js");
 		}
-	}, 2000);
+	}, 1100);
 }
 
 

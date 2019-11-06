@@ -9,14 +9,28 @@ var particleSystem, uniforms, geometry;
 
 var mouse, raycaster;
 
-var data = evictions;
-var dataStatistics = calculateStatistics(data);
-var particles = dataStatistics.length;
+var data = evictions, dataStatistics, particles;
 
 init();
-animate();
 
 function init() {
+
+	dataStatistics = calculateStatistics(data);
+	particles = dataStatistics.length;
+
+	// size of the area
+	var radius = 200;
+	var xOffset = -150;
+	var yOffset = 0;
+	var zOffset = -100;
+
+	geometry = new THREE.BufferGeometry();
+
+	var positions = [];
+	var colors = [];
+	var sizes = [];
+
+	var color = new THREE.Color();
 
 	scene = new THREE.Scene();
 
@@ -31,7 +45,7 @@ function init() {
 	container.appendChild(renderer.domElement);
 
 	camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 100000);
-	camera.position.set(0, 0, 300);
+	camera.position.set(0, 200, 0);
 
 	// controls
 	controls = new OrbitControls( camera, renderer.domElement );
@@ -42,6 +56,8 @@ function init() {
 	controls.minDistance = 100;
 	controls.maxDistance = 500;
 	controls.maxPolarAngle = Math.PI / 2;
+	controls.autoRotate = true;
+	controls.autoRotateSpeed = 0.5; // fps
 
 	mouse = new THREE.Vector2();
 	raycaster = new THREE.Raycaster();
@@ -67,17 +83,6 @@ function init() {
 
 	});
 
-
-	var radius = 100;
-
-	geometry = new THREE.BufferGeometry();
-
-	var positions = [];
-	var colors = [];
-	var sizes = [];
-
-	var color = new THREE.Color();
-
 	for (var i = 0; i < particles; i++) {
 
 		// X
@@ -92,10 +97,13 @@ function init() {
 				dataStatistics.settings.lon.max,
 				0,
 				radius
-			)
+			) + xOffset
 		);
 
 		// Y
+		positions.push(yOffset);
+
+		// Z
 		positions.push(
 			mapFunction(
 				clamp(
@@ -107,11 +115,8 @@ function init() {
 				dataStatistics.settings.lat.max,
 				0,
 				radius
-			)
+			) + zOffset
 		);
-
-		// Z
-		positions.push(0);
 
 		color.setHSL(i / particles, 1.0, 0.5);
 
@@ -132,14 +137,16 @@ function init() {
 	window.addEventListener('resize', onWindowResize, false);
 	window.addEventListener('mousemove', onMouseMove, false );
 
+	animate();
+
 }
 
 function animate() {
 
 	requestAnimationFrame(animate);
-					controls.update(); // only required if controls.enableDamping = true, or if controls.autoRotate = true
 
 	render();
+	controls.update(); // only required if controls.enableDamping = true, or if controls.autoRotate = true
 
 }
 
@@ -183,7 +190,6 @@ function render() {
 	}
 
 	renderer.render( scene, camera );
-
 
 }
 
