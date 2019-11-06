@@ -18,8 +18,9 @@ function init() {
 	dataStatistics = calculateStatistics(data);
 	particles = dataStatistics.length;
 
-	// size of the area
+	// size of the area where particles are drawn
 	var radius = 200;
+	// postion of particles
 	var xOffset = -150;
 	var yOffset = 0;
 	var zOffset = -100;
@@ -45,7 +46,7 @@ function init() {
 	container.appendChild(renderer.domElement);
 
 	camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 100000);
-	camera.position.set(0, 200, 0);
+	camera.position.set(0, 100, 0);
 
 	// controls
 	controls = new OrbitControls( camera, renderer.domElement );
@@ -53,7 +54,7 @@ function init() {
 	controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
 	controls.dampingFactor = 0.05;
 	controls.screenSpacePanning = false;
-	controls.minDistance = 100;
+	controls.minDistance = 50;
 	controls.maxDistance = 500;
 	controls.maxPolarAngle = Math.PI / 2;
 	controls.autoRotate = true;
@@ -130,7 +131,10 @@ function init() {
 	geometry.addAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
 	geometry.addAttribute('size', new THREE.Float32BufferAttribute(sizes, 1).setDynamic(true));
 
+
 	particleSystem = new THREE.Points(geometry, shaderMaterial);
+	particleSystem.rotation.x = Math.PI;
+	console.log(particleSystem);
 
 	scene.add(particleSystem);
 
