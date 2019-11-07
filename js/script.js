@@ -134,7 +134,6 @@ function init() {
 
 	particleSystem = new THREE.Points(geometry, shaderMaterial);
 	particleSystem.rotation.x = Math.PI;
-	console.log(particleSystem);
 
 	scene.add(particleSystem);
 
