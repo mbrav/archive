@@ -55,7 +55,7 @@ function init() {
 	controls.dampingFactor = 0.05;
 	controls.screenSpacePanning = false;
 	controls.minDistance = 50;
-	controls.maxDistance = 500;
+	controls.maxDistance = 400;
 	controls.maxPolarAngle = Math.PI / 2;
 	controls.autoRotate = true;
 	controls.autoRotateSpeed = 0.5; // fps
@@ -184,12 +184,12 @@ function render() {
 		// console.log(intersects[0]);
 
 		// intersects[ i ].object.material.color.set( 0xff0000 );
-		$("#info #name").html(data[intersects[0].index].first_name + " " + data[intersects[0].index].last_name);
-		$("#info img").attr("src", data.FIELD2);
-		$("#info #date span").html(data[intersects[0].index].date);
-		$("#info #lon span").html(data[intersects[0].index].lon);
-		$("#info #lat span").html(data[intersects[0].index].lat);
-		$("#info").show();
+		$("#hover-info #name").html(data[intersects[0].index].first_name + " " + data[intersects[0].index].last_name);
+		$("#hover-info img").attr("src", data.FIELD2);
+		$("#hover-info #date span").html(data[intersects[0].index].date);
+		$("#hover-info #lon span").html(data[intersects[0].index].lon);
+		$("#hover-info #lat span").html(data[intersects[0].index].lat);
+		$("#hover-info").show();
 	}
 
 	renderer.render( scene, camera );
