@@ -8,7 +8,7 @@ var data = evictions;
 var storage = [];
 
 // keep count, useful once requests become exausted
-var count = 26602;
+var count = 35110;
 var start_count = count;
 
 init();
