@@ -54,7 +54,7 @@ function init() {
   scene.add(pointLight, pointLight2, pointLight3);
   scene.fog = new THREE.Fog(0x000000, near, 1000);
 
-  audio_player.src = 'http://www.mbrav.com/audio/la8.mp3';
+  audio_player.src = 'http://mbrav.github.io/audio/la8.mp3';
   audio_player.play();
 }
 
