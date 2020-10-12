@@ -18,6 +18,17 @@ insta_password = keys['insta_password']
 tg_api_key = keys['tg_api_key']
 tg_chat_id = keys['tg_chat_id']
 
+def tg_msg(msg):
+  requests.get(
+    "https://api.telegram.org/bot" + 
+    tg_api_key + 
+    "/sendMessage?chat_id=" + 
+    tg_chat_id + 
+    "&text=" + 
+    msg +
+    "@ {}"
+    .format(datetime.now().strftime("%H:%M:%S")))
+
 comments = [
   u'Отличный снимок! :camera: 👍',
   u'Отличный снимок! :camera: :+1:',
@@ -61,6 +72,7 @@ comments = [
   u'Всегда жду ваших постов🍒',
   u':heart:'
   ]
+
 
 def get_session():
   session = InstaPy(username=insta_username,
@@ -128,15 +140,38 @@ def get_session():
    skip_business_categories=['Creators & Celebrities'])
   return session
 
+def feedinteract():
+  # Send notification to my Telegram
+  tg_msg('InstaPy Feed Interaction Started')
+
+  # get a session!
+  session = get_session()
+
+  # let's go!
+  with smart_run(session):
+    try:
+      # LIKE SETTINGS
+      session.set_delimit_liking(enabled=True, max_likes=200, min_likes=10)
+      # session.like_by_tags(hashtags, amount=10)
+
+      # LIKE FEED
+      # This is used to perform likes on your own feeds
+      # amount=100  specifies how many total likes you want to perform
+      # randomize=True randomly skips posts to be liked on your feed
+      # unfollow=True unfollows the author of a post which was considered
+      # inappropriate interact=True visits the author's profile page of a
+      # certain post and likes a given number of his pictures, then returns to feed
+
+      session.like_by_feed(amount=80, randomize=True, interact=True)
+      session.set_user_interact(amount=5, randomize=True, percentage=60, media='Photo') 
+
+    except Exception:
+      print(traceback.format_exc())
+      tg_msg('InstaPy Feed Interaction Stopped')
+
 def follow():
   # Send notification to my Telegram
-  requests.get(
-    "https://api.telegram.org/bot" + 
-    tg_api_key + 
-    "/sendMessage?chat_id=" + 
-    tg_chat_id + 
-    "&text=InstaPy Follower Started @ {}"
-    .format(datetime.now().strftime("%H:%M:%S")))
+  tg_msg('InstaPy Follower Started')
 
   # get a session!
   session = get_session()
@@ -164,22 +199,10 @@ def follow():
       except Exception:
         print(traceback.format_exc())
         # Send notification to my Telegram
-        requests.get(
-          "https://api.telegram.org/bot" + 
-          tg_api_key + 
-          "/sendMessage?chat_id=" + 
-          tg_chat_id + 
-          "&text=InstaPy Follower Stopped @ {}"
-          .format(datetime.now().strftime("%H:%M:%S")))
+        tg_msg('InstaPy Follower Stopped')
 
 def unfollow():
-  requests.get(
-    "https://api.telegram.org/bot" + 
-    tg_api_key + 
-    "/sendMessage?chat_id=" + 
-    tg_chat_id + 
-    "&text=InstaPy Unfollower Started @ {}"
-    .format(datetime.now().strftime("%H:%M:%S")))
+  tg_msg('InstaPy Unfollower Started')
 
   # get a session!
   session = get_session()
@@ -198,23 +221,11 @@ def unfollow():
 
     except Exception:
       print(traceback.format_exc())
-      requests.get(
-        "https://api.telegram.org/bot" + 
-        tg_api_key + 
-        "/sendMessage?chat_id=" + 
-        tg_chat_id + 
-        "&text=InstaPy Unfollower Stopped @ {}"
-        .format(datetime.now().strftime("%H:%M:%S")))
+      tg_msg('InstaPy Unfollower Stopped')
 
 
 def xunfollow():
-  requests.get(
-    "https://api.telegram.org/bot" + 
-    tg_api_key + 
-    "/sendMessage?chat_id=" + 
-    tg_chat_id + 
-    "&text=InstaPy SUPER Unfollower Started @ {}"
-    .format(datetime.now().strftime("%H:%M:%S")))
+  tg_msg('InstaPy SUPER Unfollower Started')
 
   # get a session!
   session = get_session()
@@ -223,24 +234,17 @@ def xunfollow():
   with smart_run(session):
     try:
       # settings
-      session.set_relationship_bounds(enabled=False, potency_ratio=1.21)
+      # session.set_relationship_bounds(enabled=False, potency_ratio=1.21)
 
       # actions
       session.unfollow_users(amount=1000,
        style="RANDOM",
-       unfollow_after=3 * 60 * 60,
        sleep_delay=450,
-       instapy_followed_param="nonfollowers")
+       instapy_followed_param="all")
 
     except Exception:
       print(traceback.format_exc())
-      requests.get(
-        "https://api.telegram.org/bot" + 
-        tg_api_key + 
-        "/sendMessage?chat_id=" + 
-        tg_chat_id + 
-        "&text=InstaPy SUPER Unfollower Stopped @ {}"
-        .format(datetime.now().strftime("%H:%M:%S")))
+      tg_msg('InstaPy SUPER Unfollower Stopped')
 
 # schedulers
 # schedule.every().day.at("09:30").do(follow)
@@ -256,4 +260,4 @@ def xunfollow():
 #   schedule.run_pending()
 #   time.sleep(1)
 
-follow()
+xunfollow()
