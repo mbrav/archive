@@ -1,5 +1,3 @@
-.DS_Store
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -88,7 +86,6 @@ celerybeat-schedule
 .venv
 env/
 venv/
-ENV/
 env.bak/
 venv.bak/
 
@@ -105,5 +102,35 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+# pylint file
+googlecl-pylint.rc.txt
+assets/chromedriver
+quickstart.py
+*,cover
+
+# Mac files
+.DS_Store
+
+# Storage
+instapy.db
+logs/
+
+# Editors
+.idea
+.vscode
+
+# pytest
+tests/logs
+
+# telegram-scheduling
+instapy/
+assets/
+scripts.py
+proxy_extension.py 
+*.json
+*.pickle
+
 # File with API keys
 keys.json
+test.py
+settings.json

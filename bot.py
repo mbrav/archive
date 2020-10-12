@@ -5,6 +5,7 @@ import schedule
 import traceback
 import requests
 import json
+import random
 
 from instapy import InstaPy
 from instapy import smart_run
@@ -18,6 +19,7 @@ insta_password = keys['insta_password']
 tg_api_key = keys['tg_api_key']
 tg_chat_id = keys['tg_chat_id']
 
+# telegram send text function
 def tg_msg(msg):
   requests.get(
     "https://api.telegram.org/bot" + 
@@ -73,6 +75,10 @@ comments = [
   u':heart:'
   ]
 
+# randomize comments
+random.shuffle(comments)
+my_comments = comments[:len(comments)]
+
 
 def get_session():
   session = InstaPy(username=insta_username,
@@ -83,7 +89,7 @@ def get_session():
 
   session.set_mandatory_language(enabled=True, character_set=['LATIN', 'CYRILLIC'])
 
-  session.set_simulation(enabled=True, percentage=66)
+  session.set_simulation(enabled=True, percentage=44)
 
   session.set_quota_supervisor(enabled=True, 
     sleep_after=["likes", "comments_d", "follows", "unfollows", "server_calls_h"], 
@@ -98,7 +104,7 @@ def get_session():
     peak_follows_daily=None,
     peak_unfollows_hourly=30,
     peak_unfollows_daily=380,
-    peak_server_calls_hourly=None,
+    peak_server_calls_hourly=300,
     peak_server_calls_daily=4000)
 
   session.set_action_delays(enabled=True,
@@ -151,8 +157,7 @@ def feedinteract():
   with smart_run(session):
     try:
       # LIKE SETTINGS
-      session.set_delimit_liking(enabled=True, max_likes=200, min_likes=10)
-      # session.like_by_tags(hashtags, amount=10)
+      # session.set_delimit_liking(enabled=True, max_likes=200, min_likes=10)
 
       # LIKE FEED
       # This is used to perform likes on your own feeds
@@ -162,8 +167,13 @@ def feedinteract():
       # inappropriate interact=True visits the author's profile page of a
       # certain post and likes a given number of his pictures, then returns to feed
 
+      # settings
+      session.set_user_interact(amount=3, randomize=True, percentage=60, media='Photo')
+      session.set_comments(comments=comments, media='Photo')
+      session.set_do_comment(enabled=True, percentage=40)
+
+      # actions
       session.like_by_feed(amount=80, randomize=True, interact=True)
-      session.set_user_interact(amount=5, randomize=True, percentage=60, media='Photo') 
 
     except Exception:
       print(traceback.format_exc())
@@ -186,15 +196,13 @@ def follow():
       try:
         session.follow_user_followers(['sadhana_poyma'], amount=5,
           randomize=False)
-        session.set_do_comment(enabled=True, percentage=70)
-        session.set_comments(comments)
         session.follow_by_tags(['гамаки', '#кундалини', '#кундалинийога', '#хатха'], amount=10)
         session.follow_by_tags(['йогакрасногорск'], amount=5, randomize=True)
-        session.unfollow_users(amount=25,
-         style="RANDOM",
-         unfollow_after=48 * 60 * 60,
-         sleep_delay=450,
-         instapy_followed_param="nonfollowers")
+        session.unfollow_users(amount=10,
+          style="RANDOM",
+          unfollow_after=48 * 60 * 60,
+          sleep_delay=450,
+          instapy_followed_param="nonfollowers")
 
       except Exception:
         print(traceback.format_exc())
@@ -214,7 +222,7 @@ def unfollow():
       session.set_relationship_bounds(enabled=False, potency_ratio=1.21)
 
       # actions
-      session.unfollow_users(amount=600, 
+      session.unfollow_users(amount=30, 
         style="RANDOM", 
         sleep_delay=450, 
         instapy_followed_param="nonfollowers")
@@ -237,27 +245,24 @@ def xunfollow():
       # session.set_relationship_bounds(enabled=False, potency_ratio=1.21)
 
       # actions
-      session.unfollow_users(amount=1000,
-       style="RANDOM",
-       sleep_delay=450,
-       instapy_followed_param="all")
+      session.unfollow_users(amount=100,
+        style="RANDOM",
+        sleep_delay=450,
+        instapy_followed_param="all")
 
     except Exception:
       print(traceback.format_exc())
       tg_msg('InstaPy SUPER Unfollower Stopped')
 
 # schedulers
-# schedule.every().day.at("09:30").do(follow)
-# schedule.every().day.at("13:30").do(follow)
-# schedule.every().day.at("17:30").do(follow)
-# schedule.every().day.at("23:28").do(follow)
 
-# schedule.every().day.at("00:05").do(unfollow)
+# schedule.every().day.at("19:07").do(feedinteract)
+# schedule.every().day.at("10:27").do(feedinteract)
 
-# schedule.every().wednesday.at("03:00").do(xunfollow)
+# # schedule.every().wednesday.at("03:00").do(xunfollow)
 
 # while True:
 #   schedule.run_pending()
 #   time.sleep(1)
 
-xunfollow()
+feedinteract()
