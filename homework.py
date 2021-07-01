@@ -31,6 +31,7 @@ class Calculator():
 
     add_record()
     get_today_stats()
+    get_week_stats()
 
     """
 
@@ -45,7 +46,12 @@ class Calculator():
 
     def get_today_stats(self):
         """Считать, сколько денег и калорий потрачено сегодня."""
-        pass
+        sum = 0.0
+        for rec in self.records:
+            today_date = dt.datetime.now().date()
+            if rec.date == today_date:
+                sum += float(rec.amount)
+        return sum
 
     def get_week_stats():
         """Считать, сколько денег и калорий получено за последние 7 дней."""
