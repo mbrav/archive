@@ -43,12 +43,9 @@ class Calculator():
         records = []
         self.records = records
 
-    def add_record(self, amount, comment, date):
+    def add_record(self, date):
         """Сохранить новую запись."""
-        
-        self.amount = amount
-        self.comment = comment
-        self.date = date
+        self.records.append(date)
 
     def get_today_stats(self, currency):
         """Считать, сколько денег потрачено сегодня.
