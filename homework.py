@@ -79,12 +79,28 @@ class CaloriesCalculator(Calculator):
 
     def __init__(self, limit):
         super().__init__(limit)
+        self.limit = limit
 
-    def get_calories_remained():
+    def get_calories_remained(self):
         """Считать сколько калорий можно сегодня съесть.
         В случае превышения лимита, делать бодишейминг
         """
-        pass
+
+        today_date = dt.datetime.now().date()
+        sum = 0.0
+        for rec in self.records:
+            if rec.date == today_date:
+                sum += float(rec.amount)
+
+        msg = ""
+        if sum < self.limit:
+            remainder = int(self.limit - sum)
+            msg = ('Сегодня можно съесть что-нибудь ещё,'
+                   f' но с общей калорийностью не более {remainder} кКал')
+        else:
+            msg = 'Хватит есть!'
+
+        return msg
 
 
 class CashCalculator(Calculator):
@@ -101,7 +117,7 @@ class CashCalculator(Calculator):
 
     def __init__(self, limit):
         """
-        Добыть курсы Евры и Доллара через API
+        Добыть курсы Еврo и Доллара через API
 
         API: Free Currency Rates API
         https://github.com/fawazahmed0/currency-api
