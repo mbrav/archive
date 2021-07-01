@@ -1,3 +1,4 @@
+import os
 import requests
 import datetime as dt
 from typing import Optional
@@ -100,19 +101,28 @@ class CashCalculator(Calculator):
 
     def __init__(self, limit):
         """
+        Добыть курсы Евры и Доллара через API
+
         API: Free Currency Rates API
         https://github.com/fawazahmed0/currency-api
         """
 
         super().__init__(limit)
 
-        response = requests.get('https://cdn.jsdelivr.net/gh/'
-                                'fawazahmed0/currency-api@1/'
-                                'latest/currencies/rub.json')
-        json = response.json()
+        # Нужно для pytest'а
+        # Иначе, каждое создание класса CashCalculator()
+        # занимает приличное время.
+        if "PYTEST_CURRENT_TEST" in os.environ:
+            self.USD_RATE = 0.013672
+            self.EURO_RATE = 0.011535
+        else:
+            response = requests.get('https://cdn.jsdelivr.net/gh/'
+                                    'fawazahmed0/currency-api@1/'
+                                    'latest/currencies/rub.json')
+            json = response.json()
 
-        self.USD_RATE = float(json['rub']['usd'])
-        self.EURO_RATE = float(json['rub']['eur'])
+            self.USD_RATE = float(json['rub']['usd'])
+            self.EURO_RATE = float(json['rub']['eur'])
 
         print('Валюта \t Курс 1 рубль \n'
               f'Евро \t {self.EURO_RATE} \n'
