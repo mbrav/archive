@@ -2,8 +2,6 @@ import requests
 import datetime as dt
 from typing import Optional
 
-records = []
-
 
 class Record:
     """Класс записей.
@@ -19,58 +17,76 @@ class Record:
 
         if not date:
             self.date = dt.datetime.now().date()
-            print(f"Дата не была указана. "
-                  f"Записываем {date} по умолчанию.")
+            # print(f"Дата не была указана. "
+            #       f"Записываем {self.date} по умолчанию.")
         else:
             self.date = dt.datetime.strptime(date, "%d.%m.%Y").date()
+            # print(f"Записываем {self.date}.")
 
-        records.append(self)
 
-
-class Calculator:
+class Calculator():
     """Класс Калькулятора.
 
     Функции:
 
     add_record()
-    get_today_cash_remained()
+    get_today_stats()
     get_week_stats()
-    test_get_today_cash_remained()
-    test_get_calories_remained()
+    get_today_cash_remained()
+    get_today_cash_remained()
+    get_calories_remained()
 
     """
 
-    def __init__(self, init_limit):
-        pass
+    def __init__(self, limit):
+        self.limit = limit
+        records = []
+        self.records = records
 
     def add_record(self, amount, comment, date):
+        """Сохранить новую запись."""
+        
         self.amount = amount
         self.comment = comment
         self.date = date
 
-        def get_today_stats(self, currency):
-            """Считать, сколько денег потрачено сегодня.
-            должен принимать на вход код валюты:
-            одну из строк 'rub', 'usd' или 'eur'."""
+    def get_today_stats(self, currency):
+        """Считать, сколько денег потрачено сегодня.
+        должен принимать на вход код валюты:
+        одну из строк 'rub', 'usd' или 'eur'."""
 
-            currency = currency.lower()
-            currency_dict = {
-                'usd': 'USD',
-                'eur': 'Euro',
-                'rub': 'руб'
-            }
+        currency = currency.lower()
+        currency_dict = {
+            'usd': 'USD',
+            'eur': 'Euro',
+            'rub': 'руб'
+        }
 
-            for rec in records:
-                print(rec.amount)
+        if currency == 'rub':
+            return currency_dict[currency]
+        elif currency == 'usd':
+            return currency_dict[currency]
+        elif currency == 'eur':
+            return currency_dict[currency]
+        else:
+            pass
 
-            if currency == 'rub':
-                return currency_dict[currency]
-            elif currency == 'usd':
-                return currency_dict[currency]
-            elif currency == 'eur':
-                return currency_dict[currency]
-            else:
-                pass
+    def get_week_stats():
+        """Считать, сколько денег потрачено за последние 7 дней."""
+        pass
+
+    def test_get_today_cash_remained():
+        """Принимает на вход код валюты: одну из строк "rub", "usd" или "eur".
+        Возвращает он сообщение о состоянии дневного баланса в этой валюте,
+        округляя сумму до двух знаков после запятой (до сотых).
+        """
+        pass
+
+    def test_get_calories_remained():
+        """Считать сколько калорий можно сегодня съесть.
+        В случае превышения лимита
+        """
+        pass
 
     def get_today_cash_remained(self, currency):
         """Определить, сколько ещё денег можно потратить
@@ -86,27 +102,9 @@ class Calculator:
         else:
             pass
 
-    def get_week_stats(self):
-        """Считать, сколько денег потрачено за последние 7 дней."""
-        pass
-
-    def test_get_today_cash_remained():
-        """Принимает на вход код валюты: одну из строк "rub", "usd" или "eur".
-        Возвращает он сообщение о состоянии дневного баланса в этой валюте,
-        округляя сумму до двух знаков после запятой (до сотых).
-        """
-        pass
-
-    def test_get_calories_remained():
-        """Считать сколько калорий можно сегодня съесть.
-        В случае превышения лимита
-        """
-
-        pass
-
 
 class CaloriesCalculator(Calculator):
-    """Kалькулятор калорий."""
+    """Калькулятор калорий."""
 
     def __init__(self):
         pass
@@ -133,7 +131,7 @@ class CashCalculator(Calculator):
               f'Доллар \t {self.USD_RATE}')
 
 
-r1 = Record(amount=145, comment='Безудержный шопинг', date='08.03.2019')
+r1 = Record(amount=145, comment='Безудержный шопинг')
 r2 = Record(amount=1568,
             comment='Наполнение потребительской корзины',
             date='09.03.2019')
