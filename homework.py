@@ -1,32 +1,49 @@
-from datetime import datetime
 import requests
+import datetime as dt
+from typing import Optional
 
 records = []
 
 
 class Record:
-    """Класс записей."""
+    """Класс записей.
 
-    def __init__(self, amount, comment, date):
+    Сохраняет объекты записей в список records[]
+    """
+
+    def __init__(self, amount: int, comment: str, date: Optional[str] = None):
         """Сохранить новую запись."""
+
         self.amount = amount
         self.comment = comment
 
-        try:
-            self.date = datetime.strptime(date, "%d.%m.%Y").now().date()
-        except:
-            now = datetime.now().date()
-            print(f"Неправильный формат даты, должен быть в формате"
-                  f" '%d.%m.%Y'. Записываем {now} по умолчанию.")
-            self.date = now
+        if not date:
+            self.date = dt.datetime.now().date()
+            print(f"Дата не была указана. "
+                  f"Записываем {date} по умолчанию.")
+        else:
+            self.date = dt.datetime.strptime(date, "%d.%m.%Y").date()
 
         records.append(self)
 
 
 class Calculator:
-    """Класс Калькулятора."""
+    """Класс Калькулятора.
 
-    def __init__(self, amount, comment, date):
+    Функции:
+
+    add_record()
+    get_today_cash_remained()
+    get_week_stats()
+    test_get_today_cash_remained()
+    test_get_calories_remained()
+
+    """
+
+    def __init__(self, init_limit):
+        pass
+
+    def add_record(self, amount, comment, date):
         self.amount = amount
         self.comment = comment
         self.date = date
@@ -36,24 +53,24 @@ class Calculator:
             должен принимать на вход код валюты:
             одну из строк 'rub', 'usd' или 'eur'."""
 
-        currency = currency.lower()
-        currency_dict = {
-            'usd': 'USD',
-            'eur': 'Euro',
-            'rub': 'руб'
-        }
+            currency = currency.lower()
+            currency_dict = {
+                'usd': 'USD',
+                'eur': 'Euro',
+                'rub': 'руб'
+            }
 
-        for rec in records:
-            print(rec.amount)
+            for rec in records:
+                print(rec.amount)
 
-        if currency == 'rub':
-            return currency_dict[currency]
-        elif currency == 'usd':
-            return currency_dict[currency]
-        elif currency == 'eur':
-            return currency_dict[currency]
-        else:
-            pass
+            if currency == 'rub':
+                return currency_dict[currency]
+            elif currency == 'usd':
+                return currency_dict[currency]
+            elif currency == 'eur':
+                return currency_dict[currency]
+            else:
+                pass
 
     def get_today_cash_remained(self, currency):
         """Определить, сколько ещё денег можно потратить
@@ -74,19 +91,28 @@ class Calculator:
         pass
 
     def test_get_today_cash_remained():
+        """Принимает на вход код валюты: одну из строк "rub", "usd" или "eur".
+        Возвращает он сообщение о состоянии дневного баланса в этой валюте,
+        округляя сумму до двух знаков после запятой (до сотых).
+        """
         pass
 
     def test_get_calories_remained():
+        """Считать сколько калорий можно сегодня съесть.
+        В случае превышения лимита
+        """
+
         pass
 
 
 class CaloriesCalculator(Calculator):
+    """Kалькулятор калорий."""
 
     def __init__(self):
         pass
 
 
-class CashCalculator():
+class CashCalculator(Calculator):
 
     def __init__(self):
         """
