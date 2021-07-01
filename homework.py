@@ -76,8 +76,8 @@ class CaloriesCalculator(Calculator):
 
     """
 
-    def __init__(self):
-        pass
+    def __init__(self, limit):
+        super().__init__(limit)
 
     def get_calories_remained():
         """Считать сколько калорий можно сегодня съесть.
@@ -98,11 +98,13 @@ class CashCalculator(Calculator):
 
     """
 
-    def __init__(self):
+    def __init__(self, limit):
         """
         API: Free Currency Rates API
         https://github.com/fawazahmed0/currency-api
         """
+
+        super().__init__(limit)
 
         response = requests.get('https://cdn.jsdelivr.net/gh/'
                                 'fawazahmed0/currency-api@1/'
