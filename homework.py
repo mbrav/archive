@@ -115,6 +115,9 @@ class CashCalculator(Calculator):
 
     """
 
+    USD_RATE = 0.013672
+    EURO_RATE = 0.011535
+
     def __init__(self, limit):
         """
         Добыть курсы Еврo и Доллара через API
@@ -147,16 +150,33 @@ class CashCalculator(Calculator):
     def get_today_cash_remained(self, currency):
         """Определить, сколько ещё денег можно потратить
         сегодня в рублях, долларах или евро."""
+
+        currency_dict = {
+            'usd': 'USD',
+            'eur': 'Euro',
+            'rub': 'руб'
+        }
+
         currency = currency.lower()
 
+        multiplier = None
         if currency == 'rub':
-            pass
+            multiplier = 1.0
         elif currency == 'usd':
-            pass
+            multiplier = self.USD_RATE
         elif currency == 'eur':
-            pass
+            multiplier = self.EURO_RATE
         else:
             pass
+
+        c_format = currency_dict[currency]
+
+        if self.amount < self.limit * multiplier:
+            return f'На сегодня осталось {self.amount} {c_format}'
+        elif self.amount == self.limit * multiplier:
+            return 'Денег нет, держись'
+        else:
+            return f'Денег нет, держись: твой долг - {self.amount} {c_format}'
 
 
 r1 = Record(amount=145, comment='Безудержный шопинг')
