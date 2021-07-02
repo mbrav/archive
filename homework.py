@@ -16,12 +16,14 @@ class Record:
         self.amount = amount
         self.comment = comment
 
+        date_format = '%d.%m.%Y'
+
         if not date:
             self.date = dt.datetime.now().date()
             # print(f"Дата не была указана. "
             #       f"Записываем {self.date} по умолчанию.")
         else:
-            self.date = dt.datetime.strptime(date, "%d.%m.%Y").date()
+            self.date = dt.datetime.strptime(date, date_format).date()
             # print(f"Записываем {self.date}.")
 
 
@@ -38,12 +40,12 @@ class Calculator():
 
     def __init__(self, limit):
         self.limit = limit
-        records = []
-        self.records = records
+        self.records = []
 
-    def add_record(self, date):
+    def add_record(self, record: Record):
         """Сохранить новую запись."""
-        self.records.append(date)
+
+        self.records.append(record)
 
     def get_today_stats(self):
         """Считать, сколько денег и калорий потрачено сегодня."""
@@ -143,9 +145,12 @@ class CashCalculator(Calculator):
             self.USD_RATE = float(json['rub']['usd'])
             self.EURO_RATE = float(json['rub']['eur'])
 
-        print('Валюта \t Курс 1 рубль \n'
-              f'Евро \t {self.EURO_RATE} \n'
-              f'Доллар \t {self.USD_RATE}')
+        usd_by_1 = round(1 / self.USD_RATE, 2)
+        eur_by_1 = round(1 / self.EURO_RATE, 2)
+
+        print('Валюта \t В рублях \n'
+              f'Доллар \t {usd_by_1} \n'
+              f'Евро \t {eur_by_1}')
 
     def get_today_cash_remained(self, currency):
         """Определить, сколько ещё денег можно потратить
@@ -158,6 +163,7 @@ class CashCalculator(Calculator):
         }
 
         currency = currency.lower()
+        cur_format = currency_dict[currency]
 
         multiplier = None
         if currency == 'rub':
@@ -169,18 +175,36 @@ class CashCalculator(Calculator):
         else:
             pass
 
-        c_format = currency_dict[currency]
+        sum = 0
+        for rec in self.records:
+            sum += rec.amount
 
-        if self.amount < self.limit * multiplier:
-            return f'На сегодня осталось {self.amount} {c_format}'
-        elif self.amount == self.limit * multiplier:
+        remainder = round(abs((sum - self.limit) * multiplier), 2)
+        if sum < self.limit:
+            return f'На сегодня осталось {remainder} {cur_format}'
+            print(f'На сегодня осталось {remainder} {cur_format}')
+        elif sum == self.limit:
             return 'Денег нет, держись'
+            print('Денег нет, держись')
         else:
-            return f'Денег нет, держись: твой долг - {self.amount} {c_format}'
+            return f'Денег нет, держись: твой долг - {remainder} {cur_format}'
+            print(f'Денег нет, держись: твой долг - {remainder} {cur_format}')
 
 
-r1 = Record(amount=145, comment='Безудержный шопинг')
-r2 = Record(amount=1568,
-            comment='Наполнение потребительской корзины',
-            date='09.03.2019')
-r3 = Record(amount=691, comment='Катание на такси', date='08.03.2019')
+# создадим калькулятор денег с дневным лимитом 1000
+cash_calculator = CashCalculator(1000)
+
+# дата в параметрах не указана,
+# так что по умолчанию к записи
+# должна автоматически добавиться сегодняшняя дата
+cash_calculator.add_record(Record(amount=145, comment='кофе'))
+# и к этой записи тоже дата должна добавиться автоматически
+cash_calculator.add_record(Record(amount=3090, comment='Серёге за обед'))
+# а тут пользователь указал дату, сохраняем её
+# cash_calculator.add_record(Record(amount=3000,
+#                                   comment='бар в Танин др',
+#                                   date='08.11.2019'))
+
+print(cash_calculator.get_today_cash_remained('usd'))
+# должно напечататься
+# На сегодня осталось 555 руб
