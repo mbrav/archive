@@ -117,8 +117,8 @@ class CashCalculator(Calculator):
 
     """
 
-    USD_RATE = 0.013672
-    EURO_RATE = 0.011535
+    USD_RATE = 73.20
+    EURO_RATE = 86.85
 
     def __init__(self, limit):
         """
@@ -134,23 +134,20 @@ class CashCalculator(Calculator):
         # Иначе, каждое создание класса CashCalculator()
         # занимает приличное время.
         if "PYTEST_CURRENT_TEST" in os.environ:
-            self.USD_RATE = 0.013672
-            self.EURO_RATE = 0.011535
+            self.USD_RATE = 73.20
+            self.EURO_RATE = 86.85
         else:
             response = requests.get('https://cdn.jsdelivr.net/gh/'
                                     'fawazahmed0/currency-api@1/'
                                     'latest/currencies/rub.json')
             json = response.json()
 
-            self.USD_RATE = float(json['rub']['usd'])
-            self.EURO_RATE = float(json['rub']['eur'])
-
-        usd_by_1 = round(1 / self.USD_RATE, 2)
-        eur_by_1 = round(1 / self.EURO_RATE, 2)
+            self.USD_RATE = 1 / float(json['rub']['usd'])
+            self.EURO_RATE = 1 / float(json['rub']['eur'])
 
         print('Валюта \t В рублях \n'
-              f'Доллар \t {usd_by_1} \n'
-              f'Евро \t {eur_by_1}')
+              f'Доллар \t {self.USD_RATE} \n'
+              f'Евро \t {self.EURO_RATE}')
 
     def get_today_cash_remained(self, currency):
         """Определить, сколько ещё денег можно потратить
@@ -169,9 +166,9 @@ class CashCalculator(Calculator):
         if currency == 'rub':
             multiplier = 1.0
         elif currency == 'usd':
-            multiplier = self.USD_RATE
+            multiplier = 1 / self.USD_RATE
         elif currency == 'eur':
-            multiplier = self.EURO_RATE
+            multiplier = 1 / self.EURO_RATE
         else:
             pass
 
@@ -181,16 +178,15 @@ class CashCalculator(Calculator):
             if rec.date == today_date:
                 sum += float(rec.amount)
 
-        remainder = abs((sum - self.limit) * multiplier)
-        if sum < self.limit:
+        limit = self.limit
+        remainder = abs(sum - limit) * multiplier
+        if sum < limit:
             return f'На сегодня осталось {remainder:.2f} {cur_format}'
-            print(f'На сегодня осталось {remainder:.2f} {cur_format}')
-        elif sum == self.limit:
+        elif sum == limit:
             return 'Денег нет, держись'
-            print('Денег нет, держись')
         else:
-            return f'Денег нет, держись: твой долг - {remainder:.2f} {cur_format}'
-            print(f'Денег нет, держись: твой долг - {remainder:.2f} {cur_format}')
+            return ('Денег нет, держись: твой долг'
+                    f' - {remainder:.2f} {cur_format}')
 
 
 # создадим калькулятор денег с дневным лимитом 1000
