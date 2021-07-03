@@ -175,9 +175,11 @@ class CashCalculator(Calculator):
         else:
             pass
 
-        sum = 0
+        today_date = dt.datetime.now().date()
+        sum = 0.0
         for rec in self.records:
-            sum += rec.amount
+            if rec.date == today_date:
+                sum += float(rec.amount)
 
         remainder = round(abs((sum - self.limit) * multiplier), 2)
         if sum < self.limit:
@@ -199,12 +201,12 @@ cash_calculator = CashCalculator(1000)
 # должна автоматически добавиться сегодняшняя дата
 cash_calculator.add_record(Record(amount=145, comment='кофе'))
 # и к этой записи тоже дата должна добавиться автоматически
-cash_calculator.add_record(Record(amount=3090, comment='Серёге за обед'))
+cash_calculator.add_record(Record(amount=300, comment='Серёге за обед'))
 # а тут пользователь указал дату, сохраняем её
-# cash_calculator.add_record(Record(amount=3000,
-#                                   comment='бар в Танин др',
-#                                   date='08.11.2019'))
+cash_calculator.add_record(Record(amount=3000,
+                                  comment='бар в Танин др',
+                                  date='08.11.2019'))
 
-print(cash_calculator.get_today_cash_remained('usd'))
+print(cash_calculator.get_today_cash_remained('rub'))
 # должно напечататься
 # На сегодня осталось 555 руб
