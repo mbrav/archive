@@ -181,16 +181,16 @@ class CashCalculator(Calculator):
             if rec.date == today_date:
                 sum += float(rec.amount)
 
-        remainder = round(abs((sum - self.limit) * multiplier), 2)
+        remainder = abs((sum - self.limit) * multiplier)
         if sum < self.limit:
-            return f'На сегодня осталось {remainder} {cur_format}'
-            print(f'На сегодня осталось {remainder} {cur_format}')
+            return f'На сегодня осталось {remainder:.2f} {cur_format}'
+            print(f'На сегодня осталось {remainder:.2f} {cur_format}')
         elif sum == self.limit:
             return 'Денег нет, держись'
             print('Денег нет, держись')
         else:
-            return f'Денег нет, держись: твой долг - {remainder} {cur_format}'
-            print(f'Денег нет, держись: твой долг - {remainder} {cur_format}')
+            return f'Денег нет, держись: твой долг - {remainder:.2f} {cur_format}'
+            print(f'Денег нет, держись: твой долг - {remainder:.2f} {cur_format}')
 
 
 # создадим калькулятор денег с дневным лимитом 1000
