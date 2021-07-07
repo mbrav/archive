@@ -54,6 +54,15 @@ class Calculator():
                 sum += float(rec.amount)
         return sum
 
+    def today_remained(self):
+        """Подсчитать остаток оставшийся на сегодня."""
+        sum = 0.0
+        for rec in self.records:
+            if rec.date == self.today_date:
+                sum += float(rec.amount)
+        remainder = self.limit - sum
+        return sum, remainder
+
 
 class CaloriesCalculator(Calculator):
     """Калькулятор денег."""
@@ -67,16 +76,12 @@ class CaloriesCalculator(Calculator):
         В случае превышения лимита, делать бодишейминг
         """
 
-        sum = 0.0
-        for rec in self.records:
-            if rec.date == self.today_date:
-                sum += float(rec.amount)
+        sum, remainder = self.today_remained()
 
         msg = ""
-        if sum < self.limit:
-            remainder = int(self.limit - sum)
+        if remainder > 0:
             msg = ('Сегодня можно съесть что-нибудь ещё,'
-                   f' но с общей калорийностью не более {remainder} кКал')
+                   f' но с общей калорийностью не более {int(remainder)} кКал')
         else:
             msg = 'Хватит есть!'
 
@@ -141,20 +146,17 @@ class CashCalculator(Calculator):
         else:
             pass
 
-        sum = 0.0
-        for rec in self.records:
-            if rec.date == self.today_date:
-                sum += float(rec.amount)
+        sum, remainder = self.today_remained()
 
         limit = self.limit
-        remainder = abs(sum - limit) * multiplier
-        if sum < limit:
-            return f'На сегодня осталось {remainder:.2f} {cur_format}'
-        elif sum == limit:
+        rem = abs(remainder) * multiplier
+        if remainder > 0:
+            return f'На сегодня осталось {rem:.2f} {cur_format}'
+        elif remainder == 0:
             return 'Денег нет, держись'
         else:
             return ('Денег нет, держись: твой долг'
-                    f' - {remainder:.2f} {cur_format}')
+                    f' - {rem:.2f} {cur_format}')
 
 
 # создадим калькулятор денег с дневным лимитом 1000
