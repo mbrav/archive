@@ -30,6 +30,7 @@ class Calculator():
     def __init__(self, limit):
         self.limit = limit
         self.records = []
+        self.today_date = dt.datetime.now().date()
 
     def add_record(self, record: Record):
         """Сохранить новую запись."""
@@ -38,20 +39,18 @@ class Calculator():
 
     def get_today_stats(self):
         """Считать, сколько денег и калорий потрачено сегодня."""
-        today_date = dt.datetime.now().date()
         sum = 0.0
         for rec in self.records:
-            if rec.date == today_date:
+            if rec.date == self.today_date:
                 sum += float(rec.amount)
         return sum
 
     def get_week_stats(self):
         """Считать, сколько денег и калорий получено за последние 7 дней."""
-        today_date = dt.datetime.now().date()
-        week_ago = today_date - dt.timedelta(days=7)
+        week_ago = self.today_date - dt.timedelta(days=7)
         sum = 0.0
         for rec in self.records:
-            if rec.date <= today_date and rec.date >= week_ago:
+            if rec.date <= self.today_date and rec.date >= week_ago:
                 sum += float(rec.amount)
         return sum
 
@@ -68,10 +67,9 @@ class CaloriesCalculator(Calculator):
         В случае превышения лимита, делать бодишейминг
         """
 
-        today_date = dt.datetime.now().date()
         sum = 0.0
         for rec in self.records:
-            if rec.date == today_date:
+            if rec.date == self.today_date:
                 sum += float(rec.amount)
 
         msg = ""
@@ -143,10 +141,9 @@ class CashCalculator(Calculator):
         else:
             pass
 
-        today_date = dt.datetime.now().date()
         sum = 0.0
         for rec in self.records:
-            if rec.date == today_date:
+            if rec.date == self.today_date:
                 sum += float(rec.amount)
 
         limit = self.limit
