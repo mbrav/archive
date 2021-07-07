@@ -20,23 +20,12 @@ class Record:
 
         if not date:
             self.date = dt.datetime.now().date()
-            # print(f"Дата не была указана. "
-            #       f"Записываем {self.date} по умолчанию.")
         else:
             self.date = dt.datetime.strptime(date, date_format).date()
-            # print(f"Записываем {self.date}.")
 
 
 class Calculator():
-    """Класс Калькулятора.
-
-    Функции:
-
-    add_record()
-    get_today_stats()
-    get_week_stats()
-
-    """
+    """Класс Калькулятора."""
 
     def __init__(self, limit):
         self.limit = limit
@@ -68,16 +57,7 @@ class Calculator():
 
 
 class CaloriesCalculator(Calculator):
-    """Калькулятор денег.
-
-    Функции:
-
-    add_record()
-    get_today_stats()
-    get_week_stats()
-    get_calories_remained()
-
-    """
+    """Калькулятор денег."""
 
     def __init__(self, limit):
         super().__init__(limit)
@@ -106,16 +86,7 @@ class CaloriesCalculator(Calculator):
 
 
 class CashCalculator(Calculator):
-    """Калькулятор калорий.
-
-    Функции:
-
-    add_record()
-    get_today_stats()
-    get_week_stats()
-    get_today_cash_remained()
-
-    """
+    """Калькулятор калорий."""
 
     USD_RATE = 73.20
     EURO_RATE = 86.85
