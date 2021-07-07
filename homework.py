@@ -39,6 +39,7 @@ class Calculator():
 
     def get_today_stats(self):
         """Считать, сколько денег и калорий потрачено сегодня."""
+
         sum = 0.0
         for rec in self.records:
             if rec.date == self.today_date:
@@ -47,6 +48,7 @@ class Calculator():
 
     def get_week_stats(self):
         """Считать, сколько денег и калорий получено за последние 7 дней."""
+
         week_ago = self.today_date - dt.timedelta(days=7)
         sum = 0.0
         for rec in self.records:
@@ -54,14 +56,23 @@ class Calculator():
                 sum += float(rec.amount)
         return sum
 
-    def today_remained(self):
-        """Подсчитать остаток оставшийся на сегодня."""
+    def today_remained(self, rate: Optional[float] = None):
+        """Подсчитать сумму и остаток оставшийся на сегодня.
+        В случае если курс был указан, выдать абсолютный остаток
+        перведённый на указанный курс.
+        """
+
         sum = 0.0
         for rec in self.records:
             if rec.date == self.today_date:
                 sum += float(rec.amount)
         remainder = self.limit - sum
-        return sum, remainder
+
+        if rate is None:
+            return sum, remainder
+        else:
+            remainder_with_rate = abs(remainder) / rate
+            return sum, remainder, remainder_with_rate
 
 
 class CaloriesCalculator(Calculator):
@@ -91,8 +102,8 @@ class CaloriesCalculator(Calculator):
 class CashCalculator(Calculator):
     """Калькулятор калорий."""
 
-    USD_RATE = 73.20
-    EURO_RATE = 86.85
+    USD_RATE = 0.013420
+    EURO_RATE = 0.011352
 
     def __init__(self, limit):
         """
@@ -108,58 +119,50 @@ class CashCalculator(Calculator):
         # Иначе, каждое создание класса CashCalculator()
         # занимает приличное время.
         if "PYTEST_CURRENT_TEST" in os.environ:
-            self.USD_RATE = 73.20
-            self.EURO_RATE = 86.85
+            self.USD_RATE = 0.013420
+            self.EURO_RATE = 0.011352
         else:
             response = requests.get('https://cdn.jsdelivr.net/gh/'
                                     'fawazahmed0/currency-api@1/'
                                     'latest/currencies/rub.json')
             json = response.json()
 
-            self.USD_RATE = 1 / float(json['rub']['usd'])
-            self.EURO_RATE = 1 / float(json['rub']['eur'])
-
-        print('Валюта \t В рублях \n'
-              f'Доллар \t {self.USD_RATE} \n'
-              f'Евро \t {self.EURO_RATE}')
+            self.USD_RATE = float(json['rub']['usd'])
+            self.EURO_RATE = float(json['rub']['eur'])
 
     def get_today_cash_remained(self, currency):
         """Определить, сколько ещё денег можно потратить
         сегодня в рублях, долларах или евро."""
 
         currency_dict = {
-            'usd': 'USD',
-            'eur': 'Euro',
-            'rub': 'руб'
+            'usd': {
+                'abreviation': 'USD',
+                'rate': self.USD_RATE
+            },
+            'eur': {
+                'abreviation': 'Euro',
+                'rate': self.EURO_RATE
+            },
+            'rub': {
+                'abreviation': 'руб',
+                'rate': 1.0
+            },
         }
 
         currency = currency.lower()
-        cur_format = currency_dict[currency]
+        cur_format = currency_dict[currency]['abreviation']
+        cur_rate = currency_dict[currency]['rate']
 
-        multiplier = None
-        if currency == 'rub':
-            multiplier = 1.0
-        elif currency == 'usd':
-            multiplier = 1 / self.USD_RATE
-        elif currency == 'eur':
-            multiplier = 1 / self.EURO_RATE
-        else:
-            pass
-
-        sum, remainder = self.today_remained()
-
-        limit = self.limit
-        rem = abs(remainder) * multiplier
+        sum, remainder, rate = self.today_remained(cur_rate)
         if remainder > 0:
-            return f'На сегодня осталось {rem:.2f} {cur_format}'
+            return f'На сегодня осталось {rate:.2f} {cur_format}'
         elif remainder == 0:
             return 'Денег нет, держись'
         else:
             return ('Денег нет, держись: твой долг'
-                    f' - {rem:.2f} {cur_format}')
+                    f' - {rate:.2f} {cur_format}')
 
 
-# создадим калькулятор денег с дневным лимитом 1000
 cash_calculator = CashCalculator(1000)
 
 # дата в параметрах не указана,
