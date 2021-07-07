@@ -52,27 +52,24 @@ class Calculator():
         week_ago = self.today_date - dt.timedelta(days=7)
         sum = 0.0
         for rec in self.records:
-            if rec.date <= self.today_date and rec.date >= week_ago:
+            if week_ago <= rec.date <= self.today_date:
                 sum += float(rec.amount)
         return sum
 
     def today_remained(self, rate: Optional[float] = None):
-        """Подсчитать сумму и остаток оставшийся на сегодня.
-        В случае если курс был указан, выдать абсолютный остаток
-        перведённый на указанный курс.
+        """Подсчитать остаток оставшийся на сегодня.
+        В случае, если курс был указан, дополнительно выдать абсолютный остаток
+        переведённый на указанный курс.
         """
 
-        sum = 0.0
-        for rec in self.records:
-            if rec.date == self.today_date:
-                sum += float(rec.amount)
+        sum = self.get_today_stats()
         remainder = self.limit - sum
 
         if rate is None:
-            return sum, remainder
+            return remainder
         else:
             remainder_with_rate = abs(remainder) / rate
-            return sum, remainder, remainder_with_rate
+            return remainder, remainder_with_rate
 
 
 class CaloriesCalculator(Calculator):
@@ -87,16 +84,14 @@ class CaloriesCalculator(Calculator):
         В случае превышения лимита, делать бодишейминг
         """
 
-        sum, remainder = self.today_remained()
+        remainder = self.today_remained()
 
-        msg = ""
         if remainder > 0:
-            msg = ('Сегодня можно съесть что-нибудь ещё,'
-                   f' но с общей калорийностью не более {int(remainder)} кКал')
+            return ('Сегодня можно съесть что-нибудь ещё,'
+                    ' но с общей калорийностью не более '
+                    f'{int(remainder)} кКал')
         else:
-            msg = 'Хватит есть!'
-
-        return msg
+            return 'Хватит есть!'
 
 
 class CashCalculator(Calculator):
@@ -122,13 +117,16 @@ class CashCalculator(Calculator):
             self.USD_RATE = 0.013420
             self.EURO_RATE = 0.011352
         else:
-            response = requests.get('https://cdn.jsdelivr.net/gh/'
-                                    'fawazahmed0/currency-api@1/'
-                                    'latest/currencies/rub.json')
-            json = response.json()
+            try:
+                response = requests.get('https://cdn.jsdelivr.net/gh/'
+                                        'fawazahmed0/currency-api@1/'
+                                        'latest/currencies/rub.json')
+                json = response.json()
 
-            self.USD_RATE = float(json['rub']['usd'])
-            self.EURO_RATE = float(json['rub']['eur'])
+                self.USD_RATE = float(json['rub']['usd'])
+                self.EURO_RATE = float(json['rub']['eur'])
+            except requests.exceptions.HTTPError as e:
+                return "Error: " + str(e)
 
     def get_today_cash_remained(self, currency):
         """Определить, сколько ещё денег можно потратить
@@ -153,7 +151,7 @@ class CashCalculator(Calculator):
         cur_format = currency_dict[currency]['abreviation']
         cur_rate = currency_dict[currency]['rate']
 
-        sum, remainder, rate = self.today_remained(cur_rate)
+        remainder, rate = self.today_remained(cur_rate)
         if remainder > 0:
             return f'На сегодня осталось {rate:.2f} {cur_format}'
         elif remainder == 0:
