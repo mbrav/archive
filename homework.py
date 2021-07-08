@@ -52,7 +52,7 @@ class Calculator():
         week_ago = self.today_date - dt.timedelta(days=7)
         sum = 0.0
         for rec in self.records:
-            if week_ago <= rec.date <= self.today_date:
+            if self.today_date >= rec.date > week_ago:
                 sum += float(rec.amount)
         return sum
 
@@ -89,7 +89,7 @@ class CaloriesCalculator(Calculator):
         if remainder > 0:
             return ('Сегодня можно съесть что-нибудь ещё,'
                     ' но с общей калорийностью не более '
-                    f'{int(remainder)} кКал')
+                    f'{remainder:.0f} кКал')
         else:
             return 'Хватит есть!'
 
@@ -113,10 +113,7 @@ class CashCalculator(Calculator):
         # Нужно для pytest'а
         # Иначе, каждое создание класса CashCalculator()
         # занимает приличное время.
-        if "PYTEST_CURRENT_TEST" in os.environ:
-            self.USD_RATE = 0.013420
-            self.EURO_RATE = 0.011352
-        else:
+        if "PYTEST_CURRENT_TEST" not in os.environ:
             try:
                 response = requests.get('https://cdn.jsdelivr.net/gh/'
                                         'fawazahmed0/currency-api@1/'
@@ -126,7 +123,7 @@ class CashCalculator(Calculator):
                 self.USD_RATE = float(json['rub']['usd'])
                 self.EURO_RATE = float(json['rub']['eur'])
             except requests.exceptions.HTTPError as e:
-                return "Error: " + str(e)
+                return "Ошибка: " + str(e)
 
     def get_today_cash_remained(self, currency):
         """Определить, сколько ещё денег можно потратить
