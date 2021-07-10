@@ -10,7 +10,10 @@ class Record:
     Сохраняет объекты записей в список records[]
     """
 
-    def __init__(self, amount: int, comment: str, date: Optional[str] = None):
+    def __init__(
+            self, amount: int,
+            comment: str,
+            date: Optional[str] = None) -> None:
         """Сохранить новую запись."""
 
         self.amount = amount
