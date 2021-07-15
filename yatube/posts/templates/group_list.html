@@ -24,7 +24,8 @@
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="site-heading">
                             <h1>{{ title }}</h1>
-                            <span class="subheading">{{ title }}, теперь на Django!</span>
+                            <span class="subheading">Посты в категории «{{ title }}»</span>
+                            <i><p>{{ group.description }}</p><i>
                         </div>
                     </div>
                 </div>
@@ -37,17 +38,12 @@
                     {% for post in posts %}
                     <!-- Превью поста-->
                     <div class="post-preview">
-                        <a href="/group/{{ post.group.slug }}/">
-                            <h2 class="post-title">{{ post.group }}</h2>
-                            <p>{{ post.text }}</p>
-                        </a>
-                        <p class="post-meta">Автор: {{ post.author }} <br> Дата публикации {{ post.pub_date }}</p>
+                        <p>{{ post.text }}</p>
+                        <p class="post-meta">Автор: {{ post.author.get_full_name }} <br> Дата публикации: {{ post.pub_date }}</p>
                     </div>
                     <!-- Разделитель-->
-                    <hr class="my-4" />
+                    <hr class="my-1 mb-5" />
                     {% endfor %}
-                    <!-- Страничник-->
-                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-dark text-uppercase" href="#!">Старые Записи →</a></div>
                 </div>
             </div>
         </div>

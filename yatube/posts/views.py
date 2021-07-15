@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 from .models import Group, Post
 
@@ -8,10 +7,18 @@ from .models import Group, Post
 
 def index(request):
     latest_posts = Post.objects.order_by('-pub_date')[:10]
-    return render(request, 'index.html', {'title': 'Δом', 'posts': latest_posts})
+    return render(
+        request,
+        'index.html',
+        {'title': 'yatube', 'posts': latest_posts}
+    )
 
 
 def group_posts(request, group_slug):
-    content = group_slug
-    html = "<html><body>Group: %s</body></html>" % content
-    return HttpResponse(html)
+    group = Group.objects.get(slug=group_slug)
+    posts = Post.objects.filter(group__slug=group_slug)
+    return render(
+        request,
+        'group_list.html',
+        {'title': group.title, 'group': group, 'posts': posts}
+    )
