@@ -8,8 +8,8 @@ User = get_user_model()
 
 class Group(models.Model):
 
-    title = models.CharField(max_length=255, unique=False, blank=False,)
-    slug = models.CharField(max_length=255,)
+    title = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
     description = models.TextField(blank=True,)
 
     class Meta:
@@ -22,7 +22,7 @@ class Group(models.Model):
 
 class Post(models.Model):
 
-    text = models.TextField(blank=True,)
+    text = models.TextField()
     pub_date = models.DateTimeField(auto_now_add=True,)
     author = models.ForeignKey(
         User,
@@ -32,6 +32,8 @@ class Post(models.Model):
 
     group = models.ForeignKey(
         Group,
+        null=True,
+        blank=True,
         on_delete=models.CASCADE,
         related_name="posts"
     )
