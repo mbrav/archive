@@ -55,11 +55,17 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'yatube.urls'
 
-TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
+# Django 2: https://docs.djangoproject.com/en/2.2/howto/overriding-templates/#overriding-from-the-project-s-templates-directory
+# Django 3: https://docs.djangoproject.com/en/3.2/howto/overriding-templates/#overriding-from-the-project-s-templates-directory
+
+TEMPLATES_DIRS = [
+    os.path.join(BASE_DIR, 'templates/posts')
+]
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR],
+        'DIRS': TEMPLATES_DIRS,
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

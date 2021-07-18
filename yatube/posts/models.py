@@ -2,7 +2,6 @@ from django.db import models
 from django.contrib.auth import get_user_model
 
 
-# Create your models here.
 User = get_user_model()
 
 
@@ -17,7 +16,7 @@ class Group(models.Model):
         verbose_name_plural = 'Groups'
 
     def __str__(self):
-        return "%s" % (self.title, )
+        return f'{self.title}'
 
 
 class Post(models.Model):
@@ -27,15 +26,15 @@ class Post(models.Model):
     author = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        related_name="posts"
+        related_name='posts'
     )
 
     group = models.ForeignKey(
         Group,
         null=True,
         blank=True,
-        on_delete=models.CASCADE,
-        related_name="posts"
+        on_delete=models.SET_NULL,
+        related_name='posts'
     )
 
     class Meta:
@@ -43,4 +42,4 @@ class Post(models.Model):
         verbose_name_plural = 'Posts'
 
     def __str__(self):
-        return "Post #%s" % (self.id, )
+        return f'Post #{self.id}'
