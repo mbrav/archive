@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # yatube apps
     'core',
     'about',
     'posts',
@@ -56,10 +57,20 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'yatube.urls'
 
+
+# Django 2: https://docs.djangoproject.com/en/2.2/howto/overriding-templates/#overriding-from-the-project-s-templates-directory
+# Django 3: https://docs.djangoproject.com/en/3.2/howto/overriding-templates/#overriding-from-the-project-s-templates-directory
+
+# TEMPLATES_DIRS = [
+#     os.path.join(BASE_DIR, 'templates/about'),
+#     os.path.join(BASE_DIR, 'templates/posts'),
+#     os.path.join(BASE_DIR, 'templates/users'),
+# ]
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -116,7 +127,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'UTC'
 
@@ -131,3 +142,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]

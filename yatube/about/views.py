@@ -1,3 +1,9 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def author(request):
+    return render(request, 'about/author.html')
+
+
+def tech(request):
+    return render(request, 'about/tech.html')
