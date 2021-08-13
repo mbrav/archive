@@ -1,0 +1,61 @@
+{% load static %}
+<!-- Навигация, сгенерировано с помощью pug-->
+<nav class="navbar navbar-light" style="background-color: lightskyblue">
+	<div class="container">
+		<a class="navbar-brand" href="{% url "posts:index" %}">
+			<img
+				src="{% static 'img/logo.png' %}"
+				width="30"
+				height="30"
+				class="d-inline-block align-top"
+				alt=""
+			/>
+			<span style="color: red">Ya</span>tube
+		</a>
+		<ul class="nav nav-pills">
+			<li class="nav-item">
+				<a class="nav-link" href="{% url "about:author" %}"> Об авторе </a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url "about:tech" %}"> Технологии </a>
+			</li>
+			<!-- пункты меню видны только авторизованному пользователю -->
+			<li class="nav-item">
+				<a class="nav-link" href="{% url "posts:create_post" %}">
+					Новая запись
+				</a>
+			</li>
+			<li class="nav-item">
+				<a
+					class="nav-link link-light"
+					href="../users/password_change_form"
+				>
+					Изменить пароль
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link link-light" href="../users/logged_out"
+					>Выйти</a
+				>
+			</li>
+			<li>Пользователь: leo</li>
+
+			<li>
+				<!-- конец пункты меню видны только авторизованному пользователю -->
+				<!-- пункты меню видны только неавторизованному пользователю -->
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link link-light" href="../users/login">
+					Войти
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link link-light" href="../users/signup"
+					>Регистрация</a
+				>
+			</li>
+			<!-- конец пункты меню видны только неавторизованному пользователю -->
+		</ul>
+	</div>
+</nav>
