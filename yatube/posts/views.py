@@ -20,7 +20,8 @@ def index(request):
 
 
 def profile(request, username):
-    post_list = Post.objects.filter(author__username=username)
+    post_list = Post.objects.filter(
+        author__username=username).order_by('-pub_date')
     profile = User.objects.get(username=username)
     paginator = Paginator(post_list, 10)
 
@@ -35,7 +36,8 @@ def profile(request, username):
 
 
 def group_list(request, group_slug):
-    post_list = Post.objects.filter(group__slug=group_slug)
+    post_list = Post.objects.filter(
+        group__slug=group_slug).order_by('-pub_date')
     group = Group.objects.get(slug=group_slug)
     paginator = Paginator(post_list, 10)
 
@@ -66,7 +68,7 @@ def post_create(request):
             post = form.save(commit=False)
             post.author = request.user
             post.save()
-            return redirect('post', id=post.id)
+            return redirect('profile', username=post.author)
     else:
         form = PostForm()
 
@@ -82,8 +84,8 @@ def post_edit(request, post_id):
     if request.method == "POST":
         form = PostForm(request.POST, instance=post)
         if form.is_valid():
-            post = form.save(commit=False)
             post.author = request.user
+            post = form.save(commit=False)
             post.save()
             return redirect('post', post.id)
     else:
@@ -95,4 +97,4 @@ def post_edit(request, post_id):
         'is_edit': True,
         'post': post
     }
-    return render(request, 'posts/create_post.html', context)
+    return render(request, 'posts/update_post.html', context)
