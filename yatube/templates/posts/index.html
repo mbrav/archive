@@ -1,11 +1,15 @@
-{% extends '../base.html' %} {% block content %}
+{% extends '../base.html' %}
+{% block title %}
+Последние обновления на сайте
+{% endblock %}
+{% block content %}
 <div class="container py-5">
 	<!-- все посты перебираются в цикле -->
 	<article>
 		<ul>
 			<li>
 				Автор: Лев Толстой
-				<a href="{% url "posts:profile" username="test" %}">все посты пользователя</a>
+				<a href="{% url "profile" username="test" %}">все посты пользователя</a>
 			</li>
 			<li>Дата публикации: 31 июля 1854</li>
 		</ul>
@@ -19,15 +23,15 @@
 			Отношенія мои съ товарищами становятся такъ пріятны, что мнѣ жалко
 			бросить штабъ. Здоровье кажется (2) лучше.
 		</p>
-		<a href="{% url "posts:post" id="0" %}">подробная информация</a>
+		<a href="{% url "post" post_id="0" %}">подробная информация</a>
 	</article>
-	<a href="{% url "posts:group_list"%}">все записи группы</a>
+	<a href="{% url "group_list" group_slug="test"%}">все записи группы</a>
 	<hr />
 	<article>
 		<ul>
 			<li>
 				Автор: Лев Толстой
-				<a href="{% url "posts:profile" username="test" %}">все посты пользователя</a>
+				<a href="{% url "profile" username="test" %}">все посты пользователя</a>
 			</li>
 			<li>Дата публикации: 30 июля 1854</li>
 		</ul>
@@ -40,9 +44,9 @@
 			Бабарыкинымъ, ругалъ Сержпутовскому и ничего не сдѣлалъ, вотъ 3
 			упрека, которыя дѣлаю себѣ за нынѣшній день. (3)
 		</p>
-		<a href="{% url "posts:post" id="1" %}">подробная информация</a>
+		<a href="{% url "post" post_id="1" %}">подробная информация</a>
 	</article>
-	<a href="{% url "posts:group_list" %}">все записи группы</a>
+	<a href="{% url "group_list" group_slug="test"	 %}">все записи группы</a>
 	<!-- нет черты после последнего поста -->
 	<!-- если записей больше 10 -- подключён паджинатор -->
 	<nav class="my-5">
