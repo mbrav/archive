@@ -1,62 +1,31 @@
 {% extends '../base.html' %}
 {% block title %}
-Лев Толстой – зеркало русской революции
+{{ group.title }}
 {% endblock %}
 {% block content %}
 <div class="container py-5">
-	<h1>Записи сообщества: Лев Толстой – зеркало русской революции</h1>
-	<p>Группа тайных поклонников графа</p>
+	<h1>Записи сообщества: {{ group.title }}</h1>
+	<p>{{ group.description }}</p>
 	<!-- все посты перебираются в цикле -->
+	{% for post in page %}
 	<article>
 		<ul>
 			<li>
-				Автор: Лев Толстой
-				<a href="{% url "profile" username="test" %}">все посты пользователя</a>
+				Автор: {{ post.author }}
+				<a href="{% url "profile" username=post.author.username %}">все посты пользователя</a>
 			</li>
-			<li>Дата публикации: 31 июля 1854</li>
+			<li>Дата публикации: {{ post.pub_date }}</li>
 		</ul>
 		<p>
-			[Фокшаны.] Еще переходъ до Фокшанъ, во время котораго я ѣхалъ съ
-			Монго. Человѣкъ пустой, но съ твердыми, хотя и ложными убѣжденіями.
-			Генерал[у] по этому должно быть случаю, угодно было спрашивать о
-			моемъ здоровьи. Свинья! К[о]вырялъ носъ и ничего не написалъ — вотъ
-			2 упрека за нын[ѣшній] день. Послѣдній упрекъ становится слишкомъ
-			частъ, хотя походъ и можетъ служить въ немъ отчасти извиненіемъ.
-			Отношенія мои съ товарищами становятся такъ пріятны, что мнѣ жалко
-			бросить штабъ. Здоровье кажется (2) лучше.
+			{{ post.text|truncatewords:100 }}
 		</p>
-		<a href="{% url "post" id="1" %}">подробная информация</a>
+		<a href="{% url "post" post_id=post.id %}">подробная информация</a>
 	</article>
 	{% if post.group %}
-		<a href="{% url "group" group_slug=test %}">все записи группы</a>
+		<a href="{% url "group_list" group_slug=post.group.slug %}">все записи группы</a>
 	{% endif %} 
 	<hr />
-	<!-- нет черты после последнего поста -->
-	<!-- если записей больше 10 -- подключён паджинатор -->
-	<nav class="my-5">
-		<ul class="pagination">
-			<li class="page-item">
-				<a class="page-link" href="#0">Первая</a>
-			</li>
-			<li class="page-item">
-				<a class="page-link" href="#0">Предыдущая</a>
-			</li>
-			<li class="page-item active">
-				<span class="page-link">1</span>
-			</li>
-			<li class="page-item">
-				<a class="page-link" href="#0">2</a>
-			</li>
-			<li class="page-item">
-				<a class="page-link" href="#0">3</a>
-			</li>
-			<li class="page-item">
-				<a class="page-link" href="#0">Следующая</a>
-			</li>
-			<li class="page-item">
-				<a class="page-link" href="#0">Последняя</a>
-			</li>
-		</ul>
-	</nav>
+	{% endfor %}
+	{% include 'includes/paginator.html' %}
 </div>
 {% endblock %}
