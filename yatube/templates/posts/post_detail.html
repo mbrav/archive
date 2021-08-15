@@ -35,7 +35,7 @@
 				{{ post.text }}
 			</p>
 			<!-- эта кнопка видна только автору -->
-			<a class="btn btn-primary" href="{% url "update_post" post_id=post.id %}">
+			<a class="btn btn-primary" href="{% url "post_edit" post_id=post.id %}">
 				редактировать запись
 			</a>
 		</article>

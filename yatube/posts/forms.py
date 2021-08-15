@@ -7,4 +7,4 @@ class PostForm(forms.ModelForm):
         # На основе какой модели создаётся класс формы
         model = Post
         # Укажем, какие поля будут в форме
-        fields = ('text',)
+        fields = ('text', 'group',)

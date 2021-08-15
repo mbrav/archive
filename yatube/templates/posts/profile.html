@@ -7,7 +7,7 @@
 	<h1>Все посты пользователя {{ profile.username }}</h1>
 	<h3>Всего постов: {{ posts.count }}</h3>
 	<!-- все посты перебираются в цикле -->
-	{% for post in page %}
+	{% for post in page_obj %}
 		<article>
 			<ul>
 				<li>Дата публикации: {{ post.pub_date }}</li>

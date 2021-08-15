@@ -7,7 +7,7 @@
 	<h1>Записи сообщества: {{ group.title }}</h1>
 	<p>{{ group.description }}</p>
 	<!-- все посты перебираются в цикле -->
-	{% for post in page %}
+	{% for post in page_obj %}
 	<article>
 		<ul>
 			<li>
