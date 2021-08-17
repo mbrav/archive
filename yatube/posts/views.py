@@ -7,7 +7,8 @@ from django.shortcuts import redirect
 
 
 def index(request):
-    post_list = Post.objects.all().order_by('-pub_date')
+    post_list = Post.objects.select_related('group').select_related(
+        'author').all().order_by('-pub_date')
     paginator = Paginator(post_list, 10)
 
     page_number = request.GET.get('page')
@@ -20,7 +21,7 @@ def index(request):
 
 
 def profile(request, username):
-    post_list = Post.objects.filter(
+    post_list = Post.objects.select_related('group').filter(
         author__username=username).order_by('-pub_date')
     profile = User.objects.get(username=username)
     paginator = Paginator(post_list, 10)
@@ -36,8 +37,8 @@ def profile(request, username):
 
 
 def group_list(request, group_slug):
-    post_list = Post.objects.filter(
-        group__slug=group_slug).order_by('-pub_date')
+    post_list = Post.objects.select_related('group').select_related(
+        'author').filter(group__slug=group_slug).order_by('-pub_date')
     group = Group.objects.get(slug=group_slug)
     paginator = Paginator(post_list, 10)
 
@@ -52,7 +53,8 @@ def group_list(request, group_slug):
 
 
 def post(request, post_id):
-    post = Post.objects.get(id=post_id)
+    post = Post.objects.select_related(
+        'group').select_related('author').get(id=post_id)
 
     context = {
         'post': post,
