@@ -4,28 +4,28 @@
 {% endblock %}
 {% block content %}
 <div class="container py-5">
-	<h1>{{ group.title }}</h1>
-	<p>{{ group.description }}</p>
-	<!-- все посты перебираются в цикле -->
-	{% for post in page_obj %}
-	<article>
-		<ul>
-			<li>
-				Автор: {{ post.author }}
-				<a href="{% url "profile" username=post.author.username %}">все посты пользователя</a>
-			</li>
-			<li>Дата публикации: {{ post.pub_date }}</li>
-		</ul>
-		<p>
-			{{ post.text|truncatewords:100 }}
-		</p>
-		<a href="{% url "post" post_id=post.id %}">подробная информация</a>
-	</article>
-	{% if post.group %}
-		<a href="{% url "group_list" group_slug=post.group.slug %}">все записи группы</a>
-	{% endif %} 
-	<hr />
-	{% endfor %}
-	{% include 'includes/paginator.html' %}
+  <h1>{{ group.title }}</h1>
+  <p>{{ group.description }}</p>
+  <!-- все посты перебираются в цикле -->
+  {% for post in page_obj %}
+  <article>
+    <ul>
+      <li>
+        Автор: {{ post.author }}
+        <a href="{% url "profile" username=post.author.username %}">все посты пользователя</a>
+      </li>
+      <li>Дата публикации: {{ post.pub_date }}</li>
+    </ul>
+    <p>
+      {{ post.text|truncatewords:100 }}
+    </p>
+    <a href="{% url "post" post_id=post.id %}">подробная информация</a>
+  </article>
+  {% if post.group %}
+    <a href="{% url "group_list" group_slug=post.group.slug %}">все записи группы</a>
+  {% endif %} 
+  <hr />
+  {% endfor %}
+  {% include 'includes/paginator.html' %}
 </div>
 {% endblock %}
