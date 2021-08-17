@@ -25,7 +25,12 @@ SECRET_KEY = 'vx=3ymrh-en9m1wh&v$$7_wcy#0*mmpoy!(kv+%b8r(0cal%yo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+# django-debug-toolbar
+INTERNAL_IPS = [
+    '127.0.0.1',
+]
 
 
 # Application definition
@@ -37,6 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # plugins
+    'debug_toolbar',
 
     # yatube apps
     'core',
@@ -53,6 +61,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    # django-debug-toolbar
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'yatube.urls'
