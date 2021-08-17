@@ -1,9 +1,8 @@
+from django.shortcuts import redirect, render, get_object_or_404
 from django.core.paginator import Paginator
-from django.shortcuts import render, get_object_or_404
+from django.contrib.auth.decorators import login_required
 from .models import User, Post, Group
 from .forms import PostForm
-from django.contrib.auth.decorators import login_required
-from django.shortcuts import redirect
 
 
 def index(request):
@@ -23,7 +22,7 @@ def index(request):
 def profile(request, username):
     post_list = Post.objects.select_related('group').filter(
         author__username=username).order_by('-pub_date')
-    profile = User.objects.get(username=username)
+    profile = get_object_or_404(User, username=username)
     paginator = Paginator(post_list, 10)
 
     page_number = request.GET.get('page')
@@ -39,7 +38,7 @@ def profile(request, username):
 def group_list(request, group_slug):
     post_list = Post.objects.select_related('group').select_related(
         'author').filter(group__slug=group_slug).order_by('-pub_date')
-    group = Group.objects.get(slug=group_slug)
+    group = get_object_or_404(Group, slug=group_slug)
     paginator = Paginator(post_list, 10)
 
     page_number = request.GET.get('page')
@@ -53,8 +52,8 @@ def group_list(request, group_slug):
 
 
 def post(request, post_id):
-    post = Post.objects.select_related(
-        'group').select_related('author').get(id=post_id)
+    post = get_object_or_404(Post.objects.select_related(
+        'group').select_related('author'), id=post_id)
 
     posts_by_user = Post.objects.filter(
         author=post.author).count()
@@ -74,7 +73,7 @@ def post(request, post_id):
 @login_required
 def post_create(request):
     if request.method == 'POST':
-        form = PostForm(request.POST)
+        form = PostForm(request.POST or None)
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
