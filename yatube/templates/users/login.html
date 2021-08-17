@@ -9,7 +9,7 @@
       <div class="card">
         <div class="card-header">Войти на сайт</div>
         <div class="card-body">
-          <form method="post" action="{% url "users:login" %}">
+          <form method="post">
             {% csrf_token %}
             <div class="form-group row my-3">
               <label for="id_username">
@@ -43,7 +43,7 @@
                 Войти
               </button>
               <a
-                href="../users/password_reset_form"
+                href="{% url "users:password_reset" %}"
                 class="btn btn-link"
               >
                 Забыли пароль?
