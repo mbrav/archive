@@ -56,8 +56,17 @@ def post(request, post_id):
     post = Post.objects.select_related(
         'group').select_related('author').get(id=post_id)
 
+    posts_by_user = Post.objects.filter(
+        author=post.author).count()
+
+    is_edit = False
+    if request.user == post.author:
+        is_edit = True
+
     context = {
         'post': post,
+        'posts_by_user': posts_by_user,
+        'is_edit': is_edit,
     }
     return render(request, 'posts/post_detail.html', context)
 
@@ -93,10 +102,14 @@ def post_edit(request, post_id):
     else:
         form = PostForm(instance=post)
 
+    is_edit = False
+    if request.user == post.author:
+        is_edit = True
+
     context = {
         'form': form,
         'username': request.user,
-        'is_edit': True,
+        'is_edit': is_edit,
         'post': post
     }
     return render(request, 'posts/update_post.html', context)
