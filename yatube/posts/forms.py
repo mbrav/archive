@@ -8,3 +8,8 @@ class PostForm(forms.ModelForm):
         model = Post
         # Укажем, какие поля будут в форме
         fields = ('text', 'group',)
+
+        labels = {
+            'text': 'Текст нового поста',
+            'group': 'Группа, к которой будет относиться пост',
+        }
