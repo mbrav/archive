@@ -72,12 +72,6 @@ ROOT_URLCONF = 'yatube.urls'
 # Django 2: https://docs.djangoproject.com/en/2.2/howto/overriding-templates/#overriding-from-the-project-s-templates-directory
 # Django 3: https://docs.djangoproject.com/en/3.2/howto/overriding-templates/#overriding-from-the-project-s-templates-directory
 
-# TEMPLATES_DIRS = [
-#     os.path.join(BASE_DIR, 'templates/about'),
-#     os.path.join(BASE_DIR, 'templates/posts'),
-#     os.path.join(BASE_DIR, 'templates/users'),
-# ]
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

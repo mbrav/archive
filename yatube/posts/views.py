@@ -36,7 +36,7 @@ def profile(request, username):
 
 
 def group_list(request, group_slug):
-    post_list = Post.objects.select_related('group').select_related(
+    post_list = Post.objects.select_related('group',
         'author').filter(group__slug=group_slug).order_by('-pub_date')
     group = get_object_or_404(Group, slug=group_slug)
     paginator = Paginator(post_list, 10)
@@ -53,7 +53,7 @@ def group_list(request, group_slug):
 
 def post(request, post_id):
     post = get_object_or_404(Post.objects.select_related(
-        'group').select_related('author'), id=post_id)
+        'group', 'author'), id=post_id)
 
     posts_by_user = Post.objects.filter(
         author=post.author).count()
@@ -72,15 +72,13 @@ def post(request, post_id):
 
 @login_required
 def post_create(request):
+    form = PostForm(request.POST or None)
     if request.method == 'POST':
-        form = PostForm(request.POST or None)
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
             post.save()
             return redirect('profile', username=post.author)
-    else:
-        form = PostForm()
 
     context = {
         'form': form,
