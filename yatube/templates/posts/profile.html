@@ -5,7 +5,7 @@
 {% block content %}
 <div class="container py-5">
   <h1>Все посты пользователя {{ profile.username }}</h1>
-  <h3>Всего постов: {{ page_obj.object_list.count }}</h3>
+  <h3>Всего постов: {{ post_count }}</h3>
   <!-- все посты перебираются в цикле -->
   {% for post in page_obj %}
     <article>

@@ -31,13 +31,14 @@ def profile(request, username):
     context = {
         'page_obj': page,
         'profile': profile,
+        'post_count': paginator.count,
     }
     return render(request, 'posts/profile.html', context)
 
 
 def group_list(request, group_slug):
-    post_list = Post.objects.select_related('group',
-        'author').filter(group__slug=group_slug).order_by('-pub_date')
+    post_list = Post.objects.select_related('group', 'author').filter(
+        group__slug=group_slug).order_by('-pub_date')
     group = get_object_or_404(Group, slug=group_slug)
     paginator = Paginator(post_list, 10)
 
@@ -58,9 +59,7 @@ def post(request, post_id):
     posts_by_user = Post.objects.filter(
         author=post.author).count()
 
-    is_edit = False
-    if request.user == post.author:
-        is_edit = True
+    is_edit = request.user == post.author
 
     context = {
         'post': post,
@@ -99,9 +98,7 @@ def post_edit(request, post_id):
     else:
         form = PostForm(instance=post)
 
-    is_edit = False
-    if request.user == post.author:
-        is_edit = True
+    is_edit = request.user == post.author
 
     context = {
         'form': form,
