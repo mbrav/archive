@@ -1,13 +1,13 @@
 from django.contrib.auth import get_user_model
 from django.test import TestCase
 
-from django.db import models
 from posts.models import Post, Group
 
 User = get_user_model()
 
 
-class PostModelTest(TestCase):
+class TestModelFactory(TestCase):
+    """Общий класс для создания моделей"""
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
@@ -20,8 +20,11 @@ class PostModelTest(TestCase):
         cls.post = Post.objects.create(
             author=cls.user,
             text='Тестовая группа',
-            pub_date=models.DateTimeField(auto_now_add=True,),
         )
+
+
+class PostModelTest(TestModelFactory):
+    """Тест Постов"""
 
     def test_verbose_name(self):
         """verbose_name в полях совпадает с ожидаемым."""
@@ -50,3 +53,15 @@ class PostModelTest(TestCase):
             with self.subTest(field=field):
                 self.assertEqual(
                     post._meta.get_field(field).help_text, expected_value)
+
+    def test_str_text(self):
+        post = PostModelTest.post
+        self.assertEqual(str(post), post.text[:15])
+
+
+class GroupModelTest(TestModelFactory):
+    """Тест Групп"""
+
+    def test_str_text(self):
+        group = GroupModelTest.group
+        self.assertEqual(str(group), group.title)
