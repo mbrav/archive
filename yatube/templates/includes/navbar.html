@@ -32,6 +32,13 @@
           {{ user.get_username }}
         </a>
       </li>
+      {% if user.is_superuser%}
+      <li class="nav-item">
+        <a class="nav-link" href="/admin">
+          Админка
+        </a>
+      </li>
+      {% endif %}
       <li class="nav-item">
         <a
           class="nav-link link-light"
