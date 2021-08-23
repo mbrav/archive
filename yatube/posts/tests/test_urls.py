@@ -1,10 +1,10 @@
 from .test_factory import TestModelFactory
-from django.test import Client
 
 
 class PostURLTests(TestModelFactory):
-
+    """Тест URL"""
     # Проверяем общедоступные страницы
+
     def test_home_url_exists_at_desired_location(self):
         """Страница / доступна любому пользователю."""
         response = self.guest_client.get('/')

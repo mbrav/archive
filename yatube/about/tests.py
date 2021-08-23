@@ -1,5 +1,6 @@
 from django.test import Client, TestCase
 
+
 class AboutURLTests(TestCase):
     """Тест about"""
     @classmethod

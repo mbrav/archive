@@ -5,7 +5,7 @@ from .test_factory import TestModelFactory
 
 
 class PostsViewsTests(TestModelFactory):
-
+    """"Тест View"""
     def test_pages_uses_correct_template(self):
         """URL-адрес использует соответствующий шаблон."""
         templates_pages_names = {
