@@ -1,3 +1,4 @@
+import random
 from django.contrib.auth import get_user_model
 from django.test import Client, TestCase
 
@@ -21,13 +22,16 @@ class TestModelFactory(TestCase):
             description='Тестовое описание',
         )
 
-        for i in range(1, 40):
-            self.number_of_posts = i
-            Post.objects.create(
-                text=f'Тестовой пост №{self.number_of_posts}',
+        self.number_of_posts = random.randint(30, 100)
+        posts = []
+        for p in range(0, self.number_of_posts):
+            new_p = Post(
+                text=f'Тестовой пост №{p}',
                 author=self.auth_user,
                 group=self.group,
-                id=self.number_of_posts
+                id=p
             )
+            posts.append(new_p)
 
+        Post.objects.bulk_create(objs=posts, batch_size=100)
         self.post = Post.objects.all().last()

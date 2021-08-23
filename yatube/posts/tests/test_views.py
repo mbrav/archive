@@ -6,29 +6,6 @@ from .test_factory import TestModelFactory
 
 class PostsViewsTests(TestModelFactory):
     """"Тест View"""
-    def test_pages_uses_correct_template(self):
-        """URL-адрес использует соответствующий шаблон."""
-        templates_pages_names = {
-            'posts/index.html': reverse('index'),
-            'posts/profile.html': (
-                reverse('profile', kwargs={
-                        'username': self.auth_user.username})
-            ),
-            'posts/group_list.html': (
-                reverse('group_list', kwargs={'group_slug': self.group.slug})
-            ),
-            'posts/post_detail.html': (
-                reverse('post', kwargs={'post_id': self.post.id})
-            ),
-            'posts/create_post.html': reverse('post_create'),
-            'posts/update_post.html': (
-                reverse('post_edit', kwargs={'post_id': self.post.id})
-            ),
-        }
-        for template, reverse_name in templates_pages_names.items():
-            with self.subTest(reverse_name=reverse_name):
-                response = self.authorized_client.get(reverse_name)
-                self.assertTemplateUsed(response, template)
 
     # Проверяем, что словарь context страницы post/test-
     # содержит ожидаемые значения
@@ -105,8 +82,14 @@ class GroupsViewsTests(TestModelFactory):
 class PaginatorViewsTest(TestModelFactory):
     """Проверяем Паджинатор"""
 
+    def test_paginator_contains_all_records(self):
+        """Проверка: Есть ли все записи в паджинаторе"""
+        response = self.guest_client.get(reverse('index'))
+        self.assertEqual(
+            response.context['page_obj'].paginator.count, self.number_of_posts)
+
     def test_index_page_contains_ten_records(self):
-        """ Проверка: количество постов на первой странице равно 10."""
+        """Проверка: количество постов на первой странице равно 10."""
         response = self.guest_client.get(reverse('index'))
         self.assertEqual(len(response.context['page_obj']), 10)
 
