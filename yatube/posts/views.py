@@ -30,8 +30,7 @@ def profile(request, username):
 
     context = {
         'page_obj': page,
-        'profile': profile,
-        'post_count': paginator.count,
+        'profile': profile
     }
     return render(request, 'posts/profile.html', context)
 

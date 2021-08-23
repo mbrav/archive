@@ -1,26 +1,4 @@
-from django.contrib.auth import get_user_model
-from django.test import TestCase
-
-from posts.models import Post, Group
-
-User = get_user_model()
-
-
-class TestModelFactory(TestCase):
-    """Общий класс для создания моделей"""
-    @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
-        cls.user = User.objects.create_user(username='auth')
-        cls.group = Group.objects.create(
-            title='Тестовая группа',
-            slug='test-slug',
-            description='Тестовое описание',
-        )
-        cls.post = Post.objects.create(
-            author=cls.user,
-            text='Тестовая группа',
-        )
+from .test_factory import TestModelFactory
 
 
 class PostModelTest(TestModelFactory):
@@ -28,7 +6,7 @@ class PostModelTest(TestModelFactory):
 
     def test_verbose_name(self):
         """verbose_name в полях совпадает с ожидаемым."""
-        post = PostModelTest.post
+        post = self.post
         field_verboses = {
             'text': 'Текст',
             'pub_date': 'Дата публикации поста',
@@ -42,7 +20,7 @@ class PostModelTest(TestModelFactory):
 
     def test_help_text(self):
         """help_text в полях совпадает с ожидаемым."""
-        post = PostModelTest.post
+        post = self.post
         field_help_texts = {
             'text': 'Напишите текст поста',
             'pub_date': 'Укажите дату публикации поста',
@@ -55,7 +33,7 @@ class PostModelTest(TestModelFactory):
                     post._meta.get_field(field).help_text, expected_value)
 
     def test_str_text(self):
-        post = PostModelTest.post
+        post = self.post
         self.assertEqual(str(post), post.text[:15])
 
 
@@ -63,5 +41,5 @@ class GroupModelTest(TestModelFactory):
     """Тест Групп"""
 
     def test_str_text(self):
-        group = GroupModelTest.group
+        group = self.group
         self.assertEqual(str(group), group.title)

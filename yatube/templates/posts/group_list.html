@@ -5,6 +5,7 @@
 {% block content %}
 <div class="container py-5">
   <h1>{{ group.title }}</h1>
+  <h3>Всего постов: {{ page_obj.paginator.count }}</h3>
   <p>{{ group.description }}</p>
   <!-- все посты перебираются в цикле -->
   {% for post in page_obj %}
@@ -22,7 +23,7 @@
     <a href="{% url "post" post_id=post.id %}">подробная информация</a>
   </article>
   {% if post.group %}
-    <a href="{% url "group_list" group_slug=post.group.slug %}">все записи группы</a>
+    {% comment %} <a href="{% url "group_list" group_slug=post.group.slug %}">все записи группы</a> {% endcomment %}
   {% endif %} 
   <hr />
   {% endfor %}
