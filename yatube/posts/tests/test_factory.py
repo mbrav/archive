@@ -7,7 +7,7 @@ User = get_user_model()
 
 
 class TestModelFactory(TestCase):
-    """Общий класс для создания моделей"""
+    """Обобществлённый завод для создания моделей"""
     @classmethod
     def setUpClass(self):
         super().setUpClass()
@@ -21,7 +21,7 @@ class TestModelFactory(TestCase):
             description='Тестовое описание',
         )
 
-        for i in range(1, 124):
+        for i in range(1, 40):
             self.number_of_posts = i
             Post.objects.create(
                 text=f'Тестовой пост №{self.number_of_posts}',
