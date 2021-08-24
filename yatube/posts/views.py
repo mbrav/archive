@@ -30,8 +30,7 @@ def profile(request, username):
 
     context = {
         'page_obj': page,
-        'profile': profile,
-        'post_count': paginator.count,
+        'profile': profile
     }
     return render(request, 'posts/profile.html', context)
 
@@ -72,12 +71,11 @@ def post(request, post_id):
 @login_required
 def post_create(request):
     form = PostForm(request.POST or None)
-    if request.method == 'POST':
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.save()
-            return redirect('profile', username=post.author)
+    if request.method == 'POST' and form.is_valid():
+        post = form.save(commit=False)
+        post.author = request.user
+        post.save()
+        return redirect('profile', username=post.author)
 
     context = {
         'form': form,
@@ -88,15 +86,12 @@ def post_create(request):
 @login_required
 def post_edit(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
-    if request.method == "POST":
-        form = PostForm(request.POST, instance=post)
-        if form.is_valid():
-            post.author = request.user
-            post = form.save(commit=False)
-            post.save()
-            return redirect('post', post.id)
-    else:
-        form = PostForm(instance=post)
+    form = PostForm(request.POST or None, instance=post)
+    if request.method == "POST" and form.is_valid():
+        post.author = request.user
+        post = form.save(commit=False)
+        post.save()
+        return redirect('post', post.id)
 
     is_edit = request.user == post.author
 

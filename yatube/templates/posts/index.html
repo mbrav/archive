@@ -10,13 +10,12 @@
   <div class="col">
     <div class="card shadow-sm">
       <div class="card-body">
-      {% comment %} <h5 class="card-title">Дата публикации: {{ post.pub_date }}</h5> {% endcomment %}
       <h6 class="card-subtitle mb-2 text-muted">{{ post.author }}</h6>
       <p class="card-text">{{ post.text|truncatewords:30 }}</p>
       <h6 class="card-subtitle mb-2 text-muted">Дата публикации:<br>{{ post.pub_date }}</h6>
       <div class="btn-group">
       <a class="btn btn-sm btn-outline-primary" href="{% url "post" post_id=post.id %}">подробная информация</a>
-      <a class="btn btn-sm btn-outline-dark" href="{% url "group_list" group_slug=post.group.slug %}">все записи группы</a>
+      {% comment %} <a class="btn btn-sm btn-outline-dark" href="{% url "group_list" group_slug=post.group.slug %}">все записи группы</a> {% endcomment %}
       </div>
       </div>
     </div>

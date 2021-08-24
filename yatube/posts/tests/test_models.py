@@ -1,31 +1,12 @@
-from django.contrib.auth import get_user_model
-from django.test import TestCase
-
-from django.db import models
-from posts.models import Post, Group
-
-User = get_user_model()
+from .test_factory import TestModelFactory
 
 
-class PostModelTest(TestCase):
-    @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
-        cls.user = User.objects.create_user(username='auth')
-        cls.group = Group.objects.create(
-            title='Тестовая группа',
-            slug='test-slug',
-            description='Тестовое описание',
-        )
-        cls.post = Post.objects.create(
-            author=cls.user,
-            text='Тестовая группа',
-            pub_date=models.DateTimeField(auto_now_add=True,),
-        )
+class PostModelTest(TestModelFactory):
+    """Тест Постов"""
 
     def test_verbose_name(self):
         """verbose_name в полях совпадает с ожидаемым."""
-        post = PostModelTest.post
+        post = self.post
         field_verboses = {
             'text': 'Текст',
             'pub_date': 'Дата публикации поста',
@@ -39,7 +20,7 @@ class PostModelTest(TestCase):
 
     def test_help_text(self):
         """help_text в полях совпадает с ожидаемым."""
-        post = PostModelTest.post
+        post = self.post
         field_help_texts = {
             'text': 'Напишите текст поста',
             'pub_date': 'Укажите дату публикации поста',
@@ -50,3 +31,15 @@ class PostModelTest(TestCase):
             with self.subTest(field=field):
                 self.assertEqual(
                     post._meta.get_field(field).help_text, expected_value)
+
+    def test_str_text(self):
+        post = self.post
+        self.assertEqual(str(post), post.text[:15])
+
+
+class GroupModelTest(TestModelFactory):
+    """Тест Групп"""
+
+    def test_str_text(self):
+        group = self.group
+        self.assertEqual(str(group), group.title)
