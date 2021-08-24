@@ -92,8 +92,6 @@ def post_edit(request, post_id):
         post = form.save(commit=False)
         post.save()
         return redirect('post', post.id)
-    else:
-        form = PostForm(instance=post)
 
     is_edit = request.user == post.author
 
