@@ -1,7 +1,7 @@
 #  импортируйте в код всё необходимое
-from rest_framework import viewsets, serializers
+from rest_framework import viewsets
 
-from .models import Post, Group
+from .models import Post
 from .serializers import PostSerializer
 
 
