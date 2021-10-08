@@ -1,15 +1,26 @@
 from rest_framework import serializers
-from .models import Post
+from .models import Post, Group, Comment
 
 
 class PostSerializer(serializers.ModelSerializer):
     class Meta:
-        fields = ('id', 'text', 'author', 'image', 'pub_date')
-        read_only_fields = ('author',)
         model = Post
+        read_only_fields = ()
+        exclude = [
+        ]
 
-        def get_post(self, request, pk=None):
-            queryset = Post.objects.all()
-            post = get_object_or_404(queryset, pk=pk)
-            serializer = CatSerializer(post)
-            return Response(serializer.data)
+
+class GroupSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Group
+        read_only_fields = ()
+        exclude = [
+        ]
+
+
+class CommentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Comment
+        read_only_fields = ()
+        exclude = [
+        ]
