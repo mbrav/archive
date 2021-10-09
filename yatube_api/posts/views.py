@@ -20,13 +20,23 @@ class PostViewSet(viewsets.ModelViewSet):
         return Response(serializer.data)
 
     @action(methods=['get', 'post'], detail=True, url_path='comments', url_name='comments')
-    def get_post_comments(self, request, pk=None):
-        post = get_object_or_404(self.queryset, pk=pk)
-        comments = Comment.objects.filter(post=post)
-        serializer = CommentSerializer(comments, many=True)
-        return Response(serializer.data)
+    def post_comments(self, request, pk=None):
+        if request.method == 'GET':
+            post = get_object_or_404(self.queryset, pk=pk)
+            comments = Comment.objects.filter(post=post)
+            serializer = CommentSerializer(comments, many=True)
+            return Response(serializer.data)
+        elif request.method == 'POST':
+            serializer = CommentSerializer(data=request.data)
+            test = request.data
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            else:
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     # @action(detail=True, methods=['create'], permission_classes=[permissions.IsAuthenticated])
+
     def create(self, request, *args, **kwargs):
         Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
 

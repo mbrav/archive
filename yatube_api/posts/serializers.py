@@ -1,10 +1,12 @@
-from rest_framework import serializers
+from rest_framework.serializers import ModelSerializer, SerializerMethodField
 from .models import Post, Group, Comment
 
 
-class PostSerializer(serializers.ModelSerializer):
-    comment_count = serializers.SerializerMethodField(
-        method_name='post_comment_count')
+class PostSerializer(ModelSerializer):
+    comment_count = SerializerMethodField(
+        method_name='get_comment_count')
+    author = SerializerMethodField(
+        method_name='get_author_name')
 
     class Meta:
         model = Post
@@ -12,11 +14,14 @@ class PostSerializer(serializers.ModelSerializer):
         exclude = [
         ]
 
-    def post_comment_count(self, obj):
+    def get_comment_count(self, obj):
         return Comment.objects.filter(post=obj).count()
 
+    def get_author_name(self, obj):
+        return obj.author.username
 
-class GroupSerializer(serializers.ModelSerializer):
+
+class GroupSerializer(ModelSerializer):
     class Meta:
         model = Group
         read_only_fields = ()
@@ -24,9 +29,15 @@ class GroupSerializer(serializers.ModelSerializer):
         ]
 
 
-class CommentSerializer(serializers.ModelSerializer):
+class CommentSerializer(ModelSerializer):
+    author = SerializerMethodField(
+        method_name='get_author_name')
+
     class Meta:
         model = Comment
         read_only_fields = ()
         exclude = [
         ]
+
+    def get_author_name(self, obj):
+        return obj.author.username
