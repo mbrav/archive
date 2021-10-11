@@ -19,12 +19,12 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
 
 
 class PostViewSet(viewsets.ModelViewSet):
-    queryset = Post.objects.all()
     permission_classes = [
         permissions.IsAuthenticated, IsOwnerOrReadOnly]
 
     def list(self, request):
-        serializer = PostSerializer(self.queryset, many=True)
+        queryset = Post.objects.all()
+        serializer = PostSerializer(queryset, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def create(self, request):
@@ -35,12 +35,14 @@ class PostViewSet(viewsets.ModelViewSet):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def retrieve(self, request, pk=None):
-        post = get_object_or_404(self.queryset, pk=pk)
+        queryset = Post.objects.all()
+        post = get_object_or_404(queryset, pk=pk)
         serializer = PostSerializer(post)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def update(self, request, pk=None, partial=True):
-        post = get_object_or_404(self.queryset, pk=pk)
+        queryset = Post.objects.all()
+        post = get_object_or_404(queryset, pk=pk)
         serializer = PostSerializer(post, data=request.data)
 
         if post.author != request.user:
@@ -52,7 +54,8 @@ class PostViewSet(viewsets.ModelViewSet):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def destroy(self, request, pk=None):
-        post = get_object_or_404(self.queryset, pk=pk)
+        queryset = Post.objects.all()
+        post = get_object_or_404(queryset, pk=pk)
         if post.author == request.user:
             post.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
@@ -85,7 +88,7 @@ class CommentViewSet(viewsets.ModelViewSet):
     def get_queryset(self, *args, **kwargs):
         post_id = self.kwargs.get('post_id')
         queryset = Comment.objects.filter(post_id=post_id)
-        return queryset
+        return Response(queryset)
 
     def list(self, request, *args, **kwargs):
         post_id = self.kwargs.get('post_id')
@@ -98,6 +101,7 @@ class CommentViewSet(viewsets.ModelViewSet):
         if serializer.is_valid():
             serializer.save(author=request.user)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def retrieve(self, request, *args, **kwargs):
         pk = self.kwargs.get('pk')
