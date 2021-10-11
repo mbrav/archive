@@ -1,12 +1,11 @@
-from rest_framework.serializers import ModelSerializer, SerializerMethodField
+from rest_framework.serializers import ModelSerializer, SerializerMethodField, StringRelatedField
 from .models import Post, Group, Comment
 
 
 class PostSerializer(ModelSerializer):
     comment_count = SerializerMethodField(
         method_name='get_comment_count')
-    author = SerializerMethodField(
-        method_name='get_author_name')
+    author = StringRelatedField()
 
     class Meta:
         model = Post

@@ -45,7 +45,7 @@ class PostViewSet(viewsets.ModelViewSet):
         post = get_object_or_404(queryset, pk=pk)
         serializer = PostSerializer(post, data=request.data)
 
-        if post.author != request.user:
+        if serializer.instance.author != self.request.user:
             return Response(status=status.HTTP_403_FORBIDDEN)
 
         if serializer.is_valid():
@@ -105,7 +105,6 @@ class CommentViewSet(viewsets.ModelViewSet):
 
     def retrieve(self, request, *args, **kwargs):
         pk = self.kwargs.get('pk')
-        post_id = self.kwargs.get('post_id')
         comment = get_object_or_404(Comment, pk=pk)
         serializer = CommentSerializer(comment)
         return Response(serializer.data)
@@ -113,13 +112,20 @@ class CommentViewSet(viewsets.ModelViewSet):
     def update(self, request, *args, **kwargs):
         pk = self.kwargs.get('pk')
         post_id = self.kwargs.get('post_id')
+
+        # WTF begin
+        request.data._mutable = True
+        request.data['post'] = post_id
+        request.data._mutable = False
+        # WTF end
+
         comment = get_object_or_404(Comment, pk=pk)
         serializer = CommentSerializer(comment, data=request.data)
 
-        if comment.author != request.user:
+        if serializer.instance.author != self.request.user:
             return Response(status=status.HTTP_403_FORBIDDEN)
 
-        if serializer.is_valid():
+        if serializer.is_valid(raise_exception=True):
             self.perform_update(serializer)
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
