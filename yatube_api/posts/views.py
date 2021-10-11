@@ -27,33 +27,17 @@ class PostViewSet(viewsets.ModelViewSet):
         serializer = PostSerializer(self.queryset, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-    def retrieve(self, request, pk=None):
-        post = get_object_or_404(self.queryset, pk=pk)
-        serializer = PostSerializer(post)
-        return Response(serializer.data, status=status.HTTP_200_OK)
-
-    @action(methods=['get', 'post'], detail=True, url_path='comments', url_name='comments')
-    def post_comments(self, request, pk=None):
-        if request.method == 'GET':
-            post = get_object_or_404(self.queryset, pk=pk)
-            comments = Comment.objects.filter(post=post)
-            serializer = CommentSerializer(comments, many=True)
-            return Response(serializer.data, status=status.HTTP_200_OK)
-        elif request.method == 'POST':
-            serializer = CommentSerializer(data=request.data)
-            test = request.data
-            if serializer.is_valid():
-                serializer.save()
-                return Response(serializer.data, status=status.HTTP_201_CREATED)
-            else:
-                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
     def create(self, request):
         serializer = PostSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save(author=request.user)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def retrieve(self, request, pk=None):
+        post = get_object_or_404(self.queryset, pk=pk)
+        serializer = PostSerializer(post)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
     def update(self, request, pk=None, partial=True):
         post = get_object_or_404(self.queryset, pk=pk)
@@ -77,29 +61,70 @@ class PostViewSet(viewsets.ModelViewSet):
 
 
 class GroupViewSet(viewsets.ModelViewSet):
-    def list(self, request):
-        queryset = Group.objects.all()
-        serializer = GroupSerializer(queryset, many=True)
-        return Response(serializer.data)
+    queryset = Group.objects.all()
+    permission_classes = [
+        permissions.IsAuthenticated, IsOwnerOrReadOnly]
 
-    def retrieve(self, request, pk=None):
-        queryset = Group.objects.all()
-        group = get_object_or_404(queryset, pk=pk)
-        serializer = GroupSerializer(group)
+    def list(self, request):
+        serializer = GroupSerializer(self.queryset, many=True)
         return Response(serializer.data)
 
     def create(self, request):
         return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
 
+    def retrieve(self, request, pk=None):
+        group = get_object_or_404(self.queryset, pk=pk)
+        serializer = GroupSerializer(group)
+        return Response(serializer.data)
+
 
 class CommentViewSet(viewsets.ModelViewSet):
-    def list(self, request):
-        queryset = Comment.objects.all()
+    permission_classes = [
+        permissions.IsAuthenticated, IsOwnerOrReadOnly]
+
+    def get_queryset(self, *args, **kwargs):
+        post_id = self.kwargs.get('post_id')
+        queryset = Comment.objects.filter(post_id=post_id)
+        return queryset
+
+    def list(self, request, *args, **kwargs):
+        post_id = self.kwargs.get('post_id')
+        queryset = Comment.objects.filter(post_id=post_id)
         serializer = CommentSerializer(queryset, many=True)
         return Response(serializer.data)
 
-    def retrieve(self, request, pk=None):
-        queryset = Comment.objects.all()
-        comment = get_object_or_404(queryset, pk=pk)
+    def create(self, request, *args, **kwargs):
+        serializer = CommentSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save(author=request.user)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+    def retrieve(self, request, *args, **kwargs):
+        pk = self.kwargs.get('pk')
+        post_id = self.kwargs.get('post_id')
+        comment = get_object_or_404(Comment, pk=pk)
         serializer = CommentSerializer(comment)
         return Response(serializer.data)
+
+    def update(self, request, *args, **kwargs):
+        pk = self.kwargs.get('pk')
+        post_id = self.kwargs.get('post_id')
+        comment = get_object_or_404(Comment, pk=pk)
+        serializer = CommentSerializer(comment, data=request.data)
+
+        if comment.author != request.user:
+            return Response(status=status.HTTP_403_FORBIDDEN)
+
+        if serializer.is_valid():
+            self.perform_update(serializer)
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def destroy(self, request, *args, **kwargs):
+        pk = self.kwargs.get('pk')
+        comment = get_object_or_404(Comment, pk=pk)
+        if comment.author == request.user:
+            comment.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        else:
+            return Response(status=status.HTTP_403_FORBIDDEN)
