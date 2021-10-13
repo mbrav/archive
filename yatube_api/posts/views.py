@@ -16,16 +16,8 @@ class PostViewSet(viewsets.ModelViewSet):
         queryset = Post.objects.all()
         return queryset
 
-    def create(self, request):
-        serializer = PostSerializer(data=request.data)
-        if serializer.is_valid():
-            # Без вот этой строчки, CREATE не работает, так как нужно
-            # определить юзера через author=request.user.
-            # Это лучше сделать через get_queryset()?
-            # Или лучше оставить как есть?
-            serializer.save(author=request.user)
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    def perform_create(self, serializer):
+        serializer.save(author=self.request.user)
 
 
 class GroupViewSet(viewsets.ModelViewSet):
@@ -48,17 +40,10 @@ class CommentViewSet(viewsets.ModelViewSet):
     permission_classes = [
         permissions.IsAuthenticated, IsOwnerOrReadOnly]
 
-    # Оооо, круто.
-    # Разобравшись с get_queryset() все операции КРУДа писать не надо. :)
     def get_queryset(self, *args, **kwargs):
         post_id = self.kwargs.get('post_id')
         queryset = Comment.objects.filter(post_id=post_id)
         return queryset
 
-    def create(self, request, *args, **kwargs):
-        serializer = CommentSerializer(data=request.data)
-        if serializer.is_valid():
-            # Аналогичный момент как и с create() в PostViewSet()
-            serializer.save(author=request.user)
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    def perform_create(self, serializer):
+        serializer.save(author=self.request.user)
