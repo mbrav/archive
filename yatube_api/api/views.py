@@ -1,9 +1,9 @@
 from django.shortcuts import get_object_or_404
-from rest_framework import viewsets, status
+from rest_framework import generics, permissions, viewsets, status, filters
 from rest_framework.response import Response
-from rest_framework import permissions
 from posts.models import Post, Group, Comment, Follow
 from .serializers import PostSerializer, GroupSerializer, CommentSerializer, FollowSerializer
+from .permissions import IsAuthorOrReadOnlyPermission
 
 
 class PostViewSet(viewsets.ModelViewSet):
@@ -11,6 +11,12 @@ class PostViewSet(viewsets.ModelViewSet):
     serializer_class = PostSerializer
     permission_classes = [
         permissions.IsAuthenticated, ]
+
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['$text']
+
+    def perform_create(self, serializer):
+        serializer.save(author=self.request.user)
 
     def get_queryset(self):
         queryset = Post.objects.all()
@@ -64,3 +70,24 @@ class FollowViewSet(viewsets.ModelViewSet):
 
     def create(self, request):
         serializer.save(author=self.request.user)
+
+
+# Импортируйте в код все необходимое
+# from django_filters.rest_framework import DjangoFilterBackend
+
+
+class PostList(generics.ListCreateAPIView):
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['$text']
+
+    def perform_create(self, serializer):
+        serializer.save(author=self.request.user)
+
+
+class PostDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
+    permission_classes = (IsAuthorOrReadOnlyPermission,)
