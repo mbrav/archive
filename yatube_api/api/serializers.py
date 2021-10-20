@@ -31,7 +31,19 @@ class CommentSerializer(serializers.ModelSerializer):
 
 
 class FollowSerializer(serializers.ModelSerializer):
+    user = serializers.SlugRelatedField(slug_field='username', read_only=True)
+    following = serializers.SlugRelatedField(
+        slug_field='username', read_only=True, source='author')
+
+
+    def validate_following(self, following):
+        user = self.context['request'].user
+        follow_exists = Follow.object.filter(user=user, author=following).exists()
+        if user != following and not follow_exists:
+            return following
+        raise serializers.ValidationError('Нельзя подписываться на себя!')
 
     class Meta:
-        fields = '__all__'
+        fields = ('user', 'following')
+        read_only_fields = ('user',)
         model = Follow
