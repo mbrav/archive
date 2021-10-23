@@ -97,7 +97,7 @@ class Follow(models.Model):
         help_text='Укажите пользователя подписки',
     )
 
-    author = models.ForeignKey(
+    following = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
         related_name='following',
