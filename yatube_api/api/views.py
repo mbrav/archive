@@ -4,7 +4,7 @@ from django.contrib.auth import get_user_model
 from rest_framework import viewsets, status, filters
 from rest_framework.response import Response
 from posts.models import Post, Group, Comment, Follow
-from .permissions import IsAuthorOrReadOnlyPermission
+from .permissions import IsAuthorOrReadOnlyPermission, ReadOnly
 from .serializers import (
     PostSerializer,
     GroupSerializer,
@@ -21,9 +21,8 @@ class PostViewSet(viewsets.ModelViewSet):
     filter_backends = [filters.SearchFilter]
     search_fields = ['$text']
 
-    def get_queryset(self):
-        queryset = Post.objects.all()
-        return queryset
+    permission_classes = (IsAuthorOrReadOnlyPermission,)
+    pagination_class = LimitOffsetPagination
 
     def perform_create(self, serializer):
         if serializer.is_valid():
@@ -33,20 +32,13 @@ class PostViewSet(viewsets.ModelViewSet):
 class GroupViewSet(viewsets.ModelViewSet):
 
     serializer_class = GroupSerializer
-    pagination_class = None
-
-    def get_queryset(self):
-        queryset = Group.objects.all()
-        return queryset
-
-    def create(self, request):
-        return Response(status=status.HTTP_405_METHOD_NOT_ALLOWED)
+    permission_classes = (ReadOnly,)
 
 
 class CommentViewSet(viewsets.ModelViewSet):
 
     serializer_class = CommentSerializer
-    pagination_class = None
+    permission_classes = (IsAuthorOrReadOnlyPermission,)
 
     def get_queryset(self, *args, **kwargs):
         post_id = self.kwargs.get('post_id')
