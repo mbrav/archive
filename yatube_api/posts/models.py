@@ -116,6 +116,12 @@ class Follow(models.Model):
         ordering = ('-created',)
         verbose_name = 'Подписка'
         verbose_name_plural = 'Подписки'
+        constraints = [
+            models.UniqueConstraint(
+                fields=['following', 'user'],
+                name='follow_unique',
+            ),
+        ]
 
     def __str__(self):
         return f'{self.user}'
