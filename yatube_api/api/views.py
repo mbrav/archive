@@ -51,6 +51,7 @@ class FollowViewSet(viewsets.ModelViewSet):
     serializer_class = FollowSerializer
     filter_backends = (filters.SearchFilter,)
     search_fields = ('following__username',)
+    http_method_names = ['get', 'post']
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
