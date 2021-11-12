@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>RiTa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Fjord+One' rel='stylesheet' type='text/css'>
+    <style>
+
+    body {
+      font-family: 'Fjord One', serif;
+    }
+
+    h1 {
+      display: inline-block;
+      font-family: 'Special Elite', cursive;
+      color: #CC3A3A;
+      text-transform: uppercase;
+      letter-spacing: 0.10em;
+      -webkit-transform: rotate(-15deg);
+      margin-bottom: 50px;
+      margin-left: 100px;
+      /*margin-bottom: 70px;
+      margin-top: 70px;*/
+    }
+
+    .strikeout::after {
+      border-bottom: 0.400em solid black;
+      content: "";
+      left: 0;
+      margin-top: calc(0.600em / 2 * -1);
+      position: absolute;
+      right: 0;
+      top: 50%;
+    }
+
+    .box {
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+
+    .enter {
+      font-family: 'Fjord One', serif;
+      background-color: none;
+      border: none;
+      resize: none;
+      outline: none;
+      text-align: left;
+      font-size: 25px;
+      color: rgb(54, 58, 58);
+      width:800px;
+      height:40px;
+    }
+
+    .enter::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+      color: #D6D8D8;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Unclassified</h1>
+      <input type="text" class="enter" placeholder="please express you government concerns.." id="inputField" autofocus/>
+      <input type="button" class="button" value="SUBMIT" OnClick="generate()"/>
+    </div>
+  </body>
+  <script src="../p5.min.js" type="text/javascript"></script>
+  <script src="../p5.dom.js" type="text/javascript"></script>
+  <script src="../rita.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
+</html>

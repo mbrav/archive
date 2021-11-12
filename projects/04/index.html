@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Flesch </title>
+  <script src="../p5.min.js" type="text/javascript"></script>
+
+  <script src="../p5.dom.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
+  <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <linkhref='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <style>
+
+    * {
+      padding: 0px;
+    }
+
+    body {
+      margin: 0;
+      width: 450px;
+      margin: 0 auto;
+      text-align: center;
+      font-family: 'Indie Flower', cursive;
+      color: #666;
+    }
+
+    canvas {
+      vertical-align: top;
+    }
+
+    h1 {
+      font-family: 'Poiret One', cursive;
+      color: #444;
+      border-bottom: 5px;
+      border-color: black;
+    }
+
+    #dropzone {
+      padding: 20px;
+      border-style: inset;
+      border-radius: 10px;
+      text-align: center;
+
+      /* stripes */
+      background: repeating-linear-gradient(45deg, white 0px, white 19px, #BACFD8 19px, #BACFD8 20px);
+
+      height: 200px;
+      font-size: 30px;
+    }
+
+    #dropzone-text {
+      position: relative;
+      color: #999;
+    }
+
+    /*.phead {
+      color: #6CA4BB;
+    }*/
+
+    .report-paragraph {
+      /*background-color: pink;*/
+      display: inline;
+      float: left;
+      width: 150px;
+      text-align: left;
+    }
+
+    .report-paragraph span {
+      color: #6CA4BB;
+    }
+
+    textarea {
+      font-family: 'Indie Flower', cursive;
+      resize: none;
+      color: #444;
+      border-radius: 10px;
+      border: 1px double #666;
+      font-size: 15px;
+      padding: 5px;
+    }
+
+    button {
+      font-family: 'Poiret One', cursive;
+      font-size: 20px;
+      border-width: 1px;
+      border-color: #666;
+      background-color: inherit;
+      border-radius: 7px;
+      color: #6CA4BB;
+      height: 40px;
+      width: 200px;
+    }
+
+    #toggle {
+      font-size: 20px;
+      border-style: none;
+      background-color: #BACFD8;
+      color: white;
+      width: auto;
+      padding: 5px;
+    }
+
+    ::-webkit-input-placeholder {
+       /*color: #BACFD8;*/
+       font-size: 20px;
+       padding-left: 20px;
+       padding-top: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Flesch index reader/generator</h1>
+  <button id="toggle">Change to File Input</button>
+  <p>
+    <div id="dropzone"> <p id ="dropzone-text">Drag in some nice file please...</p></div>
+  <p>
+  <textarea id="textinput" placeholder="Enter some nice text please..." rows="10" cols="60"></textarea><br>
+  <button id="submit">Submit</button>
+  </p>
+</body>
+</html>
