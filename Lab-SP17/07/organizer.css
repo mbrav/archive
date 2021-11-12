@@ -1,0 +1,35 @@
+body {
+  background-color: #000000;
+  margin: 0px;
+  overflow: hidden;
+  font-family:Monospace;
+  font-size:13px;
+  text-align:center;
+  font-weight: bold;
+  text-align:center;
+}
+
+a {
+  color:#659bf3;
+}
+
+#info {
+  max-width: 260px;
+  color: #3f4e68;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 5px;
+  z-index:100;
+}
+
+#info {
+  background-color: rgba(238,238,238, 0.8);
+  border-radius: 10px;
+  margin: 12px;
+}
+
+#info p {
+  text-align: left;
+  margin: 10px;
+}

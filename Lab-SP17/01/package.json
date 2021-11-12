@@ -1,0 +1,18 @@
+{
+  "name": "terra-form",
+  "version": "1.0.0",
+  "description": "terra forming ascci art",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "keywords": [
+    "generative",
+    "art"
+  ],
+  "author": "Michael Braverman",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3"
+  }
+}
