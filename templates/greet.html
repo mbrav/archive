@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>LED Switcher</title>
+  <style media="screen">
+    body {
+      background-color: #5B5E69;
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+      font-family: Arial;
+      color: #F3E736;
+    }
+
+    h3 {
+      color: white;
+    }
+
+    .button {
+      border-width: thick;
+      border-color: white;
+      font-size: 50px;
+    }
+
+    a {
+        color: #6CEC72;
+    }
+  </style>
+</head>
+<body>
+  <h1>Wlecome to the LED switcher<h1>
+  <h3>Right now the led is <b> {% if state%} ON {% else %} OFF {% endif %}</b></h3>
+
+  <div class="button">
+    {% if state%}
+      <a href="/off"><h2>ON</h2></a>
+    {% else %}
+      <a href="/on"><h2>OFF</h2></a>
+    {% endif %}
+  </div>
+</body>
+</html>
