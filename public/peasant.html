@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Technelogical Feudalism</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+  </head>
+</script>
+  <body>
+    <h1>Hey Peasant!</h1>
+    <div class="box">
+      <h2>His majesty orders you to prey and accept God's grace. If you accept it, God will be able to look at your actions and provide you with guidance. </h2>
+
+      <h3>If you stay here for a bit, move and click your mouse, God will be chill. </h3>
+      <!-- <a href="/grace"><p id = "accept">Accept God's Grace</p></a> -->
+    </div>
+  </body>
+  <script src="socket.io-1.4.5.js"></script>
+  <script src="p5.min.js"></script>
+  <script src="p5.dom.js"></script>
+  <script type="text/javascript">
+    var socket;
+    var mousePress = false;
+
+    var body;
+    var colorAdd;
+
+    var bubbles = [];
+
+    function setup() {
+      noCanvas();
+
+      socket = io.connect('http://162.243.239.240:8002');
+      body = select('body');
+
+      b = new Bubble;
+      for (var i = 0; i < 50; i++ ) {
+        bubbles[i] = new Bubble();
+      }
+    }
+
+    function draw() {
+      colorAdd = mouseX/3 + mouseY/3;
+
+      if (mousePress) {
+        colorAdd += random(80, 180);
+        for (var i = 0; i < 50; i++ ) {
+          bubbles[i].update();
+          bubbles[i].display();
+
+          if(bubbles[i].dead()) {
+            bubbles.splice(i,0);
+          }
+        }
+      }
+      body.style("background-color", "hsl(" + colorAdd % 255 + ", 10%, 50%)");
+    }
+
+    setInterval(sendData, 50);
+
+    function sendData() {
+
+
+      // data packet
+      var data = {
+        mouseX: mouseX,
+        mouseY: mouseY,
+        windowW: windowWidth,
+        windowH: windowHeight,
+        mousePressed: mousePress,
+        oath: " "
+      };
+
+      socket.emit('send-data',data);
+      console.log("emited");
+    }
+
+    function mousePressed() {
+      mousePress = true;
+      for (var i = 0; i < 50; i++ ) {
+        bubbles[i].show;
+      }
+    }
+
+    function mouseReleased() {
+        mousePress = false;
+        for (var i = 0; i < 50; i++ ) {
+          bubbles[i].hide;
+        }
+    }
+
+    function Bubble() {
+      this.x = random(windowWidth);
+      this.y = random(windowHeight);
+      this.speedX = random(-3, 3);
+      this.speedY = random(-3, 3);
+
+      this.size = random(10, 50);
+      this.life = random(100, 255);
+
+      var myDiv = createDiv('amen');
+
+      this.display = function() {
+        // fill(this.life ,0,0,150)
+        myDiv.position(this.x, this.y);
+      }
+
+      this.hide = function() {
+        // fill(this.life ,0,0,150)
+        myDiv.hide();
+      }
+
+      this.hide = function() {
+        // fill(this.life ,0,0,150)
+        myDiv.show();
+      }
+
+      this.update = function() {
+
+        if (this.life <= 0) {
+          this.x += this.speedX;
+          this.y += this.speedY;
+        } else {
+          this.x += random(-1, 1);
+          this.y += random(-1, 1);
+        }
+
+        this.life -= 1;
+
+        if (this.x < 0 || this.x > width) {
+          this.speedX = -this.speedX;
+        }
+        if (this.y < 0 || this.y > width) {
+          this.speedY = -this.speedY;
+        }
+      }
+
+      this.dead = function() {
+        if (self.life == 0) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      this.intersects = function() {
+
+      }
+    }
+  </script>
+</html>
