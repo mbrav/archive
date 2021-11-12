@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Eviction City</title>
+	<style>
+
+		body {
+			margin: 0;
+			font-family: Futura;
+		}
+
+		.info {
+		  max-width: 400px;
+		  color: #a3a2a2;
+		  position: absolute;
+		  bottom: 0px;
+		  padding: 5px;
+		  z-index: 100;
+			background-color: rgba(98, 98, 98, 0.13);
+			border-radius: 20px;
+			margin: 12px;
+		}
+
+		h1 sub a {
+
+		}
+
+		.left {
+			left: 0px;
+		}
+
+		.right {
+			right: 0px;
+		}
+
+		.info p {
+		  margin: 10px;
+		}
+
+
+	</style>
+</head>
+
+<body>
+
+	<div id="container">
+		<!-- canvas goes here  -->
+	</div>
+
+	<div class="info left">
+		<h1>Eviction City <sub>(<a href="https://github.com/mbrav/EvictionCity">source</a>)</sub>	</h1>
+		<p>A visualization of New York metropolitan area home evictions, gentrification, policing of neighborhoods and other social issues which are constitutive to the social antagonisms that inevitably arise under capitalism.</p>
+		<!-- <p><b>Orbit</b> - left mouse / one-finger move</p>
+		<p><b>Zoom</b> - mousewheel / two-finger spread or squish</p>
+		<p><b>Pan</b> - right mouse or arrow keys / two-finger move</p> -->
+	</div>
+
+	<div class="info right" id="hover-info">
+    <h2 id="name">Marshal Name: </h2>
+    <!-- <img src="" alt="-"></img> -->
+    <p id="date">Date: <span>-</span></p>
+    <p id="lon">Longitude: <span>-</span></p>
+    <p id="lat">Latitude: <span>-</span></p>
+  </div>
+
+</body>
+
+<script type="x-shader/x-vertex" id="vertexshader">
+	attribute float size;
+	varying vec3 vColor;
+	void main() {
+		vColor = color;
+		vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+		gl_PointSize = size * ( 300.0 / -mvPosition.z );
+		gl_Position = projectionMatrix * mvPosition;
+	}
+</script>
+<script type="x-shader/x-fragment" id="fragmentshader">
+	uniform sampler2D pointTexture;
+	varying vec3 vColor;
+	void main() {
+		gl_FragColor = vec4( vColor, 1.0 );
+		gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
+	}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/data/evictions.js"></script>
+<script type="text/javascript" src="js/data/geocoded-data-partial.js"></script>
+<script type="module" src="js/script.js"></script>
+
+</html>
