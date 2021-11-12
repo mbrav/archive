@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title id="page-title"></title>
+	<link rel="stylesheet" type="text/css" href="assets/main.css">
+	<link href='../../css/organizer.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<!-- the element below acts as the wrapper to append your javascript generated div to: -->
+	<div id="wrapper"></div>
+
+	<div id="title">
+			<h1 id="project-name"></h1>
+			<ul id="project-nav">
+					<li id="past-project"></li>
+					<li id="next-project"></li>
+			</ul>
+	</div>
+
+	<!-- LINKING YOUR JAVASCRIPT TO YOUR HTML DOCUMENT -->
+	<script type="text/javascript" src="assets/script.js"></script>
+	<script type="text/javascript" src='../../js/organizer.js'></script>
+	<script type="text/javascript">
+    // set project's number and name
+    projectSetup(2, "modular generative pattern");
+  </script>
+</body>
+</html>
