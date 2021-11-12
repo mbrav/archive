@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 .gitignore
 .git
 .DS_Store
 Files/BoYa-HighMountain,FlowingWater.m4a
+=======
+node/node_modules/*
+>>>>>>> infORM/master
