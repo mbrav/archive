@@ -1,0 +1,1 @@
+cat */*.md | markdown_py > README.md
