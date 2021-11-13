@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <h1>api_final</h1>
 <p>api final</p>
 <h2>Описание проекта: README.md</h2>
@@ -458,3 +459,8 @@ Cao Fei's - [RMB City](https://www.youtube.com/watch?v=9MhfATPZA0g)
 
 Cao Fei's - [China Tracy](https://www.youtube.com/watch?v=5vcR7OkzHkI)
 >>>>>>> nydc/master
+=======
+# KOS-Scripts
+
+Various scripts using the [kOS mod](https://github.com/KSP-KOS/KOS) for [KSP](https://store.steampowered.com/app/220200/Kerbal_Space_Program/) 
+>>>>>>> KOS-Scripts/master
