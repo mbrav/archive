@@ -26,6 +26,7 @@
 <h2>Contexts</h2>
 <p><a href="https://aeon.co/essays/soon-we-will-see-chrono-attached-to-every-form-of-medicine">Life in Circadia</a> by Jessa Gamble</p>
 <h1>Code2-SP16</h1>
+<h2><a href="https://mbrav.github.io/archive/Code2-SP16/">Link to Gallery</a></h2>
 <p>Code from Code 2 class at Parsons BFADT</p>
 <p><strong>Instructor</strong>: <a href="https://github.com/whoisbma">Bryan Ma</a></p>
 <p>Spring 2016</p>
@@ -129,10 +130,12 @@ May 2017</p>
 <p>A visualization of New York metropolitan area home evictions, gentrification, policing of neighborhoods and other social issues which are constitutive to the social antagonisms that inevitably arise under capitalism.</p>
 <ul>
 <li>Using <a href="https://threejs.org/">three.js JavaScript 3D Library</a></li>
-<li>NYC Open Data <a href="https://data.cityofnewyork.us/City-Government/Evictions/6z8x-wfk4/data">Evictions Dataset</a></li>
+<li>NYC Open Data <a href="https://data.cityofnewyork.us/City-Government/Evictions/6z8x-wfk4/data">Evictions Dataset</a><ol>
 <li>Raw <a href="https://raw.githubusercontent.com/mbrav/EvictionCity/master/js/data/evictions-raw.js">JSON data</a></li>
-<li><a href="http://mbrav.com/EvictionCity/utilities/util02/">Geocoding and formatting utility</a> using <a href="https://locationiq.com/">LocationIQ</a> (previously it was possible to do it with Google API until it <a href="https://youtu.be/byGIZ4QIHOM">became expensive</a>)</li>
+<li><a href="http://mbrav.com/archive/EvictionCity/utilities/util02/">Geocoding and formatting utility</a> using <a href="https://locationiq.com/">LocationIQ</a> (previously it was possible to do it with Google API until it <a href="https://youtu.be/byGIZ4QIHOM">became expensive</a>)</li>
 <li><a href="https://raw.githubusercontent.com/mbrav/EvictionCity/master/js/data/geocoded-data-partial.js">Formatted data</a></li>
+</ol>
+</li>
 </ul>
 <h1>FlowingPagoda</h1>
 <p><em>A Pagoda that never stops flowing...</em></p>
@@ -196,40 +199,50 @@ May 2017</p>
 <h1>infORM alpha2</h1>
 <p>A Physical Computing and Object Relational Mapping tool</p>
 <p><a href="https://vimeo.com/161095259">Video</a> of the project</p>
-<p>Project's intent <a href="https://github.com/mixania/infORM/blob/master/ProjectIntent.pdf">PDF</a></p>
+<p>Project's intent <a href="https://mbrav.github.io/archive/infORM/ProjectIntent.pdf">PDF</a></p>
 <h2>Instructions</h2>
-<p>add your serial port in <em>script.js</em> on the following line:
-<code>// connect to Serial
+<p>add your serial port in <em>script.js</em> on the following line:</p>
+<p><code>// connect to Serial
 serial.open("/dev/cu.usbmodem819431");</code></p>
-<p>if you know what you are doing then do...
-<code>node node/startserver.js</code></p>
+<p>if you know what you are doing then do...</p>
+<p><code>node node/startserver.js</code></p>
 <p>if the server does not start, npm dependencies must be install first</p>
 <h2>Technologies used</h2>
 <ul>
-<li>Software</li>
+<li>Software<ul>
 <li>A node.js server</li>
 <li>p5.js JavaScript library</li>
 <li>d3.js JavaScript library</li>
 <li>JSON</li>
-<li>Hardware</li>
+</ul>
+</li>
+<li>Hardware<ul>
 <li>Teensy 3.1 running at 120 MHz (an Arduino Uno might not have enough space or power)</li>
 <li>MPU-6050 Accelerometer</li>
 <li>HMC5883 Magnetometer</li>
-<li>Arduino Libraries</li>
+</ul>
+</li>
+<li>Arduino Libraries<ul>
 <li>I2C Library</li>
 <li><a href="https://github.com/bblanchon/ArduinoJson">ArduinoJson</a> - An elegant and efficient JSON library for embedded systems.</li>
 <li>Adafruit's <a href="https://github.com/adafruit/Adafruit_Sensor">Sensor Library</a></li>
 <li>Adafruit's <a href="https://github.com/adafruit/Adafruit_HMC5883_Unified">HMC5883L Library</a></li>
 </ul>
+</li>
+</ul>
 <h2>Changes</h2>
-<p><strong>alpha2</strong> - March 31, 2016
-* Implemented MPU-6050's temperature readings
-* Added the HMC5883 magnetometer to the project
-* Added magnetometer reads
-* Added different event triggers for each of the type of readings
-* Improved the calculation of <em>event significance</em> thanks to the added sensors</p>
-<p><strong>alpha</strong> - March 28, 2016
-* First release</p>
+<p><strong>alpha2</strong> - March 31, 2016</p>
+<ul>
+<li>Implemented MPU-6050's temperature readings</li>
+<li>Added the HMC5883 magnetometer to the project</li>
+<li>Added magnetometer reads</li>
+<li>Added different event triggers for each of the type of readings</li>
+<li>Improved the calculation of <em>event significance</em> thanks to the added sensors</li>
+</ul>
+<p><strong>alpha</strong> - March 28, 2016</p>
+<ul>
+<li>First release</li>
+</ul>
 <h1>Infrastructural Utopia Tower (2016)</h1>
 <p><strong>A <a href="https://vimeo.com/166409996">Video</a> of the Installation</strong></p>
 <h2>Abstract</h2>
@@ -704,84 +717,84 @@ Your server should be running on http://127.0.0.1:80/
 <p><strong>Instructors</strong>: Miri Park &amp; Bryan Collinsworth</p>
 <p>Fall 2016</p>
 <h2>Sketches</h2>
-<h3><a href="02/">02</a> - Random Sequence</h3>
-<p><img alt="Random Sequence" src="img/02.png" /></p>
-<h3><a href="03/">03</a> - Fibonacci Sequence</h3>
-<p><img alt="Random Sequence" src="img/03.png" /></p>
-<h3><a href="04/">04</a> - Fibonacci Sequence &amp; Composition</h3>
-<p><img alt="Random Sequence" src="img/04.png" /></p>
-<h3><a href="05/">05</a> - Chaotic Harmony</h3>
-<p><img alt="Random Sequence" src="img/05.png" /></p>
-<h3><a href="06/">06</a> - Sleep Harmonics I</h3>
-<p><img alt="Random Sequence" src="img/06.png" /></p>
-<h3><a href="07/">07</a> - Sleep Harmonics II</h3>
-<p><img alt="Random Sequence" src="img/07.png" /></p>
-<h3><a href="08/">08</a> - Sleep Harmonics III</h3>
-<p><img alt="Random Sequence" src="img/08.png" /></p>
-<h3><a href="09/">09</a> - Emancipation from Sleep Data</h3>
-<p><img alt="Random Sequence" src="img/09.png" /></p>
-<h3><a href="10/">10</a> - Sleep Data Abyss</h3>
-<p><img alt="Random Sequence" src="img/10.png" /></p>
-<h3><a href="11/">11</a> - Sleep Data Abyss II</h3>
-<p><img alt="Random Sequence" src="img/11.png" /></p>
-<h3><a href="12/">12</a> - Sleep Data Abyss III</h3>
-<p><img alt="Random Sequence" src="img/12.png" /></p>
-<h3><a href="13/">13</a> - Ice Nine Unleashed</h3>
-<p><img alt="Random Sequence" src="img/13.png" /></p>
-<h3><a href="14/">14</a> - Green-Ice Resistance</h3>
-<p><img alt="Random Sequence" src="img/14.png" /></p>
-<h3><a href="15/">15</a> - Post-Ice Condition</h3>
-<p><img alt="Random Sequence" src="img/15.png" /></p>
-<h3><a href="16/">16</a> - NYC Graffiti Data</h3>
-<p><img alt="Random Sequence" src="img/16.png" /></p>
-<h3><a href="17/">17</a> - Glitch Outcomes</h3>
-<p><img alt="Random Sequence" src="img/17.png" /></p>
-<h3><a href="18/">18</a> - n+1 Dimension</h3>
-<p><img alt="Random Sequence" src="img/18.png" /></p>
-<h3><a href="19/">19</a> - Data Cocoon</h3>
-<p><img alt="Random Sequence" src="img/19.png" /></p>
-<h3><a href="20/">20</a> - Sound Data Cocoon</h3>
-<p><img alt="Random Sequence" src="img/20.png" /></p>
-<h3><a href="21/">21</a> - Data Dystopia</h3>
-<p><img alt="Random Sequence" src="img/21.png" /></p>
-<h3><a href="22/">22</a> - Data Dystopia II</h3>
-<p><img alt="Random Sequence" src="img/22.png" /></p>
-<h3><a href="23/">23</a> - Sea Shell</h3>
-<p><img alt="Random Sequence" src="img/23.png" /></p>
-<h3><a href="24/">24</a> - 4D trigonometry</h3>
-<p><img alt="Random Sequence" src="img/24.png" /></p>
-<h3><a href="25/">25</a> - 4D trigonometry II</h3>
-<p><img alt="Random Sequence" src="img/25.png" /></p>
-<h3><a href="26/">26</a> - Polygon Planets</h3>
-<p><img alt="Random Sequence" src="img/26.png" /></p>
-<h3><a href="27/">27</a> - Time Fabric</h3>
-<p><img alt="Random Sequence" src="img/27.png" /></p>
-<h3><a href="28/">28</a> - Shadows</h3>
-<p><img alt="Random Sequence" src="img/28.png" /></p>
-<h3><a href="29/">29</a> - WebGL</h3>
-<p><img alt="Random Sequence" src="img/29.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/02/">02</a> - Random Sequence</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/02.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/03/">03</a> - Fibonacci Sequence</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/03.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/04/">04</a> - Fibonacci Sequence &amp; Composition</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/04.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/05/">05</a> - Chaotic Harmony</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/05.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/06/">06</a> - Sleep Harmonics I</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/06.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/07/">07</a> - Sleep Harmonics II</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/07.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/08/">08</a> - Sleep Harmonics III</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/08.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/09/">09</a> - Emancipation from Sleep Data</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/09.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/10/">10</a> - Sleep Data Abyss</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/10.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/11/">11</a> - Sleep Data Abyss II</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/11.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/12/">12</a> - Sleep Data Abyss III</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/12.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/13/">13</a> - Ice Nine Unleashed</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/13.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/14/">14</a> - Green-Ice Resistance</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/14.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/15/">15</a> - Post-Ice Condition</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/15.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/16/">16</a> - NYC Graffiti Data</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/16.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/17/">17</a> - Glitch Outcomes</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/17.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/18/">18</a> - n+1 Dimension</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/18.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/19/">19</a> - Data Cocoon</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/19.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/20/">20</a> - Sound Data Cocoon</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/20.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/21/">21</a> - Data Dystopia</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/21.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/22/">22</a> - Data Dystopia II</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/22.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/23/">23</a> - Sea Shell</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/23.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/24/">24</a> - 4D trigonometry</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/24.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/25/">25</a> - 4D trigonometry II</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/25.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/26/">26</a> - Polygon Planets</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/26.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/27/">27</a> - Time Fabric</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/27.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/28/">28</a> - Shadows</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/28.png" /></p>
+<h3><a href="https://mbrav.github.io/archive/Lab-FA16/29/">29</a> - WebGL</h3>
+<p><img alt="Random Sequence" src="https://mbrav.github.io/archive/Lab-FA16/img/29.png" /></p>
 <h1>Lab-SP17</h1>
 <p>Code from Lab: Collaboration, Parsons BFADT, Spring 2017</p>
 <p><strong>Instructor:</strong> Aaron Lehr</p>
-<h3><a href="01/">01</a> - terra-form</h3>
-<h3><a href="02/">02</a> - museum-visit</h3>
-<h3><a href="03/">03</a> - museum-visualization</h3>
-<h3><a href="04/">04</a> - ascii</h3>
+<h2><a href="https://mbrav.github.io/archive/Lab-SP17/07/">Midterm</a> - Wiki Faces</h2>
+<h3><a href="https://mbrav.github.io/archive/Lab-SP17/01/">01</a> - terra-form</h3>
+<h3><a href="https://mbrav.github.io/archive/Lab-SP17/02/">02</a> - museum-visit</h3>
+<h3><a href="https://mbrav.github.io/archive/Lab-SP17/03/">03</a> - museum-visualization</h3>
+<h3><a href="https://mbrav.github.io/archive/Lab-SP17/04/">04</a> - ascii</h3>
 <h3><a href="https://github.com/mbrav/asciify">05</a> - ASCIIfy</h3>
-<h3><a href="06/">06</a> - Web Scraping</h3>
-<h3><a href="07/">07  - Midterm</a> - Wiki Faces</h3>
+<h3><a href="https://mbrav.github.io/archive/Lab-SP17/06/">06</a> - Web Scraping</h3>
 <h1>Lab-SP17</h1>
 <p>Code from Lab: Collaboration, Parsons BFADT, Spring 2017</p>
 <p><strong>Instructor:</strong> Aaron Lehr</p>
-<h3><a href="01/">01</a> - terra-form</h3>
-<h3><a href="02/">02</a> - museum-visit</h3>
-<h3><a href="03/">03</a> - museum-visualization</h3>
-<h3><a href="04/">04</a> - ascii</h3>
-<h3><a href="https://github.com/mbrav/asciify">05</a> - ASCIIfy</h3>
-<h3><a href="06/">06</a> - Web Scraping</h3>
-<h3><a href="07/">07  - Midterm</a> - Wiki Faces</h3>
-<p>test# archive
-Archive of my old repos</p>
+<h2><a href="https://mbrav.github.io/archive/Lab-SP17/07/">Midterm</a> - Wiki Faces</h2>
+<h3><a href="https://mbrav.github.io/archive/Lab-SP17/01/">01</a> - terra-form</h3>
+<h3><a href="https://mbrav.github.io/archive/Lab-SP17/02/">02</a> - museum-visit</h3>
+<h3><a href="https://mbrav.github.io/archive/Lab-SP17/03/">03</a> - museum-visualization</h3>
+<h3><a href="https://mbrav.github.io/archive/Lab-SP17/04/">04</a> - ascii</h3>
+<h3><a href="https://github.com/mbrav/archive/tree/main/asciify">05</a> - ASCIIfy</h3>
+<h3><a href="https://mbrav.github.io/archive/Lab-SP17/06/">06</a> - Web Scraping</h3>
+<h1>archive</h1>
+<p>Archive of my old repos</p>
 <h1>Multiverse Clockwork</h1>
 <p>An openFrameworks project inspired by Clockwork Orange and nihilistic theoretical physics</p>
 <p><a href="https://vimeo.com/164663100">Video</a> of the project</p>
@@ -797,23 +810,23 @@ Archive of my old repos</p>
 <h1>New York Data City</h1>
 <p>NYDC is a project that explores the conventional aspects of data representation. Data visualization is frequently used to convey information using highly abstracted visual and vocabulary symbols. In some cases, humans can only interpret data only because a symbolic reference is provide along the visualization.</p>
 <p>Data visualization can be politicized and manipulated through symbols. It can force the viewer to interpret the data in a very intentional and particular way. The semantic symbols in a data visualization, can sometimes become the most significant factor to dictate the viewer’s interpretation of the data. People frequently use terms like “let data speak for itself” as a substitute to meaningful informational representation. Data can be represented in more abstract forms that may convey its inherit nature and its meaningfulness.</p>
-<p><a href="https://mbrav.github.io/nydc/01/index.html">Visual 01</a> - NYC Farmer Markets (<a href="https://data.cityofnewyork.us/Health/New-York-City-Farmers-Markets/j8gx-kc43/data">data source</a>)</p>
-<p><a href="https://mbrav.github.io/nydc/02/index.html">Visual 02</a> - NYC Water Complaints (<a href="https://data.cityofnewyork.us/Environment/Water-Quality-complaints/qfe3-6dkn/data">data source</a>)</p>
-<p><a href="https://mbrav.github.io/nydc/03/index.html">Visual 03</a> - NYC Greenthumb Community Gardens (<a href="https://data.cityofnewyork.us/Environment/NYC-Greenthumb-Community-Gardens/ajxm-kzmj">data source</a>)</p>
-<p><a href="https://mbrav.github.io/nydc/04/index.html">Visual 04</a> - NYC Cool Roof Buildings (<a href="https://data.cityofnewyork.us/Environment/NYC-Cool-Roofs-Buildings/uuxn-wzxe/data">data source</a>)</p>
-<p><a href="https://mbrav.github.io/nydc/05/index.html">Visual 05</a> - NYC Food Scrap Drop Of Sites (<a href="https://data.cityofnewyork.us/Environment/Food-Scrap-Drop-Off-Sites/rmmq-46n5/data">data source</a>)</p>
-<p><a href="https://mbrav.github.io/nydc/06/index.html">Visual 06</a> - NYC Projects in Construction (<a href="https://nycopendata.socrata.com/Housing-Development/Projects-in-Construction-Map/dzgh-ja44/data">data source</a>)</p>
-<p><a href="https://mbrav.github.io/nydc/07/index.html">Visual 07</a> - .nyc Domain Registration by Zip Code (<a href="https://data.cityofnewyork.us/Business/-nyc-Domain-Registrations-by-Zip-Code/ymvu-4x4s/data">data source</a>)</p>
-<p><a href="https://mbrav.github.io/nydc/08/index.html">Visual 08</a> - NYC Approved Wholesale Markets (<a href="https://data.cityofnewyork.us/Business/Approved-registrants-in-the-wholesale-markets/sapz-4gsi">data source</a>)</p>
-<p><a href="https://mbrav.github.io/nydc/09/index.html">Visual 09</a> - NYC Public Recycling Bins (<a href="https://data.cityofnewyork.us/Environment/Public-Recycling-Bins/sxx4-xhzg/data">data source</a>)</p>
-<p><a href="https://mbrav.github.io/nydc/10/index.html">Visual 10</a> - NYC Health and Hospital Corporation (HHC) Facilities (<a href="https://data.cityofnewyork.us/Health/NYC-Health-and-Hospitals-Corporation-Facilities/ymhw-9cz9/data">data source</a>)</p>
-<p><a href="https://mbrav.github.io/nydc/11/index.html">Visual 11</a> - NYDC Combined visualization</p>
+<p><a href="https://mbrav.github.io/archive/nydc/01/index.html">Visual 01</a> - NYC Farmer Markets (<a href="https://data.cityofnewyork.us/Health/New-York-City-Farmers-Markets/j8gx-kc43/data">data source</a>)</p>
+<p><a href="https://mbrav.github.io/archive/nydc/02/index.html">Visual 02</a> - NYC Water Complaints (<a href="https://data.cityofnewyork.us/Environment/Water-Quality-complaints/qfe3-6dkn/data">data source</a>)</p>
+<p><a href="https://mbrav.github.io/archive/nydc/03/index.html">Visual 03</a> - NYC Greenthumb Community Gardens (<a href="https://data.cityofnewyork.us/Environment/NYC-Greenthumb-Community-Gardens/ajxm-kzmj">data source</a>)</p>
+<p><a href="https://mbrav.github.io/archive/nydc/04/index.html">Visual 04</a> - NYC Cool Roof Buildings (<a href="https://data.cityofnewyork.us/Environment/NYC-Cool-Roofs-Buildings/uuxn-wzxe/data">data source</a>)</p>
+<p><a href="https://mbrav.github.io/archive/nydc/05/index.html">Visual 05</a> - NYC Food Scrap Drop Of Sites (<a href="https://data.cityofnewyork.us/Environment/Food-Scrap-Drop-Off-Sites/rmmq-46n5/data">data source</a>)</p>
+<p><a href="https://mbrav.github.io/archive/nydc/06/index.html">Visual 06</a> - NYC Projects in Construction (<a href="https://nycopendata.socrata.com/Housing-Development/Projects-in-Construction-Map/dzgh-ja44/data">data source</a>)</p>
+<p><a href="https://mbrav.github.io/archive/nydc/07/index.html">Visual 07</a> - .nyc Domain Registration by Zip Code (<a href="https://data.cityofnewyork.us/Business/-nyc-Domain-Registrations-by-Zip-Code/ymvu-4x4s/data">data source</a>)</p>
+<p><a href="https://mbrav.github.io/archive/nydc/08/index.html">Visual 08</a> - NYC Approved Wholesale Markets (<a href="https://data.cityofnewyork.us/Business/Approved-registrants-in-the-wholesale-markets/sapz-4gsi">data source</a>)</p>
+<p><a href="https://mbrav.github.io/archive/nydc/09/index.html">Visual 09</a> - NYC Public Recycling Bins (<a href="https://data.cityofnewyork.us/Environment/Public-Recycling-Bins/sxx4-xhzg/data">data source</a>)</p>
+<p><a href="https://mbrav.github.io/archive/nydc/10/index.html">Visual 10</a> - NYC Health and Hospital Corporation (HHC) Facilities (<a href="https://data.cityofnewyork.us/Health/NYC-Health-and-Hospitals-Corporation-Facilities/ymhw-9cz9/data">data source</a>)</p>
+<p><a href="https://mbrav.github.io/archive/nydc/11/index.html">Visual 11</a> - NYDC Combined visualization</p>
 <p><img alt="11 - NYDC Combined visualization" src="http://i.imgur.com/qU7KqxJ.png" /></p>
 <h2>Instructions</h2>
 <p>Use the <code>W</code>,<code>A</code>,<code>S</code>, and<code>D</code> keys to navigate forwards, left , back, and right.</p>
 <p>Use <code>Q</code> and <code>E</code> to rotate the camera.</p>
 <p>Use the mouse to stir the direction.</p>
-<p><strong>Does not yet support mobile device movement</strong>  </p>
+<p><strong>Does not yet support mobile device movement</strong></p>
 <h2>Process</h2>
 <p><a href="https://github.com/mbrav/nydc/tree/master/utils">utils</a> - a set of utilities that where used for geocoding and parsing the data.</p>
 <p>The converted data can be <a href="https://github.com/mbrav/nydc/tree/master/data">found here</a> as .js files.</p>
@@ -823,7 +836,7 @@ Archive of my old repos</p>
 <h3>Made with</h3>
 <ul>
 <li><a href="https://threejs.org/">three.js</a> and WebGL</li>
-<li><a href="https://nycopendata.socrata.com/">NYC Open Data</a> </li>
+<li><a href="https://nycopendata.socrata.com/">NYC Open Data</a></li>
 </ul>
 <h2>Influence</h2>
 <p>Cao Fei's - <a href="https://www.youtube.com/watch?v=9MhfATPZA0g">RMB City</a></p>
@@ -862,16 +875,16 @@ Your server should be running on http://127.0.0.1:80/
 <p>Technelogical Feudalism is a experimentation that explores the ways class societies where controlled before the advent of modern manipulable infrastructures. The mode of control that is explored in this particular experimentation is religion. This peace does not critique religion as a system of believe, rather, the way it is applied in societies.</p>
 <p>During he Medieval Ages, which where notorious for various pandemics such such as the Black Death, humanity relied on religion as its biggest hope. Today we see how people rely on technology the same way religions where relied on during medieval ages. Technology could bring us increased life expectancy, an increase quality of life, and happiness - the same way religions where believe to. But when humanity relies on something, there is always room for exploitation, especially if that reliance is appealing to the masses.</p>
 <p>This experimentation divides the user into two groups, the Noble, and the Peasant. This is an experience that is intended for multiple users where some interact with the experimentation, and other users watch how they interact on the black canvas. The Noble is able to track the mouse portion and clicks. Multiple windows can be opened to simulate the interaction between multiple people.</p>
-<p>The peasant side is given an opportunity to accept religion and is given an semi-interactive environment. On the other side of the user, there is a person who looks at his actions. The very fact that he can monitor the actions of the Peasant, means that he is more manipulable. Religion here, is served as a form of entertainment that also translated into a form of surveilance and establishments of control.</p>
+<p>The peasant side is given an opportunity to accept religion and is given an semi-interactive environment. On the other side of the user, there is a person who looks at his actions. The very fact that he can monitor the actions of the Peasant, means that he is more manipulable. Religion here, is served as a form of entertainment that also translated into a form of surveillance and establishments of control.</p>
 <h2>Navigation</h2>
 <h4>User chooses his class</h4>
-<p><img alt="" src="public/img/choose.png" /></p>
+<p><img alt="" src="https://mbrav.github.io/archive/TechnelogicalFeudalism/public/img/choose.png" /></p>
 <h4>Peasant's screen</h4>
-<p><img alt="" src="public/img/peasant.png" /></p>
+<p><img alt="" src="https://mbrav.github.io/archive/TechnelogicalFeudalism/public/img/peasant.png" /></p>
 <h4>You become noble by claiming an oath</h4>
-<p><img alt="" src="public/img/oath.png" /></p>
+<p><img alt="" src="https://mbrav.github.io/archive/TechnelogicalFeudalism/public/img/oath.png" /></p>
 <h4>The noble can now spy on peasants</h4>
-<p><img alt="" src="public/img/noble.png" /></p>
+<p><img alt="" src="https://mbrav.github.io/archive/TechnelogicalFeudalism/public/img/noble.png" /></p>
 <h1>yogabot</h1>
 <p>An instagram bot with a set of methodologies that attempt to steal SMM leads from competitor businesses. </p>
 <h2>Todo fixes</h2>

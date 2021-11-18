@@ -1,5 +1,6 @@
 # TechnelogicalFeudalism
-*Surveilance from the time when technology was synonymous with art*
+
+_Surveilance from the time when technology was synonymous with art_
 
 ## Description
 
@@ -9,15 +10,22 @@ During he Medieval Ages, which where notorious for various pandemics such such a
 
 This experimentation divides the user into two groups, the Noble, and the Peasant. This is an experience that is intended for multiple users where some interact with the experimentation, and other users watch how they interact on the black canvas. The Noble is able to track the mouse portion and clicks. Multiple windows can be opened to simulate the interaction between multiple people.
 
-The peasant side is given an opportunity to accept religion and is given an semi-interactive environment. On the other side of the user, there is a person who looks at his actions. The very fact that he can monitor the actions of the Peasant, means that he is more manipulable. Religion here, is served as a form of entertainment that also translated into a form of surveilance and establishments of control.
+The peasant side is given an opportunity to accept religion and is given an semi-interactive environment. On the other side of the user, there is a person who looks at his actions. The very fact that he can monitor the actions of the Peasant, means that he is more manipulable. Religion here, is served as a form of entertainment that also translated into a form of surveillance and establishments of control.
 
 ## Navigation
 
 #### User chooses his class
-![](public/img/choose.png)
+
+![](https://mbrav.github.io/archive/TechnelogicalFeudalism/public/img/choose.png)
+
 #### Peasant's screen
-![](public/img/peasant.png)
-#### You become noble by claiming an oath   
-![](public/img/oath.png)
-#### The noble can now spy on peasants  
-![](public/img/noble.png)
+
+![](https://mbrav.github.io/archive/TechnelogicalFeudalism/public/img/peasant.png)
+
+#### You become noble by claiming an oath
+
+![](https://mbrav.github.io/archive/TechnelogicalFeudalism/public/img/oath.png)
+
+#### The noble can now spy on peasants
+
+![](https://mbrav.github.io/archive/TechnelogicalFeudalism/public/img/noble.png)
