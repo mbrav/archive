@@ -885,6 +885,42 @@ Your server should be running on http://127.0.0.1:80/
 <p><img alt="" src="https://mbrav.github.io/archive/TechnelogicalFeudalism/public/img/oath.png" /></p>
 <h4>The noble can now spy on peasants</h4>
 <p><img alt="" src="https://mbrav.github.io/archive/TechnelogicalFeudalism/public/img/noble.png" /></p>
+<h1>ThermoStar ☀️⛅️☔️⭐️</h1>
+
+<h2>Setup </h2>
+<p>Thermo Star is oriented towards creating a simple setup that can get anyone to start monitoring their climate requiring not much knowledge in electronics. The sketch <strong>DOES USE</strong> an external Adafruit DHT library that is necessary to install in the Arduino IDE.</p>
+<p>The circut for the setup can be found in the the <a href="https://github.com/miXania/ThermoStar/tree/master/Schematics">"Schematics"</a> folder. Depending on what kind of TFT screen you have these <a href="http://arduino.cc/en/Tutorial/TFTDisplayText">instructions (Arduino)</a> or these <a href="https://learn.adafruit.com/1-8-tft-display?view=all">instructions (AdaFruit)</a> might be helpful.</p>
+<h2>Connections </h2>
+<p>- A ST7735 TFT screen connected throught the SPI pins.
+- A DHT sensor connected to the A1(15) pin on the Arduino Uno</p>
+<p><img alt="Schematic" src="https://github.com/mbrav/thermo-star/blob/master/Schematics/SchematicImage.png" /></p>
+<h2>Dependencies </h2>
+<p><a href="https://github.com/adafruit/DHT-sensor-library">Adafruit DHT library</a></p>
+<h2> Change Log </h2>
+<p><b>ThermoStar v1.3 "Second Breath"</b>
+- Added a graph as an "EXPERIMENTAL FEATURE" which turns on every other
+screenUpdate. Is currently very, very buggy. 🐞🐜🐝</p>
+<p><b>ThermoStar v1.2 "Counting Stars"</b></p>
+<ul>
+<li>Rearranged the screen by moving the least important stuff to the
+    bottom. ↕️</li>
+<li>Changed the GUI a bit by placing two rectangles over the edges of the
+    screen. 💻</li>
+<li>Added an hour counter at the bottom of the screen that shows how long
+    the program has been running. 🏇</li>
+<li>The 24 hour records don’t display unless 12 hours have passed since
+    they will be the same anyway. 📊</li>
+</ul>
+<p><b>ThermoStar v1.1 "Beyond Perfection"</b></p>
+<ul>
+<li>Some functions now return bytes instead of floats, this freed 222 bytes of program memory and 7 bytes of RAM plus slightly increased the performance. 💎</li>
+</ul>
+<p><b>ThermoStar v1.0 "First Commitment"</b></p>
+<ul>
+<li>Displays the current air temperature and moisture. ⛅️☔️❄️</li>
+<li>Keeps track of the coldest and hottest temperature readings during
+    the past 12 and 24 hours. 🕛🕝🕢🕥</li>
+</ul>
 <h1>yogabot</h1>
 <p>An instagram bot with a set of methodologies that attempt to steal SMM leads from competitor businesses. </p>
 <h2>Todo fixes</h2>
